@@ -18053,3 +18053,720 @@ Stacktrace:
 2025-09-24 12:03:22,528 - INFO - 数据已保存: 22.54 度
 2025-09-24 12:03:22,927 - INFO - 电费变化曲线图已保存到: D:\Documents\Github\nju_electric_monitor\src\..\data\electricity_trend.png
 2025-09-24 12:03:22,927 - INFO - 监控流程完成
+2025-09-24 15:02:59,827 - INFO - 使用本地ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2025-09-24 15:02:59,827 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-09-24 15:03:00,937 - INFO - OCR识别器初始化成功
+2025-09-24 15:03:00,938 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-09-24 15:03:00,953 - INFO - 已获取登录凭据
+2025-09-24 15:03:00,953 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-09-24 15:03:04,251 - INFO - 等待登录表单加载...
+2025-09-24 15:03:04,257 - INFO - 登录表单已加载
+2025-09-24 15:03:04,257 - INFO - 开始填写登录表单...
+2025-09-24 15:03:04,290 - INFO - 用户名填写完成
+2025-09-24 15:03:04,327 - INFO - 密码填写完成
+2025-09-24 15:03:04,327 - INFO - 检查是否有验证码...
+2025-09-24 15:03:04,334 - INFO - 查找验证码图片...
+2025-09-24 15:03:04,344 - INFO - 找到验证码图片，开始截图...
+2025-09-24 15:03:04,388 - INFO - 验证码图片截取成功
+2025-09-24 15:03:04,388 - INFO - 开始填写登录表单...
+2025-09-24 15:03:04,421 - INFO - 用户名填写完成
+2025-09-24 15:03:04,450 - INFO - 密码填写完成
+2025-09-24 15:03:04,452 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:04,452 - INFO - 验证码识别尝试 1/12
+2025-09-24 15:03:04,452 - INFO - 开始识别验证码...
+2025-09-24 15:03:04,540 - INFO - 验证码识别结果: 2a18
+2025-09-24 15:03:04,540 - INFO - 查找验证码输入框...
+2025-09-24 15:03:04,575 - INFO - 验证码填写完成
+2025-09-24 15:03:04,575 - INFO - 验证码填写完成，点击登录按钮...
+2025-09-24 15:03:04,576 - INFO - 查找并点击登录按钮...
+2025-09-24 15:03:04,646 - INFO - 已点击登录按钮
+2025-09-24 15:03:11,661 - WARNING - 检测到无效的验证码提示，准备重试...
+2025-09-24 15:03:11,661 - INFO - 查找验证码图片...
+2025-09-24 15:03:11,690 - INFO - 找到验证码图片，开始截图...
+2025-09-24 15:03:11,734 - INFO - 验证码图片截取成功
+2025-09-24 15:03:11,735 - INFO - 开始填写登录表单...
+2025-09-24 15:03:11,769 - INFO - 用户名填写完成
+2025-09-24 15:03:11,799 - INFO - 密码填写完成
+2025-09-24 15:03:11,799 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:11,799 - INFO - 验证码识别尝试 2/12
+2025-09-24 15:03:11,799 - INFO - 开始识别验证码...
+2025-09-24 15:03:11,851 - INFO - 验证码识别结果: YXpI
+2025-09-24 15:03:11,851 - INFO - 查找验证码输入框...
+2025-09-24 15:03:11,880 - INFO - 验证码填写完成
+2025-09-24 15:03:11,880 - INFO - 验证码填写完成，点击登录按钮...
+2025-09-24 15:03:11,881 - INFO - 查找并点击登录按钮...
+2025-09-24 15:03:11,921 - INFO - 已点击登录按钮
+2025-09-24 15:03:18,932 - WARNING - 检测到无效的验证码提示，准备重试...
+2025-09-24 15:03:18,933 - INFO - 查找验证码图片...
+2025-09-24 15:03:18,940 - INFO - 找到验证码图片，开始截图...
+2025-09-24 15:03:18,968 - INFO - 验证码图片截取成功
+2025-09-24 15:03:18,968 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,005 - INFO - 用户名填写完成
+2025-09-24 15:03:19,043 - INFO - 密码填写完成
+2025-09-24 15:03:19,044 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,044 - INFO - 验证码识别尝试 3/12
+2025-09-24 15:03:19,044 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,095 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,096 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,123 - INFO - 验证码填写完成
+2025-09-24 15:03:19,123 - INFO - 验证码填写完成，点击登录按钮...
+2025-09-24 15:03:19,124 - INFO - 查找并点击登录按钮...
+2025-09-24 15:03:19,149 - ERROR - 点击登录按钮时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98dda0]
+	(No symbol) [0x0x7ff7eea25185]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,150 - WARNING - 点击登录按钮失败
+2025-09-24 15:03:19,150 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,151 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,153 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,153 - INFO - 验证码识别尝试 4/12
+2025-09-24 15:03:19,153 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,203 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,203 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,205 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,206 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,206 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,206 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,208 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,208 - INFO - 验证码识别尝试 5/12
+2025-09-24 15:03:19,209 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,257 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,257 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,258 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,260 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,260 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,261 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,262 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,263 - INFO - 验证码识别尝试 6/12
+2025-09-24 15:03:19,263 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,313 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,313 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,314 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,315 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,315 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,316 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,318 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,318 - INFO - 验证码识别尝试 7/12
+2025-09-24 15:03:19,318 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,366 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,366 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,368 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,369 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,369 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,370 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,372 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,372 - INFO - 验证码识别尝试 8/12
+2025-09-24 15:03:19,372 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,420 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,420 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,422 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,423 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,423 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,423 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,425 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,426 - INFO - 验证码识别尝试 9/12
+2025-09-24 15:03:19,426 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,475 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,476 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,477 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,478 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,478 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,479 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,480 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,481 - INFO - 验证码识别尝试 10/12
+2025-09-24 15:03:19,481 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,530 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,530 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,531 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,532 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,532 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,533 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,535 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,535 - INFO - 验证码识别尝试 11/12
+2025-09-24 15:03:19,535 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,585 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,585 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,586 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,588 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,588 - INFO - 开始填写登录表单...
+2025-09-24 15:03:19,588 - ERROR - 填写登录表单时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,590 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 15:03:19,590 - INFO - 验证码识别尝试 12/12
+2025-09-24 15:03:19,590 - INFO - 开始识别验证码...
+2025-09-24 15:03:19,639 - INFO - 验证码识别结果: H8NC
+2025-09-24 15:03:19,639 - INFO - 查找验证码输入框...
+2025-09-24 15:03:19,641 - ERROR - 填写验证码时出错: Message: tab crashed
+  (Session info: chrome=140.0.7339.128)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7eebffc95+79861]
+	GetHandleVerifier [0x0x7ff7eebffcf0+79952]
+	(No symbol) [0x0x7ff7ee97c8fc]
+	(No symbol) [0x0x7ff7ee969d0c]
+	(No symbol) [0x0x7ff7ee9678dc]
+	(No symbol) [0x0x7ff7ee96835b]
+	(No symbol) [0x0x7ff7ee97725e]
+	(No symbol) [0x0x7ff7ee98d5c1]
+	(No symbol) [0x0x7ff7ee99485a]
+	(No symbol) [0x0x7ff7ee968b0e]
+	(No symbol) [0x0x7ff7ee98cdb2]
+	(No symbol) [0x0x7ff7eea24e62]
+	(No symbol) [0x0x7ff7ee9fc8b3]
+	(No symbol) [0x0x7ff7ee9c5272]
+	(No symbol) [0x0x7ff7ee9c6043]
+	GetHandleVerifier [0x0x7ff7eeebb9cd+2946349]
+	GetHandleVerifier [0x0x7ff7eeeb5c4a+2922410]
+	GetHandleVerifier [0x0x7ff7eeed59d7+3052855]
+	GetHandleVerifier [0x0x7ff7eec1aa7e+189918]
+	GetHandleVerifier [0x0x7ff7eec22a1f+222591]
+	GetHandleVerifier [0x0x7ff7eec08ab4+116244]
+	GetHandleVerifier [0x0x7ff7eec08c69+116681]
+	GetHandleVerifier [0x0x7ff7eebef048+11176]
+	BaseThreadInitThunk [0x0x7ffa0b71e8d7+23]
+	RtlUserThreadStart [0x0x7ffa0cf7c34c+44]
+
+2025-09-24 15:03:19,642 - WARNING - 验证码填写失败
+2025-09-24 15:03:19,643 - WARNING - 自动验证码识别失败，请手动输入
+2025-09-24 18:03:01,226 - INFO - 使用本地ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2025-09-24 18:03:01,228 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-09-24 18:03:02,814 - INFO - OCR识别器初始化成功
+2025-09-24 18:03:02,815 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-09-24 18:03:02,828 - INFO - 已获取登录凭据
+2025-09-24 18:03:02,828 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-09-24 18:03:06,203 - INFO - 等待登录表单加载...
+2025-09-24 18:03:06,218 - INFO - 登录表单已加载
+2025-09-24 18:03:06,218 - INFO - 开始填写登录表单...
+2025-09-24 18:03:06,328 - INFO - 用户名填写完成
+2025-09-24 18:03:06,361 - INFO - 密码填写完成
+2025-09-24 18:03:06,362 - INFO - 检查是否有验证码...
+2025-09-24 18:03:06,368 - INFO - 查找验证码图片...
+2025-09-24 18:03:06,379 - INFO - 找到验证码图片，开始截图...
+2025-09-24 18:03:06,426 - INFO - 验证码图片截取成功
+2025-09-24 18:03:06,426 - INFO - 开始填写登录表单...
+2025-09-24 18:03:06,459 - INFO - 用户名填写完成
+2025-09-24 18:03:06,488 - INFO - 密码填写完成
+2025-09-24 18:03:06,492 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2025-09-24 18:03:06,492 - INFO - 验证码识别尝试 1/12
+2025-09-24 18:03:06,492 - INFO - 开始识别验证码...
+2025-09-24 18:03:06,674 - INFO - 验证码识别结果: akh3
+2025-09-24 18:03:06,674 - INFO - 查找验证码输入框...
+2025-09-24 18:03:06,719 - INFO - 验证码填写完成
+2025-09-24 18:03:06,720 - INFO - 验证码填写完成，点击登录按钮...
+2025-09-24 18:03:06,720 - INFO - 查找并点击登录按钮...
+2025-09-24 18:03:08,459 - INFO - 已点击登录按钮
+2025-09-24 18:03:15,466 - INFO - 未检测到无效验证码提示，验证码通过
+2025-09-24 18:03:15,467 - INFO - 查找并点击登录按钮...
+2025-09-24 18:03:15,480 - ERROR - 未找到登录按钮
+2025-09-24 18:03:15,481 - ERROR - 点击登录按钮失败
+2025-09-24 18:03:15,481 - INFO - 等待登录成功...
+2025-09-24 18:03:20,484 - INFO - 登录可能成功，继续下一步...
+2025-09-24 18:03:20,484 - INFO - 查找'去充值'按钮...
+2025-09-24 18:03:21,088 - INFO - 已点击充值按钮
+2025-09-24 18:03:24,090 - INFO - 开始提取剩余电量信息...
+2025-09-24 18:03:24,092 - INFO - 页面源码已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\debug_page_source.html
+2025-09-24 18:03:24,112 - INFO - 找到电量信息元素: 持卡人姓名：吴相民
+2025-09-24 18:03:24,112 - WARNING - 未在元素中找到标准格式的电量信息
+2025-09-24 18:03:24,119 - INFO - 找到i标签中的电量信息: 吴相民
+2025-09-24 18:03:24,130 - WARNING - i标签中未找到标准格式的电量信息
+2025-09-24 18:03:24,131 - INFO - 在页面源码中查找电量信息...
+2025-09-24 18:03:24,132 - INFO - 从页面源码中提取到剩余电量: 22.54 度
+2025-09-24 18:03:24,134 - INFO - 数据已保存: 22.54 度
+2025-09-24 18:03:24,459 - INFO - 电费变化曲线图已保存到: D:\Documents\Github\nju_electric_monitor\src\..\data\electricity_trend.png
+2025-09-24 18:03:24,459 - INFO - 监控流程完成
