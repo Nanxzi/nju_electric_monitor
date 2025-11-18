@@ -1,188 +1,19 @@
-<html class="pixel-ratio-1" style="font-size: 502.133px;"><head>
+<html><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="_csrf" content="f500205d-f28e-499f-b612-e6323c04ed09">
-    <meta name="_csrf_header" content="X-CSRF-TOKEN">
-    <link type="image/png" href="/epay/images/nju/icon.png" rel="shortcut icon">
     <link type="text/css" rel="stylesheet" href="/epay/css/wxpage/weui.min.css">
-    
+    <link type="text/css" rel="stylesheet" href="/epay/css/wxpage/jquery-weui.min.css">
     <link type="text/css" rel="stylesheet" href="/epay/css/wxpage/wxpage.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/reset.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/charge.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/magic-check.min.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/modal.css">
-    
-    <script type="text/javascript" src="/epay/js/wxpage/jquery-2.1.4.js "></script>
-    <script type="text/javascript" src="/epay/js/wxpage/fastclick.js "></script>
-    <script type="text/javascript" src="/epay/js/wxpage/jquery-weui.min.js "></script>
-    <script type="text/javascript" src="/epay/js/nju/vue.min.js "></script>
-    <script type="text/javascript" src="/epay/js/nju/select2.min1.js "></script>
-    <title>电费充值</title>
-<script type="text/javascript">
-    (function (win, doc) {
-        function changeSize() {
-            doc.documentElement.style.fontSize = 100 * doc.documentElement.clientWidth / 375 + 'px';
-        }
-
-        changeSize();
-        win.addEventListener('resize', changeSize, false);
-    })(window, document);
-</script></head>
-
-
+    <title>错误</title>
+</head>
 <body>
-<div id="app"><div class="centent"><div class="top"><div class="clearfix"><span class="fl">持卡人姓名：<i>吴相民</i></span></div> <div class="clearfix"><span class="fl">校园卡余额：<i class="green">124.66元</i></span></div></div> <div class="line"></div> <div class="cont"><div class="clearfix"><span class="fl">缴费地址：<i>仙林校区 18幢 18栋第17层1702</i></span></div> <div class="clearfix"><span class="fl">剩余电量：<i>430.77度</i><em></em></span></div> <!----> <!----></div> <div class="num clearfix"><div style="display: flex; flex-wrap: wrap;"><span class="active">10元</span><span class="">20元</span><span class="">50元</span><span class="">100元</span><span class="">200元</span><span class="">自定义</span></div></div> <div class="inputbox" style="display: none;"><input type="text" placeholder="请输入充值金额" pattern="[0-9]*" maxlength="4" id="amount"></div> <div class="footer">充值</div> <div class="desc">充值时间：每天00:05-23:55</div> <div class="wapat"><div class="wapat-inner"><div class="wapat-title">错误！</div> <div class="wapat-btn-box"><div class="wapat-btn wapat-btn-ok">确定</div></div></div></div></div></div>
+<div class="topbar">
+    <a href="javascript:window.history.back();"><span class="back"></span></a>
+    <p>错误</p>
+    <a href="javascript:window.location.reload();"><span class="refresh"></span></a>
+</div>
+<p style="padding: 30px 10px;font-size: 16px;">查询房间信息失败</p>
 
-
-
-
-<script>
-</script>
-<script>
-    var beforeSendAjax = function (xhr) {
-        var header = $('meta[name=_csrf_header]').attr('content');
-        var token = $('meta[name=_csrf]').attr('content');
-        if (header != '' && token != '') {
-            xhr.setRequestHeader(header, token);
-        }
-    }
-    var vm = new Vue({
-        el: '#app',
-        data() {
-            return {
-                money: [{text: '10元', checked: true, value: 10},
-                    {text: '20元', checked: false, value: 20},
-                    {text: '50元', checked: false, value: 50},
-                    {text: '100元', checked: false, value: 100},
-                    {text: '200元', checked: false, value: 200},
-                    {text: '自定义', checked: false, value: 0}],
-                errmsg: "错误！",
-                index: 0,
-                amount:"",
-                check:{},
-                isSuZhouArea:false
-            }
-        },
-        watch:{
-            amount(val){
-                this.money[5].value = +val
-            }
-        },
-        created() {
-            this.check = {"areaId":"0","areaName":"0","buildId":"xl18","buildName":"18幢","createtime":"20250822230957","districtId":"","districtName":"","id":80481,"roomId":"1702","roomName":"18栋第17层1702","stuempno":"602025250064","sysId":"3","sysName":"仙林校区","type":"elec"}
-            this.isSuZhouArea = this.check.sysName.indexOf("苏州")>=0
-
-        },
-        methods: {
-            change(i) {
-                let list = this.money
-                list.forEach(v => {
-                    v.checked = false
-                })
-                list[i].checked = true
-                this.index = i
-            },
-            charge(){
-                $.showLoading("正在加载");
-                let amount = this.money[this.index].value
-                let check = this.check
-                let params = {
-                    "sysid":check.sysId,
-                    "areaid":check.areaId,
-                    "buildid":check.buildId,
-                    "roomid":check.roomId,
-                    "amount":amount
-                }
-                $.ajax("/epay/h5/elecPayInit.json", {
-                    data: params,
-                    type: "POST",
-                    dataType: "json",
-                    beforeSend: function (xhr){
-                        return beforeSendAjax(xhr)
-                    },
-                    success: (ret) =>{
-                        $.hideLoading();
-                        if (ret.retcode == '0') {
-                            let url = encodeURIComponent(window.location.origin + "/epay/h5/nju/electric/index")
-                            window.location.href='/epay/mgate/cert/unifiedorder?merchaccno=' + ret.shopid + '&timestamp='
-                                + ret.timestamp + '&out_trade_no=' + ret.refno + '&out_trade_name='+encodeURIComponent('电费充值')+'&total_amount=' + ret.amt * 100
-                                + '&remark=' + encodeURIComponent(check.sysName + '/' + check.buildName + '/' + check.roomName)
-                                + '&return_url=' + url;
-                        } else {
-                            this.errmsg =  ret.retmsg || '初始化失败！'
-                            $('.wapat').show()
-
-                        }
-                    },
-                    error: (e) => {
-                        $.hideLoading();
-                        this.errmsg = e.errmsg || '请求出现异常'
-                        $('.wapat').show()
-
-                    }
-                })
-            },
-            charge_v2(){
-                $.showLoading("正在加载");
-                let check = this.check
-                let amount = this.money[this.index].value
-                let params = {
-                    "sysid":check.sysId,
-                    "areaid":check.areaId,
-                    "buildid":check.buildId,
-                    "roomid":check.roomId,
-                    "amount":amount
-                }
-                $.ajax("/epay/h5/elecPayInit.json", {
-                    data: params,
-                    type: "POST",
-                    dataType: "json",
-                    beforeSend: function (xhr){
-                        return beforeSendAjax(xhr)
-                    },
-                    success: (ret) =>{
-                        $.hideLoading();
-                        if (ret.retcode == '0') {
-                            let url = encodeURIComponent(window.location.origin + "/epay/h5/nju/electric/index")
-                            window.location.href='/epay/h5/unifiedorder?merchaccno=' + ret.shopid + '&timestamp='
-                                + ret.timestamp + '&out_trade_no=' + ret.refno + '&out_trade_name='+encodeURIComponent('电费充值')+'&total_amount=' + ret.amt * 100
-                                + '&remark=' + encodeURIComponent(check.sysName + '/' + check.buildName + '/' + check.roomName)
-                                + '&return_url=' + url;
-                        } else {
-                            this.errmsg =  ret.retmsg || '初始化失败！'
-                            $('.wapat').show()
-
-                        }
-                    },
-                    error: (e) => {
-                        $.hideLoading();
-                        this.errmsg = e.errmsg || '请求出现异常'
-                        $('.wapat').show()
-
-                    }
-                })
-            },
-            confirm(){
-                $('.wapat').hide()
-            }
-        }
-    })
-    Vue.nextTick(function() {
-        $("#amount").keyup(function () {
-            $(this).val($(this).val().replace(/[^0-9]/g, ''));
-	    //$(this).val($(this).val().replace(/[^\d.]/g, '').replace(/^(\d*\.\d*)\..*$/, '$1'));
-            if ($(this).val().length > 4) {
-                $(this).val($(this).val().substring(0, 4));
-            }
-        }).bind("paste", function () {
-            $(this).val($(this).val().replace(/[^0-9]/g, ''));
-	    //$(this).val($(this).val().replace(/[^\d.]/g, '').replace(/^(\d*\.\d*)\..*$/, '$1'));
-            if ($(this).val().length > 4) {
-                $(this).val($(this).val().substring(0, 4));
-            }
-        });
-    })
-</script>
 
 </body></html>
