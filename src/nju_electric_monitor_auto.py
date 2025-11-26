@@ -615,6 +615,9 @@ class NJUElectricMonitor:
                         self.logger.warning("i标签中未找到标准格式的电量信息")
                         
                 self.logger.warning("未找到i标签中的电量信息")
+                
+            except NoSuchElementException:
+                self.logger.warning("未找到i标签中的电量信息，尝试其他方法...")
             
             # 方法3：在页面源码中查找
             page_source = self.driver.page_source
