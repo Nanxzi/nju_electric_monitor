@@ -38,6 +38,7 @@ import matplotlib.dates as mdates
 from matplotlib.ticker import MaxNLocator
 import matplotlib.font_manager as fm
 import numpy as np
+import plotly.graph_objs as go
 
 # PIL兼容性补丁 - 解决ANTIALIAS被弃用的问题
 try:
@@ -577,7 +578,7 @@ class NJUElectricMonitor:
             # 方法1：使用精确的CSS选择器查找电量信息
             try:
                 electricity_element = self.driver.find_element(By.CSS_SELECTOR, "span.fl")
-                if electricity_element:
+                if (electricity_element):
                     text = electricity_element.text
                     self.logger.info(f"找到电量信息元素: {text}")
                     
@@ -613,7 +614,6 @@ class NJUElectricMonitor:
                     else:
                         self.logger.warning("i标签中未找到标准格式的电量信息")
                         
-            except NoSuchElementException:
                 self.logger.warning("未找到i标签中的电量信息")
             
             # 方法3：在页面源码中查找
@@ -765,8 +765,75 @@ class NJUElectricMonitor:
                 self.logger.info(f"电费变化曲线图已保存到: {png_path}")
             except Exception as e:
                 self.logger.warning(f"生成电费曲线图PNG失败: {e}")
+
+            # 生成最近20次电量变化的曲线图并保存为PNG
+            self.generate_recent_20_changes_plot(df_sorted)
+
         except Exception as e:
             self.logger.error(f"保存数据时出错: {e}")
+
+    def generate_recent_20_changes_plot(self, df_sorted):
+        """Generate and save the recent 20 changes plot as a PNG image."""
+        try:
+            # 设置深色科技感风格
+            plt.style.use('dark_background')
+            fig, ax = plt.subplots(figsize=(9, 4), dpi=200)
+            fig.patch.set_facecolor('#141e30')
+            ax.set_facecolor('#0a1428')
+
+            # 线条和点的颜色
+            line_color = '#ff4500'
+            marker_color = '#ff6347'
+            grid_color = (255/255, 69/255, 0/255, 0.15)
+            font_color = '#ff6347'
+            title_color = '#ff4500'
+
+            # 获取最近20次数据
+            recent_20 = df_sorted.tail(20)
+
+            # 绘制曲线和点
+            ax.plot(recent_20['time'], recent_20['num'],
+                    color=line_color, linewidth=2.5, marker='o', markersize=6,
+                    markerfacecolor=marker_color, markeredgewidth=2, markeredgecolor=marker_color, zorder=3)
+
+            # 设置标题和标签
+            ax.set_title('最近20次电量变化曲线', fontsize=18, color=title_color, pad=18, fontweight='bold', fontname='Microsoft YaHei')
+            ax.set_xlabel('时间', fontsize=13, color=font_color, labelpad=10, fontname='Microsoft YaHei')
+            ax.set_ylabel('剩余电量 (度)', fontsize=13, color=font_color, labelpad=10, fontname='Microsoft YaHei')
+
+            # 坐标轴刻度
+            ax.tick_params(axis='x', colors=font_color, labelsize=10, rotation=30)
+            ax.tick_params(axis='y', colors=font_color, labelsize=10)
+            ax.xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d %H:%M'))
+            ax.xaxis.set_major_locator(mdates.AutoDateLocator(maxticks=8))
+            ax.yaxis.set_major_locator(MaxNLocator(integer=True))
+
+            # 虚线网格
+            ax.grid(True, which='major', axis='both', linestyle='--', linewidth=1, color=grid_color, alpha=1)
+
+            # 去除顶部和右侧边框
+            ax.spines['top'].set_visible(False)
+            ax.spines['right'].set_visible(False)
+            for spine in ['bottom', 'left']:
+                ax.spines[spine].set_color(font_color)
+                ax.spines[spine].set_linewidth(1.2)
+
+            # 设置字体（优先微软雅黑）
+            try:
+                plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'Segoe UI', 'Arial Unicode MS']
+            except Exception:
+                pass
+
+            # 调整边距
+            plt.tight_layout(rect=[0, 0, 1, 0.97])
+
+            # 保存图片
+            output_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'recent_20_changes.png')
+            plt.savefig(output_path, facecolor=fig.get_facecolor(), bbox_inches='tight')
+            plt.close(fig)
+            self.logger.info(f"最近20次电量变化曲线图已保存到: {output_path}")
+        except Exception as e:
+            self.logger.warning(f"生成最近20次电量变化曲线图PNG失败: {e}")
     
     def run(self):
         """运行监控流程"""
