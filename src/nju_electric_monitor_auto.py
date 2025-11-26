@@ -615,7 +615,7 @@ class NJUElectricMonitor:
                         self.logger.warning("i标签中未找到标准格式的电量信息")
                         
                 self.logger.warning("未找到i标签中的电量信息")
-                
+
             except NoSuchElementException:
                 self.logger.warning("未找到i标签中的电量信息，尝试其他方法...")
             
@@ -731,7 +731,7 @@ class NJUElectricMonitor:
                         markerfacecolor=marker_color, markeredgewidth=2, markeredgecolor=marker_color, zorder=3)
 
                 # 设置标题和标签
-                ax.set_title('电费变化曲线', fontsize=18, color=title_color, pad=18, fontweight='bold', fontname='Microsoft YaHei')
+                ax.set_title('电量变化曲线', fontsize=18, color=title_color, pad=18, fontweight='bold', fontname='Microsoft YaHei')
                 ax.set_xlabel('时间', fontsize=13, color=font_color, labelpad=10, fontname='Microsoft YaHei')
                 ax.set_ylabel('剩余电量 (度)', fontsize=13, color=font_color, labelpad=10, fontname='Microsoft YaHei')
 
@@ -765,9 +765,9 @@ class NJUElectricMonitor:
                 plt.tight_layout(rect=[0, 0, 1, 0.97])
                 plt.savefig(png_path, facecolor=fig.get_facecolor(), bbox_inches='tight')
                 plt.close(fig)
-                self.logger.info(f"电费变化曲线图已保存到: {png_path}")
+                self.logger.info(f"电量变化曲线图已保存到: {png_path}")
             except Exception as e:
-                self.logger.warning(f"生成电费曲线图PNG失败: {e}")
+                self.logger.warning(f"生成电量曲线图PNG失败: {e}")
 
             # 生成最近20次电量变化的曲线图并保存为PNG
             self.generate_recent_20_changes_plot(df_sorted)

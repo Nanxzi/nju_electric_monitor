@@ -191,7 +191,7 @@ def index():
         showlegend=False
     )
     layout = go.Layout(
-        title=dict(text='电费变化曲线', x=0.5, font=dict(family='Segoe UI,微软雅黑', size=20, color='#00eaff')),
+        title=dict(text='电量变化曲线', x=0.5, font=dict(family='Segoe UI,微软雅黑', size=20, color='#00eaff')),
         xaxis=dict(
             title='时间', 
             tickformat='%Y-%m-%d %H:%M', 
