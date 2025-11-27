@@ -1,0 +1,27 @@
+name: Auto Monitor Schedule
+
+on:
+  schedule:
+    - cron: "0 1,7,13 * * *" # UTC 时间对应北京时间 9:00, 15:00, 21:00
+
+jobs:
+  run-monitor:
+    runs-on: windows-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Auto Monitor
+      run: |
+        call run_auto_monitor.bat
