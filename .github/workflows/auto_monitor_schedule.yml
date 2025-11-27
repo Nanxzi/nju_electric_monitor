@@ -24,4 +24,4 @@ jobs:
 
     - name: Run Auto Monitor
       run: |
-        call run_auto_monitor.bat
+        call run_auto_monitor_workflow.bat
