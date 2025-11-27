@@ -1,2 +1,4 @@
 # 账号密码
 config.json
+
+.venv/
