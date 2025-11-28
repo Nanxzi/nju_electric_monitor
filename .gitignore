@@ -2,3 +2,16 @@
 config.json
 
 .venv/
+
+# Local build wheels cache
+.wheels/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.so
+
+# IDE & OS files (optional)
+.vscode/
+*.swp
+.DS_Store
