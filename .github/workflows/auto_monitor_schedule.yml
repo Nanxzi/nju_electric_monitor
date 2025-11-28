@@ -3,6 +3,10 @@ name: Auto Monitor Schedule
 on:
   schedule:
     - cron: "0 1,7,13 * * *" # UTC 时间对应北京时间 9:00, 15:00, 21:00
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   run-monitor:
