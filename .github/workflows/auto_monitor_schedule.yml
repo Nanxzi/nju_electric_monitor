@@ -7,7 +7,7 @@ on:
 
 permissions:
   contents: write
-  
+
 jobs:
   run-monitor:
     runs-on: windows-latest
