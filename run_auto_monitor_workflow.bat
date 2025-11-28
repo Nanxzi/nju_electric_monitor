@@ -11,7 +11,7 @@ python tests\test_environment.py
 
 echo.
 echo 【正在运行主脚本...】
-python src\nju_electric_monitor_auto.py
+python src\nju_electric_monitor_workflow.py
 
 echo.
 echo 【检测文件变更并自动提交到GitHub...】

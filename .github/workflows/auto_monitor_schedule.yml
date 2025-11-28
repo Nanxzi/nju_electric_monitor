@@ -11,6 +11,9 @@ permissions:
 jobs:
   run-monitor:
     runs-on: windows-latest
+    env:
+      NJU_USERNAME: ${{ secrets.NJU_USERNAME }}
+      NJU_PASSWORD: ${{ secrets.NJU_PASSWORD }}
 
     steps:
     - name: Check out repository
@@ -38,5 +41,5 @@ jobs:
         python -m pip install --no-index --find-links=.wheels -r requirements.txt || python -m pip install -r requirements.txt
 
     - name: Run Auto Monitor
-      run: |
-        call run_auto_monitor_workflow.bat
+      shell: cmd
+      run: .\run_auto_monitor_workflow.bat
