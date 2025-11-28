@@ -51,12 +51,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
-        # 获取当前分支名
-        $branch = $env:GITHUB_REF.Split('/')[-1]
-        Write-Host "当前分支： $branch"
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
         # 只添加常见的产出目录，避免把临时构建文件（.wheels, __pycache__ 等）加入版本库
-        git add data/ logs/ || Write-Host "没有 data/ 或 logs/ 变更"
-        git commit -m "Auto update: monitor data (run $($env:GITHUB_RUN_ID))" -q || Write-Host "No changes to commit"
-        git push origin "HEAD:$branch" || Write-Host "Push failed"
+        git add data/ logs/ || echo "没有 data/ 或 logs/ 变更"
+        git commit -m "Auto update: monitor data (run $($env:GITHUB_RUN_ID))" -q || echo "No changes to commit"
+        git push origin HEAD:master || echo "Push failed"
