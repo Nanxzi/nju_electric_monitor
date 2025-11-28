@@ -3,7 +3,11 @@ name: Auto Monitor Schedule
 on:
   schedule:
     - cron: "0 1,7,13 * * *" # UTC 时间对应北京时间 9:00, 15:00, 21:00
+  workflow_dispatch:
 
+permissions:
+  contents: write
+  
 jobs:
   run-monitor:
     runs-on: windows-latest
@@ -12,15 +16,26 @@ jobs:
     - name: Check out repository
       uses: actions/checkout@v3
 
+    - name: Cache pip and wheels
+      uses: actions/cache@v4
+      with:
+        path: |
+          ./.wheels
+          ~/.cache/pip
+        key: ${{ runner.os }}-pip-wheels-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-wheels-
+
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.x'
 
-    - name: Install dependencies
+    - name: Install dependencies (use cached wheels when available)
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        python -m pip wheel --wheel-dir=.wheels -r requirements.txt || echo "wheel build failed, will fall back to direct install"
+        python -m pip install --no-index --find-links=.wheels -r requirements.txt || python -m pip install -r requirements.txt
 
     - name: Run Auto Monitor
       run: |
