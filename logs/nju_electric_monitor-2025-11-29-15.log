@@ -1,0 +1,5 @@
+2025-11-29 15:04:53,462 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-11-29 15:04:53,462 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-11-29 15:04:55,272 - INFO - OCR识别器初始化成功
+2025-11-29 15:04:55,272 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-11-29 15:04:55,272 - ERROR - 监控流程出错: EOF when reading a line
