@@ -73,10 +73,12 @@ class NJUElectricMonitor:
         self.setup_ocr()
         
     def setup_logging(self, log_level):
-        """设置日志"""
+        """设置日志（按 年-月-日-时 生成文件名）"""
         log_dir = os.path.join(os.path.dirname(__file__), '..', 'logs')
         os.makedirs(log_dir, exist_ok=True)
-        log_path = os.path.join(log_dir, 'nju_electric_monitor.log')
+        now = datetime.now()
+        log_filename = f"nju_electric_monitor-{now.strftime('%Y-%m-%d-%H')}.log"
+        log_path = os.path.join(log_dir, log_filename)
         logging.basicConfig(
             level=log_level,
             format='%(asctime)s - %(levelname)s - %(message)s',

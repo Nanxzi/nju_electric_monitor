@@ -10,8 +10,8 @@ echo 【正在检查环境...】
 python tests\test_environment.py
 
 echo.
-echo 【正在运行主脚本...】
-python src\nju_electric_monitor_workflow.py
+echo 【运行带包装器的主脚本以便捕获崩溃信息...】
+python src\run_workflow_wrapper.py
 
 echo.
 echo 【workflow提交到GitHub】
