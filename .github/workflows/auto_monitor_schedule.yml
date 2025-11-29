@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   run-monitor:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     env:
       NJU_USERNAME: ${{ secrets.NJU_USERNAME }}
       NJU_PASSWORD: ${{ secrets.NJU_PASSWORD }}
@@ -36,42 +36,52 @@ jobs:
       with:
         python-version: '3.x'
 
+    - name: Install system deps (Chromium + ChromeDriver)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y chromium-browser chromium-chromedriver || true
+
     - name: Install dependencies (use cached wheels when available)
       run: |
         python -m pip install --upgrade pip
         python -m pip wheel --wheel-dir=.wheels -r requirements.txt || echo "wheel build failed, will fall back to direct install"
         python -m pip install --no-index --find-links=.wheels -r requirements.txt || python -m pip install -r requirements.txt
 
-    - name: Run Auto Monitor
-      shell: cmd
-      run: .\run_auto_monitor_workflow.bat
+    - name: Run Auto Monitor (Linux)
+      shell: bash
+      run: |
+        echo "Running Python wrapper"
+        python3 src/run_workflow_wrapper.py
 
     - name: Commit and push changes
-      shell: pwsh
+      if: always()
+      shell: bash
       env:
-        GITHUB_TOKEN: ${{ secrets.GIT_UPDATE_TOKEN }}
+        GIT_UPDATE_TOKEN: ${{ secrets.GIT_UPDATE_TOKEN }}
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
-        # 只添加常见的产出目录，避免把临时构建文件（.wheels, __pycache__ 等）加入版本库
-        git add data/ logs/ || echo "没有 data/ 或 logs/ 变更"
-        git commit -m "Auto update: monitor data (run $($env:GITHUB_RUN_ID))" -q || echo "No changes to commit"
-        git push origin HEAD:master || echo "Push failed"
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        branch=${GITHUB_REF##*/}
+        echo "Current branch: $branch"
+        git add data/ logs/ || echo "no data/ or logs/ changes"
+        git commit -m "Auto update: monitor data (run ${GITHUB_RUN_ID})" -q || echo "No changes to commit"
+        git remote set-url origin https://x-access-token:${GIT_UPDATE_TOKEN}@github.com/${{ github.repository }}.git
+        git push origin "HEAD:$branch" || echo "Push failed"
 
     - name: Show latest wrapper log
       if: always()
-      shell: pwsh
+      shell: bash
       run: |
-        Write-Host "Logs dir content:";
-        Get-ChildItem -Path .\logs -File -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime | ForEach-Object { Write-Host "$_" }
-        $latest = Get-ChildItem -Path .\logs -File -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-        if ($null -ne $latest) {
-          Write-Host "---- BEGIN latest log: $($latest.Name) ----";
-          Get-Content $latest.FullName -Encoding UTF8 | ForEach-Object { Write-Host $_ }
-          Write-Host "---- END latest log ----";
-        } else {
-          Write-Host "No log files found in ./logs"
-        }
+        echo "Logs dir content:";
+        ls -lt logs || true
+        latest=$(ls -t logs 2>/dev/null | head -n1 || true)
+        if [ -n "$latest" ]; then
+          echo "---- BEGIN latest log: $latest ----";
+          sed -n '1,200p' "logs/$latest" || true
+          echo "---- END latest log ----";
+        else
+          echo "No log files found in ./logs"
+        fi
 
     - name: Upload logs as artifact
       if: always()
