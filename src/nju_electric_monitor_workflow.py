@@ -131,9 +131,14 @@ class NJUElectricMonitor:
         
     def setup_driver(self):
         """设置Chrome浏览器驱动"""
+        import platform, shutil
         chrome_options = Options()
         if self.headless_mode:
-            chrome_options.add_argument("--headless")
+            # 在新版本 Chrome 中使用 --headless=new 更稳定
+            try:
+                chrome_options.add_argument("--headless=new")
+            except Exception:
+                chrome_options.add_argument("--headless")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
         chrome_options.add_argument("--disable-gpu")
@@ -142,17 +147,44 @@ class NJUElectricMonitor:
         chrome_options.add_argument("--disable-extensions")
         chrome_options.add_argument("--disable-plugins")
         try:
-            chromedriver_path = os.path.join(os.path.dirname(__file__), '..', 'chromedriver-win64', 'chromedriver.exe')
-            if not os.path.exists(chromedriver_path):
-                raise FileNotFoundError(f"本地ChromeDriver不存在: {chromedriver_path}，请确保chromedriver-win64目录存在并包含chromedriver.exe")
-            service = Service(chromedriver_path)
-            self.driver = webdriver.Chrome(service=service, options=chrome_options)
+            # 根据平台选择 driver：Windows 优先使用仓库内的 chromedriver；Linux/macOS 优先使用系统 PATH 中的 chromedriver
+            driver_path = None
+            system = platform.system().lower()
+            if system.startswith('win'):
+                chromedriver_path = os.path.join(os.path.dirname(__file__), '..', 'chromedriver-win64', 'chromedriver.exe')
+                if os.path.exists(chromedriver_path):
+                    driver_path = chromedriver_path
+            else:
+                # 尝试系统 chromedriver
+                possible = shutil.which('chromedriver') or shutil.which('chromedriver.exe')
+                if possible:
+                    driver_path = possible
+                else:
+                    # 尝试仓库内的可执行（如果存在并可执行）
+                    repo_driver = os.path.join(os.path.dirname(__file__), '..', 'chromedriver-win64', 'chromedriver.exe')
+                    if os.path.exists(repo_driver):
+                        driver_path = repo_driver
+
+            if driver_path:
+                # 在非 Windows 平台上确保可执行权限
+                try:
+                    if not system.startswith('win'):
+                        os.chmod(driver_path, 0o755)
+                except Exception:
+                    pass
+                service = Service(driver_path)
+                self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                self.logger.info(f"使用 ChromeDriver: {driver_path}")
+            else:
+                # 依赖 PATH 中的 chromedriver 或使用 webdriver-manager 等方式
+                self.driver = webdriver.Chrome(options=chrome_options)
+                self.logger.info("使用系统 PATH 中的 ChromeDriver 或内置驱动")
+
             self.wait = WebDriverWait(self.driver, 20)
-            self.logger.info(f"使用本地ChromeDriver: {chromedriver_path}")
         except Exception as e:
             self.logger.error(f"浏览器驱动初始化失败: {e}")
             raise
-    
+        
     def setup_ocr(self):
         """设置OCR识别器"""
         try:
