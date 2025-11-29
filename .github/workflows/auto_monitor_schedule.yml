@@ -57,3 +57,26 @@ jobs:
         git add data/ logs/ || echo "没有 data/ 或 logs/ 变更"
         git commit -m "Auto update: monitor data (run $($env:GITHUB_RUN_ID))" -q || echo "No changes to commit"
         git push origin HEAD:master || echo "Push failed"
+
+    - name: Show latest wrapper log
+      if: always()
+      shell: pwsh
+      run: |
+        Write-Host "Logs dir content:";
+        Get-ChildItem -Path .\logs -File -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object Name, LastWriteTime | ForEach-Object { Write-Host "$_" }
+        $latest = Get-ChildItem -Path .\logs -File -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1
+        if ($null -ne $latest) {
+          Write-Host "---- BEGIN latest log: $($latest.Name) ----";
+          Get-Content $latest.FullName -Encoding UTF8 | ForEach-Object { Write-Host $_ }
+          Write-Host "---- END latest log ----";
+        } else {
+          Write-Host "No log files found in ./logs"
+        }
+
+    - name: Upload logs as artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: nju_electric_monitor-logs-${{ github.run_id }}
+        path: |
+          logs/**
