@@ -1,0 +1,76 @@
+Wrapper start: 2025-11-29T14:47:57.778352
+Unhandled exception in main:
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/selenium/webdriver/common/service.py", line 204, in _start_process
+    self.process = subprocess.Popen(
+                   ~~~~~~~~~~~~~~~~^
+        cmd,
+        ^^^^
+    ...<7 lines>...
+        **self.popen_kw,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/subprocess.py", line 1038, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                        pass_fds, cwd, env,
+                        ^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+                        gid, gids, uid, umask,
+                        ^^^^^^^^^^^^^^^^^^^^^^
+                        start_new_session, process_group)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/subprocess.py", line 1855, in _execute_child
+    self._posix_spawn(args, executable, env, restore_signals, close_fds,
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                      p2cread, p2cwrite,
+                      ^^^^^^^^^^^^^^^^^^
+                      c2pread, c2pwrite,
+                      ^^^^^^^^^^^^^^^^^^
+                      errread, errwrite)
+                      ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/subprocess.py", line 1799, in _posix_spawn
+    self.pid = os.posix_spawn(executable, args, env, **kwargs)
+               ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: '/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../chromedriver-win64/chromedriver.exe'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/run_workflow_wrapper.py", line 40, in <module>
+    main()
+    ~~~~^^
+  File "/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/nju_electric_monitor_workflow.py", line 914, in main
+    monitor = NJUElectricMonitor(config_file)
+  File "/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/nju_electric_monitor_workflow.py", line 73, in __init__
+    self.setup_driver()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/nju_electric_monitor_workflow.py", line 149, in setup_driver
+    self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        DesiredCapabilities.CHROME["browserName"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        keep_alive,
+        ^^^^^^^^^^^
+    )
+    ^
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/selenium/webdriver/chromium/webdriver.py", line 53, in __init__
+    self.service.start()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/selenium/webdriver/common/service.py", line 98, in start
+    self._start_process(self._path)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/selenium/webdriver/common/service.py", line 220, in _start_process
+    raise WebDriverException(
+        f"'{os.path.basename(self._path)}' executable may have wrong permissions."
+    ) from err
+selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable may have wrong permissions.
+
+Current thread 0x00007f33b9ab3b80 [python3] (most recent call first):
+  File "/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/run_workflow_wrapper.py", line 50 in <module>
+Wrapper end: 2025-11-29T14:48:02.049043
