@@ -64,8 +64,16 @@ jobs:
         git config user.email "github-actions[bot]@users.noreply.github.com"
         branch=${GITHUB_REF##*/}
         echo "Current branch: $branch"
-        git add data/ logs/ || echo "no data/ or logs/ changes"
-        git commit -m "Auto update: monitor data (run ${GITHUB_RUN_ID})" -q || echo "No changes to commit"
+
+        # 提交 data/ 目录的变更（如果有）
+        git add -A data/ || echo "no data/ changes"
+        git commit -m "Auto update: data (run ${GITHUB_RUN_ID})" -q || echo "No data changes to commit"
+
+        # 提交 logs/ 目录的变更（如果有）
+        git add -A logs/ || echo "no logs/ changes"
+        git commit -m "Auto update: logs (run ${GITHUB_RUN_ID})" -q || echo "No logs changes to commit"
+
+        # 使用 token 推送到当前分支
         git remote set-url origin https://x-access-token:${GIT_UPDATE_TOKEN}@github.com/${{ github.repository }}.git
         git push origin "HEAD:$branch" || echo "Push failed"
 
@@ -78,7 +86,8 @@ jobs:
         latest=$(ls -t logs 2>/dev/null | head -n1 || true)
         if [ -n "$latest" ]; then
           echo "---- BEGIN latest log: $latest ----";
-          sed -n '1,200p' "logs/$latest" || true
+          # 输出整个日志文件而不限行数
+          cat "logs/$latest" || true
           echo "---- END latest log ----";
         else
           echo "No log files found in ./logs"
