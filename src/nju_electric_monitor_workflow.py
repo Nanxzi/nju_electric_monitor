@@ -19,6 +19,13 @@ import re
 import json
 import os
 from datetime import datetime
+try:
+    # Python 3.9+ 内置 zoneinfo
+    from zoneinfo import ZoneInfo
+    BEIJING_TZ = ZoneInfo("Asia/Shanghai")
+except Exception:
+    # 如果 zoneinfo 不可用，回退到 UTC 并记录（最终仍会生成时间，但无时区偏移）
+    BEIJING_TZ = None
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -77,7 +84,8 @@ class NJUElectricMonitor:
         """设置日志（按 年-月-日-时 生成文件名）"""
         log_dir = os.path.join(os.path.dirname(__file__), '..', 'logs')
         os.makedirs(log_dir, exist_ok=True)
-        now = datetime.now()
+        # 使用北京时间（Asia/Shanghai）作为日志文件名时间来源
+        now = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
         log_filename = f"nju_electric_monitor-{now.strftime('%Y-%m-%d-%H')}.log"
         log_path = os.path.join(log_dir, log_filename)
         logging.basicConfig(
@@ -89,6 +97,12 @@ class NJUElectricMonitor:
             ]
         )
         self.logger = logging.getLogger(__name__)
+        # 尝试设置 matplotlib 字体回退（确保日志可见时记录）
+        try:
+            self.setup_fonts()
+        except Exception:
+            # 字体设置不应阻塞主流程
+            self.logger.debug("字体初始化时出现异常，继续运行")
         
     def load_config(self):
         """加载配置文件：先从仓库根目录的指定文件读取，不覆盖 username/password"""
@@ -203,6 +217,55 @@ class NJUElectricMonitor:
             elif "CUDA" in str(e):
                 self.logger.error("GPU相关问题，尝试使用CPU模式")
             raise
+    
+    def setup_fonts(self):
+        """为 matplotlib 配置可用的中英文字体回退列表，并记录选中的字体供调试。
+
+        优先尝试常见 Windows 字体，然后尝试在 Linux runner 常见的 Noto/WenQuanYi/DejaVu 系列。
+        """
+        try:
+            # 优先级列表（按首选到次选）
+            preferred_fonts = [
+                'Microsoft YaHei',
+                'Segoe UI',
+                'Arial Unicode MS',
+                'Noto Sans CJK SC',
+                'Noto Sans CJK JP',
+                'Noto Sans',
+                'WenQuanYi Micro Hei',
+                'WenQuanYi Zen Hei',
+                'DejaVu Sans',
+                'Arial'
+            ]
+
+            # 使用已导入的 plt 设置 rcParams
+            try:
+                plt.rcParams['font.family'] = 'sans-serif'
+                plt.rcParams['font.sans-serif'] = preferred_fonts
+            except Exception:
+                # 如果 plt 不可用，跳过字体设置
+                self.logger.debug('plt 或 matplotlib 不可用，跳过字体设置')
+
+            # 记录第一个可用字体（用于调试日志）
+            available = None
+            for fname in preferred_fonts:
+                try:
+                    fpath = fm.findfont(fname, fallback_to_default=False)
+                    if fpath and os.path.exists(fpath):
+                        available = fname
+                        break
+                except Exception:
+                    continue
+
+            if available:
+                self.logger.info(f"Matplotlib 字体设置：使用回退字体列表，首选可用字体: {available}")
+            else:
+                self.logger.warning("Matplotlib 未找到首选中英文字体，已设置回退列表，但渲染可能仍使用默认字体")
+        except Exception as e:
+            try:
+                self.logger.warning(f"设置 matplotlib 字体回退时出错: {e}")
+            except Exception:
+                pass
     
     def get_user_credentials(self):
         """获取用户登录凭据（在非交互环境下不提示保存）"""
@@ -713,7 +776,8 @@ class NJUElectricMonitor:
 
             # 构造数据
             data = {
-                "timestamp": datetime.now().isoformat(),
+                # 数据时间使用北京时间并包含时区信息（如果可用）
+                "timestamp": (datetime.now(BEIJING_TZ).isoformat() if BEIJING_TZ else datetime.now().isoformat()),
                 "remaining_electricity": remaining_electricity,
                 "unit": "度"
             }
@@ -793,11 +857,8 @@ class NJUElectricMonitor:
                     ax.spines[spine].set_color(font_color)
                     ax.spines[spine].set_linewidth(1.2)
 
-                # 设置字体（优先微软雅黑）
-                try:
-                    plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'Segoe UI', 'Arial Unicode MS']
-                except Exception:
-                    pass
+                # 使用初始化时配置的字体回退列表
+                pass
 
                 # 图例（可选）
                 # ax.legend(['剩余电量'], loc='upper right', fontsize=11, facecolor='#141e30', edgecolor='none', labelcolor=font_color)
@@ -862,11 +923,8 @@ class NJUElectricMonitor:
                 ax.spines[spine].set_color(font_color)
                 ax.spines[spine].set_linewidth(1.2)
 
-            # 设置字体（优先微软雅黑）
-            try:
-                plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'Segoe UI', 'Arial Unicode MS']
-            except Exception:
-                pass
+            # 使用初始化时配置的字体回退列表
+            pass
 
             # 调整边距
             plt.tight_layout(rect=[0, 0, 1, 0.97])

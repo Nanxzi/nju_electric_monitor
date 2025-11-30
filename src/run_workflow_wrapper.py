@@ -4,6 +4,11 @@ import sys
 import os
 import traceback
 from datetime import datetime
+try:
+    from zoneinfo import ZoneInfo
+    BEIJING_TZ = ZoneInfo('Asia/Shanghai')
+except Exception:
+    BEIJING_TZ = None
 import json
 
 # 启用 faulthandler 全局输出（默认输出到 stderr）
@@ -12,12 +17,14 @@ import json
 # 确保 logs 目录存在
 log_dir = os.path.join(os.path.dirname(__file__), '..', 'logs')
 os.makedirs(log_dir, exist_ok=True)
-log_path = os.path.join(log_dir, f'workflow_wrapper_{datetime.now().strftime("%Y%m%d_%H%M%S")}.log')
+log_time = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
+log_path = os.path.join(log_dir, f'workflow_wrapper_{log_time.strftime("%Y%m%d_%H%M%S")}.log')
 
 try:
     # 将 stdout/stderr 同步到日志文件，避免丢失信息
     with open(log_path, 'w', encoding='utf-8', errors='replace') as lf:
-        lf.write(f'Wrapper start: {datetime.now().isoformat()}\n')
+        start_time = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
+        lf.write(f'Wrapper start: {start_time.isoformat()}\n')
         lf.flush()
         # 使用 faulthandler 输出到文件以便捕获 native crash
         try:
@@ -32,8 +39,8 @@ try:
             lf.write('\n=== ENVIRONMENT SUMMARY ===\n')
             keys = sorted(list(os.environ.keys()))
             lf.write('Environment variable keys (count=%d):\n' % len(keys))
-            # 只打印前 200 个 key 名以避免日志过大
-            for k in keys[:200]:
+            # 只打印前 10 个 key 名以避免日志过大
+            for k in keys[:10]:
                 lf.write(f"- {k}\n")
             lf.write(f"NJU_USERNAME set: {'yes' if os.environ.get('NJU_USERNAME') else 'no'}\n")
             lf.write(f"NJU_PASSWORD set: {'yes' if os.environ.get('NJU_PASSWORD') else 'no'}\n")
@@ -90,6 +97,70 @@ try:
             lf.write('Failed to record config summary\n')
             lf.flush()
 
+        # 字体诊断：尝试列出 matplotlib FontManager 条目、系统字体文件，并测试首选字体的 findfont 结果
+        try:
+            lf.write('\n=== FONT DIAGNOSTICS ===\n')
+            import importlib
+            fm = None
+            try:
+                fm = importlib.import_module('matplotlib.font_manager')
+            except Exception as e:
+                lf.write(f'matplotlib.font_manager not available: {e}\n')
+                fm = None
+
+            if fm is not None:
+                try:
+                    # findSystemFonts 可能返回大量结果，限制输出数量
+                    try:
+                        system_fonts = fm.findSystemFonts(fontpaths=None, fontext='ttf')
+                        lf.write(f'Found system fonts (ttf) count: {len(system_fonts)}\n')
+                        for fpath in system_fonts[:50]:
+                            lf.write(f'- {fpath}\n')
+                    except Exception as e:
+                        lf.write(f'fm.findSystemFonts failed: {e}\n')
+
+                    try:
+                        lf.write('\nFontManager samples (name -> path):\n')
+                        ttflist = getattr(fm.fontManager, 'ttflist', [])
+                        for entry in ttflist[:50]:
+                            try:
+                                name = getattr(entry, 'name', None) or getattr(entry, 'fname', None)
+                                fname = getattr(entry, 'fname', None)
+                                lf.write(f"{name} -> {fname}\n")
+                            except Exception:
+                                continue
+                    except Exception as e:
+                        lf.write(f'FontManager listing failed: {e}\n')
+
+                    preferred = ['Microsoft YaHei', 'Segoe UI', 'Arial Unicode MS', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', 'WenQuanYi Zen Hei', 'DejaVu Sans']
+                    lf.write('\nPreferred font find results:\n')
+                    for p in preferred:
+                        try:
+                            fp = fm.findfont(p, fallback_to_default=False)
+                            lf.write(f"findfont('{p}') -> {fp}\n")
+                        except Exception as e:
+                            lf.write(f"findfont('{p}') failed: {e}\n")
+                    lf.flush()
+                except Exception as e:
+                    lf.write(f'Error during matplotlib font diagnostics: {e}\n')
+                    lf.flush()
+            else:
+                lf.write('Skipping matplotlib font diagnostics because matplotlib.font_manager is unavailable\n')
+                lf.flush()
+
+            # 在 Linux 环境下尝试运行 fc-list 获取 fontconfig 列表（只抓取部分输出防止日志过大）
+            try:
+                import subprocess
+                out = subprocess.check_output(['fc-list', '--format', '%{family} - %{file}\n'], stderr=subprocess.STDOUT).decode('utf-8', errors='replace')
+                lf.write('\nfc-list output sample (truncated to 10000 chars):\n')
+                lf.write(out[:10000] + '\n')
+            except Exception as e:
+                lf.write(f'fc-list failed or not available: {e}\n')
+            lf.flush()
+        except Exception:
+            lf.write('Font diagnostics failed\n')
+            lf.flush()
+
         # 将 Python 的 stdout/stderr 重定向到日志文件，捕获第三方库输出
         import contextlib
         with contextlib.redirect_stdout(lf), contextlib.redirect_stderr(lf):
@@ -119,7 +190,8 @@ try:
                     lf.write('faulthandler.dump_traceback failed\n')
                 raise
             finally:
-                lf.write(f'Wrapper end: {datetime.now().isoformat()}\n')
+                end_time = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
+                lf.write(f'Wrapper end: {end_time.isoformat()}\n')
                 lf.flush()
 
 except Exception:
