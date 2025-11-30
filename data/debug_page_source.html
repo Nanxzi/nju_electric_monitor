@@ -27,7 +27,7 @@
 
 </script><link href="/authserver/custom/css/login_1_0_3.css" rel="stylesheet"><link href="/authserver/custom/css/iCheck/custom.css" rel="stylesheet"><link href="/authserver/custom/css/qrcode-login.css" rel="stylesheet"><script type="text/javascript">
     var secure = "true";
-    var pwdDefaultEncryptSalt = "V0UfcRJiviXh9PdS";
+    var pwdDefaultEncryptSalt = "lgQ6h9XljPkAfXrg";
 </script></head>
 
 
@@ -100,28 +100,26 @@
                 <div tabid="01" class="auth_tab_content_item" style="display: block;">
                     <form id="casLoginForm" class="fm-v clearfix amp-login-form" role="form" action="/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" method="post">
                         
-                            <span id="msg1" class="auth_error" style="top:-19px;">Invalid the verification code</span>
-                        
 
                         <p>
                             <i class="auth_icon auth_icon_user"></i>
-                            <input id="username" name="username" placeholder="账号 Username" class="auth_input" type="text" value="602025250064">
-                            <span id="usernameError" style="display:none;" class="auth_error">Please input username</span>
+                            <input id="username" name="username" placeholder="账号 Username" class="auth_input" type="text" value="">
+                            <span id="usernameError" style="display: none;" class="auth_error">Please input username</span>
                         </p>
 
                         <p>
                             <i class="auth_icon auth_icon_pwd"></i>
                             <input id="password" placeholder="密码 Password" class="auth_input" type="password" value="" autocomplete="off">
-			    <input id="passwordEncrypt" name="password" style="display:none;" type="text" value="A+UPncRpju+6ZjZLlOlt0o2CV4olVKWkCOE0tkFQssRVDTRpAuP8QmUAJYlj/57QJ3Agd83nF3rZB7sqrrfQ/ptbUtjrSkg4ctuY5Wd4s8w=">
-                            <span id="passwordError" style="" class="auth_error">Please input password</span>
+			    <input id="passwordEncrypt" name="password" style="display:none;" type="text" value="">
+                            <span id="passwordError" style="display: none;" class="auth_error">Please input password</span>
                         </p>
 
                         <p id="cpatchaDiv">
     <i class="auth_icon auth_icon_yzm"></i>
     <input type="text" placeholder="验证码 Verification code" id="captchaResponse" name="captchaResponse" class="auth_input captcha-input">
-    <img id="captchaImg" class="captcha-img" alt="Verification code" title="Verification code" src="captcha.html?ts=303">
+    <img id="captchaImg" class="captcha-img" alt="Verification code" title="Verification code" src="captcha.html?ts=574">
             <span style="cursor: pointer;color: #1dadff;margin-left: 2px;" id="changeCaptcha" class="chk_text"></span>
-    <span id="cpatchaError" style="display:none;" class="auth_error">Please input the verification code</span>
+    <span id="cpatchaError" style="" class="auth_error">Please input the verification code</span>
 </p>
 
 
@@ -154,12 +152,12 @@
 							</div>
 						</div>
 
-                        <input type="hidden" name="lt" value="LT-9819365-HKirGvgXT6FajQ0PfBTC7zhaU7WVTR1764473500871-s6P1-cas">
+                        <input type="hidden" name="lt" value="LT-9823487-dh1hAxOOPnUJYpVbd0UAK6xf5V3Cf01764476063170-s6P1-cas">
                         <input type="hidden" name="dllt" value="userNamePasswordLogin">
-                        <input type="hidden" name="execution" value="e2s21">
+                        <input type="hidden" name="execution" value="e2s1">
                         <input type="hidden" name="_eventId" value="submit">
                         <input type="hidden" name="rmShown" value="1">
-			<input type="hidden" id="pwdDefaultEncryptSalt" value="V0UfcRJiviXh9PdS">
+			<input type="hidden" id="pwdDefaultEncryptSalt" value="lgQ6h9XljPkAfXrg">
                     </form>
                 </div>
                 
@@ -171,10 +169,10 @@
 		<div class="ewm_wrap">
 		<div class="scan_box">
 			<form id="qrLoginForm" role="form" action="/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" method="post">
-				<span id="msg" class="auth_error" style="width: 100%;position: absolute;text-align: center;color: red;">Invalid the verification code</span>
+				
 				<span id="qr_code">
 					 <div class="scan_pic scan_code_pic">
-						<img id="qr_img" src="/authserver/qrCode/code?uuid=QR-7ZAGudx1FfVudOCXGB5" width="280">
+						<img id="qr_img" src="/authserver/qrCode/code?uuid=QR-xpQhXZaTnqRehIBX2iN" width="280">
 					 </div>     
 				</span>
 
@@ -189,7 +187,7 @@
 
 				<span id="qr_invalid" style="display: none">
 					<div class="scan_pic scan_code_pic scan_code_refresh">
-						<img id="invalid_img" src="/authserver/qrCode/code?uuid=QR-7ZAGudx1FfVudOCXGB5" width="280">
+						<img id="invalid_img" src="/authserver/qrCode/code?uuid=QR-xpQhXZaTnqRehIBX2iN" width="280">
 						<div class="scan_Invalid">
 							<img id="qr_refresh" width="58" alt="" src="/authserver/custom/images/refresh.png" style="width: 58px;height: 58px;" class="scan_invalid_icon">
 						</div>
@@ -198,10 +196,10 @@
 				   
 				</span>
 
-				<input type="hidden" name="lt" value="LT-9819365-HKirGvgXT6FajQ0PfBTC7zhaU7WVTR1764473500871-s6P1-cas">
-				<input type="hidden" name="uuid" id="uuid" value="QR-7ZAGudx1FfVudOCXGB5">
+				<input type="hidden" name="lt" value="LT-9823487-dh1hAxOOPnUJYpVbd0UAK6xf5V3Cf01764476063170-s6P1-cas">
+				<input type="hidden" name="uuid" id="uuid" value="QR-xpQhXZaTnqRehIBX2iN">
 				<input type="hidden" name="dllt" value="qrLogin">
-				<input type="hidden" name="execution" value="e2s21">
+				<input type="hidden" name="execution" value="e2s1">
 				<input type="hidden" name="_eventId" value="submit">
 				<input type="hidden" name="rmShown" value="1">
 			</form>
@@ -271,7 +269,7 @@
 
     // 选中tab框
 
-    var dllt = 'userNamePasswordLogin';
+    var dllt = '';
     if (dllt != '' && dllt == 'dynamicLogin') {
         selectLi($("#dyLogin"));
     } else if (dllt != '' && dllt == 'qrLogin'){
