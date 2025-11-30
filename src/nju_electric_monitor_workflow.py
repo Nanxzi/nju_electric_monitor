@@ -205,20 +205,22 @@ class NJUElectricMonitor:
             raise
     
     def get_user_credentials(self):
-        """获取用户登录凭据"""
+        """获取用户登录凭据（在非交互环境下不提示保存）"""
+        import sys
+        # 如果已从环境变量或配置中得到凭据，则不会提示输入
         if not self.username:
-            self.username = input("请输入用户名: ").strip()
+            # 仅在交互式终端才请求输入
+            if sys.stdin.isatty():
+                self.username = input("请输入用户名: ").strip()
+            else:
+                self.logger.warning("非交互环境且未提供用户名，无法继续")
+                return
         if not self.password:
-            self.password = getpass.getpass("请输入密码: ")
-        
-        # 询问是否保存凭据
-        if not self.config.get("username") or not self.config.get("password"):
-            save_credentials = input("是否保存登录凭据到配置文件？(y/n): ").strip().lower()
-            if save_credentials == 'y':
-                self.save_config()
-                self.logger.info("登录凭据已保存到配置文件")
-        
-        self.logger.info("已获取登录凭据")
+            if sys.stdin.isatty():
+                self.password = getpass.getpass("请输入密码: ")
+            else:
+                self.logger.warning("非交互环境且未提供密码，无法继续")
+                return
     
     def wait_for_login_form(self):
         """等待登录表单加载"""
@@ -939,7 +941,8 @@ def main():
     """主函数"""
     import sys
     
-    config_file = "config.json"
+    # 在 workflow 环境中使用 config_workflow.json（由 workflow 可注入 secrets）
+    config_file = "config_workflow.json"
     if len(sys.argv) > 1:
         config_file = sys.argv[1]
     
