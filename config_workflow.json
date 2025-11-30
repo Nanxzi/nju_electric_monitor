@@ -3,7 +3,7 @@
     "password": "",
     "auto_login": true,
     "headless_mode": true,
-    "captcha_retry_count": 20,
+    "captcha_retry_count": 50,
     "captcha_confidence_threshold": 0.4,
     "save_captcha_images": true,
     "log_level": "INFO"
