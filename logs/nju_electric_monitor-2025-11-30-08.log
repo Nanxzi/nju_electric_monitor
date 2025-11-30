@@ -1,0 +1,250 @@
+2025-11-30 08:21:32,830 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-11-30 08:21:32,830 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-11-30 08:21:34,473 - INFO - OCR识别器初始化成功
+2025-11-30 08:21:34,473 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-11-30 08:21:34,473 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-11-30 08:21:46,785 - INFO - 等待登录表单加载...
+2025-11-30 08:21:46,794 - INFO - 登录表单已加载
+2025-11-30 08:21:46,794 - INFO - 开始填写登录表单...
+2025-11-30 08:21:46,857 - INFO - 用户名填写完成
+2025-11-30 08:21:46,923 - INFO - 密码填写完成
+2025-11-30 08:21:46,923 - INFO - 检查是否有验证码...
+2025-11-30 08:21:46,923 - INFO - 查找验证码图片...
+2025-11-30 08:21:46,941 - INFO - 找到验证码图片，开始截图...
+2025-11-30 08:21:46,994 - INFO - 验证码图片截取成功
+2025-11-30 08:21:46,994 - INFO - 开始填写登录表单...
+2025-11-30 08:21:47,057 - INFO - 用户名填写完成
+2025-11-30 08:21:47,116 - INFO - 密码填写完成
+2025-11-30 08:21:47,117 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-11-30 08:21:47,117 - INFO - 验证码识别尝试 1/50
+2025-11-30 08:21:47,117 - INFO - 开始识别验证码...
+2025-11-30 08:21:47,263 - INFO - 验证码识别结果: bhK2
+2025-11-30 08:21:47,263 - INFO - 查找验证码输入框...
+2025-11-30 08:21:47,323 - INFO - 验证码填写完成
+2025-11-30 08:21:47,323 - INFO - 验证码填写完成，点击登录按钮...
+2025-11-30 08:21:47,323 - INFO - 查找并点击登录按钮...
+2025-11-30 08:21:51,392 - INFO - 已点击登录按钮
+2025-11-30 08:21:58,403 - INFO - 未检测到无效验证码提示，验证码通过
+2025-11-30 08:21:58,403 - INFO - 查找并点击登录按钮...
+2025-11-30 08:21:58,408 - ERROR - 未找到登录按钮
+2025-11-30 08:21:58,408 - ERROR - 点击登录按钮失败
+2025-11-30 08:21:58,408 - INFO - 等待登录成功...
+2025-11-30 08:22:03,413 - INFO - 登录可能成功，继续下一步...
+2025-11-30 08:22:03,413 - INFO - 查找'去充值'按钮...
+2025-11-30 08:22:05,153 - INFO - 已点击充值按钮
+2025-11-30 08:22:08,153 - INFO - 开始提取剩余电量信息...
+2025-11-30 08:22:08,157 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-11-30 08:22:08,175 - INFO - 找到电量信息元素: 持卡人姓名：吴相民
+2025-11-30 08:22:08,175 - WARNING - 未在元素中找到标准格式的电量信息
+2025-11-30 08:22:08,187 - INFO - 找到i标签中的电量信息: 吴相民
+2025-11-30 08:22:08,187 - WARNING - i标签中未找到标准格式的电量信息
+2025-11-30 08:22:08,187 - WARNING - 未找到i标签中的电量信息
+2025-11-30 08:22:08,190 - INFO - 在页面源码中查找电量信息...
+2025-11-30 08:22:08,190 - INFO - 从页面源码中提取到剩余电量: 365.77 度
+2025-11-30 08:22:08,193 - INFO - 数据已保存: 365.77 度
+2025-11-30 08:22:08,220 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,222 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,223 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,224 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,224 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,225 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,226 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,226 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,231 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,232 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,240 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,241 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,241 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,241 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,242 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,242 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,242 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,243 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,243 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,245 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,251 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,253 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,324 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,324 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,324 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,325 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,325 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,325 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,326 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,326 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,326 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,327 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,329 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,329 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,330 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,330 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,334 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,334 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,335 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,336 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,336 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,337 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,338 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,339 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,340 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,342 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,343 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,345 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,346 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,347 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,354 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,354 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,357 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,357 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,358 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,359 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,360 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,360 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,361 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,362 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,363 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,365 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,368 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,426 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,426 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,427 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,427 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,427 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,428 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,428 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,428 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,429 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,429 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,431 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,431 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,432 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,433 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,436 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,437 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,437 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,438 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,439 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,439 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,440 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,441 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,443 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,444 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,446 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,447 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,448 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,450 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,456 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,456 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,459 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,460 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,460 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,461 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,462 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,463 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,464 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,464 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,465 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,468 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,470 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,471 - INFO - 电量变化曲线图已保存到: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/electricity_trend.png
+2025-11-30 08:22:08,488 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,488 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,489 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,490 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,490 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,491 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,492 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,493 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,496 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,496 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,504 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,504 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,505 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,505 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,505 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,506 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,506 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,506 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,509 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,513 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,513 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,575 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,575 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,576 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,576 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,577 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,577 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,577 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,578 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,578 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,580 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,580 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,581 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,581 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,584 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,585 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,586 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,587 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,587 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,588 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,589 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,590 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,591 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,593 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,594 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,596 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,597 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,598 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,603 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,604 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,606 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,607 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,608 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,609 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,609 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,610 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,611 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,612 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,614 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,616 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,674 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,674 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,675 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,675 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,676 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,676 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,676 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,677 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,677 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,679 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,679 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,680 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,680 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,683 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,684 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,685 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,685 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,686 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,687 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,687 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,688 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,690 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,691 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,693 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,694 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,696 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,697 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,702 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,702 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,705 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,706 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,706 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,707 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,708 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,709 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,710 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,710 - WARNING - findfont: Generic family 'sans-serif' not found because none of the following families were found: Microsoft YaHei, Segoe UI, Arial Unicode MS
+2025-11-30 08:22:08,713 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,715 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-11-30 08:22:08,716 - INFO - 最近20次电量变化曲线图已保存到: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/recent_20_changes.png
+2025-11-30 08:22:08,716 - INFO - 监控流程完成
