@@ -1,0 +1,3 @@
+# 专用于 GitHub Actions/CI 的依赖
+-e requirements.txt
+pytesseract
