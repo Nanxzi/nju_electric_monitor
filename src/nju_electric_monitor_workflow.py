@@ -37,6 +37,7 @@ import logging
 from PIL import Image
 import io
 import easyocr
+import pytesseract
 import getpass
 
 import pandas as pd
@@ -354,66 +355,103 @@ class NJUElectricMonitor:
             return None
     
     def recognize_captcha(self, captcha_img):
-        """识别验证码"""
+        """识别验证码（集成 easyocr + pytesseract 多引擎投票）"""
         try:
             if not captcha_img:
                 return None
-            
-            self.logger.info("开始识别验证码...")
-            
-            # 图像预处理
-            processed_img = self.preprocess_captcha_image(captcha_img)
-            
-            # 将PIL Image转换为numpy数组
+
+            self.logger.info("开始识别验证码...（easyocr + pytesseract）")
             import numpy as np
+            processed_img = self.preprocess_captcha_image(captcha_img)
             img_array = np.array(processed_img)
-            
-            # 方法1：使用OCR识别验证码
-            results = self.ocr_reader.readtext(img_array)
-            
-            if results:
-                # 提取识别结果
-                captcha_text = ""
+
+            # 记录所有候选结果
+            candidates = []
+
+            # 方法1：easyocr 识别
+            try:
+                results = self.ocr_reader.readtext(img_array)
                 for (bbox, text, prob) in results:
-                    if prob > self.captcha_confidence_threshold:  # 降低置信度阈值
-                        captcha_text += text.strip()
-                
-                # 清理识别结果，只保留字母和数字
-                captcha_text = re.sub(r'[^a-zA-Z0-9]', '', captcha_text)
-                
-                if captcha_text:
-                    self.logger.info(f"验证码识别结果: {captcha_text}")
-                    return captcha_text
-                else:
-                    self.logger.warning("验证码识别结果为空")
-            
-            # 方法2：尝试不同的图像处理参数
-            self.logger.info("尝试不同的图像处理参数...")
+                    text_clean = re.sub(r'[^a-zA-Z0-9]', '', text.strip())
+                    candidates.append({
+                        'engine': 'easyocr',
+                        'text': text_clean,
+                        'prob': prob,
+                        'raw': text
+                    })
+                self.logger.info(f"easyocr 结果: {[f'{c['text']}({c['prob']:.2f})' for c in candidates if c['engine']=='easyocr']}")
+            except Exception as e:
+                self.logger.warning(f"easyocr 识别主图失败: {e}")
+
+            # 方法2：pytesseract 识别
+            try:
+                import PIL.Image
+                tesseract_text = pytesseract.image_to_string(processed_img, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+                tesseract_text = tesseract_text.strip().replace(' ', '')
+                tesseract_text = re.sub(r'[^a-zA-Z0-9]', '', tesseract_text)
+                if tesseract_text:
+                    candidates.append({
+                        'engine': 'tesseract',
+                        'text': tesseract_text,
+                        'prob': 0.5,  # pytesseract 无置信度，设为中等
+                        'raw': tesseract_text
+                    })
+                self.logger.info(f"tesseract 结果: {tesseract_text}")
+            except Exception as e:
+                self.logger.warning(f"pytesseract 识别主图失败: {e}")
+
+            # 方法3：所有预处理图像分别识别
             alternative_images = self.generate_alternative_images(captcha_img)
-            
             for i, alt_img in enumerate(alternative_images):
                 try:
-                    # 转换为numpy数组
                     alt_img_array = np.array(alt_img)
-                    results = self.ocr_reader.readtext(alt_img_array)
-                    if results:
-                        captcha_text = ""
+                    # easyocr
+                    try:
+                        results = self.ocr_reader.readtext(alt_img_array)
                         for (bbox, text, prob) in results:
-                            if prob > self.captcha_confidence_threshold:  # 进一步降低阈值
-                                captcha_text += text.strip()
-                        
-                        captcha_text = re.sub(r'[^a-zA-Z0-9]', '', captcha_text)
-                        if len(captcha_text) == 4:
-                            self.logger.info(f"方法{i+2}识别结果: {captcha_text}")
-                            return captcha_text
-                        else:
-                            self.logger.info(f"方法{i+2}识别结果长度不为4，自动重试。实际结果: {captcha_text}")
+                            text_clean = re.sub(r'[^a-zA-Z0-9]', '', text.strip())
+                            candidates.append({
+                                'engine': f'easyocr_alt{i+1}',
+                                'text': text_clean,
+                                'prob': prob,
+                                'raw': text
+                            })
+                        self.logger.info(f"easyocr alt{i+1} 结果: {[f'{c['text']}({c['prob']:.2f})' for c in candidates if c['engine']==f'easyocr_alt{i+1}']}")
+                    except Exception as e:
+                        self.logger.warning(f"easyocr 识别 alt{i+1} 失败: {e}")
+                    # tesseract
+                    try:
+                        tesseract_text = pytesseract.image_to_string(alt_img, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+                        tesseract_text = tesseract_text.strip().replace(' ', '')
+                        tesseract_text = re.sub(r'[^a-zA-Z0-9]', '', tesseract_text)
+                        if tesseract_text:
+                            candidates.append({
+                                'engine': f'tesseract_alt{i+1}',
+                                'text': tesseract_text,
+                                'prob': 0.5,
+                                'raw': tesseract_text
+                            })
+                        self.logger.info(f"tesseract alt{i+1} 结果: {tesseract_text}")
+                    except Exception as e:
+                        self.logger.warning(f"pytesseract 识别 alt{i+1} 失败: {e}")
                 except Exception as e:
-                    self.logger.warning(f"方法{i+2}识别失败: {e}")
-            
-            self.logger.warning("所有识别方法都失败了")
-            return None
-                
+                    self.logger.warning(f"预处理图像 alt{i+1} 识别流程失败: {e}")
+
+            # 选取最优结果：优先长度为4且置信度最高的
+            best = None
+            for c in sorted(candidates, key=lambda x: (len(x['text'])==4, x['prob']), reverse=True):
+                if len(c['text']) == 4:
+                    best = c
+                    break
+            if not best and candidates:
+                # 没有长度为4的，取置信度最高的非空
+                best = max(candidates, key=lambda x: x['prob'])
+            if best and best['text']:
+                self.logger.info(f"最终验证码识别结果: {best['text']} (engine={best['engine']}, prob={best['prob']})")
+                return best['text']
+            else:
+                self.logger.warning("所有识别方法都失败了")
+                return None
         except Exception as e:
             self.logger.error(f"识别验证码时出错: {e}")
             return None
