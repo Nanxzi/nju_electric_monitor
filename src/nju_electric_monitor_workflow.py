@@ -815,7 +815,7 @@ class NJUElectricMonitor:
             # 构造数据
             data = {
                 # 数据时间使用北京时间并包含时区信息（如果可用）
-                "timestamp": (datetime.now(BEIJING_TZ).isoformat() if BEIJING_TZ else datetime.now().isoformat()),
+                "timestamp": (datetime.now(BEIJING_TZ).replace(tzinfo=None).isoformat() if BEIJING_TZ else datetime.now().isoformat()),
                 "remaining_electricity": remaining_electricity,
                 "unit": "度"
             }
