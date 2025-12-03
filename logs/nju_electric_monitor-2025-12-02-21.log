@@ -1,0 +1,63 @@
+2025-12-02 13:35:32,499 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-02 13:35:33,769 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-02 13:35:33,770 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-02 13:35:35,382 - INFO - OCR识别器初始化成功
+2025-12-02 13:35:35,382 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-02 13:35:35,382 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-02 13:35:46,193 - INFO - 等待登录表单加载...
+2025-12-02 13:35:46,203 - INFO - 登录表单已加载
+2025-12-02 13:35:46,203 - INFO - 开始填写登录表单...
+2025-12-02 13:35:46,268 - INFO - 用户名填写完成
+2025-12-02 13:35:46,335 - INFO - 密码填写完成
+2025-12-02 13:35:46,335 - INFO - 检查是否有验证码...
+2025-12-02 13:35:46,335 - INFO - 查找验证码图片...
+2025-12-02 13:35:46,354 - INFO - 找到验证码图片，开始截图...
+2025-12-02 13:35:46,415 - INFO - 验证码图片截取成功
+2025-12-02 13:35:46,415 - INFO - 开始填写登录表单...
+2025-12-02 13:35:46,481 - INFO - 用户名填写完成
+2025-12-02 13:35:46,542 - INFO - 密码填写完成
+2025-12-02 13:35:46,543 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-02 13:35:46,543 - INFO - 验证码识别尝试 1/30
+2025-12-02 13:35:46,543 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-02 13:35:46,685 - INFO - easyocr 结果: ['QZ1f(0.78)']
+2025-12-02 13:35:46,852 - INFO - tesseract 结果: Qz1f
+2025-12-02 13:35:46,917 - INFO - easyocr alt1 结果: ['071(0.34)']
+2025-12-02 13:35:47,011 - INFO - tesseract alt1 结果: Qz1f
+2025-12-02 13:35:47,070 - INFO - easyocr alt2 结果: ['071(0.34)']
+2025-12-02 13:35:47,163 - INFO - tesseract alt2 结果: Qz1f
+2025-12-02 13:35:47,324 - INFO - easyocr alt3 结果: ['071f(0.38)']
+2025-12-02 13:35:47,432 - INFO - tesseract alt3 结果: Qzif
+2025-12-02 13:35:47,492 - INFO - easyocr alt4 结果: ['021(0.52)']
+2025-12-02 13:35:47,587 - INFO - tesseract alt4 结果: Qz1f
+2025-12-02 13:35:47,646 - INFO - easyocr alt5 结果: ['071(0.73)']
+2025-12-02 13:35:47,745 - INFO - tesseract alt5 结果: QOz1f
+2025-12-02 13:35:47,745 - INFO - 最终验证码识别结果: QZ1f (engine=easyocr, prob=0.7787362337112427)
+2025-12-02 13:35:47,745 - INFO - 查找验证码输入框...
+2025-12-02 13:35:47,804 - INFO - 验证码填写完成
+2025-12-02 13:35:47,804 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-02 13:35:47,804 - INFO - 查找并点击登录按钮...
+2025-12-02 13:35:51,614 - INFO - 已点击登录按钮
+2025-12-02 13:35:58,625 - INFO - 未检测到无效验证码提示，验证码通过
+2025-12-02 13:35:58,625 - INFO - 查找并点击登录按钮...
+2025-12-02 13:35:58,630 - ERROR - 未找到登录按钮
+2025-12-02 13:35:58,630 - ERROR - 点击登录按钮失败
+2025-12-02 13:35:58,630 - INFO - 等待登录成功...
+2025-12-02 13:36:03,635 - INFO - 登录可能成功，继续下一步...
+2025-12-02 13:36:03,635 - INFO - 查找'去充值'按钮...
+2025-12-02 13:36:05,140 - INFO - 已点击充值按钮
+2025-12-02 13:36:08,140 - INFO - 开始提取剩余电量信息...
+2025-12-02 13:36:08,144 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-02 13:36:08,162 - INFO - 找到电量信息元素: 持卡人姓名：吴相民
+2025-12-02 13:36:08,162 - WARNING - 未在元素中找到标准格式的电量信息
+2025-12-02 13:36:08,175 - INFO - 找到i标签中的电量信息: 吴相民
+2025-12-02 13:36:08,175 - WARNING - i标签中未找到标准格式的电量信息
+2025-12-02 13:36:08,175 - WARNING - 未找到i标签中的电量信息
+2025-12-02 13:36:08,178 - INFO - 在页面源码中查找电量信息...
+2025-12-02 13:36:08,178 - INFO - 从页面源码中提取到剩余电量: 356.36 度
+2025-12-02 13:36:08,180 - INFO - 数据已保存: 356.36 度
+2025-12-02 13:36:08,184 - WARNING - 生成电量曲线图PNG失败: unconverted data remains when parsing with format "%Y-%m-%dT%H:%M:%S.%f": "+08:00", at position 297. You might want to try:
+    - passing `format` if your strings have a consistent format;
+    - passing `format='ISO8601'` if your strings are all ISO8601 but not necessarily in exactly the same format;
+    - passing `format='mixed'`, and the format will be inferred for each element individually. You might want to use `dayfirst` alongside this.
+2025-12-02 13:36:08,184 - ERROR - 保存数据时出错: cannot access local variable 'df_sorted' where it is not associated with a value
+2025-12-02 13:36:08,185 - INFO - 监控流程完成

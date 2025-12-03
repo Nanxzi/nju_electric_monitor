@@ -303,7 +303,12 @@
 {"timestamp": "2025-12-02T09:03:29.343075", "remaining_electricity": 358.48, "unit": "度"}
 <<<<<<< HEAD
 {"timestamp": "2025-12-02T13:12:17.617763+08:00", "remaining_electricity": 356.36, "unit": "度"}
+<<<<<<< HEAD
 =======
 {"timestamp": "2025-12-02T15:03:22.018050", "remaining_electricity": 356.36, "unit": "度"}
 >>>>>>> cbb4d15 (2025-12-02 15:03 自动提交电费变更)
 {"timestamp": "2025-12-03T09:03:24.100938", "remaining_electricity": 354.41, "unit": "度"}
+=======
+{"timestamp": "2025-12-02T15:18:59.866546+08:00", "remaining_electricity": 356.36, "unit": "度"}
+{"timestamp": "2025-12-02T21:36:08.178324+08:00", "remaining_electricity": 356.36, "unit": "度"}
+>>>>>>> c54098db967fd60c8161dc76578b25974485a8c6
