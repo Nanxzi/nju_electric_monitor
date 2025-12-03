@@ -843,15 +843,17 @@ class NJUElectricMonitor:
             # 用 pandas 统一时间戳格式
             import pandas as pd
             df = pd.DataFrame(rows)
-            # 统一解析为 Asia/Shanghai 时区
+            # 统一解析为 Asia/Shanghai 时区（先解析，后去除时区）
             df["time"] = pd.to_datetime(df["time"], errors="coerce")
-            # 如果没有时区，则加上 Asia/Shanghai
+            # 如果有时区，先转为 Asia/Shanghai，再去除时区
             if df["time"].dt.tz is None or str(df["time"].dt.tz) == "None":
-                df["time"] = df["time"].dt.tz_localize("Asia/Shanghai")
+                df["time"] = df["time"].dt.tz_localize("Asia/Shanghai", ambiguous='NaT', nonexistent='NaT')
             else:
                 df["time"] = df["time"].dt.tz_convert("Asia/Shanghai")
-            # 格式化为 ISO8601 且带 +08:00
-            df["time"] = df["time"].dt.strftime('%Y-%m-%dT%H:%M:%S.%f+08:00')
+            # 去除时区信息
+            df["time"] = df["time"].dt.tz_localize(None)
+            # 格式化为 "YYYY-MM-DDTHH:MM:SS.ssssss"（无时区）
+            df["time"] = df["time"].dt.strftime('%Y-%m-%dT%H:%M:%S.%f')
             # 写回 CSV
             df.to_csv(csv_path, index=False, header=True, columns=["time", "num", "unit"])
 
