@@ -845,6 +845,10 @@ class NJUElectricMonitor:
             df = pd.DataFrame(rows)
             # 统一解析为 Asia/Shanghai 时区（先解析，后去除时区）
             df["time"] = pd.to_datetime(df["time"], errors="coerce")
+            # 确保在读取 CSV 文件后，时间列的时区信息被正确处理
+            df['time'] = pd.to_datetime(df['time'], errors='coerce')
+            if df['time'].dt.tz is not None:
+                df['time'] = df['time'].dt.tz_localize(None)
             # 如果有时区，先转为 Asia/Shanghai，再去除时区
             if df["time"].dt.tz is None or str(df["time"].dt.tz) == "None":
                 df["time"] = df["time"].dt.tz_localize("Asia/Shanghai", ambiguous='NaT', nonexistent='NaT')
