@@ -828,20 +828,32 @@ class NJUElectricMonitor:
             # 重新从json文件读取所有数据，生成csv（字段顺序为time,num,unit）
             import csv
             csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'electricity_data.csv')
-            with open(json_path, "r", encoding="utf-8") as jf, \
-                 open(csv_path, "w", newline='', encoding="utf-8") as cf:
-                writer = csv.DictWriter(cf, fieldnames=["time", "num", "unit"])
-                writer.writeheader()
+            rows = []
+            with open(json_path, "r", encoding="utf-8") as jf:
                 for line in jf:
                     try:
                         item = json.loads(line)
-                        writer.writerow({
+                        rows.append({
                             "time": item.get("timestamp"),
                             "num": item.get("remaining_electricity"),
                             "unit": item.get("unit")
                         })
                     except Exception:
                         continue
+            # 用 pandas 统一时间戳格式
+            import pandas as pd
+            df = pd.DataFrame(rows)
+            # 统一解析为 Asia/Shanghai 时区
+            df["time"] = pd.to_datetime(df["time"], errors="coerce")
+            # 如果没有时区，则加上 Asia/Shanghai
+            if df["time"].dt.tz is None or str(df["time"].dt.tz) == "None":
+                df["time"] = df["time"].dt.tz_localize("Asia/Shanghai")
+            else:
+                df["time"] = df["time"].dt.tz_convert("Asia/Shanghai")
+            # 格式化为 ISO8601 且带 +08:00
+            df["time"] = df["time"].dt.strftime('%Y-%m-%dT%H:%M:%S.%f+08:00')
+            # 写回 CSV
+            df.to_csv(csv_path, index=False, header=True, columns=["time", "num", "unit"])
 
             self.logger.info(f"数据已保存: {remaining_electricity} 度")
 
@@ -851,7 +863,10 @@ class NJUElectricMonitor:
                 csv_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'electricity_data.csv')
                 png_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'electricity_trend.png')
                 df = pd.read_csv(csv_path)
-                df['time'] = pd.to_datetime(df['time'])
+                try:
+                    df['time'] = pd.to_datetime(df['time'], format='ISO8601')
+                except Exception:
+                    df['time'] = pd.to_datetime(df['time'], errors='coerce')
                 df_sorted = df.sort_values('time')
 
                 # 设置深色科技感风格
