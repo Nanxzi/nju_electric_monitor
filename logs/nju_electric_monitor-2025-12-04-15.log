@@ -1,0 +1,752 @@
+2025-12-04 07:18:51,415 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-04 07:18:52,844 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-04 07:18:52,844 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-04 07:18:54,418 - INFO - OCR识别器初始化成功
+2025-12-04 07:18:54,418 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-04 07:18:54,418 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-04 07:19:04,890 - INFO - 等待登录表单加载...
+2025-12-04 07:19:04,900 - INFO - 登录表单已加载
+2025-12-04 07:19:04,900 - INFO - 开始填写登录表单...
+2025-12-04 07:19:05,118 - INFO - 用户名填写完成
+2025-12-04 07:19:05,185 - INFO - 密码填写完成
+2025-12-04 07:19:05,185 - INFO - 检查是否有验证码...
+2025-12-04 07:19:05,185 - INFO - 查找验证码图片...
+2025-12-04 07:19:05,203 - INFO - 找到验证码图片，开始截图...
+2025-12-04 07:19:05,268 - INFO - 验证码图片截取成功
+2025-12-04 07:19:05,268 - INFO - 开始填写登录表单...
+2025-12-04 07:19:05,333 - INFO - 用户名填写完成
+2025-12-04 07:19:05,392 - INFO - 密码填写完成
+2025-12-04 07:19:05,393 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:19:05,393 - INFO - 验证码识别尝试 1/30
+2025-12-04 07:19:05,393 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:19:05,517 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:19:05,671 - INFO - tesseract 结果: Pibt
+2025-12-04 07:19:05,734 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:19:05,829 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:19:05,888 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:19:05,981 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:19:06,138 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:19:06,249 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:19:06,304 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:19:06,401 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:19:06,468 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:19:06,562 - INFO - tesseract alt5 结果: 
+2025-12-04 07:19:06,562 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:19:06,562 - INFO - 查找验证码输入框...
+2025-12-04 07:19:06,621 - INFO - 验证码填写完成
+2025-12-04 07:19:06,621 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:19:06,621 - INFO - 查找并点击登录按钮...
+2025-12-04 07:19:06,952 - INFO - 已点击登录按钮
+2025-12-04 07:19:13,979 - INFO - 开始填写登录表单...
+2025-12-04 07:19:14,037 - INFO - 用户名填写完成
+2025-12-04 07:19:14,096 - INFO - 密码填写完成
+2025-12-04 07:19:14,096 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:19:14,096 - INFO - 验证码识别尝试 2/30
+2025-12-04 07:19:14,096 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:19:14,191 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:19:14,285 - INFO - tesseract 结果: Pibt
+2025-12-04 07:19:14,344 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:19:14,438 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:19:14,496 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:19:14,595 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:19:14,744 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:19:14,852 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:19:14,906 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:19:15,008 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:19:15,119 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:19:15,209 - INFO - tesseract alt5 结果: 
+2025-12-04 07:19:15,209 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:19:15,209 - INFO - 查找验证码输入框...
+2025-12-04 07:19:15,264 - INFO - 验证码填写完成
+2025-12-04 07:19:15,265 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:19:15,265 - INFO - 查找并点击登录按钮...
+2025-12-04 07:19:15,320 - INFO - 已点击登录按钮
+2025-12-04 07:19:22,340 - INFO - 开始填写登录表单...
+2025-12-04 07:19:22,403 - INFO - 用户名填写完成
+2025-12-04 07:19:22,460 - INFO - 密码填写完成
+2025-12-04 07:19:22,460 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:19:22,460 - INFO - 验证码识别尝试 3/30
+2025-12-04 07:19:22,460 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:19:22,556 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:19:22,652 - INFO - tesseract 结果: Pibt
+2025-12-04 07:19:22,712 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:19:22,809 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:19:22,867 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:19:22,962 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:19:23,112 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:19:23,220 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:19:23,274 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:19:23,370 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:19:23,437 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:19:23,531 - INFO - tesseract alt5 结果: 
+2025-12-04 07:19:23,532 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:19:23,532 - INFO - 查找验证码输入框...
+2025-12-04 07:19:23,586 - INFO - 验证码填写完成
+2025-12-04 07:19:23,586 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:19:23,586 - INFO - 查找并点击登录按钮...
+2025-12-04 07:19:23,642 - INFO - 已点击登录按钮
+2025-12-04 07:19:30,661 - INFO - 开始填写登录表单...
+2025-12-04 07:19:30,721 - INFO - 用户名填写完成
+2025-12-04 07:19:30,778 - INFO - 密码填写完成
+2025-12-04 07:19:30,779 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:19:30,779 - INFO - 验证码识别尝试 4/30
+2025-12-04 07:19:30,779 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:19:30,882 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:19:30,976 - INFO - tesseract 结果: Pibt
+2025-12-04 07:19:31,035 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:19:31,137 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:19:31,196 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:19:31,293 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:19:31,442 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:19:31,550 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:19:31,604 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:19:31,703 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:19:31,770 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:19:31,861 - INFO - tesseract alt5 结果: 
+2025-12-04 07:19:31,861 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:19:31,861 - INFO - 查找验证码输入框...
+2025-12-04 07:19:31,916 - INFO - 验证码填写完成
+2025-12-04 07:19:31,916 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:19:31,916 - INFO - 查找并点击登录按钮...
+2025-12-04 07:19:31,972 - INFO - 已点击登录按钮
+2025-12-04 07:19:38,992 - INFO - 开始填写登录表单...
+2025-12-04 07:19:39,051 - INFO - 用户名填写完成
+2025-12-04 07:19:39,108 - INFO - 密码填写完成
+2025-12-04 07:19:39,109 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:19:39,109 - INFO - 验证码识别尝试 5/30
+2025-12-04 07:19:39,109 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:19:39,205 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:19:39,302 - INFO - tesseract 结果: Pibt
+2025-12-04 07:19:39,361 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:19:39,455 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:19:39,514 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:19:39,610 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:19:39,759 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:19:39,870 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:19:39,924 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:19:40,023 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:19:40,090 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:19:40,179 - INFO - tesseract alt5 结果: 
+2025-12-04 07:19:40,180 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:19:40,180 - INFO - 查找验证码输入框...
+2025-12-04 07:19:40,235 - INFO - 验证码填写完成
+2025-12-04 07:19:40,235 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:19:40,235 - INFO - 查找并点击登录按钮...
+2025-12-04 07:19:40,290 - INFO - 已点击登录按钮
+2025-12-04 07:19:47,310 - INFO - 开始填写登录表单...
+2025-12-04 07:19:47,371 - INFO - 用户名填写完成
+2025-12-04 07:19:47,429 - INFO - 密码填写完成
+2025-12-04 07:19:47,430 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:19:47,430 - INFO - 验证码识别尝试 6/30
+2025-12-04 07:19:47,430 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:19:47,526 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:19:47,624 - INFO - tesseract 结果: Pibt
+2025-12-04 07:19:47,684 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:19:47,778 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:19:47,843 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:19:47,937 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:19:48,086 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:19:48,200 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:19:48,254 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:19:48,351 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:19:48,419 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:19:48,509 - INFO - tesseract alt5 结果: 
+2025-12-04 07:19:48,509 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:19:48,509 - INFO - 查找验证码输入框...
+2025-12-04 07:19:48,564 - INFO - 验证码填写完成
+2025-12-04 07:19:48,564 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:19:48,564 - INFO - 查找并点击登录按钮...
+2025-12-04 07:19:48,620 - INFO - 已点击登录按钮
+2025-12-04 07:19:55,640 - INFO - 开始填写登录表单...
+2025-12-04 07:19:55,700 - INFO - 用户名填写完成
+2025-12-04 07:19:55,757 - INFO - 密码填写完成
+2025-12-04 07:19:55,758 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:19:55,758 - INFO - 验证码识别尝试 7/30
+2025-12-04 07:19:55,758 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:19:55,860 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:19:55,956 - INFO - tesseract 结果: Pibt
+2025-12-04 07:19:56,016 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:19:56,113 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:19:56,172 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:19:56,267 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:19:56,415 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:19:56,525 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:19:56,578 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:19:56,675 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:19:56,743 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:19:56,833 - INFO - tesseract alt5 结果: 
+2025-12-04 07:19:56,833 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:19:56,833 - INFO - 查找验证码输入框...
+2025-12-04 07:19:56,889 - INFO - 验证码填写完成
+2025-12-04 07:19:56,889 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:19:56,889 - INFO - 查找并点击登录按钮...
+2025-12-04 07:19:57,217 - INFO - 已点击登录按钮
+2025-12-04 07:20:04,239 - INFO - 开始填写登录表单...
+2025-12-04 07:20:04,299 - INFO - 用户名填写完成
+2025-12-04 07:20:04,357 - INFO - 密码填写完成
+2025-12-04 07:20:04,357 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:20:04,357 - INFO - 验证码识别尝试 8/30
+2025-12-04 07:20:04,357 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:20:04,453 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:20:04,547 - INFO - tesseract 结果: Pibt
+2025-12-04 07:20:04,606 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:20:04,702 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:20:04,760 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:20:04,860 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:20:05,008 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:20:05,119 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:20:05,173 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:20:05,269 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:20:05,344 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:20:05,440 - INFO - tesseract alt5 结果: 
+2025-12-04 07:20:05,440 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:20:05,440 - INFO - 查找验证码输入框...
+2025-12-04 07:20:05,498 - INFO - 验证码填写完成
+2025-12-04 07:20:05,498 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:20:05,498 - INFO - 查找并点击登录按钮...
+2025-12-04 07:20:05,553 - INFO - 已点击登录按钮
+2025-12-04 07:20:12,574 - INFO - 开始填写登录表单...
+2025-12-04 07:20:12,634 - INFO - 用户名填写完成
+2025-12-04 07:20:12,693 - INFO - 密码填写完成
+2025-12-04 07:20:12,694 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:20:12,694 - INFO - 验证码识别尝试 9/30
+2025-12-04 07:20:12,694 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:20:12,790 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:20:12,883 - INFO - tesseract 结果: Pibt
+2025-12-04 07:20:12,943 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:20:13,038 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:20:13,099 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:20:13,195 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:20:13,345 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:20:13,454 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:20:13,509 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:20:13,607 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:20:13,675 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:20:13,765 - INFO - tesseract alt5 结果: 
+2025-12-04 07:20:13,766 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:20:13,766 - INFO - 查找验证码输入框...
+2025-12-04 07:20:13,821 - INFO - 验证码填写完成
+2025-12-04 07:20:13,822 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:20:13,822 - INFO - 查找并点击登录按钮...
+2025-12-04 07:20:14,148 - INFO - 已点击登录按钮
+2025-12-04 07:20:21,168 - INFO - 开始填写登录表单...
+2025-12-04 07:20:21,226 - INFO - 用户名填写完成
+2025-12-04 07:20:21,285 - INFO - 密码填写完成
+2025-12-04 07:20:21,285 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:20:21,285 - INFO - 验证码识别尝试 10/30
+2025-12-04 07:20:21,285 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:20:21,391 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:20:21,486 - INFO - tesseract 结果: Pibt
+2025-12-04 07:20:21,545 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:20:21,642 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:20:21,700 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:20:21,795 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:20:21,943 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:20:22,051 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:20:22,106 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:20:22,204 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:20:22,271 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:20:22,362 - INFO - tesseract alt5 结果: 
+2025-12-04 07:20:22,362 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:20:22,362 - INFO - 查找验证码输入框...
+2025-12-04 07:20:22,418 - INFO - 验证码填写完成
+2025-12-04 07:20:22,418 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:20:22,418 - INFO - 查找并点击登录按钮...
+2025-12-04 07:20:22,474 - INFO - 已点击登录按钮
+2025-12-04 07:20:29,494 - INFO - 开始填写登录表单...
+2025-12-04 07:20:29,554 - INFO - 用户名填写完成
+2025-12-04 07:20:29,612 - INFO - 密码填写完成
+2025-12-04 07:20:29,613 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:20:29,613 - INFO - 验证码识别尝试 11/30
+2025-12-04 07:20:29,613 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:20:29,719 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:20:29,818 - INFO - tesseract 结果: Pibt
+2025-12-04 07:20:29,878 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:20:29,978 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:20:30,036 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:20:30,132 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:20:30,280 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:20:30,391 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:20:30,445 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:20:30,543 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:20:30,610 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:20:30,705 - INFO - tesseract alt5 结果: 
+2025-12-04 07:20:30,705 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:20:30,705 - INFO - 查找验证码输入框...
+2025-12-04 07:20:30,762 - INFO - 验证码填写完成
+2025-12-04 07:20:30,762 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:20:30,762 - INFO - 查找并点击登录按钮...
+2025-12-04 07:20:30,820 - INFO - 已点击登录按钮
+2025-12-04 07:20:37,840 - INFO - 开始填写登录表单...
+2025-12-04 07:20:37,900 - INFO - 用户名填写完成
+2025-12-04 07:20:37,959 - INFO - 密码填写完成
+2025-12-04 07:20:37,960 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:20:37,960 - INFO - 验证码识别尝试 12/30
+2025-12-04 07:20:37,960 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:20:38,063 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:20:38,158 - INFO - tesseract 结果: Pibt
+2025-12-04 07:20:38,218 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:20:38,317 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:20:38,376 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:20:38,473 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:20:38,622 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:20:38,732 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:20:38,785 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:20:38,882 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:20:38,949 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:20:39,043 - INFO - tesseract alt5 结果: 
+2025-12-04 07:20:39,043 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:20:39,043 - INFO - 查找验证码输入框...
+2025-12-04 07:20:39,099 - INFO - 验证码填写完成
+2025-12-04 07:20:39,100 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:20:39,100 - INFO - 查找并点击登录按钮...
+2025-12-04 07:20:39,157 - INFO - 已点击登录按钮
+2025-12-04 07:20:46,178 - INFO - 开始填写登录表单...
+2025-12-04 07:20:46,238 - INFO - 用户名填写完成
+2025-12-04 07:20:46,297 - INFO - 密码填写完成
+2025-12-04 07:20:46,297 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:20:46,297 - INFO - 验证码识别尝试 13/30
+2025-12-04 07:20:46,298 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:20:46,393 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:20:46,490 - INFO - tesseract 结果: Pibt
+2025-12-04 07:20:46,549 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:20:46,649 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:20:46,709 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:20:46,804 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:20:46,953 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:20:47,062 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:20:47,116 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:20:47,215 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:20:47,282 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:20:47,374 - INFO - tesseract alt5 结果: 
+2025-12-04 07:20:47,374 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:20:47,374 - INFO - 查找验证码输入框...
+2025-12-04 07:20:47,430 - INFO - 验证码填写完成
+2025-12-04 07:20:47,430 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:20:47,430 - INFO - 查找并点击登录按钮...
+2025-12-04 07:20:47,487 - INFO - 已点击登录按钮
+2025-12-04 07:20:54,507 - INFO - 开始填写登录表单...
+2025-12-04 07:20:54,567 - INFO - 用户名填写完成
+2025-12-04 07:20:54,626 - INFO - 密码填写完成
+2025-12-04 07:20:54,627 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:20:54,627 - INFO - 验证码识别尝试 14/30
+2025-12-04 07:20:54,627 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:20:54,723 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:20:54,817 - INFO - tesseract 结果: Pibt
+2025-12-04 07:20:54,877 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:20:54,979 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:20:55,037 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:20:55,136 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:20:55,283 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:20:55,398 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:20:55,452 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:20:55,550 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:20:55,617 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:20:55,708 - INFO - tesseract alt5 结果: 
+2025-12-04 07:20:55,708 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:20:55,708 - INFO - 查找验证码输入框...
+2025-12-04 07:20:55,765 - INFO - 验证码填写完成
+2025-12-04 07:20:55,765 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:20:55,765 - INFO - 查找并点击登录按钮...
+2025-12-04 07:20:55,822 - INFO - 已点击登录按钮
+2025-12-04 07:21:02,842 - INFO - 开始填写登录表单...
+2025-12-04 07:21:02,903 - INFO - 用户名填写完成
+2025-12-04 07:21:02,961 - INFO - 密码填写完成
+2025-12-04 07:21:02,962 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:21:02,962 - INFO - 验证码识别尝试 15/30
+2025-12-04 07:21:02,962 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:21:03,058 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:21:03,153 - INFO - tesseract 结果: Pibt
+2025-12-04 07:21:03,212 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:21:03,308 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:21:03,367 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:21:03,466 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:21:03,615 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:21:03,725 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:21:03,778 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:21:03,879 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:21:03,945 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:21:04,035 - INFO - tesseract alt5 结果: 
+2025-12-04 07:21:04,035 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:21:04,035 - INFO - 查找验证码输入框...
+2025-12-04 07:21:04,093 - INFO - 验证码填写完成
+2025-12-04 07:21:04,093 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:21:04,093 - INFO - 查找并点击登录按钮...
+2025-12-04 07:21:04,420 - INFO - 已点击登录按钮
+2025-12-04 07:21:11,440 - INFO - 开始填写登录表单...
+2025-12-04 07:21:11,501 - INFO - 用户名填写完成
+2025-12-04 07:21:11,563 - INFO - 密码填写完成
+2025-12-04 07:21:11,563 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:21:11,563 - INFO - 验证码识别尝试 16/30
+2025-12-04 07:21:11,563 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:21:11,670 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:21:11,768 - INFO - tesseract 结果: Pibt
+2025-12-04 07:21:11,828 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:21:11,925 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:21:11,983 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:21:12,078 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:21:12,226 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:21:12,339 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:21:12,393 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:21:12,491 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:21:12,567 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:21:12,659 - INFO - tesseract alt5 结果: 
+2025-12-04 07:21:12,659 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:21:12,659 - INFO - 查找验证码输入框...
+2025-12-04 07:21:12,715 - INFO - 验证码填写完成
+2025-12-04 07:21:12,715 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:21:12,715 - INFO - 查找并点击登录按钮...
+2025-12-04 07:21:12,772 - INFO - 已点击登录按钮
+2025-12-04 07:21:19,792 - INFO - 开始填写登录表单...
+2025-12-04 07:21:19,852 - INFO - 用户名填写完成
+2025-12-04 07:21:19,912 - INFO - 密码填写完成
+2025-12-04 07:21:19,912 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:21:19,913 - INFO - 验证码识别尝试 17/30
+2025-12-04 07:21:19,913 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:21:20,021 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:21:20,118 - INFO - tesseract 结果: Pibt
+2025-12-04 07:21:20,187 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:21:20,285 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:21:20,350 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:21:20,444 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:21:20,592 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:21:20,705 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:21:20,758 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:21:20,856 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:21:20,923 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:21:21,016 - INFO - tesseract alt5 结果: 
+2025-12-04 07:21:21,016 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:21:21,016 - INFO - 查找验证码输入框...
+2025-12-04 07:21:21,072 - INFO - 验证码填写完成
+2025-12-04 07:21:21,072 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:21:21,072 - INFO - 查找并点击登录按钮...
+2025-12-04 07:21:21,399 - INFO - 已点击登录按钮
+2025-12-04 07:21:28,420 - INFO - 开始填写登录表单...
+2025-12-04 07:21:28,481 - INFO - 用户名填写完成
+2025-12-04 07:21:28,540 - INFO - 密码填写完成
+2025-12-04 07:21:28,541 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:21:28,541 - INFO - 验证码识别尝试 18/30
+2025-12-04 07:21:28,541 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:21:28,636 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:21:28,730 - INFO - tesseract 结果: Pibt
+2025-12-04 07:21:28,790 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:21:28,885 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:21:28,943 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:21:29,042 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:21:29,199 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:21:29,308 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:21:29,373 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:21:29,469 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:21:29,536 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:21:29,628 - INFO - tesseract alt5 结果: 
+2025-12-04 07:21:29,628 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:21:29,628 - INFO - 查找验证码输入框...
+2025-12-04 07:21:29,685 - INFO - 验证码填写完成
+2025-12-04 07:21:29,685 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:21:29,685 - INFO - 查找并点击登录按钮...
+2025-12-04 07:21:30,014 - INFO - 已点击登录按钮
+2025-12-04 07:21:37,034 - INFO - 开始填写登录表单...
+2025-12-04 07:21:37,097 - INFO - 用户名填写完成
+2025-12-04 07:21:37,155 - INFO - 密码填写完成
+2025-12-04 07:21:37,156 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:21:37,156 - INFO - 验证码识别尝试 19/30
+2025-12-04 07:21:37,156 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:21:37,252 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:21:37,347 - INFO - tesseract 结果: Pibt
+2025-12-04 07:21:37,407 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:21:37,506 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:21:37,564 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:21:37,659 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:21:37,808 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:21:37,919 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:21:37,973 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:21:38,075 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:21:38,144 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:21:38,235 - INFO - tesseract alt5 结果: 
+2025-12-04 07:21:38,235 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:21:38,235 - INFO - 查找验证码输入框...
+2025-12-04 07:21:38,293 - INFO - 验证码填写完成
+2025-12-04 07:21:38,294 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:21:38,294 - INFO - 查找并点击登录按钮...
+2025-12-04 07:21:38,351 - INFO - 已点击登录按钮
+2025-12-04 07:21:45,372 - INFO - 开始填写登录表单...
+2025-12-04 07:21:45,434 - INFO - 用户名填写完成
+2025-12-04 07:21:45,495 - INFO - 密码填写完成
+2025-12-04 07:21:45,496 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:21:45,496 - INFO - 验证码识别尝试 20/30
+2025-12-04 07:21:45,496 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:21:45,602 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:21:45,696 - INFO - tesseract 结果: Pibt
+2025-12-04 07:21:45,756 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:21:45,851 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:21:45,910 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:21:46,005 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:21:46,153 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:21:46,263 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:21:46,330 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:21:46,431 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:21:46,507 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:21:46,599 - INFO - tesseract alt5 结果: 
+2025-12-04 07:21:46,599 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:21:46,599 - INFO - 查找验证码输入框...
+2025-12-04 07:21:46,658 - INFO - 验证码填写完成
+2025-12-04 07:21:46,658 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:21:46,658 - INFO - 查找并点击登录按钮...
+2025-12-04 07:21:46,985 - INFO - 已点击登录按钮
+2025-12-04 07:21:54,005 - INFO - 开始填写登录表单...
+2025-12-04 07:21:54,064 - INFO - 用户名填写完成
+2025-12-04 07:21:54,121 - INFO - 密码填写完成
+2025-12-04 07:21:54,122 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:21:54,122 - INFO - 验证码识别尝试 21/30
+2025-12-04 07:21:54,122 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:21:54,223 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:21:54,318 - INFO - tesseract 结果: Pibt
+2025-12-04 07:21:54,377 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:21:54,473 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:21:54,530 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:21:54,626 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:21:54,775 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:21:54,883 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:21:54,936 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:21:55,033 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:21:55,100 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:21:55,196 - INFO - tesseract alt5 结果: 
+2025-12-04 07:21:55,196 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:21:55,196 - INFO - 查找验证码输入框...
+2025-12-04 07:21:55,250 - INFO - 验证码填写完成
+2025-12-04 07:21:55,250 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:21:55,251 - INFO - 查找并点击登录按钮...
+2025-12-04 07:21:55,585 - INFO - 已点击登录按钮
+2025-12-04 07:22:02,605 - INFO - 开始填写登录表单...
+2025-12-04 07:22:02,665 - INFO - 用户名填写完成
+2025-12-04 07:22:02,722 - INFO - 密码填写完成
+2025-12-04 07:22:02,723 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:22:02,723 - INFO - 验证码识别尝试 22/30
+2025-12-04 07:22:02,723 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:22:02,832 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:22:02,926 - INFO - tesseract 结果: Pibt
+2025-12-04 07:22:02,985 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:22:03,078 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:22:03,136 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:22:03,231 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:22:03,379 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:22:03,489 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:22:03,543 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:22:03,642 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:22:03,709 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:22:03,800 - INFO - tesseract alt5 结果: 
+2025-12-04 07:22:03,801 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:22:03,801 - INFO - 查找验证码输入框...
+2025-12-04 07:22:03,856 - INFO - 验证码填写完成
+2025-12-04 07:22:03,856 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:22:03,856 - INFO - 查找并点击登录按钮...
+2025-12-04 07:22:04,191 - INFO - 已点击登录按钮
+2025-12-04 07:22:11,211 - INFO - 开始填写登录表单...
+2025-12-04 07:22:11,270 - INFO - 用户名填写完成
+2025-12-04 07:22:11,327 - INFO - 密码填写完成
+2025-12-04 07:22:11,328 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:22:11,328 - INFO - 验证码识别尝试 23/30
+2025-12-04 07:22:11,328 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:22:11,424 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:22:11,520 - INFO - tesseract 结果: Pibt
+2025-12-04 07:22:11,580 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:22:11,675 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:22:11,741 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:22:11,840 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:22:11,988 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:22:12,098 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:22:12,152 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:22:12,251 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:22:12,317 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:22:12,408 - INFO - tesseract alt5 结果: 
+2025-12-04 07:22:12,408 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:22:12,408 - INFO - 查找验证码输入框...
+2025-12-04 07:22:12,463 - INFO - 验证码填写完成
+2025-12-04 07:22:12,463 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:22:12,463 - INFO - 查找并点击登录按钮...
+2025-12-04 07:22:12,519 - INFO - 已点击登录按钮
+2025-12-04 07:22:19,539 - INFO - 开始填写登录表单...
+2025-12-04 07:22:19,629 - INFO - 用户名填写完成
+2025-12-04 07:22:19,685 - INFO - 密码填写完成
+2025-12-04 07:22:19,686 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:22:19,686 - INFO - 验证码识别尝试 24/30
+2025-12-04 07:22:19,686 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:22:19,782 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:22:19,880 - INFO - tesseract 结果: Pibt
+2025-12-04 07:22:19,939 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:22:20,033 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:22:20,092 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:22:20,198 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:22:20,352 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:22:20,462 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:22:20,516 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:22:20,616 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:22:20,683 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:22:20,774 - INFO - tesseract alt5 结果: 
+2025-12-04 07:22:20,775 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:22:20,775 - INFO - 查找验证码输入框...
+2025-12-04 07:22:20,829 - INFO - 验证码填写完成
+2025-12-04 07:22:20,829 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:22:20,829 - INFO - 查找并点击登录按钮...
+2025-12-04 07:22:20,885 - INFO - 已点击登录按钮
+2025-12-04 07:22:27,905 - INFO - 开始填写登录表单...
+2025-12-04 07:22:27,964 - INFO - 用户名填写完成
+2025-12-04 07:22:28,021 - INFO - 密码填写完成
+2025-12-04 07:22:28,021 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:22:28,021 - INFO - 验证码识别尝试 25/30
+2025-12-04 07:22:28,021 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:22:28,116 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:22:28,216 - INFO - tesseract 结果: Pibt
+2025-12-04 07:22:28,276 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:22:28,373 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:22:28,430 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:22:28,529 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:22:28,677 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:22:28,786 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:22:28,840 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:22:28,941 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:22:29,008 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:22:29,098 - INFO - tesseract alt5 结果: 
+2025-12-04 07:22:29,098 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:22:29,098 - INFO - 查找验证码输入框...
+2025-12-04 07:22:29,153 - INFO - 验证码填写完成
+2025-12-04 07:22:29,153 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:22:29,153 - INFO - 查找并点击登录按钮...
+2025-12-04 07:22:29,479 - INFO - 已点击登录按钮
+2025-12-04 07:22:36,499 - INFO - 开始填写登录表单...
+2025-12-04 07:22:36,559 - INFO - 用户名填写完成
+2025-12-04 07:22:36,615 - INFO - 密码填写完成
+2025-12-04 07:22:36,616 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:22:36,616 - INFO - 验证码识别尝试 26/30
+2025-12-04 07:22:36,616 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:22:36,712 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:22:36,809 - INFO - tesseract 结果: Pibt
+2025-12-04 07:22:36,869 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:22:36,966 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:22:37,024 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:22:37,118 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:22:37,268 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:22:37,376 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:22:37,430 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:22:37,527 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:22:37,596 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:22:37,687 - INFO - tesseract alt5 结果: 
+2025-12-04 07:22:37,687 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:22:37,687 - INFO - 查找验证码输入框...
+2025-12-04 07:22:37,743 - INFO - 验证码填写完成
+2025-12-04 07:22:37,743 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:22:37,743 - INFO - 查找并点击登录按钮...
+2025-12-04 07:22:37,799 - INFO - 已点击登录按钮
+2025-12-04 07:22:44,818 - INFO - 开始填写登录表单...
+2025-12-04 07:22:44,878 - INFO - 用户名填写完成
+2025-12-04 07:22:44,935 - INFO - 密码填写完成
+2025-12-04 07:22:44,935 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:22:44,935 - INFO - 验证码识别尝试 27/30
+2025-12-04 07:22:44,935 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:22:45,030 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:22:45,126 - INFO - tesseract 结果: Pibt
+2025-12-04 07:22:45,187 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:22:45,283 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:22:45,341 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:22:45,437 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:22:45,586 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:22:45,695 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:22:45,749 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:22:45,848 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:22:45,916 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:22:46,005 - INFO - tesseract alt5 结果: 
+2025-12-04 07:22:46,005 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:22:46,005 - INFO - 查找验证码输入框...
+2025-12-04 07:22:46,060 - INFO - 验证码填写完成
+2025-12-04 07:22:46,060 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:22:46,060 - INFO - 查找并点击登录按钮...
+2025-12-04 07:22:46,115 - INFO - 已点击登录按钮
+2025-12-04 07:22:53,135 - INFO - 开始填写登录表单...
+2025-12-04 07:22:53,194 - INFO - 用户名填写完成
+2025-12-04 07:22:53,250 - INFO - 密码填写完成
+2025-12-04 07:22:53,251 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:22:53,251 - INFO - 验证码识别尝试 28/30
+2025-12-04 07:22:53,251 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:22:53,346 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:22:53,439 - INFO - tesseract 结果: Pibt
+2025-12-04 07:22:53,498 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:22:53,596 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:22:53,654 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:22:53,753 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:22:53,908 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:22:54,019 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:22:54,073 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:22:54,170 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:22:54,237 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:22:54,328 - INFO - tesseract alt5 结果: 
+2025-12-04 07:22:54,328 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:22:54,328 - INFO - 查找验证码输入框...
+2025-12-04 07:22:54,383 - INFO - 验证码填写完成
+2025-12-04 07:22:54,383 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:22:54,383 - INFO - 查找并点击登录按钮...
+2025-12-04 07:22:54,708 - INFO - 已点击登录按钮
+2025-12-04 07:23:01,729 - INFO - 开始填写登录表单...
+2025-12-04 07:23:01,788 - INFO - 用户名填写完成
+2025-12-04 07:23:01,844 - INFO - 密码填写完成
+2025-12-04 07:23:01,844 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:23:01,844 - INFO - 验证码识别尝试 29/30
+2025-12-04 07:23:01,844 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:23:01,941 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:23:02,036 - INFO - tesseract 结果: Pibt
+2025-12-04 07:23:02,095 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:23:02,197 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:23:02,255 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:23:02,349 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:23:02,511 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:23:02,619 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:23:02,672 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:23:02,768 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:23:02,834 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:23:02,924 - INFO - tesseract alt5 结果: 
+2025-12-04 07:23:02,924 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:23:02,925 - INFO - 查找验证码输入框...
+2025-12-04 07:23:02,979 - INFO - 验证码填写完成
+2025-12-04 07:23:02,979 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:23:02,979 - INFO - 查找并点击登录按钮...
+2025-12-04 07:23:03,035 - INFO - 已点击登录按钮
+2025-12-04 07:23:10,054 - INFO - 开始填写登录表单...
+2025-12-04 07:23:10,114 - INFO - 用户名填写完成
+2025-12-04 07:23:10,171 - INFO - 密码填写完成
+2025-12-04 07:23:10,172 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-04 07:23:10,172 - INFO - 验证码识别尝试 30/30
+2025-12-04 07:23:10,172 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-04 07:23:10,279 - INFO - easyocr 结果: ['PIbf(0.53)']
+2025-12-04 07:23:10,374 - INFO - tesseract 结果: Pibt
+2025-12-04 07:23:10,433 - INFO - easyocr alt1 结果: ['PIbf(0.42)']
+2025-12-04 07:23:10,528 - INFO - tesseract alt1 结果: Plbf
+2025-12-04 07:23:10,586 - INFO - easyocr alt2 结果: ['PIbf(0.46)']
+2025-12-04 07:23:10,681 - INFO - tesseract alt2 结果: PlbFf
+2025-12-04 07:23:10,830 - INFO - easyocr alt3 结果: ['PIbf(0.65)']
+2025-12-04 07:23:10,942 - INFO - tesseract alt3 结果: Plbt
+2025-12-04 07:23:10,995 - INFO - easyocr alt4 结果: ['PIbf(0.35)']
+2025-12-04 07:23:11,091 - INFO - tesseract alt4 结果: PTB
+2025-12-04 07:23:11,158 - INFO - easyocr alt5 结果: ['Ph(0.00)']
+2025-12-04 07:23:11,248 - INFO - tesseract alt5 结果: 
+2025-12-04 07:23:11,248 - INFO - 最终验证码识别结果: PIbf (engine=easyocr_alt3, prob=0.6487725973129272)
+2025-12-04 07:23:11,248 - INFO - 查找验证码输入框...
+2025-12-04 07:23:11,304 - INFO - 验证码填写完成
+2025-12-04 07:23:11,304 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-04 07:23:11,304 - INFO - 查找并点击登录按钮...
+2025-12-04 07:23:11,634 - INFO - 已点击登录按钮
+2025-12-04 07:23:18,654 - WARNING - 自动验证码识别失败，请手动输入
+2025-12-04 07:23:18,654 - ERROR - 处理验证码时出错: EOF when reading a line
+2025-12-04 07:23:18,654 - WARNING - 验证码处理失败，但继续尝试登录
+2025-12-04 07:23:18,654 - INFO - 查找并点击登录按钮...
+2025-12-04 07:23:18,710 - INFO - 已点击登录按钮
+2025-12-04 07:23:23,710 - INFO - 等待登录成功...
+2025-12-04 07:23:28,715 - INFO - 登录可能成功，继续下一步...
+2025-12-04 07:23:28,715 - INFO - 查找'去充值'按钮...
+2025-12-04 07:23:28,776 - INFO - 已点击充值按钮
+2025-12-04 07:23:31,777 - INFO - 开始提取剩余电量信息...
+2025-12-04 07:23:31,781 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-04 07:23:31,791 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-04 07:23:31,799 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-04 07:23:31,802 - INFO - 在页面源码中查找电量信息...
+2025-12-04 07:23:31,813 - WARNING - 未能提取到剩余电量信息
+2025-12-04 07:23:31,813 - WARNING - 没有电量数据可保存
+2025-12-04 07:23:31,813 - INFO - 监控流程完成
