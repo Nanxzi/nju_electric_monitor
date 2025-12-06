@@ -922,7 +922,33 @@ class NJUElectricMonitor:
                     ax.spines[spine].set_linewidth(1.2)
 
                 # 使用初始化时配置的字体回退列表
-                pass
+                # 自动检测当前系统可用字体，优先使用已安装的中文字体
+                import matplotlib.font_manager as fm
+                preferred_fonts = [
+                    'Microsoft YaHei',
+                    'Segoe UI',
+                    'Arial Unicode MS',
+                    'Noto Sans CJK SC',
+                    'Noto Sans CJK JP',
+                    'Noto Sans',
+                    'WenQuanYi Micro Hei',
+                    'WenQuanYi Zen Hei',
+                    'SimHei',
+                    'STHeiti',
+                    'Heiti SC',
+                    'DejaVu Sans',
+                    'Arial'
+                ]
+                for font in preferred_fonts:
+                    try:
+                        fpath = fm.findfont(font, fallback_to_default=False)
+                        if fpath and os.path.exists(fpath):
+                            ax.set_title(ax.get_title(), fontname=font)
+                            ax.set_xlabel(ax.get_xlabel(), fontname=font)
+                            ax.set_ylabel(ax.get_ylabel(), fontname=font)
+                            break
+                    except Exception:
+                        continue
 
                 # 图例（可选）
                 # ax.legend(['剩余电量'], loc='upper right', fontsize=11, facecolor='#141e30', edgecolor='none', labelcolor=font_color)
@@ -993,7 +1019,33 @@ class NJUElectricMonitor:
                 ax.spines[spine].set_linewidth(1.2)
 
             # 使用初始化时配置的字体回退列表
-            pass
+            # 自动检测当前系统可用字体，优先使用已安装的中文字体
+            import matplotlib.font_manager as fm
+            preferred_fonts = [
+                'Microsoft YaHei',
+                'Segoe UI',
+                'Arial Unicode MS',
+                'Noto Sans CJK SC',
+                'Noto Sans CJK JP',
+                'Noto Sans',
+                'WenQuanYi Micro Hei',
+                'WenQuanYi Zen Hei',
+                'SimHei',
+                'STHeiti',
+                'Heiti SC',
+                'DejaVu Sans',
+                'Arial'
+            ]
+            for font in preferred_fonts:
+                try:
+                    fpath = fm.findfont(font, fallback_to_default=False)
+                    if fpath and os.path.exists(fpath):
+                        ax.set_title(ax.get_title(), fontname=font)
+                        ax.set_xlabel(ax.get_xlabel(), fontname=font)
+                        ax.set_ylabel(ax.get_ylabel(), fontname=font)
+                        break
+                except Exception:
+                    continue
 
             # 调整边距
             plt.tight_layout(rect=[0, 0, 1, 0.97])
