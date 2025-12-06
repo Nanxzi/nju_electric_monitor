@@ -875,6 +875,11 @@ class NJUElectricMonitor:
                     df['time'] = pd.to_datetime(df['time'], errors='coerce')
                 df_sorted = df.sort_values('time')
 
+                # 确保所有时间点的时区信息被正确移除
+                df_sorted['time'] = pd.to_datetime(df_sorted['time'], errors='coerce')
+                if df_sorted['time'].dt.tz is not None:
+                    df_sorted['time'] = df_sorted['time'].dt.tz_localize(None)
+
                 # 设置深色科技感风格
                 plt.style.use('dark_background')
                 fig, ax = plt.subplots(figsize=(9, 4), dpi=200)
@@ -954,6 +959,11 @@ class NJUElectricMonitor:
 
             # 获取最近20次数据
             recent_20 = df_sorted.tail(20)
+
+            # 确保最近20次数据的时间列时区信息被正确移除
+            recent_20['time'] = pd.to_datetime(recent_20['time'], errors='coerce')
+            if recent_20['time'].dt.tz is not None:
+                recent_20['time'] = recent_20['time'].dt.tz_localize(None)
 
             # 绘制曲线和点
             ax.plot(recent_20['time'], recent_20['num'],
