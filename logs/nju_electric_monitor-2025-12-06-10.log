@@ -1,0 +1,102 @@
+2025-12-06 02:27:58,041 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-06 02:27:59,454 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-06 02:27:59,454 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-06 02:28:01,002 - INFO - OCR识别器初始化成功
+2025-12-06 02:28:01,002 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-06 02:28:01,002 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-06 02:28:12,088 - INFO - 等待登录表单加载...
+2025-12-06 02:28:12,098 - INFO - 登录表单已加载
+2025-12-06 02:28:12,098 - INFO - 开始填写登录表单...
+2025-12-06 02:28:12,157 - INFO - 用户名填写完成
+2025-12-06 02:28:12,224 - INFO - 密码填写完成
+2025-12-06 02:28:12,224 - INFO - 检查是否有验证码...
+2025-12-06 02:28:12,224 - INFO - 查找验证码图片...
+2025-12-06 02:28:12,242 - INFO - 找到验证码图片，开始截图...
+2025-12-06 02:28:12,295 - INFO - 验证码图片截取成功
+2025-12-06 02:28:12,295 - INFO - 开始填写登录表单...
+2025-12-06 02:28:12,356 - INFO - 用户名填写完成
+2025-12-06 02:28:12,418 - INFO - 密码填写完成
+2025-12-06 02:28:12,419 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-06 02:28:12,419 - INFO - 验证码识别尝试 1/30
+2025-12-06 02:28:12,419 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-06 02:28:12,542 - INFO - easyocr 结果: ['XKkp(0.52)']
+2025-12-06 02:28:12,700 - INFO - tesseract 结果: xkkp
+2025-12-06 02:28:12,764 - INFO - easyocr alt1 结果: ['XKKP(0.26)']
+2025-12-06 02:28:12,859 - INFO - tesseract alt1 结果: xkke
+2025-12-06 02:28:12,917 - INFO - easyocr alt2 结果: ['XkKP(0.21)']
+2025-12-06 02:28:13,009 - INFO - tesseract alt2 结果: xkke
+2025-12-06 02:28:13,165 - INFO - easyocr alt3 结果: ['XKKP(0.33)']
+2025-12-06 02:28:13,276 - INFO - tesseract alt3 结果: xkkP
+2025-12-06 02:28:13,334 - INFO - easyocr alt4 结果: ['XkKp(0.57)']
+2025-12-06 02:28:13,428 - INFO - tesseract alt4 结果: xkke
+2025-12-06 02:28:13,484 - INFO - easyocr alt5 结果: ['XKKP(0.37)']
+2025-12-06 02:28:13,578 - INFO - tesseract alt5 结果: xkke
+2025-12-06 02:28:13,578 - INFO - 最终验证码识别结果: XkKp (engine=easyocr_alt4, prob=0.5679265856742859)
+2025-12-06 02:28:13,578 - INFO - 查找验证码输入框...
+2025-12-06 02:28:13,637 - INFO - 验证码填写完成
+2025-12-06 02:28:13,638 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-06 02:28:13,638 - INFO - 查找并点击登录按钮...
+2025-12-06 02:28:17,651 - INFO - 已点击登录按钮
+2025-12-06 02:28:24,661 - INFO - 未检测到无效验证码提示，验证码通过
+2025-12-06 02:28:24,661 - INFO - 查找并点击登录按钮...
+2025-12-06 02:28:24,666 - ERROR - 未找到登录按钮
+2025-12-06 02:28:24,666 - ERROR - 点击登录按钮失败
+2025-12-06 02:28:24,666 - INFO - 等待登录成功...
+2025-12-06 02:28:29,671 - INFO - 登录可能成功，继续下一步...
+2025-12-06 02:28:29,671 - INFO - 查找'去充值'按钮...
+2025-12-06 02:28:31,390 - INFO - 已点击充值按钮
+2025-12-06 02:28:34,390 - INFO - 开始提取剩余电量信息...
+2025-12-06 02:28:34,394 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-06 02:28:34,411 - INFO - 找到电量信息元素: 持卡人姓名：吴相民
+2025-12-06 02:28:34,411 - WARNING - 未在元素中找到标准格式的电量信息
+2025-12-06 02:28:34,423 - INFO - 找到i标签中的电量信息: 吴相民
+2025-12-06 02:28:34,423 - WARNING - i标签中未找到标准格式的电量信息
+2025-12-06 02:28:34,423 - WARNING - 未找到i标签中的电量信息
+2025-12-06 02:28:34,425 - INFO - 在页面源码中查找电量信息...
+2025-12-06 02:28:34,426 - INFO - 从页面源码中提取到剩余电量: 332.43 度
+2025-12-06 02:28:34,448 - INFO - 数据已保存: 332.43 度
+2025-12-06 02:28:34,485 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,487 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,500 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,505 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,507 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,579 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,579 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,580 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,581 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,607 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,607 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,618 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,620 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,682 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,683 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,683 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,684 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,711 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,711 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,722 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,724 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,725 - INFO - 电量变化曲线图已保存到: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/electricity_trend.png
+2025-12-06 02:28:34,747 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,748 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,762 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,767 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,767 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,832 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,832 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,833 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,833 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,855 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,855 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,867 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,869 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,928 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,928 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,929 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,929 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,950 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,950 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,962 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,964 - WARNING - findfont: Font family 'Microsoft YaHei' not found.
+2025-12-06 02:28:34,965 - INFO - 最近20次电量变化曲线图已保存到: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/recent_20_changes.png
+2025-12-06 02:28:34,965 - INFO - 监控流程完成
