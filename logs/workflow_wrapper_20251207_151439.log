@@ -1,0 +1,1006 @@
+Wrapper start: 2025-12-07T15:14:39.504422+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=118):
+- ACCEPT_EULA
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+- ANT_HOME
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   68G  4.1G  95% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  3.3M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sdb16      881M   62M  758M   8% /boot
+/dev/sdb15      105M  6.2M   99M   6% /boot/efi
+/dev/sda1        74G  4.1G   66G   6% /mnt
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+4.0M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+276K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+- /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+- /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+- /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-Light.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+- /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+
+FontManager samples (name -> path):
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+WenQuanYi Micro Hei -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Sans Mono -> /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+WenQuanYi Zen Hei -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+Noto Serif CJK JP -> /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.0/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2025-12-07 07:14:45,351 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-07 07:14:46,862 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-07 07:14:46,862 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-07 07:14:48,573 - INFO - OCR识别器初始化成功
+2025-12-07 07:14:48,573 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-07 07:14:48,573 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-07 07:14:59,172 - INFO - 等待登录表单加载...
+2025-12-07 07:14:59,182 - INFO - 登录表单已加载
+2025-12-07 07:14:59,183 - INFO - 开始填写登录表单...
+2025-12-07 07:14:59,246 - INFO - 用户名填写完成
+2025-12-07 07:14:59,316 - INFO - 密码填写完成
+2025-12-07 07:14:59,316 - INFO - 检查是否有验证码...
+2025-12-07 07:14:59,316 - INFO - 查找验证码图片...
+2025-12-07 07:14:59,336 - INFO - 找到验证码图片，开始截图...
+2025-12-07 07:14:59,378 - INFO - 验证码图片截取成功
+2025-12-07 07:14:59,378 - INFO - 开始填写登录表单...
+2025-12-07 07:14:59,446 - INFO - 用户名填写完成
+2025-12-07 07:14:59,511 - INFO - 密码填写完成
+2025-12-07 07:14:59,512 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:14:59,512 - INFO - 验证码识别尝试 1/30
+2025-12-07 07:14:59,512 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:14:59,649 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:14:59,819 - INFO - tesseract 结果: YNSc
+2025-12-07 07:14:59,885 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:14:59,988 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:15:00,049 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:15:00,148 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:15:00,314 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:15:00,428 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:15:00,488 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:15:00,592 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:15:00,652 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:15:00,751 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:15:00,752 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:15:00,752 - INFO - 查找验证码输入框...
+2025-12-07 07:15:00,813 - INFO - 验证码填写完成
+2025-12-07 07:15:00,814 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:15:00,814 - INFO - 查找并点击登录按钮...
+2025-12-07 07:15:01,152 - INFO - 已点击登录按钮
+2025-12-07 07:15:08,181 - INFO - 开始填写登录表单...
+2025-12-07 07:15:08,243 - INFO - 用户名填写完成
+2025-12-07 07:15:08,305 - INFO - 密码填写完成
+2025-12-07 07:15:08,306 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:15:08,306 - INFO - 验证码识别尝试 2/30
+2025-12-07 07:15:08,306 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:15:08,412 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:15:08,512 - INFO - tesseract 结果: YNSc
+2025-12-07 07:15:08,574 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:15:08,676 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:15:08,737 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:15:08,835 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:15:08,995 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:15:09,105 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:15:09,167 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:15:09,270 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:15:09,333 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:15:09,434 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:15:09,434 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:15:09,434 - INFO - 查找验证码输入框...
+2025-12-07 07:15:09,494 - INFO - 验证码填写完成
+2025-12-07 07:15:09,494 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:15:09,494 - INFO - 查找并点击登录按钮...
+2025-12-07 07:15:09,551 - INFO - 已点击登录按钮
+2025-12-07 07:15:16,572 - INFO - 开始填写登录表单...
+2025-12-07 07:15:16,635 - INFO - 用户名填写完成
+2025-12-07 07:15:16,696 - INFO - 密码填写完成
+2025-12-07 07:15:16,697 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:15:16,697 - INFO - 验证码识别尝试 3/30
+2025-12-07 07:15:16,697 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:15:16,814 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:15:16,914 - INFO - tesseract 结果: YNSc
+2025-12-07 07:15:16,974 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:15:17,076 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:15:17,137 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:15:17,234 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:15:17,399 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:15:17,512 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:15:17,573 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:15:17,673 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:15:17,734 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:15:17,831 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:15:17,831 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:15:17,831 - INFO - 查找验证码输入框...
+2025-12-07 07:15:17,889 - INFO - 验证码填写完成
+2025-12-07 07:15:17,889 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:15:17,889 - INFO - 查找并点击登录按钮...
+2025-12-07 07:15:18,210 - INFO - 已点击登录按钮
+2025-12-07 07:15:25,231 - INFO - 开始填写登录表单...
+2025-12-07 07:15:25,293 - INFO - 用户名填写完成
+2025-12-07 07:15:25,354 - INFO - 密码填写完成
+2025-12-07 07:15:25,355 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:15:25,355 - INFO - 验证码识别尝试 4/30
+2025-12-07 07:15:25,355 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:15:25,456 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:15:25,557 - INFO - tesseract 结果: YNSc
+2025-12-07 07:15:25,620 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:15:25,722 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:15:25,785 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:15:25,886 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:15:26,044 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:15:26,153 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:15:26,214 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:15:26,316 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:15:26,377 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:15:26,476 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:15:26,476 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:15:26,476 - INFO - 查找验证码输入框...
+2025-12-07 07:15:26,533 - INFO - 验证码填写完成
+2025-12-07 07:15:26,533 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:15:26,533 - INFO - 查找并点击登录按钮...
+2025-12-07 07:15:26,869 - INFO - 已点击登录按钮
+2025-12-07 07:15:33,890 - INFO - 开始填写登录表单...
+2025-12-07 07:15:33,951 - INFO - 用户名填写完成
+2025-12-07 07:15:34,012 - INFO - 密码填写完成
+2025-12-07 07:15:34,012 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:15:34,012 - INFO - 验证码识别尝试 5/30
+2025-12-07 07:15:34,012 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:15:34,111 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:15:34,209 - INFO - tesseract 结果: YNSc
+2025-12-07 07:15:34,271 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:15:34,371 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:15:34,431 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:15:34,531 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:15:34,688 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:15:34,799 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:15:34,859 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:15:34,961 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:15:35,021 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:15:35,119 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:15:35,119 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:15:35,119 - INFO - 查找验证码输入框...
+2025-12-07 07:15:35,176 - INFO - 验证码填写完成
+2025-12-07 07:15:35,176 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:15:35,176 - INFO - 查找并点击登录按钮...
+2025-12-07 07:15:35,235 - INFO - 已点击登录按钮
+2025-12-07 07:15:42,256 - INFO - 开始填写登录表单...
+2025-12-07 07:15:42,318 - INFO - 用户名填写完成
+2025-12-07 07:15:42,379 - INFO - 密码填写完成
+2025-12-07 07:15:42,379 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:15:42,380 - INFO - 验证码识别尝试 6/30
+2025-12-07 07:15:42,380 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:15:42,487 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:15:42,587 - INFO - tesseract 结果: YNSc
+2025-12-07 07:15:42,649 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:15:42,752 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:15:42,812 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:15:42,908 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:15:43,065 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:15:43,177 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:15:43,238 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:15:43,337 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:15:43,398 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:15:43,493 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:15:43,493 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:15:43,493 - INFO - 查找验证码输入框...
+2025-12-07 07:15:43,550 - INFO - 验证码填写完成
+2025-12-07 07:15:43,550 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:15:43,550 - INFO - 查找并点击登录按钮...
+2025-12-07 07:15:43,872 - INFO - 已点击登录按钮
+2025-12-07 07:15:50,895 - INFO - 开始填写登录表单...
+2025-12-07 07:15:50,958 - INFO - 用户名填写完成
+2025-12-07 07:15:51,023 - INFO - 密码填写完成
+2025-12-07 07:15:51,024 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:15:51,024 - INFO - 验证码识别尝试 7/30
+2025-12-07 07:15:51,024 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:15:51,159 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:15:51,258 - INFO - tesseract 结果: YNSc
+2025-12-07 07:15:51,319 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:15:51,424 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:15:51,492 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:15:51,596 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:15:51,755 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:15:51,868 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:15:51,939 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:15:52,041 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:15:52,102 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:15:52,207 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:15:52,207 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:15:52,207 - INFO - 查找验证码输入框...
+2025-12-07 07:15:52,264 - INFO - 验证码填写完成
+2025-12-07 07:15:52,264 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:15:52,265 - INFO - 查找并点击登录按钮...
+2025-12-07 07:15:52,594 - INFO - 已点击登录按钮
+2025-12-07 07:15:59,615 - INFO - 开始填写登录表单...
+2025-12-07 07:15:59,678 - INFO - 用户名填写完成
+2025-12-07 07:15:59,740 - INFO - 密码填写完成
+2025-12-07 07:15:59,741 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:15:59,741 - INFO - 验证码识别尝试 8/30
+2025-12-07 07:15:59,741 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:15:59,861 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:15:59,965 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:00,029 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:16:00,134 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:16:00,195 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:16:00,295 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:16:00,454 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:16:00,565 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:16:00,626 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:16:00,729 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:16:00,789 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:16:00,887 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:16:00,888 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:16:00,888 - INFO - 查找验证码输入框...
+2025-12-07 07:16:00,946 - INFO - 验证码填写完成
+2025-12-07 07:16:00,946 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:16:00,946 - INFO - 查找并点击登录按钮...
+2025-12-07 07:16:01,354 - INFO - 已点击登录按钮
+2025-12-07 07:16:08,375 - INFO - 开始填写登录表单...
+2025-12-07 07:16:08,438 - INFO - 用户名填写完成
+2025-12-07 07:16:08,497 - INFO - 密码填写完成
+2025-12-07 07:16:08,498 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:16:08,498 - INFO - 验证码识别尝试 9/30
+2025-12-07 07:16:08,498 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:16:08,597 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:16:08,698 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:08,759 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:16:08,861 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:16:08,921 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:16:09,021 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:16:09,188 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:16:09,304 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:16:09,371 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:16:09,475 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:16:09,543 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:16:09,648 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:16:09,648 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:16:09,648 - INFO - 查找验证码输入框...
+2025-12-07 07:16:09,707 - INFO - 验证码填写完成
+2025-12-07 07:16:09,707 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:16:09,707 - INFO - 查找并点击登录按钮...
+2025-12-07 07:16:09,768 - INFO - 已点击登录按钮
+2025-12-07 07:16:16,789 - INFO - 开始填写登录表单...
+2025-12-07 07:16:16,853 - INFO - 用户名填写完成
+2025-12-07 07:16:16,913 - INFO - 密码填写完成
+2025-12-07 07:16:16,914 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:16:16,914 - INFO - 验证码识别尝试 10/30
+2025-12-07 07:16:16,914 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:16:17,015 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:16:17,117 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:17,178 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:16:17,286 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:16:17,347 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:16:17,451 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:16:17,609 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:16:17,719 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:16:17,779 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:16:17,889 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:16:17,957 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:16:18,056 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:16:18,056 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:16:18,056 - INFO - 查找验证码输入框...
+2025-12-07 07:16:18,117 - INFO - 验证码填写完成
+2025-12-07 07:16:18,117 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:16:18,117 - INFO - 查找并点击登录按钮...
+2025-12-07 07:16:18,444 - INFO - 已点击登录按钮
+2025-12-07 07:16:25,465 - INFO - 开始填写登录表单...
+2025-12-07 07:16:25,530 - INFO - 用户名填写完成
+2025-12-07 07:16:25,593 - INFO - 密码填写完成
+2025-12-07 07:16:25,593 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:16:25,594 - INFO - 验证码识别尝试 11/30
+2025-12-07 07:16:25,594 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:16:25,705 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:16:25,807 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:25,876 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:16:25,978 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:16:26,038 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:16:26,135 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:16:26,291 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:16:26,401 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:16:26,460 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:16:26,559 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:16:26,619 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:16:26,716 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:16:26,716 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:16:26,717 - INFO - 查找验证码输入框...
+2025-12-07 07:16:26,775 - INFO - 验证码填写完成
+2025-12-07 07:16:26,775 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:16:26,775 - INFO - 查找并点击登录按钮...
+2025-12-07 07:16:26,833 - INFO - 已点击登录按钮
+2025-12-07 07:16:33,854 - INFO - 开始填写登录表单...
+2025-12-07 07:16:33,917 - INFO - 用户名填写完成
+2025-12-07 07:16:33,978 - INFO - 密码填写完成
+2025-12-07 07:16:33,979 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:16:33,979 - INFO - 验证码识别尝试 12/30
+2025-12-07 07:16:33,979 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:16:34,093 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:16:34,190 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:34,250 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:16:34,349 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:16:34,418 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:16:34,514 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:16:34,669 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:16:34,778 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:16:34,837 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:16:34,939 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:16:34,999 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:16:35,097 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:16:35,097 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:16:35,097 - INFO - 查找验证码输入框...
+2025-12-07 07:16:35,157 - INFO - 验证码填写完成
+2025-12-07 07:16:35,157 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:16:35,157 - INFO - 查找并点击登录按钮...
+2025-12-07 07:16:35,215 - INFO - 已点击登录按钮
+2025-12-07 07:16:42,237 - INFO - 开始填写登录表单...
+2025-12-07 07:16:42,299 - INFO - 用户名填写完成
+2025-12-07 07:16:42,360 - INFO - 密码填写完成
+2025-12-07 07:16:42,361 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:16:42,361 - INFO - 验证码识别尝试 13/30
+2025-12-07 07:16:42,361 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:16:42,459 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:16:42,557 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:42,618 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:16:42,716 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:16:42,776 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:16:42,872 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:16:43,028 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:16:43,140 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:16:43,208 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:16:43,311 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:16:43,371 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:16:43,469 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:16:43,469 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:16:43,469 - INFO - 查找验证码输入框...
+2025-12-07 07:16:43,527 - INFO - 验证码填写完成
+2025-12-07 07:16:43,528 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:16:43,528 - INFO - 查找并点击登录按钮...
+2025-12-07 07:16:43,849 - INFO - 已点击登录按钮
+2025-12-07 07:16:50,870 - INFO - 开始填写登录表单...
+2025-12-07 07:16:50,935 - INFO - 用户名填写完成
+2025-12-07 07:16:50,997 - INFO - 密码填写完成
+2025-12-07 07:16:50,998 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:16:50,998 - INFO - 验证码识别尝试 14/30
+2025-12-07 07:16:50,998 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:16:51,098 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:16:51,197 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:51,264 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:16:51,365 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:16:51,424 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:16:51,526 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:16:51,691 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:16:51,800 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:16:51,860 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:16:51,962 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:16:52,023 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:16:52,121 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:16:52,121 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:16:52,121 - INFO - 查找验证码输入框...
+2025-12-07 07:16:52,180 - INFO - 验证码填写完成
+2025-12-07 07:16:52,180 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:16:52,180 - INFO - 查找并点击登录按钮...
+2025-12-07 07:16:52,509 - INFO - 已点击登录按钮
+2025-12-07 07:16:59,531 - INFO - 开始填写登录表单...
+2025-12-07 07:16:59,598 - INFO - 用户名填写完成
+2025-12-07 07:16:59,663 - INFO - 密码填写完成
+2025-12-07 07:16:59,664 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:16:59,664 - INFO - 验证码识别尝试 15/30
+2025-12-07 07:16:59,664 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:16:59,768 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:16:59,867 - INFO - tesseract 结果: YNSc
+2025-12-07 07:16:59,928 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:17:00,028 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:17:00,090 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:17:00,189 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:17:00,348 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:17:00,459 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:17:00,520 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:17:00,623 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:17:00,685 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:17:00,785 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:17:00,785 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:17:00,785 - INFO - 查找验证码输入框...
+2025-12-07 07:17:00,847 - INFO - 验证码填写完成
+2025-12-07 07:17:00,847 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:17:00,847 - INFO - 查找并点击登录按钮...
+2025-12-07 07:17:01,178 - INFO - 已点击登录按钮
+2025-12-07 07:17:08,201 - INFO - 开始填写登录表单...
+2025-12-07 07:17:08,263 - INFO - 用户名填写完成
+2025-12-07 07:17:08,324 - INFO - 密码填写完成
+2025-12-07 07:17:08,325 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:17:08,325 - INFO - 验证码识别尝试 16/30
+2025-12-07 07:17:08,325 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:17:08,422 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:17:08,522 - INFO - tesseract 结果: YNSc
+2025-12-07 07:17:08,584 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:17:08,687 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:17:08,748 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:17:08,845 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:17:09,001 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:17:09,114 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:17:09,174 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:17:09,279 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:17:09,339 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:17:09,438 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:17:09,438 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:17:09,439 - INFO - 查找验证码输入框...
+2025-12-07 07:17:09,498 - INFO - 验证码填写完成
+2025-12-07 07:17:09,498 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:17:09,498 - INFO - 查找并点击登录按钮...
+2025-12-07 07:17:09,828 - INFO - 已点击登录按钮
+2025-12-07 07:17:16,849 - INFO - 开始填写登录表单...
+2025-12-07 07:17:16,910 - INFO - 用户名填写完成
+2025-12-07 07:17:16,971 - INFO - 密码填写完成
+2025-12-07 07:17:16,972 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:17:16,972 - INFO - 验证码识别尝试 17/30
+2025-12-07 07:17:16,972 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:17:17,083 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:17:17,183 - INFO - tesseract 结果: YNSc
+2025-12-07 07:17:17,245 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:17:17,344 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:17:17,404 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:17:17,501 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:17:17,657 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:17:17,766 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:17:17,826 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:17:17,926 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:17:17,985 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:17:18,088 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:17:18,088 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:17:18,089 - INFO - 查找验证码输入框...
+2025-12-07 07:17:18,147 - INFO - 验证码填写完成
+2025-12-07 07:17:18,147 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:17:18,147 - INFO - 查找并点击登录按钮...
+2025-12-07 07:17:18,483 - INFO - 已点击登录按钮
+2025-12-07 07:17:25,504 - INFO - 开始填写登录表单...
+2025-12-07 07:17:25,568 - INFO - 用户名填写完成
+2025-12-07 07:17:25,627 - INFO - 密码填写完成
+2025-12-07 07:17:25,627 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:17:25,627 - INFO - 验证码识别尝试 18/30
+2025-12-07 07:17:25,627 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:17:25,726 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:17:25,827 - INFO - tesseract 结果: YNSc
+2025-12-07 07:17:25,888 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:17:25,989 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:17:26,049 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:17:26,149 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:17:26,316 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:17:26,430 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:17:26,490 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:17:26,596 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:17:26,657 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:17:26,755 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:17:26,755 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:17:26,756 - INFO - 查找验证码输入框...
+2025-12-07 07:17:26,813 - INFO - 验证码填写完成
+2025-12-07 07:17:26,813 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:17:26,813 - INFO - 查找并点击登录按钮...
+2025-12-07 07:17:27,139 - INFO - 已点击登录按钮
+2025-12-07 07:17:34,160 - INFO - 开始填写登录表单...
+2025-12-07 07:17:34,222 - INFO - 用户名填写完成
+2025-12-07 07:17:34,282 - INFO - 密码填写完成
+2025-12-07 07:17:34,283 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:17:34,283 - INFO - 验证码识别尝试 19/30
+2025-12-07 07:17:34,283 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:17:34,382 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:17:34,479 - INFO - tesseract 结果: YNSc
+2025-12-07 07:17:34,539 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:17:34,641 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:17:34,700 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:17:34,796 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:17:34,953 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:17:35,077 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:17:35,137 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:17:35,238 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:17:35,299 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:17:35,398 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:17:35,398 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:17:35,398 - INFO - 查找验证码输入框...
+2025-12-07 07:17:35,454 - INFO - 验证码填写完成
+2025-12-07 07:17:35,454 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:17:35,454 - INFO - 查找并点击登录按钮...
+2025-12-07 07:17:35,510 - INFO - 已点击登录按钮
+2025-12-07 07:17:42,530 - INFO - 开始填写登录表单...
+2025-12-07 07:17:42,591 - INFO - 用户名填写完成
+2025-12-07 07:17:42,651 - INFO - 密码填写完成
+2025-12-07 07:17:42,652 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:17:42,652 - INFO - 验证码识别尝试 20/30
+2025-12-07 07:17:42,652 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:17:42,761 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:17:42,861 - INFO - tesseract 结果: YNSc
+2025-12-07 07:17:42,921 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:17:43,021 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:17:43,080 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:17:43,177 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:17:43,332 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:17:43,440 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:17:43,500 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:17:43,605 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:17:43,664 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:17:43,760 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:17:43,760 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:17:43,760 - INFO - 查找验证码输入框...
+2025-12-07 07:17:43,818 - INFO - 验证码填写完成
+2025-12-07 07:17:43,818 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:17:43,818 - INFO - 查找并点击登录按钮...
+2025-12-07 07:17:43,876 - INFO - 已点击登录按钮
+2025-12-07 07:17:50,897 - INFO - 开始填写登录表单...
+2025-12-07 07:17:50,959 - INFO - 用户名填写完成
+2025-12-07 07:17:51,019 - INFO - 密码填写完成
+2025-12-07 07:17:51,020 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:17:51,020 - INFO - 验证码识别尝试 21/30
+2025-12-07 07:17:51,020 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:17:51,128 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:17:51,236 - INFO - tesseract 结果: YNSc
+2025-12-07 07:17:51,296 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:17:51,398 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:17:51,457 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:17:51,559 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:17:51,715 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:17:51,824 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:17:51,883 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:17:51,989 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:17:52,056 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:17:52,156 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:17:52,156 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:17:52,156 - INFO - 查找验证码输入框...
+2025-12-07 07:17:52,212 - INFO - 验证码填写完成
+2025-12-07 07:17:52,212 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:17:52,212 - INFO - 查找并点击登录按钮...
+2025-12-07 07:17:52,532 - INFO - 已点击登录按钮
+2025-12-07 07:17:59,555 - INFO - 开始填写登录表单...
+2025-12-07 07:17:59,619 - INFO - 用户名填写完成
+2025-12-07 07:17:59,680 - INFO - 密码填写完成
+2025-12-07 07:17:59,680 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:17:59,680 - INFO - 验证码识别尝试 22/30
+2025-12-07 07:17:59,681 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:17:59,785 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:17:59,883 - INFO - tesseract 结果: YNSc
+2025-12-07 07:17:59,943 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:00,045 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:00,106 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:00,210 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:00,368 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:00,479 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:00,539 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:00,640 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:18:00,699 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:18:00,795 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:18:00,795 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:18:00,795 - INFO - 查找验证码输入框...
+2025-12-07 07:18:00,852 - INFO - 验证码填写完成
+2025-12-07 07:18:00,852 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:18:00,852 - INFO - 查找并点击登录按钮...
+2025-12-07 07:18:00,910 - INFO - 已点击登录按钮
+2025-12-07 07:18:07,931 - INFO - 开始填写登录表单...
+2025-12-07 07:18:07,992 - INFO - 用户名填写完成
+2025-12-07 07:18:08,051 - INFO - 密码填写完成
+2025-12-07 07:18:08,052 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:18:08,052 - INFO - 验证码识别尝试 23/30
+2025-12-07 07:18:08,052 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:18:08,161 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:18:08,260 - INFO - tesseract 结果: YNSc
+2025-12-07 07:18:08,319 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:08,421 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:08,480 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:08,578 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:08,732 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:08,841 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:08,900 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:09,001 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:18:09,060 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:18:09,159 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:18:09,159 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:18:09,159 - INFO - 查找验证码输入框...
+2025-12-07 07:18:09,217 - INFO - 验证码填写完成
+2025-12-07 07:18:09,217 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:18:09,217 - INFO - 查找并点击登录按钮...
+2025-12-07 07:18:09,274 - INFO - 已点击登录按钮
+2025-12-07 07:18:16,295 - INFO - 开始填写登录表单...
+2025-12-07 07:18:16,357 - INFO - 用户名填写完成
+2025-12-07 07:18:16,416 - INFO - 密码填写完成
+2025-12-07 07:18:16,417 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:18:16,417 - INFO - 验证码识别尝试 24/30
+2025-12-07 07:18:16,417 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:18:16,515 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:18:16,614 - INFO - tesseract 结果: YNSc
+2025-12-07 07:18:16,674 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:16,774 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:16,834 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:16,930 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:17,087 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:17,203 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:17,262 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:17,365 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:18:17,424 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:18:17,521 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:18:17,521 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:18:17,521 - INFO - 查找验证码输入框...
+2025-12-07 07:18:17,577 - INFO - 验证码填写完成
+2025-12-07 07:18:17,577 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:18:17,577 - INFO - 查找并点击登录按钮...
+2025-12-07 07:18:17,899 - INFO - 已点击登录按钮
+2025-12-07 07:18:24,919 - INFO - 开始填写登录表单...
+2025-12-07 07:18:24,980 - INFO - 用户名填写完成
+2025-12-07 07:18:25,039 - INFO - 密码填写完成
+2025-12-07 07:18:25,040 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:18:25,040 - INFO - 验证码识别尝试 25/30
+2025-12-07 07:18:25,040 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:18:25,137 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:18:25,238 - INFO - tesseract 结果: YNSc
+2025-12-07 07:18:25,299 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:25,400 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:25,459 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:25,557 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:25,713 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:25,822 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:25,881 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:25,983 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:18:26,044 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:18:26,145 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:18:26,145 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:18:26,145 - INFO - 查找验证码输入框...
+2025-12-07 07:18:26,202 - INFO - 验证码填写完成
+2025-12-07 07:18:26,203 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:18:26,203 - INFO - 查找并点击登录按钮...
+2025-12-07 07:18:26,260 - INFO - 已点击登录按钮
+2025-12-07 07:18:33,280 - INFO - 开始填写登录表单...
+2025-12-07 07:18:33,342 - INFO - 用户名填写完成
+2025-12-07 07:18:33,402 - INFO - 密码填写完成
+2025-12-07 07:18:33,402 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:18:33,402 - INFO - 验证码识别尝试 26/30
+2025-12-07 07:18:33,402 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:18:33,500 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:18:33,597 - INFO - tesseract 结果: YNSc
+2025-12-07 07:18:33,657 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:33,758 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:33,818 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:33,918 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:34,074 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:34,185 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:34,244 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:34,345 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:18:34,404 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:18:34,501 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:18:34,502 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:18:34,502 - INFO - 查找验证码输入框...
+2025-12-07 07:18:34,558 - INFO - 验证码填写完成
+2025-12-07 07:18:34,558 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:18:34,558 - INFO - 查找并点击登录按钮...
+2025-12-07 07:18:34,880 - INFO - 已点击登录按钮
+2025-12-07 07:18:41,900 - INFO - 开始填写登录表单...
+2025-12-07 07:18:41,961 - INFO - 用户名填写完成
+2025-12-07 07:18:42,021 - INFO - 密码填写完成
+2025-12-07 07:18:42,022 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:18:42,022 - INFO - 验证码识别尝试 27/30
+2025-12-07 07:18:42,022 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:18:42,130 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:18:42,232 - INFO - tesseract 结果: YNSc
+2025-12-07 07:18:42,300 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:42,402 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:42,462 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:42,558 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:42,714 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:42,827 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:42,887 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:42,988 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:18:43,048 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:18:43,148 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:18:43,148 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:18:43,149 - INFO - 查找验证码输入框...
+2025-12-07 07:18:43,206 - INFO - 验证码填写完成
+2025-12-07 07:18:43,207 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:18:43,207 - INFO - 查找并点击登录按钮...
+2025-12-07 07:18:43,536 - INFO - 已点击登录按钮
+2025-12-07 07:18:50,557 - INFO - 开始填写登录表单...
+2025-12-07 07:18:50,618 - INFO - 用户名填写完成
+2025-12-07 07:18:50,678 - INFO - 密码填写完成
+2025-12-07 07:18:50,679 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:18:50,679 - INFO - 验证码识别尝试 28/30
+2025-12-07 07:18:50,679 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:18:50,782 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:18:50,883 - INFO - tesseract 结果: YNSc
+2025-12-07 07:18:50,944 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:51,048 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:51,108 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:51,204 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:51,361 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:51,471 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:51,530 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:51,632 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:18:51,691 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:18:51,792 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:18:51,792 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:18:51,792 - INFO - 查找验证码输入框...
+2025-12-07 07:18:51,850 - INFO - 验证码填写完成
+2025-12-07 07:18:51,850 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:18:51,850 - INFO - 查找并点击登录按钮...
+2025-12-07 07:18:51,907 - INFO - 已点击登录按钮
+2025-12-07 07:18:58,928 - INFO - 开始填写登录表单...
+2025-12-07 07:18:58,990 - INFO - 用户名填写完成
+2025-12-07 07:18:59,050 - INFO - 密码填写完成
+2025-12-07 07:18:59,050 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:18:59,050 - INFO - 验证码识别尝试 29/30
+2025-12-07 07:18:59,051 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:18:59,149 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:18:59,248 - INFO - tesseract 结果: YNSc
+2025-12-07 07:18:59,309 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:18:59,410 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:18:59,469 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:18:59,565 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:18:59,721 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:18:59,832 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:18:59,892 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:18:59,996 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:19:00,056 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:19:00,160 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:19:00,160 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:19:00,161 - INFO - 查找验证码输入框...
+2025-12-07 07:19:00,221 - INFO - 验证码填写完成
+2025-12-07 07:19:00,221 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:19:00,221 - INFO - 查找并点击登录按钮...
+2025-12-07 07:19:00,543 - INFO - 已点击登录按钮
+2025-12-07 07:19:07,564 - INFO - 开始填写登录表单...
+2025-12-07 07:19:07,624 - INFO - 用户名填写完成
+2025-12-07 07:19:07,684 - INFO - 密码填写完成
+2025-12-07 07:19:07,684 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-07 07:19:07,684 - INFO - 验证码识别尝试 30/30
+2025-12-07 07:19:07,684 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-07 07:19:07,782 - INFO - easyocr 结果: ['YNSC(0.53)']
+2025-12-07 07:19:07,881 - INFO - tesseract 结果: YNSc
+2025-12-07 07:19:07,942 - INFO - easyocr alt1 结果: ['YNSC(0.81)']
+2025-12-07 07:19:08,046 - INFO - tesseract alt1 结果: YN5e
+2025-12-07 07:19:08,105 - INFO - easyocr alt2 结果: ['YNSC(0.85)']
+2025-12-07 07:19:08,201 - INFO - tesseract alt2 结果: YN5c
+2025-12-07 07:19:08,356 - INFO - easyocr alt3 结果: ['YNSC(0.88)']
+2025-12-07 07:19:08,469 - INFO - tesseract alt3 结果: YNS
+2025-12-07 07:19:08,528 - INFO - easyocr alt4 结果: ['YNSC(0.79)']
+2025-12-07 07:19:08,628 - INFO - tesseract alt4 结果: YN5Se
+2025-12-07 07:19:08,687 - INFO - easyocr alt5 结果: ['YNSC(0.54)']
+2025-12-07 07:19:08,791 - INFO - tesseract alt5 结果: YN5e
+2025-12-07 07:19:08,792 - INFO - 最终验证码识别结果: YNSC (engine=easyocr_alt3, prob=0.8810874223709106)
+2025-12-07 07:19:08,792 - INFO - 查找验证码输入框...
+2025-12-07 07:19:08,850 - INFO - 验证码填写完成
+2025-12-07 07:19:08,850 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-07 07:19:08,850 - INFO - 查找并点击登录按钮...
+2025-12-07 07:19:08,908 - INFO - 已点击登录按钮
+2025-12-07 07:19:15,929 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2025-12-07 07:19:15,929 - ERROR - 处理验证码时出错: EOF when reading a line
+2025-12-07 07:19:15,929 - WARNING - 验证码处理失败，但继续尝试登录
+2025-12-07 07:19:15,929 - INFO - 查找并点击登录按钮...
+2025-12-07 07:19:15,986 - INFO - 已点击登录按钮
+2025-12-07 07:19:20,986 - INFO - 等待登录成功...
+2025-12-07 07:19:25,991 - INFO - 登录可能成功，继续下一步...
+2025-12-07 07:19:25,991 - INFO - 查找'去充值'按钮...
+2025-12-07 07:19:26,055 - INFO - 已点击充值按钮
+2025-12-07 07:19:29,055 - INFO - 开始提取剩余电量信息...
+2025-12-07 07:19:29,060 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-07 07:19:29,070 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-07 07:19:29,078 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-07 07:19:29,082 - INFO - 在页面源码中查找电量信息...
+2025-12-07 07:19:29,093 - WARNING - 未能提取到剩余电量信息
+2025-12-07 07:19:29,093 - WARNING - 没有电量数据可保存
+2025-12-07 07:19:29,093 - INFO - 监控流程完成
+Wrapper end: 2025-12-07T15:19:29.210748+08:00
