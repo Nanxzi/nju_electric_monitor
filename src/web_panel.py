@@ -171,7 +171,7 @@ def index():
         font=dict(family='Segoe UI,微软雅黑', size=14, color='#ff6347')
     )
     recent_20_fig = go.Figure(data=[recent_20_trace], layout=recent_20_layout)
-    recent_20_plot_div = pio.to_html(recent_20_fig, full_html=False, include_plotlyjs='cdn', config={
+    recent_20_plot_div = pio.to_html(recent_20_fig, full_html=False, include_plotlyjs=True, config={
         'displayModeBar': True,
         'scrollZoom': True,
         'displaylogo': False,
@@ -219,7 +219,7 @@ def index():
         font=dict(family='Segoe UI,微软雅黑', size=14, color='#b2e6ff')
     )
     fig = go.Figure(data=[trace], layout=layout)
-    plot_div = pio.to_html(fig, full_html=False, include_plotlyjs='cdn', config={
+    plot_div = pio.to_html(fig, full_html=False, include_plotlyjs=False, config={
         'displayModeBar': True,
         'scrollZoom': True,
         'displaylogo': False,
