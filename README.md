@@ -8,7 +8,7 @@
 
 [点击查看电量数据表（CSV）](data/electricity_data.csv)
 
-## 功能特性
+## 🌟功能特性
 
 - 自动登录南京大学电费充值系统
 - 自动识别验证码（使用OCR）
@@ -19,21 +19,43 @@
 - **可视化网页面板，支持交互式电量曲线与数据表格**
 - 一键批处理启动与网页自动打开
 
-## 环境要求
+## 🤖Github Actions 自动运行
+
+本项目已集成 Github Actions 自动定时监控与数据更新，无需本地部署即可自动采集和推送电量数据。
+
+- 自动定时任务：每天多次自动运行，采集电量数据并推送到仓库。
+- 自动安装依赖、中文字体、ChromeDriver、Tesseract OCR。
+- 自动生成数据文件和可视化图片。
+- 运行日志和数据自动提交到仓库。
+
+**如何启用/配置自动运行：**
+
+1. 在仓库设置 Secrets，添加 `NJU_USERNAME` 和 `NJU_PASSWORD`。
+2. config_workflow.json中可以配置参数，`NJU_USERNAME` 和 `NJU_PASSWORD`不变即可
+3. Actions 会自动拉取凭据并运行，无需手动操作。
+4. 可在 Actions 页面查看运行日志和结果。
+
+config_workflow.json部分参数：
+
+- `captcha_retry_count`: 验证码识别重试次数（默认5次）
+- `captcha_confidence_threshold`: 验证码识别置信度阈值（默认0.3）
+- `save_captcha_images`: 是否保存验证码图片用于调试（默认true）
+
+## 🖥️本地运行方法
+
+### 环境要求（本地运行）
 
 - Python 3.7+
 - Chrome浏览器
 - ChromeDriver（已包含在chromedriver-win64目录中）
 
-## 安装依赖
+### 1. 安装依赖
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 使用方法
-
-### 1. 环境测试（推荐）
+### 2. 环境测试（推荐）
 
 在运行主脚本之前，建议先运行环境测试：
 
@@ -41,7 +63,7 @@ pip install -r requirements.txt
 python tests/test_environment.py
 ```
 
-### 2. 解决PIL兼容性问题（重要）
+### 3. 解决PIL兼容性问题（重要）
 
 如果遇到 `module 'PIL.Image' has no attribute 'ANTIALIAS'` 错误，请运行：
 
@@ -49,13 +71,17 @@ python tests/test_environment.py
 python src/fix_pil_compatibility.py
 ```
 
-### 3. 准备ChromeDriver
+### 4. 准备ChromeDriver
 
 确保项目根目录下有 `chromedriver-win64` 文件夹，并包含 `chromedriver.exe` 文件。
 
-### 4. 配置脚本
+### 5. 配置脚本
 
 首次运行时会自动创建 `config.json` 配置文件，或者手动创建：
+
+- `captcha_retry_count`: 验证码识别重试次数（默认5次）
+- `captcha_confidence_threshold`: 验证码识别置信度阈值（默认0.3）
+- `save_captcha_images`: 是否保存验证码图片用于调试（默认true）
 
 ```json
 {
@@ -70,7 +96,7 @@ python src/fix_pil_compatibility.py
 }
 ```
 
-### 5. 运行主监控脚本
+### 6. 运行主监控脚本
 
 #### 方法1：使用批处理文件（推荐）
 
@@ -90,7 +116,7 @@ python src/nju_electric_monitor_auto.py
 python src/nju_electric_monitor_auto.py config.json
 ```
 
-### 6. 启动可视化网页面板
+### 7. 启动可视化网页面板
 
 #### 推荐方式：一键批处理启动
 
@@ -110,7 +136,7 @@ python src/web_panel.py
 
 然后浏览器访问 http://127.0.0.1:5000/
 
-### 7. 调试与测试工具
+### 8. 调试与测试工具
 
 - 页面结构调试：
   ```bash
@@ -121,7 +147,7 @@ python src/web_panel.py
   python tests/test_captcha_recognition.py
   ```
 
-## 输出文件
+## 📄输出文件
 
 - `data/electricity_data.json`: 电量数据（JSON格式）
 - `data/electricity_data.csv`: 电量数据（CSV格式）
@@ -129,23 +155,24 @@ python src/web_panel.py
 - `data/debug_page_source.html`: 页面源码（用于调试）
 - `data/captcha_debug.png`: 验证码图片（用于调试）
 
-## 网页面板功能
+## 🏁网页面板功能
 
 - 实时展示电量变化曲线（可缩放、拖动、悬停查看数据）
 - 数据表格美观展示，支持一键刷新
 - 科技感UI设计，适配桌面与移动端
 
-## 注意事项
+## 💡注意事项
 
-1. 确保Chrome浏览器版本与ChromeDriver版本兼容
-2. 如果验证码识别失败，脚本会提示手动输入
-3. 建议在无头模式下运行以提高性能
-4. 请妥善保管登录凭据
-5. **重要**：如遇PIL兼容性问题，请运行 `src/fix_pil_compatibility.py`
-6. 如果无法提取电量信息，请运行 `tests/debug_page_structure.py` 分析页面结构
-7. 如果验证码识别不正确，请运行 `tests/test_captcha_recognition.py` 测试识别效果
+1. 建议优先使用 Github Actions 自动运行，无需本地部署。
+2. 本地运行时确保Chrome浏览器版本与ChromeDriver版本兼容。
+3. 如果验证码识别失败，脚本会提示手动输入。
+4. 建议在无头模式下运行以提高性能。
+5. 请妥善保管登录凭据。
+6. **重要**：如遇PIL兼容性问题，请运行 `src/fix_pil_compatibility.py`
+7. 如果无法提取电量信息，请运行 `tests/debug_page_structure.py` 分析页面结构。
+8. 如果验证码识别不正确，请运行 `tests/test_captcha_recognition.py` 测试识别效果。
 
-## 故障排除
+## 🔐故障排除
 
 ### PIL兼容性问题（常见）
 
@@ -209,12 +236,6 @@ python src/web_panel.py
 2. 查看生成的调试图片，选择最清晰的处理方法
 3. 调整配置文件中的 `captcha_confidence_threshold` 参数
 4. 如果自动识别效果不好，可以手动输入验证码
-
-## 配置参数说明
-
-- `captcha_retry_count`: 验证码识别重试次数（默认5次）
-- `captcha_confidence_threshold`: 验证码识别置信度阈值（默认0.3）
-- `save_captcha_images`: 是否保存验证码图片用于调试（默认true）
 
 ## 许可证
 
