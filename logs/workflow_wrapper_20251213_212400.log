@@ -1,0 +1,1006 @@
+Wrapper start: 2025-12-13T21:24:00.030020+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=118):
+- ACCEPT_EULA
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+- ANT_HOME
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   68G  4.0G  95% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  3.3M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda16      881M   62M  758M   8% /boot
+/dev/sda15      105M  6.2M   99M   6% /boot/efi
+/dev/sdb1        74G  4.1G   66G   6% /mnt
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+5.3M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+288K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Light.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+- /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+- /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+
+FontManager samples (name -> path):
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+DejaVu Sans Mono -> /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Liberation Mono -> /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Liberation Mono -> /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2025-12-13 13:24:04,444 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-13 13:24:06,415 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-13 13:24:06,415 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-13 13:24:07,985 - INFO - OCR识别器初始化成功
+2025-12-13 13:24:07,985 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-13 13:24:07,985 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-13 13:24:19,737 - INFO - 等待登录表单加载...
+2025-12-13 13:24:19,747 - INFO - 登录表单已加载
+2025-12-13 13:24:19,747 - INFO - 开始填写登录表单...
+2025-12-13 13:24:19,809 - INFO - 用户名填写完成
+2025-12-13 13:24:19,879 - INFO - 密码填写完成
+2025-12-13 13:24:19,879 - INFO - 检查是否有验证码...
+2025-12-13 13:24:19,879 - INFO - 查找验证码图片...
+2025-12-13 13:24:19,898 - INFO - 找到验证码图片，开始截图...
+2025-12-13 13:24:19,949 - INFO - 验证码图片截取成功
+2025-12-13 13:24:19,949 - INFO - 开始填写登录表单...
+2025-12-13 13:24:20,013 - INFO - 用户名填写完成
+2025-12-13 13:24:20,075 - INFO - 密码填写完成
+2025-12-13 13:24:20,076 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:24:20,076 - INFO - 验证码识别尝试 1/30
+2025-12-13 13:24:20,076 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:24:20,200 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:24:20,354 - INFO - tesseract 结果: F7N1
+2025-12-13 13:24:20,418 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:24:20,511 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:24:20,570 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:24:20,663 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:24:20,825 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:24:20,933 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:24:20,992 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:24:21,085 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:24:21,144 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:24:21,241 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:24:21,241 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:24:21,241 - INFO - 查找验证码输入框...
+2025-12-13 13:24:21,300 - INFO - 验证码填写完成
+2025-12-13 13:24:21,301 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:24:21,301 - INFO - 查找并点击登录按钮...
+2025-12-13 13:24:21,672 - INFO - 已点击登录按钮
+2025-12-13 13:24:28,699 - INFO - 开始填写登录表单...
+2025-12-13 13:24:28,762 - INFO - 用户名填写完成
+2025-12-13 13:24:28,821 - INFO - 密码填写完成
+2025-12-13 13:24:28,822 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:24:28,822 - INFO - 验证码识别尝试 2/30
+2025-12-13 13:24:28,822 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:24:28,919 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:24:29,014 - INFO - tesseract 结果: F7N1
+2025-12-13 13:24:29,074 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:24:29,171 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:24:29,230 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:24:29,329 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:24:29,495 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:24:29,603 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:24:29,663 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:24:29,757 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:24:29,817 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:24:29,910 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:24:29,910 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:24:29,910 - INFO - 查找验证码输入框...
+2025-12-13 13:24:29,967 - INFO - 验证码填写完成
+2025-12-13 13:24:29,968 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:24:29,968 - INFO - 查找并点击登录按钮...
+2025-12-13 13:24:30,023 - INFO - 已点击登录按钮
+2025-12-13 13:24:37,044 - INFO - 开始填写登录表单...
+2025-12-13 13:24:37,113 - INFO - 用户名填写完成
+2025-12-13 13:24:37,176 - INFO - 密码填写完成
+2025-12-13 13:24:37,176 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:24:37,176 - INFO - 验证码识别尝试 3/30
+2025-12-13 13:24:37,176 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:24:37,285 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:24:37,377 - INFO - tesseract 结果: F7N1
+2025-12-13 13:24:37,437 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:24:37,531 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:24:37,591 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:24:37,684 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:24:37,839 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:24:37,951 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:24:38,018 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:24:38,110 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:24:38,169 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:24:38,263 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:24:38,264 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:24:38,264 - INFO - 查找验证码输入框...
+2025-12-13 13:24:38,320 - INFO - 验证码填写完成
+2025-12-13 13:24:38,320 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:24:38,320 - INFO - 查找并点击登录按钮...
+2025-12-13 13:24:38,376 - INFO - 已点击登录按钮
+2025-12-13 13:24:45,396 - INFO - 开始填写登录表单...
+2025-12-13 13:24:45,455 - INFO - 用户名填写完成
+2025-12-13 13:24:45,514 - INFO - 密码填写完成
+2025-12-13 13:24:45,515 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:24:45,515 - INFO - 验证码识别尝试 4/30
+2025-12-13 13:24:45,515 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:24:45,621 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:24:45,717 - INFO - tesseract 结果: F7N1
+2025-12-13 13:24:45,777 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:24:45,872 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:24:45,931 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:24:46,028 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:24:46,182 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:24:46,292 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:24:46,351 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:24:46,447 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:24:46,506 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:24:46,602 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:24:46,602 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:24:46,602 - INFO - 查找验证码输入框...
+2025-12-13 13:24:46,658 - INFO - 验证码填写完成
+2025-12-13 13:24:46,658 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:24:46,658 - INFO - 查找并点击登录按钮...
+2025-12-13 13:24:47,039 - INFO - 已点击登录按钮
+2025-12-13 13:24:54,060 - INFO - 开始填写登录表单...
+2025-12-13 13:24:54,120 - INFO - 用户名填写完成
+2025-12-13 13:24:54,179 - INFO - 密码填写完成
+2025-12-13 13:24:54,180 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:24:54,180 - INFO - 验证码识别尝试 5/30
+2025-12-13 13:24:54,180 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:24:54,278 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:24:54,375 - INFO - tesseract 结果: F7N1
+2025-12-13 13:24:54,436 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:24:54,533 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:24:54,593 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:24:54,686 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:24:54,843 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:24:54,952 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:24:55,019 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:24:55,116 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:24:55,176 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:24:55,272 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:24:55,272 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:24:55,272 - INFO - 查找验证码输入框...
+2025-12-13 13:24:55,330 - INFO - 验证码填写完成
+2025-12-13 13:24:55,330 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:24:55,330 - INFO - 查找并点击登录按钮...
+2025-12-13 13:24:55,386 - INFO - 已点击登录按钮
+2025-12-13 13:25:02,407 - INFO - 开始填写登录表单...
+2025-12-13 13:25:02,467 - INFO - 用户名填写完成
+2025-12-13 13:25:02,525 - INFO - 密码填写完成
+2025-12-13 13:25:02,525 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:25:02,525 - INFO - 验证码识别尝试 6/30
+2025-12-13 13:25:02,526 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:25:02,628 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:25:02,725 - INFO - tesseract 结果: F7N1
+2025-12-13 13:25:02,785 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:25:02,879 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:25:02,939 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:25:03,036 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:25:03,190 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:25:03,300 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:25:03,359 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:25:03,453 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:25:03,511 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:25:03,606 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:25:03,606 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:25:03,606 - INFO - 查找验证码输入框...
+2025-12-13 13:25:03,663 - INFO - 验证码填写完成
+2025-12-13 13:25:03,663 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:25:03,663 - INFO - 查找并点击登录按钮...
+2025-12-13 13:25:03,720 - INFO - 已点击登录按钮
+2025-12-13 13:25:10,742 - INFO - 开始填写登录表单...
+2025-12-13 13:25:10,801 - INFO - 用户名填写完成
+2025-12-13 13:25:10,861 - INFO - 密码填写完成
+2025-12-13 13:25:10,861 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:25:10,861 - INFO - 验证码识别尝试 7/30
+2025-12-13 13:25:10,861 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:25:10,958 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:25:11,055 - INFO - tesseract 结果: F7N1
+2025-12-13 13:25:11,122 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:25:11,219 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:25:11,280 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:25:11,377 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:25:11,531 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:25:11,644 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:25:11,704 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:25:11,796 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:25:11,856 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:25:11,955 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:25:11,955 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:25:11,955 - INFO - 查找验证码输入框...
+2025-12-13 13:25:12,016 - INFO - 验证码填写完成
+2025-12-13 13:25:12,016 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:25:12,017 - INFO - 查找并点击登录按钮...
+2025-12-13 13:25:16,650 - INFO - 已点击登录按钮
+2025-12-13 13:25:23,670 - INFO - 开始填写登录表单...
+2025-12-13 13:25:23,731 - INFO - 用户名填写完成
+2025-12-13 13:25:23,791 - INFO - 密码填写完成
+2025-12-13 13:25:23,792 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:25:23,792 - INFO - 验证码识别尝试 8/30
+2025-12-13 13:25:23,792 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:25:23,918 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:25:24,018 - INFO - tesseract 结果: F7N1
+2025-12-13 13:25:24,080 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:25:24,175 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:25:24,243 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:25:24,338 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:25:24,493 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:25:24,601 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:25:24,670 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:25:24,765 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:25:24,826 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:25:24,921 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:25:24,921 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:25:24,922 - INFO - 查找验证码输入框...
+2025-12-13 13:25:24,980 - INFO - 验证码填写完成
+2025-12-13 13:25:24,980 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:25:24,980 - INFO - 查找并点击登录按钮...
+2025-12-13 13:25:25,035 - INFO - 已点击登录按钮
+2025-12-13 13:25:32,055 - INFO - 开始填写登录表单...
+2025-12-13 13:25:32,117 - INFO - 用户名填写完成
+2025-12-13 13:25:32,176 - INFO - 密码填写完成
+2025-12-13 13:25:32,177 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:25:32,177 - INFO - 验证码识别尝试 9/30
+2025-12-13 13:25:32,177 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:25:32,286 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:25:32,381 - INFO - tesseract 结果: F7N1
+2025-12-13 13:25:32,453 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:25:32,549 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:25:32,609 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:25:32,702 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:25:32,857 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:25:32,967 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:25:33,026 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:25:33,120 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:25:33,180 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:25:33,277 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:25:33,277 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:25:33,278 - INFO - 查找验证码输入框...
+2025-12-13 13:25:33,335 - INFO - 验证码填写完成
+2025-12-13 13:25:33,335 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:25:33,335 - INFO - 查找并点击登录按钮...
+2025-12-13 13:25:33,700 - INFO - 已点击登录按钮
+2025-12-13 13:25:40,720 - INFO - 开始填写登录表单...
+2025-12-13 13:25:40,782 - INFO - 用户名填写完成
+2025-12-13 13:25:40,840 - INFO - 密码填写完成
+2025-12-13 13:25:40,841 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:25:40,841 - INFO - 验证码识别尝试 10/30
+2025-12-13 13:25:40,841 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:25:40,938 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:25:41,033 - INFO - tesseract 结果: F7N1
+2025-12-13 13:25:41,093 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:25:41,187 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:25:41,246 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:25:41,339 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:25:41,492 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:25:41,601 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:25:41,660 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:25:41,755 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:25:41,814 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:25:41,912 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:25:41,912 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:25:41,912 - INFO - 查找验证码输入框...
+2025-12-13 13:25:41,970 - INFO - 验证码填写完成
+2025-12-13 13:25:41,970 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:25:41,970 - INFO - 查找并点击登录按钮...
+2025-12-13 13:25:42,322 - INFO - 已点击登录按钮
+2025-12-13 13:25:49,343 - INFO - 开始填写登录表单...
+2025-12-13 13:25:49,404 - INFO - 用户名填写完成
+2025-12-13 13:25:49,463 - INFO - 密码填写完成
+2025-12-13 13:25:49,464 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:25:49,464 - INFO - 验证码识别尝试 11/30
+2025-12-13 13:25:49,464 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:25:49,561 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:25:49,654 - INFO - tesseract 结果: F7N1
+2025-12-13 13:25:49,714 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:25:49,808 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:25:49,867 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:25:49,961 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:25:50,115 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:25:50,222 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:25:50,281 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:25:50,374 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:25:50,433 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:25:50,531 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:25:50,531 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:25:50,531 - INFO - 查找验证码输入框...
+2025-12-13 13:25:50,588 - INFO - 验证码填写完成
+2025-12-13 13:25:50,588 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:25:50,588 - INFO - 查找并点击登录按钮...
+2025-12-13 13:25:50,963 - INFO - 已点击登录按钮
+2025-12-13 13:25:57,984 - INFO - 开始填写登录表单...
+2025-12-13 13:25:58,046 - INFO - 用户名填写完成
+2025-12-13 13:25:58,108 - INFO - 密码填写完成
+2025-12-13 13:25:58,109 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:25:58,109 - INFO - 验证码识别尝试 12/30
+2025-12-13 13:25:58,109 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:25:58,205 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:25:58,301 - INFO - tesseract 结果: F7N1
+2025-12-13 13:25:58,361 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:25:58,465 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:25:58,523 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:25:58,616 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:25:58,770 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:25:58,877 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:25:58,936 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:25:59,032 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:25:59,091 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:25:59,186 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:25:59,186 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:25:59,186 - INFO - 查找验证码输入框...
+2025-12-13 13:25:59,245 - INFO - 验证码填写完成
+2025-12-13 13:25:59,245 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:25:59,245 - INFO - 查找并点击登录按钮...
+2025-12-13 13:25:59,604 - INFO - 已点击登录按钮
+2025-12-13 13:26:06,625 - INFO - 开始填写登录表单...
+2025-12-13 13:26:06,686 - INFO - 用户名填写完成
+2025-12-13 13:26:06,746 - INFO - 密码填写完成
+2025-12-13 13:26:06,746 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:26:06,746 - INFO - 验证码识别尝试 13/30
+2025-12-13 13:26:06,746 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:26:06,843 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:26:06,939 - INFO - tesseract 结果: F7N1
+2025-12-13 13:26:06,999 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:26:07,095 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:26:07,154 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:26:07,250 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:26:07,439 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:26:07,552 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:26:07,625 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:26:07,718 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:26:07,778 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:26:07,873 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:26:07,873 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:26:07,873 - INFO - 查找验证码输入框...
+2025-12-13 13:26:07,931 - INFO - 验证码填写完成
+2025-12-13 13:26:07,931 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:26:07,931 - INFO - 查找并点击登录按钮...
+2025-12-13 13:26:07,988 - INFO - 已点击登录按钮
+2025-12-13 13:26:15,009 - INFO - 开始填写登录表单...
+2025-12-13 13:26:15,073 - INFO - 用户名填写完成
+2025-12-13 13:26:15,134 - INFO - 密码填写完成
+2025-12-13 13:26:15,134 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:26:15,135 - INFO - 验证码识别尝试 14/30
+2025-12-13 13:26:15,135 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:26:15,231 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:26:15,326 - INFO - tesseract 结果: F7N1
+2025-12-13 13:26:15,386 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:26:15,482 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:26:15,556 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:26:15,653 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:26:15,807 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:26:15,915 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:26:15,975 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:26:16,068 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:26:16,127 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:26:16,221 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:26:16,221 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:26:16,221 - INFO - 查找验证码输入框...
+2025-12-13 13:26:16,282 - INFO - 验证码填写完成
+2025-12-13 13:26:16,282 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:26:16,282 - INFO - 查找并点击登录按钮...
+2025-12-13 13:26:16,657 - INFO - 已点击登录按钮
+2025-12-13 13:26:23,677 - INFO - 开始填写登录表单...
+2025-12-13 13:26:23,737 - INFO - 用户名填写完成
+2025-12-13 13:26:23,797 - INFO - 密码填写完成
+2025-12-13 13:26:23,797 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:26:23,797 - INFO - 验证码识别尝试 15/30
+2025-12-13 13:26:23,797 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:26:23,893 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:26:23,988 - INFO - tesseract 结果: F7N1
+2025-12-13 13:26:24,048 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:26:24,147 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:26:24,206 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:26:24,301 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:26:24,455 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:26:24,563 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:26:24,622 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:26:24,717 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:26:24,776 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:26:24,875 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:26:24,875 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:26:24,875 - INFO - 查找验证码输入框...
+2025-12-13 13:26:24,932 - INFO - 验证码填写完成
+2025-12-13 13:26:24,933 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:26:24,933 - INFO - 查找并点击登录按钮...
+2025-12-13 13:26:25,317 - INFO - 已点击登录按钮
+2025-12-13 13:26:32,336 - INFO - 开始填写登录表单...
+2025-12-13 13:26:32,396 - INFO - 用户名填写完成
+2025-12-13 13:26:32,455 - INFO - 密码填写完成
+2025-12-13 13:26:32,456 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:26:32,456 - INFO - 验证码识别尝试 16/30
+2025-12-13 13:26:32,456 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:26:32,558 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:26:32,656 - INFO - tesseract 结果: F7N1
+2025-12-13 13:26:32,725 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:26:32,821 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:26:32,880 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:26:32,974 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:26:33,128 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:26:33,239 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:26:33,298 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:26:33,394 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:26:33,453 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:26:33,547 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:26:33,547 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:26:33,547 - INFO - 查找验证码输入框...
+2025-12-13 13:26:33,603 - INFO - 验证码填写完成
+2025-12-13 13:26:33,603 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:26:33,603 - INFO - 查找并点击登录按钮...
+2025-12-13 13:26:33,995 - INFO - 已点击登录按钮
+2025-12-13 13:26:41,015 - INFO - 开始填写登录表单...
+2025-12-13 13:26:41,074 - INFO - 用户名填写完成
+2025-12-13 13:26:41,132 - INFO - 密码填写完成
+2025-12-13 13:26:41,132 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:26:41,132 - INFO - 验证码识别尝试 17/30
+2025-12-13 13:26:41,132 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:26:41,228 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:26:41,324 - INFO - tesseract 结果: F7N1
+2025-12-13 13:26:41,384 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:26:41,478 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:26:41,537 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:26:41,631 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:26:41,788 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:26:41,897 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:26:41,956 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:26:42,052 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:26:42,111 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:26:42,207 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:26:42,207 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:26:42,207 - INFO - 查找验证码输入框...
+2025-12-13 13:26:42,262 - INFO - 验证码填写完成
+2025-12-13 13:26:42,262 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:26:42,262 - INFO - 查找并点击登录按钮...
+2025-12-13 13:26:42,318 - INFO - 已点击登录按钮
+2025-12-13 13:26:49,337 - INFO - 开始填写登录表单...
+2025-12-13 13:26:49,396 - INFO - 用户名填写完成
+2025-12-13 13:26:49,453 - INFO - 密码填写完成
+2025-12-13 13:26:49,454 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:26:49,454 - INFO - 验证码识别尝试 18/30
+2025-12-13 13:26:49,454 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:26:49,550 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:26:49,644 - INFO - tesseract 结果: F7N1
+2025-12-13 13:26:49,704 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:26:49,798 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:26:49,858 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:26:49,952 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:26:50,108 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:26:50,216 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:26:50,275 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:26:50,368 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:26:50,426 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:26:50,522 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:26:50,522 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:26:50,522 - INFO - 查找验证码输入框...
+2025-12-13 13:26:50,578 - INFO - 验证码填写完成
+2025-12-13 13:26:50,578 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:26:50,578 - INFO - 查找并点击登录按钮...
+2025-12-13 13:26:50,633 - INFO - 已点击登录按钮
+2025-12-13 13:26:57,653 - INFO - 开始填写登录表单...
+2025-12-13 13:26:57,712 - INFO - 用户名填写完成
+2025-12-13 13:26:57,769 - INFO - 密码填写完成
+2025-12-13 13:26:57,770 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:26:57,770 - INFO - 验证码识别尝试 19/30
+2025-12-13 13:26:57,770 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:26:57,866 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:26:57,961 - INFO - tesseract 结果: F7N1
+2025-12-13 13:26:58,022 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:26:58,117 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:26:58,176 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:26:58,271 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:26:58,425 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:26:58,533 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:26:58,591 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:26:58,685 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:26:58,743 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:26:58,840 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:26:58,840 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:26:58,840 - INFO - 查找验证码输入框...
+2025-12-13 13:26:58,895 - INFO - 验证码填写完成
+2025-12-13 13:26:58,895 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:26:58,895 - INFO - 查找并点击登录按钮...
+2025-12-13 13:26:58,950 - INFO - 已点击登录按钮
+2025-12-13 13:27:05,970 - INFO - 开始填写登录表单...
+2025-12-13 13:27:06,029 - INFO - 用户名填写完成
+2025-12-13 13:27:06,091 - INFO - 密码填写完成
+2025-12-13 13:27:06,092 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:27:06,092 - INFO - 验证码识别尝试 20/30
+2025-12-13 13:27:06,092 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:27:06,213 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:27:06,310 - INFO - tesseract 结果: F7N1
+2025-12-13 13:27:06,371 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:27:06,468 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:27:06,528 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:27:06,621 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:27:06,775 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:27:06,887 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:27:06,946 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:27:07,039 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:27:07,099 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:27:07,192 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:27:07,193 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:27:07,193 - INFO - 查找验证码输入框...
+2025-12-13 13:27:07,248 - INFO - 验证码填写完成
+2025-12-13 13:27:07,248 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:27:07,248 - INFO - 查找并点击登录按钮...
+2025-12-13 13:27:07,630 - INFO - 已点击登录按钮
+2025-12-13 13:27:14,650 - INFO - 开始填写登录表单...
+2025-12-13 13:27:14,711 - INFO - 用户名填写完成
+2025-12-13 13:27:14,768 - INFO - 密码填写完成
+2025-12-13 13:27:14,769 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:27:14,769 - INFO - 验证码识别尝试 21/30
+2025-12-13 13:27:14,769 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:27:14,866 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:27:14,964 - INFO - tesseract 结果: F7N1
+2025-12-13 13:27:15,024 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:27:15,119 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:27:15,179 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:27:15,272 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:27:15,427 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:27:15,536 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:27:15,595 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:27:15,693 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:27:15,753 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:27:15,850 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:27:15,850 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:27:15,850 - INFO - 查找验证码输入框...
+2025-12-13 13:27:15,906 - INFO - 验证码填写完成
+2025-12-13 13:27:15,906 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:27:15,906 - INFO - 查找并点击登录按钮...
+2025-12-13 13:27:15,963 - INFO - 已点击登录按钮
+2025-12-13 13:27:22,983 - INFO - 开始填写登录表单...
+2025-12-13 13:27:23,044 - INFO - 用户名填写完成
+2025-12-13 13:27:23,101 - INFO - 密码填写完成
+2025-12-13 13:27:23,102 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:27:23,102 - INFO - 验证码识别尝试 22/30
+2025-12-13 13:27:23,102 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:27:23,199 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:27:23,296 - INFO - tesseract 结果: F7N1
+2025-12-13 13:27:23,356 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:27:23,454 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:27:23,514 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:27:23,613 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:27:23,769 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:27:23,883 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:27:23,944 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:27:24,040 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:27:24,100 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:27:24,195 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:27:24,196 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:27:24,196 - INFO - 查找验证码输入框...
+2025-12-13 13:27:24,251 - INFO - 验证码填写完成
+2025-12-13 13:27:24,251 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:27:24,251 - INFO - 查找并点击登录按钮...
+2025-12-13 13:27:24,608 - INFO - 已点击登录按钮
+2025-12-13 13:27:31,628 - INFO - 开始填写登录表单...
+2025-12-13 13:27:31,688 - INFO - 用户名填写完成
+2025-12-13 13:27:31,746 - INFO - 密码填写完成
+2025-12-13 13:27:31,747 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:27:31,747 - INFO - 验证码识别尝试 23/30
+2025-12-13 13:27:31,747 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:27:31,844 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:27:31,937 - INFO - tesseract 结果: F7N1
+2025-12-13 13:27:31,997 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:27:32,096 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:27:32,156 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:27:32,255 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:27:32,410 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:27:32,519 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:27:32,578 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:27:32,675 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:27:32,735 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:27:32,832 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:27:32,833 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:27:32,833 - INFO - 查找验证码输入框...
+2025-12-13 13:27:32,890 - INFO - 验证码填写完成
+2025-12-13 13:27:32,890 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:27:32,890 - INFO - 查找并点击登录按钮...
+2025-12-13 13:27:32,947 - INFO - 已点击登录按钮
+2025-12-13 13:27:39,968 - INFO - 开始填写登录表单...
+2025-12-13 13:27:40,028 - INFO - 用户名填写完成
+2025-12-13 13:27:40,087 - INFO - 密码填写完成
+2025-12-13 13:27:40,088 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:27:40,088 - INFO - 验证码识别尝试 24/30
+2025-12-13 13:27:40,088 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:27:40,186 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:27:40,286 - INFO - tesseract 结果: F7N1
+2025-12-13 13:27:40,346 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:27:40,443 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:27:40,504 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:27:40,599 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:27:40,754 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:27:40,862 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:27:40,939 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:27:41,035 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:27:41,095 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:27:41,191 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:27:41,192 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:27:41,192 - INFO - 查找验证码输入框...
+2025-12-13 13:27:41,248 - INFO - 验证码填写完成
+2025-12-13 13:27:41,248 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:27:41,248 - INFO - 查找并点击登录按钮...
+2025-12-13 13:27:41,609 - INFO - 已点击登录按钮
+2025-12-13 13:27:48,630 - INFO - 开始填写登录表单...
+2025-12-13 13:27:48,690 - INFO - 用户名填写完成
+2025-12-13 13:27:48,748 - INFO - 密码填写完成
+2025-12-13 13:27:48,748 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:27:48,748 - INFO - 验证码识别尝试 25/30
+2025-12-13 13:27:48,748 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:27:48,854 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:27:48,952 - INFO - tesseract 结果: F7N1
+2025-12-13 13:27:49,013 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:27:49,107 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:27:49,167 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:27:49,262 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:27:49,416 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:27:49,524 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:27:49,584 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:27:49,679 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:27:49,739 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:27:49,838 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:27:49,839 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:27:49,839 - INFO - 查找验证码输入框...
+2025-12-13 13:27:49,894 - INFO - 验证码填写完成
+2025-12-13 13:27:49,895 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:27:49,895 - INFO - 查找并点击登录按钮...
+2025-12-13 13:27:49,951 - INFO - 已点击登录按钮
+2025-12-13 13:27:56,972 - INFO - 开始填写登录表单...
+2025-12-13 13:27:57,031 - INFO - 用户名填写完成
+2025-12-13 13:27:57,090 - INFO - 密码填写完成
+2025-12-13 13:27:57,090 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:27:57,090 - INFO - 验证码识别尝试 26/30
+2025-12-13 13:27:57,090 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:27:57,197 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:27:57,291 - INFO - tesseract 结果: F7N1
+2025-12-13 13:27:57,350 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:27:57,446 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:27:57,507 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:27:57,601 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:27:57,755 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:27:57,864 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:27:57,922 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:27:58,015 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:27:58,074 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:27:58,173 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:27:58,173 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:27:58,173 - INFO - 查找验证码输入框...
+2025-12-13 13:27:58,230 - INFO - 验证码填写完成
+2025-12-13 13:27:58,230 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:27:58,230 - INFO - 查找并点击登录按钮...
+2025-12-13 13:27:58,594 - INFO - 已点击登录按钮
+2025-12-13 13:28:05,614 - INFO - 开始填写登录表单...
+2025-12-13 13:28:05,676 - INFO - 用户名填写完成
+2025-12-13 13:28:05,734 - INFO - 密码填写完成
+2025-12-13 13:28:05,735 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:28:05,735 - INFO - 验证码识别尝试 27/30
+2025-12-13 13:28:05,735 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:28:05,832 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:28:05,931 - INFO - tesseract 结果: F7N1
+2025-12-13 13:28:05,992 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:28:06,090 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:28:06,149 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:28:06,243 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:28:06,399 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:28:06,509 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:28:06,568 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:28:06,664 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:28:06,723 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:28:06,818 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:28:06,818 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:28:06,818 - INFO - 查找验证码输入框...
+2025-12-13 13:28:06,875 - INFO - 验证码填写完成
+2025-12-13 13:28:06,875 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:28:06,875 - INFO - 查找并点击登录按钮...
+2025-12-13 13:28:06,932 - INFO - 已点击登录按钮
+2025-12-13 13:28:13,952 - INFO - 开始填写登录表单...
+2025-12-13 13:28:14,012 - INFO - 用户名填写完成
+2025-12-13 13:28:14,072 - INFO - 密码填写完成
+2025-12-13 13:28:14,072 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:28:14,072 - INFO - 验证码识别尝试 28/30
+2025-12-13 13:28:14,072 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:28:14,179 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:28:14,276 - INFO - tesseract 结果: F7N1
+2025-12-13 13:28:14,336 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:28:14,434 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:28:14,493 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:28:14,588 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:28:14,744 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:28:14,858 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:28:14,918 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:28:15,016 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:28:15,076 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:28:15,173 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:28:15,173 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:28:15,173 - INFO - 查找验证码输入框...
+2025-12-13 13:28:15,229 - INFO - 验证码填写完成
+2025-12-13 13:28:15,229 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:28:15,229 - INFO - 查找并点击登录按钮...
+2025-12-13 13:28:18,812 - INFO - 已点击登录按钮
+2025-12-13 13:28:25,832 - INFO - 开始填写登录表单...
+2025-12-13 13:28:25,893 - INFO - 用户名填写完成
+2025-12-13 13:28:25,952 - INFO - 密码填写完成
+2025-12-13 13:28:25,952 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:28:25,953 - INFO - 验证码识别尝试 29/30
+2025-12-13 13:28:25,953 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:28:26,049 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:28:26,145 - INFO - tesseract 结果: F7N1
+2025-12-13 13:28:26,205 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:28:26,303 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:28:26,362 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:28:26,457 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:28:26,612 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:28:26,722 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:28:26,793 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:28:26,891 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:28:26,950 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:28:27,048 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:28:27,049 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:28:27,049 - INFO - 查找验证码输入框...
+2025-12-13 13:28:27,105 - INFO - 验证码填写完成
+2025-12-13 13:28:27,106 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:28:27,106 - INFO - 查找并点击登录按钮...
+2025-12-13 13:28:27,163 - INFO - 已点击登录按钮
+2025-12-13 13:28:34,182 - INFO - 开始填写登录表单...
+2025-12-13 13:28:34,242 - INFO - 用户名填写完成
+2025-12-13 13:28:34,302 - INFO - 密码填写完成
+2025-12-13 13:28:34,302 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-13 13:28:34,302 - INFO - 验证码识别尝试 30/30
+2025-12-13 13:28:34,303 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-13 13:28:34,412 - INFO - easyocr 结果: ['F7Nl(0.69)']
+2025-12-13 13:28:34,508 - INFO - tesseract 结果: F7N1
+2025-12-13 13:28:34,568 - INFO - easyocr alt1 结果: ['F7N1(0.62)']
+2025-12-13 13:28:34,670 - INFO - tesseract alt1 结果: F7NI
+2025-12-13 13:28:34,729 - INFO - easyocr alt2 结果: ['F7N1(0.46)']
+2025-12-13 13:28:34,826 - INFO - tesseract alt2 结果: F7NI
+2025-12-13 13:28:34,982 - INFO - easyocr alt3 结果: ['F7N1(0.64)']
+2025-12-13 13:28:35,091 - INFO - tesseract alt3 结果: F7NI
+2025-12-13 13:28:35,150 - INFO - easyocr alt4 结果: ['F7NI(0.70)']
+2025-12-13 13:28:35,246 - INFO - tesseract alt4 结果: FINI
+2025-12-13 13:28:35,306 - INFO - easyocr alt5 结果: ['F7NI(0.52)']
+2025-12-13 13:28:35,406 - INFO - tesseract alt5 结果: FYNE
+2025-12-13 13:28:35,406 - INFO - 最终验证码识别结果: F7NI (engine=easyocr_alt4, prob=0.7044275403022766)
+2025-12-13 13:28:35,406 - INFO - 查找验证码输入框...
+2025-12-13 13:28:35,462 - INFO - 验证码填写完成
+2025-12-13 13:28:35,462 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-13 13:28:35,462 - INFO - 查找并点击登录按钮...
+2025-12-13 13:28:35,825 - INFO - 已点击登录按钮
+2025-12-13 13:28:42,846 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2025-12-13 13:28:42,846 - ERROR - 处理验证码时出错: EOF when reading a line
+2025-12-13 13:28:42,846 - WARNING - 验证码处理失败，但继续尝试登录
+2025-12-13 13:28:42,846 - INFO - 查找并点击登录按钮...
+2025-12-13 13:28:42,901 - INFO - 已点击登录按钮
+2025-12-13 13:28:47,901 - INFO - 等待登录成功...
+2025-12-13 13:28:52,906 - INFO - 登录可能成功，继续下一步...
+2025-12-13 13:28:52,906 - INFO - 查找'去充值'按钮...
+2025-12-13 13:28:52,968 - INFO - 已点击充值按钮
+2025-12-13 13:28:55,968 - INFO - 开始提取剩余电量信息...
+2025-12-13 13:28:55,973 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-13 13:28:55,982 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-13 13:28:55,990 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-13 13:28:55,994 - INFO - 在页面源码中查找电量信息...
+2025-12-13 13:28:56,005 - WARNING - 未能提取到剩余电量信息
+2025-12-13 13:28:56,005 - WARNING - 没有电量数据可保存
+2025-12-13 13:28:56,005 - INFO - 监控流程完成
+Wrapper end: 2025-12-13T21:28:56.119169+08:00
