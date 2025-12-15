@@ -1,0 +1,1006 @@
+Wrapper start: 2025-12-15T21:39:06.835803+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=118):
+- ACCEPT_EULA
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+- ANT_HOME
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   68G  4.0G  95% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  3.3M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sdb16      881M   62M  758M   8% /boot
+/dev/sdb15      105M  6.2M   99M   6% /boot/efi
+/dev/sda1        74G  4.1G   66G   6% /mnt
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+5.7M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+288K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+- /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+- /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+- /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+- /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+- /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+- /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Light.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+
+FontManager samples (name -> path):
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+Liberation Mono -> /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Liberation Serif -> /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Sans CJK JP -> /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Lato -> /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2025-12-15 13:39:11,013 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-15 13:39:12,994 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-15 13:39:12,994 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-15 13:39:14,624 - INFO - OCR识别器初始化成功
+2025-12-15 13:39:14,624 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-15 13:39:14,624 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-15 13:39:24,823 - INFO - 等待登录表单加载...
+2025-12-15 13:39:24,833 - INFO - 登录表单已加载
+2025-12-15 13:39:24,833 - INFO - 开始填写登录表单...
+2025-12-15 13:39:24,895 - INFO - 用户名填写完成
+2025-12-15 13:39:24,963 - INFO - 密码填写完成
+2025-12-15 13:39:24,963 - INFO - 检查是否有验证码...
+2025-12-15 13:39:24,963 - INFO - 查找验证码图片...
+2025-12-15 13:39:24,983 - INFO - 找到验证码图片，开始截图...
+2025-12-15 13:39:25,040 - INFO - 验证码图片截取成功
+2025-12-15 13:39:25,040 - INFO - 开始填写登录表单...
+2025-12-15 13:39:25,106 - INFO - 用户名填写完成
+2025-12-15 13:39:25,170 - INFO - 密码填写完成
+2025-12-15 13:39:25,171 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:39:25,171 - INFO - 验证码识别尝试 1/30
+2025-12-15 13:39:25,171 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:39:25,312 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:39:25,643 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:39:25,709 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:39:25,808 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:39:25,867 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:39:25,961 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:39:26,124 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:39:26,222 - INFO - tesseract alt3 结果: 
+2025-12-15 13:39:26,281 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:39:26,381 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:39:26,441 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:39:26,535 - INFO - tesseract alt5 结果: 
+2025-12-15 13:39:26,535 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:39:26,535 - INFO - 查找验证码输入框...
+2025-12-15 13:39:26,594 - INFO - 验证码填写完成
+2025-12-15 13:39:26,594 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:39:26,594 - INFO - 查找并点击登录按钮...
+2025-12-15 13:39:26,928 - INFO - 已点击登录按钮
+2025-12-15 13:39:33,956 - INFO - 开始填写登录表单...
+2025-12-15 13:39:34,018 - INFO - 用户名填写完成
+2025-12-15 13:39:34,078 - INFO - 密码填写完成
+2025-12-15 13:39:34,079 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:39:34,079 - INFO - 验证码识别尝试 2/30
+2025-12-15 13:39:34,079 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:39:34,191 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:39:34,286 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:39:34,350 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:39:34,450 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:39:34,512 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:39:34,608 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:39:34,773 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:39:34,871 - INFO - tesseract alt3 结果: 
+2025-12-15 13:39:34,932 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:39:35,029 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:39:35,090 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:39:35,185 - INFO - tesseract alt5 结果: 
+2025-12-15 13:39:35,185 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:39:35,185 - INFO - 查找验证码输入框...
+2025-12-15 13:39:35,243 - INFO - 验证码填写完成
+2025-12-15 13:39:35,243 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:39:35,243 - INFO - 查找并点击登录按钮...
+2025-12-15 13:39:35,573 - INFO - 已点击登录按钮
+2025-12-15 13:39:42,594 - INFO - 开始填写登录表单...
+2025-12-15 13:39:42,657 - INFO - 用户名填写完成
+2025-12-15 13:39:42,718 - INFO - 密码填写完成
+2025-12-15 13:39:42,719 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:39:42,719 - INFO - 验证码识别尝试 3/30
+2025-12-15 13:39:42,719 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:39:42,817 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:39:42,915 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:39:42,980 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:39:43,082 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:39:43,141 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:39:43,235 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:39:43,400 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:39:43,498 - INFO - tesseract alt3 结果: 
+2025-12-15 13:39:43,558 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:39:43,657 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:39:43,717 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:39:43,808 - INFO - tesseract alt5 结果: 
+2025-12-15 13:39:43,808 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:39:43,808 - INFO - 查找验证码输入框...
+2025-12-15 13:39:43,864 - INFO - 验证码填写完成
+2025-12-15 13:39:43,864 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:39:43,864 - INFO - 查找并点击登录按钮...
+2025-12-15 13:39:44,190 - INFO - 已点击登录按钮
+2025-12-15 13:39:51,211 - INFO - 开始填写登录表单...
+2025-12-15 13:39:51,273 - INFO - 用户名填写完成
+2025-12-15 13:39:51,333 - INFO - 密码填写完成
+2025-12-15 13:39:51,334 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:39:51,334 - INFO - 验证码识别尝试 4/30
+2025-12-15 13:39:51,334 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:39:51,431 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:39:51,528 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:39:51,589 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:39:51,691 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:39:51,750 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:39:51,845 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:39:52,002 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:39:52,100 - INFO - tesseract alt3 结果: 
+2025-12-15 13:39:52,159 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:39:52,257 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:39:52,317 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:39:52,412 - INFO - tesseract alt5 结果: 
+2025-12-15 13:39:52,412 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:39:52,412 - INFO - 查找验证码输入框...
+2025-12-15 13:39:52,471 - INFO - 验证码填写完成
+2025-12-15 13:39:52,471 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:39:52,471 - INFO - 查找并点击登录按钮...
+2025-12-15 13:39:52,528 - INFO - 已点击登录按钮
+2025-12-15 13:39:59,550 - INFO - 开始填写登录表单...
+2025-12-15 13:39:59,614 - INFO - 用户名填写完成
+2025-12-15 13:39:59,675 - INFO - 密码填写完成
+2025-12-15 13:39:59,675 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:39:59,676 - INFO - 验证码识别尝试 5/30
+2025-12-15 13:39:59,676 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:39:59,776 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:39:59,875 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:39:59,938 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:00,037 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:00,101 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:00,199 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:40:00,361 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:40:00,460 - INFO - tesseract alt3 结果: 
+2025-12-15 13:40:00,523 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:40:00,621 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:40:00,692 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:40:00,787 - INFO - tesseract alt5 结果: 
+2025-12-15 13:40:00,787 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:40:00,787 - INFO - 查找验证码输入框...
+2025-12-15 13:40:00,846 - INFO - 验证码填写完成
+2025-12-15 13:40:00,846 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:40:00,846 - INFO - 查找并点击登录按钮...
+2025-12-15 13:40:01,179 - INFO - 已点击登录按钮
+2025-12-15 13:40:08,200 - INFO - 开始填写登录表单...
+2025-12-15 13:40:08,262 - INFO - 用户名填写完成
+2025-12-15 13:40:08,323 - INFO - 密码填写完成
+2025-12-15 13:40:08,323 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:40:08,324 - INFO - 验证码识别尝试 6/30
+2025-12-15 13:40:08,324 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:40:08,424 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:40:08,523 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:40:08,593 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:08,691 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:08,751 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:08,853 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:40:09,010 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:40:09,109 - INFO - tesseract alt3 结果: 
+2025-12-15 13:40:09,170 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:40:09,266 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:40:09,326 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:40:09,420 - INFO - tesseract alt5 结果: 
+2025-12-15 13:40:09,420 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:40:09,420 - INFO - 查找验证码输入框...
+2025-12-15 13:40:09,477 - INFO - 验证码填写完成
+2025-12-15 13:40:09,477 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:40:09,477 - INFO - 查找并点击登录按钮...
+2025-12-15 13:40:09,803 - INFO - 已点击登录按钮
+2025-12-15 13:40:16,825 - INFO - 开始填写登录表单...
+2025-12-15 13:40:16,886 - INFO - 用户名填写完成
+2025-12-15 13:40:16,947 - INFO - 密码填写完成
+2025-12-15 13:40:16,948 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:40:16,948 - INFO - 验证码识别尝试 7/30
+2025-12-15 13:40:16,948 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:40:17,046 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:40:17,145 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:40:17,207 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:17,304 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:17,363 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:17,457 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:40:17,612 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:40:17,713 - INFO - tesseract alt3 结果: 
+2025-12-15 13:40:17,773 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:40:17,868 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:40:17,928 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:40:18,019 - INFO - tesseract alt5 结果: 
+2025-12-15 13:40:18,019 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:40:18,019 - INFO - 查找验证码输入框...
+2025-12-15 13:40:18,075 - INFO - 验证码填写完成
+2025-12-15 13:40:18,075 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:40:18,075 - INFO - 查找并点击登录按钮...
+2025-12-15 13:40:18,131 - INFO - 已点击登录按钮
+2025-12-15 13:40:25,153 - INFO - 开始填写登录表单...
+2025-12-15 13:40:25,217 - INFO - 用户名填写完成
+2025-12-15 13:40:25,278 - INFO - 密码填写完成
+2025-12-15 13:40:25,279 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:40:25,279 - INFO - 验证码识别尝试 8/30
+2025-12-15 13:40:25,279 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:40:25,377 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:40:25,474 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:40:25,535 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:25,635 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:25,695 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:25,792 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:40:25,948 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:40:26,045 - INFO - tesseract alt3 结果: 
+2025-12-15 13:40:26,104 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:40:26,199 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:40:26,258 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:40:26,351 - INFO - tesseract alt5 结果: 
+2025-12-15 13:40:26,351 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:40:26,351 - INFO - 查找验证码输入框...
+2025-12-15 13:40:26,407 - INFO - 验证码填写完成
+2025-12-15 13:40:26,407 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:40:26,407 - INFO - 查找并点击登录按钮...
+2025-12-15 13:40:26,464 - INFO - 已点击登录按钮
+2025-12-15 13:40:33,485 - INFO - 开始填写登录表单...
+2025-12-15 13:40:33,548 - INFO - 用户名填写完成
+2025-12-15 13:40:33,609 - INFO - 密码填写完成
+2025-12-15 13:40:33,610 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:40:33,610 - INFO - 验证码识别尝试 9/30
+2025-12-15 13:40:33,610 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:40:33,709 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:40:33,807 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:40:33,869 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:33,974 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:34,034 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:34,131 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:40:34,295 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:40:34,392 - INFO - tesseract alt3 结果: 
+2025-12-15 13:40:34,453 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:40:34,550 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:40:34,611 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:40:34,702 - INFO - tesseract alt5 结果: 
+2025-12-15 13:40:34,702 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:40:34,702 - INFO - 查找验证码输入框...
+2025-12-15 13:40:34,760 - INFO - 验证码填写完成
+2025-12-15 13:40:34,760 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:40:34,760 - INFO - 查找并点击登录按钮...
+2025-12-15 13:40:35,086 - INFO - 已点击登录按钮
+2025-12-15 13:40:42,107 - INFO - 开始填写登录表单...
+2025-12-15 13:40:42,170 - INFO - 用户名填写完成
+2025-12-15 13:40:42,230 - INFO - 密码填写完成
+2025-12-15 13:40:42,231 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:40:42,231 - INFO - 验证码识别尝试 10/30
+2025-12-15 13:40:42,231 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:40:42,329 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:40:42,428 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:40:42,489 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:42,588 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:42,648 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:42,744 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:40:42,903 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:40:43,001 - INFO - tesseract alt3 结果: 
+2025-12-15 13:40:43,062 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:40:43,159 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:40:43,219 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:40:43,312 - INFO - tesseract alt5 结果: 
+2025-12-15 13:40:43,312 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:40:43,312 - INFO - 查找验证码输入框...
+2025-12-15 13:40:43,370 - INFO - 验证码填写完成
+2025-12-15 13:40:43,370 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:40:43,370 - INFO - 查找并点击登录按钮...
+2025-12-15 13:40:43,698 - INFO - 已点击登录按钮
+2025-12-15 13:40:50,719 - INFO - 开始填写登录表单...
+2025-12-15 13:40:50,783 - INFO - 用户名填写完成
+2025-12-15 13:40:50,844 - INFO - 密码填写完成
+2025-12-15 13:40:50,844 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:40:50,845 - INFO - 验证码识别尝试 11/30
+2025-12-15 13:40:50,845 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:40:50,943 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:40:51,040 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:40:51,101 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:51,200 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:51,259 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:51,353 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:40:51,507 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:40:51,606 - INFO - tesseract alt3 结果: 
+2025-12-15 13:40:51,665 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:40:51,767 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:40:51,826 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:40:51,919 - INFO - tesseract alt5 结果: 
+2025-12-15 13:40:51,919 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:40:51,919 - INFO - 查找验证码输入框...
+2025-12-15 13:40:51,976 - INFO - 验证码填写完成
+2025-12-15 13:40:51,976 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:40:51,976 - INFO - 查找并点击登录按钮...
+2025-12-15 13:40:52,302 - INFO - 已点击登录按钮
+2025-12-15 13:40:59,322 - INFO - 开始填写登录表单...
+2025-12-15 13:40:59,384 - INFO - 用户名填写完成
+2025-12-15 13:40:59,443 - INFO - 密码填写完成
+2025-12-15 13:40:59,444 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:40:59,444 - INFO - 验证码识别尝试 12/30
+2025-12-15 13:40:59,444 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:40:59,548 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:40:59,645 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:40:59,705 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:40:59,804 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:40:59,863 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:40:59,957 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:00,112 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:00,210 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:00,270 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:41:00,366 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:41:00,426 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:41:00,520 - INFO - tesseract alt5 结果: 
+2025-12-15 13:41:00,520 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:41:00,520 - INFO - 查找验证码输入框...
+2025-12-15 13:41:00,577 - INFO - 验证码填写完成
+2025-12-15 13:41:00,577 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:41:00,577 - INFO - 查找并点击登录按钮...
+2025-12-15 13:41:00,897 - INFO - 已点击登录按钮
+2025-12-15 13:41:07,918 - INFO - 开始填写登录表单...
+2025-12-15 13:41:07,981 - INFO - 用户名填写完成
+2025-12-15 13:41:08,042 - INFO - 密码填写完成
+2025-12-15 13:41:08,043 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:41:08,043 - INFO - 验证码识别尝试 13/30
+2025-12-15 13:41:08,043 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:41:08,140 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:41:08,237 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:41:08,298 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:41:08,395 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:41:08,455 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:41:08,550 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:08,708 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:08,808 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:08,868 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:41:08,966 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:41:09,025 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:41:09,117 - INFO - tesseract alt5 结果: 
+2025-12-15 13:41:09,117 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:41:09,117 - INFO - 查找验证码输入框...
+2025-12-15 13:41:09,176 - INFO - 验证码填写完成
+2025-12-15 13:41:09,176 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:41:09,176 - INFO - 查找并点击登录按钮...
+2025-12-15 13:41:09,507 - INFO - 已点击登录按钮
+2025-12-15 13:41:16,529 - INFO - 开始填写登录表单...
+2025-12-15 13:41:16,595 - INFO - 用户名填写完成
+2025-12-15 13:41:16,658 - INFO - 密码填写完成
+2025-12-15 13:41:16,658 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:41:16,658 - INFO - 验证码识别尝试 14/30
+2025-12-15 13:41:16,658 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:41:16,758 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:41:16,855 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:41:16,916 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:41:17,018 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:41:17,079 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:41:17,179 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:17,337 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:17,440 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:17,500 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:41:17,597 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:41:17,658 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:41:17,752 - INFO - tesseract alt5 结果: 
+2025-12-15 13:41:17,753 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:41:17,753 - INFO - 查找验证码输入框...
+2025-12-15 13:41:17,811 - INFO - 验证码填写完成
+2025-12-15 13:41:17,812 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:41:17,812 - INFO - 查找并点击登录按钮...
+2025-12-15 13:41:18,149 - INFO - 已点击登录按钮
+2025-12-15 13:41:25,170 - INFO - 开始填写登录表单...
+2025-12-15 13:41:25,232 - INFO - 用户名填写完成
+2025-12-15 13:41:25,293 - INFO - 密码填写完成
+2025-12-15 13:41:25,293 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:41:25,293 - INFO - 验证码识别尝试 15/30
+2025-12-15 13:41:25,294 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:41:25,390 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:41:25,486 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:41:25,546 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:41:25,644 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:41:25,703 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:41:25,800 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:25,955 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:26,073 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:26,136 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:41:26,235 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:41:26,294 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:41:26,392 - INFO - tesseract alt5 结果: 
+2025-12-15 13:41:26,392 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:41:26,392 - INFO - 查找验证码输入框...
+2025-12-15 13:41:26,452 - INFO - 验证码填写完成
+2025-12-15 13:41:26,452 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:41:26,452 - INFO - 查找并点击登录按钮...
+2025-12-15 13:41:26,784 - INFO - 已点击登录按钮
+2025-12-15 13:41:33,805 - INFO - 开始填写登录表单...
+2025-12-15 13:41:33,866 - INFO - 用户名填写完成
+2025-12-15 13:41:33,924 - INFO - 密码填写完成
+2025-12-15 13:41:33,924 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:41:33,925 - INFO - 验证码识别尝试 16/30
+2025-12-15 13:41:33,925 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:41:34,022 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:41:34,117 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:41:34,176 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:41:34,275 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:41:34,333 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:41:34,428 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:34,581 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:34,683 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:34,741 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:41:34,841 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:41:34,899 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:41:34,993 - INFO - tesseract alt5 结果: 
+2025-12-15 13:41:34,993 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:41:34,994 - INFO - 查找验证码输入框...
+2025-12-15 13:41:35,050 - INFO - 验证码填写完成
+2025-12-15 13:41:35,050 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:41:35,050 - INFO - 查找并点击登录按钮...
+2025-12-15 13:41:35,379 - INFO - 已点击登录按钮
+2025-12-15 13:41:42,399 - INFO - 开始填写登录表单...
+2025-12-15 13:41:42,458 - INFO - 用户名填写完成
+2025-12-15 13:41:42,516 - INFO - 密码填写完成
+2025-12-15 13:41:42,517 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:41:42,517 - INFO - 验证码识别尝试 17/30
+2025-12-15 13:41:42,517 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:41:42,613 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:41:42,713 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:41:42,774 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:41:42,873 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:41:42,940 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:41:43,034 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:43,190 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:43,288 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:43,346 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:41:43,443 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:41:43,502 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:41:43,596 - INFO - tesseract alt5 结果: 
+2025-12-15 13:41:43,596 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:41:43,596 - INFO - 查找验证码输入框...
+2025-12-15 13:41:43,652 - INFO - 验证码填写完成
+2025-12-15 13:41:43,652 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:41:43,652 - INFO - 查找并点击登录按钮...
+2025-12-15 13:41:43,708 - INFO - 已点击登录按钮
+2025-12-15 13:41:50,727 - INFO - 开始填写登录表单...
+2025-12-15 13:41:50,787 - INFO - 用户名填写完成
+2025-12-15 13:41:50,844 - INFO - 密码填写完成
+2025-12-15 13:41:50,845 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:41:50,845 - INFO - 验证码识别尝试 18/30
+2025-12-15 13:41:50,845 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:41:50,948 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:41:51,044 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:41:51,104 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:41:51,204 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:41:51,264 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:41:51,358 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:51,512 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:51,610 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:51,669 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:41:51,763 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:41:51,822 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:41:51,912 - INFO - tesseract alt5 结果: 
+2025-12-15 13:41:51,912 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:41:51,913 - INFO - 查找验证码输入框...
+2025-12-15 13:41:51,967 - INFO - 验证码填写完成
+2025-12-15 13:41:51,967 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:41:51,967 - INFO - 查找并点击登录按钮...
+2025-12-15 13:41:52,023 - INFO - 已点击登录按钮
+2025-12-15 13:41:59,043 - INFO - 开始填写登录表单...
+2025-12-15 13:41:59,103 - INFO - 用户名填写完成
+2025-12-15 13:41:59,159 - INFO - 密码填写完成
+2025-12-15 13:41:59,160 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:41:59,160 - INFO - 验证码识别尝试 19/30
+2025-12-15 13:41:59,160 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:41:59,256 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:41:59,351 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:41:59,411 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:41:59,506 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:41:59,565 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:41:59,658 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:41:59,812 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:41:59,909 - INFO - tesseract alt3 结果: 
+2025-12-15 13:41:59,968 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:42:00,063 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:42:00,123 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:42:00,215 - INFO - tesseract alt5 结果: 
+2025-12-15 13:42:00,215 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:42:00,215 - INFO - 查找验证码输入框...
+2025-12-15 13:42:00,270 - INFO - 验证码填写完成
+2025-12-15 13:42:00,270 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:42:00,270 - INFO - 查找并点击登录按钮...
+2025-12-15 13:42:00,326 - INFO - 已点击登录按钮
+2025-12-15 13:42:07,346 - INFO - 开始填写登录表单...
+2025-12-15 13:42:07,406 - INFO - 用户名填写完成
+2025-12-15 13:42:07,464 - INFO - 密码填写完成
+2025-12-15 13:42:07,464 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:42:07,464 - INFO - 验证码识别尝试 20/30
+2025-12-15 13:42:07,464 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:42:07,589 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:42:07,684 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:42:07,745 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:42:07,844 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:42:07,903 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:42:07,997 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:42:08,150 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:42:08,248 - INFO - tesseract alt3 结果: 
+2025-12-15 13:42:08,306 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:42:08,404 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:42:08,463 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:42:08,552 - INFO - tesseract alt5 结果: 
+2025-12-15 13:42:08,552 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:42:08,552 - INFO - 查找验证码输入框...
+2025-12-15 13:42:08,607 - INFO - 验证码填写完成
+2025-12-15 13:42:08,607 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:42:08,607 - INFO - 查找并点击登录按钮...
+2025-12-15 13:42:08,925 - INFO - 已点击登录按钮
+2025-12-15 13:42:15,945 - INFO - 开始填写登录表单...
+2025-12-15 13:42:16,005 - INFO - 用户名填写完成
+2025-12-15 13:42:16,062 - INFO - 密码填写完成
+2025-12-15 13:42:16,063 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:42:16,063 - INFO - 验证码识别尝试 21/30
+2025-12-15 13:42:16,063 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:42:16,181 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:42:16,276 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:42:16,336 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:42:16,434 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:42:16,503 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:42:16,599 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:42:16,753 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:42:16,852 - INFO - tesseract alt3 结果: 
+2025-12-15 13:42:16,912 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:42:17,004 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:42:17,064 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:42:17,158 - INFO - tesseract alt5 结果: 
+2025-12-15 13:42:17,158 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:42:17,158 - INFO - 查找验证码输入框...
+2025-12-15 13:42:17,214 - INFO - 验证码填写完成
+2025-12-15 13:42:17,214 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:42:17,214 - INFO - 查找并点击登录按钮...
+2025-12-15 13:42:17,540 - INFO - 已点击登录按钮
+2025-12-15 13:42:24,560 - INFO - 开始填写登录表单...
+2025-12-15 13:42:24,618 - INFO - 用户名填写完成
+2025-12-15 13:42:24,675 - INFO - 密码填写完成
+2025-12-15 13:42:24,676 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:42:24,676 - INFO - 验证码识别尝试 22/30
+2025-12-15 13:42:24,676 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:42:24,773 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:42:24,868 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:42:24,936 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:42:25,034 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:42:25,093 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:42:25,190 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:42:25,346 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:42:25,447 - INFO - tesseract alt3 结果: 
+2025-12-15 13:42:25,507 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:42:25,603 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:42:25,663 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:42:25,757 - INFO - tesseract alt5 结果: 
+2025-12-15 13:42:25,757 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:42:25,757 - INFO - 查找验证码输入框...
+2025-12-15 13:42:25,812 - INFO - 验证码填写完成
+2025-12-15 13:42:25,812 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:42:25,812 - INFO - 查找并点击登录按钮...
+2025-12-15 13:42:26,130 - INFO - 已点击登录按钮
+2025-12-15 13:42:33,150 - INFO - 开始填写登录表单...
+2025-12-15 13:42:33,210 - INFO - 用户名填写完成
+2025-12-15 13:42:33,268 - INFO - 密码填写完成
+2025-12-15 13:42:33,269 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:42:33,269 - INFO - 验证码识别尝试 23/30
+2025-12-15 13:42:33,269 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:42:33,378 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:42:33,473 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:42:33,533 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:42:33,629 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:42:33,689 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:42:33,786 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:42:33,940 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:42:34,039 - INFO - tesseract alt3 结果: 
+2025-12-15 13:42:34,098 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:42:34,195 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:42:34,254 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:42:34,351 - INFO - tesseract alt5 结果: 
+2025-12-15 13:42:34,351 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:42:34,351 - INFO - 查找验证码输入框...
+2025-12-15 13:42:34,406 - INFO - 验证码填写完成
+2025-12-15 13:42:34,406 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:42:34,406 - INFO - 查找并点击登录按钮...
+2025-12-15 13:42:34,731 - INFO - 已点击登录按钮
+2025-12-15 13:42:41,751 - INFO - 开始填写登录表单...
+2025-12-15 13:42:41,813 - INFO - 用户名填写完成
+2025-12-15 13:42:41,873 - INFO - 密码填写完成
+2025-12-15 13:42:41,874 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:42:41,874 - INFO - 验证码识别尝试 24/30
+2025-12-15 13:42:41,874 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:42:41,973 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:42:42,069 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:42:42,130 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:42:42,234 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:42:42,293 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:42:42,390 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:42:42,543 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:42:42,645 - INFO - tesseract alt3 结果: 
+2025-12-15 13:42:42,704 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:42:42,801 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:42:42,860 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:42:42,957 - INFO - tesseract alt5 结果: 
+2025-12-15 13:42:42,957 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:42:42,957 - INFO - 查找验证码输入框...
+2025-12-15 13:42:43,014 - INFO - 验证码填写完成
+2025-12-15 13:42:43,014 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:42:43,014 - INFO - 查找并点击登录按钮...
+2025-12-15 13:42:43,347 - INFO - 已点击登录按钮
+2025-12-15 13:42:50,367 - INFO - 开始填写登录表单...
+2025-12-15 13:42:50,426 - INFO - 用户名填写完成
+2025-12-15 13:42:50,483 - INFO - 密码填写完成
+2025-12-15 13:42:50,484 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:42:50,484 - INFO - 验证码识别尝试 25/30
+2025-12-15 13:42:50,484 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:42:50,590 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:42:50,686 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:42:50,747 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:42:50,848 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:42:50,908 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:42:51,001 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:42:51,171 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:42:51,269 - INFO - tesseract alt3 结果: 
+2025-12-15 13:42:51,330 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:42:51,429 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:42:51,490 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:42:51,585 - INFO - tesseract alt5 结果: 
+2025-12-15 13:42:51,586 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:42:51,586 - INFO - 查找验证码输入框...
+2025-12-15 13:42:51,642 - INFO - 验证码填写完成
+2025-12-15 13:42:51,642 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:42:51,642 - INFO - 查找并点击登录按钮...
+2025-12-15 13:42:51,971 - INFO - 已点击登录按钮
+2025-12-15 13:42:58,990 - INFO - 开始填写登录表单...
+2025-12-15 13:42:59,049 - INFO - 用户名填写完成
+2025-12-15 13:42:59,105 - INFO - 密码填写完成
+2025-12-15 13:42:59,106 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:42:59,106 - INFO - 验证码识别尝试 26/30
+2025-12-15 13:42:59,106 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:42:59,203 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:42:59,298 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:42:59,360 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:42:59,474 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:42:59,533 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:42:59,631 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:42:59,785 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:42:59,888 - INFO - tesseract alt3 结果: 
+2025-12-15 13:42:59,947 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:43:00,047 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:43:00,107 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:43:00,201 - INFO - tesseract alt5 结果: 
+2025-12-15 13:43:00,201 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:43:00,201 - INFO - 查找验证码输入框...
+2025-12-15 13:43:00,257 - INFO - 验证码填写完成
+2025-12-15 13:43:00,257 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:43:00,257 - INFO - 查找并点击登录按钮...
+2025-12-15 13:43:00,597 - INFO - 已点击登录按钮
+2025-12-15 13:43:07,617 - INFO - 开始填写登录表单...
+2025-12-15 13:43:07,675 - INFO - 用户名填写完成
+2025-12-15 13:43:07,731 - INFO - 密码填写完成
+2025-12-15 13:43:07,731 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:43:07,731 - INFO - 验证码识别尝试 27/30
+2025-12-15 13:43:07,731 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:43:07,829 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:43:07,924 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:43:07,985 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:43:08,086 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:43:08,145 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:43:08,241 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:43:08,394 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:43:08,491 - INFO - tesseract alt3 结果: 
+2025-12-15 13:43:08,550 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:43:08,646 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:43:08,710 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:43:08,801 - INFO - tesseract alt5 结果: 
+2025-12-15 13:43:08,801 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:43:08,801 - INFO - 查找验证码输入框...
+2025-12-15 13:43:08,855 - INFO - 验证码填写完成
+2025-12-15 13:43:08,855 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:43:08,855 - INFO - 查找并点击登录按钮...
+2025-12-15 13:43:09,186 - INFO - 已点击登录按钮
+2025-12-15 13:43:16,206 - INFO - 开始填写登录表单...
+2025-12-15 13:43:16,266 - INFO - 用户名填写完成
+2025-12-15 13:43:16,323 - INFO - 密码填写完成
+2025-12-15 13:43:16,324 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:43:16,324 - INFO - 验证码识别尝试 28/30
+2025-12-15 13:43:16,324 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:43:16,431 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:43:16,528 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:43:16,596 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:43:16,700 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:43:16,760 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:43:16,862 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:43:17,018 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:43:17,119 - INFO - tesseract alt3 结果: 
+2025-12-15 13:43:17,178 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:43:17,275 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:43:17,334 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:43:17,426 - INFO - tesseract alt5 结果: 
+2025-12-15 13:43:17,426 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:43:17,426 - INFO - 查找验证码输入框...
+2025-12-15 13:43:17,481 - INFO - 验证码填写完成
+2025-12-15 13:43:17,481 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:43:17,481 - INFO - 查找并点击登录按钮...
+2025-12-15 13:43:17,536 - INFO - 已点击登录按钮
+2025-12-15 13:43:24,556 - INFO - 开始填写登录表单...
+2025-12-15 13:43:24,621 - INFO - 用户名填写完成
+2025-12-15 13:43:24,682 - INFO - 密码填写完成
+2025-12-15 13:43:24,683 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:43:24,683 - INFO - 验证码识别尝试 29/30
+2025-12-15 13:43:24,683 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:43:24,783 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:43:24,883 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:43:24,945 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:43:25,044 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:43:25,105 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:43:25,202 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:43:25,360 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:43:25,462 - INFO - tesseract alt3 结果: 
+2025-12-15 13:43:25,521 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:43:25,623 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:43:25,683 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:43:25,776 - INFO - tesseract alt5 结果: 
+2025-12-15 13:43:25,776 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:43:25,777 - INFO - 查找验证码输入框...
+2025-12-15 13:43:25,833 - INFO - 验证码填写完成
+2025-12-15 13:43:25,833 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:43:25,833 - INFO - 查找并点击登录按钮...
+2025-12-15 13:43:25,891 - INFO - 已点击登录按钮
+2025-12-15 13:43:32,910 - INFO - 开始填写登录表单...
+2025-12-15 13:43:32,968 - INFO - 用户名填写完成
+2025-12-15 13:43:33,025 - INFO - 密码填写完成
+2025-12-15 13:43:33,026 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-15 13:43:33,026 - INFO - 验证码识别尝试 30/30
+2025-12-15 13:43:33,026 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-15 13:43:33,121 - INFO - easyocr 结果: ['5K23(0.74)']
+2025-12-15 13:43:33,220 - INFO - tesseract 结果: SKZ3
+2025-12-15 13:43:33,279 - INFO - easyocr alt1 结果: ['5K73(0.55)']
+2025-12-15 13:43:33,375 - INFO - tesseract alt1 结果: BKZS
+2025-12-15 13:43:33,442 - INFO - easyocr alt2 结果: ['5K73(0.57)']
+2025-12-15 13:43:33,536 - INFO - tesseract alt2 结果: 5kKZ3
+2025-12-15 13:43:33,689 - INFO - easyocr alt3 结果: ['5K23(0.46)']
+2025-12-15 13:43:33,792 - INFO - tesseract alt3 结果: 
+2025-12-15 13:43:33,850 - INFO - easyocr alt4 结果: ['5K73(0.57)']
+2025-12-15 13:43:33,952 - INFO - tesseract alt4 结果: 5KZ3
+2025-12-15 13:43:34,010 - INFO - easyocr alt5 结果: ['5K23(0.48)']
+2025-12-15 13:43:34,101 - INFO - tesseract alt5 结果: 
+2025-12-15 13:43:34,102 - INFO - 最终验证码识别结果: 5K23 (engine=easyocr, prob=0.738436758518219)
+2025-12-15 13:43:34,102 - INFO - 查找验证码输入框...
+2025-12-15 13:43:34,156 - INFO - 验证码填写完成
+2025-12-15 13:43:34,156 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-15 13:43:34,156 - INFO - 查找并点击登录按钮...
+2025-12-15 13:43:34,484 - INFO - 已点击登录按钮
+2025-12-15 13:43:41,504 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2025-12-15 13:43:41,504 - ERROR - 处理验证码时出错: EOF when reading a line
+2025-12-15 13:43:41,504 - WARNING - 验证码处理失败，但继续尝试登录
+2025-12-15 13:43:41,504 - INFO - 查找并点击登录按钮...
+2025-12-15 13:43:41,559 - INFO - 已点击登录按钮
+2025-12-15 13:43:46,559 - INFO - 等待登录成功...
+2025-12-15 13:43:51,564 - INFO - 登录可能成功，继续下一步...
+2025-12-15 13:43:51,564 - INFO - 查找'去充值'按钮...
+2025-12-15 13:43:51,626 - INFO - 已点击充值按钮
+2025-12-15 13:43:54,626 - INFO - 开始提取剩余电量信息...
+2025-12-15 13:43:54,631 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-15 13:43:54,640 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-15 13:43:54,648 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-15 13:43:54,651 - INFO - 在页面源码中查找电量信息...
+2025-12-15 13:43:54,662 - WARNING - 未能提取到剩余电量信息
+2025-12-15 13:43:54,662 - WARNING - 没有电量数据可保存
+2025-12-15 13:43:54,662 - INFO - 监控流程完成
+Wrapper end: 2025-12-15T21:43:54.754827+08:00
