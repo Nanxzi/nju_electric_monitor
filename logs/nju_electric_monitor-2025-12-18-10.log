@@ -1,0 +1,288 @@
+2025-12-18 02:48:05,099 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-18 02:48:06,367 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-18 02:48:06,367 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-18 02:48:07,980 - INFO - OCR识别器初始化成功
+2025-12-18 02:48:07,980 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-18 02:48:07,980 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-18 02:50:46,723 - INFO - 等待登录表单加载...
+2025-12-18 02:50:46,733 - INFO - 登录表单已加载
+2025-12-18 02:50:46,733 - INFO - 开始填写登录表单...
+2025-12-18 02:50:46,797 - INFO - 用户名填写完成
+2025-12-18 02:50:46,868 - INFO - 密码填写完成
+2025-12-18 02:50:46,868 - INFO - 检查是否有验证码...
+2025-12-18 02:50:46,868 - INFO - 查找验证码图片...
+2025-12-18 02:50:46,889 - INFO - 找到验证码图片，开始截图...
+2025-12-18 02:50:46,934 - INFO - 验证码图片截取成功
+2025-12-18 02:50:46,934 - INFO - 开始填写登录表单...
+2025-12-18 02:50:47,002 - INFO - 用户名填写完成
+2025-12-18 02:50:47,064 - INFO - 密码填写完成
+2025-12-18 02:50:47,065 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-18 02:50:47,065 - INFO - 验证码识别尝试 1/30
+2025-12-18 02:50:47,065 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-18 02:50:47,181 - INFO - easyocr 结果: []
+2025-12-18 02:50:47,354 - INFO - tesseract 结果: wee
+2025-12-18 02:50:47,428 - INFO - easyocr alt1 结果: ['3(0.19)']
+2025-12-18 02:50:47,527 - INFO - tesseract alt1 结果: iE
+2025-12-18 02:50:47,589 - INFO - easyocr alt2 结果: ['23(0.40)']
+2025-12-18 02:50:47,687 - INFO - tesseract alt2 结果: IES
+2025-12-18 02:50:47,847 - INFO - easyocr alt3 结果: ['1(0.16)']
+2025-12-18 02:50:47,951 - INFO - tesseract alt3 结果: Si
+2025-12-18 02:50:48,012 - INFO - easyocr alt4 结果: ['3(0.66)']
+2025-12-18 02:50:48,114 - INFO - tesseract alt4 结果: SiS
+2025-12-18 02:50:48,178 - INFO - easyocr alt5 结果: ['33(0.39)']
+2025-12-18 02:50:48,282 - INFO - tesseract alt5 结果: ES
+2025-12-18 02:50:48,282 - INFO - 最终验证码识别结果: 3 (engine=easyocr_alt4, prob=0.6583551168441772)
+2025-12-18 02:50:48,282 - INFO - 查找验证码输入框...
+2025-12-18 02:50:48,341 - INFO - 验证码填写完成
+2025-12-18 02:50:48,341 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-18 02:50:48,341 - INFO - 查找并点击登录按钮...
+2025-12-18 02:55:48,410 - ERROR - 点击登录按钮时出错: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x55d9eee78e2a <unknown>
+#1 0x55d9ee91c87b <unknown>
+#2 0x55d9ee904a71 <unknown>
+#3 0x55d9ee904781 <unknown>
+#4 0x55d9ee902789 <unknown>
+#5 0x55d9ee90302f <unknown>
+#6 0x55d9ee9115b0 <unknown>
+#7 0x55d9ee92ab63 <unknown>
+#8 0x55d9ee93113b <unknown>
+#9 0x55d9ee903704 <unknown>
+#10 0x55d9ee92a8e7 <unknown>
+#11 0x55d9ee9b85c2 <unknown>
+#12 0x55d9ee95f7c7 <unknown>
+#13 0x55d9ee960471 <unknown>
+#14 0x55d9eee4367f <unknown>
+#15 0x55d9eee46641 <unknown>
+#16 0x55d9eee2c7ae <unknown>
+#17 0x55d9eee46dc9 <unknown>
+#18 0x55d9eee15637 <unknown>
+#19 0x55d9eee67568 <unknown>
+#20 0x55d9eee6777a <unknown>
+#21 0x55d9eee780dc <unknown>
+#22 0x7f08ca02aaa4 <unknown>
+#23 0x7f08ca0b7c6c <unknown>
+
+2025-12-18 02:55:48,410 - WARNING - 点击登录按钮失败
+2025-12-18 02:55:48,410 - INFO - 开始填写登录表单...
+2025-12-18 02:55:48,478 - INFO - 用户名填写完成
+2025-12-18 02:55:48,539 - INFO - 密码填写完成
+2025-12-18 02:55:48,539 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-18 02:55:48,539 - INFO - 验证码识别尝试 2/30
+2025-12-18 02:55:48,539 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-18 02:55:48,618 - INFO - easyocr 结果: []
+2025-12-18 02:55:48,717 - INFO - tesseract 结果: wee
+2025-12-18 02:55:48,783 - INFO - easyocr alt1 结果: ['3(0.19)']
+2025-12-18 02:55:48,887 - INFO - tesseract alt1 结果: iE
+2025-12-18 02:55:48,946 - INFO - easyocr alt2 结果: ['23(0.40)']
+2025-12-18 02:55:49,045 - INFO - tesseract alt2 结果: IES
+2025-12-18 02:55:49,201 - INFO - easyocr alt3 结果: ['1(0.16)']
+2025-12-18 02:55:49,305 - INFO - tesseract alt3 结果: Si
+2025-12-18 02:55:49,373 - INFO - easyocr alt4 结果: ['3(0.66)']
+2025-12-18 02:55:49,477 - INFO - tesseract alt4 结果: SiS
+2025-12-18 02:55:49,544 - INFO - easyocr alt5 结果: ['33(0.39)']
+2025-12-18 02:55:49,655 - INFO - tesseract alt5 结果: ES
+2025-12-18 02:55:49,655 - INFO - 最终验证码识别结果: 3 (engine=easyocr_alt4, prob=0.6583551168441772)
+2025-12-18 02:55:49,655 - INFO - 查找验证码输入框...
+2025-12-18 02:55:49,712 - INFO - 验证码填写完成
+2025-12-18 02:55:49,712 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-18 02:55:49,712 - INFO - 查找并点击登录按钮...
+2025-12-18 03:00:49,774 - ERROR - 点击登录按钮时出错: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x55d9eee78e2a <unknown>
+#1 0x55d9ee91c87b <unknown>
+#2 0x55d9ee904a71 <unknown>
+#3 0x55d9ee904781 <unknown>
+#4 0x55d9ee902789 <unknown>
+#5 0x55d9ee90302f <unknown>
+#6 0x55d9ee9115b0 <unknown>
+#7 0x55d9ee92ab63 <unknown>
+#8 0x55d9ee93113b <unknown>
+#9 0x55d9ee903704 <unknown>
+#10 0x55d9ee92a8e7 <unknown>
+#11 0x55d9ee9b85c2 <unknown>
+#12 0x55d9ee95f7c7 <unknown>
+#13 0x55d9ee960471 <unknown>
+#14 0x55d9eee4367f <unknown>
+#15 0x55d9eee46641 <unknown>
+#16 0x55d9eee2c7ae <unknown>
+#17 0x55d9eee46dc9 <unknown>
+#18 0x55d9eee15637 <unknown>
+#19 0x55d9eee67568 <unknown>
+#20 0x55d9eee6777a <unknown>
+#21 0x55d9eee780dc <unknown>
+#22 0x7f08ca02aaa4 <unknown>
+#23 0x7f08ca0b7c6c <unknown>
+
+2025-12-18 03:00:49,774 - WARNING - 点击登录按钮失败
+2025-12-18 03:00:49,774 - INFO - 开始填写登录表单...
+2025-12-18 03:00:49,845 - INFO - 用户名填写完成
+2025-12-18 03:00:49,913 - INFO - 密码填写完成
+2025-12-18 03:00:49,914 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-18 03:00:49,914 - INFO - 验证码识别尝试 3/30
+2025-12-18 03:00:49,914 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-18 03:00:50,002 - INFO - easyocr 结果: []
+2025-12-18 03:00:50,101 - INFO - tesseract 结果: wee
+2025-12-18 03:00:50,168 - INFO - easyocr alt1 结果: ['3(0.19)']
+2025-12-18 03:00:50,264 - INFO - tesseract alt1 结果: iE
+2025-12-18 03:00:50,324 - INFO - easyocr alt2 结果: ['23(0.40)']
+2025-12-18 03:00:50,422 - INFO - tesseract alt2 结果: IES
+2025-12-18 03:00:50,573 - INFO - easyocr alt3 结果: ['1(0.16)']
+2025-12-18 03:00:50,673 - INFO - tesseract alt3 结果: Si
+2025-12-18 03:00:50,732 - INFO - easyocr alt4 结果: ['3(0.66)']
+2025-12-18 03:00:50,830 - INFO - tesseract alt4 结果: SiS
+2025-12-18 03:00:50,902 - INFO - easyocr alt5 结果: ['33(0.39)']
+2025-12-18 03:00:51,005 - INFO - tesseract alt5 结果: ES
+2025-12-18 03:00:51,005 - INFO - 最终验证码识别结果: 3 (engine=easyocr_alt4, prob=0.6583551168441772)
+2025-12-18 03:00:51,005 - INFO - 查找验证码输入框...
+2025-12-18 03:00:51,062 - INFO - 验证码填写完成
+2025-12-18 03:00:51,062 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-18 03:00:51,062 - INFO - 查找并点击登录按钮...
+2025-12-18 03:05:37,974 - INFO - 已点击登录按钮
+2025-12-18 03:05:45,003 - INFO - 开始填写登录表单...
+2025-12-18 03:05:45,073 - INFO - 用户名填写完成
+2025-12-18 03:05:45,142 - INFO - 密码填写完成
+2025-12-18 03:05:45,143 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-18 03:05:45,143 - INFO - 验证码识别尝试 4/30
+2025-12-18 03:05:45,143 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-18 03:05:45,232 - INFO - easyocr 结果: []
+2025-12-18 03:05:45,335 - INFO - tesseract 结果: wee
+2025-12-18 03:05:45,403 - INFO - easyocr alt1 结果: ['3(0.19)']
+2025-12-18 03:05:45,504 - INFO - tesseract alt1 结果: iE
+2025-12-18 03:05:45,564 - INFO - easyocr alt2 结果: ['23(0.40)']
+2025-12-18 03:05:45,664 - INFO - tesseract alt2 结果: IES
+2025-12-18 03:05:45,819 - INFO - easyocr alt3 结果: ['1(0.16)']
+2025-12-18 03:05:45,925 - INFO - tesseract alt3 结果: Si
+2025-12-18 03:05:45,985 - INFO - easyocr alt4 结果: ['3(0.66)']
+2025-12-18 03:05:46,084 - INFO - tesseract alt4 结果: SiS
+2025-12-18 03:05:46,151 - INFO - easyocr alt5 结果: ['33(0.39)']
+2025-12-18 03:05:46,252 - INFO - tesseract alt5 结果: ES
+2025-12-18 03:05:46,252 - INFO - 最终验证码识别结果: 3 (engine=easyocr_alt4, prob=0.6583551168441772)
+2025-12-18 03:05:46,252 - INFO - 查找验证码输入框...
+2025-12-18 03:05:46,307 - INFO - 验证码填写完成
+2025-12-18 03:05:46,307 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-18 03:05:46,307 - INFO - 查找并点击登录按钮...
+2025-12-18 03:10:46,366 - ERROR - 点击登录按钮时出错: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x55d9eee78e2a <unknown>
+#1 0x55d9ee91c87b <unknown>
+#2 0x55d9ee904a71 <unknown>
+#3 0x55d9ee904781 <unknown>
+#4 0x55d9ee902789 <unknown>
+#5 0x55d9ee90302f <unknown>
+#6 0x55d9ee9115b0 <unknown>
+#7 0x55d9ee92ab63 <unknown>
+#8 0x55d9ee93113b <unknown>
+#9 0x55d9ee903704 <unknown>
+#10 0x55d9ee92a8e7 <unknown>
+#11 0x55d9ee9b85c2 <unknown>
+#12 0x55d9ee95f7c7 <unknown>
+#13 0x55d9ee960471 <unknown>
+#14 0x55d9eee4367f <unknown>
+#15 0x55d9eee46641 <unknown>
+#16 0x55d9eee2c7ae <unknown>
+#17 0x55d9eee46dc9 <unknown>
+#18 0x55d9eee15637 <unknown>
+#19 0x55d9eee67568 <unknown>
+#20 0x55d9eee6777a <unknown>
+#21 0x55d9eee780dc <unknown>
+#22 0x7f08ca02aaa4 <unknown>
+#23 0x7f08ca0b7c6c <unknown>
+
+2025-12-18 03:10:46,366 - WARNING - 点击登录按钮失败
+2025-12-18 03:10:46,366 - INFO - 开始填写登录表单...
+2025-12-18 03:10:46,437 - INFO - 用户名填写完成
+2025-12-18 03:10:46,499 - INFO - 密码填写完成
+2025-12-18 03:10:46,500 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-18 03:10:46,500 - INFO - 验证码识别尝试 5/30
+2025-12-18 03:10:46,500 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-18 03:10:46,579 - INFO - easyocr 结果: []
+2025-12-18 03:10:46,682 - INFO - tesseract 结果: wee
+2025-12-18 03:10:46,746 - INFO - easyocr alt1 结果: ['3(0.19)']
+2025-12-18 03:10:46,846 - INFO - tesseract alt1 结果: iE
+2025-12-18 03:10:46,915 - INFO - easyocr alt2 结果: ['23(0.40)']
+2025-12-18 03:10:47,022 - INFO - tesseract alt2 结果: IES
+2025-12-18 03:10:47,179 - INFO - easyocr alt3 结果: ['1(0.16)']
+2025-12-18 03:10:47,283 - INFO - tesseract alt3 结果: Si
+2025-12-18 03:10:47,343 - INFO - easyocr alt4 结果: ['3(0.66)']
+2025-12-18 03:10:47,442 - INFO - tesseract alt4 结果: SiS
+2025-12-18 03:10:47,508 - INFO - easyocr alt5 结果: ['33(0.39)']
+2025-12-18 03:10:47,613 - INFO - tesseract alt5 结果: ES
+2025-12-18 03:10:47,613 - INFO - 最终验证码识别结果: 3 (engine=easyocr_alt4, prob=0.6583551168441772)
+2025-12-18 03:10:47,613 - INFO - 查找验证码输入框...
+2025-12-18 03:10:47,671 - INFO - 验证码填写完成
+2025-12-18 03:10:47,672 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-18 03:10:47,672 - INFO - 查找并点击登录按钮...
+2025-12-18 03:15:47,737 - ERROR - 点击登录按钮时出错: Message: timeout: Timed out receiving message from renderer: 300.000
+  (Session info: chrome=143.0.7499.109)
+Stacktrace:
+#0 0x55d9eee78e2a <unknown>
+#1 0x55d9ee91c87b <unknown>
+#2 0x55d9ee904a71 <unknown>
+#3 0x55d9ee904781 <unknown>
+#4 0x55d9ee902789 <unknown>
+#5 0x55d9ee90302f <unknown>
+#6 0x55d9ee9115b0 <unknown>
+#7 0x55d9ee92ab63 <unknown>
+#8 0x55d9ee93113b <unknown>
+#9 0x55d9ee903704 <unknown>
+#10 0x55d9ee92a8e7 <unknown>
+#11 0x55d9ee9b85c2 <unknown>
+#12 0x55d9ee95f7c7 <unknown>
+#13 0x55d9ee960471 <unknown>
+#14 0x55d9eee4367f <unknown>
+#15 0x55d9eee46641 <unknown>
+#16 0x55d9eee2c7ae <unknown>
+#17 0x55d9eee46dc9 <unknown>
+#18 0x55d9eee15637 <unknown>
+#19 0x55d9eee67568 <unknown>
+#20 0x55d9eee6777a <unknown>
+#21 0x55d9eee780dc <unknown>
+#22 0x7f08ca02aaa4 <unknown>
+#23 0x7f08ca0b7c6c <unknown>
+
+2025-12-18 03:15:47,737 - WARNING - 点击登录按钮失败
+2025-12-18 03:15:47,737 - INFO - 开始填写登录表单...
+2025-12-18 03:15:47,806 - INFO - 用户名填写完成
+2025-12-18 03:15:47,869 - INFO - 密码填写完成
+2025-12-18 03:15:47,869 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-18 03:15:47,869 - INFO - 验证码识别尝试 6/30
+2025-12-18 03:15:47,869 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-18 03:15:47,949 - INFO - easyocr 结果: []
+2025-12-18 03:15:48,048 - INFO - tesseract 结果: wee
+2025-12-18 03:15:48,115 - INFO - easyocr alt1 结果: ['3(0.19)']
+2025-12-18 03:15:48,217 - INFO - tesseract alt1 结果: iE
+2025-12-18 03:15:48,277 - INFO - easyocr alt2 结果: ['23(0.40)']
+2025-12-18 03:15:48,375 - INFO - tesseract alt2 结果: IES
+2025-12-18 03:15:48,531 - INFO - easyocr alt3 结果: ['1(0.16)']
+2025-12-18 03:15:48,637 - INFO - tesseract alt3 结果: Si
+2025-12-18 03:15:48,697 - INFO - easyocr alt4 结果: ['3(0.66)']
+2025-12-18 03:15:48,797 - INFO - tesseract alt4 结果: SiS
+2025-12-18 03:15:48,862 - INFO - easyocr alt5 结果: ['33(0.39)']
+2025-12-18 03:15:48,964 - INFO - tesseract alt5 结果: ES
+2025-12-18 03:15:48,964 - INFO - 最终验证码识别结果: 3 (engine=easyocr_alt4, prob=0.6583551168441772)
+2025-12-18 03:15:48,964 - INFO - 查找验证码输入框...
+2025-12-18 03:15:49,019 - INFO - 验证码填写完成
+2025-12-18 03:15:49,019 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-18 03:15:49,019 - INFO - 查找并点击登录按钮...
+2025-12-18 03:16:50,438 - INFO - 已点击登录按钮
+2025-12-18 03:16:57,450 - INFO - 未检测到无效验证码提示，验证码通过
+2025-12-18 03:16:57,450 - INFO - 查找并点击登录按钮...
+2025-12-18 03:16:57,459 - ERROR - 未找到登录按钮
+2025-12-18 03:16:57,459 - ERROR - 点击登录按钮失败
+2025-12-18 03:16:57,460 - INFO - 等待登录成功...
+2025-12-18 03:17:02,464 - INFO - 登录可能成功，继续下一步...
+2025-12-18 03:17:02,464 - INFO - 查找'去充值'按钮...
+2025-12-18 03:17:02,473 - ERROR - 未找到'去充值'按钮
+2025-12-18 03:17:02,474 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2025-12-18 03:17:02,474 - INFO - 开始提取剩余电量信息...
+2025-12-18 03:17:02,497 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-18 03:17:02,507 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-18 03:17:02,515 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-18 03:17:02,538 - INFO - 在页面源码中查找电量信息...
+2025-12-18 03:17:02,551 - WARNING - 未能提取到剩余电量信息
+2025-12-18 03:17:02,551 - WARNING - 没有电量数据可保存
+2025-12-18 03:17:02,551 - INFO - 监控流程完成
