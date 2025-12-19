@@ -1,0 +1,1006 @@
+Wrapper start: 2025-12-19T15:18:01.569223+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=118):
+- ACCEPT_EULA
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+- ANT_HOME
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   67G  4.9G  94% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  3.3M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sda16      881M   62M  758M   8% /boot
+/dev/sda15      105M  6.2M   99M   6% /boot/efi
+/dev/sdb1        74G  4.1G   66G   6% /mnt
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+6.2M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+288K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+- /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+- /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+- /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+- /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+
+FontManager samples (name -> path):
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+WenQuanYi Micro Hei -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Lato -> /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Liberation Mono -> /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+Liberation Mono -> /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+WenQuanYi Zen Hei -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2025-12-19 07:18:11,060 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-19 07:18:13,111 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-19 07:18:13,112 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-19 07:18:14,730 - INFO - OCR识别器初始化成功
+2025-12-19 07:18:14,730 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-19 07:18:14,730 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-19 07:18:26,827 - INFO - 等待登录表单加载...
+2025-12-19 07:18:26,838 - INFO - 登录表单已加载
+2025-12-19 07:18:26,838 - INFO - 开始填写登录表单...
+2025-12-19 07:18:26,900 - INFO - 用户名填写完成
+2025-12-19 07:18:26,967 - INFO - 密码填写完成
+2025-12-19 07:18:26,967 - INFO - 检查是否有验证码...
+2025-12-19 07:18:26,967 - INFO - 查找验证码图片...
+2025-12-19 07:18:26,987 - INFO - 找到验证码图片，开始截图...
+2025-12-19 07:18:27,046 - INFO - 验证码图片截取成功
+2025-12-19 07:18:27,046 - INFO - 开始填写登录表单...
+2025-12-19 07:18:27,112 - INFO - 用户名填写完成
+2025-12-19 07:18:27,175 - INFO - 密码填写完成
+2025-12-19 07:18:27,176 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:18:27,176 - INFO - 验证码识别尝试 1/30
+2025-12-19 07:18:27,176 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:18:27,314 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:18:27,500 - INFO - tesseract 结果: dyCP
+2025-12-19 07:18:27,565 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:18:27,662 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:18:27,723 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:18:27,818 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:18:27,982 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:18:28,091 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:18:28,161 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:18:28,261 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:18:28,322 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:18:28,421 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:18:28,422 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:18:28,422 - INFO - 查找验证码输入框...
+2025-12-19 07:18:28,482 - INFO - 验证码填写完成
+2025-12-19 07:18:28,482 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:18:28,482 - INFO - 查找并点击登录按钮...
+2025-12-19 07:18:28,875 - INFO - 已点击登录按钮
+2025-12-19 07:18:35,903 - INFO - 开始填写登录表单...
+2025-12-19 07:18:35,964 - INFO - 用户名填写完成
+2025-12-19 07:18:36,027 - INFO - 密码填写完成
+2025-12-19 07:18:36,028 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:18:36,028 - INFO - 验证码识别尝试 2/30
+2025-12-19 07:18:36,028 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:18:36,126 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:18:36,221 - INFO - tesseract 结果: dyCP
+2025-12-19 07:18:36,282 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:18:36,381 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:18:36,448 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:18:36,546 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:18:36,701 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:18:36,813 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:18:36,872 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:18:36,972 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:18:37,033 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:18:37,137 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:18:37,137 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:18:37,137 - INFO - 查找验证码输入框...
+2025-12-19 07:18:37,196 - INFO - 验证码填写完成
+2025-12-19 07:18:37,196 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:18:37,196 - INFO - 查找并点击登录按钮...
+2025-12-19 07:18:37,252 - INFO - 已点击登录按钮
+2025-12-19 07:18:44,274 - INFO - 开始填写登录表单...
+2025-12-19 07:18:44,337 - INFO - 用户名填写完成
+2025-12-19 07:18:44,397 - INFO - 密码填写完成
+2025-12-19 07:18:44,398 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:18:44,398 - INFO - 验证码识别尝试 3/30
+2025-12-19 07:18:44,398 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:18:44,507 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:18:44,603 - INFO - tesseract 结果: dyCP
+2025-12-19 07:18:44,665 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:18:44,767 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:18:44,835 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:18:44,936 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:18:45,094 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:18:45,205 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:18:45,265 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:18:45,365 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:18:45,426 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:18:45,526 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:18:45,527 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:18:45,527 - INFO - 查找验证码输入框...
+2025-12-19 07:18:45,583 - INFO - 验证码填写完成
+2025-12-19 07:18:45,583 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:18:45,583 - INFO - 查找并点击登录按钮...
+2025-12-19 07:18:45,963 - INFO - 已点击登录按钮
+2025-12-19 07:18:52,984 - INFO - 开始填写登录表单...
+2025-12-19 07:18:53,047 - INFO - 用户名填写完成
+2025-12-19 07:18:53,107 - INFO - 密码填写完成
+2025-12-19 07:18:53,108 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:18:53,108 - INFO - 验证码识别尝试 4/30
+2025-12-19 07:18:53,108 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:18:53,218 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:18:53,315 - INFO - tesseract 结果: dyCP
+2025-12-19 07:18:53,376 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:18:53,476 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:18:53,537 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:18:53,634 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:18:53,792 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:18:53,901 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:18:53,980 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:18:54,081 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:18:54,142 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:18:54,241 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:18:54,241 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:18:54,241 - INFO - 查找验证码输入框...
+2025-12-19 07:18:54,299 - INFO - 验证码填写完成
+2025-12-19 07:18:54,299 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:18:54,299 - INFO - 查找并点击登录按钮...
+2025-12-19 07:18:54,688 - INFO - 已点击登录按钮
+2025-12-19 07:19:01,708 - INFO - 开始填写登录表单...
+2025-12-19 07:19:01,769 - INFO - 用户名填写完成
+2025-12-19 07:19:01,828 - INFO - 密码填写完成
+2025-12-19 07:19:01,829 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:19:01,829 - INFO - 验证码识别尝试 5/30
+2025-12-19 07:19:01,829 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:19:01,927 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:19:02,026 - INFO - tesseract 结果: dyCP
+2025-12-19 07:19:02,088 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:19:02,187 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:19:02,247 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:19:02,345 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:19:02,501 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:19:02,610 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:19:02,669 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:19:02,768 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:19:02,827 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:19:02,926 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:19:02,926 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:19:02,926 - INFO - 查找验证码输入框...
+2025-12-19 07:19:02,982 - INFO - 验证码填写完成
+2025-12-19 07:19:02,982 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:19:02,982 - INFO - 查找并点击登录按钮...
+2025-12-19 07:19:03,365 - INFO - 已点击登录按钮
+2025-12-19 07:19:10,385 - INFO - 开始填写登录表单...
+2025-12-19 07:19:10,444 - INFO - 用户名填写完成
+2025-12-19 07:19:10,502 - INFO - 密码填写完成
+2025-12-19 07:19:10,503 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:19:10,503 - INFO - 验证码识别尝试 6/30
+2025-12-19 07:19:10,503 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:19:10,600 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:19:10,698 - INFO - tesseract 结果: dyCP
+2025-12-19 07:19:10,759 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:19:10,860 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:19:10,919 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:19:11,013 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:19:11,171 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:19:11,276 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:19:11,335 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:19:11,441 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:19:11,500 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:19:11,597 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:19:11,598 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:19:11,598 - INFO - 查找验证码输入框...
+2025-12-19 07:19:11,653 - INFO - 验证码填写完成
+2025-12-19 07:19:11,653 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:19:11,653 - INFO - 查找并点击登录按钮...
+2025-12-19 07:19:12,038 - INFO - 已点击登录按钮
+2025-12-19 07:19:19,059 - INFO - 开始填写登录表单...
+2025-12-19 07:19:19,119 - INFO - 用户名填写完成
+2025-12-19 07:19:19,179 - INFO - 密码填写完成
+2025-12-19 07:19:19,179 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:19:19,180 - INFO - 验证码识别尝试 7/30
+2025-12-19 07:19:19,180 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:19:19,277 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:19:19,376 - INFO - tesseract 结果: dyCP
+2025-12-19 07:19:19,437 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:19:19,537 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:19:19,615 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:19:19,721 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:19:19,880 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:19:19,993 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:19:20,052 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:19:20,149 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:19:20,209 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:19:20,309 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:19:20,309 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:19:20,309 - INFO - 查找验证码输入框...
+2025-12-19 07:19:20,366 - INFO - 验证码填写完成
+2025-12-19 07:19:20,366 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:19:20,366 - INFO - 查找并点击登录按钮...
+2025-12-19 07:19:20,747 - INFO - 已点击登录按钮
+2025-12-19 07:19:27,768 - INFO - 开始填写登录表单...
+2025-12-19 07:19:27,830 - INFO - 用户名填写完成
+2025-12-19 07:19:27,892 - INFO - 密码填写完成
+2025-12-19 07:19:27,892 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:19:27,892 - INFO - 验证码识别尝试 8/30
+2025-12-19 07:19:27,892 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:19:27,991 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:19:28,088 - INFO - tesseract 结果: dyCP
+2025-12-19 07:19:28,148 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:19:28,255 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:19:28,316 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:19:28,411 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:19:28,567 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:19:28,676 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:19:28,736 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:19:28,837 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:19:28,896 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:19:28,992 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:19:28,993 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:19:28,993 - INFO - 查找验证码输入框...
+2025-12-19 07:19:29,050 - INFO - 验证码填写完成
+2025-12-19 07:19:29,050 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:19:29,050 - INFO - 查找并点击登录按钮...
+2025-12-19 07:19:29,436 - INFO - 已点击登录按钮
+2025-12-19 07:19:36,457 - INFO - 开始填写登录表单...
+2025-12-19 07:19:36,516 - INFO - 用户名填写完成
+2025-12-19 07:19:36,575 - INFO - 密码填写完成
+2025-12-19 07:19:36,576 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:19:36,576 - INFO - 验证码识别尝试 9/30
+2025-12-19 07:19:36,576 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:19:36,681 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:19:36,776 - INFO - tesseract 结果: dyCP
+2025-12-19 07:19:36,838 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:19:36,938 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:19:36,997 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:19:37,098 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:19:37,253 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:19:37,363 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:19:37,422 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:19:37,521 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:19:37,580 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:19:37,682 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:19:37,682 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:19:37,682 - INFO - 查找验证码输入框...
+2025-12-19 07:19:37,740 - INFO - 验证码填写完成
+2025-12-19 07:19:37,740 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:19:37,740 - INFO - 查找并点击登录按钮...
+2025-12-19 07:19:37,797 - INFO - 已点击登录按钮
+2025-12-19 07:19:44,819 - INFO - 开始填写登录表单...
+2025-12-19 07:19:44,883 - INFO - 用户名填写完成
+2025-12-19 07:19:44,944 - INFO - 密码填写完成
+2025-12-19 07:19:44,945 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:19:44,945 - INFO - 验证码识别尝试 10/30
+2025-12-19 07:19:44,945 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:19:45,043 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:19:45,141 - INFO - tesseract 结果: dyCP
+2025-12-19 07:19:45,202 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:19:45,303 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:19:45,368 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:19:45,464 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:19:45,624 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:19:45,735 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:19:45,802 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:19:45,904 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:19:45,963 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:19:46,062 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:19:46,063 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:19:46,063 - INFO - 查找验证码输入框...
+2025-12-19 07:19:46,124 - INFO - 验证码填写完成
+2025-12-19 07:19:46,124 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:19:46,124 - INFO - 查找并点击登录按钮...
+2025-12-19 07:19:46,180 - INFO - 已点击登录按钮
+2025-12-19 07:19:53,201 - INFO - 开始填写登录表单...
+2025-12-19 07:19:53,260 - INFO - 用户名填写完成
+2025-12-19 07:19:53,320 - INFO - 密码填写完成
+2025-12-19 07:19:53,321 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:19:53,321 - INFO - 验证码识别尝试 11/30
+2025-12-19 07:19:53,321 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:19:53,424 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:19:53,521 - INFO - tesseract 结果: dyCP
+2025-12-19 07:19:53,581 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:19:53,680 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:19:53,739 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:19:53,835 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:19:53,997 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:19:54,112 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:19:54,170 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:19:54,270 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:19:54,336 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:19:54,435 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:19:54,435 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:19:54,435 - INFO - 查找验证码输入框...
+2025-12-19 07:19:54,493 - INFO - 验证码填写完成
+2025-12-19 07:19:54,493 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:19:54,493 - INFO - 查找并点击登录按钮...
+2025-12-19 07:19:54,552 - INFO - 已点击登录按钮
+2025-12-19 07:20:01,573 - INFO - 开始填写登录表单...
+2025-12-19 07:20:01,638 - INFO - 用户名填写完成
+2025-12-19 07:20:01,699 - INFO - 密码填写完成
+2025-12-19 07:20:01,700 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:20:01,700 - INFO - 验证码识别尝试 12/30
+2025-12-19 07:20:01,700 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:20:01,812 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:20:01,909 - INFO - tesseract 结果: dyCP
+2025-12-19 07:20:01,971 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:20:02,072 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:20:02,131 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:20:02,228 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:20:02,386 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:20:02,497 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:20:02,562 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:20:02,665 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:20:02,733 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:20:02,831 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:20:02,831 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:20:02,831 - INFO - 查找验证码输入框...
+2025-12-19 07:20:02,889 - INFO - 验证码填写完成
+2025-12-19 07:20:02,889 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:20:02,889 - INFO - 查找并点击登录按钮...
+2025-12-19 07:20:03,281 - INFO - 已点击登录按钮
+2025-12-19 07:20:10,302 - INFO - 开始填写登录表单...
+2025-12-19 07:20:10,365 - INFO - 用户名填写完成
+2025-12-19 07:20:10,426 - INFO - 密码填写完成
+2025-12-19 07:20:10,427 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:20:10,427 - INFO - 验证码识别尝试 13/30
+2025-12-19 07:20:10,427 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:20:10,532 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:20:10,629 - INFO - tesseract 结果: dyCP
+2025-12-19 07:20:10,688 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:20:10,786 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:20:10,845 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:20:10,942 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:20:11,100 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:20:11,209 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:20:11,268 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:20:11,372 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:20:11,430 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:20:11,531 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:20:11,532 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:20:11,532 - INFO - 查找验证码输入框...
+2025-12-19 07:20:11,590 - INFO - 验证码填写完成
+2025-12-19 07:20:11,590 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:20:11,590 - INFO - 查找并点击登录按钮...
+2025-12-19 07:20:11,647 - INFO - 已点击登录按钮
+2025-12-19 07:20:18,669 - INFO - 开始填写登录表单...
+2025-12-19 07:20:18,733 - INFO - 用户名填写完成
+2025-12-19 07:20:18,794 - INFO - 密码填写完成
+2025-12-19 07:20:18,795 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:20:18,795 - INFO - 验证码识别尝试 14/30
+2025-12-19 07:20:18,795 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:20:18,893 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:20:18,995 - INFO - tesseract 结果: dyCP
+2025-12-19 07:20:19,056 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:20:19,158 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:20:19,217 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:20:19,315 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:20:19,473 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:20:19,586 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:20:19,654 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:20:19,760 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:20:19,821 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:20:19,924 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:20:19,924 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:20:19,924 - INFO - 查找验证码输入框...
+2025-12-19 07:20:19,985 - INFO - 验证码填写完成
+2025-12-19 07:20:19,985 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:20:19,985 - INFO - 查找并点击登录按钮...
+2025-12-19 07:20:20,376 - INFO - 已点击登录按钮
+2025-12-19 07:20:27,397 - INFO - 开始填写登录表单...
+2025-12-19 07:20:27,464 - INFO - 用户名填写完成
+2025-12-19 07:20:27,528 - INFO - 密码填写完成
+2025-12-19 07:20:27,528 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:20:27,528 - INFO - 验证码识别尝试 15/30
+2025-12-19 07:20:27,528 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:20:27,626 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:20:27,724 - INFO - tesseract 结果: dyCP
+2025-12-19 07:20:27,785 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:20:27,887 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:20:27,947 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:20:28,043 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:20:28,202 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:20:28,318 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:20:28,378 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:20:28,483 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:20:28,544 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:20:28,649 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:20:28,649 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:20:28,649 - INFO - 查找验证码输入框...
+2025-12-19 07:20:28,707 - INFO - 验证码填写完成
+2025-12-19 07:20:28,707 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:20:28,707 - INFO - 查找并点击登录按钮...
+2025-12-19 07:20:28,766 - INFO - 已点击登录按钮
+2025-12-19 07:20:35,788 - INFO - 开始填写登录表单...
+2025-12-19 07:20:35,851 - INFO - 用户名填写完成
+2025-12-19 07:20:35,912 - INFO - 密码填写完成
+2025-12-19 07:20:35,913 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:20:35,913 - INFO - 验证码识别尝试 16/30
+2025-12-19 07:20:35,913 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:20:36,018 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:20:36,115 - INFO - tesseract 结果: dyCP
+2025-12-19 07:20:36,176 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:20:36,279 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:20:36,339 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:20:36,438 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:20:36,598 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:20:36,709 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:20:36,769 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:20:36,871 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:20:36,934 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:20:37,038 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:20:37,038 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:20:37,038 - INFO - 查找验证码输入框...
+2025-12-19 07:20:37,099 - INFO - 验证码填写完成
+2025-12-19 07:20:37,099 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:20:37,099 - INFO - 查找并点击登录按钮...
+2025-12-19 07:20:37,490 - INFO - 已点击登录按钮
+2025-12-19 07:20:44,512 - INFO - 开始填写登录表单...
+2025-12-19 07:20:44,573 - INFO - 用户名填写完成
+2025-12-19 07:20:44,632 - INFO - 密码填写完成
+2025-12-19 07:20:44,633 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:20:44,633 - INFO - 验证码识别尝试 17/30
+2025-12-19 07:20:44,633 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:20:44,738 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:20:44,844 - INFO - tesseract 结果: dyCP
+2025-12-19 07:20:44,905 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:20:45,009 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:20:45,072 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:20:45,171 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:20:45,331 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:20:45,447 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:20:45,507 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:20:45,612 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:20:45,672 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:20:45,774 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:20:45,774 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:20:45,774 - INFO - 查找验证码输入框...
+2025-12-19 07:20:45,831 - INFO - 验证码填写完成
+2025-12-19 07:20:45,831 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:20:45,831 - INFO - 查找并点击登录按钮...
+2025-12-19 07:20:46,220 - INFO - 已点击登录按钮
+2025-12-19 07:20:53,240 - INFO - 开始填写登录表单...
+2025-12-19 07:20:53,302 - INFO - 用户名填写完成
+2025-12-19 07:20:53,361 - INFO - 密码填写完成
+2025-12-19 07:20:53,362 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:20:53,362 - INFO - 验证码识别尝试 18/30
+2025-12-19 07:20:53,362 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:20:53,460 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:20:53,560 - INFO - tesseract 结果: dyCP
+2025-12-19 07:20:53,637 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:20:53,740 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:20:53,801 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:20:53,901 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:20:54,058 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:20:54,176 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:20:54,237 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:20:54,338 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:20:54,401 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:20:54,506 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:20:54,506 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:20:54,506 - INFO - 查找验证码输入框...
+2025-12-19 07:20:54,563 - INFO - 验证码填写完成
+2025-12-19 07:20:54,563 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:20:54,563 - INFO - 查找并点击登录按钮...
+2025-12-19 07:20:54,952 - INFO - 已点击登录按钮
+2025-12-19 07:21:01,973 - INFO - 开始填写登录表单...
+2025-12-19 07:21:02,038 - INFO - 用户名填写完成
+2025-12-19 07:21:02,101 - INFO - 密码填写完成
+2025-12-19 07:21:02,102 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:21:02,102 - INFO - 验证码识别尝试 19/30
+2025-12-19 07:21:02,102 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:21:02,201 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:21:02,305 - INFO - tesseract 结果: dyCP
+2025-12-19 07:21:02,367 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:21:02,472 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:21:02,533 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:21:02,634 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:21:02,790 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:21:02,905 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:21:02,966 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:21:03,071 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:21:03,133 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:21:03,237 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:21:03,237 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:21:03,237 - INFO - 查找验证码输入框...
+2025-12-19 07:21:03,294 - INFO - 验证码填写完成
+2025-12-19 07:21:03,294 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:21:03,294 - INFO - 查找并点击登录按钮...
+2025-12-19 07:21:03,682 - INFO - 已点击登录按钮
+2025-12-19 07:21:10,703 - INFO - 开始填写登录表单...
+2025-12-19 07:21:10,765 - INFO - 用户名填写完成
+2025-12-19 07:21:10,824 - INFO - 密码填写完成
+2025-12-19 07:21:10,825 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:21:10,825 - INFO - 验证码识别尝试 20/30
+2025-12-19 07:21:10,825 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:21:10,922 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:21:11,022 - INFO - tesseract 结果: dyCP
+2025-12-19 07:21:11,084 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:21:11,184 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:21:11,243 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:21:11,342 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:21:11,498 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:21:11,609 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:21:11,670 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:21:11,771 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:21:11,832 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:21:11,935 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:21:11,935 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:21:11,935 - INFO - 查找验证码输入框...
+2025-12-19 07:21:11,993 - INFO - 验证码填写完成
+2025-12-19 07:21:11,993 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:21:11,993 - INFO - 查找并点击登录按钮...
+2025-12-19 07:21:12,390 - INFO - 已点击登录按钮
+2025-12-19 07:21:19,411 - INFO - 开始填写登录表单...
+2025-12-19 07:21:19,473 - INFO - 用户名填写完成
+2025-12-19 07:21:19,533 - INFO - 密码填写完成
+2025-12-19 07:21:19,534 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:21:19,534 - INFO - 验证码识别尝试 21/30
+2025-12-19 07:21:19,534 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:21:19,630 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:21:19,735 - INFO - tesseract 结果: dyCP
+2025-12-19 07:21:19,798 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:21:19,902 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:21:19,962 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:21:20,062 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:21:20,220 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:21:20,335 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:21:20,396 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:21:20,499 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:21:20,560 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:21:20,663 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:21:20,663 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:21:20,663 - INFO - 查找验证码输入框...
+2025-12-19 07:21:20,722 - INFO - 验证码填写完成
+2025-12-19 07:21:20,723 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:21:20,723 - INFO - 查找并点击登录按钮...
+2025-12-19 07:21:20,781 - INFO - 已点击登录按钮
+2025-12-19 07:21:27,802 - INFO - 开始填写登录表单...
+2025-12-19 07:21:27,864 - INFO - 用户名填写完成
+2025-12-19 07:21:27,925 - INFO - 密码填写完成
+2025-12-19 07:21:27,925 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:21:27,925 - INFO - 验证码识别尝试 22/30
+2025-12-19 07:21:27,925 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:21:28,023 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:21:28,123 - INFO - tesseract 结果: dyCP
+2025-12-19 07:21:28,184 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:21:28,288 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:21:28,349 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:21:28,450 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:21:28,610 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:21:28,729 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:21:28,790 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:21:28,894 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:21:28,955 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:21:29,057 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:21:29,057 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:21:29,057 - INFO - 查找验证码输入框...
+2025-12-19 07:21:29,119 - INFO - 验证码填写完成
+2025-12-19 07:21:29,119 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:21:29,119 - INFO - 查找并点击登录按钮...
+2025-12-19 07:21:29,177 - INFO - 已点击登录按钮
+2025-12-19 07:21:36,198 - INFO - 开始填写登录表单...
+2025-12-19 07:21:36,262 - INFO - 用户名填写完成
+2025-12-19 07:21:36,320 - INFO - 密码填写完成
+2025-12-19 07:21:36,321 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:21:36,321 - INFO - 验证码识别尝试 23/30
+2025-12-19 07:21:36,321 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:21:36,420 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:21:36,519 - INFO - tesseract 结果: dyCP
+2025-12-19 07:21:36,581 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:21:36,688 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:21:36,749 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:21:36,849 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:21:37,009 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:21:37,125 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:21:37,187 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:21:37,291 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:21:37,352 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:21:37,455 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:21:37,456 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:21:37,456 - INFO - 查找验证码输入框...
+2025-12-19 07:21:37,513 - INFO - 验证码填写完成
+2025-12-19 07:21:37,513 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:21:37,513 - INFO - 查找并点击登录按钮...
+2025-12-19 07:21:37,907 - INFO - 已点击登录按钮
+2025-12-19 07:21:44,929 - INFO - 开始填写登录表单...
+2025-12-19 07:21:44,994 - INFO - 用户名填写完成
+2025-12-19 07:21:45,056 - INFO - 密码填写完成
+2025-12-19 07:21:45,057 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:21:45,057 - INFO - 验证码识别尝试 24/30
+2025-12-19 07:21:45,057 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:21:45,156 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:21:45,259 - INFO - tesseract 结果: dyCP
+2025-12-19 07:21:45,320 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:21:45,425 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:21:45,487 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:21:45,590 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:21:45,750 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:21:45,866 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:21:45,927 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:21:46,035 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:21:46,107 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:21:46,212 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:21:46,212 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:21:46,212 - INFO - 查找验证码输入框...
+2025-12-19 07:21:46,272 - INFO - 验证码填写完成
+2025-12-19 07:21:46,272 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:21:46,272 - INFO - 查找并点击登录按钮...
+2025-12-19 07:21:46,330 - INFO - 已点击登录按钮
+2025-12-19 07:21:53,353 - INFO - 开始填写登录表单...
+2025-12-19 07:21:53,419 - INFO - 用户名填写完成
+2025-12-19 07:21:53,481 - INFO - 密码填写完成
+2025-12-19 07:21:53,482 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:21:53,482 - INFO - 验证码识别尝试 25/30
+2025-12-19 07:21:53,482 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:21:53,596 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:21:53,698 - INFO - tesseract 结果: dyCP
+2025-12-19 07:21:53,759 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:21:53,864 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:21:53,924 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:21:54,027 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:21:54,189 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:21:54,301 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:21:54,364 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:21:54,471 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:21:54,533 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:21:54,638 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:21:54,638 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:21:54,638 - INFO - 查找验证码输入框...
+2025-12-19 07:21:54,695 - INFO - 验证码填写完成
+2025-12-19 07:21:54,695 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:21:54,695 - INFO - 查找并点击登录按钮...
+2025-12-19 07:21:55,094 - INFO - 已点击登录按钮
+2025-12-19 07:22:02,116 - INFO - 开始填写登录表单...
+2025-12-19 07:22:02,178 - INFO - 用户名填写完成
+2025-12-19 07:22:02,238 - INFO - 密码填写完成
+2025-12-19 07:22:02,239 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:22:02,239 - INFO - 验证码识别尝试 26/30
+2025-12-19 07:22:02,239 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:22:02,338 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:22:02,442 - INFO - tesseract 结果: dyCP
+2025-12-19 07:22:02,505 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:22:02,612 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:22:02,674 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:22:02,775 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:22:02,933 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:22:03,054 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:22:03,116 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:22:03,223 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:22:03,284 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:22:03,391 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:22:03,391 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:22:03,391 - INFO - 查找验证码输入框...
+2025-12-19 07:22:03,449 - INFO - 验证码填写完成
+2025-12-19 07:22:03,449 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:22:03,449 - INFO - 查找并点击登录按钮...
+2025-12-19 07:22:03,837 - INFO - 已点击登录按钮
+2025-12-19 07:22:10,858 - INFO - 开始填写登录表单...
+2025-12-19 07:22:10,920 - INFO - 用户名填写完成
+2025-12-19 07:22:10,981 - INFO - 密码填写完成
+2025-12-19 07:22:10,982 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:22:10,982 - INFO - 验证码识别尝试 27/30
+2025-12-19 07:22:10,982 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:22:11,080 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:22:11,179 - INFO - tesseract 结果: dyCP
+2025-12-19 07:22:11,242 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:22:11,345 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:22:11,405 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:22:11,505 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:22:11,663 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:22:11,776 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:22:11,837 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:22:11,942 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:22:12,003 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:22:12,109 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:22:12,109 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:22:12,109 - INFO - 查找验证码输入框...
+2025-12-19 07:22:12,169 - INFO - 验证码填写完成
+2025-12-19 07:22:12,169 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:22:12,169 - INFO - 查找并点击登录按钮...
+2025-12-19 07:22:12,229 - INFO - 已点击登录按钮
+2025-12-19 07:22:19,250 - INFO - 开始填写登录表单...
+2025-12-19 07:22:19,315 - INFO - 用户名填写完成
+2025-12-19 07:22:19,374 - INFO - 密码填写完成
+2025-12-19 07:22:19,374 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:22:19,374 - INFO - 验证码识别尝试 28/30
+2025-12-19 07:22:19,374 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:22:19,472 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:22:19,569 - INFO - tesseract 结果: dyCP
+2025-12-19 07:22:19,631 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:22:19,737 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:22:19,797 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:22:19,896 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:22:20,056 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:22:20,168 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:22:20,230 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:22:20,331 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:22:20,390 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:22:20,490 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:22:20,491 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:22:20,491 - INFO - 查找验证码输入框...
+2025-12-19 07:22:20,549 - INFO - 验证码填写完成
+2025-12-19 07:22:20,549 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:22:20,549 - INFO - 查找并点击登录按钮...
+2025-12-19 07:22:20,606 - INFO - 已点击登录按钮
+2025-12-19 07:22:27,628 - INFO - 开始填写登录表单...
+2025-12-19 07:22:27,690 - INFO - 用户名填写完成
+2025-12-19 07:22:27,751 - INFO - 密码填写完成
+2025-12-19 07:22:27,751 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:22:27,751 - INFO - 验证码识别尝试 29/30
+2025-12-19 07:22:27,751 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:22:27,860 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:22:27,962 - INFO - tesseract 结果: dyCP
+2025-12-19 07:22:28,024 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:22:28,126 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:22:28,187 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:22:28,287 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:22:28,448 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:22:28,560 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:22:28,623 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:22:28,731 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:22:28,792 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:22:28,894 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:22:28,894 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:22:28,894 - INFO - 查找验证码输入框...
+2025-12-19 07:22:28,952 - INFO - 验证码填写完成
+2025-12-19 07:22:28,952 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:22:28,952 - INFO - 查找并点击登录按钮...
+2025-12-19 07:22:29,010 - INFO - 已点击登录按钮
+2025-12-19 07:22:36,032 - INFO - 开始填写登录表单...
+2025-12-19 07:22:36,097 - INFO - 用户名填写完成
+2025-12-19 07:22:36,156 - INFO - 密码填写完成
+2025-12-19 07:22:36,157 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-19 07:22:36,157 - INFO - 验证码识别尝试 30/30
+2025-12-19 07:22:36,157 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-19 07:22:36,255 - INFO - easyocr 结果: ['dVCPI(0.50)']
+2025-12-19 07:22:36,354 - INFO - tesseract 结果: dyCP
+2025-12-19 07:22:36,416 - INFO - easyocr alt1 结果: ['dVCP(0.89)']
+2025-12-19 07:22:36,522 - INFO - tesseract alt1 结果: dyeP
+2025-12-19 07:22:36,582 - INFO - easyocr alt2 结果: ['dVCP(0.92)']
+2025-12-19 07:22:36,684 - INFO - tesseract alt2 结果: dyvCP
+2025-12-19 07:22:36,844 - INFO - easyocr alt3 结果: ['WVCP(0.17)']
+2025-12-19 07:22:36,958 - INFO - tesseract alt3 结果: dyvCP
+2025-12-19 07:22:37,020 - INFO - easyocr alt4 结果: ['UCP(0.16)']
+2025-12-19 07:22:37,124 - INFO - tesseract alt4 结果: dyEP
+2025-12-19 07:22:37,186 - INFO - easyocr alt5 结果: ['UVCRI(0.19)']
+2025-12-19 07:22:37,289 - INFO - tesseract alt5 结果: dyvEP
+2025-12-19 07:22:37,289 - INFO - 最终验证码识别结果: dVCP (engine=easyocr_alt2, prob=0.9159621596336365)
+2025-12-19 07:22:37,289 - INFO - 查找验证码输入框...
+2025-12-19 07:22:37,347 - INFO - 验证码填写完成
+2025-12-19 07:22:37,347 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-19 07:22:37,347 - INFO - 查找并点击登录按钮...
+2025-12-19 07:22:37,741 - INFO - 已点击登录按钮
+2025-12-19 07:22:44,763 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2025-12-19 07:22:44,763 - ERROR - 处理验证码时出错: EOF when reading a line
+2025-12-19 07:22:44,763 - WARNING - 验证码处理失败，但继续尝试登录
+2025-12-19 07:22:44,763 - INFO - 查找并点击登录按钮...
+2025-12-19 07:22:44,820 - INFO - 已点击登录按钮
+2025-12-19 07:22:49,821 - INFO - 等待登录成功...
+2025-12-19 07:22:54,826 - INFO - 登录可能成功，继续下一步...
+2025-12-19 07:22:54,826 - INFO - 查找'去充值'按钮...
+2025-12-19 07:22:54,891 - INFO - 已点击充值按钮
+2025-12-19 07:22:57,892 - INFO - 开始提取剩余电量信息...
+2025-12-19 07:22:57,896 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-19 07:22:57,907 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-19 07:22:57,915 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-19 07:22:57,918 - INFO - 在页面源码中查找电量信息...
+2025-12-19 07:22:57,930 - WARNING - 未能提取到剩余电量信息
+2025-12-19 07:22:57,930 - WARNING - 没有电量数据可保存
+2025-12-19 07:22:57,931 - INFO - 监控流程完成
+Wrapper end: 2025-12-19T15:22:58.045103+08:00
