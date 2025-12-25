@@ -1,0 +1,752 @@
+2025-12-25 07:18:00,662 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-25 07:18:02,101 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-25 07:18:02,101 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-25 07:18:03,688 - INFO - OCR识别器初始化成功
+2025-12-25 07:18:03,688 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-25 07:18:03,688 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-25 07:18:15,976 - INFO - 等待登录表单加载...
+2025-12-25 07:18:15,985 - INFO - 登录表单已加载
+2025-12-25 07:18:15,986 - INFO - 开始填写登录表单...
+2025-12-25 07:18:16,046 - INFO - 用户名填写完成
+2025-12-25 07:18:16,113 - INFO - 密码填写完成
+2025-12-25 07:18:16,113 - INFO - 检查是否有验证码...
+2025-12-25 07:18:16,113 - INFO - 查找验证码图片...
+2025-12-25 07:18:16,133 - INFO - 找到验证码图片，开始截图...
+2025-12-25 07:18:16,185 - INFO - 验证码图片截取成功
+2025-12-25 07:18:16,185 - INFO - 开始填写登录表单...
+2025-12-25 07:18:16,248 - INFO - 用户名填写完成
+2025-12-25 07:18:16,310 - INFO - 密码填写完成
+2025-12-25 07:18:16,311 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:18:16,311 - INFO - 验证码识别尝试 1/30
+2025-12-25 07:18:16,311 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:18:16,451 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:18:16,692 - INFO - tesseract 结果: KiHd
+2025-12-25 07:18:16,763 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:18:16,856 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:18:16,914 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:18:17,008 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:18:17,167 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:18:17,273 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:18:17,332 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:18:17,425 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:18:17,484 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:18:17,580 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:18:17,580 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:18:17,580 - INFO - 查找验证码输入框...
+2025-12-25 07:18:17,638 - INFO - 验证码填写完成
+2025-12-25 07:18:17,638 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:18:17,638 - INFO - 查找并点击登录按钮...
+2025-12-25 07:18:18,027 - INFO - 已点击登录按钮
+2025-12-25 07:18:25,054 - INFO - 开始填写登录表单...
+2025-12-25 07:18:25,114 - INFO - 用户名填写完成
+2025-12-25 07:18:25,171 - INFO - 密码填写完成
+2025-12-25 07:18:25,171 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:18:25,171 - INFO - 验证码识别尝试 2/30
+2025-12-25 07:18:25,171 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:18:25,268 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:18:25,360 - INFO - tesseract 结果: KiHd
+2025-12-25 07:18:25,437 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:18:25,538 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:18:25,607 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:18:25,708 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:18:25,871 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:18:25,982 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:18:26,048 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:18:26,144 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:18:26,203 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:18:26,296 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:18:26,296 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:18:26,297 - INFO - 查找验证码输入框...
+2025-12-25 07:18:26,351 - INFO - 验证码填写完成
+2025-12-25 07:18:26,351 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:18:26,351 - INFO - 查找并点击登录按钮...
+2025-12-25 07:18:26,405 - INFO - 已点击登录按钮
+2025-12-25 07:18:33,425 - INFO - 开始填写登录表单...
+2025-12-25 07:18:33,485 - INFO - 用户名填写完成
+2025-12-25 07:18:33,541 - INFO - 密码填写完成
+2025-12-25 07:18:33,542 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:18:33,542 - INFO - 验证码识别尝试 3/30
+2025-12-25 07:18:33,542 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:18:33,638 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:18:33,733 - INFO - tesseract 结果: KiHd
+2025-12-25 07:18:33,792 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:18:33,888 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:18:33,946 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:18:34,040 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:18:34,194 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:18:34,301 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:18:34,361 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:18:34,457 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:18:34,516 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:18:34,611 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:18:34,611 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:18:34,611 - INFO - 查找验证码输入框...
+2025-12-25 07:18:34,667 - INFO - 验证码填写完成
+2025-12-25 07:18:34,667 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:18:34,667 - INFO - 查找并点击登录按钮...
+2025-12-25 07:18:34,721 - INFO - 已点击登录按钮
+2025-12-25 07:18:41,741 - INFO - 开始填写登录表单...
+2025-12-25 07:18:41,800 - INFO - 用户名填写完成
+2025-12-25 07:18:41,857 - INFO - 密码填写完成
+2025-12-25 07:18:41,858 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:18:41,858 - INFO - 验证码识别尝试 4/30
+2025-12-25 07:18:41,858 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:18:41,961 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:18:42,056 - INFO - tesseract 结果: KiHd
+2025-12-25 07:18:42,116 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:18:42,212 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:18:42,271 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:18:42,369 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:18:42,522 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:18:42,632 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:18:42,692 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:18:42,788 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:18:42,847 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:18:42,940 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:18:42,940 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:18:42,941 - INFO - 查找验证码输入框...
+2025-12-25 07:18:42,995 - INFO - 验证码填写完成
+2025-12-25 07:18:42,995 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:18:42,995 - INFO - 查找并点击登录按钮...
+2025-12-25 07:18:43,394 - INFO - 已点击登录按钮
+2025-12-25 07:18:50,415 - INFO - 开始填写登录表单...
+2025-12-25 07:18:50,473 - INFO - 用户名填写完成
+2025-12-25 07:18:50,530 - INFO - 密码填写完成
+2025-12-25 07:18:50,531 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:18:50,531 - INFO - 验证码识别尝试 5/30
+2025-12-25 07:18:50,531 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:18:50,639 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:18:50,735 - INFO - tesseract 结果: KiHd
+2025-12-25 07:18:50,795 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:18:50,889 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:18:50,949 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:18:51,049 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:18:51,202 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:18:51,311 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:18:51,381 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:18:51,476 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:18:51,535 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:18:51,630 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:18:51,630 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:18:51,630 - INFO - 查找验证码输入框...
+2025-12-25 07:18:51,685 - INFO - 验证码填写完成
+2025-12-25 07:18:51,685 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:18:51,685 - INFO - 查找并点击登录按钮...
+2025-12-25 07:18:51,740 - INFO - 已点击登录按钮
+2025-12-25 07:18:58,760 - INFO - 开始填写登录表单...
+2025-12-25 07:18:58,819 - INFO - 用户名填写完成
+2025-12-25 07:18:58,875 - INFO - 密码填写完成
+2025-12-25 07:18:58,875 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:18:58,875 - INFO - 验证码识别尝试 6/30
+2025-12-25 07:18:58,875 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:18:58,972 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:18:59,070 - INFO - tesseract 结果: KiHd
+2025-12-25 07:18:59,129 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:18:59,225 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:18:59,284 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:18:59,381 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:18:59,534 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:18:59,647 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:18:59,706 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:18:59,799 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:18:59,858 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:18:59,952 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:18:59,952 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:18:59,952 - INFO - 查找验证码输入框...
+2025-12-25 07:19:00,007 - INFO - 验证码填写完成
+2025-12-25 07:19:00,007 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:19:00,007 - INFO - 查找并点击登录按钮...
+2025-12-25 07:19:00,403 - INFO - 已点击登录按钮
+2025-12-25 07:19:07,424 - INFO - 开始填写登录表单...
+2025-12-25 07:19:07,484 - INFO - 用户名填写完成
+2025-12-25 07:19:07,541 - INFO - 密码填写完成
+2025-12-25 07:19:07,542 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:19:07,542 - INFO - 验证码识别尝试 7/30
+2025-12-25 07:19:07,542 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:19:07,653 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:19:07,747 - INFO - tesseract 结果: KiHd
+2025-12-25 07:19:07,808 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:19:07,939 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:19:07,999 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:19:08,092 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:19:08,245 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:19:08,354 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:19:08,413 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:19:08,507 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:19:08,567 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:19:08,663 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:19:08,663 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:19:08,663 - INFO - 查找验证码输入框...
+2025-12-25 07:19:08,721 - INFO - 验证码填写完成
+2025-12-25 07:19:08,721 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:19:08,721 - INFO - 查找并点击登录按钮...
+2025-12-25 07:19:09,110 - INFO - 已点击登录按钮
+2025-12-25 07:19:16,132 - INFO - 开始填写登录表单...
+2025-12-25 07:19:16,191 - INFO - 用户名填写完成
+2025-12-25 07:19:16,250 - INFO - 密码填写完成
+2025-12-25 07:19:16,250 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:19:16,250 - INFO - 验证码识别尝试 8/30
+2025-12-25 07:19:16,250 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:19:16,361 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:19:16,455 - INFO - tesseract 结果: KiHd
+2025-12-25 07:19:16,516 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:19:16,613 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:19:16,681 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:19:16,775 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:19:16,943 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:19:17,049 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:19:17,115 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:19:17,211 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:19:17,270 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:19:17,363 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:19:17,364 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:19:17,364 - INFO - 查找验证码输入框...
+2025-12-25 07:19:17,420 - INFO - 验证码填写完成
+2025-12-25 07:19:17,420 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:19:17,420 - INFO - 查找并点击登录按钮...
+2025-12-25 07:19:17,475 - INFO - 已点击登录按钮
+2025-12-25 07:19:24,495 - INFO - 开始填写登录表单...
+2025-12-25 07:19:24,554 - INFO - 用户名填写完成
+2025-12-25 07:19:24,612 - INFO - 密码填写完成
+2025-12-25 07:19:24,613 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:19:24,613 - INFO - 验证码识别尝试 9/30
+2025-12-25 07:19:24,613 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:19:24,709 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:19:24,803 - INFO - tesseract 结果: KiHd
+2025-12-25 07:19:24,862 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:19:24,957 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:19:25,016 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:19:25,110 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:19:25,263 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:19:25,372 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:19:25,432 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:19:25,527 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:19:25,585 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:19:25,685 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:19:25,685 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:19:25,685 - INFO - 查找验证码输入框...
+2025-12-25 07:19:25,740 - INFO - 验证码填写完成
+2025-12-25 07:19:25,740 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:19:25,740 - INFO - 查找并点击登录按钮...
+2025-12-25 07:19:26,142 - INFO - 已点击登录按钮
+2025-12-25 07:19:33,162 - INFO - 开始填写登录表单...
+2025-12-25 07:19:33,222 - INFO - 用户名填写完成
+2025-12-25 07:19:33,280 - INFO - 密码填写完成
+2025-12-25 07:19:33,280 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:19:33,280 - INFO - 验证码识别尝试 10/30
+2025-12-25 07:19:33,280 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:19:33,377 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:19:33,472 - INFO - tesseract 结果: KiHd
+2025-12-25 07:19:33,532 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:19:33,625 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:19:33,684 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:19:33,780 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:19:33,934 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:19:34,045 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:19:34,104 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:19:34,198 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:19:34,256 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:19:34,350 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:19:34,350 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:19:34,350 - INFO - 查找验证码输入框...
+2025-12-25 07:19:34,406 - INFO - 验证码填写完成
+2025-12-25 07:19:34,407 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:19:34,407 - INFO - 查找并点击登录按钮...
+2025-12-25 07:19:34,790 - INFO - 已点击登录按钮
+2025-12-25 07:19:41,810 - INFO - 开始填写登录表单...
+2025-12-25 07:19:41,870 - INFO - 用户名填写完成
+2025-12-25 07:19:41,928 - INFO - 密码填写完成
+2025-12-25 07:19:41,928 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:19:41,928 - INFO - 验证码识别尝试 11/30
+2025-12-25 07:19:41,928 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:19:42,037 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:19:42,134 - INFO - tesseract 结果: KiHd
+2025-12-25 07:19:42,194 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:19:42,289 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:19:42,348 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:19:42,443 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:19:42,596 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:19:42,704 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:19:42,764 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:19:42,858 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:19:42,917 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:19:43,012 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:19:43,012 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:19:43,012 - INFO - 查找验证码输入框...
+2025-12-25 07:19:43,068 - INFO - 验证码填写完成
+2025-12-25 07:19:43,068 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:19:43,068 - INFO - 查找并点击登录按钮...
+2025-12-25 07:19:43,124 - INFO - 已点击登录按钮
+2025-12-25 07:19:50,144 - INFO - 开始填写登录表单...
+2025-12-25 07:19:50,208 - INFO - 用户名填写完成
+2025-12-25 07:19:50,268 - INFO - 密码填写完成
+2025-12-25 07:19:50,268 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:19:50,268 - INFO - 验证码识别尝试 12/30
+2025-12-25 07:19:50,269 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:19:50,375 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:19:50,470 - INFO - tesseract 结果: KiHd
+2025-12-25 07:19:50,530 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:19:50,627 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:19:50,685 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:19:50,780 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:19:50,933 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:19:51,041 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:19:51,100 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:19:51,197 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:19:51,256 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:19:51,352 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:19:51,352 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:19:51,352 - INFO - 查找验证码输入框...
+2025-12-25 07:19:51,410 - INFO - 验证码填写完成
+2025-12-25 07:19:51,410 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:19:51,410 - INFO - 查找并点击登录按钮...
+2025-12-25 07:19:51,795 - INFO - 已点击登录按钮
+2025-12-25 07:19:58,815 - INFO - 开始填写登录表单...
+2025-12-25 07:19:58,875 - INFO - 用户名填写完成
+2025-12-25 07:19:58,933 - INFO - 密码填写完成
+2025-12-25 07:19:58,934 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:19:58,934 - INFO - 验证码识别尝试 13/30
+2025-12-25 07:19:58,934 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:19:59,031 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:19:59,125 - INFO - tesseract 结果: KiHd
+2025-12-25 07:19:59,195 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:19:59,288 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:19:59,347 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:19:59,440 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:19:59,593 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:19:59,701 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:19:59,760 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:19:59,859 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:19:59,917 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:00,013 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:00,013 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:00,013 - INFO - 查找验证码输入框...
+2025-12-25 07:20:00,070 - INFO - 验证码填写完成
+2025-12-25 07:20:00,070 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:00,070 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:00,462 - INFO - 已点击登录按钮
+2025-12-25 07:20:07,482 - INFO - 开始填写登录表单...
+2025-12-25 07:20:07,544 - INFO - 用户名填写完成
+2025-12-25 07:20:07,603 - INFO - 密码填写完成
+2025-12-25 07:20:07,603 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:20:07,603 - INFO - 验证码识别尝试 14/30
+2025-12-25 07:20:07,604 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:20:07,699 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:20:07,797 - INFO - tesseract 结果: KiHd
+2025-12-25 07:20:07,857 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:20:07,954 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:20:08,012 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:20:08,105 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:20:08,258 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:20:08,365 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:20:08,423 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:20:08,517 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:20:08,575 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:08,669 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:08,669 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:08,670 - INFO - 查找验证码输入框...
+2025-12-25 07:20:08,727 - INFO - 验证码填写完成
+2025-12-25 07:20:08,727 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:08,727 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:08,783 - INFO - 已点击登录按钮
+2025-12-25 07:20:15,803 - INFO - 开始填写登录表单...
+2025-12-25 07:20:15,866 - INFO - 用户名填写完成
+2025-12-25 07:20:15,926 - INFO - 密码填写完成
+2025-12-25 07:20:15,927 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:20:15,927 - INFO - 验证码识别尝试 15/30
+2025-12-25 07:20:15,927 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:20:16,024 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:20:16,118 - INFO - tesseract 结果: KiHd
+2025-12-25 07:20:16,177 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:20:16,276 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:20:16,335 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:20:16,432 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:20:16,585 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:20:16,696 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:20:16,755 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:20:16,850 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:20:16,908 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:17,004 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:17,004 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:17,004 - INFO - 查找验证码输入框...
+2025-12-25 07:20:17,061 - INFO - 验证码填写完成
+2025-12-25 07:20:17,061 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:17,061 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:17,118 - INFO - 已点击登录按钮
+2025-12-25 07:20:24,138 - INFO - 开始填写登录表单...
+2025-12-25 07:20:24,198 - INFO - 用户名填写完成
+2025-12-25 07:20:24,258 - INFO - 密码填写完成
+2025-12-25 07:20:24,259 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:20:24,259 - INFO - 验证码识别尝试 16/30
+2025-12-25 07:20:24,259 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:20:24,355 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:20:24,454 - INFO - tesseract 结果: KiHd
+2025-12-25 07:20:24,514 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:20:24,614 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:20:24,673 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:20:24,768 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:20:24,921 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:20:25,029 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:20:25,087 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:20:25,186 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:20:25,244 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:25,338 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:25,339 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:25,339 - INFO - 查找验证码输入框...
+2025-12-25 07:20:25,395 - INFO - 验证码填写完成
+2025-12-25 07:20:25,396 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:25,396 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:25,451 - INFO - 已点击登录按钮
+2025-12-25 07:20:32,471 - INFO - 开始填写登录表单...
+2025-12-25 07:20:32,531 - INFO - 用户名填写完成
+2025-12-25 07:20:32,589 - INFO - 密码填写完成
+2025-12-25 07:20:32,590 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:20:32,590 - INFO - 验证码识别尝试 17/30
+2025-12-25 07:20:32,590 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:20:32,688 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:20:32,782 - INFO - tesseract 结果: KiHd
+2025-12-25 07:20:32,842 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:20:32,937 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:20:32,996 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:20:33,089 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:20:33,243 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:20:33,356 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:20:33,414 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:20:33,511 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:20:33,570 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:33,668 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:33,668 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:33,668 - INFO - 查找验证码输入框...
+2025-12-25 07:20:33,723 - INFO - 验证码填写完成
+2025-12-25 07:20:33,723 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:33,723 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:34,120 - INFO - 已点击登录按钮
+2025-12-25 07:20:41,139 - INFO - 开始填写登录表单...
+2025-12-25 07:20:41,198 - INFO - 用户名填写完成
+2025-12-25 07:20:41,255 - INFO - 密码填写完成
+2025-12-25 07:20:41,255 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:20:41,255 - INFO - 验证码识别尝试 18/30
+2025-12-25 07:20:41,255 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:20:41,351 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:20:41,446 - INFO - tesseract 结果: KiHd
+2025-12-25 07:20:41,505 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:20:41,600 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:20:41,659 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:20:41,753 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:20:41,906 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:20:42,013 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:20:42,072 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:20:42,168 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:20:42,227 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:42,321 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:42,321 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:42,321 - INFO - 查找验证码输入框...
+2025-12-25 07:20:42,376 - INFO - 验证码填写完成
+2025-12-25 07:20:42,376 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:42,376 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:42,432 - INFO - 已点击登录按钮
+2025-12-25 07:20:49,452 - INFO - 开始填写登录表单...
+2025-12-25 07:20:49,510 - INFO - 用户名填写完成
+2025-12-25 07:20:49,566 - INFO - 密码填写完成
+2025-12-25 07:20:49,567 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:20:49,567 - INFO - 验证码识别尝试 19/30
+2025-12-25 07:20:49,567 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:20:49,675 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:20:49,768 - INFO - tesseract 结果: KiHd
+2025-12-25 07:20:49,828 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:20:49,927 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:20:49,986 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:20:50,079 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:20:50,233 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:20:50,342 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:20:50,411 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:20:50,507 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:20:50,572 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:50,666 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:50,667 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:50,667 - INFO - 查找验证码输入框...
+2025-12-25 07:20:50,721 - INFO - 验证码填写完成
+2025-12-25 07:20:50,721 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:50,721 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:51,105 - INFO - 已点击登录按钮
+2025-12-25 07:20:58,128 - INFO - 开始填写登录表单...
+2025-12-25 07:20:58,191 - INFO - 用户名填写完成
+2025-12-25 07:20:58,248 - INFO - 密码填写完成
+2025-12-25 07:20:58,249 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:20:58,249 - INFO - 验证码识别尝试 20/30
+2025-12-25 07:20:58,249 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:20:58,345 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:20:58,438 - INFO - tesseract 结果: KiHd
+2025-12-25 07:20:58,499 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:20:58,598 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:20:58,656 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:20:58,752 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:20:58,906 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:20:59,014 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:20:59,082 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:20:59,177 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:20:59,236 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:20:59,331 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:20:59,332 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:20:59,332 - INFO - 查找验证码输入框...
+2025-12-25 07:20:59,386 - INFO - 验证码填写完成
+2025-12-25 07:20:59,386 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:20:59,386 - INFO - 查找并点击登录按钮...
+2025-12-25 07:20:59,781 - INFO - 已点击登录按钮
+2025-12-25 07:21:06,800 - INFO - 开始填写登录表单...
+2025-12-25 07:21:06,859 - INFO - 用户名填写完成
+2025-12-25 07:21:06,915 - INFO - 密码填写完成
+2025-12-25 07:21:06,916 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:21:06,916 - INFO - 验证码识别尝试 21/30
+2025-12-25 07:21:06,916 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:21:07,023 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:21:07,120 - INFO - tesseract 结果: KiHd
+2025-12-25 07:21:07,179 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:21:07,273 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:21:07,333 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:21:07,432 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:21:07,585 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:21:07,694 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:21:07,753 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:21:07,849 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:21:07,908 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:21:08,003 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:21:08,003 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:21:08,003 - INFO - 查找验证码输入框...
+2025-12-25 07:21:08,058 - INFO - 验证码填写完成
+2025-12-25 07:21:08,058 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:21:08,059 - INFO - 查找并点击登录按钮...
+2025-12-25 07:21:08,454 - INFO - 已点击登录按钮
+2025-12-25 07:21:15,474 - INFO - 开始填写登录表单...
+2025-12-25 07:21:15,534 - INFO - 用户名填写完成
+2025-12-25 07:21:15,590 - INFO - 密码填写完成
+2025-12-25 07:21:15,591 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:21:15,591 - INFO - 验证码识别尝试 22/30
+2025-12-25 07:21:15,591 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:21:15,687 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:21:15,784 - INFO - tesseract 结果: KiHd
+2025-12-25 07:21:15,844 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:21:15,939 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:21:15,997 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:21:16,090 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:21:16,246 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:21:16,359 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:21:16,417 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:21:16,512 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:21:16,571 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:21:16,666 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:21:16,666 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:21:16,666 - INFO - 查找验证码输入框...
+2025-12-25 07:21:16,720 - INFO - 验证码填写完成
+2025-12-25 07:21:16,720 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:21:16,720 - INFO - 查找并点击登录按钮...
+2025-12-25 07:21:17,112 - INFO - 已点击登录按钮
+2025-12-25 07:21:24,133 - INFO - 开始填写登录表单...
+2025-12-25 07:21:24,192 - INFO - 用户名填写完成
+2025-12-25 07:21:24,247 - INFO - 密码填写完成
+2025-12-25 07:21:24,247 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:21:24,247 - INFO - 验证码识别尝试 23/30
+2025-12-25 07:21:24,247 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:21:24,343 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:21:24,442 - INFO - tesseract 结果: KiHd
+2025-12-25 07:21:24,502 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:21:24,596 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:21:24,654 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:21:24,752 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:21:24,905 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:21:25,013 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:21:25,072 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:21:25,167 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:21:25,225 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:21:25,321 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:21:25,321 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:21:25,321 - INFO - 查找验证码输入框...
+2025-12-25 07:21:25,376 - INFO - 验证码填写完成
+2025-12-25 07:21:25,376 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:21:25,376 - INFO - 查找并点击登录按钮...
+2025-12-25 07:21:25,429 - INFO - 已点击登录按钮
+2025-12-25 07:21:32,449 - INFO - 开始填写登录表单...
+2025-12-25 07:21:32,509 - INFO - 用户名填写完成
+2025-12-25 07:21:32,566 - INFO - 密码填写完成
+2025-12-25 07:21:32,566 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:21:32,566 - INFO - 验证码识别尝试 24/30
+2025-12-25 07:21:32,567 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:21:32,671 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:21:32,773 - INFO - tesseract 结果: KiHd
+2025-12-25 07:21:32,833 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:21:32,933 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:21:32,992 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:21:33,092 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:21:33,246 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:21:33,360 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:21:33,419 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:21:33,513 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:21:33,573 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:21:33,668 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:21:33,668 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:21:33,668 - INFO - 查找验证码输入框...
+2025-12-25 07:21:33,723 - INFO - 验证码填写完成
+2025-12-25 07:21:33,723 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:21:33,723 - INFO - 查找并点击登录按钮...
+2025-12-25 07:21:34,121 - INFO - 已点击登录按钮
+2025-12-25 07:21:41,140 - INFO - 开始填写登录表单...
+2025-12-25 07:21:41,199 - INFO - 用户名填写完成
+2025-12-25 07:21:41,255 - INFO - 密码填写完成
+2025-12-25 07:21:41,256 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:21:41,256 - INFO - 验证码识别尝试 25/30
+2025-12-25 07:21:41,256 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:21:41,353 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:21:41,456 - INFO - tesseract 结果: KiHd
+2025-12-25 07:21:41,516 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:21:41,613 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:21:41,673 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:21:41,772 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:21:41,926 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:21:42,034 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:21:42,095 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:21:42,189 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:21:42,248 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:21:42,344 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:21:42,344 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:21:42,345 - INFO - 查找验证码输入框...
+2025-12-25 07:21:42,399 - INFO - 验证码填写完成
+2025-12-25 07:21:42,399 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:21:42,399 - INFO - 查找并点击登录按钮...
+2025-12-25 07:21:42,454 - INFO - 已点击登录按钮
+2025-12-25 07:21:49,473 - INFO - 开始填写登录表单...
+2025-12-25 07:21:49,532 - INFO - 用户名填写完成
+2025-12-25 07:21:49,588 - INFO - 密码填写完成
+2025-12-25 07:21:49,589 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:21:49,589 - INFO - 验证码识别尝试 26/30
+2025-12-25 07:21:49,589 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:21:49,686 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:21:49,782 - INFO - tesseract 结果: KiHd
+2025-12-25 07:21:49,843 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:21:49,939 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:21:49,998 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:21:50,092 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:21:50,246 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:21:50,353 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:21:50,412 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:21:50,506 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:21:50,564 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:21:50,660 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:21:50,660 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:21:50,660 - INFO - 查找验证码输入框...
+2025-12-25 07:21:50,714 - INFO - 验证码填写完成
+2025-12-25 07:21:50,715 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:21:50,715 - INFO - 查找并点击登录按钮...
+2025-12-25 07:21:50,769 - INFO - 已点击登录按钮
+2025-12-25 07:21:57,789 - INFO - 开始填写登录表单...
+2025-12-25 07:21:57,846 - INFO - 用户名填写完成
+2025-12-25 07:21:57,901 - INFO - 密码填写完成
+2025-12-25 07:21:57,902 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:21:57,902 - INFO - 验证码识别尝试 27/30
+2025-12-25 07:21:57,902 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:21:58,004 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:21:58,099 - INFO - tesseract 结果: KiHd
+2025-12-25 07:21:58,158 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:21:58,253 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:21:58,311 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:21:58,411 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:21:58,565 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:21:58,674 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:21:58,733 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:21:58,827 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:21:58,885 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:21:58,980 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:21:58,980 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:21:58,980 - INFO - 查找验证码输入框...
+2025-12-25 07:21:59,034 - INFO - 验证码填写完成
+2025-12-25 07:21:59,034 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:21:59,034 - INFO - 查找并点击登录按钮...
+2025-12-25 07:21:59,435 - INFO - 已点击登录按钮
+2025-12-25 07:22:06,455 - INFO - 开始填写登录表单...
+2025-12-25 07:22:06,514 - INFO - 用户名填写完成
+2025-12-25 07:22:06,570 - INFO - 密码填写完成
+2025-12-25 07:22:06,571 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:22:06,571 - INFO - 验证码识别尝试 28/30
+2025-12-25 07:22:06,571 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:22:06,668 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:22:06,764 - INFO - tesseract 结果: KiHd
+2025-12-25 07:22:06,824 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:22:06,921 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:22:06,982 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:22:07,077 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:22:07,241 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:22:07,348 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:22:07,407 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:22:07,501 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:22:07,559 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:22:07,657 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:22:07,657 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:22:07,657 - INFO - 查找验证码输入框...
+2025-12-25 07:22:07,711 - INFO - 验证码填写完成
+2025-12-25 07:22:07,711 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:22:07,711 - INFO - 查找并点击登录按钮...
+2025-12-25 07:22:07,765 - INFO - 已点击登录按钮
+2025-12-25 07:22:14,785 - INFO - 开始填写登录表单...
+2025-12-25 07:22:14,844 - INFO - 用户名填写完成
+2025-12-25 07:22:14,900 - INFO - 密码填写完成
+2025-12-25 07:22:14,901 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:22:14,901 - INFO - 验证码识别尝试 29/30
+2025-12-25 07:22:14,901 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:22:14,997 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:22:15,091 - INFO - tesseract 结果: KiHd
+2025-12-25 07:22:15,151 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:22:15,248 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:22:15,306 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:22:15,402 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:22:15,555 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:22:15,664 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:22:15,723 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:22:15,816 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:22:15,875 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:22:15,970 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:22:15,970 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:22:15,971 - INFO - 查找验证码输入框...
+2025-12-25 07:22:16,025 - INFO - 验证码填写完成
+2025-12-25 07:22:16,025 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:22:16,025 - INFO - 查找并点击登录按钮...
+2025-12-25 07:22:16,081 - INFO - 已点击登录按钮
+2025-12-25 07:22:23,100 - INFO - 开始填写登录表单...
+2025-12-25 07:22:23,159 - INFO - 用户名填写完成
+2025-12-25 07:22:23,215 - INFO - 密码填写完成
+2025-12-25 07:22:23,215 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-25 07:22:23,215 - INFO - 验证码识别尝试 30/30
+2025-12-25 07:22:23,215 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-25 07:22:23,327 - INFO - easyocr 结果: ['KiHd(0.42)']
+2025-12-25 07:22:23,423 - INFO - tesseract 结果: KiHd
+2025-12-25 07:22:23,481 - INFO - easyocr alt1 结果: ['KiHd(0.43)']
+2025-12-25 07:22:23,576 - INFO - tesseract alt1 结果: Kid
+2025-12-25 07:22:23,634 - INFO - easyocr alt2 结果: ['KiHd(0.44)']
+2025-12-25 07:22:23,731 - INFO - tesseract alt2 结果: KiHd
+2025-12-25 07:22:23,884 - INFO - easyocr alt3 结果: ['KiHd(0.64)']
+2025-12-25 07:22:23,993 - INFO - tesseract alt3 结果: KiHd
+2025-12-25 07:22:24,069 - INFO - easyocr alt4 结果: ['KIHd(0.39)']
+2025-12-25 07:22:24,169 - INFO - tesseract alt4 结果: Krdd
+2025-12-25 07:22:24,236 - INFO - easyocr alt5 结果: ['KiHd(0.51)']
+2025-12-25 07:22:24,336 - INFO - tesseract alt5 结果: Kedd
+2025-12-25 07:22:24,336 - INFO - 最终验证码识别结果: KiHd (engine=easyocr_alt3, prob=0.6411281824111938)
+2025-12-25 07:22:24,336 - INFO - 查找验证码输入框...
+2025-12-25 07:22:24,391 - INFO - 验证码填写完成
+2025-12-25 07:22:24,391 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-25 07:22:24,391 - INFO - 查找并点击登录按钮...
+2025-12-25 07:22:24,445 - INFO - 已点击登录按钮
+2025-12-25 07:22:31,466 - WARNING - 自动验证码识别失败，请手动输入
+2025-12-25 07:22:31,466 - ERROR - 处理验证码时出错: EOF when reading a line
+2025-12-25 07:22:31,466 - WARNING - 验证码处理失败，但继续尝试登录
+2025-12-25 07:22:31,466 - INFO - 查找并点击登录按钮...
+2025-12-25 07:22:31,520 - INFO - 已点击登录按钮
+2025-12-25 07:22:36,520 - INFO - 等待登录成功...
+2025-12-25 07:22:41,525 - INFO - 登录可能成功，继续下一步...
+2025-12-25 07:22:41,525 - INFO - 查找'去充值'按钮...
+2025-12-25 07:22:41,587 - INFO - 已点击充值按钮
+2025-12-25 07:22:44,587 - INFO - 开始提取剩余电量信息...
+2025-12-25 07:22:44,592 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-25 07:22:44,601 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-25 07:22:44,609 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-25 07:22:44,612 - INFO - 在页面源码中查找电量信息...
+2025-12-25 07:22:44,623 - WARNING - 未能提取到剩余电量信息
+2025-12-25 07:22:44,623 - WARNING - 没有电量数据可保存
+2025-12-25 07:22:44,623 - INFO - 监控流程完成
