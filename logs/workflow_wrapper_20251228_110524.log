@@ -1,0 +1,1006 @@
+Wrapper start: 2025-12-28T11:05:24.752438+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=118):
+- ACCEPT_EULA
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+- ANT_HOME
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   64G  8.2G  89% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  3.3M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+/dev/sdb16      881M   62M  758M   8% /boot
+/dev/sdb15      105M  6.2M   99M   6% /boot/efi
+/dev/sda1        74G  4.1G   66G   6% /mnt
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+7.6M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+296K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+- /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+- /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Light.ttf
+- /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+- /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+- /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+
+FontManager samples (name -> path):
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+DejaVu Sans Mono -> /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+DejaVu Math TeX Gyre -> /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2025-12-28 03:05:30,940 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2025-12-28 03:05:32,997 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2025-12-28 03:05:32,998 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2025-12-28 03:05:34,618 - INFO - OCR识别器初始化成功
+2025-12-28 03:05:34,618 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2025-12-28 03:05:34,618 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2025-12-28 03:05:43,221 - INFO - 等待登录表单加载...
+2025-12-28 03:05:43,232 - INFO - 登录表单已加载
+2025-12-28 03:05:43,232 - INFO - 开始填写登录表单...
+2025-12-28 03:05:43,297 - INFO - 用户名填写完成
+2025-12-28 03:05:43,366 - INFO - 密码填写完成
+2025-12-28 03:05:43,366 - INFO - 检查是否有验证码...
+2025-12-28 03:05:43,366 - INFO - 查找验证码图片...
+2025-12-28 03:05:43,386 - INFO - 找到验证码图片，开始截图...
+2025-12-28 03:05:43,443 - INFO - 验证码图片截取成功
+2025-12-28 03:05:43,443 - INFO - 开始填写登录表单...
+2025-12-28 03:05:43,512 - INFO - 用户名填写完成
+2025-12-28 03:05:43,575 - INFO - 密码填写完成
+2025-12-28 03:05:43,576 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:05:43,576 - INFO - 验证码识别尝试 1/30
+2025-12-28 03:05:43,576 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:05:43,717 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:05:43,953 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:05:44,019 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:05:44,120 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:05:44,180 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:05:44,276 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:05:44,446 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:05:44,559 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:05:44,620 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:05:44,717 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:05:44,776 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:05:44,866 - INFO - tesseract alt5 结果: 
+2025-12-28 03:05:44,866 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:05:44,866 - INFO - 查找验证码输入框...
+2025-12-28 03:05:44,928 - INFO - 验证码填写完成
+2025-12-28 03:05:44,928 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:05:44,928 - INFO - 查找并点击登录按钮...
+2025-12-28 03:05:45,285 - INFO - 已点击登录按钮
+2025-12-28 03:05:52,329 - INFO - 开始填写登录表单...
+2025-12-28 03:05:52,396 - INFO - 用户名填写完成
+2025-12-28 03:05:52,460 - INFO - 密码填写完成
+2025-12-28 03:05:52,461 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:05:52,461 - INFO - 验证码识别尝试 2/30
+2025-12-28 03:05:52,461 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:05:52,563 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:05:52,664 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:05:52,727 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:05:52,830 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:05:52,893 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:05:52,996 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:05:53,170 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:05:53,286 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:05:53,357 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:05:53,466 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:05:53,529 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:05:53,629 - INFO - tesseract alt5 结果: 
+2025-12-28 03:05:53,629 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:05:53,629 - INFO - 查找验证码输入框...
+2025-12-28 03:05:53,700 - INFO - 验证码填写完成
+2025-12-28 03:05:53,700 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:05:53,700 - INFO - 查找并点击登录按钮...
+2025-12-28 03:05:54,063 - INFO - 已点击登录按钮
+2025-12-28 03:06:01,083 - INFO - 开始填写登录表单...
+2025-12-28 03:06:01,146 - INFO - 用户名填写完成
+2025-12-28 03:06:01,207 - INFO - 密码填写完成
+2025-12-28 03:06:01,208 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:06:01,208 - INFO - 验证码识别尝试 3/30
+2025-12-28 03:06:01,208 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:06:01,306 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:06:01,404 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:06:01,466 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:06:01,563 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:06:01,623 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:06:01,720 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:06:01,875 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:06:01,984 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:06:02,043 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:06:02,144 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:06:02,203 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:06:02,298 - INFO - tesseract alt5 结果: 
+2025-12-28 03:06:02,298 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:06:02,298 - INFO - 查找验证码输入框...
+2025-12-28 03:06:02,357 - INFO - 验证码填写完成
+2025-12-28 03:06:02,357 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:06:02,357 - INFO - 查找并点击登录按钮...
+2025-12-28 03:06:02,414 - INFO - 已点击登录按钮
+2025-12-28 03:06:09,435 - INFO - 开始填写登录表单...
+2025-12-28 03:06:09,497 - INFO - 用户名填写完成
+2025-12-28 03:06:09,558 - INFO - 密码填写完成
+2025-12-28 03:06:09,559 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:06:09,559 - INFO - 验证码识别尝试 4/30
+2025-12-28 03:06:09,559 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:06:09,668 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:06:09,764 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:06:09,825 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:06:09,926 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:06:09,985 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:06:10,084 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:06:10,239 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:06:10,357 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:06:10,416 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:06:10,517 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:06:10,576 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:06:10,669 - INFO - tesseract alt5 结果: 
+2025-12-28 03:06:10,669 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:06:10,669 - INFO - 查找验证码输入框...
+2025-12-28 03:06:10,727 - INFO - 验证码填写完成
+2025-12-28 03:06:10,727 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:06:10,727 - INFO - 查找并点击登录按钮...
+2025-12-28 03:06:10,785 - INFO - 已点击登录按钮
+2025-12-28 03:06:17,806 - INFO - 开始填写登录表单...
+2025-12-28 03:06:17,872 - INFO - 用户名填写完成
+2025-12-28 03:06:17,931 - INFO - 密码填写完成
+2025-12-28 03:06:17,932 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:06:17,932 - INFO - 验证码识别尝试 5/30
+2025-12-28 03:06:17,932 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:06:18,039 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:06:18,139 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:06:18,201 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:06:18,300 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:06:18,360 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:06:18,459 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:06:18,616 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:06:18,734 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:06:18,805 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:06:18,906 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:06:18,965 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:06:19,061 - INFO - tesseract alt5 结果: 
+2025-12-28 03:06:19,061 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:06:19,061 - INFO - 查找验证码输入框...
+2025-12-28 03:06:19,121 - INFO - 验证码填写完成
+2025-12-28 03:06:19,121 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:06:19,121 - INFO - 查找并点击登录按钮...
+2025-12-28 03:06:19,180 - INFO - 已点击登录按钮
+2025-12-28 03:06:26,202 - INFO - 开始填写登录表单...
+2025-12-28 03:06:26,264 - INFO - 用户名填写完成
+2025-12-28 03:06:26,325 - INFO - 密码填写完成
+2025-12-28 03:06:26,326 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:06:26,326 - INFO - 验证码识别尝试 6/30
+2025-12-28 03:06:26,326 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:06:26,433 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:06:26,528 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:06:26,588 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:06:26,691 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:06:26,752 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:06:26,852 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:06:27,012 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:06:27,131 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:06:27,192 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:06:27,302 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:06:27,364 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:06:27,458 - INFO - tesseract alt5 结果: 
+2025-12-28 03:06:27,458 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:06:27,458 - INFO - 查找验证码输入框...
+2025-12-28 03:06:27,517 - INFO - 验证码填写完成
+2025-12-28 03:06:27,517 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:06:27,517 - INFO - 查找并点击登录按钮...
+2025-12-28 03:06:27,885 - INFO - 已点击登录按钮
+2025-12-28 03:06:34,911 - INFO - 开始填写登录表单...
+2025-12-28 03:06:34,975 - INFO - 用户名填写完成
+2025-12-28 03:06:35,036 - INFO - 密码填写完成
+2025-12-28 03:06:35,037 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:06:35,037 - INFO - 验证码识别尝试 7/30
+2025-12-28 03:06:35,037 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:06:35,156 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:06:35,394 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:06:35,471 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:06:35,572 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:06:35,631 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:06:35,731 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:06:35,886 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:06:35,999 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:06:36,060 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:06:36,157 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:06:36,218 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:06:36,308 - INFO - tesseract alt5 结果: 
+2025-12-28 03:06:36,308 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:06:36,309 - INFO - 查找验证码输入框...
+2025-12-28 03:06:36,370 - INFO - 验证码填写完成
+2025-12-28 03:06:36,370 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:06:36,370 - INFO - 查找并点击登录按钮...
+2025-12-28 03:06:36,427 - INFO - 已点击登录按钮
+2025-12-28 03:06:43,448 - INFO - 开始填写登录表单...
+2025-12-28 03:06:43,513 - INFO - 用户名填写完成
+2025-12-28 03:06:43,574 - INFO - 密码填写完成
+2025-12-28 03:06:43,575 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:06:43,575 - INFO - 验证码识别尝试 8/30
+2025-12-28 03:06:43,575 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:06:43,674 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:06:43,771 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:06:43,837 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:06:44,177 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:06:44,260 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:06:44,362 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:06:44,520 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:06:44,630 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:06:44,690 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:06:44,787 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:06:44,852 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:06:44,943 - INFO - tesseract alt5 结果: 
+2025-12-28 03:06:44,943 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:06:44,943 - INFO - 查找验证码输入框...
+2025-12-28 03:06:45,002 - INFO - 验证码填写完成
+2025-12-28 03:06:45,002 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:06:45,002 - INFO - 查找并点击登录按钮...
+2025-12-28 03:06:45,363 - INFO - 已点击登录按钮
+2025-12-28 03:06:52,384 - INFO - 开始填写登录表单...
+2025-12-28 03:06:52,446 - INFO - 用户名填写完成
+2025-12-28 03:06:52,510 - INFO - 密码填写完成
+2025-12-28 03:06:52,510 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:06:52,510 - INFO - 验证码识别尝试 9/30
+2025-12-28 03:06:52,510 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:06:52,618 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:06:52,713 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:06:52,776 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:06:52,874 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:06:52,934 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:06:53,033 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:06:53,190 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:06:53,302 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:06:53,362 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:06:53,460 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:06:53,522 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:06:53,618 - INFO - tesseract alt5 结果: 
+2025-12-28 03:06:53,618 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:06:53,618 - INFO - 查找验证码输入框...
+2025-12-28 03:06:53,676 - INFO - 验证码填写完成
+2025-12-28 03:06:53,676 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:06:53,676 - INFO - 查找并点击登录按钮...
+2025-12-28 03:06:54,031 - INFO - 已点击登录按钮
+2025-12-28 03:07:01,053 - INFO - 开始填写登录表单...
+2025-12-28 03:07:01,117 - INFO - 用户名填写完成
+2025-12-28 03:07:01,179 - INFO - 密码填写完成
+2025-12-28 03:07:01,180 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:07:01,180 - INFO - 验证码识别尝试 10/30
+2025-12-28 03:07:01,180 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:07:01,278 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:07:01,373 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:07:01,433 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:07:01,533 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:07:01,592 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:07:01,694 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:07:01,849 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:07:01,966 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:07:02,024 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:07:02,123 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:07:02,183 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:07:02,282 - INFO - tesseract alt5 结果: 
+2025-12-28 03:07:02,282 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:07:02,282 - INFO - 查找验证码输入框...
+2025-12-28 03:07:02,342 - INFO - 验证码填写完成
+2025-12-28 03:07:02,342 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:07:02,342 - INFO - 查找并点击登录按钮...
+2025-12-28 03:07:02,692 - INFO - 已点击登录按钮
+2025-12-28 03:07:09,713 - INFO - 开始填写登录表单...
+2025-12-28 03:07:09,776 - INFO - 用户名填写完成
+2025-12-28 03:07:09,839 - INFO - 密码填写完成
+2025-12-28 03:07:09,839 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:07:09,840 - INFO - 验证码识别尝试 11/30
+2025-12-28 03:07:09,840 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:07:09,938 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:07:10,040 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:07:10,103 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:07:10,201 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:07:10,260 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:07:10,362 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:07:10,517 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:07:10,631 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:07:10,690 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:07:10,795 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:07:10,855 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:07:10,948 - INFO - tesseract alt5 结果: 
+2025-12-28 03:07:10,948 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:07:10,948 - INFO - 查找验证码输入框...
+2025-12-28 03:07:11,007 - INFO - 验证码填写完成
+2025-12-28 03:07:11,007 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:07:11,007 - INFO - 查找并点击登录按钮...
+2025-12-28 03:07:11,066 - INFO - 已点击登录按钮
+2025-12-28 03:07:18,087 - INFO - 开始填写登录表单...
+2025-12-28 03:07:18,155 - INFO - 用户名填写完成
+2025-12-28 03:07:18,221 - INFO - 密码填写完成
+2025-12-28 03:07:18,222 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:07:18,222 - INFO - 验证码识别尝试 12/30
+2025-12-28 03:07:18,222 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:07:18,320 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:07:18,416 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:07:18,476 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:07:18,579 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:07:18,642 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:07:18,741 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:07:18,899 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:07:19,012 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:07:19,073 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:07:19,179 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:07:19,240 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:07:19,331 - INFO - tesseract alt5 结果: 
+2025-12-28 03:07:19,331 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:07:19,331 - INFO - 查找验证码输入框...
+2025-12-28 03:07:19,390 - INFO - 验证码填写完成
+2025-12-28 03:07:19,390 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:07:19,390 - INFO - 查找并点击登录按钮...
+2025-12-28 03:07:19,448 - INFO - 已点击登录按钮
+2025-12-28 03:07:26,471 - INFO - 开始填写登录表单...
+2025-12-28 03:07:26,540 - INFO - 用户名填写完成
+2025-12-28 03:07:26,607 - INFO - 密码填写完成
+2025-12-28 03:07:26,608 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:07:26,608 - INFO - 验证码识别尝试 13/30
+2025-12-28 03:07:26,608 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:07:26,709 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:07:26,812 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:07:26,874 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:07:26,977 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:07:27,039 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:07:27,142 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:07:27,301 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:07:27,415 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:07:27,476 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:07:27,579 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:07:27,655 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:07:27,754 - INFO - tesseract alt5 结果: 
+2025-12-28 03:07:27,754 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:07:27,754 - INFO - 查找验证码输入框...
+2025-12-28 03:07:27,820 - INFO - 验证码填写完成
+2025-12-28 03:07:27,820 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:07:27,820 - INFO - 查找并点击登录按钮...
+2025-12-28 03:07:28,189 - INFO - 已点击登录按钮
+2025-12-28 03:07:35,212 - INFO - 开始填写登录表单...
+2025-12-28 03:07:35,281 - INFO - 用户名填写完成
+2025-12-28 03:07:35,348 - INFO - 密码填写完成
+2025-12-28 03:07:35,349 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:07:35,349 - INFO - 验证码识别尝试 14/30
+2025-12-28 03:07:35,349 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:07:35,462 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:07:35,562 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:07:35,622 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:07:35,724 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:07:35,784 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:07:35,885 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:07:36,045 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:07:36,162 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:07:36,222 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:07:36,326 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:07:36,386 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:07:36,479 - INFO - tesseract alt5 结果: 
+2025-12-28 03:07:36,479 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:07:36,479 - INFO - 查找验证码输入框...
+2025-12-28 03:07:36,542 - INFO - 验证码填写完成
+2025-12-28 03:07:36,542 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:07:36,542 - INFO - 查找并点击登录按钮...
+2025-12-28 03:07:36,895 - INFO - 已点击登录按钮
+2025-12-28 03:07:43,916 - INFO - 开始填写登录表单...
+2025-12-28 03:07:43,980 - INFO - 用户名填写完成
+2025-12-28 03:07:44,044 - INFO - 密码填写完成
+2025-12-28 03:07:44,045 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:07:44,045 - INFO - 验证码识别尝试 15/30
+2025-12-28 03:07:44,045 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:07:44,159 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:07:44,260 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:07:44,320 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:07:44,421 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:07:44,481 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:07:44,579 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:07:44,736 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:07:44,850 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:07:44,909 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:07:45,018 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:07:45,080 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:07:45,175 - INFO - tesseract alt5 结果: 
+2025-12-28 03:07:45,175 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:07:45,175 - INFO - 查找验证码输入框...
+2025-12-28 03:07:45,238 - INFO - 验证码填写完成
+2025-12-28 03:07:45,238 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:07:45,238 - INFO - 查找并点击登录按钮...
+2025-12-28 03:07:45,593 - INFO - 已点击登录按钮
+2025-12-28 03:07:52,613 - INFO - 开始填写登录表单...
+2025-12-28 03:07:52,677 - INFO - 用户名填写完成
+2025-12-28 03:07:52,739 - INFO - 密码填写完成
+2025-12-28 03:07:52,739 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:07:52,740 - INFO - 验证码识别尝试 16/30
+2025-12-28 03:07:52,740 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:07:52,847 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:07:52,945 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:07:53,006 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:07:53,106 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:07:53,166 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:07:53,267 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:07:53,424 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:07:53,542 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:07:53,602 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:07:53,708 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:07:53,769 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:07:53,864 - INFO - tesseract alt5 结果: 
+2025-12-28 03:07:53,864 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:07:53,864 - INFO - 查找验证码输入框...
+2025-12-28 03:07:53,925 - INFO - 验证码填写完成
+2025-12-28 03:07:53,925 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:07:53,925 - INFO - 查找并点击登录按钮...
+2025-12-28 03:07:54,277 - INFO - 已点击登录按钮
+2025-12-28 03:08:01,299 - INFO - 开始填写登录表单...
+2025-12-28 03:08:01,362 - INFO - 用户名填写完成
+2025-12-28 03:08:01,424 - INFO - 密码填写完成
+2025-12-28 03:08:01,425 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:08:01,425 - INFO - 验证码识别尝试 17/30
+2025-12-28 03:08:01,425 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:08:01,534 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:08:01,636 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:08:01,697 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:08:01,799 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:08:01,859 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:08:01,962 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:08:02,117 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:08:02,231 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:08:02,291 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:08:02,391 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:08:02,451 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:08:02,546 - INFO - tesseract alt5 结果: 
+2025-12-28 03:08:02,546 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:08:02,546 - INFO - 查找验证码输入框...
+2025-12-28 03:08:02,605 - INFO - 验证码填写完成
+2025-12-28 03:08:02,605 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:08:02,605 - INFO - 查找并点击登录按钮...
+2025-12-28 03:08:02,664 - INFO - 已点击登录按钮
+2025-12-28 03:08:09,686 - INFO - 开始填写登录表单...
+2025-12-28 03:08:09,747 - INFO - 用户名填写完成
+2025-12-28 03:08:09,806 - INFO - 密码填写完成
+2025-12-28 03:08:09,807 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:08:09,807 - INFO - 验证码识别尝试 18/30
+2025-12-28 03:08:09,807 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:08:09,914 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:08:10,009 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:08:10,072 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:08:10,169 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:08:10,228 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:08:10,324 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:08:10,479 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:08:10,589 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:08:10,648 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:08:10,748 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:08:10,817 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:08:10,908 - INFO - tesseract alt5 结果: 
+2025-12-28 03:08:10,908 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:08:10,908 - INFO - 查找验证码输入框...
+2025-12-28 03:08:10,967 - INFO - 验证码填写完成
+2025-12-28 03:08:10,967 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:08:10,967 - INFO - 查找并点击登录按钮...
+2025-12-28 03:08:11,329 - INFO - 已点击登录按钮
+2025-12-28 03:08:18,349 - INFO - 开始填写登录表单...
+2025-12-28 03:08:18,410 - INFO - 用户名填写完成
+2025-12-28 03:08:18,469 - INFO - 密码填写完成
+2025-12-28 03:08:18,470 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:08:18,470 - INFO - 验证码识别尝试 19/30
+2025-12-28 03:08:18,470 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:08:18,568 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:08:18,669 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:08:18,729 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:08:18,829 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:08:18,890 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:08:18,989 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:08:19,145 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:08:19,260 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:08:19,320 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:08:19,423 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:08:19,484 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:08:19,578 - INFO - tesseract alt5 结果: 
+2025-12-28 03:08:19,578 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:08:19,578 - INFO - 查找验证码输入框...
+2025-12-28 03:08:19,635 - INFO - 验证码填写完成
+2025-12-28 03:08:19,635 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:08:19,635 - INFO - 查找并点击登录按钮...
+2025-12-28 03:08:19,693 - INFO - 已点击登录按钮
+2025-12-28 03:08:26,713 - INFO - 开始填写登录表单...
+2025-12-28 03:08:26,774 - INFO - 用户名填写完成
+2025-12-28 03:08:26,833 - INFO - 密码填写完成
+2025-12-28 03:08:26,834 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:08:26,834 - INFO - 验证码识别尝试 20/30
+2025-12-28 03:08:26,834 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:08:26,932 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:08:27,030 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:08:27,089 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:08:27,195 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:08:27,254 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:08:27,352 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:08:27,506 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:08:27,617 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:08:27,678 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:08:27,775 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:08:27,835 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:08:27,925 - INFO - tesseract alt5 结果: 
+2025-12-28 03:08:27,925 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:08:27,925 - INFO - 查找验证码输入框...
+2025-12-28 03:08:27,983 - INFO - 验证码填写完成
+2025-12-28 03:08:27,983 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:08:27,983 - INFO - 查找并点击登录按钮...
+2025-12-28 03:08:28,041 - INFO - 已点击登录按钮
+2025-12-28 03:08:35,062 - INFO - 开始填写登录表单...
+2025-12-28 03:08:35,125 - INFO - 用户名填写完成
+2025-12-28 03:08:35,185 - INFO - 密码填写完成
+2025-12-28 03:08:35,186 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:08:35,186 - INFO - 验证码识别尝试 21/30
+2025-12-28 03:08:35,186 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:08:35,282 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:08:35,377 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:08:35,437 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:08:35,536 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:08:35,594 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:08:35,690 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:08:35,844 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:08:35,960 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:08:36,027 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:08:36,125 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:08:36,183 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:08:36,278 - INFO - tesseract alt5 结果: 
+2025-12-28 03:08:36,278 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:08:36,278 - INFO - 查找验证码输入框...
+2025-12-28 03:08:36,334 - INFO - 验证码填写完成
+2025-12-28 03:08:36,335 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:08:36,335 - INFO - 查找并点击登录按钮...
+2025-12-28 03:08:36,391 - INFO - 已点击登录按钮
+2025-12-28 03:08:43,411 - INFO - 开始填写登录表单...
+2025-12-28 03:08:43,471 - INFO - 用户名填写完成
+2025-12-28 03:08:43,530 - INFO - 密码填写完成
+2025-12-28 03:08:43,531 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:08:43,531 - INFO - 验证码识别尝试 22/30
+2025-12-28 03:08:43,531 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:08:43,627 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:08:43,724 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:08:43,783 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:08:43,881 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:08:43,941 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:08:44,041 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:08:44,196 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:08:44,308 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:08:44,375 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:08:44,473 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:08:44,532 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:08:44,625 - INFO - tesseract alt5 结果: 
+2025-12-28 03:08:44,625 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:08:44,625 - INFO - 查找验证码输入框...
+2025-12-28 03:08:44,682 - INFO - 验证码填写完成
+2025-12-28 03:08:44,682 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:08:44,682 - INFO - 查找并点击登录按钮...
+2025-12-28 03:08:44,741 - INFO - 已点击登录按钮
+2025-12-28 03:08:51,760 - INFO - 开始填写登录表单...
+2025-12-28 03:08:51,821 - INFO - 用户名填写完成
+2025-12-28 03:08:51,879 - INFO - 密码填写完成
+2025-12-28 03:08:51,879 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:08:51,880 - INFO - 验证码识别尝试 23/30
+2025-12-28 03:08:51,880 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:08:51,976 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:08:52,070 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:08:52,129 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:08:52,233 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:08:52,293 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:08:52,398 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:08:52,555 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:08:52,668 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:08:52,727 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:08:52,828 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:08:52,887 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:08:52,978 - INFO - tesseract alt5 结果: 
+2025-12-28 03:08:52,978 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:08:52,978 - INFO - 查找验证码输入框...
+2025-12-28 03:08:53,035 - INFO - 验证码填写完成
+2025-12-28 03:08:53,035 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:08:53,035 - INFO - 查找并点击登录按钮...
+2025-12-28 03:08:53,402 - INFO - 已点击登录按钮
+2025-12-28 03:09:00,422 - INFO - 开始填写登录表单...
+2025-12-28 03:09:00,482 - INFO - 用户名填写完成
+2025-12-28 03:09:00,540 - INFO - 密码填写完成
+2025-12-28 03:09:00,541 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:09:00,541 - INFO - 验证码识别尝试 24/30
+2025-12-28 03:09:00,541 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:09:00,646 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:09:00,741 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:09:00,801 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:09:00,898 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:09:00,957 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:09:01,072 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:09:01,330 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:09:01,439 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:09:01,498 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:09:01,601 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:09:01,659 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:09:01,753 - INFO - tesseract alt5 结果: 
+2025-12-28 03:09:01,753 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:09:01,753 - INFO - 查找验证码输入框...
+2025-12-28 03:09:01,811 - INFO - 验证码填写完成
+2025-12-28 03:09:01,811 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:09:01,811 - INFO - 查找并点击登录按钮...
+2025-12-28 03:09:02,161 - INFO - 已点击登录按钮
+2025-12-28 03:09:09,181 - INFO - 开始填写登录表单...
+2025-12-28 03:09:09,242 - INFO - 用户名填写完成
+2025-12-28 03:09:09,300 - INFO - 密码填写完成
+2025-12-28 03:09:09,301 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:09:09,301 - INFO - 验证码识别尝试 25/30
+2025-12-28 03:09:09,301 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:09:09,398 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:09:09,496 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:09:09,555 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:09:09,655 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:09:09,714 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:09:09,813 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:09:09,969 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:09:10,083 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:09:10,151 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:09:10,250 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:09:10,310 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:09:10,407 - INFO - tesseract alt5 结果: 
+2025-12-28 03:09:10,408 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:09:10,408 - INFO - 查找验证码输入框...
+2025-12-28 03:09:10,464 - INFO - 验证码填写完成
+2025-12-28 03:09:10,464 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:09:10,465 - INFO - 查找并点击登录按钮...
+2025-12-28 03:09:10,811 - INFO - 已点击登录按钮
+2025-12-28 03:09:17,832 - INFO - 开始填写登录表单...
+2025-12-28 03:09:17,894 - INFO - 用户名填写完成
+2025-12-28 03:09:17,954 - INFO - 密码填写完成
+2025-12-28 03:09:17,955 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:09:17,955 - INFO - 验证码识别尝试 26/30
+2025-12-28 03:09:17,955 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:09:18,053 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:09:18,154 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:09:18,213 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:09:18,311 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:09:18,370 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:09:18,474 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:09:18,628 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:09:18,737 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:09:18,813 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:09:18,913 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:09:18,974 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:09:19,066 - INFO - tesseract alt5 结果: 
+2025-12-28 03:09:19,066 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:09:19,066 - INFO - 查找验证码输入框...
+2025-12-28 03:09:19,123 - INFO - 验证码填写完成
+2025-12-28 03:09:19,123 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:09:19,123 - INFO - 查找并点击登录按钮...
+2025-12-28 03:09:19,473 - INFO - 已点击登录按钮
+2025-12-28 03:09:26,493 - INFO - 开始填写登录表单...
+2025-12-28 03:09:26,554 - INFO - 用户名填写完成
+2025-12-28 03:09:26,614 - INFO - 密码填写完成
+2025-12-28 03:09:26,615 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:09:26,615 - INFO - 验证码识别尝试 27/30
+2025-12-28 03:09:26,615 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:09:26,732 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:09:26,832 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:09:26,893 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:09:26,992 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:09:27,051 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:09:27,150 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:09:27,305 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:09:27,418 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:09:27,477 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:09:27,576 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:09:27,636 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:09:27,730 - INFO - tesseract alt5 结果: 
+2025-12-28 03:09:27,730 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:09:27,730 - INFO - 查找验证码输入框...
+2025-12-28 03:09:27,786 - INFO - 验证码填写完成
+2025-12-28 03:09:27,786 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:09:27,786 - INFO - 查找并点击登录按钮...
+2025-12-28 03:09:27,844 - INFO - 已点击登录按钮
+2025-12-28 03:09:34,865 - INFO - 开始填写登录表单...
+2025-12-28 03:09:34,927 - INFO - 用户名填写完成
+2025-12-28 03:09:34,988 - INFO - 密码填写完成
+2025-12-28 03:09:34,988 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:09:34,988 - INFO - 验证码识别尝试 28/30
+2025-12-28 03:09:34,989 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:09:35,097 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:09:35,195 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:09:35,256 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:09:35,356 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:09:35,416 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:09:35,514 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:09:35,670 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:09:35,784 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:09:35,844 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:09:35,947 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:09:36,007 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:09:36,099 - INFO - tesseract alt5 结果: 
+2025-12-28 03:09:36,099 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:09:36,099 - INFO - 查找验证码输入框...
+2025-12-28 03:09:36,156 - INFO - 验证码填写完成
+2025-12-28 03:09:36,157 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:09:36,157 - INFO - 查找并点击登录按钮...
+2025-12-28 03:09:36,519 - INFO - 已点击登录按钮
+2025-12-28 03:09:43,540 - INFO - 开始填写登录表单...
+2025-12-28 03:09:43,602 - INFO - 用户名填写完成
+2025-12-28 03:09:43,664 - INFO - 密码填写完成
+2025-12-28 03:09:43,665 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:09:43,665 - INFO - 验证码识别尝试 29/30
+2025-12-28 03:09:43,665 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:09:43,772 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:09:43,870 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:09:43,942 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:09:44,046 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:09:44,106 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:09:44,206 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:09:44,361 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:09:44,473 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:09:44,549 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:09:44,649 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:09:44,709 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:09:44,806 - INFO - tesseract alt5 结果: 
+2025-12-28 03:09:44,806 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:09:44,806 - INFO - 查找验证码输入框...
+2025-12-28 03:09:44,864 - INFO - 验证码填写完成
+2025-12-28 03:09:44,864 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:09:44,864 - INFO - 查找并点击登录按钮...
+2025-12-28 03:09:44,923 - INFO - 已点击登录按钮
+2025-12-28 03:09:51,945 - INFO - 开始填写登录表单...
+2025-12-28 03:09:52,012 - INFO - 用户名填写完成
+2025-12-28 03:09:52,074 - INFO - 密码填写完成
+2025-12-28 03:09:52,075 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2025-12-28 03:09:52,075 - INFO - 验证码识别尝试 30/30
+2025-12-28 03:09:52,075 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2025-12-28 03:09:52,173 - INFO - easyocr 结果: ['IhCF(0.91)']
+2025-12-28 03:09:52,270 - INFO - tesseract 结果: 1hCF
+2025-12-28 03:09:52,330 - INFO - easyocr alt1 结果: ['IhCF(0.90)']
+2025-12-28 03:09:52,432 - INFO - tesseract alt1 结果: TAGE
+2025-12-28 03:09:52,490 - INFO - easyocr alt2 结果: ['IhCF(0.90)']
+2025-12-28 03:09:52,590 - INFO - tesseract alt2 结果: TAGE
+2025-12-28 03:09:52,746 - INFO - easyocr alt3 结果: ['IhCF(0.69)']
+2025-12-28 03:09:52,860 - INFO - tesseract alt3 结果: LThACF
+2025-12-28 03:09:52,919 - INFO - easyocr alt4 结果: ['IhCF(0.71)']
+2025-12-28 03:09:53,019 - INFO - tesseract alt4 结果: ThGr
+2025-12-28 03:09:53,079 - INFO - easyocr alt5 结果: ['lhCF(0.41)']
+2025-12-28 03:09:53,173 - INFO - tesseract alt5 结果: 
+2025-12-28 03:09:53,173 - INFO - 最终验证码识别结果: IhCF (engine=easyocr, prob=0.9142381548881531)
+2025-12-28 03:09:53,173 - INFO - 查找验证码输入框...
+2025-12-28 03:09:53,232 - INFO - 验证码填写完成
+2025-12-28 03:09:53,232 - INFO - 验证码填写完成，点击登录按钮...
+2025-12-28 03:09:53,232 - INFO - 查找并点击登录按钮...
+2025-12-28 03:09:53,292 - INFO - 已点击登录按钮
+2025-12-28 03:10:00,312 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2025-12-28 03:10:00,312 - ERROR - 处理验证码时出错: EOF when reading a line
+2025-12-28 03:10:00,312 - WARNING - 验证码处理失败，但继续尝试登录
+2025-12-28 03:10:00,312 - INFO - 查找并点击登录按钮...
+2025-12-28 03:10:00,368 - INFO - 已点击登录按钮
+2025-12-28 03:10:05,369 - INFO - 等待登录成功...
+2025-12-28 03:10:10,373 - INFO - 登录可能成功，继续下一步...
+2025-12-28 03:10:10,373 - INFO - 查找'去充值'按钮...
+2025-12-28 03:10:10,436 - INFO - 已点击充值按钮
+2025-12-28 03:10:13,436 - INFO - 开始提取剩余电量信息...
+2025-12-28 03:10:13,441 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2025-12-28 03:10:13,451 - WARNING - 未找到电量信息元素，尝试其他方法...
+2025-12-28 03:10:13,459 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2025-12-28 03:10:13,463 - INFO - 在页面源码中查找电量信息...
+2025-12-28 03:10:13,476 - WARNING - 未能提取到剩余电量信息
+2025-12-28 03:10:13,476 - WARNING - 没有电量数据可保存
+2025-12-28 03:10:13,476 - INFO - 监控流程完成
+Wrapper end: 2025-12-28T11:10:13.597375+08:00
