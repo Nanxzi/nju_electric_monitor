@@ -48,10 +48,11 @@ jobs:
         sudo apt-get clean || true
         sudo fc-cache -fv
 
-    - name: Install dependencies (use pip cache when available)
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install -r requirements_workflow.txt
+    - name: Install core dependencies
+      run: python -m pip install -r requirements_core.txt
+
+    - name: Install optional dependencies
+      run: python -m pip install --no-cache-dir -r requirements_optional.txt
 
     - name: Cleanup pip cache and temp files
       run: |
