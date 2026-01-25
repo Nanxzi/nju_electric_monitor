@@ -1,0 +1,1006 @@
+Wrapper start: 2026-01-25T15:17:44.416593+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=119):
+- ACCEPT_EULA
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+- ANT_HOME
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       145G   62G   83G  43% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  2.5M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        128M   32K  128M   1% /sys/firmware/efi/efivars
+/dev/sda16      881M   62M  758M   8% /boot
+/dev/sda15      105M  6.2M   99M   6% /boot/efi
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+13M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+288K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Light.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+- /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+- /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+- /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+- /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+- /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+- /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+
+FontManager samples (name -> path):
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+DejaVu Sans Mono -> /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Noto Serif CJK JP -> /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Light.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.2/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2026-01-25 07:17:49,007 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-01-25 07:17:51,037 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-01-25 07:17:51,037 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-01-25 07:17:52,559 - INFO - OCR识别器初始化成功
+2026-01-25 07:17:52,559 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-01-25 07:17:52,559 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-01-25 07:18:03,986 - INFO - 等待登录表单加载...
+2026-01-25 07:18:03,997 - INFO - 登录表单已加载
+2026-01-25 07:18:03,997 - INFO - 开始填写登录表单...
+2026-01-25 07:18:04,062 - INFO - 用户名填写完成
+2026-01-25 07:18:04,139 - INFO - 密码填写完成
+2026-01-25 07:18:04,139 - INFO - 检查是否有验证码...
+2026-01-25 07:18:04,139 - INFO - 查找验证码图片...
+2026-01-25 07:18:04,163 - INFO - 找到验证码图片，开始截图...
+2026-01-25 07:18:04,211 - INFO - 验证码图片截取成功
+2026-01-25 07:18:04,211 - INFO - 开始填写登录表单...
+2026-01-25 07:18:04,280 - INFO - 用户名填写完成
+2026-01-25 07:18:04,347 - INFO - 密码填写完成
+2026-01-25 07:18:04,368 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:18:04,368 - INFO - 验证码识别尝试 1/30
+2026-01-25 07:18:04,369 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:18:04,499 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:18:05,178 - INFO - tesseract 结果: QyeF
+2026-01-25 07:18:05,245 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:18:05,346 - INFO - tesseract alt1 结果: over
+2026-01-25 07:18:05,408 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:18:05,507 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:18:05,697 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:18:05,818 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:18:05,881 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:18:05,984 - INFO - tesseract alt4 结果: over
+2026-01-25 07:18:06,060 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:18:06,163 - INFO - tesseract alt5 结果: over
+2026-01-25 07:18:06,163 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:18:06,163 - INFO - 查找验证码输入框...
+2026-01-25 07:18:06,228 - INFO - 验证码填写完成
+2026-01-25 07:18:06,228 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:18:06,228 - INFO - 查找并点击登录按钮...
+2026-01-25 07:18:06,900 - INFO - 已点击登录按钮
+2026-01-25 07:18:13,929 - INFO - 开始填写登录表单...
+2026-01-25 07:18:13,994 - INFO - 用户名填写完成
+2026-01-25 07:18:14,058 - INFO - 密码填写完成
+2026-01-25 07:18:14,059 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:18:14,059 - INFO - 验证码识别尝试 2/30
+2026-01-25 07:18:14,059 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:18:14,158 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:18:14,255 - INFO - tesseract 结果: QyeF
+2026-01-25 07:18:14,317 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:18:14,416 - INFO - tesseract alt1 结果: over
+2026-01-25 07:18:14,475 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:18:14,570 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:18:14,746 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:18:14,864 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:18:14,923 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:18:15,020 - INFO - tesseract alt4 结果: over
+2026-01-25 07:18:15,080 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:18:15,181 - INFO - tesseract alt5 结果: over
+2026-01-25 07:18:15,181 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:18:15,181 - INFO - 查找验证码输入框...
+2026-01-25 07:18:15,242 - INFO - 验证码填写完成
+2026-01-25 07:18:15,242 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:18:15,242 - INFO - 查找并点击登录按钮...
+2026-01-25 07:18:15,302 - INFO - 已点击登录按钮
+2026-01-25 07:18:22,323 - INFO - 开始填写登录表单...
+2026-01-25 07:18:22,386 - INFO - 用户名填写完成
+2026-01-25 07:18:22,448 - INFO - 密码填写完成
+2026-01-25 07:18:22,449 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:18:22,449 - INFO - 验证码识别尝试 3/30
+2026-01-25 07:18:22,449 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:18:22,547 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:18:22,644 - INFO - tesseract 结果: QyeF
+2026-01-25 07:18:22,720 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:18:22,819 - INFO - tesseract alt1 结果: over
+2026-01-25 07:18:22,880 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:18:22,983 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:18:23,159 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:18:23,273 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:18:23,332 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:18:23,430 - INFO - tesseract alt4 结果: over
+2026-01-25 07:18:23,492 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:18:23,596 - INFO - tesseract alt5 结果: over
+2026-01-25 07:18:23,596 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:18:23,597 - INFO - 查找验证码输入框...
+2026-01-25 07:18:23,657 - INFO - 验证码填写完成
+2026-01-25 07:18:23,657 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:18:23,657 - INFO - 查找并点击登录按钮...
+2026-01-25 07:18:23,716 - INFO - 已点击登录按钮
+2026-01-25 07:18:30,738 - INFO - 开始填写登录表单...
+2026-01-25 07:18:30,802 - INFO - 用户名填写完成
+2026-01-25 07:18:30,866 - INFO - 密码填写完成
+2026-01-25 07:18:30,866 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:18:30,866 - INFO - 验证码识别尝试 4/30
+2026-01-25 07:18:30,866 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:18:30,965 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:18:31,068 - INFO - tesseract 结果: QyeF
+2026-01-25 07:18:31,129 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:18:31,229 - INFO - tesseract alt1 结果: over
+2026-01-25 07:18:31,291 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:18:31,390 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:18:31,567 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:18:31,682 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:18:31,742 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:18:31,842 - INFO - tesseract alt4 结果: over
+2026-01-25 07:18:31,904 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:18:32,009 - INFO - tesseract alt5 结果: over
+2026-01-25 07:18:32,009 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:18:32,009 - INFO - 查找验证码输入框...
+2026-01-25 07:18:32,069 - INFO - 验证码填写完成
+2026-01-25 07:18:32,070 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:18:32,070 - INFO - 查找并点击登录按钮...
+2026-01-25 07:18:32,450 - INFO - 已点击登录按钮
+2026-01-25 07:18:39,472 - INFO - 开始填写登录表单...
+2026-01-25 07:18:39,535 - INFO - 用户名填写完成
+2026-01-25 07:18:39,597 - INFO - 密码填写完成
+2026-01-25 07:18:39,598 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:18:39,598 - INFO - 验证码识别尝试 5/30
+2026-01-25 07:18:39,598 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:18:39,712 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:18:39,812 - INFO - tesseract 结果: QyeF
+2026-01-25 07:18:39,873 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:18:39,971 - INFO - tesseract alt1 结果: over
+2026-01-25 07:18:40,032 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:18:40,138 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:18:40,314 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:18:40,430 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:18:40,490 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:18:40,589 - INFO - tesseract alt4 结果: over
+2026-01-25 07:18:40,650 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:18:40,750 - INFO - tesseract alt5 结果: over
+2026-01-25 07:18:40,750 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:18:40,750 - INFO - 查找验证码输入框...
+2026-01-25 07:18:40,809 - INFO - 验证码填写完成
+2026-01-25 07:18:40,810 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:18:40,810 - INFO - 查找并点击登录按钮...
+2026-01-25 07:18:40,869 - INFO - 已点击登录按钮
+2026-01-25 07:18:47,891 - INFO - 开始填写登录表单...
+2026-01-25 07:18:47,955 - INFO - 用户名填写完成
+2026-01-25 07:18:48,016 - INFO - 密码填写完成
+2026-01-25 07:18:48,017 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:18:48,017 - INFO - 验证码识别尝试 6/30
+2026-01-25 07:18:48,017 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:18:48,123 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:18:48,225 - INFO - tesseract 结果: QyeF
+2026-01-25 07:18:48,286 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:18:48,387 - INFO - tesseract alt1 结果: over
+2026-01-25 07:18:48,459 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:18:48,559 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:18:48,742 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:18:48,863 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:18:48,938 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:18:49,037 - INFO - tesseract alt4 结果: over
+2026-01-25 07:18:49,098 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:18:49,204 - INFO - tesseract alt5 结果: over
+2026-01-25 07:18:49,204 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:18:49,204 - INFO - 查找验证码输入框...
+2026-01-25 07:18:49,264 - INFO - 验证码填写完成
+2026-01-25 07:18:49,264 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:18:49,264 - INFO - 查找并点击登录按钮...
+2026-01-25 07:18:49,652 - INFO - 已点击登录按钮
+2026-01-25 07:18:56,674 - INFO - 开始填写登录表单...
+2026-01-25 07:18:56,739 - INFO - 用户名填写完成
+2026-01-25 07:18:56,807 - INFO - 密码填写完成
+2026-01-25 07:18:56,807 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:18:56,807 - INFO - 验证码识别尝试 7/30
+2026-01-25 07:18:56,807 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:18:56,942 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:18:57,042 - INFO - tesseract 结果: QyeF
+2026-01-25 07:18:57,103 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:18:57,212 - INFO - tesseract alt1 结果: over
+2026-01-25 07:18:57,272 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:18:57,374 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:18:57,565 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:18:57,684 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:18:57,756 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:18:57,854 - INFO - tesseract alt4 结果: over
+2026-01-25 07:18:57,916 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:18:58,023 - INFO - tesseract alt5 结果: over
+2026-01-25 07:18:58,023 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:18:58,024 - INFO - 查找验证码输入框...
+2026-01-25 07:18:58,084 - INFO - 验证码填写完成
+2026-01-25 07:18:58,084 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:18:58,084 - INFO - 查找并点击登录按钮...
+2026-01-25 07:18:58,477 - INFO - 已点击登录按钮
+2026-01-25 07:19:05,499 - INFO - 开始填写登录表单...
+2026-01-25 07:19:05,563 - INFO - 用户名填写完成
+2026-01-25 07:19:05,626 - INFO - 密码填写完成
+2026-01-25 07:19:05,627 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:19:05,627 - INFO - 验证码识别尝试 8/30
+2026-01-25 07:19:05,627 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:19:05,727 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:19:05,824 - INFO - tesseract 结果: QyeF
+2026-01-25 07:19:05,889 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:19:05,987 - INFO - tesseract alt1 结果: over
+2026-01-25 07:19:06,049 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:19:06,150 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:19:06,326 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:19:06,440 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:19:06,508 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:19:06,607 - INFO - tesseract alt4 结果: over
+2026-01-25 07:19:06,668 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:19:06,769 - INFO - tesseract alt5 结果: over
+2026-01-25 07:19:06,769 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:19:06,769 - INFO - 查找验证码输入框...
+2026-01-25 07:19:06,829 - INFO - 验证码填写完成
+2026-01-25 07:19:06,829 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:19:06,829 - INFO - 查找并点击登录按钮...
+2026-01-25 07:19:07,214 - INFO - 已点击登录按钮
+2026-01-25 07:19:14,236 - INFO - 开始填写登录表单...
+2026-01-25 07:19:14,300 - INFO - 用户名填写完成
+2026-01-25 07:19:14,364 - INFO - 密码填写完成
+2026-01-25 07:19:14,365 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:19:14,365 - INFO - 验证码识别尝试 9/30
+2026-01-25 07:19:14,365 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:19:14,464 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:19:14,562 - INFO - tesseract 结果: QyeF
+2026-01-25 07:19:14,623 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:19:14,722 - INFO - tesseract alt1 结果: over
+2026-01-25 07:19:14,782 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:19:14,881 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:19:15,058 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:19:15,176 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:19:15,236 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:19:15,336 - INFO - tesseract alt4 结果: over
+2026-01-25 07:19:15,397 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:19:15,504 - INFO - tesseract alt5 结果: over
+2026-01-25 07:19:15,504 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:19:15,504 - INFO - 查找验证码输入框...
+2026-01-25 07:19:15,564 - INFO - 验证码填写完成
+2026-01-25 07:19:15,564 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:19:15,564 - INFO - 查找并点击登录按钮...
+2026-01-25 07:19:15,938 - INFO - 已点击登录按钮
+2026-01-25 07:19:22,960 - INFO - 开始填写登录表单...
+2026-01-25 07:19:23,027 - INFO - 用户名填写完成
+2026-01-25 07:19:23,091 - INFO - 密码填写完成
+2026-01-25 07:19:23,092 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:19:23,092 - INFO - 验证码识别尝试 10/30
+2026-01-25 07:19:23,092 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:19:23,192 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:19:23,295 - INFO - tesseract 结果: QyeF
+2026-01-25 07:19:23,357 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:19:23,462 - INFO - tesseract alt1 结果: over
+2026-01-25 07:19:23,524 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:19:23,624 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:19:23,803 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:19:23,919 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:19:23,980 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:19:24,080 - INFO - tesseract alt4 结果: over
+2026-01-25 07:19:24,141 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:19:24,246 - INFO - tesseract alt5 结果: over
+2026-01-25 07:19:24,246 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:19:24,246 - INFO - 查找验证码输入框...
+2026-01-25 07:19:24,308 - INFO - 验证码填写完成
+2026-01-25 07:19:24,308 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:19:24,308 - INFO - 查找并点击登录按钮...
+2026-01-25 07:19:24,681 - INFO - 已点击登录按钮
+2026-01-25 07:19:31,703 - INFO - 开始填写登录表单...
+2026-01-25 07:19:31,769 - INFO - 用户名填写完成
+2026-01-25 07:19:31,832 - INFO - 密码填写完成
+2026-01-25 07:19:31,833 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:19:31,833 - INFO - 验证码识别尝试 11/30
+2026-01-25 07:19:31,833 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:19:31,939 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:19:32,041 - INFO - tesseract 结果: QyeF
+2026-01-25 07:19:32,102 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:19:32,208 - INFO - tesseract alt1 结果: over
+2026-01-25 07:19:32,268 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:19:32,366 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:19:32,557 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:19:32,676 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:19:32,739 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:19:32,836 - INFO - tesseract alt4 结果: over
+2026-01-25 07:19:32,897 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:19:32,999 - INFO - tesseract alt5 结果: over
+2026-01-25 07:19:32,999 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:19:32,999 - INFO - 查找验证码输入框...
+2026-01-25 07:19:33,060 - INFO - 验证码填写完成
+2026-01-25 07:19:33,060 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:19:33,060 - INFO - 查找并点击登录按钮...
+2026-01-25 07:19:33,438 - INFO - 已点击登录按钮
+2026-01-25 07:19:40,460 - INFO - 开始填写登录表单...
+2026-01-25 07:19:40,527 - INFO - 用户名填写完成
+2026-01-25 07:19:40,591 - INFO - 密码填写完成
+2026-01-25 07:19:40,592 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:19:40,592 - INFO - 验证码识别尝试 12/30
+2026-01-25 07:19:40,592 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:19:40,693 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:19:40,793 - INFO - tesseract 结果: QyeF
+2026-01-25 07:19:40,854 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:19:40,955 - INFO - tesseract alt1 结果: over
+2026-01-25 07:19:41,016 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:19:41,118 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:19:41,294 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:19:41,408 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:19:41,476 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:19:41,574 - INFO - tesseract alt4 结果: over
+2026-01-25 07:19:41,633 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:19:41,741 - INFO - tesseract alt5 结果: over
+2026-01-25 07:19:41,741 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:19:41,741 - INFO - 查找验证码输入框...
+2026-01-25 07:19:41,803 - INFO - 验证码填写完成
+2026-01-25 07:19:41,803 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:19:41,803 - INFO - 查找并点击登录按钮...
+2026-01-25 07:19:42,173 - INFO - 已点击登录按钮
+2026-01-25 07:19:49,195 - INFO - 开始填写登录表单...
+2026-01-25 07:19:49,262 - INFO - 用户名填写完成
+2026-01-25 07:19:49,327 - INFO - 密码填写完成
+2026-01-25 07:19:49,328 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:19:49,328 - INFO - 验证码识别尝试 13/30
+2026-01-25 07:19:49,328 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:19:49,427 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:19:49,531 - INFO - tesseract 结果: QyeF
+2026-01-25 07:19:49,592 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:19:49,692 - INFO - tesseract alt1 结果: over
+2026-01-25 07:19:49,752 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:19:49,854 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:19:50,029 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:19:50,144 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:19:50,203 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:19:50,302 - INFO - tesseract alt4 结果: over
+2026-01-25 07:19:50,362 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:19:50,469 - INFO - tesseract alt5 结果: over
+2026-01-25 07:19:50,470 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:19:50,470 - INFO - 查找验证码输入框...
+2026-01-25 07:19:50,531 - INFO - 验证码填写完成
+2026-01-25 07:19:50,531 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:19:50,531 - INFO - 查找并点击登录按钮...
+2026-01-25 07:19:50,923 - INFO - 已点击登录按钮
+2026-01-25 07:19:57,945 - INFO - 开始填写登录表单...
+2026-01-25 07:19:58,011 - INFO - 用户名填写完成
+2026-01-25 07:19:58,076 - INFO - 密码填写完成
+2026-01-25 07:19:58,077 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:19:58,077 - INFO - 验证码识别尝试 14/30
+2026-01-25 07:19:58,077 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:19:58,186 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:19:58,288 - INFO - tesseract 结果: QyeF
+2026-01-25 07:19:58,349 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:19:58,450 - INFO - tesseract alt1 结果: over
+2026-01-25 07:19:58,510 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:19:58,618 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:19:58,795 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:19:58,915 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:19:58,974 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:19:59,080 - INFO - tesseract alt4 结果: over
+2026-01-25 07:19:59,140 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:19:59,244 - INFO - tesseract alt5 结果: over
+2026-01-25 07:19:59,244 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:19:59,244 - INFO - 查找验证码输入框...
+2026-01-25 07:19:59,307 - INFO - 验证码填写完成
+2026-01-25 07:19:59,307 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:19:59,307 - INFO - 查找并点击登录按钮...
+2026-01-25 07:19:59,695 - INFO - 已点击登录按钮
+2026-01-25 07:20:06,717 - INFO - 开始填写登录表单...
+2026-01-25 07:20:06,783 - INFO - 用户名填写完成
+2026-01-25 07:20:06,849 - INFO - 密码填写完成
+2026-01-25 07:20:06,850 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:20:06,850 - INFO - 验证码识别尝试 15/30
+2026-01-25 07:20:06,850 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:20:06,950 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:20:07,049 - INFO - tesseract 结果: QyeF
+2026-01-25 07:20:07,111 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:20:07,209 - INFO - tesseract alt1 结果: over
+2026-01-25 07:20:07,270 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:20:07,369 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:20:07,546 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:20:07,661 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:20:07,721 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:20:07,821 - INFO - tesseract alt4 结果: over
+2026-01-25 07:20:07,882 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:20:07,984 - INFO - tesseract alt5 结果: over
+2026-01-25 07:20:07,984 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:20:07,984 - INFO - 查找验证码输入框...
+2026-01-25 07:20:08,046 - INFO - 验证码填写完成
+2026-01-25 07:20:08,046 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:20:08,046 - INFO - 查找并点击登录按钮...
+2026-01-25 07:20:08,441 - INFO - 已点击登录按钮
+2026-01-25 07:20:15,462 - INFO - 开始填写登录表单...
+2026-01-25 07:20:15,529 - INFO - 用户名填写完成
+2026-01-25 07:20:15,592 - INFO - 密码填写完成
+2026-01-25 07:20:15,593 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:20:15,593 - INFO - 验证码识别尝试 16/30
+2026-01-25 07:20:15,593 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:20:15,691 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:20:15,790 - INFO - tesseract 结果: QyeF
+2026-01-25 07:20:15,853 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:20:15,952 - INFO - tesseract alt1 结果: over
+2026-01-25 07:20:16,012 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:20:16,110 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:20:16,286 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:20:16,403 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:20:16,463 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:20:16,561 - INFO - tesseract alt4 结果: over
+2026-01-25 07:20:16,622 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:20:16,730 - INFO - tesseract alt5 结果: over
+2026-01-25 07:20:16,730 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:20:16,730 - INFO - 查找验证码输入框...
+2026-01-25 07:20:16,799 - INFO - 验证码填写完成
+2026-01-25 07:20:16,799 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:20:16,799 - INFO - 查找并点击登录按钮...
+2026-01-25 07:20:17,189 - INFO - 已点击登录按钮
+2026-01-25 07:20:24,210 - INFO - 开始填写登录表单...
+2026-01-25 07:20:24,275 - INFO - 用户名填写完成
+2026-01-25 07:20:24,339 - INFO - 密码填写完成
+2026-01-25 07:20:24,340 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:20:24,340 - INFO - 验证码识别尝试 17/30
+2026-01-25 07:20:24,340 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:20:24,458 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:20:24,556 - INFO - tesseract 结果: QyeF
+2026-01-25 07:20:24,617 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:20:24,717 - INFO - tesseract alt1 结果: over
+2026-01-25 07:20:24,778 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:20:24,877 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:20:25,053 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:20:25,173 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:20:25,232 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:20:25,331 - INFO - tesseract alt4 结果: over
+2026-01-25 07:20:25,392 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:20:25,496 - INFO - tesseract alt5 结果: over
+2026-01-25 07:20:25,496 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:20:25,496 - INFO - 查找验证码输入框...
+2026-01-25 07:20:25,555 - INFO - 验证码填写完成
+2026-01-25 07:20:25,555 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:20:25,555 - INFO - 查找并点击登录按钮...
+2026-01-25 07:20:25,943 - INFO - 已点击登录按钮
+2026-01-25 07:20:32,964 - INFO - 开始填写登录表单...
+2026-01-25 07:20:33,028 - INFO - 用户名填写完成
+2026-01-25 07:20:33,089 - INFO - 密码填写完成
+2026-01-25 07:20:33,090 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:20:33,090 - INFO - 验证码识别尝试 18/30
+2026-01-25 07:20:33,090 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:20:33,189 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:20:33,288 - INFO - tesseract 结果: QyeF
+2026-01-25 07:20:33,349 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:20:33,449 - INFO - tesseract alt1 结果: over
+2026-01-25 07:20:33,509 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:20:33,606 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:20:33,783 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:20:33,901 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:20:33,961 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:20:34,064 - INFO - tesseract alt4 结果: over
+2026-01-25 07:20:34,143 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:20:34,245 - INFO - tesseract alt5 结果: over
+2026-01-25 07:20:34,245 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:20:34,246 - INFO - 查找验证码输入框...
+2026-01-25 07:20:34,305 - INFO - 验证码填写完成
+2026-01-25 07:20:34,305 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:20:34,305 - INFO - 查找并点击登录按钮...
+2026-01-25 07:20:34,366 - INFO - 已点击登录按钮
+2026-01-25 07:20:41,387 - INFO - 开始填写登录表单...
+2026-01-25 07:20:41,451 - INFO - 用户名填写完成
+2026-01-25 07:20:41,512 - INFO - 密码填写完成
+2026-01-25 07:20:41,513 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:20:41,513 - INFO - 验证码识别尝试 19/30
+2026-01-25 07:20:41,513 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:20:41,619 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:20:41,718 - INFO - tesseract 结果: QyeF
+2026-01-25 07:20:41,780 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:20:41,885 - INFO - tesseract alt1 结果: over
+2026-01-25 07:20:41,945 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:20:42,044 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:20:42,220 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:20:42,338 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:20:42,398 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:20:42,497 - INFO - tesseract alt4 结果: over
+2026-01-25 07:20:42,558 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:20:42,658 - INFO - tesseract alt5 结果: over
+2026-01-25 07:20:42,658 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:20:42,658 - INFO - 查找验证码输入框...
+2026-01-25 07:20:42,717 - INFO - 验证码填写完成
+2026-01-25 07:20:42,717 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:20:42,717 - INFO - 查找并点击登录按钮...
+2026-01-25 07:20:42,777 - INFO - 已点击登录按钮
+2026-01-25 07:20:49,798 - INFO - 开始填写登录表单...
+2026-01-25 07:20:49,862 - INFO - 用户名填写完成
+2026-01-25 07:20:49,923 - INFO - 密码填写完成
+2026-01-25 07:20:49,924 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:20:49,924 - INFO - 验证码识别尝试 20/30
+2026-01-25 07:20:49,924 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:20:50,022 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:20:50,122 - INFO - tesseract 结果: QyeF
+2026-01-25 07:20:50,184 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:20:50,284 - INFO - tesseract alt1 结果: over
+2026-01-25 07:20:50,345 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:20:50,445 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:20:50,622 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:20:50,744 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:20:50,817 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:20:50,919 - INFO - tesseract alt4 结果: over
+2026-01-25 07:20:50,979 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:20:51,081 - INFO - tesseract alt5 结果: over
+2026-01-25 07:20:51,081 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:20:51,081 - INFO - 查找验证码输入框...
+2026-01-25 07:20:51,140 - INFO - 验证码填写完成
+2026-01-25 07:20:51,140 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:20:51,140 - INFO - 查找并点击登录按钮...
+2026-01-25 07:20:51,529 - INFO - 已点击登录按钮
+2026-01-25 07:20:58,550 - INFO - 开始填写登录表单...
+2026-01-25 07:20:58,614 - INFO - 用户名填写完成
+2026-01-25 07:20:58,676 - INFO - 密码填写完成
+2026-01-25 07:20:58,677 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:20:58,677 - INFO - 验证码识别尝试 21/30
+2026-01-25 07:20:58,677 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:20:58,782 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:20:58,886 - INFO - tesseract 结果: QyeF
+2026-01-25 07:20:58,946 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:20:59,044 - INFO - tesseract alt1 结果: over
+2026-01-25 07:20:59,111 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:20:59,211 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:20:59,397 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:20:59,516 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:20:59,575 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:20:59,676 - INFO - tesseract alt4 结果: over
+2026-01-25 07:20:59,736 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:20:59,839 - INFO - tesseract alt5 结果: over
+2026-01-25 07:20:59,839 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:20:59,839 - INFO - 查找验证码输入框...
+2026-01-25 07:20:59,898 - INFO - 验证码填写完成
+2026-01-25 07:20:59,898 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:20:59,899 - INFO - 查找并点击登录按钮...
+2026-01-25 07:21:00,280 - INFO - 已点击登录按钮
+2026-01-25 07:21:07,301 - INFO - 开始填写登录表单...
+2026-01-25 07:21:07,366 - INFO - 用户名填写完成
+2026-01-25 07:21:07,426 - INFO - 密码填写完成
+2026-01-25 07:21:07,427 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:21:07,427 - INFO - 验证码识别尝试 22/30
+2026-01-25 07:21:07,427 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:21:07,526 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:21:07,632 - INFO - tesseract 结果: QyeF
+2026-01-25 07:21:07,693 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:21:07,794 - INFO - tesseract alt1 结果: over
+2026-01-25 07:21:07,855 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:21:07,957 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:21:08,133 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:21:08,250 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:21:08,310 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:21:08,409 - INFO - tesseract alt4 结果: over
+2026-01-25 07:21:08,470 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:21:08,571 - INFO - tesseract alt5 结果: over
+2026-01-25 07:21:08,571 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:21:08,571 - INFO - 查找验证码输入框...
+2026-01-25 07:21:08,630 - INFO - 验证码填写完成
+2026-01-25 07:21:08,630 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:21:08,630 - INFO - 查找并点击登录按钮...
+2026-01-25 07:21:09,008 - INFO - 已点击登录按钮
+2026-01-25 07:21:16,029 - INFO - 开始填写登录表单...
+2026-01-25 07:21:16,092 - INFO - 用户名填写完成
+2026-01-25 07:21:16,154 - INFO - 密码填写完成
+2026-01-25 07:21:16,155 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:21:16,155 - INFO - 验证码识别尝试 23/30
+2026-01-25 07:21:16,155 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:21:16,253 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:21:16,354 - INFO - tesseract 结果: QyeF
+2026-01-25 07:21:16,425 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:21:16,534 - INFO - tesseract alt1 结果: over
+2026-01-25 07:21:16,605 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:21:16,706 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:21:16,885 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:21:17,006 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:21:17,065 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:21:17,169 - INFO - tesseract alt4 结果: over
+2026-01-25 07:21:17,228 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:21:17,330 - INFO - tesseract alt5 结果: over
+2026-01-25 07:21:17,331 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:21:17,331 - INFO - 查找验证码输入框...
+2026-01-25 07:21:17,389 - INFO - 验证码填写完成
+2026-01-25 07:21:17,389 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:21:17,389 - INFO - 查找并点击登录按钮...
+2026-01-25 07:21:17,787 - INFO - 已点击登录按钮
+2026-01-25 07:21:24,809 - INFO - 开始填写登录表单...
+2026-01-25 07:21:24,873 - INFO - 用户名填写完成
+2026-01-25 07:21:24,936 - INFO - 密码填写完成
+2026-01-25 07:21:24,937 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:21:24,937 - INFO - 验证码识别尝试 24/30
+2026-01-25 07:21:24,937 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:21:25,036 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:21:25,137 - INFO - tesseract 结果: QyeF
+2026-01-25 07:21:25,197 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:21:25,302 - INFO - tesseract alt1 结果: over
+2026-01-25 07:21:25,362 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:21:25,462 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:21:25,638 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:21:25,757 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:21:25,825 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:21:25,926 - INFO - tesseract alt4 结果: over
+2026-01-25 07:21:25,986 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:21:26,091 - INFO - tesseract alt5 结果: over
+2026-01-25 07:21:26,091 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:21:26,091 - INFO - 查找验证码输入框...
+2026-01-25 07:21:26,152 - INFO - 验证码填写完成
+2026-01-25 07:21:26,152 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:21:26,152 - INFO - 查找并点击登录按钮...
+2026-01-25 07:21:26,212 - INFO - 已点击登录按钮
+2026-01-25 07:21:33,234 - INFO - 开始填写登录表单...
+2026-01-25 07:21:33,300 - INFO - 用户名填写完成
+2026-01-25 07:21:33,362 - INFO - 密码填写完成
+2026-01-25 07:21:33,362 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:21:33,363 - INFO - 验证码识别尝试 25/30
+2026-01-25 07:21:33,363 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:21:33,467 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:21:33,567 - INFO - tesseract 结果: QyeF
+2026-01-25 07:21:33,628 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:21:33,727 - INFO - tesseract alt1 结果: over
+2026-01-25 07:21:33,787 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:21:33,888 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:21:34,065 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:21:34,180 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:21:34,240 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:21:34,339 - INFO - tesseract alt4 结果: over
+2026-01-25 07:21:34,399 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:21:34,502 - INFO - tesseract alt5 结果: over
+2026-01-25 07:21:34,502 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:21:34,502 - INFO - 查找验证码输入框...
+2026-01-25 07:21:34,561 - INFO - 验证码填写完成
+2026-01-25 07:21:34,561 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:21:34,562 - INFO - 查找并点击登录按钮...
+2026-01-25 07:21:34,951 - INFO - 已点击登录按钮
+2026-01-25 07:21:41,971 - INFO - 开始填写登录表单...
+2026-01-25 07:21:42,034 - INFO - 用户名填写完成
+2026-01-25 07:21:42,096 - INFO - 密码填写完成
+2026-01-25 07:21:42,097 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:21:42,097 - INFO - 验证码识别尝试 26/30
+2026-01-25 07:21:42,097 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:21:42,196 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:21:42,297 - INFO - tesseract 结果: QyeF
+2026-01-25 07:21:42,359 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:21:42,461 - INFO - tesseract alt1 结果: over
+2026-01-25 07:21:42,522 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:21:42,625 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:21:42,800 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:21:42,917 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:21:42,994 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:21:43,093 - INFO - tesseract alt4 结果: over
+2026-01-25 07:21:43,153 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:21:43,256 - INFO - tesseract alt5 结果: over
+2026-01-25 07:21:43,256 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:21:43,256 - INFO - 查找验证码输入框...
+2026-01-25 07:21:43,315 - INFO - 验证码填写完成
+2026-01-25 07:21:43,315 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:21:43,315 - INFO - 查找并点击登录按钮...
+2026-01-25 07:21:43,374 - INFO - 已点击登录按钮
+2026-01-25 07:21:50,395 - INFO - 开始填写登录表单...
+2026-01-25 07:21:50,459 - INFO - 用户名填写完成
+2026-01-25 07:21:50,521 - INFO - 密码填写完成
+2026-01-25 07:21:50,522 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:21:50,522 - INFO - 验证码识别尝试 27/30
+2026-01-25 07:21:50,522 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:21:50,620 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:21:50,717 - INFO - tesseract 结果: QyeF
+2026-01-25 07:21:50,779 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:21:50,884 - INFO - tesseract alt1 结果: over
+2026-01-25 07:21:50,945 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:21:51,042 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:21:51,232 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:21:51,347 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:21:51,408 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:21:51,509 - INFO - tesseract alt4 结果: over
+2026-01-25 07:21:51,585 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:21:51,687 - INFO - tesseract alt5 结果: over
+2026-01-25 07:21:51,687 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:21:51,687 - INFO - 查找验证码输入框...
+2026-01-25 07:21:51,748 - INFO - 验证码填写完成
+2026-01-25 07:21:51,748 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:21:51,748 - INFO - 查找并点击登录按钮...
+2026-01-25 07:21:52,136 - INFO - 已点击登录按钮
+2026-01-25 07:21:59,157 - INFO - 开始填写登录表单...
+2026-01-25 07:21:59,222 - INFO - 用户名填写完成
+2026-01-25 07:21:59,284 - INFO - 密码填写完成
+2026-01-25 07:21:59,285 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:21:59,285 - INFO - 验证码识别尝试 28/30
+2026-01-25 07:21:59,285 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:21:59,403 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:21:59,505 - INFO - tesseract 结果: QyeF
+2026-01-25 07:21:59,566 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:21:59,667 - INFO - tesseract alt1 结果: over
+2026-01-25 07:21:59,727 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:21:59,830 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:22:00,005 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:22:00,120 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:22:00,188 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:22:00,284 - INFO - tesseract alt4 结果: over
+2026-01-25 07:22:00,344 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:22:00,444 - INFO - tesseract alt5 结果: over
+2026-01-25 07:22:00,444 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:22:00,444 - INFO - 查找验证码输入框...
+2026-01-25 07:22:00,502 - INFO - 验证码填写完成
+2026-01-25 07:22:00,502 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:22:00,502 - INFO - 查找并点击登录按钮...
+2026-01-25 07:22:00,561 - INFO - 已点击登录按钮
+2026-01-25 07:22:07,583 - INFO - 开始填写登录表单...
+2026-01-25 07:22:07,647 - INFO - 用户名填写完成
+2026-01-25 07:22:07,707 - INFO - 密码填写完成
+2026-01-25 07:22:07,708 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:22:07,708 - INFO - 验证码识别尝试 29/30
+2026-01-25 07:22:07,708 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:22:07,821 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:22:07,921 - INFO - tesseract 结果: QyeF
+2026-01-25 07:22:07,981 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:22:08,079 - INFO - tesseract alt1 结果: over
+2026-01-25 07:22:08,139 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:22:08,241 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:22:08,419 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:22:08,533 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:22:08,594 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:22:08,693 - INFO - tesseract alt4 结果: over
+2026-01-25 07:22:08,753 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:22:08,863 - INFO - tesseract alt5 结果: over
+2026-01-25 07:22:08,863 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:22:08,863 - INFO - 查找验证码输入框...
+2026-01-25 07:22:08,923 - INFO - 验证码填写完成
+2026-01-25 07:22:08,923 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:22:08,923 - INFO - 查找并点击登录按钮...
+2026-01-25 07:22:09,311 - INFO - 已点击登录按钮
+2026-01-25 07:22:16,331 - INFO - 开始填写登录表单...
+2026-01-25 07:22:16,394 - INFO - 用户名填写完成
+2026-01-25 07:22:16,454 - INFO - 密码填写完成
+2026-01-25 07:22:16,455 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-01-25 07:22:16,455 - INFO - 验证码识别尝试 30/30
+2026-01-25 07:22:16,455 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-01-25 07:22:16,553 - INFO - easyocr 结果: ['QVPF(0.84)']
+2026-01-25 07:22:16,650 - INFO - tesseract 结果: QyeF
+2026-01-25 07:22:16,711 - INFO - easyocr alt1 结果: ['QVPF(0.91)']
+2026-01-25 07:22:16,813 - INFO - tesseract alt1 结果: over
+2026-01-25 07:22:16,873 - INFO - easyocr alt2 结果: ['QVPF(0.59)']
+2026-01-25 07:22:16,971 - INFO - tesseract alt2 结果: ovyeF
+2026-01-25 07:22:17,147 - INFO - easyocr alt3 结果: ['RVPF(0.09)']
+2026-01-25 07:22:17,261 - INFO - tesseract alt3 结果: QvyeF
+2026-01-25 07:22:17,320 - INFO - easyocr alt4 结果: ['QPF(0.34)']
+2026-01-25 07:22:17,423 - INFO - tesseract alt4 结果: over
+2026-01-25 07:22:17,484 - INFO - easyocr alt5 结果: ['QVPF(0.36)']
+2026-01-25 07:22:17,586 - INFO - tesseract alt5 结果: over
+2026-01-25 07:22:17,586 - INFO - 最终验证码识别结果: QVPF (engine=easyocr_alt1, prob=0.9138667583465576)
+2026-01-25 07:22:17,586 - INFO - 查找验证码输入框...
+2026-01-25 07:22:17,645 - INFO - 验证码填写完成
+2026-01-25 07:22:17,645 - INFO - 验证码填写完成，点击登录按钮...
+2026-01-25 07:22:17,645 - INFO - 查找并点击登录按钮...
+2026-01-25 07:22:18,022 - INFO - 已点击登录按钮
+2026-01-25 07:22:25,043 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2026-01-25 07:22:25,043 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-01-25 07:22:25,043 - WARNING - 验证码处理失败，但继续尝试登录
+2026-01-25 07:22:25,043 - INFO - 查找并点击登录按钮...
+2026-01-25 07:22:25,103 - INFO - 已点击登录按钮
+2026-01-25 07:22:30,103 - INFO - 等待登录成功...
+2026-01-25 07:22:35,108 - INFO - 登录可能成功，继续下一步...
+2026-01-25 07:22:35,108 - INFO - 查找'去充值'按钮...
+2026-01-25 07:22:35,174 - INFO - 已点击充值按钮
+2026-01-25 07:22:38,174 - INFO - 开始提取剩余电量信息...
+2026-01-25 07:22:38,179 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-01-25 07:22:38,189 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-01-25 07:22:38,198 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-01-25 07:22:38,202 - INFO - 在页面源码中查找电量信息...
+2026-01-25 07:22:38,214 - WARNING - 未能提取到剩余电量信息
+2026-01-25 07:22:38,215 - WARNING - 没有电量数据可保存
+2026-01-25 07:22:38,215 - INFO - 监控流程完成
+Wrapper end: 2026-01-25T15:22:38.324163+08:00
