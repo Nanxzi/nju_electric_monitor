@@ -27,7 +27,7 @@
 
 </script><link href="/authserver/custom/css/login_1_0_3.css" rel="stylesheet"><link href="/authserver/custom/css/iCheck/custom.css" rel="stylesheet"><link href="/authserver/custom/css/qrcode-login.css" rel="stylesheet"><script type="text/javascript">
     var secure = "true";
-    var pwdDefaultEncryptSalt = "YObtpg7rXUFu4oFD";
+    var pwdDefaultEncryptSalt = "0Lt6pgW7EGTE2TsG";
 </script></head>
 
 
@@ -112,14 +112,14 @@
                         <p>
                             <i class="auth_icon auth_icon_pwd"></i>
                             <input id="password" placeholder="密码 Password" class="auth_input" type="password" value="" autocomplete="off">
-			    <input id="passwordEncrypt" name="password" style="display:none;" type="text" value="hv+X7BGGzMnkmPKOuB1rLC2wwrTf6Jk+EGUPqR0xXe+ozV8UT8U7jthImBd2RQW6+iOGMjxZmKPXMbEI8T2V+NRCltxjCUJSkEBICxkf/9Q=">
+			    <input id="passwordEncrypt" name="password" style="display:none;" type="text" value="Gpbgh+TbS0zR88E28q2WscV+K73F9Hdu+I/Szi6BHITY5YnVv9sN9VU/kSB91Gt7vHMU5lZ8PnIW5H6z2IxpvmVGC7CPNVkl8T2RxgZnWfk=">
                             <span id="passwordError" style="" class="auth_error">Please input password</span>
                         </p>
 
                         <p id="cpatchaDiv">
     <i class="auth_icon auth_icon_yzm"></i>
     <input type="text" placeholder="验证码 Verification code" id="captchaResponse" name="captchaResponse" class="auth_input captcha-input">
-    <img id="captchaImg" class="captcha-img" alt="Verification code" title="Verification code" src="captcha.html?ts=138">
+    <img id="captchaImg" class="captcha-img" alt="Verification code" title="Verification code" src="captcha.html?ts=115">
             <span style="cursor: pointer;color: #1dadff;margin-left: 2px;" id="changeCaptcha" class="chk_text"></span>
     <span id="cpatchaError" style="display:none;" class="auth_error">Please input the verification code</span>
 </p>
@@ -154,12 +154,12 @@
 							</div>
 						</div>
 
-                        <input type="hidden" name="lt" value="LT-26084098-WCbAJgstPDctIB7DaB4GXoZfNNLp3k1770277601968-s6P1-cas">
+                        <input type="hidden" name="lt" value="LT-26111750-2k73xhDLEm92nGmu9QFEnsdf3yJ4PT1770300164025-s6P1-cas">
                         <input type="hidden" name="dllt" value="userNamePasswordLogin">
                         <input type="hidden" name="execution" value="e2s31">
                         <input type="hidden" name="_eventId" value="submit">
                         <input type="hidden" name="rmShown" value="1">
-			<input type="hidden" id="pwdDefaultEncryptSalt" value="YObtpg7rXUFu4oFD">
+			<input type="hidden" id="pwdDefaultEncryptSalt" value="0Lt6pgW7EGTE2TsG">
                     </form>
                 </div>
                 
@@ -172,9 +172,9 @@
 		<div class="scan_box">
 			<form id="qrLoginForm" role="form" action="/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" method="post">
 				<span id="msg" class="auth_error" style="width: 100%;position: absolute;text-align: center;color: red;">Invalid the verification code</span>
-				<span id="qr_code">
+				<span id="qr_code" style="display: none;">
 					 <div class="scan_pic scan_code_pic">
-						<img id="qr_img" src="/authserver/qrCode/code?uuid=QR-cmKdAguJSWliYTobjYi" width="280">
+						<img id="qr_img" src="/authserver/qrCode/code?uuid=QR-1sIeXLctHAFu1ikO6J1" width="280">
 					 </div>     
 				</span>
 
@@ -187,9 +187,9 @@
 					
 				</span>
 
-				<span id="qr_invalid" style="display: none">
+				<span id="qr_invalid" style="">
 					<div class="scan_pic scan_code_pic scan_code_refresh">
-						<img id="invalid_img" src="/authserver/qrCode/code?uuid=QR-cmKdAguJSWliYTobjYi" width="280">
+						<img id="invalid_img" src="/authserver/qrCode/code?uuid=QR-1sIeXLctHAFu1ikO6J1" width="280">
 						<div class="scan_Invalid">
 							<img id="qr_refresh" width="58" alt="" src="/authserver/custom/images/refresh.png" style="width: 58px;height: 58px;" class="scan_invalid_icon">
 						</div>
@@ -198,8 +198,8 @@
 				   
 				</span>
 
-				<input type="hidden" name="lt" value="LT-26084098-WCbAJgstPDctIB7DaB4GXoZfNNLp3k1770277601968-s6P1-cas">
-				<input type="hidden" name="uuid" id="uuid" value="QR-cmKdAguJSWliYTobjYi">
+				<input type="hidden" name="lt" value="LT-26111750-2k73xhDLEm92nGmu9QFEnsdf3yJ4PT1770300164025-s6P1-cas">
+				<input type="hidden" name="uuid" id="uuid" value="QR-1sIeXLctHAFu1ikO6J1">
 				<input type="hidden" name="dllt" value="qrLogin">
 				<input type="hidden" name="execution" value="e2s31">
 				<input type="hidden" name="_eventId" value="submit">
