@@ -1,0 +1,752 @@
+2026-02-06 03:30:39,835 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-06 03:30:41,256 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-06 03:30:41,256 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-06 03:30:42,723 - INFO - OCR识别器初始化成功
+2026-02-06 03:30:42,723 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-06 03:30:42,723 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-06 03:30:52,323 - INFO - 等待登录表单加载...
+2026-02-06 03:30:52,332 - INFO - 登录表单已加载
+2026-02-06 03:30:52,332 - INFO - 开始填写登录表单...
+2026-02-06 03:30:52,394 - INFO - 用户名填写完成
+2026-02-06 03:30:52,460 - INFO - 密码填写完成
+2026-02-06 03:30:52,460 - INFO - 检查是否有验证码...
+2026-02-06 03:30:52,460 - INFO - 查找验证码图片...
+2026-02-06 03:30:52,480 - INFO - 找到验证码图片，开始截图...
+2026-02-06 03:30:52,542 - INFO - 验证码图片截取成功
+2026-02-06 03:30:52,542 - INFO - 开始填写登录表单...
+2026-02-06 03:30:52,608 - INFO - 用户名填写完成
+2026-02-06 03:30:52,668 - INFO - 密码填写完成
+2026-02-06 03:30:52,669 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:30:52,669 - INFO - 验证码识别尝试 1/30
+2026-02-06 03:30:52,669 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:30:52,801 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:30:52,979 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:30:53,042 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:30:53,136 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:30:53,194 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:30:53,287 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:30:53,451 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:30:53,563 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:30:53,627 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:30:53,721 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:30:53,780 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:30:53,873 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:30:53,873 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:30:53,873 - INFO - 查找验证码输入框...
+2026-02-06 03:30:53,932 - INFO - 验证码填写完成
+2026-02-06 03:30:53,932 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:30:53,932 - INFO - 查找并点击登录按钮...
+2026-02-06 03:30:54,281 - INFO - 已点击登录按钮
+2026-02-06 03:31:01,308 - INFO - 开始填写登录表单...
+2026-02-06 03:31:01,369 - INFO - 用户名填写完成
+2026-02-06 03:31:01,427 - INFO - 密码填写完成
+2026-02-06 03:31:01,428 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:31:01,428 - INFO - 验证码识别尝试 2/30
+2026-02-06 03:31:01,428 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:31:01,525 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:31:01,618 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:31:01,678 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:31:01,771 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:31:01,830 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:31:01,925 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:31:02,082 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:31:02,191 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:31:02,258 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:31:02,352 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:31:02,411 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:31:02,504 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:31:02,504 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:31:02,504 - INFO - 查找验证码输入框...
+2026-02-06 03:31:02,559 - INFO - 验证码填写完成
+2026-02-06 03:31:02,559 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:31:02,559 - INFO - 查找并点击登录按钮...
+2026-02-06 03:31:02,615 - INFO - 已点击登录按钮
+2026-02-06 03:31:09,636 - INFO - 开始填写登录表单...
+2026-02-06 03:31:09,696 - INFO - 用户名填写完成
+2026-02-06 03:31:09,755 - INFO - 密码填写完成
+2026-02-06 03:31:09,756 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:31:09,756 - INFO - 验证码识别尝试 3/30
+2026-02-06 03:31:09,756 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:31:09,854 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:31:09,954 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:31:10,025 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:31:10,119 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:31:10,179 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:31:10,273 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:31:10,429 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:31:10,537 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:31:10,597 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:31:10,694 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:31:10,768 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:31:10,866 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:31:10,866 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:31:10,866 - INFO - 查找验证码输入框...
+2026-02-06 03:31:10,922 - INFO - 验证码填写完成
+2026-02-06 03:31:10,922 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:31:10,922 - INFO - 查找并点击登录按钮...
+2026-02-06 03:31:10,979 - INFO - 已点击登录按钮
+2026-02-06 03:31:17,999 - INFO - 开始填写登录表单...
+2026-02-06 03:31:18,060 - INFO - 用户名填写完成
+2026-02-06 03:31:18,119 - INFO - 密码填写完成
+2026-02-06 03:31:18,120 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:31:18,120 - INFO - 验证码识别尝试 4/30
+2026-02-06 03:31:18,120 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:31:18,217 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:31:18,314 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:31:18,373 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:31:18,468 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:31:18,526 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:31:18,621 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:31:18,775 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:31:18,888 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:31:18,946 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:31:19,044 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:31:19,102 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:31:19,200 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:31:19,200 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:31:19,201 - INFO - 查找验证码输入框...
+2026-02-06 03:31:19,257 - INFO - 验证码填写完成
+2026-02-06 03:31:19,257 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:31:19,257 - INFO - 查找并点击登录按钮...
+2026-02-06 03:31:19,314 - INFO - 已点击登录按钮
+2026-02-06 03:31:26,335 - INFO - 开始填写登录表单...
+2026-02-06 03:31:26,395 - INFO - 用户名填写完成
+2026-02-06 03:31:26,454 - INFO - 密码填写完成
+2026-02-06 03:31:26,454 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:31:26,455 - INFO - 验证码识别尝试 5/30
+2026-02-06 03:31:26,455 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:31:26,551 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:31:26,647 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:31:26,706 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:31:26,801 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:31:26,860 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:31:26,954 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:31:27,108 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:31:27,223 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:31:27,295 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:31:27,393 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:31:27,452 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:31:27,551 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:31:27,551 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:31:27,551 - INFO - 查找验证码输入框...
+2026-02-06 03:31:27,607 - INFO - 验证码填写完成
+2026-02-06 03:31:27,607 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:31:27,607 - INFO - 查找并点击登录按钮...
+2026-02-06 03:31:27,664 - INFO - 已点击登录按钮
+2026-02-06 03:31:34,684 - INFO - 开始填写登录表单...
+2026-02-06 03:31:34,744 - INFO - 用户名填写完成
+2026-02-06 03:31:34,802 - INFO - 密码填写完成
+2026-02-06 03:31:34,803 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:31:34,803 - INFO - 验证码识别尝试 6/30
+2026-02-06 03:31:34,803 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:31:34,910 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:31:35,004 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:31:35,063 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:31:35,157 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:31:35,215 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:31:35,310 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:31:35,463 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:31:35,571 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:31:35,630 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:31:35,724 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:31:35,782 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:31:35,875 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:31:35,875 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:31:35,876 - INFO - 查找验证码输入框...
+2026-02-06 03:31:35,931 - INFO - 验证码填写完成
+2026-02-06 03:31:35,931 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:31:35,931 - INFO - 查找并点击登录按钮...
+2026-02-06 03:31:36,288 - INFO - 已点击登录按钮
+2026-02-06 03:31:43,310 - INFO - 开始填写登录表单...
+2026-02-06 03:31:43,379 - INFO - 用户名填写完成
+2026-02-06 03:31:43,443 - INFO - 密码填写完成
+2026-02-06 03:31:43,444 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:31:43,444 - INFO - 验证码识别尝试 7/30
+2026-02-06 03:31:43,444 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:31:43,570 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:31:43,680 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:31:43,741 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:31:43,835 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:31:43,893 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:31:43,990 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:31:44,144 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:31:44,254 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:31:44,312 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:31:44,409 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:31:44,468 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:31:44,566 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:31:44,567 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:31:44,567 - INFO - 查找验证码输入框...
+2026-02-06 03:31:44,622 - INFO - 验证码填写完成
+2026-02-06 03:31:44,622 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:31:44,622 - INFO - 查找并点击登录按钮...
+2026-02-06 03:31:44,678 - INFO - 已点击登录按钮
+2026-02-06 03:31:51,698 - INFO - 开始填写登录表单...
+2026-02-06 03:31:51,758 - INFO - 用户名填写完成
+2026-02-06 03:31:51,819 - INFO - 密码填写完成
+2026-02-06 03:31:51,820 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:31:51,820 - INFO - 验证码识别尝试 8/30
+2026-02-06 03:31:51,820 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:31:51,919 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:31:52,014 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:31:52,073 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:31:52,167 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:31:52,225 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:31:52,326 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:31:52,480 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:31:52,588 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:31:52,646 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:31:52,739 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:31:52,798 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:31:52,914 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:31:52,914 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:31:52,914 - INFO - 查找验证码输入框...
+2026-02-06 03:31:52,971 - INFO - 验证码填写完成
+2026-02-06 03:31:52,971 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:31:52,971 - INFO - 查找并点击登录按钮...
+2026-02-06 03:31:53,027 - INFO - 已点击登录按钮
+2026-02-06 03:32:00,047 - INFO - 开始填写登录表单...
+2026-02-06 03:32:00,108 - INFO - 用户名填写完成
+2026-02-06 03:32:00,166 - INFO - 密码填写完成
+2026-02-06 03:32:00,167 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:00,167 - INFO - 验证码识别尝试 9/30
+2026-02-06 03:32:00,167 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:00,263 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:00,358 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:32:00,417 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:32:00,509 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:32:00,568 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:32:00,662 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:32:00,817 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:32:00,929 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:32:00,988 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:32:01,083 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:32:01,141 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:32:01,236 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:32:01,236 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:32:01,236 - INFO - 查找验证码输入框...
+2026-02-06 03:32:01,293 - INFO - 验证码填写完成
+2026-02-06 03:32:01,293 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:32:01,293 - INFO - 查找并点击登录按钮...
+2026-02-06 03:32:01,656 - INFO - 已点击登录按钮
+2026-02-06 03:32:08,677 - INFO - 开始填写登录表单...
+2026-02-06 03:32:08,737 - INFO - 用户名填写完成
+2026-02-06 03:32:08,796 - INFO - 密码填写完成
+2026-02-06 03:32:08,797 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:08,797 - INFO - 验证码识别尝试 10/30
+2026-02-06 03:32:08,797 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:08,900 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:08,995 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:32:09,055 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:32:09,153 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:32:09,212 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:32:09,305 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:32:09,462 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:32:09,571 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:32:09,630 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:32:09,725 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:32:09,785 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:32:09,880 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:32:09,881 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:32:09,881 - INFO - 查找验证码输入框...
+2026-02-06 03:32:09,938 - INFO - 验证码填写完成
+2026-02-06 03:32:09,938 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:32:09,938 - INFO - 查找并点击登录按钮...
+2026-02-06 03:32:09,995 - INFO - 已点击登录按钮
+2026-02-06 03:32:17,015 - INFO - 开始填写登录表单...
+2026-02-06 03:32:17,075 - INFO - 用户名填写完成
+2026-02-06 03:32:17,133 - INFO - 密码填写完成
+2026-02-06 03:32:17,134 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:17,134 - INFO - 验证码识别尝试 11/30
+2026-02-06 03:32:17,134 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:17,242 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:17,335 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:32:17,397 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:32:17,493 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:32:17,552 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:32:17,645 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:32:17,811 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:32:17,923 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:32:17,990 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:32:18,082 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:32:18,142 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:32:18,238 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:32:18,238 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:32:18,238 - INFO - 查找验证码输入框...
+2026-02-06 03:32:18,295 - INFO - 验证码填写完成
+2026-02-06 03:32:18,295 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:32:18,295 - INFO - 查找并点击登录按钮...
+2026-02-06 03:32:18,655 - INFO - 已点击登录按钮
+2026-02-06 03:32:25,676 - INFO - 开始填写登录表单...
+2026-02-06 03:32:25,738 - INFO - 用户名填写完成
+2026-02-06 03:32:25,799 - INFO - 密码填写完成
+2026-02-06 03:32:25,800 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:25,800 - INFO - 验证码识别尝试 12/30
+2026-02-06 03:32:25,800 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:25,897 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:25,991 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:32:26,051 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:32:26,145 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:32:26,205 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:32:26,298 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:32:26,452 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:32:26,565 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:32:26,624 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:32:26,718 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:32:26,777 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:32:26,878 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:32:26,878 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:32:26,879 - INFO - 查找验证码输入框...
+2026-02-06 03:32:26,937 - INFO - 验证码填写完成
+2026-02-06 03:32:26,937 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:32:26,937 - INFO - 查找并点击登录按钮...
+2026-02-06 03:32:27,284 - INFO - 已点击登录按钮
+2026-02-06 03:32:34,304 - INFO - 开始填写登录表单...
+2026-02-06 03:32:34,366 - INFO - 用户名填写完成
+2026-02-06 03:32:34,425 - INFO - 密码填写完成
+2026-02-06 03:32:34,426 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:34,426 - INFO - 验证码识别尝试 13/30
+2026-02-06 03:32:34,426 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:34,522 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:34,616 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:32:34,675 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:32:34,770 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:32:34,828 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:32:34,921 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:32:35,075 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:32:35,184 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:32:35,243 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:32:35,342 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:32:35,400 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:32:35,495 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:32:35,495 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:32:35,496 - INFO - 查找验证码输入框...
+2026-02-06 03:32:35,553 - INFO - 验证码填写完成
+2026-02-06 03:32:35,553 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:32:35,553 - INFO - 查找并点击登录按钮...
+2026-02-06 03:32:35,609 - INFO - 已点击登录按钮
+2026-02-06 03:32:42,630 - INFO - 开始填写登录表单...
+2026-02-06 03:32:42,692 - INFO - 用户名填写完成
+2026-02-06 03:32:42,751 - INFO - 密码填写完成
+2026-02-06 03:32:42,752 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:42,752 - INFO - 验证码识别尝试 14/30
+2026-02-06 03:32:42,752 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:42,849 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:42,944 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:32:43,003 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:32:43,097 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:32:43,156 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:32:43,249 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:32:43,403 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:32:43,511 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:32:43,577 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:32:43,676 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:32:43,735 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:32:43,834 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:32:43,834 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:32:43,834 - INFO - 查找验证码输入框...
+2026-02-06 03:32:43,891 - INFO - 验证码填写完成
+2026-02-06 03:32:43,891 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:32:43,891 - INFO - 查找并点击登录按钮...
+2026-02-06 03:32:44,250 - INFO - 已点击登录按钮
+2026-02-06 03:32:51,271 - INFO - 开始填写登录表单...
+2026-02-06 03:32:51,334 - INFO - 用户名填写完成
+2026-02-06 03:32:51,394 - INFO - 密码填写完成
+2026-02-06 03:32:51,395 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:51,395 - INFO - 验证码识别尝试 15/30
+2026-02-06 03:32:51,395 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:51,492 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:51,585 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:32:51,645 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:32:51,740 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:32:51,799 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:32:51,893 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:32:52,048 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:32:52,157 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:32:52,223 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:32:52,318 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:32:52,376 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:32:52,475 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:32:52,475 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:32:52,475 - INFO - 查找验证码输入框...
+2026-02-06 03:32:52,534 - INFO - 验证码填写完成
+2026-02-06 03:32:52,535 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:32:52,535 - INFO - 查找并点击登录按钮...
+2026-02-06 03:32:52,593 - INFO - 已点击登录按钮
+2026-02-06 03:32:59,613 - INFO - 开始填写登录表单...
+2026-02-06 03:32:59,673 - INFO - 用户名填写完成
+2026-02-06 03:32:59,732 - INFO - 密码填写完成
+2026-02-06 03:32:59,733 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:32:59,733 - INFO - 验证码识别尝试 16/30
+2026-02-06 03:32:59,733 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:32:59,850 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:32:59,945 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:33:00,005 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:33:00,103 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:33:00,162 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:33:00,260 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:33:00,414 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:33:00,525 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:33:00,583 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:33:00,677 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:33:00,736 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:33:00,835 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:33:00,835 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:33:00,835 - INFO - 查找验证码输入框...
+2026-02-06 03:33:00,891 - INFO - 验证码填写完成
+2026-02-06 03:33:00,891 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:33:00,891 - INFO - 查找并点击登录按钮...
+2026-02-06 03:33:01,252 - INFO - 已点击登录按钮
+2026-02-06 03:33:08,272 - INFO - 开始填写登录表单...
+2026-02-06 03:33:08,333 - INFO - 用户名填写完成
+2026-02-06 03:33:08,392 - INFO - 密码填写完成
+2026-02-06 03:33:08,393 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:33:08,393 - INFO - 验证码识别尝试 17/30
+2026-02-06 03:33:08,393 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:33:08,492 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:33:08,588 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:33:08,649 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:33:08,748 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:33:08,807 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:33:08,901 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:33:09,056 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:33:09,166 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:33:09,226 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:33:09,321 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:33:09,379 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:33:09,476 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:33:09,476 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:33:09,476 - INFO - 查找验证码输入框...
+2026-02-06 03:33:09,533 - INFO - 验证码填写完成
+2026-02-06 03:33:09,533 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:33:09,533 - INFO - 查找并点击登录按钮...
+2026-02-06 03:33:09,590 - INFO - 已点击登录按钮
+2026-02-06 03:33:16,610 - INFO - 开始填写登录表单...
+2026-02-06 03:33:16,672 - INFO - 用户名填写完成
+2026-02-06 03:33:16,732 - INFO - 密码填写完成
+2026-02-06 03:33:16,733 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:33:16,733 - INFO - 验证码识别尝试 18/30
+2026-02-06 03:33:16,733 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:33:16,836 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:33:16,937 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:33:16,998 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:33:17,093 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:33:17,152 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:33:17,245 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:33:17,400 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:33:17,509 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:33:17,567 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:33:17,668 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:33:17,726 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:33:17,823 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:33:17,823 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:33:17,823 - INFO - 查找验证码输入框...
+2026-02-06 03:33:17,879 - INFO - 验证码填写完成
+2026-02-06 03:33:17,879 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:33:17,879 - INFO - 查找并点击登录按钮...
+2026-02-06 03:33:18,240 - INFO - 已点击登录按钮
+2026-02-06 03:33:25,260 - INFO - 开始填写登录表单...
+2026-02-06 03:33:25,320 - INFO - 用户名填写完成
+2026-02-06 03:33:25,378 - INFO - 密码填写完成
+2026-02-06 03:33:25,379 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:33:25,379 - INFO - 验证码识别尝试 19/30
+2026-02-06 03:33:25,379 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:33:25,475 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:33:25,569 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:33:25,629 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:33:25,725 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:33:25,783 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:33:25,881 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:33:26,036 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:33:26,145 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:33:26,203 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:33:26,301 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:33:26,360 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:33:26,459 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:33:26,459 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:33:26,459 - INFO - 查找验证码输入框...
+2026-02-06 03:33:26,515 - INFO - 验证码填写完成
+2026-02-06 03:33:26,515 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:33:26,515 - INFO - 查找并点击登录按钮...
+2026-02-06 03:33:28,545 - INFO - 已点击登录按钮
+2026-02-06 03:33:35,564 - INFO - 开始填写登录表单...
+2026-02-06 03:33:35,624 - INFO - 用户名填写完成
+2026-02-06 03:33:35,682 - INFO - 密码填写完成
+2026-02-06 03:33:35,682 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:33:35,682 - INFO - 验证码识别尝试 20/30
+2026-02-06 03:33:35,682 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:33:35,778 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:33:35,876 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:33:35,935 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:33:36,030 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:33:36,088 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:33:36,186 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:33:36,355 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:33:36,463 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:33:36,521 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:33:36,615 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:33:36,674 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:33:36,768 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:33:36,768 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:33:36,768 - INFO - 查找验证码输入框...
+2026-02-06 03:33:36,824 - INFO - 验证码填写完成
+2026-02-06 03:33:36,824 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:33:36,824 - INFO - 查找并点击登录按钮...
+2026-02-06 03:33:37,184 - INFO - 已点击登录按钮
+2026-02-06 03:33:44,203 - INFO - 开始填写登录表单...
+2026-02-06 03:33:44,264 - INFO - 用户名填写完成
+2026-02-06 03:33:44,321 - INFO - 密码填写完成
+2026-02-06 03:33:44,322 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:33:44,322 - INFO - 验证码识别尝试 21/30
+2026-02-06 03:33:44,322 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:33:44,433 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:33:44,526 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:33:44,586 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:33:44,683 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:33:44,741 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:33:44,835 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:33:44,988 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:33:45,097 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:33:45,155 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:33:45,252 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:33:45,311 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:33:45,408 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:33:45,408 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:33:45,408 - INFO - 查找验证码输入框...
+2026-02-06 03:33:45,463 - INFO - 验证码填写完成
+2026-02-06 03:33:45,463 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:33:45,463 - INFO - 查找并点击登录按钮...
+2026-02-06 03:33:45,520 - INFO - 已点击登录按钮
+2026-02-06 03:33:52,540 - INFO - 开始填写登录表单...
+2026-02-06 03:33:52,600 - INFO - 用户名填写完成
+2026-02-06 03:33:52,657 - INFO - 密码填写完成
+2026-02-06 03:33:52,657 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:33:52,657 - INFO - 验证码识别尝试 22/30
+2026-02-06 03:33:52,657 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:33:52,753 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:33:52,847 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:33:52,906 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:33:52,999 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:33:53,057 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:33:53,152 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:33:53,306 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:33:53,418 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:33:53,476 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:33:53,574 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:33:53,632 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:33:53,731 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:33:53,731 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:33:53,731 - INFO - 查找验证码输入框...
+2026-02-06 03:33:53,785 - INFO - 验证码填写完成
+2026-02-06 03:33:53,785 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:33:53,785 - INFO - 查找并点击登录按钮...
+2026-02-06 03:33:53,841 - INFO - 已点击登录按钮
+2026-02-06 03:34:00,861 - INFO - 开始填写登录表单...
+2026-02-06 03:34:00,920 - INFO - 用户名填写完成
+2026-02-06 03:34:00,977 - INFO - 密码填写完成
+2026-02-06 03:34:00,978 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:34:00,978 - INFO - 验证码识别尝试 23/30
+2026-02-06 03:34:00,978 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:34:01,073 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:34:01,167 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:34:01,226 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:34:01,320 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:34:01,378 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:34:01,474 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:34:01,641 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:34:01,747 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:34:01,805 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:34:01,900 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:34:01,958 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:34:02,052 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:34:02,052 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:34:02,052 - INFO - 查找验证码输入框...
+2026-02-06 03:34:02,107 - INFO - 验证码填写完成
+2026-02-06 03:34:02,107 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:34:02,108 - INFO - 查找并点击登录按钮...
+2026-02-06 03:34:02,466 - INFO - 已点击登录按钮
+2026-02-06 03:34:09,486 - INFO - 开始填写登录表单...
+2026-02-06 03:34:09,547 - INFO - 用户名填写完成
+2026-02-06 03:34:09,605 - INFO - 密码填写完成
+2026-02-06 03:34:09,606 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:34:09,606 - INFO - 验证码识别尝试 24/30
+2026-02-06 03:34:09,606 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:34:09,710 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:34:09,803 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:34:09,863 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:34:09,960 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:34:10,019 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:34:10,115 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:34:10,270 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:34:10,377 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:34:10,436 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:34:10,530 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:34:10,588 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:34:10,685 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:34:10,685 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:34:10,685 - INFO - 查找验证码输入框...
+2026-02-06 03:34:10,740 - INFO - 验证码填写完成
+2026-02-06 03:34:10,740 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:34:10,740 - INFO - 查找并点击登录按钮...
+2026-02-06 03:34:11,103 - INFO - 已点击登录按钮
+2026-02-06 03:34:18,122 - INFO - 开始填写登录表单...
+2026-02-06 03:34:18,183 - INFO - 用户名填写完成
+2026-02-06 03:34:18,241 - INFO - 密码填写完成
+2026-02-06 03:34:18,242 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:34:18,242 - INFO - 验证码识别尝试 25/30
+2026-02-06 03:34:18,242 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:34:18,344 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:34:18,442 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:34:18,502 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:34:18,601 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:34:18,659 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:34:18,753 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:34:18,908 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:34:19,018 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:34:19,077 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:34:19,171 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:34:19,230 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:34:19,329 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:34:19,329 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:34:19,329 - INFO - 查找验证码输入框...
+2026-02-06 03:34:19,385 - INFO - 验证码填写完成
+2026-02-06 03:34:19,385 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:34:19,385 - INFO - 查找并点击登录按钮...
+2026-02-06 03:34:19,442 - INFO - 已点击登录按钮
+2026-02-06 03:34:26,462 - INFO - 开始填写登录表单...
+2026-02-06 03:34:26,521 - INFO - 用户名填写完成
+2026-02-06 03:34:26,580 - INFO - 密码填写完成
+2026-02-06 03:34:26,581 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:34:26,581 - INFO - 验证码识别尝试 26/30
+2026-02-06 03:34:26,581 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:34:26,676 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:34:26,771 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:34:26,830 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:34:26,924 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:34:26,982 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:34:27,074 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:34:27,228 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:34:27,337 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:34:27,395 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:34:27,492 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:34:27,551 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:34:27,645 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:34:27,645 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:34:27,645 - INFO - 查找验证码输入框...
+2026-02-06 03:34:27,700 - INFO - 验证码填写完成
+2026-02-06 03:34:27,700 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:34:27,700 - INFO - 查找并点击登录按钮...
+2026-02-06 03:34:27,758 - INFO - 已点击登录按钮
+2026-02-06 03:34:34,777 - INFO - 开始填写登录表单...
+2026-02-06 03:34:34,837 - INFO - 用户名填写完成
+2026-02-06 03:34:34,895 - INFO - 密码填写完成
+2026-02-06 03:34:34,895 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:34:34,895 - INFO - 验证码识别尝试 27/30
+2026-02-06 03:34:34,895 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:34:35,003 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:34:35,097 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:34:35,156 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:34:35,251 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:34:35,309 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:34:35,407 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:34:35,562 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:34:35,670 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:34:35,728 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:34:35,823 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:34:35,881 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:34:35,979 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:34:35,980 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:34:35,980 - INFO - 查找验证码输入框...
+2026-02-06 03:34:36,034 - INFO - 验证码填写完成
+2026-02-06 03:34:36,034 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:34:36,034 - INFO - 查找并点击登录按钮...
+2026-02-06 03:34:36,091 - INFO - 已点击登录按钮
+2026-02-06 03:34:43,111 - INFO - 开始填写登录表单...
+2026-02-06 03:34:43,170 - INFO - 用户名填写完成
+2026-02-06 03:34:43,230 - INFO - 密码填写完成
+2026-02-06 03:34:43,230 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:34:43,230 - INFO - 验证码识别尝试 28/30
+2026-02-06 03:34:43,230 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:34:43,326 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:34:43,422 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:34:43,481 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:34:43,575 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:34:43,634 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:34:43,734 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:34:43,888 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:34:43,997 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:34:44,055 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:34:44,152 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:34:44,210 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:34:44,305 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:34:44,305 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:34:44,305 - INFO - 查找验证码输入框...
+2026-02-06 03:34:44,362 - INFO - 验证码填写完成
+2026-02-06 03:34:44,362 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:34:44,362 - INFO - 查找并点击登录按钮...
+2026-02-06 03:34:44,737 - INFO - 已点击登录按钮
+2026-02-06 03:34:51,757 - INFO - 开始填写登录表单...
+2026-02-06 03:34:51,818 - INFO - 用户名填写完成
+2026-02-06 03:34:51,875 - INFO - 密码填写完成
+2026-02-06 03:34:51,875 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:34:51,875 - INFO - 验证码识别尝试 29/30
+2026-02-06 03:34:51,875 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:34:51,972 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:34:52,067 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:34:52,126 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:34:52,221 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:34:52,287 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:34:52,381 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:34:52,534 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:34:52,644 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:34:52,702 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:34:52,796 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:34:52,854 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:34:52,949 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:34:52,949 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:34:52,949 - INFO - 查找验证码输入框...
+2026-02-06 03:34:53,004 - INFO - 验证码填写完成
+2026-02-06 03:34:53,004 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:34:53,004 - INFO - 查找并点击登录按钮...
+2026-02-06 03:34:53,348 - INFO - 已点击登录按钮
+2026-02-06 03:35:00,367 - INFO - 开始填写登录表单...
+2026-02-06 03:35:00,428 - INFO - 用户名填写完成
+2026-02-06 03:35:00,485 - INFO - 密码填写完成
+2026-02-06 03:35:00,486 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-06 03:35:00,486 - INFO - 验证码识别尝试 30/30
+2026-02-06 03:35:00,486 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-06 03:35:00,581 - INFO - easyocr 结果: ['GcPe(0.47)']
+2026-02-06 03:35:00,675 - INFO - tesseract 结果: 6cPe
+2026-02-06 03:35:00,733 - INFO - easyocr alt1 结果: ['GcPe(0.85)']
+2026-02-06 03:35:00,826 - INFO - tesseract alt1 结果: 6cPe
+2026-02-06 03:35:00,884 - INFO - easyocr alt2 结果: ['GcPe(0.87)']
+2026-02-06 03:35:00,978 - INFO - tesseract alt2 结果: 6cPe
+2026-02-06 03:35:01,131 - INFO - easyocr alt3 结果: ['GcPe(0.88)']
+2026-02-06 03:35:01,243 - INFO - tesseract alt3 结果: 6cPe
+2026-02-06 03:35:01,316 - INFO - easyocr alt4 结果: ['GcPe(0.55)']
+2026-02-06 03:35:01,410 - INFO - tesseract alt4 结果: 6ePe
+2026-02-06 03:35:01,468 - INFO - easyocr alt5 结果: ['GcPe(0.89)']
+2026-02-06 03:35:01,561 - INFO - tesseract alt5 结果: 6cPe
+2026-02-06 03:35:01,561 - INFO - 最终验证码识别结果: GcPe (engine=easyocr_alt5, prob=0.8903096914291382)
+2026-02-06 03:35:01,561 - INFO - 查找验证码输入框...
+2026-02-06 03:35:01,616 - INFO - 验证码填写完成
+2026-02-06 03:35:01,616 - INFO - 验证码填写完成，点击登录按钮...
+2026-02-06 03:35:01,616 - INFO - 查找并点击登录按钮...
+2026-02-06 03:35:01,671 - INFO - 已点击登录按钮
+2026-02-06 03:35:08,691 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-06 03:35:08,692 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-06 03:35:08,692 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-06 03:35:08,692 - INFO - 查找并点击登录按钮...
+2026-02-06 03:35:08,747 - INFO - 已点击登录按钮
+2026-02-06 03:35:13,747 - INFO - 等待登录成功...
+2026-02-06 03:35:18,752 - INFO - 登录可能成功，继续下一步...
+2026-02-06 03:35:18,752 - INFO - 查找'去充值'按钮...
+2026-02-06 03:35:18,815 - INFO - 已点击充值按钮
+2026-02-06 03:35:21,815 - INFO - 开始提取剩余电量信息...
+2026-02-06 03:35:21,820 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-06 03:35:21,829 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-06 03:35:21,838 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-06 03:35:21,841 - INFO - 在页面源码中查找电量信息...
+2026-02-06 03:35:21,853 - WARNING - 未能提取到剩余电量信息
+2026-02-06 03:35:21,853 - WARNING - 没有电量数据可保存
+2026-02-06 03:35:21,853 - INFO - 监控流程完成
