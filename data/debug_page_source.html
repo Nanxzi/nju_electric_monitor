@@ -1,186 +1,381 @@
-<html class="pixel-ratio-1" style="font-size: 512px;"><head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="_csrf" content="f17df161-1313-4a3a-ae1e-fec54c654c95">
-    <meta name="_csrf_header" content="X-CSRF-TOKEN">
-    <link type="image/png" href="/epay/images/nju/icon.png" rel="shortcut icon">
-    <link type="text/css" rel="stylesheet" href="/epay/css/wxpage/weui.min.css">
-    
-    <link type="text/css" rel="stylesheet" href="/epay/css/wxpage/wxpage.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/reset.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/charge.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/magic-check.min.css">
-    <link type="text/css" rel="stylesheet" href="/epay/css/nju/modal.css">
-    
-    <script type="text/javascript" src="/epay/js/wxpage/jquery-2.1.4.js "></script>
-    <script type="text/javascript" src="/epay/js/wxpage/fastclick.js "></script>
-    <script type="text/javascript" src="/epay/js/wxpage/jquery-weui.min.js "></script>
-    <script type="text/javascript" src="/epay/js/nju/vue.min.js "></script>
-    <script type="text/javascript" src="/epay/js/nju/select2.min1.js "></script>
-    <title>电费充值</title>
-<script type="text/javascript">
-    (function (win, doc) {
-        function changeSize() {
-            doc.documentElement.style.fontSize = 100 * doc.documentElement.clientWidth / 375 + 'px';
-        }
+<html><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta content="width=device-width,initial-scale=0.8, minimum-scale=0.8, maximum-scale=3" name="viewport">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="qc:admins" content="754034015366713545637571540352652">
+    <meta property="wb:webmaster" content="1ad39047f32b5b6b">
+    <title>Unified Identity Authentication</title>
 
-        changeSize();
-        win.addEventListener('resize', changeSize, false);
-    })(window, document);
+<script>
+    var href = location.href;
+	if (href.indexOf('njuhr.nju.edu.cn') > 0) {
+		if (!getBroswer()) {
+			location.href = 'http://ehall.nju.edu.cn/new/brower.html';
+		}
+	}
+    function getBroswer(){
+		var OsObject = window.navigator.userAgent;
+		if (OsObject.indexOf("QQBrowser") > 0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
+    
+
+</script><link href="/authserver/custom/css/login_1_0_3.css" rel="stylesheet"><link href="/authserver/custom/css/iCheck/custom.css" rel="stylesheet"><link href="/authserver/custom/css/qrcode-login.css" rel="stylesheet"><script type="text/javascript">
+    var secure = "true";
+    var pwdDefaultEncryptSalt = "QqO2MeMERxALxefc";
 </script></head>
 
 
-<body>
-<div id="app"><div class="centent"><div class="top"><div class="clearfix"><span class="fl">持卡人姓名：<i>吴相民</i></span></div> <div class="clearfix"><span class="fl">校园卡余额：<i class="green">0.63元</i></span></div></div> <div class="line"></div> <div class="cont"><div class="clearfix"><span class="fl">缴费地址：<i>仙林校区 18幢 18栋第17层1702</i></span></div> <div class="clearfix"><span class="fl">剩余电量：<i>103.36度</i><em></em></span></div> <!----> <!----></div> <div class="num clearfix"><div style="display: flex; flex-wrap: wrap;"><span class="active">10元</span><span class="">20元</span><span class="">50元</span><span class="">100元</span><span class="">200元</span><span class="">自定义</span></div></div> <div class="inputbox" style="display: none;"><input type="text" placeholder="请输入充值金额" pattern="[0-9]*" maxlength="4" id="amount"></div> <div class="footer">充值</div> <div class="desc">充值时间：每天00:05-23:55</div> <div class="wapat"><div class="wapat-inner"><div class="wapat-title">错误！</div> <div class="wapat-btn-box"><div class="wapat-btn wapat-btn-ok">确定</div></div></div></div></div></div>
 
 
 
 
-<script>
-</script>
-<script>
-    var beforeSendAjax = function (xhr) {
-        var header = $('meta[name=_csrf_header]').attr('content');
-        var token = $('meta[name=_csrf]').attr('content');
-        if (header != '' && token != '') {
-            xhr.setRequestHeader(header, token);
-        }
-    }
-    var vm = new Vue({
-        el: '#app',
-        data() {
-            return {
-                money: [{text: '10元', checked: true, value: 10},
-                    {text: '20元', checked: false, value: 20},
-                    {text: '50元', checked: false, value: 50},
-                    {text: '100元', checked: false, value: 100},
-                    {text: '200元', checked: false, value: 200},
-                    {text: '自定义', checked: false, value: 0}],
-                errmsg: "错误！",
-                index: 0,
-                amount:"",
-                check:{},
-                isSuZhouArea:false
-            }
-        },
-        watch:{
-            amount(val){
-                this.money[5].value = +val
-            }
-        },
-        created() {
-            this.check = {"areaId":"0","areaName":"0","buildId":"xl18","buildName":"18幢","createtime":"20251130155536","districtId":"","districtName":"","id":27111,"roomId":"1702","roomName":"18栋第17层1702","stuempno":"502023250032","sysId":"3","sysName":"仙林校区","type":"elec"}
-            this.isSuZhouArea = this.check.sysName.indexOf("苏州")>=0
 
-        },
-        methods: {
-            change(i) {
-                let list = this.money
-                list.forEach(v => {
-                    v.checked = false
-                })
-                list[i].checked = true
-                this.index = i
-            },
-            charge(){
-                $.showLoading("正在加载");
-                let amount = this.money[this.index].value
-                let check = this.check
-                let params = {
-                    "sysid":check.sysId,
-                    "areaid":check.areaId,
-                    "buildid":check.buildId,
-                    "roomid":check.roomId,
-                    "amount":amount
-                }
-                $.ajax("/epay/h5/elecPayInit.json", {
-                    data: params,
-                    type: "POST",
-                    dataType: "json",
-                    beforeSend: function (xhr){
-                        return beforeSendAjax(xhr)
-                    },
-                    success: (ret) =>{
-                        $.hideLoading();
-                        if (ret.retcode == '0') {
-                            let url = encodeURIComponent(window.location.origin + "/epay/h5/nju/electric/index")
-                            window.location.href='/epay/mgate/cert/unifiedorder?merchaccno=' + ret.shopid + '&timestamp='
-                                + ret.timestamp + '&out_trade_no=' + ret.refno + '&out_trade_name='+encodeURIComponent('电费充值')+'&total_amount=' + ret.amt * 100
-                                + '&remark=' + encodeURIComponent(check.sysName + '/' + check.buildName + '/' + check.roomName)
-                                + '&return_url=' + url;
-                        } else {
-                            this.errmsg =  ret.retmsg || '初始化失败！'
-                            $('.wapat').show()
 
-                        }
-                    },
-                    error: (e) => {
-                        $.hideLoading();
-                        this.errmsg = e.errmsg || '请求出现异常'
-                        $('.wapat').show()
 
-                    }
-                })
-            },
-            charge_v2(){
-                $.showLoading("正在加载");
-                let amount = this.money[this.index].value
-                let check = this.check
-                let params = {
-                    "sysid":check.sysId,
-                    "areaid":check.areaId,
-                    "buildid":check.buildId,
-                    "roomid":check.roomId,
-                    "amount":amount
-                }
-                $.ajax("/epay/h5/elecPayInit.json", {
-                    data: params,
-                    type: "POST",
-                    dataType: "json",
-                    beforeSend: function (xhr){
-                        return beforeSendAjax(xhr)
-                    },
-                    success: (ret) =>{
-                        $.hideLoading();
-                        if (ret.retcode == '0') {
-                            let url = encodeURIComponent(window.location.origin + "/epay/h5/nju/electric/index")
-                            window.location.href='/epay/h5/unifiedorder?merchaccno=' + ret.shopid + '&timestamp='
-                                + ret.timestamp + '&out_trade_no=' + ret.refno + '&out_trade_name='+encodeURIComponent('电费充值')+'&total_amount=' + ret.amt * 100
-                                + '&remark=' + encodeURIComponent(check.sysName + '/' + check.buildName + '/' + check.roomName)
-                                + '&return_url=' + url;
-                        } else {
-                            this.errmsg =  ret.retmsg || '初始化失败！'
-                            $('.wapat').show()
 
-                        }
-                    },
-                    error: (e) => {
-                        $.hideLoading();
-                        this.errmsg = e.errmsg || '请求出现异常'
-                        $('.wapat').show()
 
-                    }
-                })
-            },
-            confirm(){
-                $('.wapat').hide()
-            }
-        }
-    })
-    Vue.nextTick(function() {
-        $("#amount").keyup(function () {
-            $(this).val($(this).val().replace(/[^0-9]/g, ''));
-            if ($(this).val().length > 4) {
-                $(this).val($(this).val().substring(0, 4));
-            }
-        }).bind("paste", function () {
-            $(this).val($(this).val().replace(/[^0-9]/g, ''));
-            if ($(this).val().length > 4) {
-                $(this).val($(this).val().substring(0, 4));
-            }
+<body onload="loadFresh();">
+<div class="auth_bg">
+    <img id="idsbg" src="custom/images/back1.jpg" alt="">
+</div>
+<div class="auth-language">
+    <button class="eng_btn active">Eng</button><button class="cn_btn">中文</button>
+</div>
+<button id="goback" style="position: absolute;left: 110px;top: 50px;background-color: #90138b;border-radius: 3px;display:none;">返回自助终端</button>
+<div class="auth_page_wrappers">
+<div class="auth_login_content">
+    <div class="auth_login_left">
+        <div class="auth_others">
+            
+                <h4>Use the following ways to sign in</h4>
+                <ul>
+                    
+                        <li>
+                            <a href="combinedLogin.do?type=weixin&amp;success=https://authserver.nju.edu.cn/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" style="display: inline-block;">
+                                    <span class="auth_icon_bg">
+                                        <i class="auth_icon_weixin"></i>
+                                    </span>
+                                <span class="auth_icon_text">Use WeChat to sign in</span>
+                            </a>
+			
+                        </li>
+                    
+                </ul>
+            
+        </div>
+    </div>
+    
+        
+        
+            
+        
+        
+    
+    <div class="auth_login_right" style="opacity: 1;">
+	    
+        <div class="auth_tab">
+            <div class="auth_tab_links">
+			    <div>
+				    <img src="/authserver/custom/images/login-logo.png" alt="logo">
+					<span style="font-family: SimHei">Single Sign-On</span>
+				</div>
+                <ul>
+                <li id="accountLogin" style="width:100%;" class="selected" tabid="01">
+					    <span>Account login</span>
+					</li> 
+                    
+		    
+
+                </ul>
+            </div>
+            <div class="clearfloat"></div>
+			
+            <div class="auth_tab_content">
+                <div tabid="01" class="auth_tab_content_item" style="display: block;">
+                    <form id="casLoginForm" class="fm-v clearfix amp-login-form" role="form" action="/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" method="post">
+                        
+                            <span id="msg1" class="auth_error" style="top:-19px;">Invalid the verification code</span>
+                        
+
+                        <p>
+                            <i class="auth_icon auth_icon_user"></i>
+                            <input id="username" name="username" placeholder="账号 Username" class="auth_input" type="text" value="502023250032">
+                            <span id="usernameError" style="display:none;" class="auth_error">Please input username</span>
+                        </p>
+
+                        <p>
+                            <i class="auth_icon auth_icon_pwd"></i>
+                            <input id="password" placeholder="密码 Password" class="auth_input" type="password" value="" autocomplete="off">
+			    <input id="passwordEncrypt" name="password" style="display:none;" type="text" value="i64dN4GlZ0Q50aQJrxir+ZsDXWlbhw+FrBjRxVC/55+s7CzBVNeM4k03g/aSfGUiUn/eJWVAeP6rA60D6L2ViKku6GcG79sTJaThCERYWx0=">
+                            <span id="passwordError" style="" class="auth_error">Please input password</span>
+                        </p>
+
+                        <p id="cpatchaDiv">
+    <i class="auth_icon auth_icon_yzm"></i>
+    <input type="text" placeholder="验证码 Verification code" id="captchaResponse" name="captchaResponse" class="auth_input captcha-input">
+    <img id="captchaImg" class="captcha-img" alt="Verification code" title="Verification code" src="captcha.html?ts=681">
+            <span style="cursor: pointer;color: #1dadff;margin-left: 2px;" id="changeCaptcha" class="chk_text"></span>
+    <span id="cpatchaError" style="display:none;" class="auth_error">Please input the verification code</span>
+</p>
+
+
+                        <p>
+                            <button type="submit" class="auth_login_btn primary full_width">Sign in
+                            </button>
+                        </p>
+						<div class="footer">
+                            <!--<a href="http://imp.nju.edu.cn/imp/" class="n1">自助服务</a>
+                            <a href="http://imp.nju.edu.cn/imp/iss/getBackPassword.do" class="n2">忘记密码</a>
+                            <a href="http://help.nju.edu.cn" target="_blank"  class="n3">在线帮助</a>
+							<a href="http://authserver.nju.edu.cn/authserver/index.do?">自助服务</a>-->
+                            <a href="https://itsc.nju.edu.cn/tysfrz_21651/list.htm" target="_blank" class="n1">Help</a>
+                            <a href="https://authserver.nju.edu.cn/authserver/getBackPasswordMainPage.do" class="n3">Forgot Password</a>
+                        </div>
+						<div class="other_login_type" style="margin-top: 15px;display: none;">
+						    <fieldset class="oth_type_tit">
+								<legend align="center" class="oth_type_txt">其他方式登录</legend>
+							</fieldset>
+							<div class="oth_type_links">
+								
+                    					
+                        					
+                            					<a href="combinedLogin.do?type=weixin&amp;success=https://authserver.nju.edu.cn/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" style="display: inline-block;" class="icon_type">
+                                    					<img src="/authserver/custom/images/weixin.png" alt="logo">
+                            					</a>
+								
+                    					
+            					
+							</div>
+						</div>
+
+                        <input type="hidden" name="lt" value="LT-26654168-nnQlqMYiC6erOkOMjxYIFR5HDL5VRP1770434449479-V1P9-cas">
+                        <input type="hidden" name="dllt" value="userNamePasswordLogin">
+                        <input type="hidden" name="execution" value="e2s31">
+                        <input type="hidden" name="_eventId" value="submit">
+                        <input type="hidden" name="rmShown" value="1">
+			<input type="hidden" id="pwdDefaultEncryptSalt" value="QqO2MeMERxALxefc">
+                    </form>
+                </div>
+                
+		
+                
+                
+            </div>
+        </div>
+		<div class="ewm_wrap">
+		<div class="scan_box">
+			<form id="qrLoginForm" role="form" action="/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" method="post">
+				<span id="msg" class="auth_error" style="width: 100%;position: absolute;text-align: center;color: red;">Invalid the verification code</span>
+				<span id="qr_code">
+					 <div class="scan_pic scan_code_pic">
+						<img id="qr_img" src="/authserver/qrCode/code?uuid=QR-w22AeZ4RrAcxXTaCEDT" width="280">
+					 </div>     
+				</span>
+
+				<span id="qr_success" style="display: none">
+					<div class="scan_pic" style="width: 180px;height: 180px;margin: 45px 0 0 60px;">
+						<img alt="" src="/authserver/custom/images/Success.png" style="width: 65px;height: 65px;margin: 5px 0px 0px 0px;" class="scan_success_img">
+						<span class="title title_h1" style="font-size:16px;color:white;">Scan successful</span>
+						<span class="sub_title" style="font-size:16px;color:white;">Confirm login on mobile</span>
+					</div>
+					
+				</span>
+
+				<span id="qr_invalid" style="display: none">
+					<div class="scan_pic scan_code_pic scan_code_refresh">
+						<img id="invalid_img" src="/authserver/qrCode/code?uuid=QR-w22AeZ4RrAcxXTaCEDT" width="280">
+						<div class="scan_Invalid">
+							<img id="qr_refresh" width="58" alt="" src="/authserver/custom/images/refresh.png" style="width: 58px;height: 58px;" class="scan_invalid_icon">
+						</div>
+
+					</div>
+				   
+				</span>
+
+				<input type="hidden" name="lt" value="LT-26654168-nnQlqMYiC6erOkOMjxYIFR5HDL5VRP1770434449479-V1P9-cas">
+				<input type="hidden" name="uuid" id="uuid" value="QR-w22AeZ4RrAcxXTaCEDT">
+				<input type="hidden" name="dllt" value="qrLogin">
+				<input type="hidden" name="execution" value="e2s31">
+				<input type="hidden" name="_eventId" value="submit">
+				<input type="hidden" name="rmShown" value="1">
+			</form>
+		</div>
+		 <p style="color: #fff;font-size: 18px;font-family: SimHei;letter-spacing: 3px;width: 300px;margin: 146px auto 20px;">Wechat or NJU App Login</p>
+		</div>
+    </div>
+</div>
+
+
+<div id="hidenCaptchaDiv" style="display: none;">
+    <i class="auth_icon auth_icon_yzm"></i>
+    <input type="text" placeholder="验证码 Verification code" id="captchaResponse" name="captchaResponse" class="auth_input captcha-input">
+    <img id="captchaImg" class="captcha-img" alt="Verification code" title="Verification code">
+            <span style="cursor: pointer;color: #1dadff;margin-left: 2px;" id="changeCaptcha" class="chk_text"></span>
+    <span id="cpatchaError" style="display:none;" class="auth_error">Please input the verification code</span>
+</div>
+
+
+<div class="clearfloat"></div>
+
+</div>
+<div class="img_remark_item">
+</div>
+<div class="img_wxewm_item">
+    <p>信息门户二维码</p>
+	    <img src="/authserver/custom/images/ischool.jpg" alt="logo">
+</div>
+<div class="login_bottom">
+    <div class="login_navs">
+	    <img id="showewm" src="/authserver/custom/images/iconweixin.png" alt="logo">
+	    <img id="goleft" src="/authserver/custom/images/leftnav.png" alt="logo">
+	    <img id="goright" src="/authserver/custom/images/rightnav.png" alt="logo">
+		<img id="showremark" src="/authserver/custom/images/iconi.png" alt="logo">
+	</div>
+	<div class="cus-copyright">
+	    版权信息：@2022南京大学
+	</div>
+</div>
+
+<script type="text/javascript" src="/authserver/custom/js/jquery.min.js"></script>
+<script type="text/javascript" src="/authserver/custom/js/wxLogin.js"></script>
+<script type="text/javascript" src="/authserver/custom/js/login-language.js"></script>
+<script type="text/javascript" src="/authserver/custom/js/icheck.min.js"></script>
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#cpatchaDiv").html($("#hidenCaptchaDiv").html());
         });
-    })
+    </script>
+
+
+<script type="text/javascript" src="/authserver/custom/js/login.js?v=1.0"></script>
+<script type="text/javascript" src="/authserver/custom/js/login-wisedu_v1.0.js?v=1.0"></script>
+<script type="text/javascript" src="/authserver/custom/js/encrypt.js"></script>
+
+<script type="text/javascript">
+    var contextPath = "/authserver";
 </script>
+
+<script type="text/javascript" src="/authserver/custom/js/qrcode.js"></script>
+<script type="text/javascript" src="/authserver/js/jquery.cookie.js"></script>
+
+
+<script type="text/javascript">
+
+    // 选中tab框
+
+    var dllt = 'userNamePasswordLogin';
+    if (dllt != '' && dllt == 'dynamicLogin') {
+        selectLi($("#dyLogin"));
+    } else if (dllt != '' && dllt == 'qrLogin'){
+        selectLi($("#qrLogin"));
+    } else {
+        selectLi($("#accountLogin"));
+    }
+
+    $(document).ready(function () {
+
+		// 获取二维码
+		getQrCode();
+		// 定时刷新
+		countDown();
+		
+		
+		var href = location.href;
+		if (href.indexOf('172.22.1.7:8083')>-1) {
+			$("#goback").show();
+		}
+		$("#goback").click(function() {
+			location.href = 'http://172.22.1.7:8083/mmedia/caslogin.jsp';
+		})
+
+
+		var remarktext = ['鼓楼北大楼拍摄者:陈华','方肇周体育馆','杜厦图书馆'];
+					var imgSrc = 'custom/images/back1.jpg';
+					$("#idsbg").attr("src", imgSrc);
+					setTimeout(function() {
+						$(".auth_login_content .auth_login_right").animate({
+							opacity: 1
+						})
+					},1000)
+					var num = 1;
+					setInterval(function() {
+						num++;
+						if (num > 3) {
+							num = 1;
+						}
+						$("#idsbg").attr("src", "custom/images/back"+num+".jpg");
+					},1800000)
+		$("#goleft").click(function() {
+			num--;
+			if (num < 1) {
+				num = 3;
+			}
+			$("#idsbg").attr("src", "custom/images/back"+num+".jpg");
+		})
+		$("#goleft").mouseover(function() {
+			$(this).attr("src","/authserver/custom/images/leftnavs.png")
+		}).mouseout(function() {
+			$(this).attr("src","/authserver/custom/images/leftnav.png")
+		})
+		$("#goright").mouseover(function() {
+			$(this).attr("src","/authserver/custom/images/rightnavs.png")
+		}).mouseout(function() {
+			$(this).attr("src","/authserver/custom/images/rightnav.png")
+		})
+		$("#goright").click(function() {
+			num++;
+			if (num > 3) {
+				num = 1;
+			}
+			$("#idsbg").attr("src", "custom/images/back"+num+".jpg");
+		})
+		$("#showremark").mouseover(function() {
+			var indeximg = num - 1;
+			$(this).attr("src","/authserver/custom/images/iconis.png")
+			$(".img_remark_item").text(remarktext[indeximg]);
+			$(".img_remark_item").show();
+		}).mouseout(function() {
+			$(this).attr("src","/authserver/custom/images/iconi.png")
+			$(".img_remark_item").text('');
+			$(".img_remark_item").hide();
+		})
+		$("#showewm").mouseover(function() {
+			$(this).attr("src","/authserver/custom/images/iconweixins.png")
+			$(".img_wxewm_item").show();
+		}).mouseout(function() {
+			$(this).attr("src","/authserver/custom/images/iconweixin.png")
+			$(".img_wxewm_item").hide();
+		})
+
+
+		var random_bg = Math.floor(Math.random() * 2 + 1);
+
+		//if (dllt != '' && dllt == 'dynamicLogin') {
+		//}else{
+   		$("#captchaImg").attr("src","captcha.html?ts=" + new Date().getMilliseconds());
+		//}
+        
+
+        var service = GetQueryString("service");
+        if (service) {
+            $("#getBackPasswordMainPage").attr("href", "getBackPasswordMainPage.do?service=" + encodeURIComponent(service));
+        }
+    });
+
+
+</script>
+
+
+
+
+    
 
 </body></html>
