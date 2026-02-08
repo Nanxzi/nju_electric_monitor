@@ -1,0 +1,694 @@
+2026-02-08 03:52:59,929 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-08 03:53:01,349 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-08 03:53:01,349 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-08 03:53:02,838 - INFO - OCR识别器初始化成功
+2026-02-08 03:53:02,838 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-08 03:53:02,838 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-08 03:53:17,692 - INFO - 等待登录表单加载...
+2026-02-08 03:53:17,702 - INFO - 登录表单已加载
+2026-02-08 03:53:17,702 - INFO - 开始填写登录表单...
+2026-02-08 03:53:17,781 - INFO - 用户名填写完成
+2026-02-08 03:53:17,845 - INFO - 密码填写完成
+2026-02-08 03:53:17,845 - INFO - 检查是否有验证码...
+2026-02-08 03:53:17,845 - INFO - 查找验证码图片...
+2026-02-08 03:53:17,864 - INFO - 找到验证码图片，开始截图...
+2026-02-08 03:53:17,933 - INFO - 验证码图片截取成功
+2026-02-08 03:53:17,933 - INFO - 开始填写登录表单...
+2026-02-08 03:53:17,998 - INFO - 用户名填写完成
+2026-02-08 03:53:18,059 - INFO - 密码填写完成
+2026-02-08 03:53:18,059 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:18,060 - INFO - 验证码识别尝试 1/30
+2026-02-08 03:53:18,060 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:18,148 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:18,298 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:18,349 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:18,443 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:18,490 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:18,586 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:18,764 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:18,871 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:18,917 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:19,012 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:19,076 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:19,172 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:19,172 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:19,173 - INFO - 查找验证码输入框...
+2026-02-08 03:53:19,182 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:19,182 - WARNING - 验证码填写失败
+2026-02-08 03:53:19,182 - INFO - 开始填写登录表单...
+2026-02-08 03:53:19,241 - INFO - 用户名填写完成
+2026-02-08 03:53:19,300 - INFO - 密码填写完成
+2026-02-08 03:53:19,301 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:19,301 - INFO - 验证码识别尝试 2/30
+2026-02-08 03:53:19,301 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:19,377 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:19,477 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:19,524 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:19,616 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:19,662 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:19,759 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:19,912 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:20,018 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:20,064 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:20,163 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:20,227 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:20,325 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:20,325 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:20,325 - INFO - 查找验证码输入框...
+2026-02-08 03:53:20,332 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:20,332 - WARNING - 验证码填写失败
+2026-02-08 03:53:20,332 - INFO - 开始填写登录表单...
+2026-02-08 03:53:20,391 - INFO - 用户名填写完成
+2026-02-08 03:53:20,451 - INFO - 密码填写完成
+2026-02-08 03:53:20,451 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:20,451 - INFO - 验证码识别尝试 3/30
+2026-02-08 03:53:20,451 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:20,527 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:20,622 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:20,668 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:20,764 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:20,810 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:20,904 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:21,057 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:21,164 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:21,210 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:21,309 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:21,373 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:21,471 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:21,472 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:21,472 - INFO - 查找验证码输入框...
+2026-02-08 03:53:21,478 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:21,478 - WARNING - 验证码填写失败
+2026-02-08 03:53:21,478 - INFO - 开始填写登录表单...
+2026-02-08 03:53:21,538 - INFO - 用户名填写完成
+2026-02-08 03:53:21,605 - INFO - 密码填写完成
+2026-02-08 03:53:21,605 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:21,605 - INFO - 验证码识别尝试 4/30
+2026-02-08 03:53:21,605 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:21,682 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:21,778 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:21,825 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:21,921 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:21,967 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:22,062 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:22,216 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:22,325 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:22,375 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:22,478 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:22,544 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:22,640 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:22,640 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:22,640 - INFO - 查找验证码输入框...
+2026-02-08 03:53:22,647 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:22,647 - WARNING - 验证码填写失败
+2026-02-08 03:53:22,647 - INFO - 开始填写登录表单...
+2026-02-08 03:53:22,707 - INFO - 用户名填写完成
+2026-02-08 03:53:22,767 - INFO - 密码填写完成
+2026-02-08 03:53:22,821 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:22,821 - INFO - 验证码识别尝试 5/30
+2026-02-08 03:53:22,821 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:22,908 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:23,005 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:23,051 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:23,147 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:23,201 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:23,334 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:23,497 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:23,612 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:23,659 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:23,759 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:23,824 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:23,920 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:23,920 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:23,920 - INFO - 查找验证码输入框...
+2026-02-08 03:53:23,926 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:23,927 - WARNING - 验证码填写失败
+2026-02-08 03:53:23,927 - INFO - 开始填写登录表单...
+2026-02-08 03:53:23,985 - INFO - 用户名填写完成
+2026-02-08 03:53:24,045 - INFO - 密码填写完成
+2026-02-08 03:53:24,046 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:24,046 - INFO - 验证码识别尝试 6/30
+2026-02-08 03:53:24,046 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:24,123 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:24,218 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:24,265 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:24,362 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:24,409 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:24,506 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:24,661 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:24,769 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:24,816 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:24,913 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:24,977 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:25,073 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:25,073 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:25,073 - INFO - 查找验证码输入框...
+2026-02-08 03:53:25,080 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:25,080 - WARNING - 验证码填写失败
+2026-02-08 03:53:25,080 - INFO - 开始填写登录表单...
+2026-02-08 03:53:25,138 - INFO - 用户名填写完成
+2026-02-08 03:53:25,198 - INFO - 密码填写完成
+2026-02-08 03:53:25,199 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:25,199 - INFO - 验证码识别尝试 7/30
+2026-02-08 03:53:25,199 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:25,275 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:25,371 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:25,418 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:25,514 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:25,560 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:25,658 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:25,811 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:25,920 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:25,966 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:26,063 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:26,127 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:26,222 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:26,222 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:26,222 - INFO - 查找验证码输入框...
+2026-02-08 03:53:26,228 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:26,228 - WARNING - 验证码填写失败
+2026-02-08 03:53:26,228 - INFO - 开始填写登录表单...
+2026-02-08 03:53:26,290 - INFO - 用户名填写完成
+2026-02-08 03:53:26,352 - INFO - 密码填写完成
+2026-02-08 03:53:26,352 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:26,352 - INFO - 验证码识别尝试 8/30
+2026-02-08 03:53:26,352 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:26,431 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:26,530 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:26,576 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:26,676 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:26,723 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:26,820 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:26,975 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:27,081 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:27,128 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:27,227 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:27,291 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:27,389 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:27,389 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:27,389 - INFO - 查找验证码输入框...
+2026-02-08 03:53:27,396 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:27,396 - WARNING - 验证码填写失败
+2026-02-08 03:53:27,396 - INFO - 开始填写登录表单...
+2026-02-08 03:53:27,458 - INFO - 用户名填写完成
+2026-02-08 03:53:27,518 - INFO - 密码填写完成
+2026-02-08 03:53:27,519 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:27,519 - INFO - 验证码识别尝试 9/30
+2026-02-08 03:53:27,519 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:27,611 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:27,710 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:27,757 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:27,854 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:27,900 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:27,995 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:28,150 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:28,260 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:28,306 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:28,401 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:28,466 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:28,568 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:28,568 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:28,568 - INFO - 查找验证码输入框...
+2026-02-08 03:53:28,574 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:28,574 - WARNING - 验证码填写失败
+2026-02-08 03:53:28,574 - INFO - 开始填写登录表单...
+2026-02-08 03:53:28,633 - INFO - 用户名填写完成
+2026-02-08 03:53:28,693 - INFO - 密码填写完成
+2026-02-08 03:53:28,694 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:28,694 - INFO - 验证码识别尝试 10/30
+2026-02-08 03:53:28,694 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:28,771 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:28,867 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:28,913 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:29,009 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:29,055 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:29,150 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:29,304 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:29,416 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:29,462 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:29,557 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:29,621 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:29,720 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:29,720 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:29,720 - INFO - 查找验证码输入框...
+2026-02-08 03:53:29,727 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:29,727 - WARNING - 验证码填写失败
+2026-02-08 03:53:29,727 - INFO - 开始填写登录表单...
+2026-02-08 03:53:29,786 - INFO - 用户名填写完成
+2026-02-08 03:53:29,847 - INFO - 密码填写完成
+2026-02-08 03:53:29,847 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:29,847 - INFO - 验证码识别尝试 11/30
+2026-02-08 03:53:29,847 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:29,924 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:30,018 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:30,066 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:30,163 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:30,209 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:30,303 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:30,459 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:30,567 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:30,613 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:30,708 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:30,773 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:30,871 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:30,871 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:30,871 - INFO - 查找验证码输入框...
+2026-02-08 03:53:30,878 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:30,878 - WARNING - 验证码填写失败
+2026-02-08 03:53:30,878 - INFO - 开始填写登录表单...
+2026-02-08 03:53:30,938 - INFO - 用户名填写完成
+2026-02-08 03:53:30,998 - INFO - 密码填写完成
+2026-02-08 03:53:30,999 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:30,999 - INFO - 验证码识别尝试 12/30
+2026-02-08 03:53:30,999 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:31,081 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:31,177 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:31,225 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:31,330 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:31,376 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:31,471 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:31,626 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:31,733 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:31,779 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:31,876 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:31,940 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:32,035 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:32,035 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:32,035 - INFO - 查找验证码输入框...
+2026-02-08 03:53:32,041 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:32,042 - WARNING - 验证码填写失败
+2026-02-08 03:53:32,042 - INFO - 开始填写登录表单...
+2026-02-08 03:53:32,101 - INFO - 用户名填写完成
+2026-02-08 03:53:32,161 - INFO - 密码填写完成
+2026-02-08 03:53:32,161 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:32,161 - INFO - 验证码识别尝试 13/30
+2026-02-08 03:53:32,161 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:32,244 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:32,342 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:32,389 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:32,483 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:32,530 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:32,629 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:32,784 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:32,891 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:32,938 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:33,035 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:33,099 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:33,195 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:33,195 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:33,195 - INFO - 查找验证码输入框...
+2026-02-08 03:53:33,202 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:33,202 - WARNING - 验证码填写失败
+2026-02-08 03:53:33,202 - INFO - 开始填写登录表单...
+2026-02-08 03:53:33,262 - INFO - 用户名填写完成
+2026-02-08 03:53:33,322 - INFO - 密码填写完成
+2026-02-08 03:53:33,323 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:33,323 - INFO - 验证码识别尝试 14/30
+2026-02-08 03:53:33,323 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:33,407 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:33,505 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:33,553 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:33,648 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:33,694 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:33,789 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:33,944 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:34,055 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:34,100 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:34,196 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:34,260 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:34,359 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:34,359 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:34,359 - INFO - 查找验证码输入框...
+2026-02-08 03:53:34,367 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:34,367 - WARNING - 验证码填写失败
+2026-02-08 03:53:34,367 - INFO - 开始填写登录表单...
+2026-02-08 03:53:34,428 - INFO - 用户名填写完成
+2026-02-08 03:53:34,486 - INFO - 密码填写完成
+2026-02-08 03:53:34,486 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:34,486 - INFO - 验证码识别尝试 15/30
+2026-02-08 03:53:34,486 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:34,572 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:34,670 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:34,726 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:34,826 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:34,873 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:34,968 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:35,126 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:35,231 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:35,278 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:35,372 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:35,439 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:35,534 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:35,534 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:35,534 - INFO - 查找验证码输入框...
+2026-02-08 03:53:35,541 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:35,541 - WARNING - 验证码填写失败
+2026-02-08 03:53:35,541 - INFO - 开始填写登录表单...
+2026-02-08 03:53:35,600 - INFO - 用户名填写完成
+2026-02-08 03:53:35,662 - INFO - 密码填写完成
+2026-02-08 03:53:35,663 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:35,663 - INFO - 验证码识别尝试 16/30
+2026-02-08 03:53:35,663 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:35,739 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:35,833 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:35,881 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:35,978 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:36,026 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:36,120 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:36,275 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:36,381 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:36,427 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:36,522 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:36,586 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:36,681 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:36,681 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:36,681 - INFO - 查找验证码输入框...
+2026-02-08 03:53:36,688 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:36,688 - WARNING - 验证码填写失败
+2026-02-08 03:53:36,688 - INFO - 开始填写登录表单...
+2026-02-08 03:53:36,749 - INFO - 用户名填写完成
+2026-02-08 03:53:36,807 - INFO - 密码填写完成
+2026-02-08 03:53:36,808 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:36,808 - INFO - 验证码识别尝试 17/30
+2026-02-08 03:53:36,808 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:36,884 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:36,983 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:37,029 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:37,128 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:37,174 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:37,270 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:37,425 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:37,532 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:37,578 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:37,673 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:37,737 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:37,834 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:37,834 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:37,834 - INFO - 查找验证码输入框...
+2026-02-08 03:53:37,841 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:37,841 - WARNING - 验证码填写失败
+2026-02-08 03:53:37,841 - INFO - 开始填写登录表单...
+2026-02-08 03:53:37,900 - INFO - 用户名填写完成
+2026-02-08 03:53:37,960 - INFO - 密码填写完成
+2026-02-08 03:53:37,961 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:37,961 - INFO - 验证码识别尝试 18/30
+2026-02-08 03:53:37,961 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:38,038 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:38,137 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:38,185 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:38,281 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:38,328 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:38,423 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:38,576 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:38,687 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:38,733 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:38,830 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:38,898 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:38,996 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:38,996 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:38,996 - INFO - 查找验证码输入框...
+2026-02-08 03:53:39,003 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:39,003 - WARNING - 验证码填写失败
+2026-02-08 03:53:39,003 - INFO - 开始填写登录表单...
+2026-02-08 03:53:39,063 - INFO - 用户名填写完成
+2026-02-08 03:53:39,123 - INFO - 密码填写完成
+2026-02-08 03:53:39,124 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:39,124 - INFO - 验证码识别尝试 19/30
+2026-02-08 03:53:39,124 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:39,201 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:39,297 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:39,344 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:39,444 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:39,491 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:39,586 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:39,740 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:39,847 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:39,893 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:39,989 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:40,054 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:40,150 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:40,150 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:40,150 - INFO - 查找验证码输入框...
+2026-02-08 03:53:40,157 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:40,157 - WARNING - 验证码填写失败
+2026-02-08 03:53:40,157 - INFO - 开始填写登录表单...
+2026-02-08 03:53:40,218 - INFO - 用户名填写完成
+2026-02-08 03:53:40,281 - INFO - 密码填写完成
+2026-02-08 03:53:40,282 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:40,282 - INFO - 验证码识别尝试 20/30
+2026-02-08 03:53:40,282 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:40,359 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:40,454 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:40,500 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:40,596 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:40,642 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:40,740 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:40,893 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:41,002 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:41,049 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:41,144 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:41,208 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:41,304 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:41,304 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:41,304 - INFO - 查找验证码输入框...
+2026-02-08 03:53:41,311 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:41,312 - WARNING - 验证码填写失败
+2026-02-08 03:53:41,312 - INFO - 开始填写登录表单...
+2026-02-08 03:53:41,371 - INFO - 用户名填写完成
+2026-02-08 03:53:41,430 - INFO - 密码填写完成
+2026-02-08 03:53:41,431 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:41,431 - INFO - 验证码识别尝试 21/30
+2026-02-08 03:53:41,431 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:41,512 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:41,608 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:41,654 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:41,751 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:41,797 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:41,891 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:42,046 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:42,152 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:42,198 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:42,294 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:42,358 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:42,458 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:42,458 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:42,459 - INFO - 查找验证码输入框...
+2026-02-08 03:53:42,465 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:42,465 - WARNING - 验证码填写失败
+2026-02-08 03:53:42,465 - INFO - 开始填写登录表单...
+2026-02-08 03:53:42,526 - INFO - 用户名填写完成
+2026-02-08 03:53:42,584 - INFO - 密码填写完成
+2026-02-08 03:53:42,585 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:42,585 - INFO - 验证码识别尝试 22/30
+2026-02-08 03:53:42,585 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:42,661 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:42,756 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:42,803 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:42,900 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:42,948 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:43,047 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:43,202 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:43,308 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:43,354 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:43,450 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:43,515 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:43,609 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:43,610 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:43,610 - INFO - 查找验证码输入框...
+2026-02-08 03:53:43,616 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:43,616 - WARNING - 验证码填写失败
+2026-02-08 03:53:43,616 - INFO - 开始填写登录表单...
+2026-02-08 03:53:43,674 - INFO - 用户名填写完成
+2026-02-08 03:53:43,741 - INFO - 密码填写完成
+2026-02-08 03:53:43,742 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:43,742 - INFO - 验证码识别尝试 23/30
+2026-02-08 03:53:43,742 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:43,818 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:43,918 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:43,965 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:44,061 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:44,108 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:44,203 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:44,360 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:44,468 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:44,515 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:44,611 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:44,675 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:44,772 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:44,772 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:44,772 - INFO - 查找验证码输入框...
+2026-02-08 03:53:44,779 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:44,779 - WARNING - 验证码填写失败
+2026-02-08 03:53:44,779 - INFO - 开始填写登录表单...
+2026-02-08 03:53:44,839 - INFO - 用户名填写完成
+2026-02-08 03:53:44,899 - INFO - 密码填写完成
+2026-02-08 03:53:44,900 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:44,900 - INFO - 验证码识别尝试 24/30
+2026-02-08 03:53:44,900 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:44,976 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:45,070 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:45,117 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:45,212 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:45,258 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:45,355 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:45,508 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:45,617 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:45,663 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:45,758 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:45,822 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:45,917 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:45,917 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:45,917 - INFO - 查找验证码输入框...
+2026-02-08 03:53:45,924 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:45,924 - WARNING - 验证码填写失败
+2026-02-08 03:53:45,924 - INFO - 开始填写登录表单...
+2026-02-08 03:53:45,984 - INFO - 用户名填写完成
+2026-02-08 03:53:46,045 - INFO - 密码填写完成
+2026-02-08 03:53:46,046 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:46,046 - INFO - 验证码识别尝试 25/30
+2026-02-08 03:53:46,046 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:46,121 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:46,219 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:46,266 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:46,366 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:46,413 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:46,511 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:46,665 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:46,777 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:46,822 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:46,919 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:46,983 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:47,078 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:47,078 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:47,079 - INFO - 查找验证码输入框...
+2026-02-08 03:53:47,085 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:47,085 - WARNING - 验证码填写失败
+2026-02-08 03:53:47,085 - INFO - 开始填写登录表单...
+2026-02-08 03:53:47,145 - INFO - 用户名填写完成
+2026-02-08 03:53:47,204 - INFO - 密码填写完成
+2026-02-08 03:53:47,204 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:47,205 - INFO - 验证码识别尝试 26/30
+2026-02-08 03:53:47,205 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:47,280 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:47,374 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:47,420 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:47,518 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:47,564 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:47,660 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:47,813 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:47,920 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:47,966 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:48,060 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:48,123 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:48,218 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:48,218 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:48,218 - INFO - 查找验证码输入框...
+2026-02-08 03:53:48,225 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:48,225 - WARNING - 验证码填写失败
+2026-02-08 03:53:48,225 - INFO - 开始填写登录表单...
+2026-02-08 03:53:48,284 - INFO - 用户名填写完成
+2026-02-08 03:53:48,345 - INFO - 密码填写完成
+2026-02-08 03:53:48,345 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:48,345 - INFO - 验证码识别尝试 27/30
+2026-02-08 03:53:48,345 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:48,432 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:48,527 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:48,574 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:48,668 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:48,715 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:48,811 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:48,965 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:49,072 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:49,119 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:49,213 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:49,278 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:49,375 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:49,375 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:49,375 - INFO - 查找验证码输入框...
+2026-02-08 03:53:49,382 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:49,382 - WARNING - 验证码填写失败
+2026-02-08 03:53:49,382 - INFO - 开始填写登录表单...
+2026-02-08 03:53:49,441 - INFO - 用户名填写完成
+2026-02-08 03:53:49,504 - INFO - 密码填写完成
+2026-02-08 03:53:49,504 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:49,504 - INFO - 验证码识别尝试 28/30
+2026-02-08 03:53:49,504 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:49,581 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:49,676 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:49,722 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:49,817 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:49,863 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:49,959 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:50,113 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:50,222 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:50,268 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:50,363 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:50,428 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:50,529 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:50,529 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:50,529 - INFO - 查找验证码输入框...
+2026-02-08 03:53:50,536 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:50,536 - WARNING - 验证码填写失败
+2026-02-08 03:53:50,536 - INFO - 开始填写登录表单...
+2026-02-08 03:53:50,595 - INFO - 用户名填写完成
+2026-02-08 03:53:50,654 - INFO - 密码填写完成
+2026-02-08 03:53:50,655 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:50,655 - INFO - 验证码识别尝试 29/30
+2026-02-08 03:53:50,655 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:50,731 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:50,826 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:50,872 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:50,972 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:51,017 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:51,113 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:51,267 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:51,379 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:51,426 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:51,521 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:51,586 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:51,683 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:51,683 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:51,683 - INFO - 查找验证码输入框...
+2026-02-08 03:53:51,690 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:51,690 - WARNING - 验证码填写失败
+2026-02-08 03:53:51,690 - INFO - 开始填写登录表单...
+2026-02-08 03:53:51,750 - INFO - 用户名填写完成
+2026-02-08 03:53:51,809 - INFO - 密码填写完成
+2026-02-08 03:53:51,810 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-08 03:53:51,810 - INFO - 验证码识别尝试 30/30
+2026-02-08 03:53:51,810 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-08 03:53:51,892 - INFO - easyocr 结果: ['ycv4(0.24)']
+2026-02-08 03:53:51,992 - INFO - tesseract 结果: ycu4
+2026-02-08 03:53:52,039 - INFO - easyocr alt1 结果: ['yqU(0.26)']
+2026-02-08 03:53:52,136 - INFO - tesseract alt1 结果: ycud
+2026-02-08 03:53:52,183 - INFO - easyocr alt2 结果: ['YCUN4(0.16)']
+2026-02-08 03:53:52,277 - INFO - tesseract alt2 结果: ycud
+2026-02-08 03:53:52,431 - INFO - easyocr alt3 结果: ['YCWN(0.07)']
+2026-02-08 03:53:52,548 - INFO - tesseract alt3 结果: ycu4
+2026-02-08 03:53:52,599 - INFO - easyocr alt4 结果: ['YGi4(0.11)']
+2026-02-08 03:53:52,697 - INFO - tesseract alt4 结果: ycud
+2026-02-08 03:53:52,762 - INFO - easyocr alt5 结果: ['ycU(0.05)']
+2026-02-08 03:53:52,861 - INFO - tesseract alt5 结果: ycud
+2026-02-08 03:53:52,861 - INFO - 最终验证码识别结果: ycu4 (engine=tesseract, prob=0.5)
+2026-02-08 03:53:52,861 - INFO - 查找验证码输入框...
+2026-02-08 03:53:52,868 - ERROR - 未找到验证码输入框
+2026-02-08 03:53:52,868 - WARNING - 验证码填写失败
+2026-02-08 03:53:52,868 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-08 03:53:52,868 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-08 03:53:52,868 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-08 03:53:52,868 - INFO - 查找并点击登录按钮...
+2026-02-08 03:53:52,876 - ERROR - 未找到登录按钮
+2026-02-08 03:53:52,876 - ERROR - 点击登录按钮失败
+2026-02-08 03:53:52,876 - INFO - 等待登录成功...
+2026-02-08 03:53:57,880 - INFO - 登录可能成功，继续下一步...
+2026-02-08 03:53:57,880 - INFO - 查找'去充值'按钮...
+2026-02-08 03:53:57,889 - ERROR - 未找到'去充值'按钮
+2026-02-08 03:53:57,889 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-08 03:53:57,889 - INFO - 开始提取剩余电量信息...
+2026-02-08 03:53:57,898 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-08 03:53:57,906 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-08 03:53:57,914 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-08 03:53:57,922 - INFO - 在页面源码中查找电量信息...
+2026-02-08 03:53:57,933 - WARNING - 未能提取到剩余电量信息
+2026-02-08 03:53:57,933 - WARNING - 没有电量数据可保存
+2026-02-08 03:53:57,934 - INFO - 监控流程完成
