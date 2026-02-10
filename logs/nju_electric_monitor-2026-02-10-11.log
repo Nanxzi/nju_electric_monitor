@@ -1,0 +1,694 @@
+2026-02-10 03:49:11,115 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-10 03:49:12,651 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-10 03:49:12,651 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-10 03:49:14,154 - INFO - OCR识别器初始化成功
+2026-02-10 03:49:14,154 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-10 03:49:14,154 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-10 03:49:25,989 - INFO - 等待登录表单加载...
+2026-02-10 03:49:25,999 - INFO - 登录表单已加载
+2026-02-10 03:49:25,999 - INFO - 开始填写登录表单...
+2026-02-10 03:49:26,078 - INFO - 用户名填写完成
+2026-02-10 03:49:26,145 - INFO - 密码填写完成
+2026-02-10 03:49:26,145 - INFO - 检查是否有验证码...
+2026-02-10 03:49:26,145 - INFO - 查找验证码图片...
+2026-02-10 03:49:26,165 - INFO - 找到验证码图片，开始截图...
+2026-02-10 03:49:26,415 - INFO - 验证码图片截取成功
+2026-02-10 03:49:26,415 - INFO - 开始填写登录表单...
+2026-02-10 03:49:26,480 - INFO - 用户名填写完成
+2026-02-10 03:49:26,540 - INFO - 密码填写完成
+2026-02-10 03:49:26,556 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:26,556 - INFO - 验证码识别尝试 1/30
+2026-02-10 03:49:26,556 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:27,131 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:28,497 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:28,548 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:28,648 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:28,694 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:28,792 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:28,980 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:29,088 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:29,153 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:29,253 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:29,325 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:29,421 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:29,421 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:29,421 - INFO - 查找验证码输入框...
+2026-02-10 03:49:29,431 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:29,431 - WARNING - 验证码填写失败
+2026-02-10 03:49:29,431 - INFO - 开始填写登录表单...
+2026-02-10 03:49:29,492 - INFO - 用户名填写完成
+2026-02-10 03:49:29,555 - INFO - 密码填写完成
+2026-02-10 03:49:29,556 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:29,556 - INFO - 验证码识别尝试 2/30
+2026-02-10 03:49:29,556 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:29,652 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:29,745 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:29,792 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:29,890 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:29,935 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:30,033 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:30,200 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:30,309 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:30,373 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:30,468 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:30,541 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:30,638 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:30,638 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:30,638 - INFO - 查找验证码输入框...
+2026-02-10 03:49:30,645 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:30,645 - WARNING - 验证码填写失败
+2026-02-10 03:49:30,645 - INFO - 开始填写登录表单...
+2026-02-10 03:49:30,707 - INFO - 用户名填写完成
+2026-02-10 03:49:30,769 - INFO - 密码填写完成
+2026-02-10 03:49:30,770 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:30,770 - INFO - 验证码识别尝试 3/30
+2026-02-10 03:49:30,770 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:30,865 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:30,961 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:31,007 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:31,106 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:31,153 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:31,253 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:31,419 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:31,529 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:31,593 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:31,690 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:31,755 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:31,851 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:31,851 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:31,851 - INFO - 查找验证码输入框...
+2026-02-10 03:49:31,857 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:31,858 - WARNING - 验证码填写失败
+2026-02-10 03:49:31,858 - INFO - 开始填写登录表单...
+2026-02-10 03:49:31,919 - INFO - 用户名填写完成
+2026-02-10 03:49:31,988 - INFO - 密码填写完成
+2026-02-10 03:49:31,988 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:31,989 - INFO - 验证码识别尝试 4/30
+2026-02-10 03:49:31,989 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:32,084 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:32,179 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:32,228 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:32,327 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:32,380 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:32,480 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:32,647 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:32,754 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:32,818 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:32,913 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:32,977 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:33,073 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:33,073 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:33,073 - INFO - 查找验证码输入框...
+2026-02-10 03:49:33,080 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:33,080 - WARNING - 验证码填写失败
+2026-02-10 03:49:33,080 - INFO - 开始填写登录表单...
+2026-02-10 03:49:33,141 - INFO - 用户名填写完成
+2026-02-10 03:49:33,202 - INFO - 密码填写完成
+2026-02-10 03:49:33,203 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:33,203 - INFO - 验证码识别尝试 5/30
+2026-02-10 03:49:33,203 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:33,316 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:33,418 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:33,465 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:33,561 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:33,607 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:33,702 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:33,869 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:33,977 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:34,041 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:34,137 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:34,201 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:34,301 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:34,301 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:34,301 - INFO - 查找验证码输入框...
+2026-02-10 03:49:34,308 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:34,308 - WARNING - 验证码填写失败
+2026-02-10 03:49:34,308 - INFO - 开始填写登录表单...
+2026-02-10 03:49:34,370 - INFO - 用户名填写完成
+2026-02-10 03:49:34,433 - INFO - 密码填写完成
+2026-02-10 03:49:34,434 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:34,434 - INFO - 验证码识别尝试 6/30
+2026-02-10 03:49:34,434 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:34,528 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:34,624 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:34,671 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:34,767 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:34,813 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:34,909 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:35,074 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:35,183 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:35,248 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:35,344 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:35,408 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:35,506 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:35,506 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:35,507 - INFO - 查找验证码输入框...
+2026-02-10 03:49:35,513 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:35,513 - WARNING - 验证码填写失败
+2026-02-10 03:49:35,513 - INFO - 开始填写登录表单...
+2026-02-10 03:49:35,575 - INFO - 用户名填写完成
+2026-02-10 03:49:35,637 - INFO - 密码填写完成
+2026-02-10 03:49:35,638 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:35,638 - INFO - 验证码识别尝试 7/30
+2026-02-10 03:49:35,638 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:35,734 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:35,832 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:35,879 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:35,976 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:36,021 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:36,119 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:36,284 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:36,395 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:36,459 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:36,555 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:36,619 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:36,716 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:36,716 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:36,716 - INFO - 查找验证码输入框...
+2026-02-10 03:49:36,723 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:36,723 - WARNING - 验证码填写失败
+2026-02-10 03:49:36,723 - INFO - 开始填写登录表单...
+2026-02-10 03:49:36,783 - INFO - 用户名填写完成
+2026-02-10 03:49:36,844 - INFO - 密码填写完成
+2026-02-10 03:49:36,844 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:36,844 - INFO - 验证码识别尝试 8/30
+2026-02-10 03:49:36,845 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:36,941 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:37,036 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:37,082 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:37,178 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:37,223 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:37,319 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:37,484 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:37,589 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:37,653 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:37,751 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:37,816 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:37,913 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:37,913 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:37,914 - INFO - 查找验证码输入框...
+2026-02-10 03:49:37,920 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:37,920 - WARNING - 验证码填写失败
+2026-02-10 03:49:37,920 - INFO - 开始填写登录表单...
+2026-02-10 03:49:37,981 - INFO - 用户名填写完成
+2026-02-10 03:49:38,041 - INFO - 密码填写完成
+2026-02-10 03:49:38,042 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:38,042 - INFO - 验证码识别尝试 9/30
+2026-02-10 03:49:38,042 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:38,138 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:38,235 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:38,283 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:38,400 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:38,446 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:38,542 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:38,706 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:38,812 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:38,876 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:38,974 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:39,039 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:39,141 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:39,141 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:39,141 - INFO - 查找验证码输入框...
+2026-02-10 03:49:39,148 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:39,148 - WARNING - 验证码填写失败
+2026-02-10 03:49:39,148 - INFO - 开始填写登录表单...
+2026-02-10 03:49:39,208 - INFO - 用户名填写完成
+2026-02-10 03:49:39,270 - INFO - 密码填写完成
+2026-02-10 03:49:39,271 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:39,271 - INFO - 验证码识别尝试 10/30
+2026-02-10 03:49:39,271 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:39,375 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:39,472 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:39,518 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:39,614 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:39,660 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:39,759 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:39,923 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:40,028 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:40,092 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:40,190 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:40,254 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:40,350 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:40,351 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:40,351 - INFO - 查找验证码输入框...
+2026-02-10 03:49:40,357 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:40,357 - WARNING - 验证码填写失败
+2026-02-10 03:49:40,357 - INFO - 开始填写登录表单...
+2026-02-10 03:49:40,418 - INFO - 用户名填写完成
+2026-02-10 03:49:40,484 - INFO - 密码填写完成
+2026-02-10 03:49:40,485 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:40,485 - INFO - 验证码识别尝试 11/30
+2026-02-10 03:49:40,485 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:40,590 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:40,689 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:40,736 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:40,837 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:40,883 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:40,980 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:41,145 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:41,253 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:41,316 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:41,416 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:41,480 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:41,576 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:41,576 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:41,577 - INFO - 查找验证码输入框...
+2026-02-10 03:49:41,583 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:41,583 - WARNING - 验证码填写失败
+2026-02-10 03:49:41,584 - INFO - 开始填写登录表单...
+2026-02-10 03:49:41,644 - INFO - 用户名填写完成
+2026-02-10 03:49:41,706 - INFO - 密码填写完成
+2026-02-10 03:49:41,707 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:41,707 - INFO - 验证码识别尝试 12/30
+2026-02-10 03:49:41,707 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:41,811 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:41,907 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:41,953 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:42,047 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:42,106 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:42,201 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:42,368 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:42,477 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:42,540 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:42,641 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:42,706 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:42,802 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:42,802 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:42,802 - INFO - 查找验证码输入框...
+2026-02-10 03:49:42,808 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:42,808 - WARNING - 验证码填写失败
+2026-02-10 03:49:42,808 - INFO - 开始填写登录表单...
+2026-02-10 03:49:42,869 - INFO - 用户名填写完成
+2026-02-10 03:49:42,930 - INFO - 密码填写完成
+2026-02-10 03:49:42,930 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:42,930 - INFO - 验证码识别尝试 13/30
+2026-02-10 03:49:42,931 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:43,024 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:43,123 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:43,177 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:43,273 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:43,318 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:43,416 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:43,584 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:43,690 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:43,753 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:43,854 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:43,918 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:44,013 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:44,013 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:44,013 - INFO - 查找验证码输入框...
+2026-02-10 03:49:44,020 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:44,020 - WARNING - 验证码填写失败
+2026-02-10 03:49:44,020 - INFO - 开始填写登录表单...
+2026-02-10 03:49:44,081 - INFO - 用户名填写完成
+2026-02-10 03:49:44,141 - INFO - 密码填写完成
+2026-02-10 03:49:44,142 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:44,142 - INFO - 验证码识别尝试 14/30
+2026-02-10 03:49:44,142 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:44,236 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:44,333 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:44,379 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:44,474 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:44,519 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:44,613 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:44,780 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:44,887 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:44,950 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:45,049 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:45,113 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:45,210 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:45,210 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:45,210 - INFO - 查找验证码输入框...
+2026-02-10 03:49:45,216 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:45,216 - WARNING - 验证码填写失败
+2026-02-10 03:49:45,216 - INFO - 开始填写登录表单...
+2026-02-10 03:49:45,277 - INFO - 用户名填写完成
+2026-02-10 03:49:45,338 - INFO - 密码填写完成
+2026-02-10 03:49:45,339 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:45,339 - INFO - 验证码识别尝试 15/30
+2026-02-10 03:49:45,339 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:45,433 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:45,529 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:45,575 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:45,673 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:45,720 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:45,814 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:45,979 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:46,088 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:46,152 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:46,248 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:46,311 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:46,410 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:46,410 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:46,410 - INFO - 查找验证码输入框...
+2026-02-10 03:49:46,417 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:46,417 - WARNING - 验证码填写失败
+2026-02-10 03:49:46,417 - INFO - 开始填写登录表单...
+2026-02-10 03:49:46,477 - INFO - 用户名填写完成
+2026-02-10 03:49:46,538 - INFO - 密码填写完成
+2026-02-10 03:49:46,539 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:46,539 - INFO - 验证码识别尝试 16/30
+2026-02-10 03:49:46,539 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:46,642 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:46,741 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:46,787 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:46,884 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:46,930 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:47,029 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:47,194 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:47,299 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:47,363 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:47,464 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:47,528 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:47,625 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:47,625 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:47,626 - INFO - 查找验证码输入框...
+2026-02-10 03:49:47,632 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:47,633 - WARNING - 验证码填写失败
+2026-02-10 03:49:47,633 - INFO - 开始填写登录表单...
+2026-02-10 03:49:47,694 - INFO - 用户名填写完成
+2026-02-10 03:49:47,758 - INFO - 密码填写完成
+2026-02-10 03:49:47,758 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:47,758 - INFO - 验证码识别尝试 17/30
+2026-02-10 03:49:47,759 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:47,855 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:47,951 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:47,998 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:48,094 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:48,139 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:48,233 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:48,399 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:48,512 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:48,575 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:48,672 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:48,735 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:48,831 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:48,831 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:48,831 - INFO - 查找验证码输入框...
+2026-02-10 03:49:48,838 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:48,838 - WARNING - 验证码填写失败
+2026-02-10 03:49:48,838 - INFO - 开始填写登录表单...
+2026-02-10 03:49:48,898 - INFO - 用户名填写完成
+2026-02-10 03:49:48,959 - INFO - 密码填写完成
+2026-02-10 03:49:48,960 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:48,960 - INFO - 验证码识别尝试 18/30
+2026-02-10 03:49:48,960 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:49,055 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:49,153 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:49,199 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:49,295 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:49,340 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:49,438 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:49,619 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:49,726 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:49,790 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:49,886 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:49,950 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:50,050 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:50,050 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:50,050 - INFO - 查找验证码输入框...
+2026-02-10 03:49:50,057 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:50,057 - WARNING - 验证码填写失败
+2026-02-10 03:49:50,057 - INFO - 开始填写登录表单...
+2026-02-10 03:49:50,118 - INFO - 用户名填写完成
+2026-02-10 03:49:50,181 - INFO - 密码填写完成
+2026-02-10 03:49:50,182 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:50,182 - INFO - 验证码识别尝试 19/30
+2026-02-10 03:49:50,182 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:50,276 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:50,371 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:50,418 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:50,515 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:50,561 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:50,657 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:50,824 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:50,931 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:50,995 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:51,090 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:51,156 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:51,252 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:51,252 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:51,252 - INFO - 查找验证码输入框...
+2026-02-10 03:49:51,259 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:51,259 - WARNING - 验证码填写失败
+2026-02-10 03:49:51,259 - INFO - 开始填写登录表单...
+2026-02-10 03:49:51,322 - INFO - 用户名填写完成
+2026-02-10 03:49:51,385 - INFO - 密码填写完成
+2026-02-10 03:49:51,386 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:51,386 - INFO - 验证码识别尝试 20/30
+2026-02-10 03:49:51,386 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:51,481 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:51,580 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:51,627 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:51,728 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:51,774 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:51,869 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:52,033 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:52,145 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:52,208 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:52,304 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:52,370 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:52,467 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:52,467 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:52,467 - INFO - 查找验证码输入框...
+2026-02-10 03:49:52,474 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:52,474 - WARNING - 验证码填写失败
+2026-02-10 03:49:52,474 - INFO - 开始填写登录表单...
+2026-02-10 03:49:52,536 - INFO - 用户名填写完成
+2026-02-10 03:49:52,598 - INFO - 密码填写完成
+2026-02-10 03:49:52,599 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:52,599 - INFO - 验证码识别尝试 21/30
+2026-02-10 03:49:52,599 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:52,693 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:52,788 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:52,834 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:52,932 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:52,978 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:53,072 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:53,245 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:53,355 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:53,419 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:53,513 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:53,578 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:53,676 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:53,676 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:53,677 - INFO - 查找验证码输入框...
+2026-02-10 03:49:53,683 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:53,683 - WARNING - 验证码填写失败
+2026-02-10 03:49:53,683 - INFO - 开始填写登录表单...
+2026-02-10 03:49:53,745 - INFO - 用户名填写完成
+2026-02-10 03:49:53,806 - INFO - 密码填写完成
+2026-02-10 03:49:53,806 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:53,807 - INFO - 验证码识别尝试 22/30
+2026-02-10 03:49:53,807 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:53,902 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:53,999 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:54,046 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:54,142 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:54,197 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:54,292 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:54,459 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:54,565 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:54,629 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:54,725 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:54,790 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:54,887 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:54,887 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:54,888 - INFO - 查找验证码输入框...
+2026-02-10 03:49:54,894 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:54,894 - WARNING - 验证码填写失败
+2026-02-10 03:49:54,894 - INFO - 开始填写登录表单...
+2026-02-10 03:49:54,955 - INFO - 用户名填写完成
+2026-02-10 03:49:55,018 - INFO - 密码填写完成
+2026-02-10 03:49:55,018 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:55,018 - INFO - 验证码识别尝试 23/30
+2026-02-10 03:49:55,018 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:55,113 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:55,211 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:55,257 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:55,353 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:55,398 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:55,493 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:55,658 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:55,768 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:55,832 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:55,930 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:55,995 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:56,093 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:56,093 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:56,093 - INFO - 查找验证码输入框...
+2026-02-10 03:49:56,100 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:56,100 - WARNING - 验证码填写失败
+2026-02-10 03:49:56,100 - INFO - 开始填写登录表单...
+2026-02-10 03:49:56,164 - INFO - 用户名填写完成
+2026-02-10 03:49:56,224 - INFO - 密码填写完成
+2026-02-10 03:49:56,225 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:56,225 - INFO - 验证码识别尝试 24/30
+2026-02-10 03:49:56,225 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:56,319 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:56,419 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:56,467 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:56,567 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:56,613 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:56,710 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:56,877 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:56,984 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:57,048 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:57,152 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:57,216 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:57,318 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:57,318 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:57,318 - INFO - 查找验证码输入框...
+2026-02-10 03:49:57,325 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:57,325 - WARNING - 验证码填写失败
+2026-02-10 03:49:57,325 - INFO - 开始填写登录表单...
+2026-02-10 03:49:57,386 - INFO - 用户名填写完成
+2026-02-10 03:49:57,447 - INFO - 密码填写完成
+2026-02-10 03:49:57,448 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:57,448 - INFO - 验证码识别尝试 25/30
+2026-02-10 03:49:57,448 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:57,554 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:57,650 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:57,697 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:57,795 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:57,841 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:57,935 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:58,102 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:58,210 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:58,274 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:58,370 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:58,435 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:58,532 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:58,532 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:58,532 - INFO - 查找验证码输入框...
+2026-02-10 03:49:58,539 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:58,539 - WARNING - 验证码填写失败
+2026-02-10 03:49:58,539 - INFO - 开始填写登录表单...
+2026-02-10 03:49:58,599 - INFO - 用户名填写完成
+2026-02-10 03:49:58,659 - INFO - 密码填写完成
+2026-02-10 03:49:58,660 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:58,660 - INFO - 验证码识别尝试 26/30
+2026-02-10 03:49:58,660 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:58,755 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:49:58,851 - INFO - tesseract 结果: CTUP
+2026-02-10 03:49:58,898 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:49:58,996 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:49:59,042 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:49:59,136 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:49:59,300 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:49:59,411 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:49:59,475 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:49:59,572 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:49:59,636 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:49:59,732 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:49:59,733 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:49:59,733 - INFO - 查找验证码输入框...
+2026-02-10 03:49:59,739 - ERROR - 未找到验证码输入框
+2026-02-10 03:49:59,739 - WARNING - 验证码填写失败
+2026-02-10 03:49:59,740 - INFO - 开始填写登录表单...
+2026-02-10 03:49:59,801 - INFO - 用户名填写完成
+2026-02-10 03:49:59,862 - INFO - 密码填写完成
+2026-02-10 03:49:59,863 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:49:59,863 - INFO - 验证码识别尝试 27/30
+2026-02-10 03:49:59,863 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:49:59,956 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:50:00,057 - INFO - tesseract 结果: CTUP
+2026-02-10 03:50:00,104 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:50:00,203 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:50:00,248 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:50:00,346 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:50:00,511 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:50:00,618 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:50:00,683 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:50:00,779 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:50:00,842 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:50:00,939 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:50:00,940 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:50:00,940 - INFO - 查找验证码输入框...
+2026-02-10 03:50:00,946 - ERROR - 未找到验证码输入框
+2026-02-10 03:50:00,946 - WARNING - 验证码填写失败
+2026-02-10 03:50:00,946 - INFO - 开始填写登录表单...
+2026-02-10 03:50:01,007 - INFO - 用户名填写完成
+2026-02-10 03:50:01,069 - INFO - 密码填写完成
+2026-02-10 03:50:01,069 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:50:01,069 - INFO - 验证码识别尝试 28/30
+2026-02-10 03:50:01,069 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:50:01,163 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:50:01,261 - INFO - tesseract 结果: CTUP
+2026-02-10 03:50:01,307 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:50:01,405 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:50:01,451 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:50:01,547 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:50:01,711 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:50:01,818 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:50:01,882 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:50:01,979 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:50:02,043 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:50:02,143 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:50:02,144 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:50:02,144 - INFO - 查找验证码输入框...
+2026-02-10 03:50:02,150 - ERROR - 未找到验证码输入框
+2026-02-10 03:50:02,150 - WARNING - 验证码填写失败
+2026-02-10 03:50:02,150 - INFO - 开始填写登录表单...
+2026-02-10 03:50:02,211 - INFO - 用户名填写完成
+2026-02-10 03:50:02,272 - INFO - 密码填写完成
+2026-02-10 03:50:02,273 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:50:02,273 - INFO - 验证码识别尝试 29/30
+2026-02-10 03:50:02,273 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:50:02,368 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:50:02,483 - INFO - tesseract 结果: CTUP
+2026-02-10 03:50:02,529 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:50:02,627 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:50:02,672 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:50:02,767 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:50:02,931 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:50:03,040 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:50:03,114 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:50:03,210 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:50:03,275 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:50:03,373 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:50:03,374 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:50:03,374 - INFO - 查找验证码输入框...
+2026-02-10 03:50:03,380 - ERROR - 未找到验证码输入框
+2026-02-10 03:50:03,380 - WARNING - 验证码填写失败
+2026-02-10 03:50:03,380 - INFO - 开始填写登录表单...
+2026-02-10 03:50:03,441 - INFO - 用户名填写完成
+2026-02-10 03:50:03,504 - INFO - 密码填写完成
+2026-02-10 03:50:03,504 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 03:50:03,504 - INFO - 验证码识别尝试 30/30
+2026-02-10 03:50:03,505 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 03:50:03,599 - INFO - easyocr 结果: ['CW(0.01)']
+2026-02-10 03:50:03,694 - INFO - tesseract 结果: CTUP
+2026-02-10 03:50:03,740 - INFO - easyocr alt1 结果: ['C(0.22)']
+2026-02-10 03:50:03,841 - INFO - tesseract alt1 结果: CEUP
+2026-02-10 03:50:03,887 - INFO - easyocr alt2 结果: ['C(0.24)']
+2026-02-10 03:50:03,982 - INFO - tesseract alt2 结果: CEUP
+2026-02-10 03:50:04,148 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 03:50:04,253 - INFO - tesseract alt3 结果: CEUP
+2026-02-10 03:50:04,317 - INFO - easyocr alt4 结果: ['Cr(0.03)']
+2026-02-10 03:50:04,412 - INFO - tesseract alt4 结果: CEUP
+2026-02-10 03:50:04,477 - INFO - easyocr alt5 结果: ['(0.01)']
+2026-02-10 03:50:04,573 - INFO - tesseract alt5 结果: CEUP
+2026-02-10 03:50:04,573 - INFO - 最终验证码识别结果: CTUP (engine=tesseract, prob=0.5)
+2026-02-10 03:50:04,573 - INFO - 查找验证码输入框...
+2026-02-10 03:50:04,579 - ERROR - 未找到验证码输入框
+2026-02-10 03:50:04,580 - WARNING - 验证码填写失败
+2026-02-10 03:50:04,580 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-10 03:50:04,580 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-10 03:50:04,580 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-10 03:50:04,580 - INFO - 查找并点击登录按钮...
+2026-02-10 03:50:04,588 - ERROR - 未找到登录按钮
+2026-02-10 03:50:04,588 - ERROR - 点击登录按钮失败
+2026-02-10 03:50:04,588 - INFO - 等待登录成功...
+2026-02-10 03:50:09,593 - INFO - 登录可能成功，继续下一步...
+2026-02-10 03:50:09,593 - INFO - 查找'去充值'按钮...
+2026-02-10 03:50:09,602 - ERROR - 未找到'去充值'按钮
+2026-02-10 03:50:09,602 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-10 03:50:09,602 - INFO - 开始提取剩余电量信息...
+2026-02-10 03:50:09,610 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-10 03:50:09,619 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-10 03:50:09,628 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-10 03:50:09,636 - INFO - 在页面源码中查找电量信息...
+2026-02-10 03:50:09,648 - WARNING - 未能提取到剩余电量信息
+2026-02-10 03:50:09,648 - WARNING - 没有电量数据可保存
+2026-02-10 03:50:09,648 - INFO - 监控流程完成
