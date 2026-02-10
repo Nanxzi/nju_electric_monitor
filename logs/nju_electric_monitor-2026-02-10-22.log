@@ -1,0 +1,694 @@
+2026-02-10 14:20:10,635 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-10 14:20:12,024 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-10 14:20:12,024 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-10 14:20:13,666 - INFO - OCR识别器初始化成功
+2026-02-10 14:20:13,667 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-10 14:20:13,667 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-10 14:21:03,555 - INFO - 等待登录表单加载...
+2026-02-10 14:21:03,565 - INFO - 登录表单已加载
+2026-02-10 14:21:03,565 - INFO - 开始填写登录表单...
+2026-02-10 14:21:03,646 - INFO - 用户名填写完成
+2026-02-10 14:21:03,710 - INFO - 密码填写完成
+2026-02-10 14:21:03,710 - INFO - 检查是否有验证码...
+2026-02-10 14:21:03,710 - INFO - 查找验证码图片...
+2026-02-10 14:21:03,731 - INFO - 找到验证码图片，开始截图...
+2026-02-10 14:21:03,773 - INFO - 验证码图片截取成功
+2026-02-10 14:21:03,773 - INFO - 开始填写登录表单...
+2026-02-10 14:21:03,836 - INFO - 用户名填写完成
+2026-02-10 14:21:03,895 - INFO - 密码填写完成
+2026-02-10 14:21:03,896 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:03,896 - INFO - 验证码识别尝试 1/30
+2026-02-10 14:21:03,896 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:04,033 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:04,255 - INFO - tesseract 结果: 
+2026-02-10 14:21:04,292 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:04,390 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:04,470 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:04,559 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:04,718 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:04,827 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:04,890 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:04,982 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:05,050 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:05,144 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:05,144 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:05,144 - INFO - 查找验证码输入框...
+2026-02-10 14:21:05,153 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:05,153 - WARNING - 验证码填写失败
+2026-02-10 14:21:05,153 - INFO - 开始填写登录表单...
+2026-02-10 14:21:05,211 - INFO - 用户名填写完成
+2026-02-10 14:21:05,274 - INFO - 密码填写完成
+2026-02-10 14:21:05,274 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:05,275 - INFO - 验证码识别尝试 2/30
+2026-02-10 14:21:05,275 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:05,369 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:05,444 - INFO - tesseract 结果: 
+2026-02-10 14:21:05,473 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:05,566 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:05,641 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:05,734 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:05,875 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:05,982 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:06,046 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:06,137 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:06,193 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:06,286 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:06,286 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:06,287 - INFO - 查找验证码输入框...
+2026-02-10 14:21:06,293 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:06,293 - WARNING - 验证码填写失败
+2026-02-10 14:21:06,293 - INFO - 开始填写登录表单...
+2026-02-10 14:21:06,352 - INFO - 用户名填写完成
+2026-02-10 14:21:06,411 - INFO - 密码填写完成
+2026-02-10 14:21:06,412 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:06,412 - INFO - 验证码识别尝试 3/30
+2026-02-10 14:21:06,412 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:06,506 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:06,581 - INFO - tesseract 结果: 
+2026-02-10 14:21:06,610 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:06,703 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:06,774 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:06,879 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:07,023 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:07,130 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:07,196 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:07,289 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:07,345 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:07,437 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:07,437 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:07,437 - INFO - 查找验证码输入框...
+2026-02-10 14:21:07,444 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:07,444 - WARNING - 验证码填写失败
+2026-02-10 14:21:07,444 - INFO - 开始填写登录表单...
+2026-02-10 14:21:07,504 - INFO - 用户名填写完成
+2026-02-10 14:21:07,562 - INFO - 密码填写完成
+2026-02-10 14:21:07,562 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:07,562 - INFO - 验证码识别尝试 4/30
+2026-02-10 14:21:07,562 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:07,661 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:07,737 - INFO - tesseract 结果: 
+2026-02-10 14:21:07,767 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:07,860 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:07,933 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:08,026 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:08,169 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:08,277 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:08,343 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:08,435 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:08,491 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:08,585 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:08,585 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:08,585 - INFO - 查找验证码输入框...
+2026-02-10 14:21:08,592 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:08,592 - WARNING - 验证码填写失败
+2026-02-10 14:21:08,592 - INFO - 开始填写登录表单...
+2026-02-10 14:21:08,652 - INFO - 用户名填写完成
+2026-02-10 14:21:08,710 - INFO - 密码填写完成
+2026-02-10 14:21:08,711 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:08,711 - INFO - 验证码识别尝试 5/30
+2026-02-10 14:21:08,711 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:08,802 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:08,879 - INFO - tesseract 结果: 
+2026-02-10 14:21:08,915 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:09,007 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:09,082 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:09,171 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:09,311 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:09,420 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:09,490 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:09,586 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:09,642 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:09,739 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:09,739 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:09,739 - INFO - 查找验证码输入框...
+2026-02-10 14:21:09,746 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:09,746 - WARNING - 验证码填写失败
+2026-02-10 14:21:09,746 - INFO - 开始填写登录表单...
+2026-02-10 14:21:09,807 - INFO - 用户名填写完成
+2026-02-10 14:21:09,870 - INFO - 密码填写完成
+2026-02-10 14:21:09,871 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:09,871 - INFO - 验证码识别尝试 6/30
+2026-02-10 14:21:09,871 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:09,965 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:10,043 - INFO - tesseract 结果: 
+2026-02-10 14:21:10,071 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:10,164 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:10,240 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:10,337 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:10,474 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:10,584 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:10,646 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:10,739 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:10,793 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:10,885 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:10,885 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:10,885 - INFO - 查找验证码输入框...
+2026-02-10 14:21:10,891 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:10,891 - WARNING - 验证码填写失败
+2026-02-10 14:21:10,891 - INFO - 开始填写登录表单...
+2026-02-10 14:21:10,951 - INFO - 用户名填写完成
+2026-02-10 14:21:11,009 - INFO - 密码填写完成
+2026-02-10 14:21:11,009 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:11,009 - INFO - 验证码识别尝试 7/30
+2026-02-10 14:21:11,009 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:11,100 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:11,176 - INFO - tesseract 结果: 
+2026-02-10 14:21:11,204 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:11,296 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:11,371 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:11,463 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:11,602 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:11,710 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:11,785 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:11,877 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:11,931 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:12,207 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:12,207 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:12,207 - INFO - 查找验证码输入框...
+2026-02-10 14:21:12,214 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:12,214 - WARNING - 验证码填写失败
+2026-02-10 14:21:12,214 - INFO - 开始填写登录表单...
+2026-02-10 14:21:12,276 - INFO - 用户名填写完成
+2026-02-10 14:21:12,337 - INFO - 密码填写完成
+2026-02-10 14:21:12,337 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:12,337 - INFO - 验证码识别尝试 8/30
+2026-02-10 14:21:12,338 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:12,433 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:12,512 - INFO - tesseract 结果: 
+2026-02-10 14:21:12,540 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:12,633 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:12,709 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:13,041 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:13,194 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:13,299 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:13,364 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:13,459 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:13,513 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:13,604 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:13,605 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:13,605 - INFO - 查找验证码输入框...
+2026-02-10 14:21:13,611 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:13,611 - WARNING - 验证码填写失败
+2026-02-10 14:21:13,611 - INFO - 开始填写登录表单...
+2026-02-10 14:21:13,670 - INFO - 用户名填写完成
+2026-02-10 14:21:13,729 - INFO - 密码填写完成
+2026-02-10 14:21:13,729 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:13,729 - INFO - 验证码识别尝试 9/30
+2026-02-10 14:21:13,729 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:13,827 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:13,903 - INFO - tesseract 结果: 
+2026-02-10 14:21:13,938 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:14,035 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:14,115 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:14,206 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:14,343 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:14,462 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:14,531 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:14,625 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:14,679 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:14,771 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:14,771 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:14,771 - INFO - 查找验证码输入框...
+2026-02-10 14:21:14,777 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:14,778 - WARNING - 验证码填写失败
+2026-02-10 14:21:14,778 - INFO - 开始填写登录表单...
+2026-02-10 14:21:14,837 - INFO - 用户名填写完成
+2026-02-10 14:21:14,896 - INFO - 密码填写完成
+2026-02-10 14:21:14,896 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:14,897 - INFO - 验证码识别尝试 10/30
+2026-02-10 14:21:14,897 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:14,986 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:15,065 - INFO - tesseract 结果: 
+2026-02-10 14:21:15,093 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:15,185 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:15,265 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:15,357 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:15,498 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:15,605 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:15,668 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:15,761 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:15,815 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:15,908 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:15,908 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:15,908 - INFO - 查找验证码输入框...
+2026-02-10 14:21:15,915 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:15,915 - WARNING - 验证码填写失败
+2026-02-10 14:21:15,915 - INFO - 开始填写登录表单...
+2026-02-10 14:21:15,981 - INFO - 用户名填写完成
+2026-02-10 14:21:16,040 - INFO - 密码填写完成
+2026-02-10 14:21:16,041 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:16,041 - INFO - 验证码识别尝试 11/30
+2026-02-10 14:21:16,041 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:16,156 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:16,233 - INFO - tesseract 结果: 
+2026-02-10 14:21:16,262 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:16,357 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:16,442 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:16,533 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:16,673 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:16,784 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:16,847 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:16,940 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:16,994 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:17,086 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:17,086 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:17,086 - INFO - 查找验证码输入框...
+2026-02-10 14:21:17,092 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:17,092 - WARNING - 验证码填写失败
+2026-02-10 14:21:17,092 - INFO - 开始填写登录表单...
+2026-02-10 14:21:17,151 - INFO - 用户名填写完成
+2026-02-10 14:21:17,210 - INFO - 密码填写完成
+2026-02-10 14:21:17,211 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:17,211 - INFO - 验证码识别尝试 12/30
+2026-02-10 14:21:17,211 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:17,301 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:17,380 - INFO - tesseract 结果: 
+2026-02-10 14:21:17,408 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:17,501 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:17,602 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:17,694 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:17,857 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:17,964 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:18,027 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:18,119 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:18,171 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:18,264 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:18,264 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:18,264 - INFO - 查找验证码输入框...
+2026-02-10 14:21:18,271 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:18,271 - WARNING - 验证码填写失败
+2026-02-10 14:21:18,271 - INFO - 开始填写登录表单...
+2026-02-10 14:21:18,335 - INFO - 用户名填写完成
+2026-02-10 14:21:18,394 - INFO - 密码填写完成
+2026-02-10 14:21:18,395 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:18,395 - INFO - 验证码识别尝试 13/30
+2026-02-10 14:21:18,395 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:18,485 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:18,561 - INFO - tesseract 结果: 
+2026-02-10 14:21:18,589 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:18,683 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:18,755 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:18,847 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:18,983 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:19,091 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:19,157 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:19,262 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:19,321 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:19,418 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:19,418 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:19,418 - INFO - 查找验证码输入框...
+2026-02-10 14:21:19,427 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:19,427 - WARNING - 验证码填写失败
+2026-02-10 14:21:19,427 - INFO - 开始填写登录表单...
+2026-02-10 14:21:19,487 - INFO - 用户名填写完成
+2026-02-10 14:21:19,547 - INFO - 密码填写完成
+2026-02-10 14:21:19,548 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:19,548 - INFO - 验证码识别尝试 14/30
+2026-02-10 14:21:19,548 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:19,655 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:19,737 - INFO - tesseract 结果: 
+2026-02-10 14:21:19,766 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:19,859 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:19,932 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:20,024 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:20,172 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:20,283 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:20,347 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:20,440 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:20,498 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:21,086 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:21,086 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:21,086 - INFO - 查找验证码输入框...
+2026-02-10 14:21:21,093 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:21,093 - WARNING - 验证码填写失败
+2026-02-10 14:21:21,093 - INFO - 开始填写登录表单...
+2026-02-10 14:21:21,152 - INFO - 用户名填写完成
+2026-02-10 14:21:21,210 - INFO - 密码填写完成
+2026-02-10 14:21:21,211 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:21,211 - INFO - 验证码识别尝试 15/30
+2026-02-10 14:21:21,211 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:21,302 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:21,380 - INFO - tesseract 结果: 
+2026-02-10 14:21:21,416 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:21,508 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:21,580 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:21,676 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:21,814 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:21,921 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:21,985 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:22,083 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:22,143 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:22,235 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:22,235 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:22,235 - INFO - 查找验证码输入框...
+2026-02-10 14:21:22,242 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:22,242 - WARNING - 验证码填写失败
+2026-02-10 14:21:22,242 - INFO - 开始填写登录表单...
+2026-02-10 14:21:22,301 - INFO - 用户名填写完成
+2026-02-10 14:21:22,359 - INFO - 密码填写完成
+2026-02-10 14:21:22,359 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:22,359 - INFO - 验证码识别尝试 16/30
+2026-02-10 14:21:22,359 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:22,452 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:22,531 - INFO - tesseract 结果: 
+2026-02-10 14:21:22,559 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:22,650 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:22,723 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:22,814 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:22,951 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:23,060 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:23,133 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:23,225 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:23,279 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:23,372 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:23,372 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:23,372 - INFO - 查找验证码输入框...
+2026-02-10 14:21:23,379 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:23,379 - WARNING - 验证码填写失败
+2026-02-10 14:21:23,379 - INFO - 开始填写登录表单...
+2026-02-10 14:21:23,437 - INFO - 用户名填写完成
+2026-02-10 14:21:23,497 - INFO - 密码填写完成
+2026-02-10 14:21:23,497 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:23,497 - INFO - 验证码识别尝试 17/30
+2026-02-10 14:21:23,497 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:23,589 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:23,665 - INFO - tesseract 结果: 
+2026-02-10 14:21:23,691 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:23,785 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:23,859 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:23,951 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:24,092 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:24,203 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:24,267 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:24,361 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:24,414 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:24,507 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:24,507 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:24,507 - INFO - 查找验证码输入框...
+2026-02-10 14:21:24,514 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:24,514 - WARNING - 验证码填写失败
+2026-02-10 14:21:24,514 - INFO - 开始填写登录表单...
+2026-02-10 14:21:24,573 - INFO - 用户名填写完成
+2026-02-10 14:21:24,634 - INFO - 密码填写完成
+2026-02-10 14:21:24,634 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:24,635 - INFO - 验证码识别尝试 18/30
+2026-02-10 14:21:24,635 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:24,733 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:24,809 - INFO - tesseract 结果: 
+2026-02-10 14:21:24,836 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:24,928 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:24,999 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:25,090 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:25,226 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:25,332 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:25,396 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:25,488 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:25,544 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:25,637 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:25,637 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:25,637 - INFO - 查找验证码输入框...
+2026-02-10 14:21:25,643 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:25,644 - WARNING - 验证码填写失败
+2026-02-10 14:21:25,644 - INFO - 开始填写登录表单...
+2026-02-10 14:21:25,704 - INFO - 用户名填写完成
+2026-02-10 14:21:25,764 - INFO - 密码填写完成
+2026-02-10 14:21:25,764 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:25,764 - INFO - 验证码识别尝试 19/30
+2026-02-10 14:21:25,764 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:25,860 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:25,937 - INFO - tesseract 结果: 
+2026-02-10 14:21:25,966 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:26,059 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:26,133 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:26,224 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:26,364 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:26,472 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:26,544 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:26,638 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:26,692 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:26,786 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:26,787 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:26,787 - INFO - 查找验证码输入框...
+2026-02-10 14:21:26,793 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:26,793 - WARNING - 验证码填写失败
+2026-02-10 14:21:26,793 - INFO - 开始填写登录表单...
+2026-02-10 14:21:26,852 - INFO - 用户名填写完成
+2026-02-10 14:21:26,910 - INFO - 密码填写完成
+2026-02-10 14:21:26,911 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:26,911 - INFO - 验证码识别尝试 20/30
+2026-02-10 14:21:26,911 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:27,004 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:27,081 - INFO - tesseract 结果: 
+2026-02-10 14:21:27,108 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:27,200 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:27,276 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:27,366 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:27,505 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:27,611 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:27,675 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:27,776 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:27,829 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:27,923 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:27,923 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:27,923 - INFO - 查找验证码输入框...
+2026-02-10 14:21:27,929 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:27,929 - WARNING - 验证码填写失败
+2026-02-10 14:21:27,929 - INFO - 开始填写登录表单...
+2026-02-10 14:21:27,990 - INFO - 用户名填写完成
+2026-02-10 14:21:28,048 - INFO - 密码填写完成
+2026-02-10 14:21:28,049 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:28,049 - INFO - 验证码识别尝试 21/30
+2026-02-10 14:21:28,049 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:28,141 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:28,218 - INFO - tesseract 结果: 
+2026-02-10 14:21:28,245 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:28,336 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:28,407 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:28,498 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:28,637 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:28,743 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:28,808 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:28,899 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:28,952 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:29,043 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:29,044 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:29,044 - INFO - 查找验证码输入框...
+2026-02-10 14:21:29,051 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:29,051 - WARNING - 验证码填写失败
+2026-02-10 14:21:29,051 - INFO - 开始填写登录表单...
+2026-02-10 14:21:29,110 - INFO - 用户名填写完成
+2026-02-10 14:21:29,169 - INFO - 密码填写完成
+2026-02-10 14:21:29,170 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:29,170 - INFO - 验证码识别尝试 22/30
+2026-02-10 14:21:29,170 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:29,263 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:29,342 - INFO - tesseract 结果: 
+2026-02-10 14:21:29,369 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:29,463 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:29,537 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:29,627 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:29,769 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:29,876 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:29,940 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:30,035 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:30,092 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:30,184 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:30,184 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:30,184 - INFO - 查找验证码输入框...
+2026-02-10 14:21:30,191 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:30,191 - WARNING - 验证码填写失败
+2026-02-10 14:21:30,191 - INFO - 开始填写登录表单...
+2026-02-10 14:21:30,253 - INFO - 用户名填写完成
+2026-02-10 14:21:30,314 - INFO - 密码填写完成
+2026-02-10 14:21:30,315 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:30,315 - INFO - 验证码识别尝试 23/30
+2026-02-10 14:21:30,315 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:30,409 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:30,487 - INFO - tesseract 结果: 
+2026-02-10 14:21:30,515 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:30,607 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:30,681 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:30,773 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:30,918 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:31,029 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:31,094 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:31,187 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:31,245 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:31,346 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:31,346 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:31,346 - INFO - 查找验证码输入框...
+2026-02-10 14:21:31,353 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:31,353 - WARNING - 验证码填写失败
+2026-02-10 14:21:31,353 - INFO - 开始填写登录表单...
+2026-02-10 14:21:31,413 - INFO - 用户名填写完成
+2026-02-10 14:21:31,473 - INFO - 密码填写完成
+2026-02-10 14:21:31,474 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:31,474 - INFO - 验证码识别尝试 24/30
+2026-02-10 14:21:31,474 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:31,571 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:31,648 - INFO - tesseract 结果: 
+2026-02-10 14:21:31,677 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:31,776 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:31,849 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:31,943 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:32,114 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:32,225 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:32,293 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:32,394 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:32,456 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:32,551 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:32,552 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:32,552 - INFO - 查找验证码输入框...
+2026-02-10 14:21:32,558 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:32,558 - WARNING - 验证码填写失败
+2026-02-10 14:21:32,558 - INFO - 开始填写登录表单...
+2026-02-10 14:21:32,618 - INFO - 用户名填写完成
+2026-02-10 14:21:32,678 - INFO - 密码填写完成
+2026-02-10 14:21:32,679 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:32,679 - INFO - 验证码识别尝试 25/30
+2026-02-10 14:21:32,679 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:32,777 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:32,854 - INFO - tesseract 结果: 
+2026-02-10 14:21:32,884 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:32,979 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:33,052 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:33,145 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:33,290 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:33,399 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:33,465 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:33,558 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:33,615 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:33,708 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:33,708 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:33,708 - INFO - 查找验证码输入框...
+2026-02-10 14:21:33,716 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:33,716 - WARNING - 验证码填写失败
+2026-02-10 14:21:33,716 - INFO - 开始填写登录表单...
+2026-02-10 14:21:33,774 - INFO - 用户名填写完成
+2026-02-10 14:21:33,836 - INFO - 密码填写完成
+2026-02-10 14:21:33,837 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:33,837 - INFO - 验证码识别尝试 26/30
+2026-02-10 14:21:33,837 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:33,927 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:34,004 - INFO - tesseract 结果: 
+2026-02-10 14:21:34,032 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:34,125 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:34,203 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:34,301 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:34,446 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:34,556 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:34,631 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:34,727 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:34,782 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:34,880 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:34,880 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:34,880 - INFO - 查找验证码输入框...
+2026-02-10 14:21:34,886 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:34,886 - WARNING - 验证码填写失败
+2026-02-10 14:21:34,887 - INFO - 开始填写登录表单...
+2026-02-10 14:21:34,947 - INFO - 用户名填写完成
+2026-02-10 14:21:35,006 - INFO - 密码填写完成
+2026-02-10 14:21:35,007 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:35,007 - INFO - 验证码识别尝试 27/30
+2026-02-10 14:21:35,007 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:35,101 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:35,178 - INFO - tesseract 结果: 
+2026-02-10 14:21:35,206 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:35,301 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:35,373 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:35,466 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:35,616 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:35,723 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:35,802 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:35,893 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:35,947 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:36,042 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:36,042 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:36,042 - INFO - 查找验证码输入框...
+2026-02-10 14:21:36,049 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:36,049 - WARNING - 验证码填写失败
+2026-02-10 14:21:36,049 - INFO - 开始填写登录表单...
+2026-02-10 14:21:36,107 - INFO - 用户名填写完成
+2026-02-10 14:21:36,167 - INFO - 密码填写完成
+2026-02-10 14:21:36,168 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:36,168 - INFO - 验证码识别尝试 28/30
+2026-02-10 14:21:36,168 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:36,265 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:36,346 - INFO - tesseract 结果: 
+2026-02-10 14:21:36,374 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:36,469 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:36,552 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:36,644 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:36,790 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:36,896 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:36,961 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:37,054 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:37,108 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:37,203 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:37,203 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:37,203 - INFO - 查找验证码输入框...
+2026-02-10 14:21:37,210 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:37,210 - WARNING - 验证码填写失败
+2026-02-10 14:21:37,210 - INFO - 开始填写登录表单...
+2026-02-10 14:21:37,268 - INFO - 用户名填写完成
+2026-02-10 14:21:37,326 - INFO - 密码填写完成
+2026-02-10 14:21:37,326 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:37,326 - INFO - 验证码识别尝试 29/30
+2026-02-10 14:21:37,326 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:37,420 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:37,497 - INFO - tesseract 结果: 
+2026-02-10 14:21:37,525 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:37,621 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:37,696 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:37,794 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:37,944 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:38,052 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:38,119 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:38,212 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:38,266 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:38,361 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:38,361 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:38,361 - INFO - 查找验证码输入框...
+2026-02-10 14:21:38,367 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:38,368 - WARNING - 验证码填写失败
+2026-02-10 14:21:38,368 - INFO - 开始填写登录表单...
+2026-02-10 14:21:38,425 - INFO - 用户名填写完成
+2026-02-10 14:21:38,483 - INFO - 密码填写完成
+2026-02-10 14:21:38,484 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-10 14:21:38,484 - INFO - 验证码识别尝试 30/30
+2026-02-10 14:21:38,484 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-10 14:21:38,590 - INFO - easyocr 结果: ['h(0.00)']
+2026-02-10 14:21:38,667 - INFO - tesseract 结果: 
+2026-02-10 14:21:38,695 - INFO - easyocr alt1 结果: []
+2026-02-10 14:21:38,790 - INFO - tesseract alt1 结果: ESOP
+2026-02-10 14:21:38,865 - INFO - easyocr alt2 结果: ['(0.01)']
+2026-02-10 14:21:38,957 - INFO - tesseract alt2 结果: ESOP
+2026-02-10 14:21:39,104 - INFO - easyocr alt3 结果: ['e(0.00)']
+2026-02-10 14:21:39,211 - INFO - tesseract alt3 结果: BSoP
+2026-02-10 14:21:39,278 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-10 14:21:39,371 - INFO - tesseract alt4 结果: bSgP
+2026-02-10 14:21:39,427 - INFO - easyocr alt5 结果: ['(0.00)']
+2026-02-10 14:21:39,522 - INFO - tesseract alt5 结果: DSgP
+2026-02-10 14:21:39,522 - INFO - 最终验证码识别结果: ESOP (engine=tesseract_alt1, prob=0.5)
+2026-02-10 14:21:39,522 - INFO - 查找验证码输入框...
+2026-02-10 14:21:39,528 - ERROR - 未找到验证码输入框
+2026-02-10 14:21:39,529 - WARNING - 验证码填写失败
+2026-02-10 14:21:39,529 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-10 14:21:39,529 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-10 14:21:39,529 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-10 14:21:39,529 - INFO - 查找并点击登录按钮...
+2026-02-10 14:21:39,537 - ERROR - 未找到登录按钮
+2026-02-10 14:21:39,537 - ERROR - 点击登录按钮失败
+2026-02-10 14:21:39,537 - INFO - 等待登录成功...
+2026-02-10 14:21:44,542 - INFO - 登录可能成功，继续下一步...
+2026-02-10 14:21:44,542 - INFO - 查找'去充值'按钮...
+2026-02-10 14:21:44,550 - ERROR - 未找到'去充值'按钮
+2026-02-10 14:21:44,550 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-10 14:21:44,551 - INFO - 开始提取剩余电量信息...
+2026-02-10 14:21:44,558 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-10 14:21:44,566 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-10 14:21:44,574 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-10 14:21:44,582 - INFO - 在页面源码中查找电量信息...
+2026-02-10 14:21:44,593 - WARNING - 未能提取到剩余电量信息
+2026-02-10 14:21:44,593 - WARNING - 没有电量数据可保存
+2026-02-10 14:21:44,593 - INFO - 监控流程完成
