@@ -1,0 +1,694 @@
+2026-02-12 14:07:31,811 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-12 14:07:33,102 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-12 14:07:33,103 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-12 14:07:34,649 - INFO - OCR识别器初始化成功
+2026-02-12 14:07:34,649 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-12 14:07:34,649 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-12 14:07:42,456 - INFO - 等待登录表单加载...
+2026-02-12 14:07:53,562 - INFO - 登录表单已加载
+2026-02-12 14:07:53,562 - INFO - 开始填写登录表单...
+2026-02-12 14:07:53,639 - INFO - 用户名填写完成
+2026-02-12 14:07:53,697 - INFO - 密码填写完成
+2026-02-12 14:07:53,697 - INFO - 检查是否有验证码...
+2026-02-12 14:07:53,697 - INFO - 查找验证码图片...
+2026-02-12 14:07:53,716 - INFO - 找到验证码图片，开始截图...
+2026-02-12 14:07:53,767 - INFO - 验证码图片截取成功
+2026-02-12 14:07:53,767 - INFO - 开始填写登录表单...
+2026-02-12 14:07:53,828 - INFO - 用户名填写完成
+2026-02-12 14:07:53,883 - INFO - 密码填写完成
+2026-02-12 14:07:53,884 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:07:53,884 - INFO - 验证码识别尝试 1/30
+2026-02-12 14:07:53,884 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:07:53,971 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:07:54,114 - INFO - tesseract 结果: LyEK
+2026-02-12 14:07:54,163 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:07:54,240 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:07:54,281 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:07:54,360 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:07:54,477 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:07:54,579 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:07:54,625 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:07:54,702 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:07:54,746 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:07:54,825 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:07:54,825 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:07:54,825 - INFO - 查找验证码输入框...
+2026-02-12 14:07:54,834 - ERROR - 未找到验证码输入框
+2026-02-12 14:07:54,834 - WARNING - 验证码填写失败
+2026-02-12 14:07:54,834 - INFO - 开始填写登录表单...
+2026-02-12 14:07:54,889 - INFO - 用户名填写完成
+2026-02-12 14:07:54,942 - INFO - 密码填写完成
+2026-02-12 14:07:54,943 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:07:54,943 - INFO - 验证码识别尝试 2/30
+2026-02-12 14:07:54,943 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:07:55,010 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:07:55,088 - INFO - tesseract 结果: LyEK
+2026-02-12 14:07:55,131 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:07:55,209 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:07:55,249 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:07:55,329 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:07:55,426 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:07:55,515 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:07:55,555 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:07:55,634 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:07:55,675 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:07:55,754 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:07:55,754 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:07:55,754 - INFO - 查找验证码输入框...
+2026-02-12 14:07:55,760 - ERROR - 未找到验证码输入框
+2026-02-12 14:07:55,760 - WARNING - 验证码填写失败
+2026-02-12 14:07:55,760 - INFO - 开始填写登录表单...
+2026-02-12 14:07:55,815 - INFO - 用户名填写完成
+2026-02-12 14:07:55,869 - INFO - 密码填写完成
+2026-02-12 14:07:55,870 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:07:55,870 - INFO - 验证码识别尝试 3/30
+2026-02-12 14:07:55,870 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:07:55,937 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:07:56,015 - INFO - tesseract 结果: LyEK
+2026-02-12 14:07:56,056 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:07:56,138 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:07:56,179 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:07:56,256 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:07:56,364 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:07:56,454 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:07:56,497 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:07:56,575 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:07:56,617 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:07:56,695 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:07:56,695 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:07:56,695 - INFO - 查找验证码输入框...
+2026-02-12 14:07:56,701 - ERROR - 未找到验证码输入框
+2026-02-12 14:07:56,701 - WARNING - 验证码填写失败
+2026-02-12 14:07:56,701 - INFO - 开始填写登录表单...
+2026-02-12 14:07:56,755 - INFO - 用户名填写完成
+2026-02-12 14:07:56,816 - INFO - 密码填写完成
+2026-02-12 14:07:56,817 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:07:56,817 - INFO - 验证码识别尝试 4/30
+2026-02-12 14:07:56,817 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:07:56,892 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:07:56,969 - INFO - tesseract 结果: LyEK
+2026-02-12 14:07:57,010 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:07:57,091 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:07:57,131 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:07:57,208 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:07:57,309 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:07:57,398 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:07:57,439 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:07:57,519 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:07:57,559 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:07:57,639 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:07:57,639 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:07:57,639 - INFO - 查找验证码输入框...
+2026-02-12 14:07:57,645 - ERROR - 未找到验证码输入框
+2026-02-12 14:07:57,645 - WARNING - 验证码填写失败
+2026-02-12 14:07:57,645 - INFO - 开始填写登录表单...
+2026-02-12 14:07:57,699 - INFO - 用户名填写完成
+2026-02-12 14:07:57,752 - INFO - 密码填写完成
+2026-02-12 14:07:57,753 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:07:57,753 - INFO - 验证码识别尝试 5/30
+2026-02-12 14:07:57,753 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:07:57,827 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:07:57,906 - INFO - tesseract 结果: LyEK
+2026-02-12 14:07:57,948 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:07:58,027 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:07:58,067 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:07:58,148 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:07:58,246 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:07:58,335 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:07:58,375 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:07:58,453 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:07:58,495 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:07:58,578 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:07:58,578 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:07:58,578 - INFO - 查找验证码输入框...
+2026-02-12 14:07:58,584 - ERROR - 未找到验证码输入框
+2026-02-12 14:07:58,584 - WARNING - 验证码填写失败
+2026-02-12 14:07:58,584 - INFO - 开始填写登录表单...
+2026-02-12 14:07:58,638 - INFO - 用户名填写完成
+2026-02-12 14:07:58,691 - INFO - 密码填写完成
+2026-02-12 14:07:58,692 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:07:58,692 - INFO - 验证码识别尝试 6/30
+2026-02-12 14:07:58,692 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:07:58,765 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:07:58,842 - INFO - tesseract 结果: LyEK
+2026-02-12 14:07:58,882 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:07:58,961 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:07:59,000 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:07:59,080 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:07:59,176 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:07:59,269 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:07:59,312 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:07:59,403 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:07:59,446 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:07:59,526 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:07:59,526 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:07:59,526 - INFO - 查找验证码输入框...
+2026-02-12 14:07:59,532 - ERROR - 未找到验证码输入框
+2026-02-12 14:07:59,532 - WARNING - 验证码填写失败
+2026-02-12 14:07:59,532 - INFO - 开始填写登录表单...
+2026-02-12 14:07:59,587 - INFO - 用户名填写完成
+2026-02-12 14:07:59,640 - INFO - 密码填写完成
+2026-02-12 14:07:59,641 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:07:59,641 - INFO - 验证码识别尝试 7/30
+2026-02-12 14:07:59,641 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:07:59,713 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:07:59,793 - INFO - tesseract 结果: LyEK
+2026-02-12 14:07:59,832 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:07:59,913 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:07:59,953 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:00,032 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:00,128 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:00,220 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:00,271 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:00,348 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:00,391 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:00,470 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:00,470 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:00,470 - INFO - 查找验证码输入框...
+2026-02-12 14:08:00,476 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:00,476 - WARNING - 验证码填写失败
+2026-02-12 14:08:00,476 - INFO - 开始填写登录表单...
+2026-02-12 14:08:00,532 - INFO - 用户名填写完成
+2026-02-12 14:08:00,585 - INFO - 密码填写完成
+2026-02-12 14:08:00,586 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:00,586 - INFO - 验证码识别尝试 8/30
+2026-02-12 14:08:00,586 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:00,650 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:00,728 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:00,768 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:00,848 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:00,889 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:00,965 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:01,064 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:01,157 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:01,200 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:01,277 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:01,317 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:01,396 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:01,396 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:01,396 - INFO - 查找验证码输入框...
+2026-02-12 14:08:01,402 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:01,402 - WARNING - 验证码填写失败
+2026-02-12 14:08:01,402 - INFO - 开始填写登录表单...
+2026-02-12 14:08:01,460 - INFO - 用户名填写完成
+2026-02-12 14:08:01,513 - INFO - 密码填写完成
+2026-02-12 14:08:01,514 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:01,514 - INFO - 验证码识别尝试 9/30
+2026-02-12 14:08:01,514 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:01,581 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:01,659 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:01,700 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:01,780 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:01,822 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:01,899 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:01,997 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:02,089 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:02,128 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:02,209 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:02,248 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:02,327 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:02,327 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:02,327 - INFO - 查找验证码输入框...
+2026-02-12 14:08:02,333 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:02,333 - WARNING - 验证码填写失败
+2026-02-12 14:08:02,333 - INFO - 开始填写登录表单...
+2026-02-12 14:08:02,387 - INFO - 用户名填写完成
+2026-02-12 14:08:02,441 - INFO - 密码填写完成
+2026-02-12 14:08:02,442 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:02,442 - INFO - 验证码识别尝试 10/30
+2026-02-12 14:08:02,442 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:02,519 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:02,597 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:02,637 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:02,719 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:02,760 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:02,842 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:02,938 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:03,027 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:03,071 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:03,150 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:03,189 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:03,270 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:03,270 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:03,271 - INFO - 查找验证码输入框...
+2026-02-12 14:08:03,277 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:03,277 - WARNING - 验证码填写失败
+2026-02-12 14:08:03,277 - INFO - 开始填写登录表单...
+2026-02-12 14:08:03,332 - INFO - 用户名填写完成
+2026-02-12 14:08:03,386 - INFO - 密码填写完成
+2026-02-12 14:08:03,386 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:03,386 - INFO - 验证码识别尝试 11/30
+2026-02-12 14:08:03,386 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:03,454 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:03,532 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:03,575 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:03,652 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:03,693 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:03,771 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:03,873 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:03,963 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:04,011 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:04,091 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:04,131 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:04,210 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:04,210 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:04,210 - INFO - 查找验证码输入框...
+2026-02-12 14:08:04,216 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:04,216 - WARNING - 验证码填写失败
+2026-02-12 14:08:04,216 - INFO - 开始填写登录表单...
+2026-02-12 14:08:04,271 - INFO - 用户名填写完成
+2026-02-12 14:08:04,324 - INFO - 密码填写完成
+2026-02-12 14:08:04,325 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:04,325 - INFO - 验证码识别尝试 12/30
+2026-02-12 14:08:04,325 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:04,388 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:04,466 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:04,509 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:04,588 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:04,628 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:04,708 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:04,807 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:04,896 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:04,938 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:05,015 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:05,056 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:05,134 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:05,134 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:05,135 - INFO - 查找验证码输入框...
+2026-02-12 14:08:05,141 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:05,141 - WARNING - 验证码填写失败
+2026-02-12 14:08:05,141 - INFO - 开始填写登录表单...
+2026-02-12 14:08:05,195 - INFO - 用户名填写完成
+2026-02-12 14:08:05,251 - INFO - 密码填写完成
+2026-02-12 14:08:05,251 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:05,251 - INFO - 验证码识别尝试 13/30
+2026-02-12 14:08:05,251 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:05,317 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:05,396 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:05,437 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:05,516 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:05,555 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:05,634 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:05,736 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:05,824 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:05,865 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:05,943 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:05,985 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:06,064 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:06,064 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:06,064 - INFO - 查找验证码输入框...
+2026-02-12 14:08:06,070 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:06,070 - WARNING - 验证码填写失败
+2026-02-12 14:08:06,070 - INFO - 开始填写登录表单...
+2026-02-12 14:08:06,124 - INFO - 用户名填写完成
+2026-02-12 14:08:06,180 - INFO - 密码填写完成
+2026-02-12 14:08:06,180 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:06,180 - INFO - 验证码识别尝试 14/30
+2026-02-12 14:08:06,180 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:06,251 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:06,331 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:06,375 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:06,454 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:06,497 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:06,574 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:06,672 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:06,760 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:06,801 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:06,879 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:06,919 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:06,997 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:06,997 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:06,997 - INFO - 查找验证码输入框...
+2026-02-12 14:08:07,003 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:07,003 - WARNING - 验证码填写失败
+2026-02-12 14:08:07,003 - INFO - 开始填写登录表单...
+2026-02-12 14:08:07,056 - INFO - 用户名填写完成
+2026-02-12 14:08:07,110 - INFO - 密码填写完成
+2026-02-12 14:08:07,111 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:07,111 - INFO - 验证码识别尝试 15/30
+2026-02-12 14:08:07,111 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:07,198 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:07,277 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:07,322 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:07,401 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:07,444 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:07,525 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:07,625 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:07,715 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:07,755 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:07,835 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:07,876 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:07,957 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:07,958 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:07,958 - INFO - 查找验证码输入框...
+2026-02-12 14:08:07,964 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:07,964 - WARNING - 验证码填写失败
+2026-02-12 14:08:07,964 - INFO - 开始填写登录表单...
+2026-02-12 14:08:08,019 - INFO - 用户名填写完成
+2026-02-12 14:08:08,075 - INFO - 密码填写完成
+2026-02-12 14:08:08,076 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:08,076 - INFO - 验证码识别尝试 16/30
+2026-02-12 14:08:08,076 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:08,147 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:08,225 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:08,266 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:08,348 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:08,389 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:08,467 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:08,570 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:08,660 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:08,701 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:08,778 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:08,819 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:08,897 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:08,897 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:08,897 - INFO - 查找验证码输入框...
+2026-02-12 14:08:08,903 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:08,903 - WARNING - 验证码填写失败
+2026-02-12 14:08:08,904 - INFO - 开始填写登录表单...
+2026-02-12 14:08:08,958 - INFO - 用户名填写完成
+2026-02-12 14:08:09,011 - INFO - 密码填写完成
+2026-02-12 14:08:09,011 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:09,012 - INFO - 验证码识别尝试 17/30
+2026-02-12 14:08:09,012 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:09,079 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:09,158 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:09,199 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:09,276 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:09,318 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:09,395 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:09,495 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:09,586 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:09,627 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:09,704 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:09,745 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:09,824 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:09,824 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:09,824 - INFO - 查找验证码输入框...
+2026-02-12 14:08:09,830 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:09,830 - WARNING - 验证码填写失败
+2026-02-12 14:08:09,830 - INFO - 开始填写登录表单...
+2026-02-12 14:08:09,885 - INFO - 用户名填写完成
+2026-02-12 14:08:09,937 - INFO - 密码填写完成
+2026-02-12 14:08:09,938 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:09,938 - INFO - 验证码识别尝试 18/30
+2026-02-12 14:08:09,938 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:10,005 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:10,084 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:10,126 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:10,206 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:10,247 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:10,327 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:10,425 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:10,517 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:10,559 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:10,636 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:10,677 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:10,756 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:10,756 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:10,756 - INFO - 查找验证码输入框...
+2026-02-12 14:08:10,762 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:10,762 - WARNING - 验证码填写失败
+2026-02-12 14:08:10,762 - INFO - 开始填写登录表单...
+2026-02-12 14:08:10,817 - INFO - 用户名填写完成
+2026-02-12 14:08:10,871 - INFO - 密码填写完成
+2026-02-12 14:08:10,872 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:10,872 - INFO - 验证码识别尝试 19/30
+2026-02-12 14:08:10,872 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:10,946 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:11,027 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:11,068 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:11,147 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:11,187 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:11,266 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:11,364 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:11,453 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:11,494 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:11,573 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:11,614 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:11,693 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:11,693 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:11,693 - INFO - 查找验证码输入框...
+2026-02-12 14:08:11,699 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:11,699 - WARNING - 验证码填写失败
+2026-02-12 14:08:11,699 - INFO - 开始填写登录表单...
+2026-02-12 14:08:11,753 - INFO - 用户名填写完成
+2026-02-12 14:08:11,806 - INFO - 密码填写完成
+2026-02-12 14:08:11,807 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:11,807 - INFO - 验证码识别尝试 20/30
+2026-02-12 14:08:11,807 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:11,872 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:11,949 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:11,991 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:12,073 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:12,113 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:12,190 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:12,290 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:12,380 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:12,421 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:12,500 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:12,543 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:12,621 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:12,621 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:12,621 - INFO - 查找验证码输入框...
+2026-02-12 14:08:12,628 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:12,628 - WARNING - 验证码填写失败
+2026-02-12 14:08:12,628 - INFO - 开始填写登录表单...
+2026-02-12 14:08:12,683 - INFO - 用户名填写完成
+2026-02-12 14:08:12,736 - INFO - 密码填写完成
+2026-02-12 14:08:12,737 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:12,737 - INFO - 验证码识别尝试 21/30
+2026-02-12 14:08:12,737 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:12,817 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:12,894 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:12,935 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:13,017 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:13,058 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:13,139 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:13,236 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:13,326 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:13,367 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:13,445 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:13,486 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:13,565 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:13,565 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:13,565 - INFO - 查找验证码输入框...
+2026-02-12 14:08:13,571 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:13,571 - WARNING - 验证码填写失败
+2026-02-12 14:08:13,571 - INFO - 开始填写登录表单...
+2026-02-12 14:08:13,627 - INFO - 用户名填写完成
+2026-02-12 14:08:13,680 - INFO - 密码填写完成
+2026-02-12 14:08:13,681 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:13,681 - INFO - 验证码识别尝试 22/30
+2026-02-12 14:08:13,681 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:13,748 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:13,828 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:13,869 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:13,949 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:13,990 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:14,068 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:14,167 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:14,256 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:14,296 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:14,373 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:14,414 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:14,492 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:14,492 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:14,492 - INFO - 查找验证码输入框...
+2026-02-12 14:08:14,498 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:14,498 - WARNING - 验证码填写失败
+2026-02-12 14:08:14,498 - INFO - 开始填写登录表单...
+2026-02-12 14:08:14,553 - INFO - 用户名填写完成
+2026-02-12 14:08:14,605 - INFO - 密码填写完成
+2026-02-12 14:08:14,606 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:14,606 - INFO - 验证码识别尝试 23/30
+2026-02-12 14:08:14,606 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:14,669 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:14,748 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:14,788 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:14,869 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:14,908 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:14,986 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:15,095 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:15,184 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:15,230 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:15,309 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:15,348 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:15,426 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:15,426 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:15,426 - INFO - 查找验证码输入框...
+2026-02-12 14:08:15,432 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:15,432 - WARNING - 验证码填写失败
+2026-02-12 14:08:15,432 - INFO - 开始填写登录表单...
+2026-02-12 14:08:15,486 - INFO - 用户名填写完成
+2026-02-12 14:08:15,544 - INFO - 密码填写完成
+2026-02-12 14:08:15,545 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:15,545 - INFO - 验证码识别尝试 24/30
+2026-02-12 14:08:15,545 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:15,606 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:15,684 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:15,725 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:15,804 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:15,843 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:15,921 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:16,016 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:16,109 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:16,147 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:16,227 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:16,267 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:16,346 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:16,346 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:16,346 - INFO - 查找验证码输入框...
+2026-02-12 14:08:16,352 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:16,352 - WARNING - 验证码填写失败
+2026-02-12 14:08:16,352 - INFO - 开始填写登录表单...
+2026-02-12 14:08:16,407 - INFO - 用户名填写完成
+2026-02-12 14:08:16,460 - INFO - 密码填写完成
+2026-02-12 14:08:16,461 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:16,461 - INFO - 验证码识别尝试 25/30
+2026-02-12 14:08:16,461 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:16,529 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:16,609 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:16,649 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:16,729 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:16,768 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:16,849 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:16,945 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:17,034 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:17,084 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:17,163 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:17,202 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:17,280 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:17,280 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:17,280 - INFO - 查找验证码输入框...
+2026-02-12 14:08:17,286 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:17,287 - WARNING - 验证码填写失败
+2026-02-12 14:08:17,287 - INFO - 开始填写登录表单...
+2026-02-12 14:08:17,341 - INFO - 用户名填写完成
+2026-02-12 14:08:17,396 - INFO - 密码填写完成
+2026-02-12 14:08:17,397 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:17,397 - INFO - 验证码识别尝试 26/30
+2026-02-12 14:08:17,397 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:17,461 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:17,539 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:17,579 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:17,660 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:17,700 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:17,779 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:17,875 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:17,965 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:18,006 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:18,088 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:18,127 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:18,208 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:18,208 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:18,208 - INFO - 查找验证码输入框...
+2026-02-12 14:08:18,214 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:18,214 - WARNING - 验证码填写失败
+2026-02-12 14:08:18,214 - INFO - 开始填写登录表单...
+2026-02-12 14:08:18,269 - INFO - 用户名填写完成
+2026-02-12 14:08:18,323 - INFO - 密码填写完成
+2026-02-12 14:08:18,324 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:18,324 - INFO - 验证码识别尝试 27/30
+2026-02-12 14:08:18,324 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:18,392 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:18,473 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:18,516 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:18,595 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:18,634 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:18,714 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:18,810 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:18,901 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:18,942 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:19,019 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:19,059 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:19,138 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:19,139 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:19,139 - INFO - 查找验证码输入框...
+2026-02-12 14:08:19,148 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:19,148 - WARNING - 验证码填写失败
+2026-02-12 14:08:19,148 - INFO - 开始填写登录表单...
+2026-02-12 14:08:19,203 - INFO - 用户名填写完成
+2026-02-12 14:08:19,256 - INFO - 密码填写完成
+2026-02-12 14:08:19,257 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:19,257 - INFO - 验证码识别尝试 28/30
+2026-02-12 14:08:19,257 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:19,328 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:19,405 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:19,447 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:19,529 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:19,569 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:19,648 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:19,744 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:19,834 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:19,874 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:19,954 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:19,995 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:20,075 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:20,075 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:20,075 - INFO - 查找验证码输入框...
+2026-02-12 14:08:20,081 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:20,081 - WARNING - 验证码填写失败
+2026-02-12 14:08:20,081 - INFO - 开始填写登录表单...
+2026-02-12 14:08:20,136 - INFO - 用户名填写完成
+2026-02-12 14:08:20,189 - INFO - 密码填写完成
+2026-02-12 14:08:20,190 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:20,190 - INFO - 验证码识别尝试 29/30
+2026-02-12 14:08:20,190 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:20,254 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:20,335 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:20,375 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:20,456 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:20,500 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:20,578 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:20,672 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:20,762 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:20,805 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:20,887 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:20,927 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:21,004 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:21,004 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:21,004 - INFO - 查找验证码输入框...
+2026-02-12 14:08:21,011 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:21,011 - WARNING - 验证码填写失败
+2026-02-12 14:08:21,011 - INFO - 开始填写登录表单...
+2026-02-12 14:08:21,066 - INFO - 用户名填写完成
+2026-02-12 14:08:21,120 - INFO - 密码填写完成
+2026-02-12 14:08:21,120 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-12 14:08:21,120 - INFO - 验证码识别尝试 30/30
+2026-02-12 14:08:21,120 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-12 14:08:21,187 - INFO - easyocr 结果: ['Lyk(0.55)']
+2026-02-12 14:08:21,268 - INFO - tesseract 结果: LyEK
+2026-02-12 14:08:21,311 - INFO - easyocr alt1 结果: ['LYK(0.60)']
+2026-02-12 14:08:21,394 - INFO - tesseract alt1 结果: LyK
+2026-02-12 14:08:21,435 - INFO - easyocr alt2 结果: ['LYk(0.42)']
+2026-02-12 14:08:21,512 - INFO - tesseract alt2 结果: Lyk
+2026-02-12 14:08:21,614 - INFO - easyocr alt3 结果: ['LK(0.83)']
+2026-02-12 14:08:21,706 - INFO - tesseract alt3 结果: LyEK
+2026-02-12 14:08:21,754 - INFO - easyocr alt4 结果: ['LYK(0.67)']
+2026-02-12 14:08:21,833 - INFO - tesseract alt4 结果: LyEK
+2026-02-12 14:08:21,875 - INFO - easyocr alt5 结果: ['LYK(0.62)']
+2026-02-12 14:08:21,956 - INFO - tesseract alt5 结果: LyEK
+2026-02-12 14:08:21,956 - INFO - 最终验证码识别结果: LyEK (engine=tesseract, prob=0.5)
+2026-02-12 14:08:21,956 - INFO - 查找验证码输入框...
+2026-02-12 14:08:21,963 - ERROR - 未找到验证码输入框
+2026-02-12 14:08:21,963 - WARNING - 验证码填写失败
+2026-02-12 14:08:21,963 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-12 14:08:21,963 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-12 14:08:21,963 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-12 14:08:21,963 - INFO - 查找并点击登录按钮...
+2026-02-12 14:08:21,971 - ERROR - 未找到登录按钮
+2026-02-12 14:08:21,971 - ERROR - 点击登录按钮失败
+2026-02-12 14:08:21,971 - INFO - 等待登录成功...
+2026-02-12 14:08:26,976 - INFO - 登录可能成功，继续下一步...
+2026-02-12 14:08:26,976 - INFO - 查找'去充值'按钮...
+2026-02-12 14:08:26,984 - ERROR - 未找到'去充值'按钮
+2026-02-12 14:08:26,984 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-12 14:08:26,984 - INFO - 开始提取剩余电量信息...
+2026-02-12 14:08:26,991 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-12 14:08:26,999 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-12 14:08:27,007 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-12 14:08:27,013 - INFO - 在页面源码中查找电量信息...
+2026-02-12 14:08:27,024 - WARNING - 未能提取到剩余电量信息
+2026-02-12 14:08:27,024 - WARNING - 没有电量数据可保存
+2026-02-12 14:08:27,024 - INFO - 监控流程完成
