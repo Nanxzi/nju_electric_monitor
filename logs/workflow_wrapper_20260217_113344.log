@@ -1,0 +1,948 @@
+Wrapper start: 2026-02-17T11:33:44.368295+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=121):
+- ACCEPT_EULA
+- ACTIONS_ORCHESTRATION_ID
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       145G   63G   82G  44% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  2.5M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        128M   26K  128M   1% /sys/firmware/efi/efivars
+/dev/sda16      881M   63M  757M   8% /boot
+/dev/sda15      105M  6.2M   99M   6% /boot/efi
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+19M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+344K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+- /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+- /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+- /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+- /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+- /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-Light.ttf
+- /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+
+FontManager samples (name -> path):
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+DejaVu Sans Mono -> /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+Liberation Mono -> /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Liberation Serif -> /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2026-02-17 03:33:49,649 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-17 03:33:51,627 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-17 03:33:51,627 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-17 03:33:53,132 - INFO - OCR识别器初始化成功
+2026-02-17 03:33:53,132 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-17 03:33:53,132 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-17 03:34:05,517 - INFO - 等待登录表单加载...
+2026-02-17 03:34:05,527 - INFO - 登录表单已加载
+2026-02-17 03:34:05,527 - INFO - 开始填写登录表单...
+2026-02-17 03:34:05,613 - INFO - 用户名填写完成
+2026-02-17 03:34:05,684 - INFO - 密码填写完成
+2026-02-17 03:34:05,684 - INFO - 检查是否有验证码...
+2026-02-17 03:34:05,684 - INFO - 查找验证码图片...
+2026-02-17 03:34:05,705 - INFO - 找到验证码图片，开始截图...
+2026-02-17 03:34:05,748 - INFO - 验证码图片截取成功
+2026-02-17 03:34:05,748 - INFO - 开始填写登录表单...
+2026-02-17 03:34:05,817 - INFO - 用户名填写完成
+2026-02-17 03:34:05,883 - INFO - 密码填写完成
+2026-02-17 03:34:05,884 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:05,884 - INFO - 验证码识别尝试 1/30
+2026-02-17 03:34:05,884 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:06,002 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:06,138 - INFO - tesseract 结果: 
+2026-02-17 03:34:06,219 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:06,321 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:06,397 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:06,494 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:06,685 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:06,796 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:06,871 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:06,970 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:07,036 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:07,134 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:07,134 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:07,134 - INFO - 查找验证码输入框...
+2026-02-17 03:34:07,144 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:07,144 - WARNING - 验证码填写失败
+2026-02-17 03:34:07,144 - INFO - 开始填写登录表单...
+2026-02-17 03:34:07,207 - INFO - 用户名填写完成
+2026-02-17 03:34:07,271 - INFO - 密码填写完成
+2026-02-17 03:34:07,272 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:07,272 - INFO - 验证码识别尝试 2/30
+2026-02-17 03:34:07,272 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:07,378 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:07,472 - INFO - tesseract 结果: 
+2026-02-17 03:34:07,550 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:07,646 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:07,722 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:07,820 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:07,987 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:08,102 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:08,185 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:08,285 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:08,355 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:08,453 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:08,453 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:08,453 - INFO - 查找验证码输入框...
+2026-02-17 03:34:08,460 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:08,460 - WARNING - 验证码填写失败
+2026-02-17 03:34:08,460 - INFO - 开始填写登录表单...
+2026-02-17 03:34:08,524 - INFO - 用户名填写完成
+2026-02-17 03:34:08,588 - INFO - 密码填写完成
+2026-02-17 03:34:08,589 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:08,589 - INFO - 验证码识别尝试 3/30
+2026-02-17 03:34:08,589 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:08,697 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:08,793 - INFO - tesseract 结果: 
+2026-02-17 03:34:08,871 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:08,969 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:09,044 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:09,142 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:09,308 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:09,422 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:09,497 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:09,596 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:09,661 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:09,762 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:09,762 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:09,762 - INFO - 查找验证码输入框...
+2026-02-17 03:34:09,769 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:09,769 - WARNING - 验证码填写失败
+2026-02-17 03:34:09,769 - INFO - 开始填写登录表单...
+2026-02-17 03:34:09,834 - INFO - 用户名填写完成
+2026-02-17 03:34:09,904 - INFO - 密码填写完成
+2026-02-17 03:34:09,905 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:09,905 - INFO - 验证码识别尝试 4/30
+2026-02-17 03:34:09,905 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:10,011 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:10,105 - INFO - tesseract 结果: 
+2026-02-17 03:34:10,182 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:10,281 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:10,356 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:10,454 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:10,620 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:10,731 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:10,806 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:10,902 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:10,967 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:11,063 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:11,063 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:11,063 - INFO - 查找验证码输入框...
+2026-02-17 03:34:11,070 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:11,071 - WARNING - 验证码填写失败
+2026-02-17 03:34:11,071 - INFO - 开始填写登录表单...
+2026-02-17 03:34:11,134 - INFO - 用户名填写完成
+2026-02-17 03:34:11,200 - INFO - 密码填写完成
+2026-02-17 03:34:11,200 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:11,200 - INFO - 验证码识别尝试 5/30
+2026-02-17 03:34:11,201 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:11,307 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:11,405 - INFO - tesseract 结果: 
+2026-02-17 03:34:11,483 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:11,582 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:11,657 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:11,755 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:11,922 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:12,034 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:12,109 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:12,206 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:12,272 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:12,371 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:12,371 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:12,371 - INFO - 查找验证码输入框...
+2026-02-17 03:34:12,378 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:12,378 - WARNING - 验证码填写失败
+2026-02-17 03:34:12,378 - INFO - 开始填写登录表单...
+2026-02-17 03:34:12,442 - INFO - 用户名填写完成
+2026-02-17 03:34:12,506 - INFO - 密码填写完成
+2026-02-17 03:34:12,507 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:12,507 - INFO - 验证码识别尝试 6/30
+2026-02-17 03:34:12,507 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:12,618 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:12,715 - INFO - tesseract 结果: 
+2026-02-17 03:34:12,800 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:12,896 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:12,971 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:13,069 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:13,237 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:13,347 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:13,423 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:13,519 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:13,584 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:13,681 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:13,681 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:13,682 - INFO - 查找验证码输入框...
+2026-02-17 03:34:13,688 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:13,688 - WARNING - 验证码填写失败
+2026-02-17 03:34:13,688 - INFO - 开始填写登录表单...
+2026-02-17 03:34:13,750 - INFO - 用户名填写完成
+2026-02-17 03:34:13,815 - INFO - 密码填写完成
+2026-02-17 03:34:13,816 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:13,816 - INFO - 验证码识别尝试 7/30
+2026-02-17 03:34:13,816 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:13,938 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:14,031 - INFO - tesseract 结果: 
+2026-02-17 03:34:14,116 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:14,213 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:14,288 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:14,386 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:14,557 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:14,665 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:14,740 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:14,839 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:14,907 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:15,006 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:15,006 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:15,006 - INFO - 查找验证码输入框...
+2026-02-17 03:34:15,014 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:15,014 - WARNING - 验证码填写失败
+2026-02-17 03:34:15,014 - INFO - 开始填写登录表单...
+2026-02-17 03:34:15,078 - INFO - 用户名填写完成
+2026-02-17 03:34:15,141 - INFO - 密码填写完成
+2026-02-17 03:34:15,142 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:15,142 - INFO - 验证码识别尝试 8/30
+2026-02-17 03:34:15,142 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:15,262 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:15,357 - INFO - tesseract 结果: 
+2026-02-17 03:34:15,433 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:15,534 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:15,610 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:15,709 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:15,875 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:15,986 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:16,062 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:16,162 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:16,227 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:16,326 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:16,326 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:16,326 - INFO - 查找验证码输入框...
+2026-02-17 03:34:16,332 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:16,333 - WARNING - 验证码填写失败
+2026-02-17 03:34:16,333 - INFO - 开始填写登录表单...
+2026-02-17 03:34:16,397 - INFO - 用户名填写完成
+2026-02-17 03:34:16,461 - INFO - 密码填写完成
+2026-02-17 03:34:16,462 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:16,462 - INFO - 验证码识别尝试 9/30
+2026-02-17 03:34:16,462 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:16,567 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:16,665 - INFO - tesseract 结果: 
+2026-02-17 03:34:16,741 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:16,839 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:16,914 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:17,015 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:17,189 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:17,314 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:17,389 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:17,488 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:17,553 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:17,650 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:17,651 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:17,651 - INFO - 查找验证码输入框...
+2026-02-17 03:34:17,658 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:17,658 - WARNING - 验证码填写失败
+2026-02-17 03:34:17,658 - INFO - 开始填写登录表单...
+2026-02-17 03:34:17,721 - INFO - 用户名填写完成
+2026-02-17 03:34:17,786 - INFO - 密码填写完成
+2026-02-17 03:34:17,787 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:17,787 - INFO - 验证码识别尝试 10/30
+2026-02-17 03:34:17,787 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:17,894 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:17,987 - INFO - tesseract 结果: 
+2026-02-17 03:34:18,067 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:18,165 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:18,240 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:18,341 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:18,515 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:18,627 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:18,703 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:18,802 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:18,875 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:18,978 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:18,978 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:18,978 - INFO - 查找验证码输入框...
+2026-02-17 03:34:18,985 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:18,985 - WARNING - 验证码填写失败
+2026-02-17 03:34:18,985 - INFO - 开始填写登录表单...
+2026-02-17 03:34:19,050 - INFO - 用户名填写完成
+2026-02-17 03:34:19,115 - INFO - 密码填写完成
+2026-02-17 03:34:19,116 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:19,116 - INFO - 验证码识别尝试 11/30
+2026-02-17 03:34:19,116 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:19,222 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:19,317 - INFO - tesseract 结果: 
+2026-02-17 03:34:19,393 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:19,492 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:19,568 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:19,671 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:19,840 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:19,952 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:20,029 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:20,126 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:20,201 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:20,302 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:20,302 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:20,302 - INFO - 查找验证码输入框...
+2026-02-17 03:34:20,309 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:20,309 - WARNING - 验证码填写失败
+2026-02-17 03:34:20,309 - INFO - 开始填写登录表单...
+2026-02-17 03:34:20,374 - INFO - 用户名填写完成
+2026-02-17 03:34:20,438 - INFO - 密码填写完成
+2026-02-17 03:34:20,439 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:20,439 - INFO - 验证码识别尝试 12/30
+2026-02-17 03:34:20,439 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:20,547 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:20,641 - INFO - tesseract 结果: 
+2026-02-17 03:34:20,721 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:20,823 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:20,898 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:21,002 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:21,182 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:21,294 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:21,371 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:21,474 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:21,545 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:21,651 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:21,651 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:21,651 - INFO - 查找验证码输入框...
+2026-02-17 03:34:21,658 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:21,658 - WARNING - 验证码填写失败
+2026-02-17 03:34:21,658 - INFO - 开始填写登录表单...
+2026-02-17 03:34:21,722 - INFO - 用户名填写完成
+2026-02-17 03:34:21,786 - INFO - 密码填写完成
+2026-02-17 03:34:21,787 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:21,787 - INFO - 验证码识别尝试 13/30
+2026-02-17 03:34:21,787 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:21,902 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:22,001 - INFO - tesseract 结果: 
+2026-02-17 03:34:22,087 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:22,191 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:22,267 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:22,364 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:22,532 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:22,643 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:22,718 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:22,824 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:22,893 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:22,990 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:22,990 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:22,990 - INFO - 查找验证码输入框...
+2026-02-17 03:34:22,997 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:22,997 - WARNING - 验证码填写失败
+2026-02-17 03:34:22,997 - INFO - 开始填写登录表单...
+2026-02-17 03:34:23,062 - INFO - 用户名填写完成
+2026-02-17 03:34:23,128 - INFO - 密码填写完成
+2026-02-17 03:34:23,129 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:23,129 - INFO - 验证码识别尝试 14/30
+2026-02-17 03:34:23,129 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:23,238 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:23,338 - INFO - tesseract 结果: 
+2026-02-17 03:34:23,417 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:23,520 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:23,596 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:23,699 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:23,867 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:23,977 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:24,057 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:24,158 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:24,227 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:24,328 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:24,329 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:24,329 - INFO - 查找验证码输入框...
+2026-02-17 03:34:24,336 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:24,336 - WARNING - 验证码填写失败
+2026-02-17 03:34:24,336 - INFO - 开始填写登录表单...
+2026-02-17 03:34:24,399 - INFO - 用户名填写完成
+2026-02-17 03:34:24,464 - INFO - 密码填写完成
+2026-02-17 03:34:24,465 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:24,465 - INFO - 验证码识别尝试 15/30
+2026-02-17 03:34:24,465 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:24,583 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:24,681 - INFO - tesseract 结果: 
+2026-02-17 03:34:24,759 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:24,859 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:24,936 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:25,040 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:25,210 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:25,322 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:25,397 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:25,496 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:25,565 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:25,668 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:25,668 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:25,668 - INFO - 查找验证码输入框...
+2026-02-17 03:34:25,675 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:25,675 - WARNING - 验证码填写失败
+2026-02-17 03:34:25,675 - INFO - 开始填写登录表单...
+2026-02-17 03:34:25,739 - INFO - 用户名填写完成
+2026-02-17 03:34:25,803 - INFO - 密码填写完成
+2026-02-17 03:34:25,804 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:25,804 - INFO - 验证码识别尝试 16/30
+2026-02-17 03:34:25,804 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:25,915 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:26,011 - INFO - tesseract 结果: 
+2026-02-17 03:34:26,088 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:26,186 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:26,262 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:26,364 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:26,534 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:26,643 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:26,726 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:26,824 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:26,901 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:27,002 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:27,002 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:27,003 - INFO - 查找验证码输入框...
+2026-02-17 03:34:27,010 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:27,010 - WARNING - 验证码填写失败
+2026-02-17 03:34:27,010 - INFO - 开始填写登录表单...
+2026-02-17 03:34:27,074 - INFO - 用户名填写完成
+2026-02-17 03:34:27,138 - INFO - 密码填写完成
+2026-02-17 03:34:27,139 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:27,139 - INFO - 验证码识别尝试 17/30
+2026-02-17 03:34:27,139 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:27,246 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:27,338 - INFO - tesseract 结果: 
+2026-02-17 03:34:27,416 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:27,515 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:27,591 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:27,691 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:27,861 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:27,972 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:28,057 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:28,160 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:28,229 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:28,327 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:28,328 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:28,328 - INFO - 查找验证码输入框...
+2026-02-17 03:34:28,334 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:28,335 - WARNING - 验证码填写失败
+2026-02-17 03:34:28,335 - INFO - 开始填写登录表单...
+2026-02-17 03:34:28,398 - INFO - 用户名填写完成
+2026-02-17 03:34:28,463 - INFO - 密码填写完成
+2026-02-17 03:34:28,464 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:28,464 - INFO - 验证码识别尝试 18/30
+2026-02-17 03:34:28,464 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:28,570 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:28,666 - INFO - tesseract 结果: 
+2026-02-17 03:34:28,745 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:28,844 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:28,921 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:29,023 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:29,205 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:29,316 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:29,391 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:29,489 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:29,554 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:29,652 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:29,652 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:29,652 - INFO - 查找验证码输入框...
+2026-02-17 03:34:29,659 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:29,659 - WARNING - 验证码填写失败
+2026-02-17 03:34:29,660 - INFO - 开始填写登录表单...
+2026-02-17 03:34:29,722 - INFO - 用户名填写完成
+2026-02-17 03:34:29,785 - INFO - 密码填写完成
+2026-02-17 03:34:29,786 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:29,786 - INFO - 验证码识别尝试 19/30
+2026-02-17 03:34:29,786 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:29,893 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:29,986 - INFO - tesseract 结果: 
+2026-02-17 03:34:30,065 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:30,162 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:30,237 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:30,335 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:30,501 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:30,611 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:30,686 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:30,783 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:30,856 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:30,955 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:30,955 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:30,955 - INFO - 查找验证码输入框...
+2026-02-17 03:34:30,962 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:30,962 - WARNING - 验证码填写失败
+2026-02-17 03:34:30,962 - INFO - 开始填写登录表单...
+2026-02-17 03:34:31,027 - INFO - 用户名填写完成
+2026-02-17 03:34:31,092 - INFO - 密码填写完成
+2026-02-17 03:34:31,093 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:31,093 - INFO - 验证码识别尝试 20/30
+2026-02-17 03:34:31,093 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:31,205 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:31,302 - INFO - tesseract 结果: 
+2026-02-17 03:34:31,379 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:31,481 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:31,556 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:31,654 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:31,820 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:31,932 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:32,007 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:32,105 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:32,170 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:32,267 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:32,267 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:32,267 - INFO - 查找验证码输入框...
+2026-02-17 03:34:32,274 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:32,274 - WARNING - 验证码填写失败
+2026-02-17 03:34:32,274 - INFO - 开始填写登录表单...
+2026-02-17 03:34:32,338 - INFO - 用户名填写完成
+2026-02-17 03:34:32,403 - INFO - 密码填写完成
+2026-02-17 03:34:32,404 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:32,404 - INFO - 验证码识别尝试 21/30
+2026-02-17 03:34:32,404 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:32,511 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:32,606 - INFO - tesseract 结果: 
+2026-02-17 03:34:32,682 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:32,781 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:32,856 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:32,955 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:33,130 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:33,241 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:33,316 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:33,415 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:33,481 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:33,579 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:33,579 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:33,579 - INFO - 查找验证码输入框...
+2026-02-17 03:34:33,586 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:33,586 - WARNING - 验证码填写失败
+2026-02-17 03:34:33,586 - INFO - 开始填写登录表单...
+2026-02-17 03:34:33,649 - INFO - 用户名填写完成
+2026-02-17 03:34:33,716 - INFO - 密码填写完成
+2026-02-17 03:34:33,717 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:33,717 - INFO - 验证码识别尝试 22/30
+2026-02-17 03:34:33,717 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:33,823 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:33,916 - INFO - tesseract 结果: 
+2026-02-17 03:34:33,992 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:34,090 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:34,165 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:34,266 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:34,431 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:34,540 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:34,615 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:34,713 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:34,779 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:34,877 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:34,877 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:34,877 - INFO - 查找验证码输入框...
+2026-02-17 03:34:34,884 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:34,884 - WARNING - 验证码填写失败
+2026-02-17 03:34:34,884 - INFO - 开始填写登录表单...
+2026-02-17 03:34:34,947 - INFO - 用户名填写完成
+2026-02-17 03:34:35,009 - INFO - 密码填写完成
+2026-02-17 03:34:35,010 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:35,010 - INFO - 验证码识别尝试 23/30
+2026-02-17 03:34:35,010 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:35,115 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:35,210 - INFO - tesseract 结果: 
+2026-02-17 03:34:35,288 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:35,387 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:35,462 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:35,559 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:35,741 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:35,849 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:35,928 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:36,027 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:36,094 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:36,191 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:36,191 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:36,191 - INFO - 查找验证码输入框...
+2026-02-17 03:34:36,198 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:36,198 - WARNING - 验证码填写失败
+2026-02-17 03:34:36,198 - INFO - 开始填写登录表单...
+2026-02-17 03:34:36,261 - INFO - 用户名填写完成
+2026-02-17 03:34:36,324 - INFO - 密码填写完成
+2026-02-17 03:34:36,325 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:36,325 - INFO - 验证码识别尝试 24/30
+2026-02-17 03:34:36,325 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:36,431 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:36,526 - INFO - tesseract 结果: 
+2026-02-17 03:34:36,602 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:36,699 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:36,774 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:36,872 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:37,036 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:37,145 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:37,226 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:37,324 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:37,388 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:37,486 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:37,486 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:37,486 - INFO - 查找验证码输入框...
+2026-02-17 03:34:37,492 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:37,492 - WARNING - 验证码填写失败
+2026-02-17 03:34:37,493 - INFO - 开始填写登录表单...
+2026-02-17 03:34:37,558 - INFO - 用户名填写完成
+2026-02-17 03:34:37,622 - INFO - 密码填写完成
+2026-02-17 03:34:37,623 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:37,623 - INFO - 验证码识别尝试 25/30
+2026-02-17 03:34:37,623 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:37,736 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:37,831 - INFO - tesseract 结果: 
+2026-02-17 03:34:37,906 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:38,005 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:38,081 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:38,179 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:38,343 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:38,457 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:38,532 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:38,629 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:38,694 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:38,791 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:38,791 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:38,791 - INFO - 查找验证码输入框...
+2026-02-17 03:34:38,798 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:38,798 - WARNING - 验证码填写失败
+2026-02-17 03:34:38,798 - INFO - 开始填写登录表单...
+2026-02-17 03:34:38,861 - INFO - 用户名填写完成
+2026-02-17 03:34:38,923 - INFO - 密码填写完成
+2026-02-17 03:34:38,924 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:38,924 - INFO - 验证码识别尝试 26/30
+2026-02-17 03:34:38,924 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:39,029 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:39,123 - INFO - tesseract 结果: 
+2026-02-17 03:34:39,199 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:39,297 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:39,371 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:39,476 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:39,640 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:39,748 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:39,829 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:39,928 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:39,994 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:40,091 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:40,091 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:40,091 - INFO - 查找验证码输入框...
+2026-02-17 03:34:40,098 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:40,098 - WARNING - 验证码填写失败
+2026-02-17 03:34:40,098 - INFO - 开始填写登录表单...
+2026-02-17 03:34:40,161 - INFO - 用户名填写完成
+2026-02-17 03:34:40,223 - INFO - 密码填写完成
+2026-02-17 03:34:40,224 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:40,224 - INFO - 验证码识别尝试 27/30
+2026-02-17 03:34:40,224 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:40,336 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:40,432 - INFO - tesseract 结果: 
+2026-02-17 03:34:40,508 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:40,608 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:40,682 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:40,779 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:40,944 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:41,052 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:41,128 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:41,231 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:41,297 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:41,392 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:41,393 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:41,393 - INFO - 查找验证码输入框...
+2026-02-17 03:34:41,400 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:41,400 - WARNING - 验证码填写失败
+2026-02-17 03:34:41,400 - INFO - 开始填写登录表单...
+2026-02-17 03:34:41,464 - INFO - 用户名填写完成
+2026-02-17 03:34:41,530 - INFO - 密码填写完成
+2026-02-17 03:34:41,531 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:41,531 - INFO - 验证码识别尝试 28/30
+2026-02-17 03:34:41,531 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:41,636 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:41,728 - INFO - tesseract 结果: 
+2026-02-17 03:34:41,803 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:41,901 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:41,975 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:42,073 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:42,239 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:42,356 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:42,432 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:42,533 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:42,597 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:42,694 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:42,695 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:42,695 - INFO - 查找验证码输入框...
+2026-02-17 03:34:42,702 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:42,702 - WARNING - 验证码填写失败
+2026-02-17 03:34:42,702 - INFO - 开始填写登录表单...
+2026-02-17 03:34:42,764 - INFO - 用户名填写完成
+2026-02-17 03:34:42,826 - INFO - 密码填写完成
+2026-02-17 03:34:42,827 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:42,827 - INFO - 验证码识别尝试 29/30
+2026-02-17 03:34:42,827 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:42,931 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:43,024 - INFO - tesseract 结果: 
+2026-02-17 03:34:43,100 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:43,201 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:43,288 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:43,390 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:43,554 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:43,661 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:43,735 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:43,836 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:43,900 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:43,996 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:43,996 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:43,996 - INFO - 查找验证码输入框...
+2026-02-17 03:34:44,003 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:44,003 - WARNING - 验证码填写失败
+2026-02-17 03:34:44,003 - INFO - 开始填写登录表单...
+2026-02-17 03:34:44,064 - INFO - 用户名填写完成
+2026-02-17 03:34:44,128 - INFO - 密码填写完成
+2026-02-17 03:34:44,128 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-17 03:34:44,128 - INFO - 验证码识别尝试 30/30
+2026-02-17 03:34:44,128 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-17 03:34:44,231 - INFO - easyocr 结果: ['918(0.01)']
+2026-02-17 03:34:44,325 - INFO - tesseract 结果: 
+2026-02-17 03:34:44,400 - INFO - easyocr alt1 结果: ['55(0.03)']
+2026-02-17 03:34:44,503 - INFO - tesseract alt1 结果: GEXE
+2026-02-17 03:34:44,578 - INFO - easyocr alt2 结果: ['55(0.02)']
+2026-02-17 03:34:44,680 - INFO - tesseract alt2 结果: GEXE
+2026-02-17 03:34:44,851 - INFO - easyocr alt3 结果: ['55(0.00)']
+2026-02-17 03:34:44,964 - INFO - tesseract alt3 结果: GGXE
+2026-02-17 03:34:45,040 - INFO - easyocr alt4 结果: ['95(0.01)']
+2026-02-17 03:34:45,138 - INFO - tesseract alt4 结果: GGEXE
+2026-02-17 03:34:45,206 - INFO - easyocr alt5 结果: ['5(0.00)']
+2026-02-17 03:34:45,305 - INFO - tesseract alt5 结果: GSEXE
+2026-02-17 03:34:45,305 - INFO - 最终验证码识别结果: GEXE (engine=tesseract_alt1, prob=0.5)
+2026-02-17 03:34:45,305 - INFO - 查找验证码输入框...
+2026-02-17 03:34:45,312 - ERROR - 未找到验证码输入框
+2026-02-17 03:34:45,312 - WARNING - 验证码填写失败
+2026-02-17 03:34:45,312 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2026-02-17 03:34:45,312 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-17 03:34:45,312 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-17 03:34:45,312 - INFO - 查找并点击登录按钮...
+2026-02-17 03:34:45,321 - ERROR - 未找到登录按钮
+2026-02-17 03:34:45,321 - ERROR - 点击登录按钮失败
+2026-02-17 03:34:45,321 - INFO - 等待登录成功...
+2026-02-17 03:34:50,326 - INFO - 登录可能成功，继续下一步...
+2026-02-17 03:34:50,326 - INFO - 查找'去充值'按钮...
+2026-02-17 03:34:50,335 - ERROR - 未找到'去充值'按钮
+2026-02-17 03:34:50,335 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-17 03:34:50,335 - INFO - 开始提取剩余电量信息...
+2026-02-17 03:34:50,344 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-17 03:34:50,353 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-17 03:34:50,362 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-17 03:34:50,371 - INFO - 在页面源码中查找电量信息...
+2026-02-17 03:34:50,383 - WARNING - 未能提取到剩余电量信息
+2026-02-17 03:34:50,383 - WARNING - 没有电量数据可保存
+2026-02-17 03:34:50,383 - INFO - 监控流程完成
+Wrapper end: 2026-02-17T11:34:50.464831+08:00
