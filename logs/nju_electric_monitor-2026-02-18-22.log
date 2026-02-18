@@ -1,0 +1,694 @@
+2026-02-18 14:04:47,974 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-18 14:04:50,051 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-18 14:04:50,051 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-18 14:04:51,550 - INFO - OCR识别器初始化成功
+2026-02-18 14:04:51,550 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-18 14:04:51,550 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-18 14:05:04,084 - INFO - 等待登录表单加载...
+2026-02-18 14:05:04,094 - INFO - 登录表单已加载
+2026-02-18 14:05:04,094 - INFO - 开始填写登录表单...
+2026-02-18 14:05:04,178 - INFO - 用户名填写完成
+2026-02-18 14:05:04,250 - INFO - 密码填写完成
+2026-02-18 14:05:04,250 - INFO - 检查是否有验证码...
+2026-02-18 14:05:04,250 - INFO - 查找验证码图片...
+2026-02-18 14:05:04,272 - INFO - 找到验证码图片，开始截图...
+2026-02-18 14:05:04,328 - INFO - 验证码图片截取成功
+2026-02-18 14:05:04,328 - INFO - 开始填写登录表单...
+2026-02-18 14:05:04,395 - INFO - 用户名填写完成
+2026-02-18 14:05:04,459 - INFO - 密码填写完成
+2026-02-18 14:05:04,460 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:04,460 - INFO - 验证码识别尝试 1/30
+2026-02-18 14:05:04,460 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:04,552 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:04,724 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:04,794 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:04,898 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:04,944 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:05,048 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:05,236 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:05,343 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:05,407 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:05,507 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:05,571 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:05,674 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:05,674 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:05,674 - INFO - 查找验证码输入框...
+2026-02-18 14:05:05,684 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:05,684 - WARNING - 验证码填写失败
+2026-02-18 14:05:05,684 - INFO - 开始填写登录表单...
+2026-02-18 14:05:05,748 - INFO - 用户名填写完成
+2026-02-18 14:05:05,814 - INFO - 密码填写完成
+2026-02-18 14:05:05,814 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:05,814 - INFO - 验证码识别尝试 2/30
+2026-02-18 14:05:05,814 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:05,898 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:05,994 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:06,062 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:06,166 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:06,214 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:06,313 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:06,481 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:06,605 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:06,670 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:06,772 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:06,837 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:06,936 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:06,936 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:06,936 - INFO - 查找验证码输入框...
+2026-02-18 14:05:06,943 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:06,943 - WARNING - 验证码填写失败
+2026-02-18 14:05:06,944 - INFO - 开始填写登录表单...
+2026-02-18 14:05:07,007 - INFO - 用户名填写完成
+2026-02-18 14:05:07,070 - INFO - 密码填写完成
+2026-02-18 14:05:07,081 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:07,082 - INFO - 验证码识别尝试 3/30
+2026-02-18 14:05:07,082 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:07,165 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:07,261 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:07,330 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:07,431 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:07,476 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:07,576 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:07,745 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:07,852 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:07,928 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:08,034 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:08,102 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:08,207 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:08,207 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:08,207 - INFO - 查找验证码输入框...
+2026-02-18 14:05:08,214 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:08,214 - WARNING - 验证码填写失败
+2026-02-18 14:05:08,214 - INFO - 开始填写登录表单...
+2026-02-18 14:05:08,277 - INFO - 用户名填写完成
+2026-02-18 14:05:08,359 - INFO - 密码填写完成
+2026-02-18 14:05:08,370 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:08,370 - INFO - 验证码识别尝试 4/30
+2026-02-18 14:05:08,370 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:08,453 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:08,552 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:08,621 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:08,720 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:08,766 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:08,866 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:09,030 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:09,138 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:09,203 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:09,302 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:09,367 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:09,465 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:09,465 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:09,465 - INFO - 查找验证码输入框...
+2026-02-18 14:05:09,472 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:09,472 - WARNING - 验证码填写失败
+2026-02-18 14:05:09,472 - INFO - 开始填写登录表单...
+2026-02-18 14:05:09,533 - INFO - 用户名填写完成
+2026-02-18 14:05:09,595 - INFO - 密码填写完成
+2026-02-18 14:05:09,596 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:09,596 - INFO - 验证码识别尝试 5/30
+2026-02-18 14:05:09,596 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:09,687 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:09,787 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:09,852 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:09,950 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:09,997 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:10,099 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:10,274 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:10,382 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:10,448 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:10,553 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:10,618 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:10,721 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:10,721 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:10,721 - INFO - 查找验证码输入框...
+2026-02-18 14:05:10,729 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:10,729 - WARNING - 验证码填写失败
+2026-02-18 14:05:10,729 - INFO - 开始填写登录表单...
+2026-02-18 14:05:10,790 - INFO - 用户名填写完成
+2026-02-18 14:05:10,853 - INFO - 密码填写完成
+2026-02-18 14:05:10,854 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:10,854 - INFO - 验证码识别尝试 6/30
+2026-02-18 14:05:10,854 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:10,936 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:11,034 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:11,099 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:11,203 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:11,249 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:11,348 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:11,514 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:11,621 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:11,686 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:11,786 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:11,850 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:11,949 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:11,949 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:11,949 - INFO - 查找验证码输入框...
+2026-02-18 14:05:11,956 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:11,956 - WARNING - 验证码填写失败
+2026-02-18 14:05:11,956 - INFO - 开始填写登录表单...
+2026-02-18 14:05:12,017 - INFO - 用户名填写完成
+2026-02-18 14:05:12,081 - INFO - 密码填写完成
+2026-02-18 14:05:12,082 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:12,082 - INFO - 验证码识别尝试 7/30
+2026-02-18 14:05:12,082 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:12,163 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:12,259 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:12,324 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:12,428 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:12,474 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:12,572 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:12,736 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:12,843 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:12,908 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:13,009 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:13,073 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:13,179 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:13,179 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:13,179 - INFO - 查找验证码输入框...
+2026-02-18 14:05:13,186 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:13,186 - WARNING - 验证码填写失败
+2026-02-18 14:05:13,186 - INFO - 开始填写登录表单...
+2026-02-18 14:05:13,249 - INFO - 用户名填写完成
+2026-02-18 14:05:13,314 - INFO - 密码填写完成
+2026-02-18 14:05:13,315 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:13,315 - INFO - 验证码识别尝试 8/30
+2026-02-18 14:05:13,315 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:13,396 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:13,493 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:13,559 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:13,658 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:13,710 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:13,825 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:13,989 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:14,103 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:14,167 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:14,269 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:14,337 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:14,440 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:14,440 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:14,440 - INFO - 查找验证码输入框...
+2026-02-18 14:05:14,447 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:14,447 - WARNING - 验证码填写失败
+2026-02-18 14:05:14,447 - INFO - 开始填写登录表单...
+2026-02-18 14:05:14,512 - INFO - 用户名填写完成
+2026-02-18 14:05:14,578 - INFO - 密码填写完成
+2026-02-18 14:05:14,579 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:14,579 - INFO - 验证码识别尝试 9/30
+2026-02-18 14:05:14,579 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:14,663 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:14,759 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:14,827 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:14,931 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:14,979 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:15,079 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:15,247 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:15,360 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:15,426 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:15,528 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:15,595 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:15,704 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:15,704 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:15,704 - INFO - 查找验证码输入框...
+2026-02-18 14:05:15,711 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:15,711 - WARNING - 验证码填写失败
+2026-02-18 14:05:15,711 - INFO - 开始填写登录表单...
+2026-02-18 14:05:15,776 - INFO - 用户名填写完成
+2026-02-18 14:05:15,843 - INFO - 密码填写完成
+2026-02-18 14:05:15,843 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:15,843 - INFO - 验证码识别尝试 10/30
+2026-02-18 14:05:15,843 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:15,932 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:16,030 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:16,098 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:16,201 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:16,248 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:16,349 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:16,516 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:16,622 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:16,687 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:16,786 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:16,852 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:16,953 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:16,953 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:16,954 - INFO - 查找验证码输入框...
+2026-02-18 14:05:16,961 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:16,961 - WARNING - 验证码填写失败
+2026-02-18 14:05:16,961 - INFO - 开始填写登录表单...
+2026-02-18 14:05:17,023 - INFO - 用户名填写完成
+2026-02-18 14:05:17,087 - INFO - 密码填写完成
+2026-02-18 14:05:17,088 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:17,088 - INFO - 验证码识别尝试 11/30
+2026-02-18 14:05:17,088 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:17,170 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:17,268 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:17,335 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:17,435 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:17,481 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:17,583 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:17,747 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:17,856 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:17,920 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:18,021 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:18,085 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:18,185 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:18,185 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:18,185 - INFO - 查找验证码输入框...
+2026-02-18 14:05:18,192 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:18,192 - WARNING - 验证码填写失败
+2026-02-18 14:05:18,192 - INFO - 开始填写登录表单...
+2026-02-18 14:05:18,254 - INFO - 用户名填写完成
+2026-02-18 14:05:18,317 - INFO - 密码填写完成
+2026-02-18 14:05:18,317 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:18,317 - INFO - 验证码识别尝试 12/30
+2026-02-18 14:05:18,317 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:18,398 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:18,493 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:18,572 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:18,677 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:18,724 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:18,824 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:18,988 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:19,096 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:19,161 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:19,261 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:19,334 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:19,434 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:19,434 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:19,434 - INFO - 查找验证码输入框...
+2026-02-18 14:05:19,441 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:19,441 - WARNING - 验证码填写失败
+2026-02-18 14:05:19,441 - INFO - 开始填写登录表单...
+2026-02-18 14:05:19,504 - INFO - 用户名填写完成
+2026-02-18 14:05:19,567 - INFO - 密码填写完成
+2026-02-18 14:05:19,568 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:19,568 - INFO - 验证码识别尝试 13/30
+2026-02-18 14:05:19,568 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:19,658 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:19,757 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:19,825 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:19,928 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:19,977 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:20,075 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:20,240 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:20,350 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:20,414 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:20,516 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:20,581 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:20,687 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:20,687 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:20,687 - INFO - 查找验证码输入框...
+2026-02-18 14:05:20,694 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:20,694 - WARNING - 验证码填写失败
+2026-02-18 14:05:20,694 - INFO - 开始填写登录表单...
+2026-02-18 14:05:20,759 - INFO - 用户名填写完成
+2026-02-18 14:05:20,820 - INFO - 密码填写完成
+2026-02-18 14:05:20,821 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:20,821 - INFO - 验证码识别尝试 14/30
+2026-02-18 14:05:20,821 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:20,903 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:21,000 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:21,066 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:21,171 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:21,225 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:21,325 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:21,490 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:21,597 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:21,662 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:21,762 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:21,828 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:21,929 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:21,929 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:21,929 - INFO - 查找验证码输入框...
+2026-02-18 14:05:21,936 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:21,936 - WARNING - 验证码填写失败
+2026-02-18 14:05:21,936 - INFO - 开始填写登录表单...
+2026-02-18 14:05:21,999 - INFO - 用户名填写完成
+2026-02-18 14:05:22,062 - INFO - 密码填写完成
+2026-02-18 14:05:22,063 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:22,063 - INFO - 验证码识别尝试 15/30
+2026-02-18 14:05:22,063 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:22,145 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:22,242 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:22,309 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:22,409 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:22,456 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:22,555 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:22,720 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:22,828 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:22,891 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:22,993 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:23,057 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:23,158 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:23,158 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:23,159 - INFO - 查找验证码输入框...
+2026-02-18 14:05:23,165 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:23,165 - WARNING - 验证码填写失败
+2026-02-18 14:05:23,166 - INFO - 开始填写登录表单...
+2026-02-18 14:05:23,230 - INFO - 用户名填写完成
+2026-02-18 14:05:23,293 - INFO - 密码填写完成
+2026-02-18 14:05:23,294 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:23,294 - INFO - 验证码识别尝试 16/30
+2026-02-18 14:05:23,294 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:23,376 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:23,474 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:23,539 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:23,641 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:23,687 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:23,786 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:23,951 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:24,057 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:24,121 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:24,221 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:24,286 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:24,388 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:24,388 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:24,388 - INFO - 查找验证码输入框...
+2026-02-18 14:05:24,395 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:24,395 - WARNING - 验证码填写失败
+2026-02-18 14:05:24,395 - INFO - 开始填写登录表单...
+2026-02-18 14:05:24,457 - INFO - 用户名填写完成
+2026-02-18 14:05:24,518 - INFO - 密码填写完成
+2026-02-18 14:05:24,519 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:24,519 - INFO - 验证码识别尝试 17/30
+2026-02-18 14:05:24,519 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:24,600 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:24,696 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:24,761 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:24,861 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:24,907 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:25,008 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:25,173 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:25,283 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:25,349 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:25,453 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:25,518 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:25,620 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:25,620 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:25,620 - INFO - 查找验证码输入框...
+2026-02-18 14:05:25,627 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:25,627 - WARNING - 验证码填写失败
+2026-02-18 14:05:25,627 - INFO - 开始填写登录表单...
+2026-02-18 14:05:25,689 - INFO - 用户名填写完成
+2026-02-18 14:05:25,752 - INFO - 密码填写完成
+2026-02-18 14:05:25,753 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:25,753 - INFO - 验证码识别尝试 18/30
+2026-02-18 14:05:25,753 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:25,835 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:25,932 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:25,997 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:26,101 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:26,147 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:26,245 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:26,410 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:26,518 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:26,583 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:26,689 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:26,754 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:26,857 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:26,857 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:26,857 - INFO - 查找验证码输入框...
+2026-02-18 14:05:26,864 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:26,864 - WARNING - 验证码填写失败
+2026-02-18 14:05:26,864 - INFO - 开始填写登录表单...
+2026-02-18 14:05:26,928 - INFO - 用户名填写完成
+2026-02-18 14:05:26,993 - INFO - 密码填写完成
+2026-02-18 14:05:26,994 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:26,994 - INFO - 验证码识别尝试 19/30
+2026-02-18 14:05:26,994 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:27,077 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:27,173 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:27,242 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:27,343 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:27,389 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:27,487 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:27,654 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:27,763 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:27,827 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:27,928 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:27,993 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:28,094 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:28,094 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:28,094 - INFO - 查找验证码输入框...
+2026-02-18 14:05:28,101 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:28,101 - WARNING - 验证码填写失败
+2026-02-18 14:05:28,101 - INFO - 开始填写登录表单...
+2026-02-18 14:05:28,165 - INFO - 用户名填写完成
+2026-02-18 14:05:28,230 - INFO - 密码填写完成
+2026-02-18 14:05:28,231 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:28,231 - INFO - 验证码识别尝试 20/30
+2026-02-18 14:05:28,231 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:28,330 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:28,426 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:28,491 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:28,592 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:28,639 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:28,739 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:28,903 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:29,012 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:29,076 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:29,181 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:29,247 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:29,350 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:29,350 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:29,350 - INFO - 查找验证码输入框...
+2026-02-18 14:05:29,357 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:29,357 - WARNING - 验证码填写失败
+2026-02-18 14:05:29,357 - INFO - 开始填写登录表单...
+2026-02-18 14:05:29,422 - INFO - 用户名填写完成
+2026-02-18 14:05:29,483 - INFO - 密码填写完成
+2026-02-18 14:05:29,484 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:29,484 - INFO - 验证码识别尝试 21/30
+2026-02-18 14:05:29,484 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:29,566 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:29,662 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:29,728 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:29,829 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:29,876 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:29,975 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:30,141 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:30,252 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:30,317 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:30,422 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:30,487 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:30,589 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:30,589 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:30,589 - INFO - 查找验证码输入框...
+2026-02-18 14:05:30,596 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:30,596 - WARNING - 验证码填写失败
+2026-02-18 14:05:30,596 - INFO - 开始填写登录表单...
+2026-02-18 14:05:30,660 - INFO - 用户名填写完成
+2026-02-18 14:05:30,722 - INFO - 密码填写完成
+2026-02-18 14:05:30,723 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:30,723 - INFO - 验证码识别尝试 22/30
+2026-02-18 14:05:30,723 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:30,804 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:30,901 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:30,968 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:31,072 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:31,119 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:31,222 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:31,386 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:31,497 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:31,562 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:31,663 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:31,727 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:31,828 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:31,828 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:31,828 - INFO - 查找验证码输入框...
+2026-02-18 14:05:31,835 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:31,835 - WARNING - 验证码填写失败
+2026-02-18 14:05:31,835 - INFO - 开始填写登录表单...
+2026-02-18 14:05:31,898 - INFO - 用户名填写完成
+2026-02-18 14:05:31,962 - INFO - 密码填写完成
+2026-02-18 14:05:31,963 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:31,963 - INFO - 验证码识别尝试 23/30
+2026-02-18 14:05:31,963 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:32,046 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:32,144 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:32,210 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:32,314 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:32,362 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:32,463 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:32,631 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:32,739 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:32,803 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:32,906 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:32,971 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:33,073 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:33,073 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:33,073 - INFO - 查找验证码输入框...
+2026-02-18 14:05:33,080 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:33,080 - WARNING - 验证码填写失败
+2026-02-18 14:05:33,080 - INFO - 开始填写登录表单...
+2026-02-18 14:05:33,143 - INFO - 用户名填写完成
+2026-02-18 14:05:33,209 - INFO - 密码填写完成
+2026-02-18 14:05:33,210 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:33,210 - INFO - 验证码识别尝试 24/30
+2026-02-18 14:05:33,210 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:33,302 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:33,399 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:33,464 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:33,566 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:33,613 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:33,714 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:33,879 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:33,990 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:34,054 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:34,158 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:34,224 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:34,329 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:34,330 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:34,330 - INFO - 查找验证码输入框...
+2026-02-18 14:05:34,337 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:34,337 - WARNING - 验证码填写失败
+2026-02-18 14:05:34,337 - INFO - 开始填写登录表单...
+2026-02-18 14:05:34,399 - INFO - 用户名填写完成
+2026-02-18 14:05:34,464 - INFO - 密码填写完成
+2026-02-18 14:05:34,464 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:34,464 - INFO - 验证码识别尝试 25/30
+2026-02-18 14:05:34,464 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:34,555 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:34,656 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:34,727 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:34,828 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:34,874 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:34,972 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:35,144 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:35,261 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:35,329 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:35,433 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:35,500 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:35,604 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:35,604 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:35,605 - INFO - 查找验证码输入框...
+2026-02-18 14:05:35,612 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:35,612 - WARNING - 验证码填写失败
+2026-02-18 14:05:35,612 - INFO - 开始填写登录表单...
+2026-02-18 14:05:35,677 - INFO - 用户名填写完成
+2026-02-18 14:05:35,744 - INFO - 密码填写完成
+2026-02-18 14:05:35,744 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:35,744 - INFO - 验证码识别尝试 26/30
+2026-02-18 14:05:35,744 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:35,828 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:35,924 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:35,991 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:36,092 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:36,139 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:36,244 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:36,411 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:36,518 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:36,583 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:36,684 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:36,749 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:36,851 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:36,852 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:36,852 - INFO - 查找验证码输入框...
+2026-02-18 14:05:36,858 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:36,859 - WARNING - 验证码填写失败
+2026-02-18 14:05:36,859 - INFO - 开始填写登录表单...
+2026-02-18 14:05:36,922 - INFO - 用户名填写完成
+2026-02-18 14:05:36,987 - INFO - 密码填写完成
+2026-02-18 14:05:36,987 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:36,988 - INFO - 验证码识别尝试 27/30
+2026-02-18 14:05:36,988 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:37,069 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:37,172 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:37,239 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:37,340 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:37,387 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:37,487 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:37,655 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:37,763 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:37,827 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:37,930 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:37,995 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:38,096 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:38,096 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:38,097 - INFO - 查找验证码输入框...
+2026-02-18 14:05:38,104 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:38,104 - WARNING - 验证码填写失败
+2026-02-18 14:05:38,104 - INFO - 开始填写登录表单...
+2026-02-18 14:05:38,166 - INFO - 用户名填写完成
+2026-02-18 14:05:38,232 - INFO - 密码填写完成
+2026-02-18 14:05:38,233 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:38,233 - INFO - 验证码识别尝试 28/30
+2026-02-18 14:05:38,233 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:38,326 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:38,424 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:38,490 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:38,591 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:38,638 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:38,741 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:38,906 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:39,017 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:39,082 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:39,182 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:39,248 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:39,349 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:39,349 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:39,349 - INFO - 查找验证码输入框...
+2026-02-18 14:05:39,356 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:39,356 - WARNING - 验证码填写失败
+2026-02-18 14:05:39,356 - INFO - 开始填写登录表单...
+2026-02-18 14:05:39,419 - INFO - 用户名填写完成
+2026-02-18 14:05:39,483 - INFO - 密码填写完成
+2026-02-18 14:05:39,484 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:39,484 - INFO - 验证码识别尝试 29/30
+2026-02-18 14:05:39,484 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:39,581 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:39,682 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:39,749 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:39,848 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:39,894 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:39,993 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:40,158 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:40,267 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:40,332 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:40,430 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:40,495 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:40,595 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:40,595 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:40,595 - INFO - 查找验证码输入框...
+2026-02-18 14:05:40,602 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:40,602 - WARNING - 验证码填写失败
+2026-02-18 14:05:40,602 - INFO - 开始填写登录表单...
+2026-02-18 14:05:40,664 - INFO - 用户名填写完成
+2026-02-18 14:05:40,728 - INFO - 密码填写完成
+2026-02-18 14:05:40,729 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-18 14:05:40,729 - INFO - 验证码识别尝试 30/30
+2026-02-18 14:05:40,729 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-18 14:05:40,820 - INFO - easyocr 结果: ['VRR3(0.66)']
+2026-02-18 14:05:40,919 - INFO - tesseract 结果: VRPS
+2026-02-18 14:05:40,985 - INFO - easyocr alt1 结果: ['V(0.00)']
+2026-02-18 14:05:41,085 - INFO - tesseract alt1 结果: RPS
+2026-02-18 14:05:41,139 - INFO - easyocr alt2 结果: ['VR(0.59)']
+2026-02-18 14:05:41,237 - INFO - tesseract alt2 结果: RPS
+2026-02-18 14:05:41,404 - INFO - easyocr alt3 结果: ['VR(0.00)']
+2026-02-18 14:05:41,514 - INFO - tesseract alt3 结果: VRPS
+2026-02-18 14:05:41,579 - INFO - easyocr alt4 结果: ['V(0.02)']
+2026-02-18 14:05:41,681 - INFO - tesseract alt4 结果: RPS
+2026-02-18 14:05:41,747 - INFO - easyocr alt5 结果: ['0(0.00)']
+2026-02-18 14:05:41,854 - INFO - tesseract alt5 结果: RPS
+2026-02-18 14:05:41,854 - INFO - 最终验证码识别结果: VRR3 (engine=easyocr, prob=0.6574586629867554)
+2026-02-18 14:05:41,854 - INFO - 查找验证码输入框...
+2026-02-18 14:05:41,862 - ERROR - 未找到验证码输入框
+2026-02-18 14:05:41,862 - WARNING - 验证码填写失败
+2026-02-18 14:05:41,862 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-18 14:05:41,862 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-18 14:05:41,863 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-18 14:05:41,863 - INFO - 查找并点击登录按钮...
+2026-02-18 14:05:41,872 - ERROR - 未找到登录按钮
+2026-02-18 14:05:41,872 - ERROR - 点击登录按钮失败
+2026-02-18 14:05:41,872 - INFO - 等待登录成功...
+2026-02-18 14:05:46,877 - INFO - 登录可能成功，继续下一步...
+2026-02-18 14:05:46,877 - INFO - 查找'去充值'按钮...
+2026-02-18 14:05:46,889 - ERROR - 未找到'去充值'按钮
+2026-02-18 14:05:46,889 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-18 14:05:46,889 - INFO - 开始提取剩余电量信息...
+2026-02-18 14:05:46,898 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-18 14:05:46,907 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-18 14:05:46,916 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-18 14:05:46,924 - INFO - 在页面源码中查找电量信息...
+2026-02-18 14:05:46,936 - WARNING - 未能提取到剩余电量信息
+2026-02-18 14:05:46,936 - WARNING - 没有电量数据可保存
+2026-02-18 14:05:46,936 - INFO - 监控流程完成
