@@ -1,0 +1,694 @@
+2026-02-19 14:05:38,451 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-19 14:05:40,417 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-19 14:05:40,417 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-19 14:05:41,953 - INFO - OCR识别器初始化成功
+2026-02-19 14:05:41,953 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-19 14:05:41,953 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-19 14:05:53,361 - INFO - 等待登录表单加载...
+2026-02-19 14:05:53,371 - INFO - 登录表单已加载
+2026-02-19 14:05:53,372 - INFO - 开始填写登录表单...
+2026-02-19 14:05:53,458 - INFO - 用户名填写完成
+2026-02-19 14:05:53,532 - INFO - 密码填写完成
+2026-02-19 14:05:53,532 - INFO - 检查是否有验证码...
+2026-02-19 14:05:53,532 - INFO - 查找验证码图片...
+2026-02-19 14:05:53,554 - INFO - 找到验证码图片，开始截图...
+2026-02-19 14:05:53,599 - INFO - 验证码图片截取成功
+2026-02-19 14:05:53,599 - INFO - 开始填写登录表单...
+2026-02-19 14:05:53,669 - INFO - 用户名填写完成
+2026-02-19 14:05:53,736 - INFO - 密码填写完成
+2026-02-19 14:05:53,737 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:05:53,737 - INFO - 验证码识别尝试 1/30
+2026-02-19 14:05:53,738 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:05:53,852 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:05:54,000 - INFO - tesseract 结果: 
+2026-02-19 14:05:54,055 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:05:54,149 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:05:54,199 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:05:54,332 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:05:54,506 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:05:54,616 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:05:54,667 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:05:54,764 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:05:54,814 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:05:54,913 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:05:54,914 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:05:54,914 - INFO - 查找验证码输入框...
+2026-02-19 14:05:54,925 - ERROR - 未找到验证码输入框
+2026-02-19 14:05:54,925 - WARNING - 验证码填写失败
+2026-02-19 14:05:54,925 - INFO - 开始填写登录表单...
+2026-02-19 14:05:54,991 - INFO - 用户名填写完成
+2026-02-19 14:05:55,058 - INFO - 密码填写完成
+2026-02-19 14:05:55,059 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:05:55,059 - INFO - 验证码识别尝试 2/30
+2026-02-19 14:05:55,059 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:05:55,147 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:05:55,240 - INFO - tesseract 结果: 
+2026-02-19 14:05:55,291 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:05:55,389 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:05:55,439 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:05:55,536 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:05:55,687 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:05:55,796 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:05:55,846 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:05:55,942 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:05:55,991 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:05:56,088 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:05:56,089 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:05:56,089 - INFO - 查找验证码输入框...
+2026-02-19 14:05:56,096 - ERROR - 未找到验证码输入框
+2026-02-19 14:05:56,097 - WARNING - 验证码填写失败
+2026-02-19 14:05:56,097 - INFO - 开始填写登录表单...
+2026-02-19 14:05:56,163 - INFO - 用户名填写完成
+2026-02-19 14:05:56,230 - INFO - 密码填写完成
+2026-02-19 14:05:56,231 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:05:56,231 - INFO - 验证码识别尝试 3/30
+2026-02-19 14:05:56,231 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:05:56,318 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:05:56,409 - INFO - tesseract 结果: 
+2026-02-19 14:05:56,460 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:05:56,559 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:05:56,609 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:05:56,703 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:05:56,854 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:05:56,964 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:05:57,013 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:05:57,111 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:05:57,161 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:05:57,263 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:05:57,263 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:05:57,263 - INFO - 查找验证码输入框...
+2026-02-19 14:05:57,271 - ERROR - 未找到验证码输入框
+2026-02-19 14:05:57,271 - WARNING - 验证码填写失败
+2026-02-19 14:05:57,271 - INFO - 开始填写登录表单...
+2026-02-19 14:05:57,340 - INFO - 用户名填写完成
+2026-02-19 14:05:57,417 - INFO - 密码填写完成
+2026-02-19 14:05:57,418 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:05:57,418 - INFO - 验证码识别尝试 4/30
+2026-02-19 14:05:57,418 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:05:57,506 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:05:57,597 - INFO - tesseract 结果: 
+2026-02-19 14:05:57,649 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:05:57,745 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:05:57,794 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:05:57,891 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:05:58,044 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:05:58,160 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:05:58,210 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:05:58,306 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:05:58,356 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:05:58,456 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:05:58,457 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:05:58,457 - INFO - 查找验证码输入框...
+2026-02-19 14:05:58,464 - ERROR - 未找到验证码输入框
+2026-02-19 14:05:58,464 - WARNING - 验证码填写失败
+2026-02-19 14:05:58,465 - INFO - 开始填写登录表单...
+2026-02-19 14:05:58,531 - INFO - 用户名填写完成
+2026-02-19 14:05:58,597 - INFO - 密码填写完成
+2026-02-19 14:05:58,598 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:05:58,598 - INFO - 验证码识别尝试 5/30
+2026-02-19 14:05:58,598 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:05:58,685 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:05:58,777 - INFO - tesseract 结果: 
+2026-02-19 14:05:58,828 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:05:58,929 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:05:58,979 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:05:59,073 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:05:59,226 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:05:59,337 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:05:59,387 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:05:59,483 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:05:59,533 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:05:59,638 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:05:59,638 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:05:59,638 - INFO - 查找验证码输入框...
+2026-02-19 14:05:59,646 - ERROR - 未找到验证码输入框
+2026-02-19 14:05:59,646 - WARNING - 验证码填写失败
+2026-02-19 14:05:59,646 - INFO - 开始填写登录表单...
+2026-02-19 14:05:59,713 - INFO - 用户名填写完成
+2026-02-19 14:05:59,778 - INFO - 密码填写完成
+2026-02-19 14:05:59,779 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:05:59,779 - INFO - 验证码识别尝试 6/30
+2026-02-19 14:05:59,779 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:05:59,867 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:05:59,959 - INFO - tesseract 结果: 
+2026-02-19 14:06:00,010 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:00,109 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:00,159 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:00,260 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:00,412 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:00,523 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:00,580 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:00,677 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:00,728 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:00,834 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:00,834 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:00,834 - INFO - 查找验证码输入框...
+2026-02-19 14:06:00,842 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:00,842 - WARNING - 验证码填写失败
+2026-02-19 14:06:00,842 - INFO - 开始填写登录表单...
+2026-02-19 14:06:00,907 - INFO - 用户名填写完成
+2026-02-19 14:06:00,975 - INFO - 密码填写完成
+2026-02-19 14:06:00,976 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:00,976 - INFO - 验证码识别尝试 7/30
+2026-02-19 14:06:00,976 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:01,064 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:01,160 - INFO - tesseract 结果: 
+2026-02-19 14:06:01,213 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:01,316 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:01,366 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:01,460 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:01,612 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:01,721 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:01,771 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:01,872 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:01,922 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:02,028 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:02,028 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:02,028 - INFO - 查找验证码输入框...
+2026-02-19 14:06:02,036 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:02,036 - WARNING - 验证码填写失败
+2026-02-19 14:06:02,036 - INFO - 开始填写登录表单...
+2026-02-19 14:06:02,101 - INFO - 用户名填写完成
+2026-02-19 14:06:02,169 - INFO - 密码填写完成
+2026-02-19 14:06:02,170 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:02,170 - INFO - 验证码识别尝试 8/30
+2026-02-19 14:06:02,170 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:02,259 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:02,351 - INFO - tesseract 结果: 
+2026-02-19 14:06:02,403 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:02,502 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:02,552 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:02,653 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:02,805 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:02,915 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:02,966 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:03,064 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:03,114 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:03,216 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:03,216 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:03,216 - INFO - 查找验证码输入框...
+2026-02-19 14:06:03,225 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:03,225 - WARNING - 验证码填写失败
+2026-02-19 14:06:03,225 - INFO - 开始填写登录表单...
+2026-02-19 14:06:03,294 - INFO - 用户名填写完成
+2026-02-19 14:06:03,361 - INFO - 密码填写完成
+2026-02-19 14:06:03,362 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:03,362 - INFO - 验证码识别尝试 9/30
+2026-02-19 14:06:03,362 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:03,450 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:03,542 - INFO - tesseract 结果: 
+2026-02-19 14:06:03,593 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:03,693 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:03,743 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:03,837 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:03,989 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:04,104 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:04,155 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:04,256 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:04,307 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:04,406 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:04,407 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:04,407 - INFO - 查找验证码输入框...
+2026-02-19 14:06:04,415 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:04,415 - WARNING - 验证码填写失败
+2026-02-19 14:06:04,415 - INFO - 开始填写登录表单...
+2026-02-19 14:06:04,481 - INFO - 用户名填写完成
+2026-02-19 14:06:04,549 - INFO - 密码填写完成
+2026-02-19 14:06:04,550 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:04,550 - INFO - 验证码识别尝试 10/30
+2026-02-19 14:06:04,550 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:04,636 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:04,733 - INFO - tesseract 结果: 
+2026-02-19 14:06:04,783 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:04,884 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:04,934 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:05,031 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:05,183 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:05,291 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:05,341 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:05,438 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:05,488 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:05,589 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:05,589 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:05,589 - INFO - 查找验证码输入框...
+2026-02-19 14:06:05,596 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:05,596 - WARNING - 验证码填写失败
+2026-02-19 14:06:05,596 - INFO - 开始填写登录表单...
+2026-02-19 14:06:05,663 - INFO - 用户名填写完成
+2026-02-19 14:06:05,731 - INFO - 密码填写完成
+2026-02-19 14:06:05,732 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:05,732 - INFO - 验证码识别尝试 11/30
+2026-02-19 14:06:05,732 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:05,819 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:05,917 - INFO - tesseract 结果: 
+2026-02-19 14:06:05,975 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:06,072 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:06,122 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:06,216 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:06,368 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:06,481 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:06,531 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:06,632 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:06,682 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:06,789 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:06,789 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:06,789 - INFO - 查找验证码输入框...
+2026-02-19 14:06:06,797 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:06,797 - WARNING - 验证码填写失败
+2026-02-19 14:06:06,797 - INFO - 开始填写登录表单...
+2026-02-19 14:06:06,864 - INFO - 用户名填写完成
+2026-02-19 14:06:06,930 - INFO - 密码填写完成
+2026-02-19 14:06:06,931 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:06,931 - INFO - 验证码识别尝试 12/30
+2026-02-19 14:06:06,931 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:07,029 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:07,122 - INFO - tesseract 结果: 
+2026-02-19 14:06:07,173 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:07,268 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:07,318 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:07,417 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:07,569 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:07,677 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:07,726 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:07,822 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:07,880 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:07,979 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:07,979 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:07,979 - INFO - 查找验证码输入框...
+2026-02-19 14:06:07,987 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:07,987 - WARNING - 验证码填写失败
+2026-02-19 14:06:07,987 - INFO - 开始填写登录表单...
+2026-02-19 14:06:08,054 - INFO - 用户名填写完成
+2026-02-19 14:06:08,120 - INFO - 密码填写完成
+2026-02-19 14:06:08,121 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:08,121 - INFO - 验证码识别尝试 13/30
+2026-02-19 14:06:08,121 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:08,217 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:08,308 - INFO - tesseract 结果: 
+2026-02-19 14:06:08,358 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:08,453 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:08,501 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:08,595 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:08,745 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:08,856 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:08,905 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:09,004 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:09,054 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:09,154 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:09,155 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:09,155 - INFO - 查找验证码输入框...
+2026-02-19 14:06:09,162 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:09,162 - WARNING - 验证码填写失败
+2026-02-19 14:06:09,162 - INFO - 开始填写登录表单...
+2026-02-19 14:06:09,229 - INFO - 用户名填写完成
+2026-02-19 14:06:09,300 - INFO - 密码填写完成
+2026-02-19 14:06:09,300 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:09,301 - INFO - 验证码识别尝试 14/30
+2026-02-19 14:06:09,301 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:09,388 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:09,483 - INFO - tesseract 结果: 
+2026-02-19 14:06:09,534 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:09,631 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:09,680 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:09,781 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:09,933 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:10,044 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:10,094 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:10,192 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:10,241 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:10,365 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:10,366 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:10,366 - INFO - 查找验证码输入框...
+2026-02-19 14:06:10,382 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:10,382 - WARNING - 验证码填写失败
+2026-02-19 14:06:10,382 - INFO - 开始填写登录表单...
+2026-02-19 14:06:10,491 - INFO - 用户名填写完成
+2026-02-19 14:06:10,560 - INFO - 密码填写完成
+2026-02-19 14:06:10,561 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:10,561 - INFO - 验证码识别尝试 15/30
+2026-02-19 14:06:10,561 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:10,664 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:10,786 - INFO - tesseract 结果: 
+2026-02-19 14:06:10,842 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:10,942 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:10,995 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:11,101 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:11,261 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:11,378 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:11,429 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:11,530 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:11,580 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:11,679 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:11,679 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:11,679 - INFO - 查找验证码输入框...
+2026-02-19 14:06:11,687 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:11,687 - WARNING - 验证码填写失败
+2026-02-19 14:06:11,687 - INFO - 开始填写登录表单...
+2026-02-19 14:06:11,753 - INFO - 用户名填写完成
+2026-02-19 14:06:11,821 - INFO - 密码填写完成
+2026-02-19 14:06:11,821 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:11,822 - INFO - 验证码识别尝试 16/30
+2026-02-19 14:06:11,822 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:11,912 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:12,001 - INFO - tesseract 结果: 
+2026-02-19 14:06:12,051 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:12,148 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:12,198 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:12,295 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:12,446 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:12,555 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:12,605 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:12,700 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:12,758 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:12,863 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:12,863 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:12,864 - INFO - 查找验证码输入框...
+2026-02-19 14:06:12,871 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:12,871 - WARNING - 验证码填写失败
+2026-02-19 14:06:12,871 - INFO - 开始填写登录表单...
+2026-02-19 14:06:12,937 - INFO - 用户名填写完成
+2026-02-19 14:06:13,004 - INFO - 密码填写完成
+2026-02-19 14:06:13,005 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:13,005 - INFO - 验证码识别尝试 17/30
+2026-02-19 14:06:13,005 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:13,093 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:13,185 - INFO - tesseract 结果: 
+2026-02-19 14:06:13,237 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:13,334 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:13,392 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:13,492 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:13,643 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:13,753 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:13,811 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:13,914 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:13,964 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:14,069 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:14,069 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:14,069 - INFO - 查找验证码输入框...
+2026-02-19 14:06:14,077 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:14,077 - WARNING - 验证码填写失败
+2026-02-19 14:06:14,077 - INFO - 开始填写登录表单...
+2026-02-19 14:06:14,145 - INFO - 用户名填写完成
+2026-02-19 14:06:14,214 - INFO - 密码填写完成
+2026-02-19 14:06:14,215 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:14,215 - INFO - 验证码识别尝试 18/30
+2026-02-19 14:06:14,215 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:14,302 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:14,394 - INFO - tesseract 结果: 
+2026-02-19 14:06:14,447 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:14,546 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:14,605 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:14,705 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:14,860 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:14,976 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:15,026 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:15,129 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:15,180 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:15,284 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:15,284 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:15,284 - INFO - 查找验证码输入框...
+2026-02-19 14:06:15,292 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:15,292 - WARNING - 验证码填写失败
+2026-02-19 14:06:15,292 - INFO - 开始填写登录表单...
+2026-02-19 14:06:15,358 - INFO - 用户名填写完成
+2026-02-19 14:06:15,425 - INFO - 密码填写完成
+2026-02-19 14:06:15,426 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:15,426 - INFO - 验证码识别尝试 19/30
+2026-02-19 14:06:15,426 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:15,514 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:15,606 - INFO - tesseract 结果: 
+2026-02-19 14:06:15,656 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:15,754 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:15,803 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:15,897 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:16,047 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:16,158 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:16,208 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:16,306 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:16,355 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:16,460 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:16,460 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:16,460 - INFO - 查找验证码输入框...
+2026-02-19 14:06:16,467 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:16,468 - WARNING - 验证码填写失败
+2026-02-19 14:06:16,468 - INFO - 开始填写登录表单...
+2026-02-19 14:06:16,535 - INFO - 用户名填写完成
+2026-02-19 14:06:16,601 - INFO - 密码填写完成
+2026-02-19 14:06:16,602 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:16,602 - INFO - 验证码识别尝试 20/30
+2026-02-19 14:06:16,602 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:16,690 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:16,782 - INFO - tesseract 结果: 
+2026-02-19 14:06:16,833 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:16,939 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:16,988 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:17,086 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:17,237 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:17,347 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:17,397 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:17,492 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:17,541 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:17,642 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:17,642 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:17,643 - INFO - 查找验证码输入框...
+2026-02-19 14:06:17,650 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:17,650 - WARNING - 验证码填写失败
+2026-02-19 14:06:17,650 - INFO - 开始填写登录表单...
+2026-02-19 14:06:17,716 - INFO - 用户名填写完成
+2026-02-19 14:06:17,784 - INFO - 密码填写完成
+2026-02-19 14:06:17,785 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:17,785 - INFO - 验证码识别尝试 21/30
+2026-02-19 14:06:17,785 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:17,881 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:17,971 - INFO - tesseract 结果: 
+2026-02-19 14:06:18,022 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:18,125 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:18,186 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:18,281 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:18,431 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:18,542 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:18,591 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:18,688 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:18,747 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:18,847 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:18,847 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:18,847 - INFO - 查找验证码输入框...
+2026-02-19 14:06:18,855 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:18,855 - WARNING - 验证码填写失败
+2026-02-19 14:06:18,855 - INFO - 开始填写登录表单...
+2026-02-19 14:06:18,921 - INFO - 用户名填写完成
+2026-02-19 14:06:18,989 - INFO - 密码填写完成
+2026-02-19 14:06:18,990 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:18,990 - INFO - 验证码识别尝试 22/30
+2026-02-19 14:06:18,990 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:19,077 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:19,168 - INFO - tesseract 结果: 
+2026-02-19 14:06:19,219 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:19,317 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:19,367 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:19,467 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:19,619 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:19,732 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:19,783 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:19,886 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:19,939 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:20,046 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:20,046 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:20,046 - INFO - 查找验证码输入框...
+2026-02-19 14:06:20,054 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:20,054 - WARNING - 验证码填写失败
+2026-02-19 14:06:20,054 - INFO - 开始填写登录表单...
+2026-02-19 14:06:20,122 - INFO - 用户名填写完成
+2026-02-19 14:06:20,190 - INFO - 密码填写完成
+2026-02-19 14:06:20,191 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:20,191 - INFO - 验证码识别尝试 23/30
+2026-02-19 14:06:20,191 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:20,280 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:20,377 - INFO - tesseract 结果: 
+2026-02-19 14:06:20,429 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:20,527 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:20,579 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:20,675 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:20,826 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:20,937 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:20,988 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:21,085 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:21,134 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:21,235 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:21,236 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:21,236 - INFO - 查找验证码输入框...
+2026-02-19 14:06:21,243 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:21,244 - WARNING - 验证码填写失败
+2026-02-19 14:06:21,244 - INFO - 开始填写登录表单...
+2026-02-19 14:06:21,311 - INFO - 用户名填写完成
+2026-02-19 14:06:21,379 - INFO - 密码填写完成
+2026-02-19 14:06:21,379 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:21,379 - INFO - 验证码识别尝试 24/30
+2026-02-19 14:06:21,380 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:21,467 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:21,559 - INFO - tesseract 结果: 
+2026-02-19 14:06:21,609 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:21,705 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:21,755 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:21,850 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:22,002 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:22,111 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:22,161 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:22,257 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:22,307 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:22,407 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:22,407 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:22,407 - INFO - 查找验证码输入框...
+2026-02-19 14:06:22,415 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:22,415 - WARNING - 验证码填写失败
+2026-02-19 14:06:22,415 - INFO - 开始填写登录表单...
+2026-02-19 14:06:22,482 - INFO - 用户名填写完成
+2026-02-19 14:06:22,550 - INFO - 密码填写完成
+2026-02-19 14:06:22,551 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:22,551 - INFO - 验证码识别尝试 25/30
+2026-02-19 14:06:22,551 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:22,639 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:22,729 - INFO - tesseract 结果: 
+2026-02-19 14:06:22,780 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:22,881 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:22,931 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:23,030 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:23,181 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:23,290 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:23,339 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:23,439 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:23,489 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:23,590 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:23,590 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:23,590 - INFO - 查找验证码输入框...
+2026-02-19 14:06:23,598 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:23,598 - WARNING - 验证码填写失败
+2026-02-19 14:06:23,598 - INFO - 开始填写登录表单...
+2026-02-19 14:06:23,664 - INFO - 用户名填写完成
+2026-02-19 14:06:23,732 - INFO - 密码填写完成
+2026-02-19 14:06:23,733 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:23,733 - INFO - 验证码识别尝试 26/30
+2026-02-19 14:06:23,733 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:23,820 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:23,911 - INFO - tesseract 结果: 
+2026-02-19 14:06:23,961 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:24,056 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:24,106 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:24,201 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:24,351 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:24,463 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:24,512 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:24,611 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:24,660 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:24,761 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:24,761 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:24,761 - INFO - 查找验证码输入框...
+2026-02-19 14:06:24,769 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:24,769 - WARNING - 验证码填写失败
+2026-02-19 14:06:24,769 - INFO - 开始填写登录表单...
+2026-02-19 14:06:24,835 - INFO - 用户名填写完成
+2026-02-19 14:06:24,902 - INFO - 密码填写完成
+2026-02-19 14:06:24,903 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:24,903 - INFO - 验证码识别尝试 27/30
+2026-02-19 14:06:24,903 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:24,990 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:25,086 - INFO - tesseract 结果: 
+2026-02-19 14:06:25,136 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:25,233 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:25,283 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:25,379 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:25,530 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:25,646 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:25,695 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:25,794 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:25,844 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:25,948 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:25,948 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:25,948 - INFO - 查找验证码输入框...
+2026-02-19 14:06:25,955 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:25,955 - WARNING - 验证码填写失败
+2026-02-19 14:06:25,955 - INFO - 开始填写登录表单...
+2026-02-19 14:06:26,022 - INFO - 用户名填写完成
+2026-02-19 14:06:26,092 - INFO - 密码填写完成
+2026-02-19 14:06:26,093 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:26,093 - INFO - 验证码识别尝试 28/30
+2026-02-19 14:06:26,093 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:26,180 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:26,272 - INFO - tesseract 结果: 
+2026-02-19 14:06:26,323 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:26,420 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:26,469 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:26,564 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:26,714 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:26,825 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:26,874 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:26,975 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:27,024 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:27,130 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:27,130 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:27,130 - INFO - 查找验证码输入框...
+2026-02-19 14:06:27,138 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:27,138 - WARNING - 验证码填写失败
+2026-02-19 14:06:27,138 - INFO - 开始填写登录表单...
+2026-02-19 14:06:27,203 - INFO - 用户名填写完成
+2026-02-19 14:06:27,270 - INFO - 密码填写完成
+2026-02-19 14:06:27,271 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:27,271 - INFO - 验证码识别尝试 29/30
+2026-02-19 14:06:27,271 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:27,366 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:27,459 - INFO - tesseract 结果: 
+2026-02-19 14:06:27,510 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:27,607 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:27,657 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:27,757 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:27,916 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:28,024 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:28,074 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:28,178 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:28,228 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:28,346 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:28,346 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:28,346 - INFO - 查找验证码输入框...
+2026-02-19 14:06:28,354 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:28,355 - WARNING - 验证码填写失败
+2026-02-19 14:06:28,355 - INFO - 开始填写登录表单...
+2026-02-19 14:06:28,423 - INFO - 用户名填写完成
+2026-02-19 14:06:28,491 - INFO - 密码填写完成
+2026-02-19 14:06:28,492 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-19 14:06:28,492 - INFO - 验证码识别尝试 30/30
+2026-02-19 14:06:28,492 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-19 14:06:28,580 - INFO - easyocr 结果: ['Cehc(0.36)']
+2026-02-19 14:06:28,676 - INFO - tesseract 结果: 
+2026-02-19 14:06:28,726 - INFO - easyocr alt1 结果: ['Geihc(0.44)']
+2026-02-19 14:06:28,823 - INFO - tesseract alt1 结果: Gabe
+2026-02-19 14:06:28,873 - INFO - easyocr alt2 结果: ['Gebc(0.82)']
+2026-02-19 14:06:28,970 - INFO - tesseract alt2 结果: Gabe
+2026-02-19 14:06:29,121 - INFO - easyocr alt3 结果: ['Geihc(0.33)']
+2026-02-19 14:06:29,230 - INFO - tesseract alt3 结果: Gabe
+2026-02-19 14:06:29,280 - INFO - easyocr alt4 结果: ['Geihc(0.61)']
+2026-02-19 14:06:29,378 - INFO - tesseract alt4 结果: Gebe
+2026-02-19 14:06:29,427 - INFO - easyocr alt5 结果: ['Sebc(0.63)']
+2026-02-19 14:06:29,533 - INFO - tesseract alt5 结果: Gane
+2026-02-19 14:06:29,533 - INFO - 最终验证码识别结果: Gebc (engine=easyocr_alt2, prob=0.8231269717216492)
+2026-02-19 14:06:29,533 - INFO - 查找验证码输入框...
+2026-02-19 14:06:29,541 - ERROR - 未找到验证码输入框
+2026-02-19 14:06:29,541 - WARNING - 验证码填写失败
+2026-02-19 14:06:29,541 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-19 14:06:29,541 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-19 14:06:29,541 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-19 14:06:29,541 - INFO - 查找并点击登录按钮...
+2026-02-19 14:06:29,550 - ERROR - 未找到登录按钮
+2026-02-19 14:06:29,550 - ERROR - 点击登录按钮失败
+2026-02-19 14:06:29,550 - INFO - 等待登录成功...
+2026-02-19 14:06:34,555 - INFO - 登录可能成功，继续下一步...
+2026-02-19 14:06:34,555 - INFO - 查找'去充值'按钮...
+2026-02-19 14:06:34,565 - ERROR - 未找到'去充值'按钮
+2026-02-19 14:06:34,565 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-19 14:06:34,565 - INFO - 开始提取剩余电量信息...
+2026-02-19 14:06:34,574 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-19 14:06:34,584 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-19 14:06:34,593 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-19 14:06:34,602 - INFO - 在页面源码中查找电量信息...
+2026-02-19 14:06:34,614 - WARNING - 未能提取到剩余电量信息
+2026-02-19 14:06:34,614 - WARNING - 没有电量数据可保存
+2026-02-19 14:06:34,614 - INFO - 监控流程完成
