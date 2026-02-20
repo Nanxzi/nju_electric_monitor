@@ -1,0 +1,694 @@
+2026-02-20 07:45:44,143 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-20 07:45:45,628 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-20 07:45:45,628 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-20 07:45:47,093 - INFO - OCR识别器初始化成功
+2026-02-20 07:45:47,094 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-20 07:45:47,094 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-20 07:45:56,646 - INFO - 等待登录表单加载...
+2026-02-20 07:45:56,656 - INFO - 登录表单已加载
+2026-02-20 07:45:56,656 - INFO - 开始填写登录表单...
+2026-02-20 07:45:56,742 - INFO - 用户名填写完成
+2026-02-20 07:45:56,810 - INFO - 密码填写完成
+2026-02-20 07:45:56,810 - INFO - 检查是否有验证码...
+2026-02-20 07:45:56,810 - INFO - 查找验证码图片...
+2026-02-20 07:45:56,831 - INFO - 找到验证码图片，开始截图...
+2026-02-20 07:45:57,260 - INFO - 验证码图片截取成功
+2026-02-20 07:45:57,260 - INFO - 开始填写登录表单...
+2026-02-20 07:45:57,364 - INFO - 用户名填写完成
+2026-02-20 07:45:57,428 - INFO - 密码填写完成
+2026-02-20 07:45:57,450 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:45:57,450 - INFO - 验证码识别尝试 1/30
+2026-02-20 07:45:57,450 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:45:57,757 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:45:58,445 - INFO - tesseract 结果: 
+2026-02-20 07:45:58,518 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:45:58,626 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:45:58,705 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:45:58,811 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:45:59,002 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:45:59,119 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:45:59,192 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:45:59,296 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:45:59,362 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:45:59,471 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:45:59,471 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:45:59,471 - INFO - 查找验证码输入框...
+2026-02-20 07:45:59,481 - ERROR - 未找到验证码输入框
+2026-02-20 07:45:59,481 - WARNING - 验证码填写失败
+2026-02-20 07:45:59,481 - INFO - 开始填写登录表单...
+2026-02-20 07:45:59,542 - INFO - 用户名填写完成
+2026-02-20 07:45:59,603 - INFO - 密码填写完成
+2026-02-20 07:45:59,604 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:45:59,604 - INFO - 验证码识别尝试 2/30
+2026-02-20 07:45:59,604 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:45:59,686 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:45:59,776 - INFO - tesseract 结果: 
+2026-02-20 07:45:59,844 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:45:59,947 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:00,020 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:00,129 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:00,317 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:00,432 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:00,506 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:00,613 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:00,679 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:00,782 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:00,782 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:00,782 - INFO - 查找验证码输入框...
+2026-02-20 07:46:00,789 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:00,789 - WARNING - 验证码填写失败
+2026-02-20 07:46:00,789 - INFO - 开始填写登录表单...
+2026-02-20 07:46:00,849 - INFO - 用户名填写完成
+2026-02-20 07:46:00,913 - INFO - 密码填写完成
+2026-02-20 07:46:00,914 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:00,914 - INFO - 验证码识别尝试 3/30
+2026-02-20 07:46:00,914 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:00,997 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:01,088 - INFO - tesseract 结果: 
+2026-02-20 07:46:01,155 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:01,260 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:01,326 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:01,429 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:01,595 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:01,710 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:01,783 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:01,886 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:01,952 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:02,059 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:02,059 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:02,059 - INFO - 查找验证码输入框...
+2026-02-20 07:46:02,065 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:02,066 - WARNING - 验证码填写失败
+2026-02-20 07:46:02,066 - INFO - 开始填写登录表单...
+2026-02-20 07:46:02,127 - INFO - 用户名填写完成
+2026-02-20 07:46:02,194 - INFO - 密码填写完成
+2026-02-20 07:46:02,195 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:02,195 - INFO - 验证码识别尝试 4/30
+2026-02-20 07:46:02,195 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:02,278 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:02,368 - INFO - tesseract 结果: 
+2026-02-20 07:46:02,443 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:02,551 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:02,615 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:02,723 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:02,889 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:03,004 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:03,069 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:03,178 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:03,243 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:03,347 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:03,347 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:03,347 - INFO - 查找验证码输入框...
+2026-02-20 07:46:03,353 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:03,353 - WARNING - 验证码填写失败
+2026-02-20 07:46:03,354 - INFO - 开始填写登录表单...
+2026-02-20 07:46:03,414 - INFO - 用户名填写完成
+2026-02-20 07:46:03,476 - INFO - 密码填写完成
+2026-02-20 07:46:03,476 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:03,476 - INFO - 验证码识别尝试 5/30
+2026-02-20 07:46:03,476 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:03,558 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:03,649 - INFO - tesseract 结果: 
+2026-02-20 07:46:03,724 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:03,828 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:03,893 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:03,997 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:04,163 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:04,278 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:04,343 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:04,449 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:04,515 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:04,619 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:04,619 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:04,619 - INFO - 查找验证码输入框...
+2026-02-20 07:46:04,626 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:04,626 - WARNING - 验证码填写失败
+2026-02-20 07:46:04,626 - INFO - 开始填写登录表单...
+2026-02-20 07:46:04,686 - INFO - 用户名填写完成
+2026-02-20 07:46:04,746 - INFO - 密码填写完成
+2026-02-20 07:46:04,747 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:04,747 - INFO - 验证码识别尝试 6/30
+2026-02-20 07:46:04,747 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:04,830 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:04,921 - INFO - tesseract 结果: 
+2026-02-20 07:46:04,987 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:05,091 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:05,156 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:05,260 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:05,426 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:05,543 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:05,608 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:05,716 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:05,782 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:05,887 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:05,888 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:05,888 - INFO - 查找验证码输入框...
+2026-02-20 07:46:05,894 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:05,894 - WARNING - 验证码填写失败
+2026-02-20 07:46:05,894 - INFO - 开始填写登录表单...
+2026-02-20 07:46:05,954 - INFO - 用户名填写完成
+2026-02-20 07:46:06,016 - INFO - 密码填写完成
+2026-02-20 07:46:06,016 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:06,016 - INFO - 验证码识别尝试 7/30
+2026-02-20 07:46:06,016 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:06,098 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:06,188 - INFO - tesseract 结果: 
+2026-02-20 07:46:06,256 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:06,360 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:06,425 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:06,529 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:06,695 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:06,812 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:06,876 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:06,984 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:07,051 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:07,154 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:07,154 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:07,155 - INFO - 查找验证码输入框...
+2026-02-20 07:46:07,161 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:07,161 - WARNING - 验证码填写失败
+2026-02-20 07:46:07,161 - INFO - 开始填写登录表单...
+2026-02-20 07:46:07,223 - INFO - 用户名填写完成
+2026-02-20 07:46:07,284 - INFO - 密码填写完成
+2026-02-20 07:46:07,285 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:07,285 - INFO - 验证码识别尝试 8/30
+2026-02-20 07:46:07,285 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:07,367 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:07,460 - INFO - tesseract 结果: 
+2026-02-20 07:46:07,526 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:07,629 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:07,695 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:07,798 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:07,965 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:08,082 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:08,147 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:08,251 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:08,316 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:08,421 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:08,421 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:08,421 - INFO - 查找验证码输入框...
+2026-02-20 07:46:08,427 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:08,427 - WARNING - 验证码填写失败
+2026-02-20 07:46:08,427 - INFO - 开始填写登录表单...
+2026-02-20 07:46:08,487 - INFO - 用户名填写完成
+2026-02-20 07:46:08,547 - INFO - 密码填写完成
+2026-02-20 07:46:08,547 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:08,547 - INFO - 验证码识别尝试 9/30
+2026-02-20 07:46:08,547 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:08,637 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:08,733 - INFO - tesseract 结果: 
+2026-02-20 07:46:08,800 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:08,908 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:08,974 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:09,082 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:09,256 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:09,370 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:09,434 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:09,541 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:09,617 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:09,722 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:09,722 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:09,722 - INFO - 查找验证码输入框...
+2026-02-20 07:46:09,729 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:09,729 - WARNING - 验证码填写失败
+2026-02-20 07:46:09,729 - INFO - 开始填写登录表单...
+2026-02-20 07:46:09,790 - INFO - 用户名填写完成
+2026-02-20 07:46:09,850 - INFO - 密码填写完成
+2026-02-20 07:46:09,851 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:09,851 - INFO - 验证码识别尝试 10/30
+2026-02-20 07:46:09,851 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:09,942 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:10,032 - INFO - tesseract 结果: 
+2026-02-20 07:46:10,099 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:10,208 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:10,274 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:10,378 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:10,544 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:10,659 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:10,724 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:10,829 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:10,895 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:11,001 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:11,002 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:11,002 - INFO - 查找验证码输入框...
+2026-02-20 07:46:11,008 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:11,008 - WARNING - 验证码填写失败
+2026-02-20 07:46:11,008 - INFO - 开始填写登录表单...
+2026-02-20 07:46:11,069 - INFO - 用户名填写完成
+2026-02-20 07:46:11,130 - INFO - 密码填写完成
+2026-02-20 07:46:11,130 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:11,130 - INFO - 验证码识别尝试 11/30
+2026-02-20 07:46:11,130 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:11,212 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:11,304 - INFO - tesseract 结果: 
+2026-02-20 07:46:11,371 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:11,478 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:11,545 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:11,655 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:11,822 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:11,938 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:12,004 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:12,106 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:12,171 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:12,277 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:12,277 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:12,277 - INFO - 查找验证码输入框...
+2026-02-20 07:46:12,284 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:12,284 - WARNING - 验证码填写失败
+2026-02-20 07:46:12,284 - INFO - 开始填写登录表单...
+2026-02-20 07:46:12,344 - INFO - 用户名填写完成
+2026-02-20 07:46:12,406 - INFO - 密码填写完成
+2026-02-20 07:46:12,406 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:12,407 - INFO - 验证码识别尝试 12/30
+2026-02-20 07:46:12,407 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:12,488 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:12,581 - INFO - tesseract 结果: 
+2026-02-20 07:46:12,647 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:12,751 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:12,817 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:12,919 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:13,086 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:13,200 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:13,264 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:13,370 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:13,442 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:13,545 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:13,545 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:13,545 - INFO - 查找验证码输入框...
+2026-02-20 07:46:13,552 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:13,552 - WARNING - 验证码填写失败
+2026-02-20 07:46:13,552 - INFO - 开始填写登录表单...
+2026-02-20 07:46:13,613 - INFO - 用户名填写完成
+2026-02-20 07:46:13,675 - INFO - 密码填写完成
+2026-02-20 07:46:13,676 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:13,676 - INFO - 验证码识别尝试 13/30
+2026-02-20 07:46:13,676 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:13,758 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:13,853 - INFO - tesseract 结果: 
+2026-02-20 07:46:13,920 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:14,025 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:14,090 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:14,194 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:14,360 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:14,474 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:14,546 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:14,652 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:14,719 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:14,823 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:14,823 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:14,823 - INFO - 查找验证码输入框...
+2026-02-20 07:46:14,829 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:14,829 - WARNING - 验证码填写失败
+2026-02-20 07:46:14,829 - INFO - 开始填写登录表单...
+2026-02-20 07:46:14,892 - INFO - 用户名填写完成
+2026-02-20 07:46:14,954 - INFO - 密码填写完成
+2026-02-20 07:46:14,955 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:14,955 - INFO - 验证码识别尝试 14/30
+2026-02-20 07:46:14,955 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:15,037 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:15,130 - INFO - tesseract 结果: 
+2026-02-20 07:46:15,197 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:15,301 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:15,375 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:15,483 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:15,652 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:15,768 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:15,831 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:15,934 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:16,000 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:16,109 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:16,110 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:16,110 - INFO - 查找验证码输入框...
+2026-02-20 07:46:16,116 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:16,116 - WARNING - 验证码填写失败
+2026-02-20 07:46:16,116 - INFO - 开始填写登录表单...
+2026-02-20 07:46:16,177 - INFO - 用户名填写完成
+2026-02-20 07:46:16,238 - INFO - 密码填写完成
+2026-02-20 07:46:16,239 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:16,239 - INFO - 验证码识别尝试 15/30
+2026-02-20 07:46:16,239 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:16,321 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:16,413 - INFO - tesseract 结果: 
+2026-02-20 07:46:16,481 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:16,589 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:16,654 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:16,764 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:16,931 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:17,049 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:17,115 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:17,219 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:17,285 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:17,391 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:17,392 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:17,392 - INFO - 查找验证码输入框...
+2026-02-20 07:46:17,398 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:17,398 - WARNING - 验证码填写失败
+2026-02-20 07:46:17,398 - INFO - 开始填写登录表单...
+2026-02-20 07:46:17,459 - INFO - 用户名填写完成
+2026-02-20 07:46:17,524 - INFO - 密码填写完成
+2026-02-20 07:46:17,524 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:17,524 - INFO - 验证码识别尝试 16/30
+2026-02-20 07:46:17,524 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:17,607 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:17,696 - INFO - tesseract 结果: 
+2026-02-20 07:46:17,763 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:17,868 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:17,932 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:18,037 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:18,204 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:18,319 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:18,383 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:18,491 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:18,557 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:18,662 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:18,662 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:18,662 - INFO - 查找验证码输入框...
+2026-02-20 07:46:18,669 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:18,669 - WARNING - 验证码填写失败
+2026-02-20 07:46:18,669 - INFO - 开始填写登录表单...
+2026-02-20 07:46:18,729 - INFO - 用户名填写完成
+2026-02-20 07:46:18,789 - INFO - 密码填写完成
+2026-02-20 07:46:18,790 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:18,790 - INFO - 验证码识别尝试 17/30
+2026-02-20 07:46:18,790 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:18,871 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:18,962 - INFO - tesseract 结果: 
+2026-02-20 07:46:19,029 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:19,135 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:19,200 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:19,309 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:19,474 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:19,587 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:19,651 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:19,755 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:19,820 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:19,925 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:19,925 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:19,925 - INFO - 查找验证码输入框...
+2026-02-20 07:46:19,932 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:19,932 - WARNING - 验证码填写失败
+2026-02-20 07:46:19,932 - INFO - 开始填写登录表单...
+2026-02-20 07:46:19,992 - INFO - 用户名填写完成
+2026-02-20 07:46:20,053 - INFO - 密码填写完成
+2026-02-20 07:46:20,054 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:20,054 - INFO - 验证码识别尝试 18/30
+2026-02-20 07:46:20,054 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:20,135 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:20,225 - INFO - tesseract 结果: 
+2026-02-20 07:46:20,292 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:20,399 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:20,465 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:20,569 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:20,745 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:20,859 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:20,923 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:21,029 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:21,095 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:21,199 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:21,199 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:21,199 - INFO - 查找验证码输入框...
+2026-02-20 07:46:21,206 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:21,206 - WARNING - 验证码填写失败
+2026-02-20 07:46:21,206 - INFO - 开始填写登录表单...
+2026-02-20 07:46:21,265 - INFO - 用户名填写完成
+2026-02-20 07:46:21,327 - INFO - 密码填写完成
+2026-02-20 07:46:21,328 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:21,328 - INFO - 验证码识别尝试 19/30
+2026-02-20 07:46:21,328 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:21,411 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:21,500 - INFO - tesseract 结果: 
+2026-02-20 07:46:21,566 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:21,672 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:21,736 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:21,844 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:22,021 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:22,136 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:22,201 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:22,310 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:22,375 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:22,479 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:22,480 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:22,480 - INFO - 查找验证码输入框...
+2026-02-20 07:46:22,486 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:22,486 - WARNING - 验证码填写失败
+2026-02-20 07:46:22,486 - INFO - 开始填写登录表单...
+2026-02-20 07:46:22,546 - INFO - 用户名填写完成
+2026-02-20 07:46:22,607 - INFO - 密码填写完成
+2026-02-20 07:46:22,608 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:22,608 - INFO - 验证码识别尝试 20/30
+2026-02-20 07:46:22,608 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:22,700 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:22,791 - INFO - tesseract 结果: 
+2026-02-20 07:46:22,859 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:22,964 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:23,029 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:23,132 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:23,297 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:23,412 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:23,478 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:23,583 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:23,649 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:23,755 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:23,755 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:23,755 - INFO - 查找验证码输入框...
+2026-02-20 07:46:23,762 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:23,762 - WARNING - 验证码填写失败
+2026-02-20 07:46:23,762 - INFO - 开始填写登录表单...
+2026-02-20 07:46:23,824 - INFO - 用户名填写完成
+2026-02-20 07:46:23,886 - INFO - 密码填写完成
+2026-02-20 07:46:23,887 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:23,887 - INFO - 验证码识别尝试 21/30
+2026-02-20 07:46:23,887 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:23,975 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:24,068 - INFO - tesseract 结果: 
+2026-02-20 07:46:24,134 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:24,242 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:24,307 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:24,412 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:24,578 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:24,698 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:24,763 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:24,869 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:24,935 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:25,058 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:25,058 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:25,058 - INFO - 查找验证码输入框...
+2026-02-20 07:46:25,065 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:25,065 - WARNING - 验证码填写失败
+2026-02-20 07:46:25,065 - INFO - 开始填写登录表单...
+2026-02-20 07:46:25,127 - INFO - 用户名填写完成
+2026-02-20 07:46:25,188 - INFO - 密码填写完成
+2026-02-20 07:46:25,189 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:25,189 - INFO - 验证码识别尝试 22/30
+2026-02-20 07:46:25,189 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:25,282 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:25,375 - INFO - tesseract 结果: 
+2026-02-20 07:46:25,442 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:25,546 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:25,611 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:25,717 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:25,885 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:26,001 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:26,066 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:26,170 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:26,235 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:26,342 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:26,342 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:26,342 - INFO - 查找验证码输入框...
+2026-02-20 07:46:26,349 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:26,349 - WARNING - 验证码填写失败
+2026-02-20 07:46:26,349 - INFO - 开始填写登录表单...
+2026-02-20 07:46:26,409 - INFO - 用户名填写完成
+2026-02-20 07:46:26,470 - INFO - 密码填写完成
+2026-02-20 07:46:26,471 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:26,471 - INFO - 验证码识别尝试 23/30
+2026-02-20 07:46:26,471 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:26,553 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:26,643 - INFO - tesseract 结果: 
+2026-02-20 07:46:26,708 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:26,814 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:26,879 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:26,983 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:27,158 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:27,276 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:27,339 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:27,443 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:27,509 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:27,611 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:27,611 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:27,611 - INFO - 查找验证码输入框...
+2026-02-20 07:46:27,618 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:27,618 - WARNING - 验证码填写失败
+2026-02-20 07:46:27,618 - INFO - 开始填写登录表单...
+2026-02-20 07:46:27,678 - INFO - 用户名填写完成
+2026-02-20 07:46:27,742 - INFO - 密码填写完成
+2026-02-20 07:46:27,743 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:27,743 - INFO - 验证码识别尝试 24/30
+2026-02-20 07:46:27,743 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:27,836 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:27,928 - INFO - tesseract 结果: 
+2026-02-20 07:46:27,998 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:28,100 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:28,165 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:28,272 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:28,438 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:28,555 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:28,620 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:28,724 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:28,791 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:28,897 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:28,897 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:28,898 - INFO - 查找验证码输入框...
+2026-02-20 07:46:28,905 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:28,905 - WARNING - 验证码填写失败
+2026-02-20 07:46:28,905 - INFO - 开始填写登录表单...
+2026-02-20 07:46:28,964 - INFO - 用户名填写完成
+2026-02-20 07:46:29,026 - INFO - 密码填写完成
+2026-02-20 07:46:29,027 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:29,027 - INFO - 验证码识别尝试 25/30
+2026-02-20 07:46:29,027 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:29,109 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:29,202 - INFO - tesseract 结果: 
+2026-02-20 07:46:29,270 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:29,374 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:29,440 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:29,546 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:29,713 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:29,829 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:29,895 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:30,001 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:30,067 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:30,172 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:30,172 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:30,172 - INFO - 查找验证码输入框...
+2026-02-20 07:46:30,180 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:30,180 - WARNING - 验证码填写失败
+2026-02-20 07:46:30,180 - INFO - 开始填写登录表单...
+2026-02-20 07:46:30,241 - INFO - 用户名填写完成
+2026-02-20 07:46:30,302 - INFO - 密码填写完成
+2026-02-20 07:46:30,303 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:30,303 - INFO - 验证码识别尝试 26/30
+2026-02-20 07:46:30,303 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:30,396 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:30,488 - INFO - tesseract 结果: 
+2026-02-20 07:46:30,554 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:30,658 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:30,722 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:30,829 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:30,995 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:31,109 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:31,173 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:31,280 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:31,345 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:31,451 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:31,451 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:31,451 - INFO - 查找验证码输入框...
+2026-02-20 07:46:31,458 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:31,458 - WARNING - 验证码填写失败
+2026-02-20 07:46:31,458 - INFO - 开始填写登录表单...
+2026-02-20 07:46:31,517 - INFO - 用户名填写完成
+2026-02-20 07:46:31,579 - INFO - 密码填写完成
+2026-02-20 07:46:31,580 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:31,580 - INFO - 验证码识别尝试 27/30
+2026-02-20 07:46:31,580 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:31,661 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:31,751 - INFO - tesseract 结果: 
+2026-02-20 07:46:31,818 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:31,926 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:31,990 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:32,095 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:32,261 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:32,375 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:32,439 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:32,545 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:32,611 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:32,715 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:32,716 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:32,716 - INFO - 查找验证码输入框...
+2026-02-20 07:46:32,722 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:32,723 - WARNING - 验证码填写失败
+2026-02-20 07:46:32,723 - INFO - 开始填写登录表单...
+2026-02-20 07:46:32,784 - INFO - 用户名填写完成
+2026-02-20 07:46:32,848 - INFO - 密码填写完成
+2026-02-20 07:46:32,849 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:32,849 - INFO - 验证码识别尝试 28/30
+2026-02-20 07:46:32,849 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:32,931 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:33,022 - INFO - tesseract 结果: 
+2026-02-20 07:46:33,088 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:33,191 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:33,258 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:33,368 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:33,532 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:33,648 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:33,712 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:33,817 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:33,890 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:33,995 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:33,995 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:33,995 - INFO - 查找验证码输入框...
+2026-02-20 07:46:34,002 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:34,002 - WARNING - 验证码填写失败
+2026-02-20 07:46:34,002 - INFO - 开始填写登录表单...
+2026-02-20 07:46:34,062 - INFO - 用户名填写完成
+2026-02-20 07:46:34,121 - INFO - 密码填写完成
+2026-02-20 07:46:34,122 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:34,122 - INFO - 验证码识别尝试 29/30
+2026-02-20 07:46:34,122 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:34,210 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:34,305 - INFO - tesseract 结果: 
+2026-02-20 07:46:34,373 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:34,482 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:34,546 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:34,648 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:34,815 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:34,929 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:34,994 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:35,098 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:35,164 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:35,271 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:35,271 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:35,271 - INFO - 查找验证码输入框...
+2026-02-20 07:46:35,278 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:35,278 - WARNING - 验证码填写失败
+2026-02-20 07:46:35,278 - INFO - 开始填写登录表单...
+2026-02-20 07:46:35,338 - INFO - 用户名填写完成
+2026-02-20 07:46:35,398 - INFO - 密码填写完成
+2026-02-20 07:46:35,399 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-20 07:46:35,399 - INFO - 验证码识别尝试 30/30
+2026-02-20 07:46:35,399 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-20 07:46:35,481 - INFO - easyocr 结果: ['TRfu(0.22)']
+2026-02-20 07:46:35,577 - INFO - tesseract 结果: 
+2026-02-20 07:46:35,643 - INFO - easyocr alt1 结果: ['TRK(0.01)']
+2026-02-20 07:46:35,747 - INFO - tesseract alt1 结果: PRA
+2026-02-20 07:46:35,812 - INFO - easyocr alt2 结果: ['(0.00)']
+2026-02-20 07:46:35,915 - INFO - tesseract alt2 结果: RF
+2026-02-20 07:46:36,081 - INFO - easyocr alt3 结果: ['JRu(0.05)']
+2026-02-20 07:46:36,194 - INFO - tesseract alt3 结果: FRAY
+2026-02-20 07:46:36,259 - INFO - easyocr alt4 结果: ['(0.00)']
+2026-02-20 07:46:36,367 - INFO - tesseract alt4 结果: RF
+2026-02-20 07:46:36,432 - INFO - easyocr alt5 结果: ['q(0.00)']
+2026-02-20 07:46:36,536 - INFO - tesseract alt5 结果: PRR
+2026-02-20 07:46:36,536 - INFO - 最终验证码识别结果: FRAY (engine=tesseract_alt3, prob=0.5)
+2026-02-20 07:46:36,536 - INFO - 查找验证码输入框...
+2026-02-20 07:46:36,543 - ERROR - 未找到验证码输入框
+2026-02-20 07:46:36,543 - WARNING - 验证码填写失败
+2026-02-20 07:46:36,543 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-20 07:46:36,543 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-20 07:46:36,543 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-20 07:46:36,543 - INFO - 查找并点击登录按钮...
+2026-02-20 07:46:36,551 - ERROR - 未找到登录按钮
+2026-02-20 07:46:36,551 - ERROR - 点击登录按钮失败
+2026-02-20 07:46:36,551 - INFO - 等待登录成功...
+2026-02-20 07:46:41,556 - INFO - 登录可能成功，继续下一步...
+2026-02-20 07:46:41,556 - INFO - 查找'去充值'按钮...
+2026-02-20 07:46:41,566 - ERROR - 未找到'去充值'按钮
+2026-02-20 07:46:41,566 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-20 07:46:41,566 - INFO - 开始提取剩余电量信息...
+2026-02-20 07:46:41,575 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-20 07:46:41,584 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-20 07:46:41,594 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-20 07:46:41,602 - INFO - 在页面源码中查找电量信息...
+2026-02-20 07:46:41,613 - WARNING - 未能提取到剩余电量信息
+2026-02-20 07:46:41,613 - WARNING - 没有电量数据可保存
+2026-02-20 07:46:41,613 - INFO - 监控流程完成
