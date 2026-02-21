@@ -1,0 +1,694 @@
+2026-02-21 07:29:17,456 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-21 07:29:19,015 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-21 07:29:19,015 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-21 07:29:20,519 - INFO - OCR识别器初始化成功
+2026-02-21 07:29:20,519 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-21 07:29:20,519 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-21 07:29:28,096 - INFO - 等待登录表单加载...
+2026-02-21 07:29:28,106 - INFO - 登录表单已加载
+2026-02-21 07:29:28,106 - INFO - 开始填写登录表单...
+2026-02-21 07:29:28,190 - INFO - 用户名填写完成
+2026-02-21 07:29:28,259 - INFO - 密码填写完成
+2026-02-21 07:29:28,259 - INFO - 检查是否有验证码...
+2026-02-21 07:29:28,259 - INFO - 查找验证码图片...
+2026-02-21 07:29:28,280 - INFO - 找到验证码图片，开始截图...
+2026-02-21 07:29:28,328 - INFO - 验证码图片截取成功
+2026-02-21 07:29:28,328 - INFO - 开始填写登录表单...
+2026-02-21 07:29:28,394 - INFO - 用户名填写完成
+2026-02-21 07:29:28,458 - INFO - 密码填写完成
+2026-02-21 07:29:28,459 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:28,460 - INFO - 验证码识别尝试 1/30
+2026-02-21 07:29:28,460 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:28,566 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:28,841 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:28,892 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:29,010 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:29,093 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:29,194 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:29,374 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:29,486 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:29,560 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:29,658 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:29,732 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:29,831 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:29,831 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:29,831 - INFO - 查找验证码输入框...
+2026-02-21 07:29:29,841 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:29,841 - WARNING - 验证码填写失败
+2026-02-21 07:29:29,841 - INFO - 开始填写登录表单...
+2026-02-21 07:29:29,904 - INFO - 用户名填写完成
+2026-02-21 07:29:29,967 - INFO - 密码填写完成
+2026-02-21 07:29:29,967 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:29,967 - INFO - 验证码识别尝试 2/30
+2026-02-21 07:29:29,967 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:30,065 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:30,167 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:30,216 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:30,314 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:30,389 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:30,487 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:30,644 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:30,756 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:30,830 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:30,929 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:31,005 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:31,107 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:31,107 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:31,107 - INFO - 查找验证码输入框...
+2026-02-21 07:29:31,114 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:31,114 - WARNING - 验证码填写失败
+2026-02-21 07:29:31,114 - INFO - 开始填写登录表单...
+2026-02-21 07:29:31,177 - INFO - 用户名填写完成
+2026-02-21 07:29:31,242 - INFO - 密码填写完成
+2026-02-21 07:29:31,243 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:31,243 - INFO - 验证码识别尝试 3/30
+2026-02-21 07:29:31,243 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:31,351 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:31,453 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:31,501 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:31,599 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:31,675 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:31,779 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:31,938 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:32,051 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:32,127 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:32,229 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:32,306 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:32,407 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:32,407 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:32,407 - INFO - 查找验证码输入框...
+2026-02-21 07:29:32,414 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:32,414 - WARNING - 验证码填写失败
+2026-02-21 07:29:32,414 - INFO - 开始填写登录表单...
+2026-02-21 07:29:32,477 - INFO - 用户名填写完成
+2026-02-21 07:29:32,548 - INFO - 密码填写完成
+2026-02-21 07:29:32,548 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:32,548 - INFO - 验证码识别尝试 4/30
+2026-02-21 07:29:32,548 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:32,646 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:32,745 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:32,793 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:32,898 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:32,984 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:33,082 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:33,250 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:33,367 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:33,442 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:33,540 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:33,616 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:33,717 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:33,717 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:33,717 - INFO - 查找验证码输入框...
+2026-02-21 07:29:33,724 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:33,724 - WARNING - 验证码填写失败
+2026-02-21 07:29:33,724 - INFO - 开始填写登录表单...
+2026-02-21 07:29:33,786 - INFO - 用户名填写完成
+2026-02-21 07:29:33,849 - INFO - 密码填写完成
+2026-02-21 07:29:33,850 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:33,850 - INFO - 验证码识别尝试 5/30
+2026-02-21 07:29:33,850 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:33,948 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:34,047 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:34,095 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:34,194 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:34,269 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:34,369 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:34,528 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:34,640 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:34,714 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:34,814 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:34,890 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:34,993 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:34,994 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:34,994 - INFO - 查找验证码输入框...
+2026-02-21 07:29:35,000 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:35,000 - WARNING - 验证码填写失败
+2026-02-21 07:29:35,000 - INFO - 开始填写登录表单...
+2026-02-21 07:29:35,062 - INFO - 用户名填写完成
+2026-02-21 07:29:35,127 - INFO - 密码填写完成
+2026-02-21 07:29:35,127 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:35,128 - INFO - 验证码识别尝试 6/30
+2026-02-21 07:29:35,128 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:35,223 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:35,321 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:35,370 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:35,470 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:35,545 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:35,644 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:35,800 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:35,911 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:35,985 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:36,089 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:36,164 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:36,264 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:36,264 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:36,264 - INFO - 查找验证码输入框...
+2026-02-21 07:29:36,271 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:36,271 - WARNING - 验证码填写失败
+2026-02-21 07:29:36,271 - INFO - 开始填写登录表单...
+2026-02-21 07:29:36,334 - INFO - 用户名填写完成
+2026-02-21 07:29:36,399 - INFO - 密码填写完成
+2026-02-21 07:29:36,400 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:36,400 - INFO - 验证码识别尝试 7/30
+2026-02-21 07:29:36,400 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:36,497 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:36,597 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:36,646 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:36,743 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:36,827 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:36,942 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:37,115 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:37,230 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:37,308 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:37,412 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:37,497 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:37,600 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:37,600 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:37,600 - INFO - 查找验证码输入框...
+2026-02-21 07:29:37,607 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:37,607 - WARNING - 验证码填写失败
+2026-02-21 07:29:37,607 - INFO - 开始填写登录表单...
+2026-02-21 07:29:37,669 - INFO - 用户名填写完成
+2026-02-21 07:29:37,735 - INFO - 密码填写完成
+2026-02-21 07:29:37,735 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:37,735 - INFO - 验证码识别尝试 8/30
+2026-02-21 07:29:37,736 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:37,833 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:37,940 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:37,989 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:38,088 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:38,172 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:38,277 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:38,447 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:38,566 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:38,648 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:38,752 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:38,826 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:38,927 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:38,927 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:38,927 - INFO - 查找验证码输入框...
+2026-02-21 07:29:38,934 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:38,934 - WARNING - 验证码填写失败
+2026-02-21 07:29:38,934 - INFO - 开始填写登录表单...
+2026-02-21 07:29:38,996 - INFO - 用户名填写完成
+2026-02-21 07:29:39,058 - INFO - 密码填写完成
+2026-02-21 07:29:39,059 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:39,059 - INFO - 验证码识别尝试 9/30
+2026-02-21 07:29:39,059 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:39,156 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:39,254 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:39,301 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:39,402 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:39,477 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:39,582 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:39,739 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:39,851 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:39,926 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:40,031 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:40,108 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:40,211 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:40,211 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:40,211 - INFO - 查找验证码输入框...
+2026-02-21 07:29:40,218 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:40,218 - WARNING - 验证码填写失败
+2026-02-21 07:29:40,218 - INFO - 开始填写登录表单...
+2026-02-21 07:29:40,280 - INFO - 用户名填写完成
+2026-02-21 07:29:40,344 - INFO - 密码填写完成
+2026-02-21 07:29:40,345 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:40,345 - INFO - 验证码识别尝试 10/30
+2026-02-21 07:29:40,345 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:40,441 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:40,539 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:40,587 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:40,686 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:40,760 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:40,859 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:41,013 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:41,130 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:41,205 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:41,307 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:41,381 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:41,484 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:41,484 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:41,484 - INFO - 查找验证码输入框...
+2026-02-21 07:29:41,491 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:41,491 - WARNING - 验证码填写失败
+2026-02-21 07:29:41,491 - INFO - 开始填写登录表单...
+2026-02-21 07:29:41,553 - INFO - 用户名填写完成
+2026-02-21 07:29:41,617 - INFO - 密码填写完成
+2026-02-21 07:29:41,618 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:41,618 - INFO - 验证码识别尝试 11/30
+2026-02-21 07:29:41,618 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:41,714 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:41,813 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:41,860 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:41,960 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:42,046 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:42,146 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:42,313 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:42,425 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:42,499 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:42,600 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:42,675 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:42,774 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:42,774 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:42,774 - INFO - 查找验证码输入框...
+2026-02-21 07:29:42,781 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:42,781 - WARNING - 验证码填写失败
+2026-02-21 07:29:42,781 - INFO - 开始填写登录表单...
+2026-02-21 07:29:42,843 - INFO - 用户名填写完成
+2026-02-21 07:29:42,903 - INFO - 密码填写完成
+2026-02-21 07:29:42,904 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:42,904 - INFO - 验证码识别尝试 12/30
+2026-02-21 07:29:42,904 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:43,010 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:43,112 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:43,159 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:43,258 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:43,332 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:43,439 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:43,594 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:43,708 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:43,782 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:43,882 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:43,958 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:44,068 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:44,068 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:44,068 - INFO - 查找验证码输入框...
+2026-02-21 07:29:44,075 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:44,075 - WARNING - 验证码填写失败
+2026-02-21 07:29:44,075 - INFO - 开始填写登录表单...
+2026-02-21 07:29:44,137 - INFO - 用户名填写完成
+2026-02-21 07:29:44,202 - INFO - 密码填写完成
+2026-02-21 07:29:44,203 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:44,203 - INFO - 验证码识别尝试 13/30
+2026-02-21 07:29:44,203 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:44,314 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:44,416 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:44,464 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:44,564 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:44,640 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:44,741 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:44,899 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:45,015 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:45,097 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:45,197 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:45,273 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:45,375 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:45,375 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:45,375 - INFO - 查找验证码输入框...
+2026-02-21 07:29:45,382 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:45,382 - WARNING - 验证码填写失败
+2026-02-21 07:29:45,382 - INFO - 开始填写登录表单...
+2026-02-21 07:29:45,447 - INFO - 用户名填写完成
+2026-02-21 07:29:45,510 - INFO - 密码填写完成
+2026-02-21 07:29:45,511 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:45,511 - INFO - 验证码识别尝试 14/30
+2026-02-21 07:29:45,511 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:45,607 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:45,707 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:45,754 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:45,854 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:45,929 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:46,033 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:46,191 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:46,304 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:46,390 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:46,491 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:46,567 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:46,668 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:46,668 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:46,668 - INFO - 查找验证码输入框...
+2026-02-21 07:29:46,675 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:46,675 - WARNING - 验证码填写失败
+2026-02-21 07:29:46,675 - INFO - 开始填写登录表单...
+2026-02-21 07:29:46,737 - INFO - 用户名填写完成
+2026-02-21 07:29:46,800 - INFO - 密码填写完成
+2026-02-21 07:29:46,801 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:46,801 - INFO - 验证码识别尝试 15/30
+2026-02-21 07:29:46,801 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:46,898 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:46,997 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:47,044 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:47,153 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:47,230 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:47,330 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:47,485 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:47,599 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:47,673 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:47,773 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:47,849 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:47,947 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:47,948 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:47,948 - INFO - 查找验证码输入框...
+2026-02-21 07:29:47,954 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:47,954 - WARNING - 验证码填写失败
+2026-02-21 07:29:47,954 - INFO - 开始填写登录表单...
+2026-02-21 07:29:48,017 - INFO - 用户名填写完成
+2026-02-21 07:29:48,084 - INFO - 密码填写完成
+2026-02-21 07:29:48,084 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:48,084 - INFO - 验证码识别尝试 16/30
+2026-02-21 07:29:48,084 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:48,199 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:48,301 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:48,347 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:48,448 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:48,537 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:48,639 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:48,797 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:48,910 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:48,987 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:49,090 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:49,167 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:49,272 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:49,272 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:49,272 - INFO - 查找验证码输入框...
+2026-02-21 07:29:49,279 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:49,279 - WARNING - 验证码填写失败
+2026-02-21 07:29:49,279 - INFO - 开始填写登录表单...
+2026-02-21 07:29:49,342 - INFO - 用户名填写完成
+2026-02-21 07:29:49,404 - INFO - 密码填写完成
+2026-02-21 07:29:49,405 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:49,405 - INFO - 验证码识别尝试 17/30
+2026-02-21 07:29:49,405 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:49,501 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:49,607 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:49,655 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:49,754 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:49,837 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:49,938 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:50,094 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:50,207 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:50,282 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:50,383 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:50,459 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:50,559 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:50,560 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:50,560 - INFO - 查找验证码输入框...
+2026-02-21 07:29:50,567 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:50,567 - WARNING - 验证码填写失败
+2026-02-21 07:29:50,567 - INFO - 开始填写登录表单...
+2026-02-21 07:29:50,629 - INFO - 用户名填写完成
+2026-02-21 07:29:50,694 - INFO - 密码填写完成
+2026-02-21 07:29:50,694 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:50,694 - INFO - 验证码识别尝试 18/30
+2026-02-21 07:29:50,694 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:50,791 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:50,890 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:50,937 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:51,039 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:51,114 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:51,213 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:51,371 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:51,485 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:51,561 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:51,663 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:51,739 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:51,841 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:51,842 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:51,842 - INFO - 查找验证码输入框...
+2026-02-21 07:29:51,849 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:51,849 - WARNING - 验证码填写失败
+2026-02-21 07:29:51,849 - INFO - 开始填写登录表单...
+2026-02-21 07:29:51,912 - INFO - 用户名填写完成
+2026-02-21 07:29:51,978 - INFO - 密码填写完成
+2026-02-21 07:29:51,979 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:51,979 - INFO - 验证码识别尝试 19/30
+2026-02-21 07:29:51,979 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:52,075 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:52,174 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:52,222 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:52,321 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:52,400 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:52,499 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:52,654 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:52,765 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:52,838 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:52,935 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:53,011 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:53,113 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:53,113 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:53,113 - INFO - 查找验证码输入框...
+2026-02-21 07:29:53,120 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:53,120 - WARNING - 验证码填写失败
+2026-02-21 07:29:53,120 - INFO - 开始填写登录表单...
+2026-02-21 07:29:53,184 - INFO - 用户名填写完成
+2026-02-21 07:29:53,248 - INFO - 密码填写完成
+2026-02-21 07:29:53,249 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:53,249 - INFO - 验证码识别尝试 20/30
+2026-02-21 07:29:53,249 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:53,345 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:53,452 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:53,500 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:53,598 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:53,673 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:53,776 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:53,932 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:54,048 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:54,123 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:54,223 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:54,298 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:54,397 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:54,397 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:54,397 - INFO - 查找验证码输入框...
+2026-02-21 07:29:54,404 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:54,404 - WARNING - 验证码填写失败
+2026-02-21 07:29:54,404 - INFO - 开始填写登录表单...
+2026-02-21 07:29:54,466 - INFO - 用户名填写完成
+2026-02-21 07:29:54,529 - INFO - 密码填写完成
+2026-02-21 07:29:54,529 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:54,529 - INFO - 验证码识别尝试 21/30
+2026-02-21 07:29:54,529 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:54,627 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:54,728 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:54,776 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:54,877 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:54,953 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:55,055 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:55,213 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:55,328 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:55,402 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:55,510 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:55,585 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:55,687 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:55,687 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:55,687 - INFO - 查找验证码输入框...
+2026-02-21 07:29:55,694 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:55,694 - WARNING - 验证码填写失败
+2026-02-21 07:29:55,694 - INFO - 开始填写登录表单...
+2026-02-21 07:29:55,758 - INFO - 用户名填写完成
+2026-02-21 07:29:55,819 - INFO - 密码填写完成
+2026-02-21 07:29:55,819 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:55,819 - INFO - 验证码识别尝试 22/30
+2026-02-21 07:29:55,819 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:55,916 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:56,015 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:56,063 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:56,166 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:56,241 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:56,345 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:56,500 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:56,617 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:56,689 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:56,789 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:56,862 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:56,961 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:56,962 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:56,962 - INFO - 查找验证码输入框...
+2026-02-21 07:29:56,969 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:56,969 - WARNING - 验证码填写失败
+2026-02-21 07:29:56,969 - INFO - 开始填写登录表单...
+2026-02-21 07:29:57,029 - INFO - 用户名填写完成
+2026-02-21 07:29:57,091 - INFO - 密码填写完成
+2026-02-21 07:29:57,092 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:57,092 - INFO - 验证码识别尝试 23/30
+2026-02-21 07:29:57,092 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:57,188 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:57,287 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:57,343 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:57,444 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:57,529 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:57,630 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:57,786 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:57,904 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:57,978 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:58,079 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:58,155 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:58,256 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:58,256 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:58,256 - INFO - 查找验证码输入框...
+2026-02-21 07:29:58,263 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:58,263 - WARNING - 验证码填写失败
+2026-02-21 07:29:58,263 - INFO - 开始填写登录表单...
+2026-02-21 07:29:58,325 - INFO - 用户名填写完成
+2026-02-21 07:29:58,392 - INFO - 密码填写完成
+2026-02-21 07:29:58,393 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:58,393 - INFO - 验证码识别尝试 24/30
+2026-02-21 07:29:58,393 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:58,488 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:58,586 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:58,635 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:29:58,734 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:29:58,808 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:29:58,912 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:29:59,067 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:29:59,182 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:29:59,256 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:29:59,356 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:29:59,432 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:29:59,532 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:29:59,532 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:29:59,532 - INFO - 查找验证码输入框...
+2026-02-21 07:29:59,539 - ERROR - 未找到验证码输入框
+2026-02-21 07:29:59,539 - WARNING - 验证码填写失败
+2026-02-21 07:29:59,539 - INFO - 开始填写登录表单...
+2026-02-21 07:29:59,600 - INFO - 用户名填写完成
+2026-02-21 07:29:59,663 - INFO - 密码填写完成
+2026-02-21 07:29:59,664 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:29:59,664 - INFO - 验证码识别尝试 25/30
+2026-02-21 07:29:59,664 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:29:59,760 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:29:59,864 - INFO - tesseract 结果: JEM
+2026-02-21 07:29:59,912 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:30:00,013 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:30:00,088 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:30:00,188 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:30:00,345 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:30:00,460 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:30:00,535 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:30:00,635 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:30:00,711 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:30:00,813 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:30:00,813 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:30:00,813 - INFO - 查找验证码输入框...
+2026-02-21 07:30:00,820 - ERROR - 未找到验证码输入框
+2026-02-21 07:30:00,820 - WARNING - 验证码填写失败
+2026-02-21 07:30:00,820 - INFO - 开始填写登录表单...
+2026-02-21 07:30:00,883 - INFO - 用户名填写完成
+2026-02-21 07:30:00,947 - INFO - 密码填写完成
+2026-02-21 07:30:00,947 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:30:00,948 - INFO - 验证码识别尝试 26/30
+2026-02-21 07:30:00,948 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:30:01,045 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:30:01,146 - INFO - tesseract 结果: JEM
+2026-02-21 07:30:01,195 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:30:01,292 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:30:01,377 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:30:01,477 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:30:01,635 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:30:01,749 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:30:01,823 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:30:01,926 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:30:02,005 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:30:02,108 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:30:02,108 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:30:02,108 - INFO - 查找验证码输入框...
+2026-02-21 07:30:02,116 - ERROR - 未找到验证码输入框
+2026-02-21 07:30:02,116 - WARNING - 验证码填写失败
+2026-02-21 07:30:02,116 - INFO - 开始填写登录表单...
+2026-02-21 07:30:02,181 - INFO - 用户名填写完成
+2026-02-21 07:30:02,247 - INFO - 密码填写完成
+2026-02-21 07:30:02,248 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:30:02,248 - INFO - 验证码识别尝试 27/30
+2026-02-21 07:30:02,248 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:30:02,347 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:30:02,456 - INFO - tesseract 结果: JEM
+2026-02-21 07:30:02,506 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:30:02,607 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:30:02,685 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:30:02,787 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:30:02,946 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:30:03,062 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:30:03,139 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:30:03,248 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:30:03,325 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:30:03,431 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:30:03,431 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:30:03,431 - INFO - 查找验证码输入框...
+2026-02-21 07:30:03,438 - ERROR - 未找到验证码输入框
+2026-02-21 07:30:03,438 - WARNING - 验证码填写失败
+2026-02-21 07:30:03,438 - INFO - 开始填写登录表单...
+2026-02-21 07:30:03,500 - INFO - 用户名填写完成
+2026-02-21 07:30:03,567 - INFO - 密码填写完成
+2026-02-21 07:30:03,568 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:30:03,568 - INFO - 验证码识别尝试 28/30
+2026-02-21 07:30:03,568 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:30:03,667 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:30:03,772 - INFO - tesseract 结果: JEM
+2026-02-21 07:30:03,820 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:30:03,923 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:30:04,000 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:30:04,101 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:30:04,259 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:30:04,372 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:30:04,457 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:30:04,555 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:30:04,632 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:30:04,738 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:30:04,738 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:30:04,738 - INFO - 查找验证码输入框...
+2026-02-21 07:30:04,745 - ERROR - 未找到验证码输入框
+2026-02-21 07:30:04,745 - WARNING - 验证码填写失败
+2026-02-21 07:30:04,745 - INFO - 开始填写登录表单...
+2026-02-21 07:30:04,809 - INFO - 用户名填写完成
+2026-02-21 07:30:04,873 - INFO - 密码填写完成
+2026-02-21 07:30:04,874 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:30:04,874 - INFO - 验证码识别尝试 29/30
+2026-02-21 07:30:04,874 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:30:04,973 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:30:05,077 - INFO - tesseract 结果: JEM
+2026-02-21 07:30:05,126 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:30:05,231 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:30:05,308 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:30:05,408 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:30:05,564 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:30:05,677 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:30:05,750 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:30:05,851 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:30:05,926 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:30:06,027 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:30:06,027 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:30:06,027 - INFO - 查找验证码输入框...
+2026-02-21 07:30:06,034 - ERROR - 未找到验证码输入框
+2026-02-21 07:30:06,034 - WARNING - 验证码填写失败
+2026-02-21 07:30:06,034 - INFO - 开始填写登录表单...
+2026-02-21 07:30:06,097 - INFO - 用户名填写完成
+2026-02-21 07:30:06,160 - INFO - 密码填写完成
+2026-02-21 07:30:06,161 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-21 07:30:06,161 - INFO - 验证码识别尝试 30/30
+2026-02-21 07:30:06,161 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-21 07:30:06,257 - INFO - easyocr 结果: ['(0.03)']
+2026-02-21 07:30:06,357 - INFO - tesseract 结果: JEM
+2026-02-21 07:30:06,406 - INFO - easyocr alt1 结果: ['I(0.15)']
+2026-02-21 07:30:06,513 - INFO - tesseract alt1 结果: JEM
+2026-02-21 07:30:06,589 - INFO - easyocr alt2 结果: ['I(0.02)']
+2026-02-21 07:30:06,688 - INFO - tesseract alt2 结果: JEM
+2026-02-21 07:30:06,846 - INFO - easyocr alt3 结果: ['i(0.05)']
+2026-02-21 07:30:06,959 - INFO - tesseract alt3 结果: jEMan
+2026-02-21 07:30:07,034 - INFO - easyocr alt4 结果: ['I(0.00)']
+2026-02-21 07:30:07,136 - INFO - tesseract alt4 结果: JEMan
+2026-02-21 07:30:07,213 - INFO - easyocr alt5 结果: ['j(0.00)']
+2026-02-21 07:30:07,314 - INFO - tesseract alt5 结果: JEM
+2026-02-21 07:30:07,314 - INFO - 最终验证码识别结果: JEM (engine=tesseract, prob=0.5)
+2026-02-21 07:30:07,314 - INFO - 查找验证码输入框...
+2026-02-21 07:30:07,321 - ERROR - 未找到验证码输入框
+2026-02-21 07:30:07,321 - WARNING - 验证码填写失败
+2026-02-21 07:30:07,321 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-21 07:30:07,321 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-21 07:30:07,321 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-21 07:30:07,321 - INFO - 查找并点击登录按钮...
+2026-02-21 07:30:07,330 - ERROR - 未找到登录按钮
+2026-02-21 07:30:07,330 - ERROR - 点击登录按钮失败
+2026-02-21 07:30:07,330 - INFO - 等待登录成功...
+2026-02-21 07:30:12,335 - INFO - 登录可能成功，继续下一步...
+2026-02-21 07:30:12,335 - INFO - 查找'去充值'按钮...
+2026-02-21 07:30:12,344 - ERROR - 未找到'去充值'按钮
+2026-02-21 07:30:12,344 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-21 07:30:12,344 - INFO - 开始提取剩余电量信息...
+2026-02-21 07:30:12,353 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-21 07:30:12,362 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-21 07:30:12,371 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-21 07:30:12,379 - INFO - 在页面源码中查找电量信息...
+2026-02-21 07:30:12,391 - WARNING - 未能提取到剩余电量信息
+2026-02-21 07:30:12,391 - WARNING - 没有电量数据可保存
+2026-02-21 07:30:12,391 - INFO - 监控流程完成
