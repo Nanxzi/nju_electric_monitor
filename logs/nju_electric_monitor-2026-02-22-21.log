@@ -1,0 +1,694 @@
+2026-02-22 13:40:27,744 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-22 13:40:29,123 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-22 13:40:29,123 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-22 13:40:30,586 - INFO - OCR识别器初始化成功
+2026-02-22 13:40:30,586 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-22 13:40:30,586 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-22 13:40:39,179 - INFO - 等待登录表单加载...
+2026-02-22 13:40:39,508 - INFO - 登录表单已加载
+2026-02-22 13:40:39,509 - INFO - 开始填写登录表单...
+2026-02-22 13:40:39,595 - INFO - 用户名填写完成
+2026-02-22 13:40:39,662 - INFO - 密码填写完成
+2026-02-22 13:40:39,663 - INFO - 检查是否有验证码...
+2026-02-22 13:40:39,663 - INFO - 查找验证码图片...
+2026-02-22 13:40:39,683 - INFO - 找到验证码图片，开始截图...
+2026-02-22 13:40:39,728 - INFO - 验证码图片截取成功
+2026-02-22 13:40:39,728 - INFO - 开始填写登录表单...
+2026-02-22 13:40:39,796 - INFO - 用户名填写完成
+2026-02-22 13:40:39,861 - INFO - 密码填写完成
+2026-02-22 13:40:39,862 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:39,862 - INFO - 验证码识别尝试 1/30
+2026-02-22 13:40:39,862 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:39,960 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:40,191 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:40,266 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:40,370 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:40,435 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:40,534 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:40,713 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:40,817 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:40,881 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:40,982 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:41,047 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:41,152 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:41,152 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:41,152 - INFO - 查找验证码输入框...
+2026-02-22 13:40:41,162 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:41,162 - WARNING - 验证码填写失败
+2026-02-22 13:40:41,162 - INFO - 开始填写登录表单...
+2026-02-22 13:40:41,224 - INFO - 用户名填写完成
+2026-02-22 13:40:41,286 - INFO - 密码填写完成
+2026-02-22 13:40:41,287 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:41,287 - INFO - 验证码识别尝试 2/30
+2026-02-22 13:40:41,287 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:41,375 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:41,473 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:41,539 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:41,642 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:41,706 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:41,806 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:41,961 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:42,071 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:42,134 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:42,243 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:42,309 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:42,413 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:42,413 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:42,413 - INFO - 查找验证码输入框...
+2026-02-22 13:40:42,420 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:42,420 - WARNING - 验证码填写失败
+2026-02-22 13:40:42,420 - INFO - 开始填写登录表单...
+2026-02-22 13:40:42,482 - INFO - 用户名填写完成
+2026-02-22 13:40:42,545 - INFO - 密码填写完成
+2026-02-22 13:40:42,546 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:42,546 - INFO - 验证码识别尝试 3/30
+2026-02-22 13:40:42,546 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:42,635 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:42,730 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:42,796 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:42,896 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:42,960 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:43,059 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:43,229 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:43,337 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:43,402 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:43,507 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:43,573 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:43,680 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:43,680 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:43,680 - INFO - 查找验证码输入框...
+2026-02-22 13:40:43,687 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:43,687 - WARNING - 验证码填写失败
+2026-02-22 13:40:43,687 - INFO - 开始填写登录表单...
+2026-02-22 13:40:43,750 - INFO - 用户名填写完成
+2026-02-22 13:40:43,818 - INFO - 密码填写完成
+2026-02-22 13:40:43,819 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:43,819 - INFO - 验证码识别尝试 4/30
+2026-02-22 13:40:43,819 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:43,895 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:43,990 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:44,056 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:44,158 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:44,223 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:44,329 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:44,485 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:44,595 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:44,659 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:44,763 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:44,829 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:44,935 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:44,935 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:44,935 - INFO - 查找验证码输入框...
+2026-02-22 13:40:44,941 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:44,942 - WARNING - 验证码填写失败
+2026-02-22 13:40:44,942 - INFO - 开始填写登录表单...
+2026-02-22 13:40:45,003 - INFO - 用户名填写完成
+2026-02-22 13:40:45,064 - INFO - 密码填写完成
+2026-02-22 13:40:45,065 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:45,065 - INFO - 验证码识别尝试 5/30
+2026-02-22 13:40:45,065 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:45,142 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:45,237 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:45,303 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:45,403 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:45,467 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:45,567 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:45,722 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:45,828 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:45,892 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:46,000 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:46,065 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:46,175 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:46,176 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:46,176 - INFO - 查找验证码输入框...
+2026-02-22 13:40:46,182 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:46,182 - WARNING - 验证码填写失败
+2026-02-22 13:40:46,182 - INFO - 开始填写登录表单...
+2026-02-22 13:40:46,244 - INFO - 用户名填写完成
+2026-02-22 13:40:46,307 - INFO - 密码填写完成
+2026-02-22 13:40:46,307 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:46,307 - INFO - 验证码识别尝试 6/30
+2026-02-22 13:40:46,307 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:46,385 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:46,479 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:46,545 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:46,648 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:46,713 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:46,814 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:46,970 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:47,078 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:47,142 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:47,249 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:47,315 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:47,422 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:47,422 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:47,422 - INFO - 查找验证码输入框...
+2026-02-22 13:40:47,429 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:47,429 - WARNING - 验证码填写失败
+2026-02-22 13:40:47,429 - INFO - 开始填写登录表单...
+2026-02-22 13:40:47,491 - INFO - 用户名填写完成
+2026-02-22 13:40:47,553 - INFO - 密码填写完成
+2026-02-22 13:40:47,554 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:47,554 - INFO - 验证码识别尝试 7/30
+2026-02-22 13:40:47,554 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:47,631 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:47,724 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:47,788 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:47,891 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:47,955 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:48,055 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:48,210 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:48,316 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:48,380 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:48,483 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:48,547 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:48,656 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:48,656 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:48,656 - INFO - 查找验证码输入框...
+2026-02-22 13:40:48,663 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:48,663 - WARNING - 验证码填写失败
+2026-02-22 13:40:48,663 - INFO - 开始填写登录表单...
+2026-02-22 13:40:48,725 - INFO - 用户名填写完成
+2026-02-22 13:40:48,786 - INFO - 密码填写完成
+2026-02-22 13:40:48,787 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:48,787 - INFO - 验证码识别尝试 8/30
+2026-02-22 13:40:48,787 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:48,863 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:48,963 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:49,028 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:49,131 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:49,195 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:49,296 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:49,452 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:49,559 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:49,623 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:49,728 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:49,793 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:49,899 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:49,899 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:49,899 - INFO - 查找验证码输入框...
+2026-02-22 13:40:49,906 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:49,906 - WARNING - 验证码填写失败
+2026-02-22 13:40:49,906 - INFO - 开始填写登录表单...
+2026-02-22 13:40:49,970 - INFO - 用户名填写完成
+2026-02-22 13:40:50,033 - INFO - 密码填写完成
+2026-02-22 13:40:50,033 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:50,033 - INFO - 验证码识别尝试 9/30
+2026-02-22 13:40:50,033 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:50,110 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:50,206 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:50,270 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:50,370 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:50,434 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:50,533 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:50,688 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:50,793 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:50,857 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:50,961 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:51,025 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:51,131 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:51,131 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:51,131 - INFO - 查找验证码输入框...
+2026-02-22 13:40:51,138 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:51,138 - WARNING - 验证码填写失败
+2026-02-22 13:40:51,138 - INFO - 开始填写登录表单...
+2026-02-22 13:40:51,199 - INFO - 用户名填写完成
+2026-02-22 13:40:51,262 - INFO - 密码填写完成
+2026-02-22 13:40:51,263 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:51,263 - INFO - 验证码识别尝试 10/30
+2026-02-22 13:40:51,263 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:51,340 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:51,434 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:51,498 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:51,603 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:51,667 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:51,770 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:51,926 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:52,036 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:52,100 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:52,206 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:52,271 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:52,379 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:52,379 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:52,379 - INFO - 查找验证码输入框...
+2026-02-22 13:40:52,386 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:52,386 - WARNING - 验证码填写失败
+2026-02-22 13:40:52,386 - INFO - 开始填写登录表单...
+2026-02-22 13:40:52,447 - INFO - 用户名填写完成
+2026-02-22 13:40:52,510 - INFO - 密码填写完成
+2026-02-22 13:40:52,511 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:52,511 - INFO - 验证码识别尝试 11/30
+2026-02-22 13:40:52,511 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:52,588 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:52,690 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:52,754 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:52,857 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:52,921 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:53,022 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:53,177 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:53,283 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:53,360 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:53,465 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:53,530 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:53,637 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:53,638 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:53,638 - INFO - 查找验证码输入框...
+2026-02-22 13:40:53,644 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:53,644 - WARNING - 验证码填写失败
+2026-02-22 13:40:53,644 - INFO - 开始填写登录表单...
+2026-02-22 13:40:53,706 - INFO - 用户名填写完成
+2026-02-22 13:40:53,767 - INFO - 密码填写完成
+2026-02-22 13:40:53,768 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:53,768 - INFO - 验证码识别尝试 12/30
+2026-02-22 13:40:53,768 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:53,852 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:53,949 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:54,014 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:54,116 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:54,180 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:54,284 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:54,440 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:54,549 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:54,614 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:54,719 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:54,784 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:54,893 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:54,893 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:54,893 - INFO - 查找验证码输入框...
+2026-02-22 13:40:54,899 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:54,900 - WARNING - 验证码填写失败
+2026-02-22 13:40:54,900 - INFO - 开始填写登录表单...
+2026-02-22 13:40:54,961 - INFO - 用户名填写完成
+2026-02-22 13:40:55,023 - INFO - 密码填写完成
+2026-02-22 13:40:55,024 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:55,024 - INFO - 验证码识别尝试 13/30
+2026-02-22 13:40:55,024 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:55,101 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:55,195 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:55,261 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:55,364 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:55,430 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:55,532 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:55,689 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:55,794 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:55,871 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:55,979 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:56,044 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:56,152 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:56,152 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:56,152 - INFO - 查找验证码输入框...
+2026-02-22 13:40:56,158 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:56,158 - WARNING - 验证码填写失败
+2026-02-22 13:40:56,158 - INFO - 开始填写登录表单...
+2026-02-22 13:40:56,220 - INFO - 用户名填写完成
+2026-02-22 13:40:56,285 - INFO - 密码填写完成
+2026-02-22 13:40:56,286 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:56,286 - INFO - 验证码识别尝试 14/30
+2026-02-22 13:40:56,286 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:56,363 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:56,460 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:56,526 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:56,634 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:56,699 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:56,799 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:56,955 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:57,063 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:57,127 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:57,233 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:57,298 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:57,407 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:57,407 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:57,407 - INFO - 查找验证码输入框...
+2026-02-22 13:40:57,414 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:57,414 - WARNING - 验证码填写失败
+2026-02-22 13:40:57,414 - INFO - 开始填写登录表单...
+2026-02-22 13:40:57,475 - INFO - 用户名填写完成
+2026-02-22 13:40:57,537 - INFO - 密码填写完成
+2026-02-22 13:40:57,537 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:57,537 - INFO - 验证码识别尝试 15/30
+2026-02-22 13:40:57,537 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:57,628 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:57,727 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:57,792 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:57,898 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:57,964 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:58,066 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:58,221 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:58,328 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:58,392 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:58,496 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:58,561 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:58,673 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:58,673 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:58,673 - INFO - 查找验证码输入框...
+2026-02-22 13:40:58,680 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:58,680 - WARNING - 验证码填写失败
+2026-02-22 13:40:58,680 - INFO - 开始填写登录表单...
+2026-02-22 13:40:58,741 - INFO - 用户名填写完成
+2026-02-22 13:40:58,801 - INFO - 密码填写完成
+2026-02-22 13:40:58,802 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:40:58,802 - INFO - 验证码识别尝试 16/30
+2026-02-22 13:40:58,802 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:40:58,879 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:40:58,973 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:40:59,038 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:40:59,143 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:40:59,206 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:40:59,307 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:40:59,462 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:40:59,569 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:40:59,632 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:40:59,737 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:40:59,801 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:40:59,908 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:40:59,909 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:40:59,909 - INFO - 查找验证码输入框...
+2026-02-22 13:40:59,919 - ERROR - 未找到验证码输入框
+2026-02-22 13:40:59,919 - WARNING - 验证码填写失败
+2026-02-22 13:40:59,919 - INFO - 开始填写登录表单...
+2026-02-22 13:40:59,980 - INFO - 用户名填写完成
+2026-02-22 13:41:00,040 - INFO - 密码填写完成
+2026-02-22 13:41:00,041 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:00,041 - INFO - 验证码识别尝试 17/30
+2026-02-22 13:41:00,041 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:00,123 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:00,221 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:00,285 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:00,390 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:00,454 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:00,555 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:00,710 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:00,819 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:00,896 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:01,001 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:01,066 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:01,175 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:01,175 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:01,175 - INFO - 查找验证码输入框...
+2026-02-22 13:41:01,182 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:01,182 - WARNING - 验证码填写失败
+2026-02-22 13:41:01,182 - INFO - 开始填写登录表单...
+2026-02-22 13:41:01,244 - INFO - 用户名填写完成
+2026-02-22 13:41:01,306 - INFO - 密码填写完成
+2026-02-22 13:41:01,307 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:01,307 - INFO - 验证码识别尝试 18/30
+2026-02-22 13:41:01,307 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:01,384 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:01,479 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:01,544 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:01,650 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:01,713 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:01,812 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:01,965 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:02,070 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:02,133 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:02,239 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:02,303 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:02,409 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:02,410 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:02,410 - INFO - 查找验证码输入框...
+2026-02-22 13:41:02,416 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:02,417 - WARNING - 验证码填写失败
+2026-02-22 13:41:02,417 - INFO - 开始填写登录表单...
+2026-02-22 13:41:02,478 - INFO - 用户名填写完成
+2026-02-22 13:41:02,540 - INFO - 密码填写完成
+2026-02-22 13:41:02,541 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:02,541 - INFO - 验证码识别尝试 19/30
+2026-02-22 13:41:02,541 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:02,618 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:02,715 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:02,780 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:02,880 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:02,946 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:03,054 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:03,210 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:03,323 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:03,388 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:03,493 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:03,558 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:03,670 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:03,670 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:03,670 - INFO - 查找验证码输入框...
+2026-02-22 13:41:03,677 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:03,677 - WARNING - 验证码填写失败
+2026-02-22 13:41:03,677 - INFO - 开始填写登录表单...
+2026-02-22 13:41:03,740 - INFO - 用户名填写完成
+2026-02-22 13:41:03,802 - INFO - 密码填写完成
+2026-02-22 13:41:03,803 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:03,803 - INFO - 验证码识别尝试 20/30
+2026-02-22 13:41:03,803 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:03,881 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:03,978 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:04,042 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:04,145 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:04,209 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:04,310 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:04,465 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:04,571 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:04,635 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:04,737 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:04,801 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:04,908 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:04,908 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:04,909 - INFO - 查找验证码输入框...
+2026-02-22 13:41:04,915 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:04,915 - WARNING - 验证码填写失败
+2026-02-22 13:41:04,915 - INFO - 开始填写登录表单...
+2026-02-22 13:41:04,979 - INFO - 用户名填写完成
+2026-02-22 13:41:05,042 - INFO - 密码填写完成
+2026-02-22 13:41:05,043 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:05,043 - INFO - 验证码识别尝试 21/30
+2026-02-22 13:41:05,043 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:05,119 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:05,219 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:05,284 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:05,384 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:05,449 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:05,554 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:05,710 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:05,818 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:05,882 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:05,985 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:06,050 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:06,157 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:06,157 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:06,157 - INFO - 查找验证码输入框...
+2026-02-22 13:41:06,164 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:06,164 - WARNING - 验证码填写失败
+2026-02-22 13:41:06,164 - INFO - 开始填写登录表单...
+2026-02-22 13:41:06,225 - INFO - 用户名填写完成
+2026-02-22 13:41:06,287 - INFO - 密码填写完成
+2026-02-22 13:41:06,288 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:06,288 - INFO - 验证码识别尝试 22/30
+2026-02-22 13:41:06,288 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:06,366 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:06,464 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:06,529 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:06,631 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:06,696 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:06,796 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:06,952 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:07,058 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:07,122 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:07,225 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:07,292 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:07,408 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:07,408 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:07,408 - INFO - 查找验证码输入框...
+2026-02-22 13:41:07,416 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:07,416 - WARNING - 验证码填写失败
+2026-02-22 13:41:07,416 - INFO - 开始填写登录表单...
+2026-02-22 13:41:07,477 - INFO - 用户名填写完成
+2026-02-22 13:41:07,542 - INFO - 密码填写完成
+2026-02-22 13:41:07,617 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:07,617 - INFO - 验证码识别尝试 23/30
+2026-02-22 13:41:07,617 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:07,704 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:07,800 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:07,865 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:07,967 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:08,034 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:08,138 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:08,295 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:08,409 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:08,476 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:08,587 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:08,653 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:08,762 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:08,762 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:08,762 - INFO - 查找验证码输入框...
+2026-02-22 13:41:08,769 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:08,769 - WARNING - 验证码填写失败
+2026-02-22 13:41:08,769 - INFO - 开始填写登录表单...
+2026-02-22 13:41:08,830 - INFO - 用户名填写完成
+2026-02-22 13:41:08,896 - INFO - 密码填写完成
+2026-02-22 13:41:08,968 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:08,968 - INFO - 验证码识别尝试 24/30
+2026-02-22 13:41:08,968 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:09,052 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:09,151 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:09,217 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:09,324 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:09,390 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:09,491 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:09,647 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:09,754 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:09,818 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:09,925 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:09,989 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:10,097 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:10,098 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:10,098 - INFO - 查找验证码输入框...
+2026-02-22 13:41:10,104 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:10,104 - WARNING - 验证码填写失败
+2026-02-22 13:41:10,105 - INFO - 开始填写登录表单...
+2026-02-22 13:41:10,169 - INFO - 用户名填写完成
+2026-02-22 13:41:10,230 - INFO - 密码填写完成
+2026-02-22 13:41:10,231 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:10,231 - INFO - 验证码识别尝试 25/30
+2026-02-22 13:41:10,231 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:10,318 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:10,413 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:10,482 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:10,583 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:10,656 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:10,756 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:10,912 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:11,018 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:11,083 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:11,190 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:11,256 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:11,367 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:11,367 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:11,367 - INFO - 查找验证码输入框...
+2026-02-22 13:41:11,374 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:11,374 - WARNING - 验证码填写失败
+2026-02-22 13:41:11,374 - INFO - 开始填写登录表单...
+2026-02-22 13:41:11,437 - INFO - 用户名填写完成
+2026-02-22 13:41:11,512 - INFO - 密码填写完成
+2026-02-22 13:41:11,513 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:11,513 - INFO - 验证码识别尝试 26/30
+2026-02-22 13:41:11,513 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:11,599 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:11,701 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:11,767 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:11,870 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:11,935 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:12,037 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:12,193 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:12,299 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:12,364 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:12,473 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:12,538 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:12,648 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:12,649 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:12,649 - INFO - 查找验证码输入框...
+2026-02-22 13:41:12,656 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:12,656 - WARNING - 验证码填写失败
+2026-02-22 13:41:12,656 - INFO - 开始填写登录表单...
+2026-02-22 13:41:12,716 - INFO - 用户名填写完成
+2026-02-22 13:41:12,778 - INFO - 密码填写完成
+2026-02-22 13:41:12,779 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:12,779 - INFO - 验证码识别尝试 27/30
+2026-02-22 13:41:12,779 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:12,855 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:12,950 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:13,014 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:13,116 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:13,180 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:13,286 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:13,442 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:13,548 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:13,612 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:13,720 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:13,784 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:13,895 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:13,896 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:13,896 - INFO - 查找验证码输入框...
+2026-02-22 13:41:13,903 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:13,903 - WARNING - 验证码填写失败
+2026-02-22 13:41:13,903 - INFO - 开始填写登录表单...
+2026-02-22 13:41:13,966 - INFO - 用户名填写完成
+2026-02-22 13:41:14,029 - INFO - 密码填写完成
+2026-02-22 13:41:14,030 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:14,030 - INFO - 验证码识别尝试 28/30
+2026-02-22 13:41:14,030 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:14,114 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:14,207 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:14,273 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:14,378 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:14,444 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:14,545 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:14,701 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:14,810 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:14,874 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:14,977 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:15,043 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:15,149 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:15,149 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:15,149 - INFO - 查找验证码输入框...
+2026-02-22 13:41:15,156 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:15,156 - WARNING - 验证码填写失败
+2026-02-22 13:41:15,156 - INFO - 开始填写登录表单...
+2026-02-22 13:41:15,217 - INFO - 用户名填写完成
+2026-02-22 13:41:15,279 - INFO - 密码填写完成
+2026-02-22 13:41:15,280 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:15,280 - INFO - 验证码识别尝试 29/30
+2026-02-22 13:41:15,280 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:15,372 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:15,468 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:15,532 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:15,637 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:15,701 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:15,802 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:15,956 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:16,063 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:16,126 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:16,233 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:16,304 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:16,410 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:16,410 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:16,410 - INFO - 查找验证码输入框...
+2026-02-22 13:41:16,417 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:16,417 - WARNING - 验证码填写失败
+2026-02-22 13:41:16,417 - INFO - 开始填写登录表单...
+2026-02-22 13:41:16,478 - INFO - 用户名填写完成
+2026-02-22 13:41:16,541 - INFO - 密码填写完成
+2026-02-22 13:41:16,542 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-22 13:41:16,542 - INFO - 验证码识别尝试 30/30
+2026-02-22 13:41:16,542 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-22 13:41:16,630 - INFO - easyocr 结果: ['NqR3(0.20)']
+2026-02-22 13:41:16,729 - INFO - tesseract 结果: NqoH3
+2026-02-22 13:41:16,794 - INFO - easyocr alt1 结果: ['A9m(0.01)']
+2026-02-22 13:41:16,896 - INFO - tesseract alt1 结果: iE
+2026-02-22 13:41:16,961 - INFO - easyocr alt2 结果: ['A9R(0.01)']
+2026-02-22 13:41:17,066 - INFO - tesseract alt2 结果: GH
+2026-02-22 13:41:17,221 - INFO - easyocr alt3 结果: ['M4f(0.00)']
+2026-02-22 13:41:17,330 - INFO - tesseract alt3 结果: NqHs
+2026-02-22 13:41:17,394 - INFO - easyocr alt4 结果: ['N4l(0.06)']
+2026-02-22 13:41:17,500 - INFO - tesseract alt4 结果: qif3
+2026-02-22 13:41:17,566 - INFO - easyocr alt5 结果: ['m(0.00)']
+2026-02-22 13:41:17,679 - INFO - tesseract alt5 结果: Ves
+2026-02-22 13:41:17,679 - INFO - 最终验证码识别结果: NqHs (engine=tesseract_alt3, prob=0.5)
+2026-02-22 13:41:17,679 - INFO - 查找验证码输入框...
+2026-02-22 13:41:17,686 - ERROR - 未找到验证码输入框
+2026-02-22 13:41:17,686 - WARNING - 验证码填写失败
+2026-02-22 13:41:17,686 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-22 13:41:17,686 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-22 13:41:17,686 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-22 13:41:17,687 - INFO - 查找并点击登录按钮...
+2026-02-22 13:41:17,695 - ERROR - 未找到登录按钮
+2026-02-22 13:41:17,695 - ERROR - 点击登录按钮失败
+2026-02-22 13:41:17,695 - INFO - 等待登录成功...
+2026-02-22 13:41:22,700 - INFO - 登录可能成功，继续下一步...
+2026-02-22 13:41:22,700 - INFO - 查找'去充值'按钮...
+2026-02-22 13:41:22,709 - ERROR - 未找到'去充值'按钮
+2026-02-22 13:41:22,709 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-22 13:41:22,709 - INFO - 开始提取剩余电量信息...
+2026-02-22 13:41:22,718 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-22 13:41:22,726 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-22 13:41:22,734 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-22 13:41:22,742 - INFO - 在页面源码中查找电量信息...
+2026-02-22 13:41:22,756 - WARNING - 未能提取到剩余电量信息
+2026-02-22 13:41:22,756 - WARNING - 没有电量数据可保存
+2026-02-22 13:41:22,756 - INFO - 监控流程完成
