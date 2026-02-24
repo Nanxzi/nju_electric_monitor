@@ -1,0 +1,694 @@
+2026-02-24 03:52:08,755 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-24 03:52:10,180 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-24 03:52:10,180 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-24 03:52:11,645 - INFO - OCR识别器初始化成功
+2026-02-24 03:52:11,645 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-24 03:52:11,645 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-24 03:52:19,679 - INFO - 等待登录表单加载...
+2026-02-24 03:52:20,152 - INFO - 登录表单已加载
+2026-02-24 03:52:20,152 - INFO - 开始填写登录表单...
+2026-02-24 03:52:20,234 - INFO - 用户名填写完成
+2026-02-24 03:52:20,300 - INFO - 密码填写完成
+2026-02-24 03:52:20,300 - INFO - 检查是否有验证码...
+2026-02-24 03:52:20,300 - INFO - 查找验证码图片...
+2026-02-24 03:52:20,320 - INFO - 找到验证码图片，开始截图...
+2026-02-24 03:52:20,784 - INFO - 验证码图片截取成功
+2026-02-24 03:52:20,784 - INFO - 开始填写登录表单...
+2026-02-24 03:52:20,847 - INFO - 用户名填写完成
+2026-02-24 03:52:20,907 - INFO - 密码填写完成
+2026-02-24 03:52:20,908 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:20,908 - INFO - 验证码识别尝试 1/30
+2026-02-24 03:52:20,908 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:21,028 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:21,202 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:21,253 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:21,355 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:21,402 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:21,495 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:21,654 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:21,761 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:21,807 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:21,901 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:21,968 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:22,065 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:22,066 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:22,066 - INFO - 查找验证码输入框...
+2026-02-24 03:52:22,076 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:22,076 - WARNING - 验证码填写失败
+2026-02-24 03:52:22,076 - INFO - 开始填写登录表单...
+2026-02-24 03:52:22,135 - INFO - 用户名填写完成
+2026-02-24 03:52:22,194 - INFO - 密码填写完成
+2026-02-24 03:52:22,195 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:22,195 - INFO - 验证码识别尝试 2/30
+2026-02-24 03:52:22,195 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:22,283 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:22,379 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:22,426 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:22,521 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:22,568 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:22,663 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:22,799 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:22,906 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:22,952 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:23,051 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:23,116 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:23,212 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:23,212 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:23,212 - INFO - 查找验证码输入框...
+2026-02-24 03:52:23,218 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:23,218 - WARNING - 验证码填写失败
+2026-02-24 03:52:23,218 - INFO - 开始填写登录表单...
+2026-02-24 03:52:23,279 - INFO - 用户名填写完成
+2026-02-24 03:52:23,337 - INFO - 密码填写完成
+2026-02-24 03:52:23,338 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:23,338 - INFO - 验证码识别尝试 3/30
+2026-02-24 03:52:23,338 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:23,414 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:23,507 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:23,554 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:23,651 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:23,697 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:23,791 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:23,927 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:24,035 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:24,081 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:24,175 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:24,239 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:24,334 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:24,334 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:24,334 - INFO - 查找验证码输入框...
+2026-02-24 03:52:24,340 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:24,340 - WARNING - 验证码填写失败
+2026-02-24 03:52:24,340 - INFO - 开始填写登录表单...
+2026-02-24 03:52:24,400 - INFO - 用户名填写完成
+2026-02-24 03:52:24,466 - INFO - 密码填写完成
+2026-02-24 03:52:24,467 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:24,467 - INFO - 验证码识别尝试 4/30
+2026-02-24 03:52:24,467 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:24,543 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:24,638 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:24,685 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:24,782 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:24,827 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:24,919 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:25,056 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:25,166 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:25,211 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:25,309 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:25,373 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:25,468 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:25,468 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:25,468 - INFO - 查找验证码输入框...
+2026-02-24 03:52:25,475 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:25,475 - WARNING - 验证码填写失败
+2026-02-24 03:52:25,475 - INFO - 开始填写登录表单...
+2026-02-24 03:52:25,535 - INFO - 用户名填写完成
+2026-02-24 03:52:25,595 - INFO - 密码填写完成
+2026-02-24 03:52:25,596 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:25,596 - INFO - 验证码识别尝试 5/30
+2026-02-24 03:52:25,596 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:25,672 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:25,767 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:25,814 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:25,910 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:25,957 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:26,049 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:26,186 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:26,295 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:26,350 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:26,448 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:26,515 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:26,610 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:26,610 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:26,610 - INFO - 查找验证码输入框...
+2026-02-24 03:52:26,616 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:26,616 - WARNING - 验证码填写失败
+2026-02-24 03:52:26,616 - INFO - 开始填写登录表单...
+2026-02-24 03:52:26,675 - INFO - 用户名填写完成
+2026-02-24 03:52:26,733 - INFO - 密码填写完成
+2026-02-24 03:52:26,734 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:26,734 - INFO - 验证码识别尝试 6/30
+2026-02-24 03:52:26,734 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:26,810 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:26,903 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:26,949 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:27,050 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:27,097 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:27,192 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:27,329 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:27,434 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:27,480 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:27,580 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:27,643 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:27,739 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:27,739 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:27,739 - INFO - 查找验证码输入框...
+2026-02-24 03:52:27,746 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:27,746 - WARNING - 验证码填写失败
+2026-02-24 03:52:27,746 - INFO - 开始填写登录表单...
+2026-02-24 03:52:27,805 - INFO - 用户名填写完成
+2026-02-24 03:52:27,865 - INFO - 密码填写完成
+2026-02-24 03:52:27,866 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:27,866 - INFO - 验证码识别尝试 7/30
+2026-02-24 03:52:27,866 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:27,942 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:28,037 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:28,087 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:28,182 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:28,228 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:28,321 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:28,456 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:28,564 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:28,610 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:28,708 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:28,773 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:28,869 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:28,869 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:28,869 - INFO - 查找验证码输入框...
+2026-02-24 03:52:28,876 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:28,876 - WARNING - 验证码填写失败
+2026-02-24 03:52:28,876 - INFO - 开始填写登录表单...
+2026-02-24 03:52:28,934 - INFO - 用户名填写完成
+2026-02-24 03:52:28,996 - INFO - 密码填写完成
+2026-02-24 03:52:28,997 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:28,997 - INFO - 验证码识别尝试 8/30
+2026-02-24 03:52:28,997 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:29,074 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:29,168 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:29,215 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:29,312 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:29,358 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:29,451 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:29,586 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:29,693 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:29,739 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:29,833 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:29,897 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:29,992 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:29,992 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:29,992 - INFO - 查找验证码输入框...
+2026-02-24 03:52:29,998 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:29,998 - WARNING - 验证码填写失败
+2026-02-24 03:52:29,999 - INFO - 开始填写登录表单...
+2026-02-24 03:52:30,059 - INFO - 用户名填写完成
+2026-02-24 03:52:30,118 - INFO - 密码填写完成
+2026-02-24 03:52:30,119 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:30,119 - INFO - 验证码识别尝试 9/30
+2026-02-24 03:52:30,119 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:30,194 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:30,291 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:30,337 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:30,434 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:30,487 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:30,583 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:30,718 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:30,825 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:30,870 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:30,963 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:31,027 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:31,121 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:31,121 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:31,122 - INFO - 查找验证码输入框...
+2026-02-24 03:52:31,128 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:31,128 - WARNING - 验证码填写失败
+2026-02-24 03:52:31,129 - INFO - 开始填写登录表单...
+2026-02-24 03:52:31,188 - INFO - 用户名填写完成
+2026-02-24 03:52:31,248 - INFO - 密码填写完成
+2026-02-24 03:52:31,249 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:31,249 - INFO - 验证码识别尝试 10/30
+2026-02-24 03:52:31,249 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:31,325 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:31,419 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:31,466 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:31,561 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:31,615 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:31,713 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:31,850 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:31,957 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:32,010 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:32,107 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:32,179 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:32,272 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:32,272 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:32,273 - INFO - 查找验证码输入框...
+2026-02-24 03:52:32,279 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:32,279 - WARNING - 验证码填写失败
+2026-02-24 03:52:32,279 - INFO - 开始填写登录表单...
+2026-02-24 03:52:32,338 - INFO - 用户名填写完成
+2026-02-24 03:52:32,399 - INFO - 密码填写完成
+2026-02-24 03:52:32,400 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:32,400 - INFO - 验证码识别尝试 11/30
+2026-02-24 03:52:32,400 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:32,476 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:32,572 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:32,618 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:32,714 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:32,767 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:32,860 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:33,004 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:33,113 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:33,159 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:33,254 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:33,318 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:33,413 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:33,413 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:33,413 - INFO - 查找验证码输入框...
+2026-02-24 03:52:33,420 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:33,420 - WARNING - 验证码填写失败
+2026-02-24 03:52:33,420 - INFO - 开始填写登录表单...
+2026-02-24 03:52:33,479 - INFO - 用户名填写完成
+2026-02-24 03:52:33,538 - INFO - 密码填写完成
+2026-02-24 03:52:33,539 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:33,539 - INFO - 验证码识别尝试 12/30
+2026-02-24 03:52:33,539 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:33,615 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:33,711 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:33,758 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:33,855 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:33,901 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:33,998 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:34,135 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:34,243 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:34,289 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:34,384 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:34,448 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:34,541 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:34,541 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:34,541 - INFO - 查找验证码输入框...
+2026-02-24 03:52:34,548 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:34,548 - WARNING - 验证码填写失败
+2026-02-24 03:52:34,548 - INFO - 开始填写登录表单...
+2026-02-24 03:52:34,607 - INFO - 用户名填写完成
+2026-02-24 03:52:34,666 - INFO - 密码填写完成
+2026-02-24 03:52:34,667 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:34,667 - INFO - 验证码识别尝试 13/30
+2026-02-24 03:52:34,667 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:34,743 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:34,836 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:34,882 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:34,981 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:35,027 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:35,126 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:35,264 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:35,370 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:35,416 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:35,513 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:35,577 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:35,675 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:35,675 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:35,675 - INFO - 查找验证码输入框...
+2026-02-24 03:52:35,681 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:35,682 - WARNING - 验证码填写失败
+2026-02-24 03:52:35,682 - INFO - 开始填写登录表单...
+2026-02-24 03:52:35,743 - INFO - 用户名填写完成
+2026-02-24 03:52:35,801 - INFO - 密码填写完成
+2026-02-24 03:52:35,802 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:35,802 - INFO - 验证码识别尝试 14/30
+2026-02-24 03:52:35,802 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:35,878 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:35,970 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:36,017 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:36,111 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:36,156 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:36,251 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:36,388 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:36,494 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:36,539 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:36,635 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:36,698 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:36,793 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:36,794 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:36,794 - INFO - 查找验证码输入框...
+2026-02-24 03:52:36,800 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:36,800 - WARNING - 验证码填写失败
+2026-02-24 03:52:36,800 - INFO - 开始填写登录表单...
+2026-02-24 03:52:36,859 - INFO - 用户名填写完成
+2026-02-24 03:52:36,917 - INFO - 密码填写完成
+2026-02-24 03:52:36,918 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:36,918 - INFO - 验证码识别尝试 15/30
+2026-02-24 03:52:36,918 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:37,002 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:37,097 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:37,143 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:37,238 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:37,284 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:37,378 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:37,513 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:37,619 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:37,665 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:37,762 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:37,826 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:37,920 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:37,920 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:37,920 - INFO - 查找验证码输入框...
+2026-02-24 03:52:37,927 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:37,927 - WARNING - 验证码填写失败
+2026-02-24 03:52:37,927 - INFO - 开始填写登录表单...
+2026-02-24 03:52:37,986 - INFO - 用户名填写完成
+2026-02-24 03:52:38,049 - INFO - 密码填写完成
+2026-02-24 03:52:38,050 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:38,050 - INFO - 验证码识别尝试 16/30
+2026-02-24 03:52:38,050 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:38,142 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:38,238 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:38,285 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:38,380 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:38,426 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:38,521 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:38,657 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:38,762 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:38,808 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:38,901 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:38,965 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:39,061 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:39,061 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:39,061 - INFO - 查找验证码输入框...
+2026-02-24 03:52:39,068 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:39,068 - WARNING - 验证码填写失败
+2026-02-24 03:52:39,068 - INFO - 开始填写登录表单...
+2026-02-24 03:52:39,127 - INFO - 用户名填写完成
+2026-02-24 03:52:39,187 - INFO - 密码填写完成
+2026-02-24 03:52:39,187 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:39,188 - INFO - 验证码识别尝试 17/30
+2026-02-24 03:52:39,188 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:39,271 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:39,366 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:39,412 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:39,510 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:39,556 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:39,650 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:39,794 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:39,900 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:39,946 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:40,042 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:40,109 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:40,204 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:40,204 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:40,204 - INFO - 查找验证码输入框...
+2026-02-24 03:52:40,210 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:40,210 - WARNING - 验证码填写失败
+2026-02-24 03:52:40,210 - INFO - 开始填写登录表单...
+2026-02-24 03:52:40,270 - INFO - 用户名填写完成
+2026-02-24 03:52:40,331 - INFO - 密码填写完成
+2026-02-24 03:52:40,332 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:40,332 - INFO - 验证码识别尝试 18/30
+2026-02-24 03:52:40,332 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:40,417 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:40,511 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:40,557 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:40,652 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:40,698 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:40,793 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:40,928 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:41,035 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:41,080 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:41,176 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:41,248 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:41,344 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:41,344 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:41,344 - INFO - 查找验证码输入框...
+2026-02-24 03:52:41,351 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:41,351 - WARNING - 验证码填写失败
+2026-02-24 03:52:41,351 - INFO - 开始填写登录表单...
+2026-02-24 03:52:41,412 - INFO - 用户名填写完成
+2026-02-24 03:52:41,473 - INFO - 密码填写完成
+2026-02-24 03:52:41,474 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:41,474 - INFO - 验证码识别尝试 19/30
+2026-02-24 03:52:41,474 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:41,556 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:41,653 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:41,700 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:41,796 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:41,842 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:41,938 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:42,073 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:42,178 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:42,224 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:42,319 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:42,383 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:42,479 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:42,479 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:42,479 - INFO - 查找验证码输入框...
+2026-02-24 03:52:42,485 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:42,485 - WARNING - 验证码填写失败
+2026-02-24 03:52:42,486 - INFO - 开始填写登录表单...
+2026-02-24 03:52:42,545 - INFO - 用户名填写完成
+2026-02-24 03:52:42,604 - INFO - 密码填写完成
+2026-02-24 03:52:42,605 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:42,605 - INFO - 验证码识别尝试 20/30
+2026-02-24 03:52:42,605 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:42,686 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:42,786 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:42,833 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:42,928 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:42,973 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:43,072 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:43,208 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:43,319 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:43,365 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:43,463 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:43,528 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:43,622 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:43,622 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:43,622 - INFO - 查找验证码输入框...
+2026-02-24 03:52:43,628 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:43,628 - WARNING - 验证码填写失败
+2026-02-24 03:52:43,628 - INFO - 开始填写登录表单...
+2026-02-24 03:52:43,687 - INFO - 用户名填写完成
+2026-02-24 03:52:43,748 - INFO - 密码填写完成
+2026-02-24 03:52:43,749 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:43,749 - INFO - 验证码识别尝试 21/30
+2026-02-24 03:52:43,749 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:43,824 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:43,919 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:43,965 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:44,061 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:44,107 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:44,205 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:44,341 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:44,451 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:44,496 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:44,591 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:44,655 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:44,749 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:44,749 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:44,749 - INFO - 查找验证码输入框...
+2026-02-24 03:52:44,756 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:44,756 - WARNING - 验证码填写失败
+2026-02-24 03:52:44,756 - INFO - 开始填写登录表单...
+2026-02-24 03:52:44,816 - INFO - 用户名填写完成
+2026-02-24 03:52:44,875 - INFO - 密码填写完成
+2026-02-24 03:52:44,875 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:44,876 - INFO - 验证码识别尝试 22/30
+2026-02-24 03:52:44,876 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:44,951 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:45,049 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:45,095 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:45,188 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:45,233 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:45,327 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:45,464 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:45,571 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:45,616 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:45,709 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:45,773 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:45,866 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:45,866 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:45,866 - INFO - 查找验证码输入框...
+2026-02-24 03:52:45,872 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:45,873 - WARNING - 验证码填写失败
+2026-02-24 03:52:45,873 - INFO - 开始填写登录表单...
+2026-02-24 03:52:45,931 - INFO - 用户名填写完成
+2026-02-24 03:52:45,991 - INFO - 密码填写完成
+2026-02-24 03:52:45,991 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:45,991 - INFO - 验证码识别尝试 23/30
+2026-02-24 03:52:45,991 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:46,067 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:46,162 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:46,208 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:46,302 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:46,349 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:46,443 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:46,579 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:46,683 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:46,728 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:46,825 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:46,888 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:46,985 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:46,985 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:46,985 - INFO - 查找验证码输入框...
+2026-02-24 03:52:46,992 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:46,992 - WARNING - 验证码填写失败
+2026-02-24 03:52:46,992 - INFO - 开始填写登录表单...
+2026-02-24 03:52:47,052 - INFO - 用户名填写完成
+2026-02-24 03:52:47,113 - INFO - 密码填写完成
+2026-02-24 03:52:47,114 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:47,114 - INFO - 验证码识别尝试 24/30
+2026-02-24 03:52:47,114 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:47,189 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:47,285 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:47,331 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:47,430 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:47,475 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:47,569 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:47,705 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:47,815 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:47,860 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:47,959 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:48,023 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:48,126 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:48,126 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:48,126 - INFO - 查找验证码输入框...
+2026-02-24 03:52:48,133 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:48,133 - WARNING - 验证码填写失败
+2026-02-24 03:52:48,133 - INFO - 开始填写登录表单...
+2026-02-24 03:52:48,193 - INFO - 用户名填写完成
+2026-02-24 03:52:48,252 - INFO - 密码填写完成
+2026-02-24 03:52:48,253 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:48,253 - INFO - 验证码识别尝试 25/30
+2026-02-24 03:52:48,253 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:48,336 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:48,432 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:48,478 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:48,577 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:48,623 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:48,717 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:48,853 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:48,959 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:49,004 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:49,102 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:49,166 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:49,264 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:49,264 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:49,264 - INFO - 查找验证码输入框...
+2026-02-24 03:52:49,271 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:49,271 - WARNING - 验证码填写失败
+2026-02-24 03:52:49,271 - INFO - 开始填写登录表单...
+2026-02-24 03:52:49,330 - INFO - 用户名填写完成
+2026-02-24 03:52:49,389 - INFO - 密码填写完成
+2026-02-24 03:52:49,390 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:49,390 - INFO - 验证码识别尝试 26/30
+2026-02-24 03:52:49,390 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:49,466 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:49,562 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:49,608 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:49,702 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:49,756 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:49,849 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:49,985 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:50,093 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:50,138 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:50,239 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:50,302 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:50,398 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:50,398 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:50,398 - INFO - 查找验证码输入框...
+2026-02-24 03:52:50,405 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:50,405 - WARNING - 验证码填写失败
+2026-02-24 03:52:50,405 - INFO - 开始填写登录表单...
+2026-02-24 03:52:50,464 - INFO - 用户名填写完成
+2026-02-24 03:52:50,525 - INFO - 密码填写完成
+2026-02-24 03:52:50,525 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:50,525 - INFO - 验证码识别尝试 27/30
+2026-02-24 03:52:50,525 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:50,627 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:50,722 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:50,769 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:50,861 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:50,907 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:51,003 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:51,140 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:51,245 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:51,291 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:51,389 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:51,453 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:51,548 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:51,548 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:51,549 - INFO - 查找验证码输入框...
+2026-02-24 03:52:51,555 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:51,555 - WARNING - 验证码填写失败
+2026-02-24 03:52:51,555 - INFO - 开始填写登录表单...
+2026-02-24 03:52:51,618 - INFO - 用户名填写完成
+2026-02-24 03:52:51,678 - INFO - 密码填写完成
+2026-02-24 03:52:51,679 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:51,679 - INFO - 验证码识别尝试 28/30
+2026-02-24 03:52:51,679 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:51,756 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:51,851 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:51,898 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:51,995 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:52,041 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:52,138 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:52,274 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:52,380 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:52,426 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:52,521 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:52,584 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:52,683 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:52,683 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:52,683 - INFO - 查找验证码输入框...
+2026-02-24 03:52:52,690 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:52,690 - WARNING - 验证码填写失败
+2026-02-24 03:52:52,690 - INFO - 开始填写登录表单...
+2026-02-24 03:52:52,752 - INFO - 用户名填写完成
+2026-02-24 03:52:52,812 - INFO - 密码填写完成
+2026-02-24 03:52:52,812 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:52,812 - INFO - 验证码识别尝试 29/30
+2026-02-24 03:52:52,812 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:52,888 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:52,983 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:53,029 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:53,125 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:53,171 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:53,266 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:53,403 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:53,510 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:53,555 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:53,654 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:53,718 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:53,816 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:53,816 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:53,816 - INFO - 查找验证码输入框...
+2026-02-24 03:52:53,823 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:53,823 - WARNING - 验证码填写失败
+2026-02-24 03:52:53,823 - INFO - 开始填写登录表单...
+2026-02-24 03:52:53,882 - INFO - 用户名填写完成
+2026-02-24 03:52:53,942 - INFO - 密码填写完成
+2026-02-24 03:52:53,943 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-24 03:52:53,943 - INFO - 验证码识别尝试 30/30
+2026-02-24 03:52:53,943 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-24 03:52:54,018 - INFO - easyocr 结果: ['SReF(0.56)']
+2026-02-24 03:52:54,114 - INFO - tesseract 结果: S26F
+2026-02-24 03:52:54,174 - INFO - easyocr alt1 结果: ['SPeF(0.40)']
+2026-02-24 03:52:54,271 - INFO - tesseract alt1 结果: SAeF
+2026-02-24 03:52:54,316 - INFO - easyocr alt2 结果: ['SPeF(0.34)']
+2026-02-24 03:52:54,409 - INFO - tesseract alt2 结果: SAeF
+2026-02-24 03:52:54,545 - INFO - easyocr alt3 结果: ['SAeF(0.11)']
+2026-02-24 03:52:54,652 - INFO - tesseract alt3 结果: SZeF
+2026-02-24 03:52:54,698 - INFO - easyocr alt4 结果: ['SPeF(0.69)']
+2026-02-24 03:52:54,791 - INFO - tesseract alt4 结果: SZ2eF
+2026-02-24 03:52:54,855 - INFO - easyocr alt5 结果: ['SPRF(0.08)']
+2026-02-24 03:52:54,949 - INFO - tesseract alt5 结果: SAZeF
+2026-02-24 03:52:54,949 - INFO - 最终验证码识别结果: SPeF (engine=easyocr_alt4, prob=0.691506028175354)
+2026-02-24 03:52:54,949 - INFO - 查找验证码输入框...
+2026-02-24 03:52:54,956 - ERROR - 未找到验证码输入框
+2026-02-24 03:52:54,956 - WARNING - 验证码填写失败
+2026-02-24 03:52:54,956 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-24 03:52:54,956 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-24 03:52:54,956 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-24 03:52:54,956 - INFO - 查找并点击登录按钮...
+2026-02-24 03:52:54,964 - ERROR - 未找到登录按钮
+2026-02-24 03:52:54,964 - ERROR - 点击登录按钮失败
+2026-02-24 03:52:54,964 - INFO - 等待登录成功...
+2026-02-24 03:52:59,968 - INFO - 登录可能成功，继续下一步...
+2026-02-24 03:52:59,969 - INFO - 查找'去充值'按钮...
+2026-02-24 03:52:59,977 - ERROR - 未找到'去充值'按钮
+2026-02-24 03:52:59,978 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-24 03:52:59,978 - INFO - 开始提取剩余电量信息...
+2026-02-24 03:52:59,986 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-24 03:52:59,994 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-24 03:53:00,002 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-24 03:53:00,011 - INFO - 在页面源码中查找电量信息...
+2026-02-24 03:53:00,022 - WARNING - 未能提取到剩余电量信息
+2026-02-24 03:53:00,022 - WARNING - 没有电量数据可保存
+2026-02-24 03:53:00,022 - INFO - 监控流程完成
