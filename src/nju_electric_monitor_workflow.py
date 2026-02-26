@@ -385,18 +385,15 @@ class NJUElectricMonitor:
 
             # 方法2：pytesseract 识别
             try:
-                import PIL.Image
-                tesseract_text = pytesseract.image_to_string(processed_img, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
-                tesseract_text = tesseract_text.strip().replace(' ', '')
-                tesseract_text = re.sub(r'[^a-zA-Z0-9]', '', tesseract_text)
-                if tesseract_text:
-                    candidates.append({
-                        'engine': 'tesseract',
-                        'text': tesseract_text,
-                        'prob': 0.5,  # pytesseract 无置信度，设为中等
-                        'raw': tesseract_text
-                    })
-                self.logger.info(f"tesseract 结果: {tesseract_text}")
+                from pytesseract import Output
+                data = pytesseract.image_to_data(processed_img, output_type=Output.DICT, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+                words = [w for w in data.get('text', []) if w and w.strip()]
+                confs = [int(c) for c in data.get('conf', []) if c != '-1' and c is not None]
+                if words:
+                    t_text = re.sub(r'[^A-Za-z0-9]', '', ''.join(words))
+                    avg_conf = (sum(confs)/len(confs))/100.0 if confs else 0.5
+                    candidates.append({'engine': 'tesseract', 'text': t_text, 'prob': avg_conf, 'raw': t_text})
+                    self.logger.info(f"tesseract 结果: {t_text} (conf={avg_conf:.2f})")
             except Exception as e:
                 self.logger.warning(f"pytesseract 识别主图失败: {e}")
 
@@ -421,17 +418,15 @@ class NJUElectricMonitor:
                         self.logger.warning(f"easyocr 识别 alt{i+1} 失败: {e}")
                     # tesseract
                     try:
-                        tesseract_text = pytesseract.image_to_string(alt_img, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
-                        tesseract_text = tesseract_text.strip().replace(' ', '')
-                        tesseract_text = re.sub(r'[^a-zA-Z0-9]', '', tesseract_text)
-                        if tesseract_text:
-                            candidates.append({
-                                'engine': f'tesseract_alt{i+1}',
-                                'text': tesseract_text,
-                                'prob': 0.5,
-                                'raw': tesseract_text
-                            })
-                        self.logger.info(f"tesseract alt{i+1} 结果: {tesseract_text}")
+                        from pytesseract import Output
+                        data = pytesseract.image_to_data(alt_img, output_type=Output.DICT, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+                        words = [w for w in data.get('text', []) if w and w.strip()]
+                        confs = [int(c) for c in data.get('conf', []) if c != '-1' and c is not None]
+                        if words:
+                            t_text = re.sub(r'[^A-Za-z0-9]', '', ''.join(words))
+                            avg_conf = (sum(confs)/len(confs))/100.0 if confs else 0.5
+                            candidates.append({'engine': f'tesseract_alt{i+1}', 'text': t_text, 'prob': avg_conf, 'raw': t_text})
+                            self.logger.info(f"tesseract alt{i+1} 结果: {t_text} (conf={avg_conf:.2f})")
                     except Exception as e:
                         self.logger.warning(f"pytesseract 识别 alt{i+1} 失败: {e}")
                 except Exception as e:

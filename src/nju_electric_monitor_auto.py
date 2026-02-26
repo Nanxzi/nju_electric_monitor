@@ -30,6 +30,7 @@ import logging
 from PIL import Image
 import io
 import easyocr
+import pytesseract
 import getpass
 
 import pandas as pd
@@ -281,6 +282,20 @@ class NJUElectricMonitor:
             except Exception as e:
                 self.logger.warning(f"主图 easyocr 识别失败: {e}")
 
+            # 使用 pytesseract 提取置信度候选
+            try:
+                from pytesseract import Output
+                data = pytesseract.image_to_data(processed_img, output_type=Output.DICT, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+                words = [w for w in data.get('text', []) if w and w.strip()]
+                confs = [int(c) for c in data.get('conf', []) if c != '-1' and c is not None]
+                if words:
+                    t_text = re.sub(r'[^A-Za-z0-9]', '', ''.join(words))
+                    avg_conf = (sum(confs)/len(confs))/100.0 if confs else 0.5
+                    candidates.append({'engine': 'tesseract', 'text': t_text, 'prob': avg_conf, 'raw': t_text})
+                    self.logger.info(f"tesseract 结果: {t_text} (conf={avg_conf:.2f})")
+            except Exception as e:
+                self.logger.warning(f"主图 pytesseract 识别失败: {e}")
+
             # 备用图像识别
             self.logger.info("尝试不同的图像处理参数...")
             alternative_images = self.generate_alternative_images(captcha_img)
@@ -291,6 +306,19 @@ class NJUElectricMonitor:
                     collect_from_results(results, tag=f'easyocr_alt{i+1}')
                 except Exception as e:
                     self.logger.warning(f"alt{i+1} easyocr 识别失败: {e}")
+                # pytesseract for alt image
+                try:
+                    from pytesseract import Output
+                    data = pytesseract.image_to_data(alt_img, output_type=Output.DICT, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
+                    words = [w for w in data.get('text', []) if w and w.strip()]
+                    confs = [int(c) for c in data.get('conf', []) if c != '-1' and c is not None]
+                    if words:
+                        t_text = re.sub(r'[^A-Za-z0-9]', '', ''.join(words))
+                        avg_conf = (sum(confs)/len(confs))/100.0 if confs else 0.5
+                        candidates.append({'engine': f'tesseract_alt{i+1}', 'text': t_text, 'prob': avg_conf, 'raw': t_text})
+                        self.logger.info(f"tesseract alt{i+1} 结果: {t_text} (conf={avg_conf:.2f})")
+                except Exception as e:
+                    self.logger.warning(f"alt{i+1} pytesseract 识别失败: {e}")
 
             # 选择最优结果：优先长度为4的候选
             candidates = [c for c in candidates if c.get('text')]
@@ -388,6 +416,45 @@ class NJUElectricMonitor:
             self.logger.warning(f"生成替代图像失败: {e}")
         
         return alternative_images
+
+    def char_level_vote(self, candidates, target_len=4):
+        """基于候选结果进行字符级加权投票，尝试合成目标长度的验证码字符串。"""
+        try:
+            from collections import Counter
+            # 过滤并提取文本与置信度
+            cand_texts = [(c['text'], float(c.get('prob', 0.0))) for c in candidates if c.get('text')]
+            if not cand_texts:
+                return None
+
+            # 确定目标长度：优先使用 target_len，否则使用最常见长度
+            lengths = [len(t) for t, _ in cand_texts]
+            if target_len not in lengths:
+                try:
+                    from statistics import mode
+                    most_common_len = mode(lengths)
+                except Exception:
+                    most_common_len = max(set(lengths), key=lengths.count)
+                target = target_len if target_len in lengths else most_common_len
+            else:
+                target = target_len
+
+            # 对每个字符位置进行加权投票
+            result_chars = []
+            for i in range(target):
+                votes = Counter()
+                for txt, prob in cand_texts:
+                    if i < len(txt):
+                        votes[txt[i]] += prob
+                if votes:
+                    result_chars.append(votes.most_common(1)[0][0])
+                else:
+                    result_chars.append('')
+
+            res = ''.join(result_chars).strip()
+            res = re.sub(r'[^A-Za-z0-9]', '', res)
+            return res if res else None
+        except Exception:
+            return None
     
     def fill_captcha(self, captcha_text):
         """填写验证码"""
