@@ -1,0 +1,26 @@
+2026-02-26 10:59:11,823 - ERROR - 浏览器驱动初始化失败: Message: session not created: This version of ChromeDriver only supports Chrome version 142
+Current browser version is 145.0.7632.117 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65cb77a05
+	0x7ff65cb77a60
+	0x7ff65c8f16ad
+	0x7ff65c9379ba
+	0x7ff65c93678c
+	0x7ff65c931546
+	0x7ff65c92bbd9
+	0x7ff65c980a42
+	0x7ff65c980280
+	0x7ff65c93b068
+	0x7ff65c93be93
+	0x7ff65ce329a0
+	0x7ff65ce2ce20
+	0x7ff65ce4cc15
+	0x7ff65cb9309e
+	0x7ff65cb9ad8f
+	0x7ff65cb80be4
+	0x7ff65cb80d9f
+	0x7ff65cb667f8
+	0x7ff90a70e8d7
+	0x7ff90b3fc34c
+

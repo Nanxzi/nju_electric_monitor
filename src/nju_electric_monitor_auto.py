@@ -156,7 +156,7 @@ class NJUElectricMonitor:
                 ['ch_sim', 'en'],
                 gpu=False,
                 model_storage_directory=model_dir,
-                download_enabled=True
+                download_enabled=False
             )
             self.logger.info("OCR识别器初始化成功")
         except Exception as e:
@@ -265,50 +265,51 @@ class NJUElectricMonitor:
             # 将PIL Image转换为numpy数组
             import numpy as np
             img_array = np.array(processed_img)
-            
-            # 方法1：使用OCR识别验证码
-            results = self.ocr_reader.readtext(img_array)
-            
-            if results:
-                # 提取识别结果
-                captcha_text = ""
+            # 尝试使用主图和替代图的多结果集合，并优先选择长度为4的结果
+            candidates = []
+
+            def collect_from_results(results, tag='easyocr'):
                 for (bbox, text, prob) in results:
-                    if prob > self.captcha_confidence_threshold:  # 降低置信度阈值
-                        captcha_text += text.strip()
-                
-                # 清理识别结果，只保留字母和数字
-                captcha_text = re.sub(r'[^a-zA-Z0-9]', '', captcha_text)
-                
-                if captcha_text:
-                    self.logger.info(f"验证码识别结果: {captcha_text}")
-                    return captcha_text
-                else:
-                    self.logger.warning("验证码识别结果为空")
-            
-            # 方法2：尝试不同的图像处理参数
+                    text_clean = re.sub(r'[^A-Za-z0-9]', '', text.strip())
+                    if text_clean:
+                        candidates.append({'engine': tag, 'text': text_clean, 'prob': float(prob) if prob is not None else 0.0, 'raw': text})
+
+            # 主图识别
+            try:
+                results = self.ocr_reader.readtext(img_array)
+                collect_from_results(results, tag='easyocr')
+            except Exception as e:
+                self.logger.warning(f"主图 easyocr 识别失败: {e}")
+
+            # 备用图像识别
             self.logger.info("尝试不同的图像处理参数...")
             alternative_images = self.generate_alternative_images(captcha_img)
-            
             for i, alt_img in enumerate(alternative_images):
                 try:
-                    # 转换为numpy数组
-                    alt_img_array = np.array(alt_img)
-                    results = self.ocr_reader.readtext(alt_img_array)
-                    if results:
-                        captcha_text = ""
-                        for (bbox, text, prob) in results:
-                            if prob > self.captcha_confidence_threshold:  # 进一步降低阈值
-                                captcha_text += text.strip()
-                        
-                        captcha_text = re.sub(r'[^a-zA-Z0-9]', '', captcha_text)
-                        if len(captcha_text) == 4:
-                            self.logger.info(f"方法{i+2}识别结果: {captcha_text}")
-                            return captcha_text
-                        else:
-                            self.logger.info(f"方法{i+2}识别结果长度不为4，自动重试。实际结果: {captcha_text}")
+                    alt_arr = np.array(alt_img)
+                    results = self.ocr_reader.readtext(alt_arr)
+                    collect_from_results(results, tag=f'easyocr_alt{i+1}')
                 except Exception as e:
-                    self.logger.warning(f"方法{i+2}识别失败: {e}")
-            
+                    self.logger.warning(f"alt{i+1} easyocr 识别失败: {e}")
+
+            # 选择最优结果：优先长度为4的候选
+            candidates = [c for c in candidates if c.get('text')]
+            if candidates:
+                len4 = [c for c in candidates if len(c.get('text','')) == 4]
+                if len4:
+                    best = max(len4, key=lambda x: x.get('prob', 0.0))
+                    self.logger.info(f"最终验证码识别结果: {best['text']} (engine={best['engine']}, prob={best['prob']})")
+                    return best['text']
+                else:
+                    voted = self.char_level_vote(candidates, target_len=4)
+                    if voted:
+                        self.logger.info(f"投票合成验证码结果: {voted}")
+                        return voted
+                    # 否则取置信度最高的
+                    best = max(candidates, key=lambda x: x.get('prob', 0.0))
+                    self.logger.info(f"使用置信度最高的候选: {best['text']} (engine={best['engine']}, prob={best['prob']})")
+                    return best['text']
+
             self.logger.warning("所有识别方法都失败了")
             return None
                 

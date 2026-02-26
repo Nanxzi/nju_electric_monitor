@@ -438,14 +438,22 @@ class NJUElectricMonitor:
                     self.logger.warning(f"预处理图像 alt{i+1} 识别流程失败: {e}")
 
             # 选取最优结果：优先长度为4且置信度最高的
+            # 过滤无效候选
+            candidates = [c for c in candidates if c.get('text')]
             best = None
-            for c in sorted(candidates, key=lambda x: (len(x['text'])==4, x['prob']), reverse=True):
-                if len(c['text']) == 4:
-                    best = c
-                    break
-            if not best and candidates:
-                # 没有长度为4的，取置信度最高的非空
-                best = max(candidates, key=lambda x: x['prob'])
+            if candidates:
+                # 优先选取长度恰为4的候选，按置信度排序
+                len4 = [c for c in candidates if len(c.get('text','')) == 4]
+                if len4:
+                    best = max(len4, key=lambda x: x.get('prob', 0.0))
+                else:
+                    # 尝试字符级投票合成一个4字符结果
+                    voted = self.char_level_vote(candidates, target_len=4)
+                    if voted:
+                        best = {'engine': 'voted', 'text': voted, 'prob': max([c.get('prob', 0.0) for c in candidates])}
+                    else:
+                        # 无法合成，退回到置信度最高的候选
+                        best = max(candidates, key=lambda x: x.get('prob', 0.0))
             if best and best['text']:
                 self.logger.info(f"最终验证码识别结果: {best['text']} (engine={best['engine']}, prob={best['prob']})")
                 return best['text']
@@ -459,33 +467,46 @@ class NJUElectricMonitor:
     def preprocess_captcha_image(self, img):
         """预处理验证码图像"""
         try:
-            # 转换为RGB模式
+            # 尝试使用 OpenCV 的自适应阈值与形态学处理（效果更鲁棒，且较快）
+            try:
+                import cv2
+                import numpy as _np
+                # 转为灰度 numpy 数组
+                gray = _np.array(img.convert('L'))
+                # 高斯模糊去噪
+                gray = cv2.GaussianBlur(gray, (3, 3), 0)
+                # Otsu 二值化
+                _, th = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+                # 形态学操作：先开运算去噪点，再闭运算连接字符
+                kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+                opened = cv2.morphologyEx(th, cv2.MORPH_OPEN, kernel, iterations=1)
+                closed = cv2.morphologyEx(opened, cv2.MORPH_CLOSE, kernel, iterations=1)
+                # 放大以提升 OCR 识别率
+                h, w = closed.shape
+                resized = cv2.resize(closed, (w * 2, h * 2), interpolation=cv2.INTER_LINEAR)
+                return Image.fromarray(resized)
+            except Exception:
+                # 如果 OpenCV 不可用或处理失败，回退到原有的 PIL 处理流程
+                pass
+
+            # 回退：PIL 兼容的预处理（尽量保持原有行为）
             if img.mode != 'RGB':
                 img = img.convert('RGB')
-            
-            # 调整图像大小 - 使用兼容的重采样方法
+
             try:
                 img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)
             except AttributeError:
-                # 如果Resampling不可用，使用ANTIALIAS
                 img = img.resize((img.width * 2, img.height * 2), Image.ANTIALIAS)
-            
-            # 转换为灰度图
+
             gray_img = img.convert('L')
-            
-            # 二值化处理
+            # 固定阈值二值化作为最后手段
             threshold = 128
             binary_img = gray_img.point(lambda x: 0 if x < threshold else 255, '1')
-            
-            # 确保二值化后的图像为 uint8 类型
             binary_img = binary_img.convert('L')
             binary_img = binary_img.point(lambda x: 255 if x > 0 else 0, '1')
             binary_img = binary_img.convert('L')
-            
-            # 降噪处理
             from PIL import ImageFilter
             denoised_img = binary_img.filter(ImageFilter.MedianFilter(size=3))
-            
             return denoised_img
             
         except Exception as e:
@@ -522,11 +543,64 @@ class NJUElectricMonitor:
             from PIL import ImageFilter
             sharpened = img.filter(ImageFilter.SHARPEN)
             alternative_images.append(sharpened)
+
+            # 尝试基于 OpenCV 的自适应预处理变体（若可用）
+            try:
+                pre_cv = self.preprocess_captcha_image(img)
+                if pre_cv is not None:
+                    alternative_images.append(pre_cv)
+            except Exception:
+                pass
             
         except Exception as e:
             self.logger.warning(f"生成替代图像失败: {e}")
         
         return alternative_images
+
+    def char_level_vote(self, candidates, target_len=4):
+        """简单的字符级加权投票，用于在没有明确长度为 target_len 的候选时合成结果
+
+        candidates: [{'text': str, 'prob': float, ...}, ...]
+        """
+        try:
+            from collections import Counter
+            # 过滤掉空文本
+            cand_texts = [(c['text'], float(c.get('prob', 0.0))) for c in candidates if c.get('text')]
+            if not cand_texts:
+                return None
+
+            # 使用出现频率最高的长度作为目标长度（优先 target_len）
+            lengths = [len(t) for t, _ in cand_texts]
+            if target_len not in lengths:
+                # 允许偏差：选择最常见长度，或使用目标长度
+                from statistics import mode
+                try:
+                    most_common_len = mode(lengths)
+                except Exception:
+                    most_common_len = max(set(lengths), key=lengths.count)
+                target = target_len if target_len in lengths else most_common_len
+            else:
+                target = target_len
+
+            # 对每个字符位置做加权投票
+            result_chars = []
+            for i in range(target):
+                votes = Counter()
+                for txt, prob in cand_texts:
+                    if i < len(txt):
+                        votes[txt[i]] += prob
+                if votes:
+                    result_chars.append(votes.most_common(1)[0][0])
+                else:
+                    # 没有投票，填空
+                    result_chars.append('')
+
+            res = ''.join(result_chars).strip()
+            # 清理非字母数字
+            res = re.sub(r'[^A-Za-z0-9]', '', res)
+            return res if res else None
+        except Exception:
+            return None
     
     def fill_captcha(self, captcha_text):
         """填写验证码"""
