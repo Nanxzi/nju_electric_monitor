@@ -1,0 +1,25 @@
+2026-02-26 11:10:31,957 - ERROR - 浏览器驱动初始化失败: Message: session not created: This version of ChromeDriver only supports Chrome version 146
+Current browser version is 145.0.7632.117 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6f568da15+14745]
+	chromedriver!GetHandleVerifier [0x7ff6f568da80+147b0]
+	chromedriver!(No symbol) [0x7ff6f53fdb8d]
+	chromedriver!(No symbol) [0x7ff6f5445c5d]
+	chromedriver!(No symbol) [0x7ff6f54449b5]
+	chromedriver!(No symbol) [0x7ff6f543eefa]
+	chromedriver!(No symbol) [0x7ff6f5439809]
+	chromedriver!(No symbol) [0x7ff6f548e191]
+	chromedriver!(No symbol) [0x7ff6f548d9f6]
+	chromedriver!(No symbol) [0x7ff6f54492b8]
+	chromedriver!(No symbol) [0x7ff6f544a1a3]
+	chromedriver!GetHandleVerifier [0x7ff6f5995f0d+31cc3d]
+	chromedriver!GetHandleVerifier [0x7ff6f59905ad+3172dd]
+	chromedriver!GetHandleVerifier [0x7ff6f59b30da+339e0a]
+	chromedriver!GetHandleVerifier [0x7ff6f56a9ad5+30805]
+	chromedriver!GetHandleVerifier [0x7ff6f56b2a7c+397ac]
+	chromedriver!GetHandleVerifier [0x7ff6f5696fe4+1dd14]
+	chromedriver!GetHandleVerifier [0x7ff6f5697196+1dec6]
+	chromedriver!GetHandleVerifier [0x7ff6f567bbd7+2907]
+	KERNEL32!BaseThreadInitThunk [0x7ff90a70e8d7+17]
+	ntdll!RtlUserThreadStart [0x7ff90b3fc34c+2c]
+
