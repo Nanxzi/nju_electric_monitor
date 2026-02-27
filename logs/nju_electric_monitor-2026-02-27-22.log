@@ -1,0 +1,754 @@
+2026-02-27 14:05:02,301 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-27 14:05:04,320 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-27 14:05:04,321 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-27 14:05:05,788 - INFO - OCR识别器初始化成功
+2026-02-27 14:05:05,789 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-27 14:05:05,789 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-27 14:05:15,152 - INFO - 等待登录表单加载...
+2026-02-27 14:05:15,317 - INFO - 登录表单已加载
+2026-02-27 14:05:15,317 - INFO - 开始填写登录表单...
+2026-02-27 14:05:15,425 - INFO - 用户名填写完成
+2026-02-27 14:05:15,515 - INFO - 密码填写完成
+2026-02-27 14:05:15,515 - INFO - 检查是否有验证码...
+2026-02-27 14:05:15,515 - INFO - 查找验证码图片...
+2026-02-27 14:05:15,536 - INFO - 找到验证码图片，开始截图...
+2026-02-27 14:05:15,594 - INFO - 验证码图片截取成功
+2026-02-27 14:05:15,595 - INFO - 开始填写登录表单...
+2026-02-27 14:05:15,664 - INFO - 用户名填写完成
+2026-02-27 14:05:15,729 - INFO - 密码填写完成
+2026-02-27 14:05:15,730 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:15,730 - INFO - 验证码识别尝试 1/30
+2026-02-27 14:05:15,730 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:15,846 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:16,038 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:16,108 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:16,204 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:16,287 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:16,382 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:16,569 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:16,677 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:16,752 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:16,850 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:16,924 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:17,019 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:17,122 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:17,218 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:17,218 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:17,218 - INFO - 查找验证码输入框...
+2026-02-27 14:05:17,228 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:17,228 - WARNING - 验证码填写失败
+2026-02-27 14:05:17,228 - INFO - 开始填写登录表单...
+2026-02-27 14:05:17,302 - INFO - 用户名填写完成
+2026-02-27 14:05:17,367 - INFO - 密码填写完成
+2026-02-27 14:05:17,368 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:17,368 - INFO - 验证码识别尝试 2/30
+2026-02-27 14:05:17,368 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:17,480 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:17,575 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:17,648 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:17,783 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:17,902 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:17,998 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:18,162 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:18,269 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:18,353 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:18,447 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:18,521 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:18,617 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:18,719 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:18,815 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:18,815 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:18,815 - INFO - 查找验证码输入框...
+2026-02-27 14:05:18,823 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:18,823 - WARNING - 验证码填写失败
+2026-02-27 14:05:18,823 - INFO - 开始填写登录表单...
+2026-02-27 14:05:18,887 - INFO - 用户名填写完成
+2026-02-27 14:05:18,951 - INFO - 密码填写完成
+2026-02-27 14:05:18,951 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:18,951 - INFO - 验证码识别尝试 3/30
+2026-02-27 14:05:18,952 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:19,057 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:19,152 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:19,220 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:19,320 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:19,394 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:19,489 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:19,654 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:19,763 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:19,844 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:19,942 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:20,018 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:20,117 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:20,221 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:20,320 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:20,320 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:20,320 - INFO - 查找验证码输入框...
+2026-02-27 14:05:20,327 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:20,327 - WARNING - 验证码填写失败
+2026-02-27 14:05:20,327 - INFO - 开始填写登录表单...
+2026-02-27 14:05:20,391 - INFO - 用户名填写完成
+2026-02-27 14:05:20,462 - INFO - 密码填写完成
+2026-02-27 14:05:20,463 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:20,463 - INFO - 验证码识别尝试 4/30
+2026-02-27 14:05:20,463 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:20,568 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:20,664 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:20,730 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:20,825 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:20,900 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:20,997 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:21,162 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:21,269 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:21,343 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:21,440 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:21,515 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:21,612 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:21,715 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:21,810 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:21,811 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:21,811 - INFO - 查找验证码输入框...
+2026-02-27 14:05:21,818 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:21,818 - WARNING - 验证码填写失败
+2026-02-27 14:05:21,818 - INFO - 开始填写登录表单...
+2026-02-27 14:05:21,883 - INFO - 用户名填写完成
+2026-02-27 14:05:21,948 - INFO - 密码填写完成
+2026-02-27 14:05:21,948 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:21,949 - INFO - 验证码识别尝试 5/30
+2026-02-27 14:05:21,949 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:22,053 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:22,150 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:22,216 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:22,312 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:22,391 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:22,491 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:22,657 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:22,763 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:22,838 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:22,939 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:23,015 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:23,114 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:23,226 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:23,323 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:23,323 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:23,323 - INFO - 查找验证码输入框...
+2026-02-27 14:05:23,330 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:23,330 - WARNING - 验证码填写失败
+2026-02-27 14:05:23,331 - INFO - 开始填写登录表单...
+2026-02-27 14:05:23,394 - INFO - 用户名填写完成
+2026-02-27 14:05:23,459 - INFO - 密码填写完成
+2026-02-27 14:05:23,460 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:23,460 - INFO - 验证码识别尝试 6/30
+2026-02-27 14:05:23,460 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:23,576 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:23,675 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:23,741 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:23,837 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:23,911 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:24,014 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:24,179 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:24,286 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:24,360 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:24,457 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:24,533 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:24,629 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:24,733 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:24,829 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:24,829 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:24,829 - INFO - 查找验证码输入框...
+2026-02-27 14:05:24,836 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:24,836 - WARNING - 验证码填写失败
+2026-02-27 14:05:24,836 - INFO - 开始填写登录表单...
+2026-02-27 14:05:24,900 - INFO - 用户名填写完成
+2026-02-27 14:05:24,964 - INFO - 密码填写完成
+2026-02-27 14:05:24,965 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:24,965 - INFO - 验证码识别尝试 7/30
+2026-02-27 14:05:24,965 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:25,080 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:25,179 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:25,247 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:25,347 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:25,421 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:25,517 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:25,683 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:25,790 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:25,865 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:25,960 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:26,036 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:26,133 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:26,237 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:26,333 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:26,334 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:26,334 - INFO - 查找验证码输入框...
+2026-02-27 14:05:26,340 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:26,340 - WARNING - 验证码填写失败
+2026-02-27 14:05:26,341 - INFO - 开始填写登录表单...
+2026-02-27 14:05:26,403 - INFO - 用户名填写完成
+2026-02-27 14:05:26,469 - INFO - 密码填写完成
+2026-02-27 14:05:26,470 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:26,470 - INFO - 验证码识别尝试 8/30
+2026-02-27 14:05:26,470 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:26,575 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:26,674 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:26,740 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:26,835 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:26,910 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:27,007 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:27,171 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:27,278 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:27,352 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:27,447 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:27,525 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:27,620 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:27,723 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:27,818 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:27,818 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:27,818 - INFO - 查找验证码输入框...
+2026-02-27 14:05:27,825 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:27,825 - WARNING - 验证码填写失败
+2026-02-27 14:05:27,825 - INFO - 开始填写登录表单...
+2026-02-27 14:05:27,889 - INFO - 用户名填写完成
+2026-02-27 14:05:27,953 - INFO - 密码填写完成
+2026-02-27 14:05:27,954 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:27,954 - INFO - 验证码识别尝试 9/30
+2026-02-27 14:05:27,954 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:28,060 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:28,155 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:28,221 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:28,320 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:28,393 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:28,489 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:28,653 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:28,764 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:28,848 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:28,942 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:29,033 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:29,135 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:29,238 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:29,333 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:29,333 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:29,333 - INFO - 查找验证码输入框...
+2026-02-27 14:05:29,340 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:29,340 - WARNING - 验证码填写失败
+2026-02-27 14:05:29,340 - INFO - 开始填写登录表单...
+2026-02-27 14:05:29,403 - INFO - 用户名填写完成
+2026-02-27 14:05:29,466 - INFO - 密码填写完成
+2026-02-27 14:05:29,467 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:29,467 - INFO - 验证码识别尝试 10/30
+2026-02-27 14:05:29,467 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:29,571 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:29,667 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:29,739 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:29,837 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:29,914 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:30,009 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:30,176 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:30,283 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:30,357 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:30,452 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:30,535 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:30,632 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:30,735 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:30,832 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:30,832 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:30,832 - INFO - 查找验证码输入框...
+2026-02-27 14:05:30,839 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:30,839 - WARNING - 验证码填写失败
+2026-02-27 14:05:30,839 - INFO - 开始填写登录表单...
+2026-02-27 14:05:30,902 - INFO - 用户名填写完成
+2026-02-27 14:05:30,965 - INFO - 密码填写完成
+2026-02-27 14:05:30,966 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:30,966 - INFO - 验证码识别尝试 11/30
+2026-02-27 14:05:30,966 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:31,080 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:31,177 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:31,244 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:31,344 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:31,418 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:31,513 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:31,678 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:31,786 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:31,859 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:31,958 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:32,033 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:32,133 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:32,238 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:32,333 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:32,334 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:32,334 - INFO - 查找验证码输入框...
+2026-02-27 14:05:32,340 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:32,340 - WARNING - 验证码填写失败
+2026-02-27 14:05:32,340 - INFO - 开始填写登录表单...
+2026-02-27 14:05:32,403 - INFO - 用户名填写完成
+2026-02-27 14:05:32,466 - INFO - 密码填写完成
+2026-02-27 14:05:32,466 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:32,466 - INFO - 验证码识别尝试 12/30
+2026-02-27 14:05:32,466 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:32,587 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:32,687 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:32,752 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:32,851 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:32,926 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:33,030 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:33,194 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:33,303 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:33,377 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:33,473 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:33,549 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:33,645 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:33,756 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:33,853 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:33,853 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:33,853 - INFO - 查找验证码输入框...
+2026-02-27 14:05:33,860 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:33,861 - WARNING - 验证码填写失败
+2026-02-27 14:05:33,861 - INFO - 开始填写登录表单...
+2026-02-27 14:05:33,926 - INFO - 用户名填写完成
+2026-02-27 14:05:33,989 - INFO - 密码填写完成
+2026-02-27 14:05:33,990 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:33,990 - INFO - 验证码识别尝试 13/30
+2026-02-27 14:05:33,990 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:34,095 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:34,194 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:34,269 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:34,367 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:34,440 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:34,536 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:34,702 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:34,811 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:34,886 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:34,983 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:35,059 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:35,156 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:35,261 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:35,359 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:35,359 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:35,359 - INFO - 查找验证码输入框...
+2026-02-27 14:05:35,366 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:35,366 - WARNING - 验证码填写失败
+2026-02-27 14:05:35,367 - INFO - 开始填写登录表单...
+2026-02-27 14:05:35,434 - INFO - 用户名填写完成
+2026-02-27 14:05:35,500 - INFO - 密码填写完成
+2026-02-27 14:05:35,501 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:35,501 - INFO - 验证码识别尝试 14/30
+2026-02-27 14:05:35,501 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:35,607 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:35,706 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:35,774 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:35,875 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:35,953 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:36,058 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:36,227 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:36,339 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:36,416 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:36,515 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:36,591 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:36,698 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:36,803 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:36,908 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:36,908 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:36,908 - INFO - 查找验证码输入框...
+2026-02-27 14:05:36,916 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:36,916 - WARNING - 验证码填写失败
+2026-02-27 14:05:36,916 - INFO - 开始填写登录表单...
+2026-02-27 14:05:36,984 - INFO - 用户名填写完成
+2026-02-27 14:05:37,053 - INFO - 密码填写完成
+2026-02-27 14:05:37,054 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:37,054 - INFO - 验证码识别尝试 15/30
+2026-02-27 14:05:37,054 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:37,161 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:37,257 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:37,327 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:37,423 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:37,499 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:37,599 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:37,767 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:37,877 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:37,951 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:38,047 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:38,123 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:38,221 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:38,341 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:38,442 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:38,443 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:38,443 - INFO - 查找验证码输入框...
+2026-02-27 14:05:38,450 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:38,450 - WARNING - 验证码填写失败
+2026-02-27 14:05:38,450 - INFO - 开始填写登录表单...
+2026-02-27 14:05:38,520 - INFO - 用户名填写完成
+2026-02-27 14:05:38,586 - INFO - 密码填写完成
+2026-02-27 14:05:38,587 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:38,587 - INFO - 验证码识别尝试 16/30
+2026-02-27 14:05:38,587 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:38,692 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:38,792 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:38,866 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:38,963 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:39,039 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:39,136 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:39,301 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:39,410 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:39,484 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:39,582 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:39,657 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:39,754 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:39,857 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:39,959 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:39,959 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:39,959 - INFO - 查找验证码输入框...
+2026-02-27 14:05:39,966 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:39,966 - WARNING - 验证码填写失败
+2026-02-27 14:05:39,966 - INFO - 开始填写登录表单...
+2026-02-27 14:05:40,031 - INFO - 用户名填写完成
+2026-02-27 14:05:40,096 - INFO - 密码填写完成
+2026-02-27 14:05:40,097 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:40,097 - INFO - 验证码识别尝试 17/30
+2026-02-27 14:05:40,097 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:40,217 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:40,322 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:40,389 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:40,487 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:40,562 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:40,661 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:40,826 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:40,935 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:41,010 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:41,107 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:41,182 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:41,281 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:41,385 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:41,482 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:41,482 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:41,482 - INFO - 查找验证码输入框...
+2026-02-27 14:05:41,490 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:41,490 - WARNING - 验证码填写失败
+2026-02-27 14:05:41,490 - INFO - 开始填写登录表单...
+2026-02-27 14:05:41,556 - INFO - 用户名填写完成
+2026-02-27 14:05:41,623 - INFO - 密码填写完成
+2026-02-27 14:05:41,624 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:41,624 - INFO - 验证码识别尝试 18/30
+2026-02-27 14:05:41,624 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:41,741 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:41,837 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:41,905 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:42,003 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:42,079 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:42,176 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:42,343 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:42,452 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:42,526 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:42,626 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:42,701 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:42,800 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:42,905 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:43,006 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:43,006 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:43,006 - INFO - 查找验证码输入框...
+2026-02-27 14:05:43,014 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:43,014 - WARNING - 验证码填写失败
+2026-02-27 14:05:43,014 - INFO - 开始填写登录表单...
+2026-02-27 14:05:43,079 - INFO - 用户名填写完成
+2026-02-27 14:05:43,146 - INFO - 密码填写完成
+2026-02-27 14:05:43,147 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:43,147 - INFO - 验证码识别尝试 19/30
+2026-02-27 14:05:43,147 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:43,262 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:43,360 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:43,434 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:43,532 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:43,614 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:43,711 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:43,886 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:43,996 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:44,084 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:44,182 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:44,258 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:44,355 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:44,459 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:44,555 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:44,555 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:44,555 - INFO - 查找验证码输入框...
+2026-02-27 14:05:44,562 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:44,562 - WARNING - 验证码填写失败
+2026-02-27 14:05:44,562 - INFO - 开始填写登录表单...
+2026-02-27 14:05:44,626 - INFO - 用户名填写完成
+2026-02-27 14:05:44,691 - INFO - 密码填写完成
+2026-02-27 14:05:44,691 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:44,691 - INFO - 验证码识别尝试 20/30
+2026-02-27 14:05:44,691 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:44,807 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:44,909 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:44,977 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:45,075 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:45,151 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:45,252 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:45,417 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:45,524 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:45,598 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:45,693 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:45,767 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:45,864 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:45,968 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:46,069 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:46,069 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:46,069 - INFO - 查找验证码输入框...
+2026-02-27 14:05:46,076 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:46,076 - WARNING - 验证码填写失败
+2026-02-27 14:05:46,076 - INFO - 开始填写登录表单...
+2026-02-27 14:05:46,140 - INFO - 用户名填写完成
+2026-02-27 14:05:46,203 - INFO - 密码填写完成
+2026-02-27 14:05:46,204 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:46,204 - INFO - 验证码识别尝试 21/30
+2026-02-27 14:05:46,204 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:46,328 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:46,425 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:46,491 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:46,586 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:46,667 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:46,763 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:46,930 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:47,040 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:47,116 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:47,212 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:47,292 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:47,390 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:47,493 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:47,591 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:47,591 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:47,591 - INFO - 查找验证码输入框...
+2026-02-27 14:05:47,599 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:47,599 - WARNING - 验证码填写失败
+2026-02-27 14:05:47,599 - INFO - 开始填写登录表单...
+2026-02-27 14:05:47,665 - INFO - 用户名填写完成
+2026-02-27 14:05:47,730 - INFO - 密码填写完成
+2026-02-27 14:05:47,731 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:47,731 - INFO - 验证码识别尝试 22/30
+2026-02-27 14:05:47,731 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:47,852 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:47,953 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:48,029 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:48,130 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:48,206 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:48,306 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:48,473 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:48,584 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:48,661 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:48,759 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:48,835 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:48,933 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:49,040 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:49,137 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:49,137 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:49,138 - INFO - 查找验证码输入框...
+2026-02-27 14:05:49,145 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:49,145 - WARNING - 验证码填写失败
+2026-02-27 14:05:49,145 - INFO - 开始填写登录表单...
+2026-02-27 14:05:49,210 - INFO - 用户名填写完成
+2026-02-27 14:05:49,275 - INFO - 密码填写完成
+2026-02-27 14:05:49,275 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:49,275 - INFO - 验证码识别尝试 23/30
+2026-02-27 14:05:49,276 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:49,379 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:49,483 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:49,549 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:49,650 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:49,725 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:49,827 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:49,995 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:50,102 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:50,181 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:50,282 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:50,357 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:50,454 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:50,557 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:50,655 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:50,655 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:50,655 - INFO - 查找验证码输入框...
+2026-02-27 14:05:50,662 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:50,662 - WARNING - 验证码填写失败
+2026-02-27 14:05:50,663 - INFO - 开始填写登录表单...
+2026-02-27 14:05:50,726 - INFO - 用户名填写完成
+2026-02-27 14:05:50,789 - INFO - 密码填写完成
+2026-02-27 14:05:50,790 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:50,790 - INFO - 验证码识别尝试 24/30
+2026-02-27 14:05:50,790 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:50,898 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:50,995 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:51,062 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:51,160 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:51,234 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:51,331 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:51,495 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:51,604 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:51,679 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:51,775 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:51,849 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:51,946 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:52,049 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:52,144 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:52,144 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:52,144 - INFO - 查找验证码输入框...
+2026-02-27 14:05:52,151 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:52,151 - WARNING - 验证码填写失败
+2026-02-27 14:05:52,151 - INFO - 开始填写登录表单...
+2026-02-27 14:05:52,215 - INFO - 用户名填写完成
+2026-02-27 14:05:52,280 - INFO - 密码填写完成
+2026-02-27 14:05:52,280 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:52,281 - INFO - 验证码识别尝试 25/30
+2026-02-27 14:05:52,281 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:52,388 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:52,487 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:52,553 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:52,652 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:52,726 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:52,827 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:52,992 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:53,102 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:53,176 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:53,281 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:53,356 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:53,452 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:53,556 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:53,658 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:53,659 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:53,659 - INFO - 查找验证码输入框...
+2026-02-27 14:05:53,666 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:53,666 - WARNING - 验证码填写失败
+2026-02-27 14:05:53,667 - INFO - 开始填写登录表单...
+2026-02-27 14:05:53,736 - INFO - 用户名填写完成
+2026-02-27 14:05:53,799 - INFO - 密码填写完成
+2026-02-27 14:05:53,800 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:53,800 - INFO - 验证码识别尝试 26/30
+2026-02-27 14:05:53,800 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:53,911 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:54,009 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:54,077 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:54,174 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:54,248 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:54,343 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:54,506 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:54,620 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:54,694 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:54,792 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:54,865 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:54,965 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:55,068 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:55,165 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:55,165 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:55,165 - INFO - 查找验证码输入框...
+2026-02-27 14:05:55,172 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:55,172 - WARNING - 验证码填写失败
+2026-02-27 14:05:55,172 - INFO - 开始填写登录表单...
+2026-02-27 14:05:55,236 - INFO - 用户名填写完成
+2026-02-27 14:05:55,300 - INFO - 密码填写完成
+2026-02-27 14:05:55,301 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:55,301 - INFO - 验证码识别尝试 27/30
+2026-02-27 14:05:55,301 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:55,404 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:55,502 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:55,581 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:55,680 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:55,754 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:55,851 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:56,015 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:56,122 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:56,196 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:56,295 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:56,370 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:56,469 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:56,571 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:56,670 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:56,670 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:56,670 - INFO - 查找验证码输入框...
+2026-02-27 14:05:56,677 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:56,677 - WARNING - 验证码填写失败
+2026-02-27 14:05:56,677 - INFO - 开始填写登录表单...
+2026-02-27 14:05:56,742 - INFO - 用户名填写完成
+2026-02-27 14:05:56,805 - INFO - 密码填写完成
+2026-02-27 14:05:56,806 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:56,806 - INFO - 验证码识别尝试 28/30
+2026-02-27 14:05:56,806 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:56,909 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:57,007 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:57,072 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:57,174 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:57,248 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:57,345 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:57,509 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:57,618 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:57,693 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:57,793 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:57,868 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:57,964 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:58,068 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:58,167 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:58,167 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:58,168 - INFO - 查找验证码输入框...
+2026-02-27 14:05:58,175 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:58,175 - WARNING - 验证码填写失败
+2026-02-27 14:05:58,175 - INFO - 开始填写登录表单...
+2026-02-27 14:05:58,244 - INFO - 用户名填写完成
+2026-02-27 14:05:58,310 - INFO - 密码填写完成
+2026-02-27 14:05:58,354 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:58,354 - INFO - 验证码识别尝试 29/30
+2026-02-27 14:05:58,354 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:58,461 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:05:58,560 - INFO - tesseract 结果: AtUe
+2026-02-27 14:05:58,632 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:05:58,727 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:05:58,804 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:05:58,900 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:05:59,067 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:05:59,181 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:05:59,258 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:05:59,356 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:05:59,431 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:05:59,528 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:05:59,632 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:05:59,730 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:05:59,730 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:05:59,730 - INFO - 查找验证码输入框...
+2026-02-27 14:05:59,737 - ERROR - 未找到验证码输入框
+2026-02-27 14:05:59,737 - WARNING - 验证码填写失败
+2026-02-27 14:05:59,737 - INFO - 开始填写登录表单...
+2026-02-27 14:05:59,801 - INFO - 用户名填写完成
+2026-02-27 14:05:59,867 - INFO - 密码填写完成
+2026-02-27 14:05:59,868 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 14:05:59,868 - INFO - 验证码识别尝试 30/30
+2026-02-27 14:05:59,868 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 14:05:59,973 - INFO - easyocr 结果: ['AUe(0.08)']
+2026-02-27 14:06:00,073 - INFO - tesseract 结果: AtUe
+2026-02-27 14:06:00,141 - INFO - easyocr alt1 结果: ['Rye(0.02)']
+2026-02-27 14:06:00,239 - INFO - tesseract alt1 结果: ktUe
+2026-02-27 14:06:00,314 - INFO - easyocr alt2 结果: ['ge(0.05)']
+2026-02-27 14:06:00,411 - INFO - tesseract alt2 结果: ktUe
+2026-02-27 14:06:00,578 - INFO - easyocr alt3 结果: ['7Ue(0.07)']
+2026-02-27 14:06:00,689 - INFO - tesseract alt3 结果: ktUe
+2026-02-27 14:06:00,765 - INFO - easyocr alt4 结果: ['Ue(0.05)']
+2026-02-27 14:06:00,862 - INFO - tesseract alt4 结果: ktUe
+2026-02-27 14:06:00,937 - INFO - easyocr alt5 结果: ['Ue(0.02)']
+2026-02-27 14:06:01,034 - INFO - tesseract alt5 结果: ktUe
+2026-02-27 14:06:01,137 - INFO - easyocr alt6 结果: ['AUe(0.08)']
+2026-02-27 14:06:01,236 - INFO - tesseract alt6 结果: AtUe
+2026-02-27 14:06:01,236 - INFO - 最终验证码识别结果: AtUe (engine=tesseract, prob=0.5)
+2026-02-27 14:06:01,236 - INFO - 查找验证码输入框...
+2026-02-27 14:06:01,243 - ERROR - 未找到验证码输入框
+2026-02-27 14:06:01,243 - WARNING - 验证码填写失败
+2026-02-27 14:06:01,243 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-27 14:06:01,243 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-27 14:06:01,243 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-27 14:06:01,243 - INFO - 查找并点击登录按钮...
+2026-02-27 14:06:01,252 - ERROR - 未找到登录按钮
+2026-02-27 14:06:01,252 - ERROR - 点击登录按钮失败
+2026-02-27 14:06:01,252 - INFO - 等待登录成功...
+2026-02-27 14:06:06,258 - INFO - 登录可能成功，继续下一步...
+2026-02-27 14:06:06,258 - INFO - 查找'去充值'按钮...
+2026-02-27 14:06:06,270 - ERROR - 未找到'去充值'按钮
+2026-02-27 14:06:06,270 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-27 14:06:06,270 - INFO - 开始提取剩余电量信息...
+2026-02-27 14:06:06,281 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-27 14:06:06,290 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-27 14:06:06,299 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-27 14:06:06,308 - INFO - 在页面源码中查找电量信息...
+2026-02-27 14:06:06,320 - WARNING - 未能提取到剩余电量信息
+2026-02-27 14:06:06,320 - WARNING - 没有电量数据可保存
+2026-02-27 14:06:06,320 - INFO - 监控流程完成
