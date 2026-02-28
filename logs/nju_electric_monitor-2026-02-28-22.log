@@ -1,0 +1,7 @@
+2026-02-28 22:04:14,943 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Microsoft YaHei
+2026-02-28 22:04:16,066 - INFO - 使用 ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2026-02-28 22:04:16,142 - INFO - ddddocr 识别器初始化成功
+2026-02-28 22:04:16,142 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-28 22:05:28,557 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)': /session/c7d57ee4de1032188fd40898fadbd4af
+2026-02-28 22:05:32,630 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017CA5FC32F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/c7d57ee4de1032188fd40898fadbd4af
+2026-02-28 22:05:36,687 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000017CA5FC3470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/c7d57ee4de1032188fd40898fadbd4af
