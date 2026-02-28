@@ -1,0 +1,48 @@
+Wrapper start: 2026-02-28T20:59:31.927650
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=97):
+- ACE_STUDIO_PATH
+- AGSDESKTOPJAVA
+- ALLUSERSPROFILE
+- APPDATA
+- BUNDLED_DEBUGPY_PATH
+- CHOCOLATEYINSTALL
+- CHROME_CRASHPAD_PIPE_NAME
+- CLASSPATH
+- COLORTERM
+- COMMONPROGRAMFILES
+NJU_USERNAME set: no
+NJU_PASSWORD set: no
+
+=== DISK USAGE (df -h) ===
+df -h failed: [WinError 2] 系统找不到指定的文件。
+
+=== KEY DIR SIZES ===
+du -sh D:\Documents\Github\nju_electric_monitor\src\..\logs failed: [WinError 2] 系统找不到指定的文件。
+du -sh D:\Documents\Github\nju_electric_monitor\src\..\data failed: [WinError 2] 系统找不到指定的文件。
+du -sh D:\Documents\Github\nju_electric_monitor\src\..\models failed: [WinError 2] 系统找不到指定的文件。
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+matplotlib.font_manager not available: No module named 'matplotlib'
+Skipping matplotlib font diagnostics because matplotlib.font_manager is unavailable
+fc-list failed or not available: [WinError 2] 系统找不到指定的文件。
+Running workflow script: D:\Documents\Github\nju_electric_monitor\src\nju_electric_monitor_workflow.py
+Traceback (most recent call last):
+  File "D:\Documents\Github\nju_electric_monitor\src\nju_electric_monitor_workflow.py", line 29, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+Workflow script exited with code 1
+Wrapper end: 2026-02-28T20:59:32.005396

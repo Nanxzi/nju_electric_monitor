@@ -161,39 +161,38 @@ try:
             lf.write('Font diagnostics failed\n')
             lf.flush()
 
-        # 将 Python 的 stdout/stderr 重定向到日志文件，捕获第三方库输出
-        import contextlib
-        with contextlib.redirect_stdout(lf), contextlib.redirect_stderr(lf):
-            # 延迟导入主模块，便于捕获导入阶段的错误
-            # 这里通过脚本所在目录(src)直接导入同级模块
-            try:
-                from nju_electric_monitor_workflow import main
-            except Exception as e:
-                lf.write('Import main failed:\n')
-                traceback.print_exc(file=lf)
-                lf.flush()
-                raise
+        # 通过子进程直接运行 nju_electric_monitor_workflow.py，避免导入路径问题
+        try:
+            import subprocess
+            workflow_path = os.path.join(os.path.dirname(__file__), 'nju_electric_monitor_workflow.py')
+            lf.write(f"Running workflow script: {workflow_path}\n")
+            lf.flush()
 
+            result = subprocess.run(
+                [sys.executable, workflow_path],
+                stdout=lf,
+                stderr=lf,
+            )
+
+            if result.returncode != 0:
+                lf.write(f"Workflow script exited with code {result.returncode}\n")
+                lf.flush()
+                raise SystemExit(result.returncode)
+
+        except Exception:
+            # 记录任何在运行 workflow 脚本时发生的异常
+            lf.write('Error while running workflow script via subprocess:\n')
+            traceback.print_exc(file=lf)
+            lf.flush()
             try:
-                # 运行主函数并捕获异常
-                main()
-            except SystemExit as se:
-                lf.write(f'SystemExit: {se}\n')
-                raise
+                faulthandler.dump_traceback(file=lf)
             except Exception:
-                lf.write('Unhandled exception in main:\n')
-                traceback.print_exc(file=lf)
-                lf.flush()
-                # 触发 faulthandler 写入附加信息
-                try:
-                    faulthandler.dump_traceback(file=lf)
-                except Exception:
-                    lf.write('faulthandler.dump_traceback failed\n')
-                raise
-            finally:
-                end_time = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
-                lf.write(f'Wrapper end: {end_time.isoformat()}\n')
-                lf.flush()
+                lf.write('faulthandler.dump_traceback failed\n')
+            raise
+        finally:
+            end_time = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
+            lf.write(f'Wrapper end: {end_time.isoformat()}\n')
+            lf.flush()
 
 except Exception:
     # 保持异常向上，让 CI 能够看到非零退出码
