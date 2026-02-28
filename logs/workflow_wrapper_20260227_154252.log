@@ -1,0 +1,1008 @@
+Wrapper start: 2026-02-27T15:42:52.643408+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=121):
+- ACCEPT_EULA
+- ACTIONS_ORCHESTRATION_ID
+- ACTIONS_RUNNER_ACTION_ARCHIVE_CACHE
+- AGENT_TOOLSDIRECTORY
+- ANDROID_HOME
+- ANDROID_NDK
+- ANDROID_NDK_HOME
+- ANDROID_NDK_LATEST_HOME
+- ANDROID_NDK_ROOT
+- ANDROID_SDK_ROOT
+NJU_USERNAME set: yes
+NJU_PASSWORD set: yes
+
+=== DISK USAGE (df -h) ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       145G   62G   83G  43% /
+tmpfs           7.9G   84K  7.9G   1% /dev/shm
+tmpfs           3.2G  2.6M  3.2G   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        128M   29K  128M   1% /sys/firmware/efi/efivars
+/dev/sda16      881M   63M  757M   8% /boot
+/dev/sda15      105M  6.2M   99M   6% /boot/efi
+tmpfs           1.6G   12K  1.6G   1% /run/user/1001
+
+
+=== KEY DIR SIZES ===
+22M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../logs
+
+344K	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data
+
+101M	/home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../models
+
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 59
+- /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+- /usr/share/fonts/truetype/lato/Lato-Black.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+- /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+- /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+- /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+- /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+- /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+- /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+- /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+- /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+- /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+- /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+- /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+- /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+- /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+- /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+- /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+- /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+- /usr/share/fonts/truetype/lato/Lato-Light.ttf
+- /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+- /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+- /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+- /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+- /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+
+FontManager samples (name -> path):
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+cmsy10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+STIXSizeThreeSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+STIXSizeFiveSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+DejaVu Serif Display -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+cmex10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+cmmi10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+DejaVu Sans Display -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+cmb10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+cmtt10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+STIXNonUnicode -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+STIXSizeTwoSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+cmr10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+DejaVu Sans -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+STIXSizeFourSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+DejaVu Sans Mono -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+STIXSizeOneSym -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+STIXGeneral -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+cmss10 -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+DejaVu Serif -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+Liberation Sans -> /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+Noto Sans CJK JP -> /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato -> /usr/share/fonts/truetype/lato/Lato-Black.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+DejaVu Serif -> /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+DejaVu Sans -> /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+Liberation Mono -> /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato -> /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') failed: Failed to find font Microsoft YaHei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Segoe UI') failed: Failed to find font Segoe UI:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') -> /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+findfont('WenQuanYi Zen Hei') -> /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+findfont('DejaVu Sans') -> /opt/hostedtoolcache/Python/3.14.3/x64/lib/python3.14/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+
+fc-list output sample (truncated to 10000 chars):
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-BoldItalic.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-Hairline.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-Heavy.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Italic.ttf
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-Medium.ttf
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-LightItalic.ttf
+WenQuanYi Zen Hei Sharp,文泉驛點陣正黑,文泉驿点阵正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+WenQuanYi Micro Hei Mono,文泉驛等寬微米黑,文泉驿等宽微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Math TeX Gyre - /usr/share/fonts/truetype/dejavu/DejaVuMathTeXGyre.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Italic.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Italic.ttf
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf
+Lato,Lato Heavy - /usr/share/fonts/truetype/lato/Lato-HeavyItalic.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-BoldItalic.ttf
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Medium - /usr/share/fonts/truetype/lato/Lato-MediumItalic.ttf
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-Italic.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Regular.ttc
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-SemiboldItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-ThinItalic.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-Italic.ttf
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-BlackItalic.ttf
+Lato,Lato Thin - /usr/share/fonts/truetype/lato/Lato-Thin.ttf
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Oblique.ttf
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Lato,Lato Light - /usr/share/fonts/truetype/lato/Lato-Light.ttf
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-Bold.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Oblique.ttf
+Lato,Lato Hairline - /usr/share/fonts/truetype/lato/Lato-HairlineItalic.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+WenQuanYi Zen Hei,文泉驛正黑,文泉驿正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+Lato,Lato Black - /usr/share/fonts/truetype/lato/Lato-Black.ttf
+Lato - /usr/share/fonts/truetype/lato/Lato-Regular.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-BoldOblique.ttf
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-BoldItalic.ttf
+Noto Sans Mono CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Liberation Mono - /usr/share/fonts/truetype/liberation/LiberationMono-Regular.ttf
+Noto Sans Mono CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+DejaVu Sans,DejaVu Sans Light - /usr/share/fonts/truetype/dejavu/DejaVuSans-ExtraLight.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf
+Noto Sans Mono CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Serif CJK JP - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK HK - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK KR - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Noto Serif CJK TC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+Lato - /usr/share/fonts/truetype/lato/Lato-Bold.ttf
+Noto Sans CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans Mono CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Sans CJK TC - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Serif CJK SC - /usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf
+DejaVu Serif - /usr/share/fonts/truetype/dejavu/DejaVuSerif-BoldItalic.ttf
+WenQuanYi Zen Hei Mono,文泉驛等寬正黑,文泉驿等宽正黑 - /usr/share/fonts/truetype/wqy/wqy-zenhei.ttc
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+Noto Sans CJK JP - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK HK - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+Noto Sans CJK KR - /usr/share/fonts/opentype/noto/NotoSansCJK-Bold.ttc
+WenQuanYi Micro Hei,文泉驛微米黑,文泉驿微米黑 - /usr/share/fonts/truetype/wqy/wqy-microhei.ttc
+Noto Sans Mono CJK SC - /usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc
+Noto Color Emoji - /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf
+DejaVu Sans Mono - /usr/share/fonts/truetype/dejavu/DejaVuSansMono-BoldOblique.ttf
+Liberation Sans - /usr/share/fonts/truetype/liberation/LiberationSans-BoldItalic.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf
+Lato,Lato Semibold - /usr/share/fonts/truetype/lato/Lato-Semibold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Oblique.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-Bold.ttf
+DejaVu Sans - /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Liberation Serif - /usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf
+DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSerifCondensed-BoldItalic.ttf
+
+2026-02-27 07:42:56,830 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-27 07:42:58,785 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-27 07:42:58,785 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-27 07:43:00,254 - INFO - OCR识别器初始化成功
+2026-02-27 07:43:00,255 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-27 07:43:00,255 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-27 07:43:09,464 - INFO - 等待登录表单加载...
+2026-02-27 07:43:09,670 - INFO - 登录表单已加载
+2026-02-27 07:43:09,670 - INFO - 开始填写登录表单...
+2026-02-27 07:43:09,761 - INFO - 用户名填写完成
+2026-02-27 07:43:09,834 - INFO - 密码填写完成
+2026-02-27 07:43:09,834 - INFO - 检查是否有验证码...
+2026-02-27 07:43:09,834 - INFO - 查找验证码图片...
+2026-02-27 07:43:09,854 - INFO - 找到验证码图片，开始截图...
+2026-02-27 07:43:09,901 - INFO - 验证码图片截取成功
+2026-02-27 07:43:09,901 - INFO - 开始填写登录表单...
+2026-02-27 07:43:09,972 - INFO - 用户名填写完成
+2026-02-27 07:43:10,037 - INFO - 密码填写完成
+2026-02-27 07:43:10,038 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:10,038 - INFO - 验证码识别尝试 1/30
+2026-02-27 07:43:10,038 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:10,130 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:10,275 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:10,344 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:10,441 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:10,488 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:10,587 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:10,752 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:10,877 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:10,923 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:11,027 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:11,092 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:11,191 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:11,281 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:11,380 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:11,380 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:11,380 - INFO - 查找验证码输入框...
+2026-02-27 07:43:11,390 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:11,390 - WARNING - 验证码填写失败
+2026-02-27 07:43:11,390 - INFO - 开始填写登录表单...
+2026-02-27 07:43:11,454 - INFO - 用户名填写完成
+2026-02-27 07:43:11,519 - INFO - 密码填写完成
+2026-02-27 07:43:11,519 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:11,520 - INFO - 验证码识别尝试 2/30
+2026-02-27 07:43:11,520 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:11,611 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:11,710 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:11,763 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:11,865 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:11,913 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:12,012 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:12,154 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:12,315 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:12,365 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:12,473 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:12,552 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:12,650 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:12,733 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:12,837 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:12,837 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:12,837 - INFO - 查找验证码输入框...
+2026-02-27 07:43:12,844 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:12,844 - WARNING - 验证码填写失败
+2026-02-27 07:43:12,845 - INFO - 开始填写登录表单...
+2026-02-27 07:43:12,908 - INFO - 用户名填写完成
+2026-02-27 07:43:12,974 - INFO - 密码填写完成
+2026-02-27 07:43:13,074 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:13,074 - INFO - 验证码识别尝试 3/30
+2026-02-27 07:43:13,074 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:13,167 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:13,268 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:13,324 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:13,420 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:13,468 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:13,564 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:13,723 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:13,834 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:13,881 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:13,984 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:14,049 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:14,149 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:14,229 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:14,324 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:14,324 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:14,324 - INFO - 查找验证码输入框...
+2026-02-27 07:43:14,331 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:14,331 - WARNING - 验证码填写失败
+2026-02-27 07:43:14,331 - INFO - 开始填写登录表单...
+2026-02-27 07:43:14,395 - INFO - 用户名填写完成
+2026-02-27 07:43:14,466 - INFO - 密码填写完成
+2026-02-27 07:43:14,467 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:14,467 - INFO - 验证码识别尝试 4/30
+2026-02-27 07:43:14,467 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:14,596 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:14,693 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:14,747 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:14,844 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:14,900 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:14,995 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:15,143 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:15,255 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:15,301 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:15,401 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:15,468 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:15,568 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:15,653 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:15,752 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:15,752 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:15,752 - INFO - 查找验证码输入框...
+2026-02-27 07:43:15,759 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:15,759 - WARNING - 验证码填写失败
+2026-02-27 07:43:15,759 - INFO - 开始填写登录表单...
+2026-02-27 07:43:15,823 - INFO - 用户名填写完成
+2026-02-27 07:43:15,884 - INFO - 密码填写完成
+2026-02-27 07:43:15,885 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:15,885 - INFO - 验证码识别尝试 5/30
+2026-02-27 07:43:15,885 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:15,967 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:16,067 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:16,120 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:16,222 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:16,269 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:16,365 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:16,505 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:16,616 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:16,663 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:16,764 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:16,830 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:16,933 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:17,014 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:17,114 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:17,114 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:17,114 - INFO - 查找验证码输入框...
+2026-02-27 07:43:17,121 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:17,121 - WARNING - 验证码填写失败
+2026-02-27 07:43:17,121 - INFO - 开始填写登录表单...
+2026-02-27 07:43:17,185 - INFO - 用户名填写完成
+2026-02-27 07:43:17,249 - INFO - 密码填写完成
+2026-02-27 07:43:17,250 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:17,250 - INFO - 验证码识别尝试 6/30
+2026-02-27 07:43:17,250 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:17,342 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:17,438 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:17,491 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:17,592 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:17,638 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:17,734 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:17,901 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:18,009 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:18,056 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:18,161 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:18,227 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:18,326 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:18,408 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:18,511 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:18,511 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:18,511 - INFO - 查找验证码输入框...
+2026-02-27 07:43:18,518 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:18,518 - WARNING - 验证码填写失败
+2026-02-27 07:43:18,518 - INFO - 开始填写登录表单...
+2026-02-27 07:43:18,582 - INFO - 用户名填写完成
+2026-02-27 07:43:18,646 - INFO - 密码填写完成
+2026-02-27 07:43:18,647 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:18,647 - INFO - 验证码识别尝试 7/30
+2026-02-27 07:43:18,647 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:18,734 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:18,837 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:18,891 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:18,988 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:19,045 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:19,140 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:19,282 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:19,396 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:19,442 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:19,547 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:19,612 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:19,710 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:19,791 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:19,891 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:19,891 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:19,891 - INFO - 查找验证码输入框...
+2026-02-27 07:43:19,898 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:19,898 - WARNING - 验证码填写失败
+2026-02-27 07:43:19,898 - INFO - 开始填写登录表单...
+2026-02-27 07:43:19,959 - INFO - 用户名填写完成
+2026-02-27 07:43:20,026 - INFO - 密码填写完成
+2026-02-27 07:43:20,027 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:20,027 - INFO - 验证码识别尝试 8/30
+2026-02-27 07:43:20,027 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:20,108 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:20,207 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:20,261 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:20,363 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:20,411 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:20,507 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:20,651 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:20,761 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:20,808 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:20,905 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:20,971 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:21,071 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:21,163 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:21,259 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:21,260 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:21,260 - INFO - 查找验证码输入框...
+2026-02-27 07:43:21,267 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:21,267 - WARNING - 验证码填写失败
+2026-02-27 07:43:21,267 - INFO - 开始填写登录表单...
+2026-02-27 07:43:21,331 - INFO - 用户名填写完成
+2026-02-27 07:43:21,396 - INFO - 密码填写完成
+2026-02-27 07:43:21,397 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:21,397 - INFO - 验证码识别尝试 9/30
+2026-02-27 07:43:21,397 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:21,484 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:21,581 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:21,634 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:21,736 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:21,783 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:21,877 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:22,019 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:22,127 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:22,174 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:22,272 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:22,337 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:22,437 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:22,518 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:22,616 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:22,616 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:22,616 - INFO - 查找验证码输入框...
+2026-02-27 07:43:22,623 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:22,623 - WARNING - 验证码填写失败
+2026-02-27 07:43:22,624 - INFO - 开始填写登录表单...
+2026-02-27 07:43:22,687 - INFO - 用户名填写完成
+2026-02-27 07:43:22,752 - INFO - 密码填写完成
+2026-02-27 07:43:22,753 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:22,753 - INFO - 验证码识别尝试 10/30
+2026-02-27 07:43:22,753 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:22,835 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:22,934 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:22,987 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:23,086 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:23,133 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:23,229 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:23,371 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:23,479 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:23,526 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:23,628 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:23,692 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:23,794 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:23,875 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:23,975 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:23,975 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:23,976 - INFO - 查找验证码输入框...
+2026-02-27 07:43:23,983 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:23,983 - WARNING - 验证码填写失败
+2026-02-27 07:43:23,983 - INFO - 开始填写登录表单...
+2026-02-27 07:43:24,047 - INFO - 用户名填写完成
+2026-02-27 07:43:24,112 - INFO - 密码填写完成
+2026-02-27 07:43:24,112 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:24,112 - INFO - 验证码识别尝试 11/30
+2026-02-27 07:43:24,113 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:24,195 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:24,294 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:24,347 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:24,449 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:24,495 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:24,593 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:24,734 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:24,846 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:24,891 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:24,993 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:25,057 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:25,156 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:25,237 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:25,334 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:25,334 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:25,334 - INFO - 查找验证码输入框...
+2026-02-27 07:43:25,341 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:25,341 - WARNING - 验证码填写失败
+2026-02-27 07:43:25,341 - INFO - 开始填写登录表单...
+2026-02-27 07:43:25,405 - INFO - 用户名填写完成
+2026-02-27 07:43:25,470 - INFO - 密码填写完成
+2026-02-27 07:43:25,471 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:25,471 - INFO - 验证码识别尝试 12/30
+2026-02-27 07:43:25,471 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:25,566 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:25,664 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:25,717 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:25,813 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:25,861 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:25,955 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:26,096 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:26,205 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:26,251 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:26,346 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:26,411 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:26,511 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:26,592 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:26,688 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:26,688 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:26,688 - INFO - 查找验证码输入框...
+2026-02-27 07:43:26,695 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:26,695 - WARNING - 验证码填写失败
+2026-02-27 07:43:26,695 - INFO - 开始填写登录表单...
+2026-02-27 07:43:26,757 - INFO - 用户名填写完成
+2026-02-27 07:43:26,820 - INFO - 密码填写完成
+2026-02-27 07:43:26,820 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:26,821 - INFO - 验证码识别尝试 13/30
+2026-02-27 07:43:26,821 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:26,902 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:26,998 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:27,050 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:27,148 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:27,195 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:27,290 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:27,431 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:27,538 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:27,586 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:27,683 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:27,747 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:27,843 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:27,924 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:28,022 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:28,022 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:28,022 - INFO - 查找验证码输入框...
+2026-02-27 07:43:28,029 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:28,029 - WARNING - 验证码填写失败
+2026-02-27 07:43:28,029 - INFO - 开始填写登录表单...
+2026-02-27 07:43:28,094 - INFO - 用户名填写完成
+2026-02-27 07:43:28,156 - INFO - 密码填写完成
+2026-02-27 07:43:28,157 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:28,157 - INFO - 验证码识别尝试 14/30
+2026-02-27 07:43:28,157 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:28,245 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:28,340 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:28,393 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:28,492 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:28,539 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:28,635 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:28,780 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:28,887 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:28,939 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:29,038 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:29,103 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:29,200 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:29,280 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:29,378 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:29,378 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:29,378 - INFO - 查找验证码输入框...
+2026-02-27 07:43:29,385 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:29,385 - WARNING - 验证码填写失败
+2026-02-27 07:43:29,385 - INFO - 开始填写登录表单...
+2026-02-27 07:43:29,448 - INFO - 用户名填写完成
+2026-02-27 07:43:29,511 - INFO - 密码填写完成
+2026-02-27 07:43:29,512 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:29,512 - INFO - 验证码识别尝试 15/30
+2026-02-27 07:43:29,512 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:29,594 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:29,692 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:29,744 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:29,841 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:29,888 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:29,988 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:30,129 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:30,237 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:30,283 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:30,380 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:30,444 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:30,546 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:30,631 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:30,730 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:30,730 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:30,730 - INFO - 查找验证码输入框...
+2026-02-27 07:43:30,737 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:30,737 - WARNING - 验证码填写失败
+2026-02-27 07:43:30,737 - INFO - 开始填写登录表单...
+2026-02-27 07:43:30,803 - INFO - 用户名填写完成
+2026-02-27 07:43:30,868 - INFO - 密码填写完成
+2026-02-27 07:43:30,869 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:30,869 - INFO - 验证码识别尝试 16/30
+2026-02-27 07:43:30,869 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:30,959 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:31,057 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:31,109 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:31,206 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:31,252 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:31,349 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:31,490 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:31,600 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:31,646 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:31,748 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:31,811 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:31,911 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:31,992 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:32,090 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:32,090 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:32,090 - INFO - 查找验证码输入框...
+2026-02-27 07:43:32,097 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:32,097 - WARNING - 验证码填写失败
+2026-02-27 07:43:32,097 - INFO - 开始填写登录表单...
+2026-02-27 07:43:32,159 - INFO - 用户名填写完成
+2026-02-27 07:43:32,221 - INFO - 密码填写完成
+2026-02-27 07:43:32,222 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:32,222 - INFO - 验证码识别尝试 17/30
+2026-02-27 07:43:32,222 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:32,304 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:32,401 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:32,453 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:32,553 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:32,599 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:32,696 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:32,836 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:32,946 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:33,002 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:33,097 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:33,162 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:33,259 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:33,338 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:33,439 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:33,439 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:33,439 - INFO - 查找验证码输入框...
+2026-02-27 07:43:33,446 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:33,446 - WARNING - 验证码填写失败
+2026-02-27 07:43:33,447 - INFO - 开始填写登录表单...
+2026-02-27 07:43:33,510 - INFO - 用户名填写完成
+2026-02-27 07:43:33,576 - INFO - 密码填写完成
+2026-02-27 07:43:33,576 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:33,577 - INFO - 验证码识别尝试 18/30
+2026-02-27 07:43:33,577 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:33,659 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:33,755 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:33,807 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:33,904 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:33,950 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:34,045 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:34,188 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:34,300 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:34,346 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:34,447 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:34,514 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:34,617 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:34,698 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:34,795 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:34,795 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:34,795 - INFO - 查找验证码输入框...
+2026-02-27 07:43:34,802 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:34,802 - WARNING - 验证码填写失败
+2026-02-27 07:43:34,802 - INFO - 开始填写登录表单...
+2026-02-27 07:43:34,868 - INFO - 用户名填写完成
+2026-02-27 07:43:34,933 - INFO - 密码填写完成
+2026-02-27 07:43:34,933 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:34,933 - INFO - 验证码识别尝试 19/30
+2026-02-27 07:43:34,933 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:35,028 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:35,127 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:35,180 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:35,278 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:35,325 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:35,425 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:35,568 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:35,683 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:35,732 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:35,832 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:35,898 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:35,999 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:36,081 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:36,182 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:36,183 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:36,183 - INFO - 查找验证码输入框...
+2026-02-27 07:43:36,189 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:36,190 - WARNING - 验证码填写失败
+2026-02-27 07:43:36,190 - INFO - 开始填写登录表单...
+2026-02-27 07:43:36,253 - INFO - 用户名填写完成
+2026-02-27 07:43:36,316 - INFO - 密码填写完成
+2026-02-27 07:43:36,317 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:36,317 - INFO - 验证码识别尝试 20/30
+2026-02-27 07:43:36,317 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:36,399 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:36,498 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:36,550 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:36,648 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:36,703 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:36,799 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:36,942 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:37,055 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:37,102 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:37,200 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:37,265 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:37,367 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:37,449 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:37,547 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:37,548 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:37,548 - INFO - 查找验证码输入框...
+2026-02-27 07:43:37,555 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:37,555 - WARNING - 验证码填写失败
+2026-02-27 07:43:37,555 - INFO - 开始填写登录表单...
+2026-02-27 07:43:37,617 - INFO - 用户名填写完成
+2026-02-27 07:43:37,682 - INFO - 密码填写完成
+2026-02-27 07:43:37,683 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:37,683 - INFO - 验证码识别尝试 21/30
+2026-02-27 07:43:37,683 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:37,775 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:37,874 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:37,926 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:38,024 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:38,071 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:38,169 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:38,311 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:38,422 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:38,469 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:38,567 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:38,632 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:38,730 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:38,811 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:38,914 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:38,914 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:38,914 - INFO - 查找验证码输入框...
+2026-02-27 07:43:38,921 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:38,921 - WARNING - 验证码填写失败
+2026-02-27 07:43:38,921 - INFO - 开始填写登录表单...
+2026-02-27 07:43:38,987 - INFO - 用户名填写完成
+2026-02-27 07:43:39,054 - INFO - 密码填写完成
+2026-02-27 07:43:39,055 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:39,055 - INFO - 验证码识别尝试 22/30
+2026-02-27 07:43:39,055 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:39,146 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:39,245 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:39,298 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:39,397 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:39,444 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:39,545 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:39,696 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:39,806 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:39,853 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:39,951 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:40,016 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:40,113 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:40,193 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:40,295 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:40,295 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:40,295 - INFO - 查找验证码输入框...
+2026-02-27 07:43:40,302 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:40,302 - WARNING - 验证码填写失败
+2026-02-27 07:43:40,302 - INFO - 开始填写登录表单...
+2026-02-27 07:43:40,368 - INFO - 用户名填写完成
+2026-02-27 07:43:40,433 - INFO - 密码填写完成
+2026-02-27 07:43:40,434 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:40,434 - INFO - 验证码识别尝试 23/30
+2026-02-27 07:43:40,434 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:40,527 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:40,624 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:40,677 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:40,781 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:40,827 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:40,928 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:41,073 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:41,184 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:41,231 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:41,329 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:41,395 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:41,494 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:41,575 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:41,679 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:41,679 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:41,679 - INFO - 查找验证码输入框...
+2026-02-27 07:43:41,686 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:41,686 - WARNING - 验证码填写失败
+2026-02-27 07:43:41,686 - INFO - 开始填写登录表单...
+2026-02-27 07:43:41,753 - INFO - 用户名填写完成
+2026-02-27 07:43:41,821 - INFO - 密码填写完成
+2026-02-27 07:43:41,821 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:41,822 - INFO - 验证码识别尝试 24/30
+2026-02-27 07:43:41,822 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:41,905 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:42,002 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:42,055 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:42,156 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:42,203 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:42,301 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:42,442 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:42,558 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:42,604 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:42,705 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:42,771 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:42,875 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:42,965 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:43,063 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:43,063 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:43,063 - INFO - 查找验证码输入框...
+2026-02-27 07:43:43,070 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:43,071 - WARNING - 验证码填写失败
+2026-02-27 07:43:43,071 - INFO - 开始填写登录表单...
+2026-02-27 07:43:43,136 - INFO - 用户名填写完成
+2026-02-27 07:43:43,203 - INFO - 密码填写完成
+2026-02-27 07:43:43,204 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:43,204 - INFO - 验证码识别尝试 25/30
+2026-02-27 07:43:43,204 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:43,295 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:43,395 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:43,454 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:43,556 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:43,602 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:43,698 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:43,843 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:43,953 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:44,000 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:44,103 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:44,169 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:44,267 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:44,349 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:44,447 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:44,447 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:44,447 - INFO - 查找验证码输入框...
+2026-02-27 07:43:44,454 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:44,454 - WARNING - 验证码填写失败
+2026-02-27 07:43:44,454 - INFO - 开始填写登录表单...
+2026-02-27 07:43:44,522 - INFO - 用户名填写完成
+2026-02-27 07:43:44,587 - INFO - 密码填写完成
+2026-02-27 07:43:44,588 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:44,588 - INFO - 验证码识别尝试 26/30
+2026-02-27 07:43:44,588 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:44,670 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:44,766 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:44,819 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:44,917 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:44,964 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:45,061 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:45,204 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:45,314 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:45,361 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:45,458 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:45,524 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:45,628 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:45,714 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:45,814 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:45,814 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:45,814 - INFO - 查找验证码输入框...
+2026-02-27 07:43:45,821 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:45,821 - WARNING - 验证码填写失败
+2026-02-27 07:43:45,821 - INFO - 开始填写登录表单...
+2026-02-27 07:43:45,888 - INFO - 用户名填写完成
+2026-02-27 07:43:45,953 - INFO - 密码填写完成
+2026-02-27 07:43:45,953 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:45,953 - INFO - 验证码识别尝试 27/30
+2026-02-27 07:43:45,953 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:46,037 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:46,141 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:46,195 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:46,294 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:46,341 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:46,437 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:46,579 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:46,693 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:46,740 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:46,837 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:46,903 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:47,002 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:47,084 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:47,181 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:47,181 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:47,181 - INFO - 查找验证码输入框...
+2026-02-27 07:43:47,188 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:47,188 - WARNING - 验证码填写失败
+2026-02-27 07:43:47,188 - INFO - 开始填写登录表单...
+2026-02-27 07:43:47,254 - INFO - 用户名填写完成
+2026-02-27 07:43:47,320 - INFO - 密码填写完成
+2026-02-27 07:43:47,321 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:47,321 - INFO - 验证码识别尝试 28/30
+2026-02-27 07:43:47,321 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:47,402 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:47,500 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:47,553 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:47,650 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:47,696 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:47,792 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:47,934 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:48,049 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:48,095 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:48,194 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:48,259 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:48,357 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:48,437 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:48,539 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:48,539 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:48,539 - INFO - 查找验证码输入框...
+2026-02-27 07:43:48,546 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:48,546 - WARNING - 验证码填写失败
+2026-02-27 07:43:48,546 - INFO - 开始填写登录表单...
+2026-02-27 07:43:48,609 - INFO - 用户名填写完成
+2026-02-27 07:43:48,673 - INFO - 密码填写完成
+2026-02-27 07:43:48,674 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:48,674 - INFO - 验证码识别尝试 29/30
+2026-02-27 07:43:48,674 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:48,755 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:48,851 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:48,903 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:48,999 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:49,045 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:49,141 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:49,284 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:49,393 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:49,439 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:49,538 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:49,604 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:49,703 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:49,785 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:49,883 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:49,883 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:49,883 - INFO - 查找验证码输入框...
+2026-02-27 07:43:49,890 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:49,890 - WARNING - 验证码填写失败
+2026-02-27 07:43:49,890 - INFO - 开始填写登录表单...
+2026-02-27 07:43:49,954 - INFO - 用户名填写完成
+2026-02-27 07:43:50,019 - INFO - 密码填写完成
+2026-02-27 07:43:50,019 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-27 07:43:50,019 - INFO - 验证码识别尝试 30/30
+2026-02-27 07:43:50,019 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-27 07:43:50,111 - INFO - easyocr 结果: ['455(0.41)']
+2026-02-27 07:43:50,210 - INFO - tesseract 结果: 4P55
+2026-02-27 07:43:50,262 - INFO - easyocr alt1 结果: ['4P55(0.34)']
+2026-02-27 07:43:50,362 - INFO - tesseract alt1 结果: 4P35
+2026-02-27 07:43:50,408 - INFO - easyocr alt2 结果: ['4P55(0.59)']
+2026-02-27 07:43:50,504 - INFO - tesseract alt2 结果: 4P35
+2026-02-27 07:43:50,646 - INFO - easyocr alt3 结果: ['4P55(0.27)']
+2026-02-27 07:43:50,759 - INFO - tesseract alt3 结果: 4P35
+2026-02-27 07:43:50,806 - INFO - easyocr alt4 结果: ['455(0.97)']
+2026-02-27 07:43:50,905 - INFO - tesseract alt4 结果: 4P33
+2026-02-27 07:43:50,970 - INFO - easyocr alt5 结果: ['055(0.02)']
+2026-02-27 07:43:51,070 - INFO - tesseract alt5 结果: 4P33
+2026-02-27 07:43:51,151 - INFO - easyocr alt6 结果: ['455(0.41)']
+2026-02-27 07:43:51,254 - INFO - tesseract alt6 结果: 4P55
+2026-02-27 07:43:51,254 - INFO - 最终验证码识别结果: 4P55 (engine=easyocr_alt2, prob=0.5874570924606667)
+2026-02-27 07:43:51,254 - INFO - 查找验证码输入框...
+2026-02-27 07:43:51,261 - ERROR - 未找到验证码输入框
+2026-02-27 07:43:51,261 - WARNING - 验证码填写失败
+2026-02-27 07:43:51,261 - WARNING - 自动验证码识别失败，请手动输入
+请手动输入验证码: 2026-02-27 07:43:51,261 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-27 07:43:51,261 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-27 07:43:51,261 - INFO - 查找并点击登录按钮...
+2026-02-27 07:43:51,269 - ERROR - 未找到登录按钮
+2026-02-27 07:43:51,269 - ERROR - 点击登录按钮失败
+2026-02-27 07:43:51,269 - INFO - 等待登录成功...
+2026-02-27 07:43:56,274 - INFO - 登录可能成功，继续下一步...
+2026-02-27 07:43:56,274 - INFO - 查找'去充值'按钮...
+2026-02-27 07:43:56,283 - ERROR - 未找到'去充值'按钮
+2026-02-27 07:43:56,283 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-27 07:43:56,283 - INFO - 开始提取剩余电量信息...
+2026-02-27 07:43:56,293 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-27 07:43:56,302 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-27 07:43:56,311 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-27 07:43:56,320 - INFO - 在页面源码中查找电量信息...
+2026-02-27 07:43:56,331 - WARNING - 未能提取到剩余电量信息
+2026-02-27 07:43:56,331 - WARNING - 没有电量数据可保存
+2026-02-27 07:43:56,331 - INFO - 监控流程完成
+Wrapper end: 2026-02-27T15:43:56.419057+08:00
