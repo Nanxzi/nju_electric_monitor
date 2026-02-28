@@ -671,8 +671,13 @@ class NJUElectricMonitor:
                         except Exception as e:
                             self.logger.warning(f"验证码识别失败后刷新验证码图片时出错: {e}")
                 else:
-                    self.logger.info("未检测到验证码图片")
-                    return True
+                    # 页面上未检测到验证码图片，可能当前不需要验证码，直接尝试点击登录按钮
+                    self.logger.info("未检测到验证码图片，直接尝试点击登录按钮")
+                    if self.click_login_button():
+                        return True
+                    else:
+                        self.logger.error("未检测到验证码图片但点击登录按钮失败")
+                        return False
             # 自动识别失败，提供手动输入选项
             self.logger.warning("自动验证码识别失败，请手动输入")
             try:
@@ -1185,14 +1190,10 @@ class NJUElectricMonitor:
                 self.logger.error("填写登录表单失败")
                 return False
             
-            # 5. 处理验证码
+            # 5. 处理验证码（内部负责在有/无验证码场景下点击登录按钮）
             if not self.handle_captcha():
-                self.logger.warning("验证码处理失败，但继续尝试登录")
-            
-            # 6. 点击登录按钮
-            if not self.click_login_button():
-                self.logger.error("点击登录按钮失败")
-                # return False
+                self.logger.error("验证码处理或登录过程失败")
+                return False
             
             # 7. 等待登录成功
             if not self.wait_for_login_success():
