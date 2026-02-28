@@ -1046,7 +1046,12 @@ class NJUElectricMonitor:
             
             # 9. 提取剩余电量
             remaining_electricity = self.extract_remaining_electricity()
-            
+
+            # 如果未能成功提取电量，视为本次流程失败（可能是验证码/登录异常导致未进入目标页面）
+            if remaining_electricity is None:
+                self.logger.error("提取剩余电量失败，认为本次监控流程未成功")
+                return False
+
             # 10. 保存数据
             self.save_data(remaining_electricity)
             

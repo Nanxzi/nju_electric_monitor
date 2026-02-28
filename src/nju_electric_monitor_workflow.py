@@ -656,6 +656,20 @@ class NJUElectricMonitor:
                             self.logger.warning("验证码填写失败")
                     else:
                         self.logger.warning(f"验证码识别失败，尝试 {attempt + 1}")
+                        # 为了避免多次对同一张验证码图片重复识别，这里尝试刷新验证码图片
+                        try:
+                            elem = self.get_captcha_element()
+                            if elem is not None:
+                                self.logger.info("点击验证码图片以刷新验证码...")
+                                try:
+                                    elem.click()
+                                    time.sleep(1)
+                                except Exception as e:
+                                    self.logger.warning(f"点击验证码图片刷新失败: {e}")
+                            # 无论点击是否成功，都重新捕获一次验证码图片供下一轮使用
+                            prev_elem, captcha_img = self.capture_captcha_image()
+                        except Exception as e:
+                            self.logger.warning(f"验证码识别失败后刷新验证码图片时出错: {e}")
                 else:
                     self.logger.info("未检测到验证码图片")
                     return True
@@ -1191,7 +1205,12 @@ class NJUElectricMonitor:
             
             # 9. 提取剩余电量
             remaining_electricity = self.extract_remaining_electricity()
-            
+
+            # 如果未能成功提取电量，视为本次流程失败（可能是验证码/登录异常导致未进入目标页面）
+            if remaining_electricity is None:
+                self.logger.error("提取剩余电量失败，认为本次监控流程未成功，将交由上层重试")
+                return False
+
             # 10. 保存数据
             self.save_data(remaining_electricity)
             
