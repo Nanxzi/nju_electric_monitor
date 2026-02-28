@@ -1,6 +1,6 @@
 # OCR 模型性能测试
 
-本文件夹包含用于对比 EasyOCR 和 PaddleOCR 性能的测试脚本。
+本文件夹包含用于对比 EasyOCR 和 PaddleOCR 性能的测试脚本，并提供简单的 ddddocr 测试脚本，方便与当前主项目使用的 ddddocr 方案对比。
 
 ## 文件说明
 
@@ -62,19 +62,12 @@ python compare_models.py ../captcha_debug.png 5hMa
 
 ## 依赖安装
 
-### 基础依赖（必须）
+### 推荐方式（统一安装）
 ```bash
-pip install easyocr pillow numpy
+pip install -r requirements_ocr_benchmark.txt
 ```
 
-### 可选依赖
-```bash
-# PaddleOCR（推荐，用于对比测试）
-pip install paddleocr
-
-# OpenCV（可选，用于高级预处理）
-pip install opencv-python-headless
-```
+这会一次性安装 EasyOCR、PaddleOCR、ddddocr 以及基础图像处理依赖，方便在同一环境中对比不同 OCR 引擎。
 
 ## 性能指标说明
 

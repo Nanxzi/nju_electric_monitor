@@ -11,7 +11,7 @@
 ## 🌟功能特性
 
 - 自动登录南京大学电费充值系统
-- 自动识别验证码（使用OCR）
+- 自动识别验证码（使用 ddddocr OCR）
 - 提取剩余电量信息
 - 支持无头模式运行
 - 数据保存为JSON和CSV格式
@@ -45,7 +45,7 @@ config_workflow.json部分参数：
 
 ### 环境要求（本地运行）
 
-- Python 3.7+
+- Python 3.9+（推荐 3.11，与 Github Actions 一致）
 - Chrome浏览器
 - ChromeDriver（已包含在chromedriver-win64目录中）
 
@@ -200,7 +200,7 @@ python src/web_panel.py
 
 1. 运行 `python tests/test_environment.py` 检查环境配置
 2. 确保所有依赖正确安装：`pip install -r requirements.txt`
-3. 检查Python版本是否满足要求（>= 3.7）
+3. 检查Python版本是否满足要求（建议 >= 3.9，推荐 3.11）
 
 ### ChromeDriver问题
 
@@ -215,7 +215,7 @@ python src/web_panel.py
 如果验证码识别失败：
 
 1. 检查网络连接
-2. 确保OCR模型已正确下载
+2. 确保 ddddocr 安装成功（`pip install -r requirements.txt` 会自动安装）
 3. 尝试手动输入验证码
 4. 运行 `python tests/test_captcha_recognition.py` 测试识别效果
 5. 调整配置文件中的 `captcha_confidence_threshold` 参数

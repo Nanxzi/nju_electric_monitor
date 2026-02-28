@@ -165,8 +165,9 @@ try:
         import contextlib
         with contextlib.redirect_stdout(lf), contextlib.redirect_stderr(lf):
             # 延迟导入主模块，便于捕获导入阶段的错误
+            # 这里通过脚本所在目录(src)直接导入同级模块
             try:
-                from nju_electric_monitor.src.nju_electric_monitor_workflow import main
+                from nju_electric_monitor_workflow import main
             except Exception as e:
                 lf.write('Import main failed:\n')
                 traceback.print_exc(file=lf)
