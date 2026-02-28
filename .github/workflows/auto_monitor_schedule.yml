@@ -36,7 +36,8 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.x'
+        # 固定为 3.11，确保 ddddocr==1.4.11 有可用轮子
+        python-version: '3.11'
 
     - name: Install system deps (Chromium + ChromeDriver + fonts + tesseract)
       run: |
