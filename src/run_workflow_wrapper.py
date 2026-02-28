@@ -166,7 +166,7 @@ try:
         with contextlib.redirect_stdout(lf), contextlib.redirect_stderr(lf):
             # 延迟导入主模块，便于捕获导入阶段的错误
             try:
-                from nju_electric_monitor.src._nju_electric_monitor_workflow import main
+                from nju_electric_monitor.src.nju_electric_monitor_workflow import main
             except Exception as e:
                 lf.write('Import main failed:\n')
                 traceback.print_exc(file=lf)
