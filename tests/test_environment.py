@@ -71,9 +71,7 @@ def check_version(pkg, op, required_version, display_name):
         return False
 
 def main():
-    # 允许通过命令行参数指定 requirements 文件；否则：
-    # 若存在 requirements_workflow.txt，则优先检查 workflow 依赖；
-    # 否则退回到默认的 requirements.txt。
+    # 允许通过命令行参数指定 requirements 文件；否则，默认使用项目根目录下的 requirements.txt。
     if len(sys.argv) > 1:
         req_arg = Path(sys.argv[1])
         if not req_arg.is_absolute():
@@ -81,12 +79,7 @@ def main():
         else:
             req_path = req_arg
     else:
-        workflow_req = ROOT_DIR / "requirements_workflow.txt"
-        default_req = ROOT_DIR / "requirements.txt"
-        if workflow_req.exists():
-            req_path = workflow_req
-        else:
-            req_path = default_req
+        req_path = ROOT_DIR / "requirements.txt"
 
     if not req_path.exists():
         print(f"[错误] 找不到依赖文件: {req_path}")

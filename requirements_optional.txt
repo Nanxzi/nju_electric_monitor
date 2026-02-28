@@ -1,4 +1,0 @@
-matplotlib>=3.0.0
-plotly>=5.0.0
-easyocr==1.7.0
-opencv-python-headless>=4.5.0
