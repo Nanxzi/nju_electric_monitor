@@ -166,3 +166,591 @@ Stacktrace:
 2026-02-26 11:13:56,150 - WARNING - 没有电量数据可保存
 2026-02-26 11:13:56,150 - INFO - 监控流程完成
 2026-02-26 11:13:56,162 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)': /session/4a9d8fe55e1e2932231d7b294895a8cd
+2026-02-26 11:23:08,870 - INFO - 使用本地ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2026-02-26 11:23:08,870 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-26 11:23:10,968 - INFO - OCR识别器初始化成功
+2026-02-26 11:23:10,968 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-26 11:23:10,968 - INFO - 已获取登录凭据
+2026-02-26 11:23:10,968 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-26 11:23:14,541 - INFO - 等待登录表单加载...
+2026-02-26 11:23:14,550 - INFO - 登录表单已加载
+2026-02-26 11:23:14,550 - INFO - 开始填写登录表单...
+2026-02-26 11:23:14,629 - INFO - 用户名填写完成
+2026-02-26 11:23:14,676 - INFO - 密码填写完成
+2026-02-26 11:23:14,676 - INFO - 检查是否有验证码...
+2026-02-26 11:23:14,676 - INFO - 查找验证码图片...
+2026-02-26 11:23:14,709 - INFO - 找到验证码图片，开始截图...
+2026-02-26 11:23:14,766 - INFO - 验证码图片截取成功
+2026-02-26 11:23:14,766 - INFO - 开始填写登录表单...
+2026-02-26 11:23:14,807 - INFO - 用户名填写完成
+2026-02-26 11:23:14,841 - INFO - 密码填写完成
+2026-02-26 11:23:14,842 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:14,842 - INFO - 验证码识别尝试 1/12
+2026-02-26 11:23:14,842 - INFO - 开始识别验证码...
+2026-02-26 11:23:14,926 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:14,926 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:14,999 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,061 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,240 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,300 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,393 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,393 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:15,393 - INFO - 查找验证码输入框...
+2026-02-26 11:23:15,398 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:15,398 - WARNING - 验证码填写失败
+2026-02-26 11:23:15,400 - INFO - 开始填写登录表单...
+2026-02-26 11:23:15,438 - INFO - 用户名填写完成
+2026-02-26 11:23:15,478 - INFO - 密码填写完成
+2026-02-26 11:23:15,478 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:15,478 - INFO - 验证码识别尝试 2/12
+2026-02-26 11:23:15,480 - INFO - 开始识别验证码...
+2026-02-26 11:23:15,558 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,558 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:15,628 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,690 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,846 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:15,909 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,007 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,007 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:16,007 - INFO - 查找验证码输入框...
+2026-02-26 11:23:16,012 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:16,013 - WARNING - 验证码填写失败
+2026-02-26 11:23:16,013 - INFO - 开始填写登录表单...
+2026-02-26 11:23:16,056 - INFO - 用户名填写完成
+2026-02-26 11:23:16,104 - INFO - 密码填写完成
+2026-02-26 11:23:16,105 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:16,105 - INFO - 验证码识别尝试 3/12
+2026-02-26 11:23:16,105 - INFO - 开始识别验证码...
+2026-02-26 11:23:16,187 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,187 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:16,259 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,319 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,482 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,547 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,646 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,646 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:16,646 - INFO - 查找验证码输入框...
+2026-02-26 11:23:16,651 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:16,651 - WARNING - 验证码填写失败
+2026-02-26 11:23:16,651 - INFO - 开始填写登录表单...
+2026-02-26 11:23:16,696 - INFO - 用户名填写完成
+2026-02-26 11:23:16,741 - INFO - 密码填写完成
+2026-02-26 11:23:16,742 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:16,742 - INFO - 验证码识别尝试 4/12
+2026-02-26 11:23:16,742 - INFO - 开始识别验证码...
+2026-02-26 11:23:16,827 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,827 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:16,902 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:16,969 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,126 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,185 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,279 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,279 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:17,279 - INFO - 查找验证码输入框...
+2026-02-26 11:23:17,284 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:17,284 - WARNING - 验证码填写失败
+2026-02-26 11:23:17,284 - INFO - 开始填写登录表单...
+2026-02-26 11:23:17,341 - INFO - 用户名填写完成
+2026-02-26 11:23:17,392 - INFO - 密码填写完成
+2026-02-26 11:23:17,393 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:17,393 - INFO - 验证码识别尝试 5/12
+2026-02-26 11:23:17,393 - INFO - 开始识别验证码...
+2026-02-26 11:23:17,456 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,457 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:17,525 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,585 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,742 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,802 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,896 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:17,897 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:17,897 - INFO - 查找验证码输入框...
+2026-02-26 11:23:17,902 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:17,902 - WARNING - 验证码填写失败
+2026-02-26 11:23:17,902 - INFO - 开始填写登录表单...
+2026-02-26 11:23:17,942 - INFO - 用户名填写完成
+2026-02-26 11:23:17,999 - INFO - 密码填写完成
+2026-02-26 11:23:18,001 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:18,001 - INFO - 验证码识别尝试 6/12
+2026-02-26 11:23:18,001 - INFO - 开始识别验证码...
+2026-02-26 11:23:18,067 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,067 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:18,139 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,202 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,360 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,421 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,516 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,516 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:18,516 - INFO - 查找验证码输入框...
+2026-02-26 11:23:18,521 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:18,521 - WARNING - 验证码填写失败
+2026-02-26 11:23:18,521 - INFO - 开始填写登录表单...
+2026-02-26 11:23:18,561 - INFO - 用户名填写完成
+2026-02-26 11:23:18,603 - INFO - 密码填写完成
+2026-02-26 11:23:18,604 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:18,604 - INFO - 验证码识别尝试 7/12
+2026-02-26 11:23:18,605 - INFO - 开始识别验证码...
+2026-02-26 11:23:18,671 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,671 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:18,739 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,802 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:18,959 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,020 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,111 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,111 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:19,111 - INFO - 查找验证码输入框...
+2026-02-26 11:23:19,118 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:19,118 - WARNING - 验证码填写失败
+2026-02-26 11:23:19,118 - INFO - 开始填写登录表单...
+2026-02-26 11:23:19,158 - INFO - 用户名填写完成
+2026-02-26 11:23:19,206 - INFO - 密码填写完成
+2026-02-26 11:23:19,207 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:19,207 - INFO - 验证码识别尝试 8/12
+2026-02-26 11:23:19,207 - INFO - 开始识别验证码...
+2026-02-26 11:23:19,274 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,274 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:19,343 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,403 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,560 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,620 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,712 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,712 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:19,712 - INFO - 查找验证码输入框...
+2026-02-26 11:23:19,717 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:19,717 - WARNING - 验证码填写失败
+2026-02-26 11:23:19,717 - INFO - 开始填写登录表单...
+2026-02-26 11:23:19,754 - INFO - 用户名填写完成
+2026-02-26 11:23:19,797 - INFO - 密码填写完成
+2026-02-26 11:23:19,798 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:19,798 - INFO - 验证码识别尝试 9/12
+2026-02-26 11:23:19,798 - INFO - 开始识别验证码...
+2026-02-26 11:23:19,863 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,864 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:19,932 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:19,992 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,144 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,208 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,300 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,301 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:20,301 - INFO - 查找验证码输入框...
+2026-02-26 11:23:20,305 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:20,305 - WARNING - 验证码填写失败
+2026-02-26 11:23:20,305 - INFO - 开始填写登录表单...
+2026-02-26 11:23:20,356 - INFO - 用户名填写完成
+2026-02-26 11:23:20,395 - INFO - 密码填写完成
+2026-02-26 11:23:20,397 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:20,397 - INFO - 验证码识别尝试 10/12
+2026-02-26 11:23:20,397 - INFO - 开始识别验证码...
+2026-02-26 11:23:20,461 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,461 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:20,531 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,591 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,742 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,805 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,897 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:20,897 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:20,897 - INFO - 查找验证码输入框...
+2026-02-26 11:23:20,902 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:20,902 - WARNING - 验证码填写失败
+2026-02-26 11:23:20,902 - INFO - 开始填写登录表单...
+2026-02-26 11:23:20,943 - INFO - 用户名填写完成
+2026-02-26 11:23:20,984 - INFO - 密码填写完成
+2026-02-26 11:23:20,985 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:20,985 - INFO - 验证码识别尝试 11/12
+2026-02-26 11:23:20,985 - INFO - 开始识别验证码...
+2026-02-26 11:23:21,050 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,050 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:21,119 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,179 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,334 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,396 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,489 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,489 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:21,489 - INFO - 查找验证码输入框...
+2026-02-26 11:23:21,493 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:21,493 - WARNING - 验证码填写失败
+2026-02-26 11:23:21,493 - INFO - 开始填写登录表单...
+2026-02-26 11:23:21,532 - INFO - 用户名填写完成
+2026-02-26 11:23:21,572 - INFO - 密码填写完成
+2026-02-26 11:23:21,574 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:23:21,574 - INFO - 验证码识别尝试 12/12
+2026-02-26 11:23:21,574 - INFO - 开始识别验证码...
+2026-02-26 11:23:21,651 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,651 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:23:21,722 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,782 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:21,937 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:22,000 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:22,093 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:23:22,093 - INFO - 最终验证码识别结果: Ledf (engine=easyocr_alt1, prob=0.6422183513641357)
+2026-02-26 11:23:22,093 - INFO - 查找验证码输入框...
+2026-02-26 11:23:22,098 - ERROR - 未找到验证码输入框
+2026-02-26 11:23:22,098 - WARNING - 验证码填写失败
+2026-02-26 11:23:22,098 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-26 11:28:41,508 - INFO - 使用本地ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2026-02-26 11:28:41,508 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-26 11:28:43,567 - INFO - OCR识别器初始化成功
+2026-02-26 11:28:43,567 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-26 11:28:43,567 - INFO - 已获取登录凭据
+2026-02-26 11:28:43,567 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-26 11:28:47,244 - INFO - 等待登录表单加载...
+2026-02-26 11:28:47,249 - INFO - 登录表单已加载
+2026-02-26 11:28:47,249 - INFO - 开始填写登录表单...
+2026-02-26 11:28:47,311 - INFO - 用户名填写完成
+2026-02-26 11:28:47,344 - INFO - 密码填写完成
+2026-02-26 11:28:47,344 - INFO - 检查是否有验证码...
+2026-02-26 11:28:47,344 - INFO - 查找验证码图片...
+2026-02-26 11:28:47,356 - INFO - 找到验证码图片，开始截图...
+2026-02-26 11:28:47,404 - INFO - 验证码图片截取成功
+2026-02-26 11:28:47,404 - INFO - 开始填写登录表单...
+2026-02-26 11:28:47,451 - INFO - 用户名填写完成
+2026-02-26 11:28:47,501 - INFO - 密码填写完成
+2026-02-26 11:28:47,501 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:47,501 - INFO - 验证码识别尝试 1/12
+2026-02-26 11:28:47,501 - INFO - 开始识别验证码...
+2026-02-26 11:28:47,635 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:47,636 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:47,732 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:47,807 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:47,981 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,056 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,132 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,133 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:48,133 - INFO - 查找验证码输入框...
+2026-02-26 11:28:48,141 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:48,141 - WARNING - 验证码填写失败
+2026-02-26 11:28:48,141 - INFO - 开始填写登录表单...
+2026-02-26 11:28:48,181 - INFO - 用户名填写完成
+2026-02-26 11:28:48,243 - INFO - 密码填写完成
+2026-02-26 11:28:48,245 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:48,245 - INFO - 验证码识别尝试 2/12
+2026-02-26 11:28:48,245 - INFO - 开始识别验证码...
+2026-02-26 11:28:48,371 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,373 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:48,463 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,538 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,693 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,769 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,843 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:48,843 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:48,843 - INFO - 查找验证码输入框...
+2026-02-26 11:28:48,848 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:48,848 - WARNING - 验证码填写失败
+2026-02-26 11:28:48,848 - INFO - 开始填写登录表单...
+2026-02-26 11:28:48,901 - INFO - 用户名填写完成
+2026-02-26 11:28:48,931 - INFO - 密码填写完成
+2026-02-26 11:28:48,931 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:48,931 - INFO - 验证码识别尝试 3/12
+2026-02-26 11:28:48,931 - INFO - 开始识别验证码...
+2026-02-26 11:28:49,040 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,040 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:49,132 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,206 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,360 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,436 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,510 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,510 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:49,510 - INFO - 查找验证码输入框...
+2026-02-26 11:28:49,515 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:49,515 - WARNING - 验证码填写失败
+2026-02-26 11:28:49,515 - INFO - 开始填写登录表单...
+2026-02-26 11:28:49,552 - INFO - 用户名填写完成
+2026-02-26 11:28:49,595 - INFO - 密码填写完成
+2026-02-26 11:28:49,597 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:49,597 - INFO - 验证码识别尝试 4/12
+2026-02-26 11:28:49,597 - INFO - 开始识别验证码...
+2026-02-26 11:28:49,716 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,716 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:49,809 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:49,883 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,035 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,111 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,188 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,188 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:50,188 - INFO - 查找验证码输入框...
+2026-02-26 11:28:50,193 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:50,193 - WARNING - 验证码填写失败
+2026-02-26 11:28:50,193 - INFO - 开始填写登录表单...
+2026-02-26 11:28:50,246 - INFO - 用户名填写完成
+2026-02-26 11:28:50,302 - INFO - 密码填写完成
+2026-02-26 11:28:50,303 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:50,303 - INFO - 验证码识别尝试 5/12
+2026-02-26 11:28:50,303 - INFO - 开始识别验证码...
+2026-02-26 11:28:50,414 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,416 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:50,512 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,596 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,767 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,858 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,941 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:50,941 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:50,941 - INFO - 查找验证码输入框...
+2026-02-26 11:28:50,947 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:50,947 - WARNING - 验证码填写失败
+2026-02-26 11:28:50,947 - INFO - 开始填写登录表单...
+2026-02-26 11:28:50,991 - INFO - 用户名填写完成
+2026-02-26 11:28:51,041 - INFO - 密码填写完成
+2026-02-26 11:28:51,041 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:51,041 - INFO - 验证码识别尝试 6/12
+2026-02-26 11:28:51,041 - INFO - 开始识别验证码...
+2026-02-26 11:28:51,169 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:51,169 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:51,262 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:51,337 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:51,490 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:51,566 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:51,644 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:51,646 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:51,646 - INFO - 查找验证码输入框...
+2026-02-26 11:28:51,650 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:51,650 - WARNING - 验证码填写失败
+2026-02-26 11:28:51,650 - INFO - 开始填写登录表单...
+2026-02-26 11:28:51,700 - INFO - 用户名填写完成
+2026-02-26 11:28:51,746 - INFO - 密码填写完成
+2026-02-26 11:28:51,746 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:51,746 - INFO - 验证码识别尝试 7/12
+2026-02-26 11:28:51,746 - INFO - 开始识别验证码...
+2026-02-26 11:28:51,866 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:51,866 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:51,964 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,041 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,199 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,277 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,357 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,357 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:52,357 - INFO - 查找验证码输入框...
+2026-02-26 11:28:52,361 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:52,361 - WARNING - 验证码填写失败
+2026-02-26 11:28:52,361 - INFO - 开始填写登录表单...
+2026-02-26 11:28:52,408 - INFO - 用户名填写完成
+2026-02-26 11:28:52,461 - INFO - 密码填写完成
+2026-02-26 11:28:52,462 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:52,462 - INFO - 验证码识别尝试 8/12
+2026-02-26 11:28:52,462 - INFO - 开始识别验证码...
+2026-02-26 11:28:52,571 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,571 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:52,662 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,737 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,892 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:52,968 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,043 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,045 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:53,045 - INFO - 查找验证码输入框...
+2026-02-26 11:28:53,050 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:53,050 - WARNING - 验证码填写失败
+2026-02-26 11:28:53,050 - INFO - 开始填写登录表单...
+2026-02-26 11:28:53,087 - INFO - 用户名填写完成
+2026-02-26 11:28:53,125 - INFO - 密码填写完成
+2026-02-26 11:28:53,125 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:53,125 - INFO - 验证码识别尝试 9/12
+2026-02-26 11:28:53,125 - INFO - 开始识别验证码...
+2026-02-26 11:28:53,234 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,235 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:53,329 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,404 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,558 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,633 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,708 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,708 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:53,708 - INFO - 查找验证码输入框...
+2026-02-26 11:28:53,713 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:53,713 - WARNING - 验证码填写失败
+2026-02-26 11:28:53,713 - INFO - 开始填写登录表单...
+2026-02-26 11:28:53,751 - INFO - 用户名填写完成
+2026-02-26 11:28:53,806 - INFO - 密码填写完成
+2026-02-26 11:28:53,807 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:53,807 - INFO - 验证码识别尝试 10/12
+2026-02-26 11:28:53,807 - INFO - 开始识别验证码...
+2026-02-26 11:28:53,918 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:53,918 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:54,009 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,088 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,243 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,320 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,397 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,397 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:54,397 - INFO - 查找验证码输入框...
+2026-02-26 11:28:54,401 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:54,402 - WARNING - 验证码填写失败
+2026-02-26 11:28:54,402 - INFO - 开始填写登录表单...
+2026-02-26 11:28:54,439 - INFO - 用户名填写完成
+2026-02-26 11:28:54,479 - INFO - 密码填写完成
+2026-02-26 11:28:54,480 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:54,480 - INFO - 验证码识别尝试 11/12
+2026-02-26 11:28:54,481 - INFO - 开始识别验证码...
+2026-02-26 11:28:54,609 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,609 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:54,702 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,778 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:54,939 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,013 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,088 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,088 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:55,088 - INFO - 查找验证码输入框...
+2026-02-26 11:28:55,092 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:55,092 - WARNING - 验证码填写失败
+2026-02-26 11:28:55,092 - INFO - 开始填写登录表单...
+2026-02-26 11:28:55,132 - INFO - 用户名填写完成
+2026-02-26 11:28:55,193 - INFO - 密码填写完成
+2026-02-26 11:28:55,193 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:28:55,193 - INFO - 验证码识别尝试 12/12
+2026-02-26 11:28:55,193 - INFO - 开始识别验证码...
+2026-02-26 11:28:55,312 - WARNING - 主图 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,312 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:28:55,405 - WARNING - alt1 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,482 - WARNING - alt2 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,639 - WARNING - alt3 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,713 - WARNING - alt4 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,791 - WARNING - alt5 pytesseract 识别失败: tesseract is not installed or it's not in your PATH. See README file for more information.
+2026-02-26 11:28:55,791 - INFO - 投票合成验证码结果: X
+2026-02-26 11:28:55,791 - INFO - 查找验证码输入框...
+2026-02-26 11:28:55,796 - ERROR - 未找到验证码输入框
+2026-02-26 11:28:55,796 - WARNING - 验证码填写失败
+2026-02-26 11:28:55,797 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-26 11:59:22,857 - INFO - 使用本地ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2026-02-26 11:59:22,857 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-26 11:59:24,962 - INFO - OCR识别器初始化成功
+2026-02-26 11:59:24,962 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-26 11:59:24,963 - INFO - 已获取登录凭据
+2026-02-26 11:59:24,963 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-26 11:59:28,368 - INFO - 等待登录表单加载...
+2026-02-26 11:59:28,374 - INFO - 登录表单已加载
+2026-02-26 11:59:28,374 - INFO - 开始填写登录表单...
+2026-02-26 11:59:28,462 - INFO - 用户名填写完成
+2026-02-26 11:59:28,507 - INFO - 密码填写完成
+2026-02-26 11:59:28,507 - INFO - 检查是否有验证码...
+2026-02-26 11:59:28,507 - INFO - 查找验证码图片...
+2026-02-26 11:59:28,522 - INFO - 找到验证码图片，开始截图...
+2026-02-26 11:59:28,564 - INFO - 验证码图片截取成功
+2026-02-26 11:59:28,564 - INFO - 开始填写登录表单...
+2026-02-26 11:59:28,631 - INFO - 用户名填写完成
+2026-02-26 11:59:28,672 - INFO - 密码填写完成
+2026-02-26 11:59:28,673 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:28,673 - INFO - 验证码识别尝试 1/12
+2026-02-26 11:59:28,673 - INFO - 开始识别验证码...
+2026-02-26 11:59:28,806 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:29,306 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:29,306 - INFO - 查找验证码输入框...
+2026-02-26 11:59:29,312 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:29,312 - WARNING - 验证码填写失败
+2026-02-26 11:59:29,313 - INFO - 开始填写登录表单...
+2026-02-26 11:59:29,376 - INFO - 用户名填写完成
+2026-02-26 11:59:29,421 - INFO - 密码填写完成
+2026-02-26 11:59:29,422 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:29,422 - INFO - 验证码识别尝试 2/12
+2026-02-26 11:59:29,423 - INFO - 开始识别验证码...
+2026-02-26 11:59:29,547 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:30,081 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:30,081 - INFO - 查找验证码输入框...
+2026-02-26 11:59:30,086 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:30,086 - WARNING - 验证码填写失败
+2026-02-26 11:59:30,086 - INFO - 开始填写登录表单...
+2026-02-26 11:59:30,131 - INFO - 用户名填写完成
+2026-02-26 11:59:30,195 - INFO - 密码填写完成
+2026-02-26 11:59:30,195 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:30,195 - INFO - 验证码识别尝试 3/12
+2026-02-26 11:59:30,195 - INFO - 开始识别验证码...
+2026-02-26 11:59:30,317 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:30,811 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:30,811 - INFO - 查找验证码输入框...
+2026-02-26 11:59:30,816 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:30,816 - WARNING - 验证码填写失败
+2026-02-26 11:59:30,818 - INFO - 开始填写登录表单...
+2026-02-26 11:59:30,859 - INFO - 用户名填写完成
+2026-02-26 11:59:30,903 - INFO - 密码填写完成
+2026-02-26 11:59:30,904 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:30,904 - INFO - 验证码识别尝试 4/12
+2026-02-26 11:59:30,904 - INFO - 开始识别验证码...
+2026-02-26 11:59:31,025 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:31,585 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:31,585 - INFO - 查找验证码输入框...
+2026-02-26 11:59:31,589 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:31,589 - WARNING - 验证码填写失败
+2026-02-26 11:59:31,589 - INFO - 开始填写登录表单...
+2026-02-26 11:59:31,631 - INFO - 用户名填写完成
+2026-02-26 11:59:31,673 - INFO - 密码填写完成
+2026-02-26 11:59:31,673 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:31,673 - INFO - 验证码识别尝试 5/12
+2026-02-26 11:59:31,673 - INFO - 开始识别验证码...
+2026-02-26 11:59:31,792 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:32,290 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:32,290 - INFO - 查找验证码输入框...
+2026-02-26 11:59:32,295 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:32,295 - WARNING - 验证码填写失败
+2026-02-26 11:59:32,295 - INFO - 开始填写登录表单...
+2026-02-26 11:59:32,335 - INFO - 用户名填写完成
+2026-02-26 11:59:32,386 - INFO - 密码填写完成
+2026-02-26 11:59:32,388 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:32,388 - INFO - 验证码识别尝试 6/12
+2026-02-26 11:59:32,388 - INFO - 开始识别验证码...
+2026-02-26 11:59:32,506 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:33,004 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:33,006 - INFO - 查找验证码输入框...
+2026-02-26 11:59:33,032 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:33,032 - WARNING - 验证码填写失败
+2026-02-26 11:59:33,032 - INFO - 开始填写登录表单...
+2026-02-26 11:59:33,074 - INFO - 用户名填写完成
+2026-02-26 11:59:33,124 - INFO - 密码填写完成
+2026-02-26 11:59:33,125 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:33,126 - INFO - 验证码识别尝试 7/12
+2026-02-26 11:59:33,126 - INFO - 开始识别验证码...
+2026-02-26 11:59:33,243 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:33,726 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:33,726 - INFO - 查找验证码输入框...
+2026-02-26 11:59:33,730 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:33,730 - WARNING - 验证码填写失败
+2026-02-26 11:59:33,730 - INFO - 开始填写登录表单...
+2026-02-26 11:59:33,770 - INFO - 用户名填写完成
+2026-02-26 11:59:33,827 - INFO - 密码填写完成
+2026-02-26 11:59:33,828 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:33,828 - INFO - 验证码识别尝试 8/12
+2026-02-26 11:59:33,828 - INFO - 开始识别验证码...
+2026-02-26 11:59:33,955 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:34,450 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:34,450 - INFO - 查找验证码输入框...
+2026-02-26 11:59:34,455 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:34,456 - WARNING - 验证码填写失败
+2026-02-26 11:59:34,456 - INFO - 开始填写登录表单...
+2026-02-26 11:59:34,494 - INFO - 用户名填写完成
+2026-02-26 11:59:34,534 - INFO - 密码填写完成
+2026-02-26 11:59:34,534 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:34,534 - INFO - 验证码识别尝试 9/12
+2026-02-26 11:59:34,534 - INFO - 开始识别验证码...
+2026-02-26 11:59:34,645 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:35,130 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:35,130 - INFO - 查找验证码输入框...
+2026-02-26 11:59:35,135 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:35,135 - WARNING - 验证码填写失败
+2026-02-26 11:59:35,135 - INFO - 开始填写登录表单...
+2026-02-26 11:59:35,196 - INFO - 用户名填写完成
+2026-02-26 11:59:35,243 - INFO - 密码填写完成
+2026-02-26 11:59:35,243 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:35,243 - INFO - 验证码识别尝试 10/12
+2026-02-26 11:59:35,244 - INFO - 开始识别验证码...
+2026-02-26 11:59:35,355 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:35,835 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:35,835 - INFO - 查找验证码输入框...
+2026-02-26 11:59:35,840 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:35,840 - WARNING - 验证码填写失败
+2026-02-26 11:59:35,841 - INFO - 开始填写登录表单...
+2026-02-26 11:59:35,896 - INFO - 用户名填写完成
+2026-02-26 11:59:35,938 - INFO - 密码填写完成
+2026-02-26 11:59:35,938 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:35,938 - INFO - 验证码识别尝试 11/12
+2026-02-26 11:59:35,938 - INFO - 开始识别验证码...
+2026-02-26 11:59:36,051 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:36,536 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:36,536 - INFO - 查找验证码输入框...
+2026-02-26 11:59:36,541 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:36,541 - WARNING - 验证码填写失败
+2026-02-26 11:59:36,541 - INFO - 开始填写登录表单...
+2026-02-26 11:59:36,582 - INFO - 用户名填写完成
+2026-02-26 11:59:36,621 - INFO - 密码填写完成
+2026-02-26 11:59:36,623 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-02-26 11:59:36,623 - INFO - 验证码识别尝试 12/12
+2026-02-26 11:59:36,623 - INFO - 开始识别验证码...
+2026-02-26 11:59:36,734 - INFO - 尝试不同的图像处理参数...
+2026-02-26 11:59:37,221 - INFO - 最终验证码识别结果: Sfrr (engine=easyocr, prob=0.05170014500617981)
+2026-02-26 11:59:37,221 - INFO - 查找验证码输入框...
+2026-02-26 11:59:37,225 - ERROR - 未找到验证码输入框
+2026-02-26 11:59:37,225 - WARNING - 验证码填写失败
+2026-02-26 11:59:37,225 - WARNING - 自动验证码识别失败，请手动输入

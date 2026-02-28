@@ -1,0 +1,7 @@
+choice,total,correct,accuracy
+median,5,2,40.0
+median_open,5,0,0.0
+median_close,5,0,0.0
+median_adapt_open,5,0,0.0
+median_pad,5,2,40.0
+8x_resize,5,0,0.0

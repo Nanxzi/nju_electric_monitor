@@ -30,7 +30,6 @@ import logging
 from PIL import Image
 import io
 import easyocr
-import pytesseract
 import getpass
 
 import pandas as pd
@@ -62,6 +61,8 @@ class NJUElectricMonitor:
         self.captcha_retry_count = self.config.get("captcha_retry_count", 5)
         self.captcha_confidence_threshold = self.config.get("captcha_confidence_threshold", 0.3)
         self.save_captcha_images = self.config.get("save_captcha_images", True)
+        # legacy binarize mode (prefer strict thresholding pipeline)
+        self.legacy_binarize = self.config.get("legacy_binarize", True)
         self.driver = None
         self.wait = None
         self.ocr_reader = None
@@ -157,9 +158,9 @@ class NJUElectricMonitor:
                 ['ch_sim', 'en'],
                 gpu=False,
                 model_storage_directory=model_dir,
-                download_enabled=False
+                download_enabled=True
             )
-            self.logger.info("OCR识别器初始化成功")
+            self.logger.info("OCR识别器初始化成功（允许自动下载最新模型）")
         except Exception as e:
             self.logger.error(f"OCR识别器初始化失败: {e}")
             if "ANTIALIAS" in str(e):
@@ -234,23 +235,23 @@ class NJUElectricMonitor:
         try:
             self.logger.info("查找验证码图片...")
             try:
-                captcha_img = self.driver.find_element(By.ID, "captchaImg")
-                if captcha_img.is_displayed():
+                captcha_elem = self.driver.find_element(By.ID, "captchaImg")
+                if captcha_elem.is_displayed():
                     self.logger.info("找到验证码图片，开始截图...")
                     # 直接截取页面元素图片
-                    img_bytes = captcha_img.screenshot_as_png
+                    img_bytes = captcha_elem.screenshot_as_png
                     img = Image.open(io.BytesIO(img_bytes))
                     self.logger.info("验证码图片截取成功")
-                    return img
+                    return captcha_elem, img
                 else:
                     self.logger.warning("验证码图片不可见")
-                    return None
+                    return None, None
             except NoSuchElementException:
                 self.logger.warning("未找到验证码图片")
-                return None
+                return None, None
         except Exception as e:
             self.logger.error(f"捕获验证码图片时出错: {e}")
-            return None
+            return None, None
     
     def recognize_captcha(self, captcha_img):
         """识别验证码"""
@@ -260,41 +261,109 @@ class NJUElectricMonitor:
             
             self.logger.info("开始识别验证码...")
             
-            # 图像预处理
-            processed_img = self.preprocess_captcha_image(captcha_img)
-            
-            # 将PIL Image转换为numpy数组
+            # 优先尝试精度较高的 median+strict 预处理（实验中表现较优）
             import numpy as np
+            try:
+                from PIL import ImageFilter, ImageEnhance
+            except Exception:
+                ImageFilter = None
+
+            def try_median_strict(img_in):
+                try:
+                    img = img_in.convert('RGB') if img_in.mode != 'RGB' else img_in
+                    try:
+                        img2 = img.resize((img.width * 3, img.height * 3), Image.Resampling.LANCZOS)
+                    except Exception:
+                        img2 = img.resize((img.width * 3, img.height * 3), Image.ANTIALIAS)
+                    # 更强的对比度以便严格阈值分割
+                    try:
+                        enhancer = ImageEnhance.Contrast(img2)
+                        img2 = enhancer.enhance(1.6)
+                    except Exception:
+                        pass
+                    gray = img2.convert('L')
+                    # 中值滤波后严格二值化
+                    if ImageFilter is not None:
+                        try:
+                            gray = gray.filter(ImageFilter.MedianFilter(size=3))
+                        except Exception:
+                            pass
+                    bw = gray.point(lambda x: 0 if x < 128 else 255, '1')
+                    bw = bw.convert('L')
+                    arr = np.array(bw)
+                    res = self.ocr_reader.readtext(arr)
+                    if res:
+                        cand = ''
+                        for (_, t, p) in res:
+                            if p is None or float(p) >= self.captcha_confidence_threshold:
+                                cand += re.sub(r'[^A-Za-z0-9]', '', t)
+                        cand = re.sub(r'[^A-Za-z0-9]', '', cand)
+                        if len(cand) == 4:
+                            self.logger.info(f"median+strict 首选识别成功: {cand}")
+                            return cand
+                except Exception as e:
+                    self.logger.debug(f"median+strict 识别失败: {e}")
+                return None
+
+            # 先尝试 median+strict
+            try_res = try_median_strict(captcha_img)
+            if try_res:
+                return try_res
+
+            # 再尝试 legacy 二值化（保留历史策略）
+            if self.legacy_binarize:
+                try:
+                    img = captcha_img.convert('RGB') if captcha_img.mode != 'RGB' else captcha_img
+                    try:
+                        img2 = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)
+                    except Exception:
+                        img2 = img.resize((img.width * 2, img.height * 2), Image.ANTIALIAS)
+                    gray = img2.convert('L')
+                    bw = gray.point(lambda x: 0 if x < 128 else 255, '1')
+                    bw = bw.convert('L')
+                    try:
+                        if ImageFilter is not None:
+                            bw = bw.filter(ImageFilter.MedianFilter(size=3))
+                    except Exception:
+                        pass
+                    arr_legacy = np.array(bw)
+                    res_legacy = self.ocr_reader.readtext(arr_legacy)
+                    if res_legacy:
+                        cand = ''
+                        for (_, t, p) in res_legacy:
+                            if p is None or float(p) >= self.captcha_confidence_threshold:
+                                cand += re.sub(r'[^A-Za-z0-9]', '', t)
+                        cand = re.sub(r'[^A-Za-z0-9]', '', cand)
+                        if len(cand) == 4:
+                            self.logger.info(f"legacy 二值化识别成功: {cand}")
+                            return cand
+                except Exception as e:
+                    self.logger.debug(f"legacy 二值化识别失败: {e}")
+
+            # 图像预处理（通用流程）
+            processed_img = self.preprocess_captcha_image(captcha_img)
             img_array = np.array(processed_img)
             # 尝试使用主图和替代图的多结果集合，并优先选择长度为4的结果
             candidates = []
 
             def collect_from_results(results, tag='easyocr'):
+                res_list = []
                 for (bbox, text, prob) in results:
                     text_clean = re.sub(r'[^A-Za-z0-9]', '', text.strip())
                     if text_clean:
-                        candidates.append({'engine': tag, 'text': text_clean, 'prob': float(prob) if prob is not None else 0.0, 'raw': text})
+                        candidates.append({'engine': tag, 'text': text_clean, 'prob': float(prob) if prob is not None else 0.0, 'raw': text, 'len': len(text_clean)})
+                        res_list.append(f"{text_clean}({len(text_clean)}字,{prob:.3f})")
+                return res_list
 
             # 主图识别
             try:
                 results = self.ocr_reader.readtext(img_array)
-                collect_from_results(results, tag='easyocr')
+                main_res = collect_from_results(results, tag='easyocr')
+                self.logger.info(f"easyocr 主图识别: {main_res if main_res else '无识别结果'}")
             except Exception as e:
                 self.logger.warning(f"主图 easyocr 识别失败: {e}")
 
-            # 使用 pytesseract 提取置信度候选
-            try:
-                from pytesseract import Output
-                data = pytesseract.image_to_data(processed_img, output_type=Output.DICT, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
-                words = [w for w in data.get('text', []) if w and w.strip()]
-                confs = [int(c) for c in data.get('conf', []) if c != '-1' and c is not None]
-                if words:
-                    t_text = re.sub(r'[^A-Za-z0-9]', '', ''.join(words))
-                    avg_conf = (sum(confs)/len(confs))/100.0 if confs else 0.5
-                    candidates.append({'engine': 'tesseract', 'text': t_text, 'prob': avg_conf, 'raw': t_text})
-                    self.logger.info(f"tesseract 结果: {t_text} (conf={avg_conf:.2f})")
-            except Exception as e:
-                self.logger.warning(f"主图 pytesseract 识别失败: {e}")
+            # (已移除 pytesseract 候选提取；仅使用 easyocr 的识别候选)
 
             # 备用图像识别
             self.logger.info("尝试不同的图像处理参数...")
@@ -303,40 +372,41 @@ class NJUElectricMonitor:
                 try:
                     alt_arr = np.array(alt_img)
                     results = self.ocr_reader.readtext(alt_arr)
-                    collect_from_results(results, tag=f'easyocr_alt{i+1}')
+                    alt_res = collect_from_results(results, tag=f'easyocr_alt{i+1}')
+                    if alt_res:
+                        self.logger.info(f"easyocr alt{i+1} 识别: {alt_res}")
                 except Exception as e:
                     self.logger.warning(f"alt{i+1} easyocr 识别失败: {e}")
-                # pytesseract for alt image
-                try:
-                    from pytesseract import Output
-                    data = pytesseract.image_to_data(alt_img, output_type=Output.DICT, config='--psm 7 --oem 3 -c tessedit_char_whitelist=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789')
-                    words = [w for w in data.get('text', []) if w and w.strip()]
-                    confs = [int(c) for c in data.get('conf', []) if c != '-1' and c is not None]
-                    if words:
-                        t_text = re.sub(r'[^A-Za-z0-9]', '', ''.join(words))
-                        avg_conf = (sum(confs)/len(confs))/100.0 if confs else 0.5
-                        candidates.append({'engine': f'tesseract_alt{i+1}', 'text': t_text, 'prob': avg_conf, 'raw': t_text})
-                        self.logger.info(f"tesseract alt{i+1} 结果: {t_text} (conf={avg_conf:.2f})")
-                except Exception as e:
-                    self.logger.warning(f"alt{i+1} pytesseract 识别失败: {e}")
 
-            # 选择最优结果：优先长度为4的候选
+            # 统计和选择最优结果
             candidates = [c for c in candidates if c.get('text')]
+            
+            # 诊断日志：打印所有候选统计
+            len_dist = {}
+            for c in candidates:
+                l = c.get('len', 0)
+                len_dist[l] = len_dist.get(l, 0) + 1
+            self.logger.info(f"识别候选统计：总数={len(candidates)}, 长度分布={dict(sorted(len_dist.items()))}")
+            
             if candidates:
-                len4 = [c for c in candidates if len(c.get('text','')) == 4]
+                len4 = [c for c in candidates if c.get('len') == 4]
                 if len4:
                     best = max(len4, key=lambda x: x.get('prob', 0.0))
-                    self.logger.info(f"最终验证码识别结果: {best['text']} (engine={best['engine']}, prob={best['prob']})")
+                    self.logger.info(f"找到 {len(len4)} 个4字候选，选择置信度最高的")
+                    self.logger.info(f"最终验证码识别结果: {best['text']} (长度={best.get('len')}, engine={best['engine']}, prob={best['prob']:.3f})")
                     return best['text']
                 else:
+                    self.logger.info(f"无4字候选，尝试字符级投票合成 (候选数={len(candidates)})")
                     voted = self.char_level_vote(candidates, target_len=4)
-                    if voted:
-                        self.logger.info(f"投票合成验证码结果: {voted}")
+                    if voted and len(voted) == 4:
+                        best_prob = max([c.get('prob', 0.0) for c in candidates])
+                        self.logger.info(f"投票合成成功: {voted}")
                         return voted
-                    # 否则取置信度最高的
-                    best = max(candidates, key=lambda x: x.get('prob', 0.0))
-                    self.logger.info(f"使用置信度最高的候选: {best['text']} (engine={best['engine']}, prob={best['prob']})")
-                    return best['text']
+                    else:
+                        # 投票失败，使用最高置信度候选
+                        best = max(candidates, key=lambda x: x.get('prob', 0.0))
+                        self.logger.warning(f"投票合成失败/结果长度不符，使用最高置信度候选: {best['text']}(长度={best.get('len')})")
+                        return best['text']
 
             self.logger.warning("所有识别方法都失败了")
             return None
@@ -346,36 +416,38 @@ class NJUElectricMonitor:
             return None
     
     def preprocess_captcha_image(self, img):
-        """预处理验证码图像"""
+        """预处理验证码图像 - 采用轻预处理策略避免过度处理导致字符失真"""
         try:
-            # 转换为RGB模式
+            # 策略：先轻度增强，避免过度二值化导致字符丢失
+            # 1. 转为 RGB 确保格式一致
             if img.mode != 'RGB':
                 img = img.convert('RGB')
             
-            # 调整图像大小 - 使用兼容的重采样方法
+            # 2. 调整大小以提升 OCR 精度（使用高质量重采样）
             try:
                 img = img.resize((img.width * 2, img.height * 2), Image.Resampling.LANCZOS)
             except AttributeError:
-                # 如果Resampling不可用，使用ANTIALIAS
                 img = img.resize((img.width * 2, img.height * 2), Image.ANTIALIAS)
             
-            # 转换为灰度图
-            gray_img = img.convert('L')
+            # 3. 对比度增强（轻度）
+            try:
+                from PIL import ImageEnhance
+                enhancer = ImageEnhance.Contrast(img)
+                img = enhancer.enhance(1.3)  # 轻度增强
+            except Exception:
+                pass
             
-            # 二值化处理
-            threshold = 128
-            binary_img = gray_img.point(lambda x: 0 if x < threshold else 255, '1')
-            
-            # 确保二值化后的图像为 uint8 类型
-            binary_img = binary_img.convert('L')
-            binary_img = binary_img.point(lambda x: 255 if x > 0 else 0, '1')
-            binary_img = binary_img.convert('L')
-            
-            # 降噪处理
-            from PIL import ImageFilter
-            denoised_img = binary_img.filter(ImageFilter.MedianFilter(size=3))
-            
-            return denoised_img
+            # 4. 尝试 OpenCV 轻量级处理（如果可用）
+            try:
+                import cv2
+                import numpy as _np
+                img_cv = _np.array(img)
+                # 轻度高斯模糊去噪
+                img_cv = cv2.GaussianBlur(img_cv, (3, 3), 0.5)
+                return Image.fromarray(img_cv)
+            except Exception:
+                # OpenCV 不可用或处理失败，直接返回增强后的图像
+                return img
             
         except Exception as e:
             self.logger.warning(f"图像预处理失败: {e}")
@@ -416,6 +488,39 @@ class NJUElectricMonitor:
             self.logger.warning(f"生成替代图像失败: {e}")
         
         return alternative_images
+
+    def get_captcha_element(self):
+        """返回验证码的 WebElement（如果存在），否则返回 None"""
+        try:
+            return self.driver.find_element(By.ID, "captchaImg")
+        except Exception:
+            return None
+
+    def wait_for_captcha_refresh(self, prev_elem, timeout=8):
+        """等待验证码元素刷新：优先等待 prev_elem 变为 stale，否则等待 src 属性变化。"""
+        try:
+            if prev_elem is None:
+                return self.get_captcha_element()
+            try:
+                # 等待旧元素变为 stale（被替换）
+                WebDriverWait(self.driver, timeout).until(EC.staleness_of(prev_elem))
+                return self.get_captcha_element()
+            except Exception:
+                # fallback: 等待 src 改变
+                try:
+                    prev_src = prev_elem.get_attribute('src')
+                    def src_changed(driver):
+                        el = self.get_captcha_element()
+                        if not el:
+                            return False
+                        new_src = el.get_attribute('src')
+                        return new_src and new_src != prev_src
+                    WebDriverWait(self.driver, timeout).until(src_changed)
+                    return self.get_captcha_element()
+                except Exception:
+                    return self.get_captcha_element()
+        except Exception:
+            return None
 
     def char_level_vote(self, candidates, target_len=4):
         """基于候选结果进行字符级加权投票，尝试合成目标长度的验证码字符串。"""
@@ -483,52 +588,102 @@ class NJUElectricMonitor:
     def handle_captcha(self):
         """处理验证码（支持多次尝试无效验证码）"""
         try:
-            self.logger.info("检查是否有验证码...")
-            captcha_img = self.capture_captcha_image()
-            max_attempts = self.captcha_retry_count
-            for attempt in range(max_attempts):
-                self.fill_login_form()
-                if captcha_img:
-                    # 保存验证码图片用于调试
-                    if self.save_captcha_images:
-                        try:
-                            captcha_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'captcha_debug.png')
-                            captcha_img.save(captcha_path)
-                            self.logger.info(f"验证码图片已保存到 {captcha_path}")
-                        except Exception as e:
-                            self.logger.warning(f"保存验证码图片失败: {e}")
-                    self.logger.info(f"验证码识别尝试 {attempt + 1}/{max_attempts}")
-                    captcha_text = self.recognize_captcha(captcha_img)
-                    if captcha_text:
-                        if self.fill_captcha(captcha_text):
-                            self.logger.info(f"验证码填写完成，点击登录按钮...")
-                            if self.click_login_button():
-                                # 检查是否出现无效验证码提示
-                                time.sleep(2)
-                                try:
-                                    error_elem = self.driver.find_element(By.ID, "msg1")
-                                    if error_elem.is_displayed() and "无效的验证码" in error_elem.text:
-                                        self.logger.warning("检测到无效的验证码提示，准备重试...")
-                                        # 重新获取验证码图片
-                                        captcha_img = self.capture_captcha_image()
-                                        continue
-                                except NoSuchElementException:
-                                    self.logger.info("未检测到无效验证码提示，验证码通过")
-                                    return True
-                                except Exception as e:
-                                    self.logger.warning(f"检测验证码错误元素时出错: {e}")
-                                    return True
-                            else:
-                                self.logger.warning("点击登录按钮失败")
-                        else:
-                            self.logger.warning("验证码填写失败")
+            self.logger.info("开始处理验证码（两层嵌套重试）...")
+            outer_max = max(1, int(self.captcha_retry_count))
+            inner_max = 3  # 同一验证码图片下的 OCR 尝试次数
+            last_captcha_img = None
+
+            for outer in range(outer_max):
+                self.logger.info(f"外层页面重试 {outer + 1}/{outer_max}")
+
+                # 外层：重新加载或刷新页面，并填写用户名密码
+                try:
+                    if outer == 0:
+                        # 假设 run() 已经打开了页面，但仍确保表单加载完毕
+                        if not self.wait_for_login_form():
+                            self.logger.warning("登录表单未就绪，尝试刷新页面")
+                            self.driver.refresh()
+                            time.sleep(2)
+                            if not self.wait_for_login_form():
+                                self.logger.warning("刷新后登录表单仍未加载，跳过本轮外层重试")
+                                continue
                     else:
-                        self.logger.warning(f"验证码识别失败，尝试 {attempt + 1}")
-                else:
-                    self.logger.info("未检测到验证码图片")
+                        # 后续外层尝试直接刷新页面
+                        try:
+                            self.driver.refresh()
+                        except Exception as e:
+                            self.logger.warning(f"刷新页面失败: {e}")
+                        time.sleep(2)
+                        if not self.wait_for_login_form():
+                            self.logger.warning("刷新后登录表单加载失败，跳过本轮外层重试")
+                            continue
+
+                    if not self.fill_login_form():
+                        self.logger.warning("填写登录表单失败，跳过本轮外层重试")
+                        continue
+                except Exception as e:
+                    self.logger.warning(f"准备登录表单时出错: {e}")
+                    continue
+
+                # 获取当前页面上的验证码图片
+                prev_elem, captcha_img = self.capture_captcha_image()
+                last_captcha_img = captcha_img
+                if not captcha_img:
+                    self.logger.info("未检测到验证码图片，可能无需验证码，视为通过")
                     return True
+
+                # 保存验证码图片用于调试（只保存当前外层的一张）
+                if self.save_captcha_images:
+                    try:
+                        captcha_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'captcha_debug.png')
+                        captcha_img.save(captcha_path)
+                        self.logger.info(f"验证码图片已保存到 {captcha_path}")
+                    except Exception as e:
+                        self.logger.warning(f"保存验证码图片失败: {e}")
+
+                # 内层：对同一张验证码图片进行多次 OCR 识别
+                for inner in range(inner_max):
+                    self.logger.info(f"验证码识别（同一图片）尝试 {inner + 1}/{inner_max}，外层 {outer + 1}/{outer_max}")
+                    captcha_text = self.recognize_captcha(captcha_img)
+
+                    if not captcha_text:
+                        self.logger.info("本次识别无有效结果，继续内层尝试")
+                        continue
+
+                    if len(captcha_text) != 4:
+                        self.logger.info(f"识别结果长度不是4（'{captcha_text}'，len={len(captcha_text)}），忽略本次结果")
+                        continue
+
+                    # 仅当结果为4个字符时，才填写并尝试登录
+                    if not self.fill_captcha(captcha_text):
+                        self.logger.warning("验证码填写失败，结束当前外层重试，准备重新加载页面")
+                        break
+
+                    self.logger.info("验证码填写完成，点击登录按钮...")
+                    if not self.click_login_button():
+                        self.logger.warning("点击登录按钮失败，结束当前外层重试，准备重新加载页面")
+                        break
+
+                    # 登录按钮已点击，检查是否存在无效验证码提示
+                    time.sleep(2)
+                    try:
+                        error_elem = self.driver.find_element(By.ID, "msg1")
+                        if error_elem.is_displayed() and "无效的验证码" in error_elem.text:
+                            self.logger.warning("检测到无效的验证码提示，将重新加载页面获取新验证码")
+                            break  # 结束当前外层，进入下一轮 outer
+                    except NoSuchElementException:
+                        self.logger.info("未检测到无效验证码提示，验证码通过")
+                        return True
+                    except Exception as e:
+                        self.logger.warning(f"检测验证码错误元素时出错: {e}")
+                        return True
+
+                # 内层循环结束仍未成功登录，则继续下一轮外层重试（刷新页面并获取新的验证码）
+
             # 自动识别失败，提供手动输入选项
             self.logger.warning("自动验证码识别失败，请手动输入")
+            captcha_img = last_captcha_img
+            # 自动识别失败，提供手动输入选项
             try:
                 if not self.headless_mode and captcha_img:
                     captcha_img.show()
