@@ -1,0 +1,754 @@
+2026-02-28 07:23:01,891 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-02-28 07:23:03,767 - INFO - 使用 ChromeDriver: /usr/bin/chromedriver
+2026-02-28 07:23:03,767 - WARNING - Using CPU. Note: This module is much faster with a GPU.
+2026-02-28 07:23:05,305 - INFO - OCR识别器初始化成功
+2026-02-28 07:23:05,305 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-02-28 07:23:05,305 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-02-28 07:23:13,786 - INFO - 等待登录表单加载...
+2026-02-28 07:23:13,796 - INFO - 登录表单已加载
+2026-02-28 07:23:13,796 - INFO - 开始填写登录表单...
+2026-02-28 07:23:13,905 - INFO - 用户名填写完成
+2026-02-28 07:23:13,969 - INFO - 密码填写完成
+2026-02-28 07:23:13,969 - INFO - 检查是否有验证码...
+2026-02-28 07:23:13,969 - INFO - 查找验证码图片...
+2026-02-28 07:23:13,989 - INFO - 找到验证码图片，开始截图...
+2026-02-28 07:23:14,076 - INFO - 验证码图片截取成功
+2026-02-28 07:23:14,076 - INFO - 开始填写登录表单...
+2026-02-28 07:23:14,136 - INFO - 用户名填写完成
+2026-02-28 07:23:14,195 - INFO - 密码填写完成
+2026-02-28 07:23:14,195 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:14,196 - INFO - 验证码识别尝试 1/30
+2026-02-28 07:23:14,196 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:14,313 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:14,468 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:14,537 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:14,622 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:14,685 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:14,763 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:14,881 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:14,984 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:15,030 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:15,113 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:15,175 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:15,258 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:15,345 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:15,423 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:15,423 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:15,423 - INFO - 查找验证码输入框...
+2026-02-28 07:23:15,432 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:15,432 - WARNING - 验证码填写失败
+2026-02-28 07:23:15,432 - INFO - 开始填写登录表单...
+2026-02-28 07:23:15,491 - INFO - 用户名填写完成
+2026-02-28 07:23:15,547 - INFO - 密码填写完成
+2026-02-28 07:23:15,548 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:15,548 - INFO - 验证码识别尝试 2/30
+2026-02-28 07:23:15,548 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:15,649 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:15,727 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:15,787 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:15,871 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:15,932 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:16,010 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:16,126 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:16,215 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:16,265 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:16,344 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:16,407 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:16,490 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:16,573 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:16,654 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:16,654 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:16,654 - INFO - 查找验证码输入框...
+2026-02-28 07:23:16,661 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:16,661 - WARNING - 验证码填写失败
+2026-02-28 07:23:16,661 - INFO - 开始填写登录表单...
+2026-02-28 07:23:16,717 - INFO - 用户名填写完成
+2026-02-28 07:23:16,774 - INFO - 密码填写完成
+2026-02-28 07:23:16,775 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:16,775 - INFO - 验证码识别尝试 3/30
+2026-02-28 07:23:16,775 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:16,858 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:16,937 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:16,995 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:17,078 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:17,137 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:17,217 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:17,321 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:17,412 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:17,456 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:17,537 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:17,596 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:17,677 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:17,761 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:17,842 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:17,842 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:17,842 - INFO - 查找验证码输入框...
+2026-02-28 07:23:17,848 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:17,848 - WARNING - 验证码填写失败
+2026-02-28 07:23:17,848 - INFO - 开始填写登录表单...
+2026-02-28 07:23:17,906 - INFO - 用户名填写完成
+2026-02-28 07:23:17,968 - INFO - 密码填写完成
+2026-02-28 07:23:17,969 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:17,969 - INFO - 验证码识别尝试 4/30
+2026-02-28 07:23:17,969 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:18,065 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:18,147 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:18,206 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:18,290 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:18,349 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:18,431 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:18,534 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:18,624 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:18,665 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:18,745 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:18,805 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:18,887 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:18,970 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:19,050 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:19,050 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:19,050 - INFO - 查找验证码输入框...
+2026-02-28 07:23:19,056 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:19,056 - WARNING - 验证码填写失败
+2026-02-28 07:23:19,056 - INFO - 开始填写登录表单...
+2026-02-28 07:23:19,114 - INFO - 用户名填写完成
+2026-02-28 07:23:19,172 - INFO - 密码填写完成
+2026-02-28 07:23:19,173 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:19,173 - INFO - 验证码识别尝试 5/30
+2026-02-28 07:23:19,173 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:19,256 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:19,336 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:19,396 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:19,479 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:19,537 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:19,615 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:19,723 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:19,813 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:19,855 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:19,934 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:19,993 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:20,078 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:20,163 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:20,242 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:20,242 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:20,242 - INFO - 查找验证码输入框...
+2026-02-28 07:23:20,248 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:20,248 - WARNING - 验证码填写失败
+2026-02-28 07:23:20,248 - INFO - 开始填写登录表单...
+2026-02-28 07:23:20,305 - INFO - 用户名填写完成
+2026-02-28 07:23:20,362 - INFO - 密码填写完成
+2026-02-28 07:23:20,363 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:20,363 - INFO - 验证码识别尝试 6/30
+2026-02-28 07:23:20,363 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:20,447 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:20,526 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:20,587 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:20,671 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:20,732 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:20,811 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:20,918 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:21,008 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:21,052 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:21,130 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:21,191 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:21,275 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:21,373 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:21,454 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:21,455 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:21,455 - INFO - 查找验证码输入框...
+2026-02-28 07:23:21,461 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:21,461 - WARNING - 验证码填写失败
+2026-02-28 07:23:21,461 - INFO - 开始填写登录表单...
+2026-02-28 07:23:21,517 - INFO - 用户名填写完成
+2026-02-28 07:23:21,574 - INFO - 密码填写完成
+2026-02-28 07:23:21,575 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:21,575 - INFO - 验证码识别尝试 7/30
+2026-02-28 07:23:21,575 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:21,660 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:21,737 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:21,797 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:21,880 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:21,938 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:22,016 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:22,123 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:22,213 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:22,265 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:22,345 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:22,405 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:22,488 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:22,578 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:22,682 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:22,682 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:22,682 - INFO - 查找验证码输入框...
+2026-02-28 07:23:22,689 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:22,689 - WARNING - 验证码填写失败
+2026-02-28 07:23:22,689 - INFO - 开始填写登录表单...
+2026-02-28 07:23:22,746 - INFO - 用户名填写完成
+2026-02-28 07:23:22,807 - INFO - 密码填写完成
+2026-02-28 07:23:22,808 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:22,808 - INFO - 验证码识别尝试 8/30
+2026-02-28 07:23:22,808 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:22,903 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:22,984 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:23,045 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:23,129 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:23,189 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:23,268 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:23,376 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:23,466 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:23,510 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:23,589 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:23,668 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:23,755 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:23,841 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:23,924 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:23,925 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:23,925 - INFO - 查找验证码输入框...
+2026-02-28 07:23:23,931 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:23,931 - WARNING - 验证码填写失败
+2026-02-28 07:23:23,931 - INFO - 开始填写登录表单...
+2026-02-28 07:23:23,988 - INFO - 用户名填写完成
+2026-02-28 07:23:24,046 - INFO - 密码填写完成
+2026-02-28 07:23:24,046 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:24,047 - INFO - 验证码识别尝试 9/30
+2026-02-28 07:23:24,047 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:24,150 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:24,232 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:24,293 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:24,380 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:24,440 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:24,520 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:24,634 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:24,726 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:24,770 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:24,853 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:24,918 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:25,010 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:25,099 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:25,181 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:25,182 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:25,182 - INFO - 查找验证码输入框...
+2026-02-28 07:23:25,188 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:25,188 - WARNING - 验证码填写失败
+2026-02-28 07:23:25,188 - INFO - 开始填写登录表单...
+2026-02-28 07:23:25,245 - INFO - 用户名填写完成
+2026-02-28 07:23:25,303 - INFO - 密码填写完成
+2026-02-28 07:23:25,451 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:25,451 - INFO - 验证码识别尝试 10/30
+2026-02-28 07:23:25,451 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:25,547 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:25,627 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:25,691 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:25,775 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:25,837 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:25,915 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:26,023 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:26,113 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:26,156 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:26,237 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:26,296 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:26,383 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:26,467 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:26,548 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:26,548 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:26,548 - INFO - 查找验证码输入框...
+2026-02-28 07:23:26,555 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:26,555 - WARNING - 验证码填写失败
+2026-02-28 07:23:26,555 - INFO - 开始填写登录表单...
+2026-02-28 07:23:26,613 - INFO - 用户名填写完成
+2026-02-28 07:23:26,670 - INFO - 密码填写完成
+2026-02-28 07:23:26,671 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:26,671 - INFO - 验证码识别尝试 11/30
+2026-02-28 07:23:26,671 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:26,760 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:26,842 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:26,905 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:26,990 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:27,050 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:27,132 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:27,238 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:27,327 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:27,371 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:27,452 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:27,521 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:27,603 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:27,692 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:27,771 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:27,771 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:27,771 - INFO - 查找验证码输入框...
+2026-02-28 07:23:27,777 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:27,777 - WARNING - 验证码填写失败
+2026-02-28 07:23:27,777 - INFO - 开始填写登录表单...
+2026-02-28 07:23:27,834 - INFO - 用户名填写完成
+2026-02-28 07:23:27,892 - INFO - 密码填写完成
+2026-02-28 07:23:27,893 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:27,893 - INFO - 验证码识别尝试 12/30
+2026-02-28 07:23:27,893 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:27,981 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:28,064 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:28,127 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:28,216 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:28,274 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:28,355 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:28,475 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:28,563 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:28,606 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:28,687 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:28,748 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:28,832 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:28,918 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:28,995 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:28,996 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:28,996 - INFO - 查找验证码输入框...
+2026-02-28 07:23:29,002 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:29,003 - WARNING - 验证码填写失败
+2026-02-28 07:23:29,003 - INFO - 开始填写登录表单...
+2026-02-28 07:23:29,060 - INFO - 用户名填写完成
+2026-02-28 07:23:29,119 - INFO - 密码填写完成
+2026-02-28 07:23:29,120 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:29,120 - INFO - 验证码识别尝试 13/30
+2026-02-28 07:23:29,120 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:29,205 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:29,283 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:29,342 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:29,427 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:29,486 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:29,568 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:29,679 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:29,771 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:29,817 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:29,899 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:29,960 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:30,043 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:30,134 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:30,214 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:30,215 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:30,215 - INFO - 查找验证码输入框...
+2026-02-28 07:23:30,221 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:30,221 - WARNING - 验证码填写失败
+2026-02-28 07:23:30,221 - INFO - 开始填写登录表单...
+2026-02-28 07:23:30,279 - INFO - 用户名填写完成
+2026-02-28 07:23:30,337 - INFO - 密码填写完成
+2026-02-28 07:23:30,337 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:30,337 - INFO - 验证码识别尝试 14/30
+2026-02-28 07:23:30,337 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:30,424 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:30,503 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:30,572 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:30,655 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:30,720 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:30,798 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:30,909 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:31,000 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:31,047 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:31,129 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:31,191 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:31,278 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:31,366 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:31,448 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:31,448 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:31,448 - INFO - 查找验证码输入框...
+2026-02-28 07:23:31,455 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:31,455 - WARNING - 验证码填写失败
+2026-02-28 07:23:31,455 - INFO - 开始填写登录表单...
+2026-02-28 07:23:31,513 - INFO - 用户名填写完成
+2026-02-28 07:23:31,570 - INFO - 密码填写完成
+2026-02-28 07:23:31,571 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:31,571 - INFO - 验证码识别尝试 15/30
+2026-02-28 07:23:31,571 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:31,655 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:31,734 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:31,795 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:31,877 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:31,937 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:32,015 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:32,123 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:32,213 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:32,256 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:32,337 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:32,394 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:32,475 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:32,561 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:32,639 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:32,639 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:32,639 - INFO - 查找验证码输入框...
+2026-02-28 07:23:32,646 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:32,646 - WARNING - 验证码填写失败
+2026-02-28 07:23:32,646 - INFO - 开始填写登录表单...
+2026-02-28 07:23:32,701 - INFO - 用户名填写完成
+2026-02-28 07:23:32,763 - INFO - 密码填写完成
+2026-02-28 07:23:32,763 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:32,763 - INFO - 验证码识别尝试 16/30
+2026-02-28 07:23:32,763 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:32,866 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:32,947 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:33,008 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:33,092 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:33,159 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:33,239 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:33,344 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:33,432 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:33,475 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:33,556 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:33,617 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:33,715 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:33,800 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:33,881 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:33,881 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:33,882 - INFO - 查找验证码输入框...
+2026-02-28 07:23:33,888 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:33,888 - WARNING - 验证码填写失败
+2026-02-28 07:23:33,888 - INFO - 开始填写登录表单...
+2026-02-28 07:23:33,945 - INFO - 用户名填写完成
+2026-02-28 07:23:34,002 - INFO - 密码填写完成
+2026-02-28 07:23:34,003 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:34,003 - INFO - 验证码识别尝试 17/30
+2026-02-28 07:23:34,003 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:34,090 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:34,170 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:34,231 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:34,316 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:34,375 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:34,455 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:34,560 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:34,652 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:34,697 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:34,779 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:34,842 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:34,926 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:35,012 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:35,091 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:35,091 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:35,091 - INFO - 查找验证码输入框...
+2026-02-28 07:23:35,098 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:35,098 - WARNING - 验证码填写失败
+2026-02-28 07:23:35,098 - INFO - 开始填写登录表单...
+2026-02-28 07:23:35,155 - INFO - 用户名填写完成
+2026-02-28 07:23:35,211 - INFO - 密码填写完成
+2026-02-28 07:23:35,212 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:35,212 - INFO - 验证码识别尝试 18/30
+2026-02-28 07:23:35,212 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:35,297 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:35,378 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:35,446 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:35,529 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:35,592 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:35,671 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:35,778 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:35,867 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:35,922 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:36,003 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:36,065 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:36,148 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:36,233 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:36,315 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:36,315 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:36,315 - INFO - 查找验证码输入框...
+2026-02-28 07:23:36,321 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:36,321 - WARNING - 验证码填写失败
+2026-02-28 07:23:36,321 - INFO - 开始填写登录表单...
+2026-02-28 07:23:36,378 - INFO - 用户名填写完成
+2026-02-28 07:23:36,436 - INFO - 密码填写完成
+2026-02-28 07:23:36,437 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:36,437 - INFO - 验证码识别尝试 19/30
+2026-02-28 07:23:36,437 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:36,527 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:36,606 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:36,666 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:36,750 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:36,811 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:36,892 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:36,998 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:37,092 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:37,136 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:37,216 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:37,276 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:37,361 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:37,448 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:37,532 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:37,532 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:37,532 - INFO - 查找验证码输入框...
+2026-02-28 07:23:37,538 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:37,538 - WARNING - 验证码填写失败
+2026-02-28 07:23:37,538 - INFO - 开始填写登录表单...
+2026-02-28 07:23:37,595 - INFO - 用户名填写完成
+2026-02-28 07:23:37,653 - INFO - 密码填写完成
+2026-02-28 07:23:37,654 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:37,654 - INFO - 验证码识别尝试 20/30
+2026-02-28 07:23:37,654 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:37,737 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:37,818 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:37,880 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:37,964 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:38,025 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:38,104 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:38,217 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:38,306 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:38,350 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:38,429 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:38,491 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:38,575 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:38,664 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:38,742 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:38,742 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:38,742 - INFO - 查找验证码输入框...
+2026-02-28 07:23:38,749 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:38,749 - WARNING - 验证码填写失败
+2026-02-28 07:23:38,749 - INFO - 开始填写登录表单...
+2026-02-28 07:23:38,808 - INFO - 用户名填写完成
+2026-02-28 07:23:38,865 - INFO - 密码填写完成
+2026-02-28 07:23:38,865 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:38,866 - INFO - 验证码识别尝试 21/30
+2026-02-28 07:23:38,866 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:38,953 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:39,032 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:39,092 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:39,174 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:39,235 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:39,313 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:39,423 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:39,512 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:39,554 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:39,633 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:39,691 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:39,772 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:39,870 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:39,949 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:39,949 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:39,949 - INFO - 查找验证码输入框...
+2026-02-28 07:23:39,955 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:39,955 - WARNING - 验证码填写失败
+2026-02-28 07:23:39,955 - INFO - 开始填写登录表单...
+2026-02-28 07:23:40,015 - INFO - 用户名填写完成
+2026-02-28 07:23:40,073 - INFO - 密码填写完成
+2026-02-28 07:23:40,074 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:40,074 - INFO - 验证码识别尝试 22/30
+2026-02-28 07:23:40,074 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:40,175 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:40,256 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:40,317 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:40,401 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:40,462 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:40,542 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:40,647 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:40,736 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:40,779 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:40,860 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:40,921 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:41,005 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:41,091 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:41,168 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:41,168 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:41,168 - INFO - 查找验证码输入框...
+2026-02-28 07:23:41,174 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:41,174 - WARNING - 验证码填写失败
+2026-02-28 07:23:41,174 - INFO - 开始填写登录表单...
+2026-02-28 07:23:41,231 - INFO - 用户名填写完成
+2026-02-28 07:23:41,288 - INFO - 密码填写完成
+2026-02-28 07:23:41,289 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:41,289 - INFO - 验证码识别尝试 23/30
+2026-02-28 07:23:41,289 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:41,381 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:41,462 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:41,523 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:41,605 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:41,665 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:41,743 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:41,850 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:41,939 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:41,983 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:42,063 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:42,122 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:42,206 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:42,294 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:42,375 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:42,375 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:42,375 - INFO - 查找验证码输入框...
+2026-02-28 07:23:42,381 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:42,382 - WARNING - 验证码填写失败
+2026-02-28 07:23:42,382 - INFO - 开始填写登录表单...
+2026-02-28 07:23:42,440 - INFO - 用户名填写完成
+2026-02-28 07:23:42,504 - INFO - 密码填写完成
+2026-02-28 07:23:42,504 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:42,504 - INFO - 验证码识别尝试 24/30
+2026-02-28 07:23:42,504 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:42,593 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:42,673 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:42,732 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:42,816 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:42,875 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:42,954 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:43,067 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:43,157 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:43,200 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:43,279 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:43,341 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:43,425 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:43,517 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:43,606 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:43,606 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:43,607 - INFO - 查找验证码输入框...
+2026-02-28 07:23:43,614 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:43,614 - WARNING - 验证码填写失败
+2026-02-28 07:23:43,614 - INFO - 开始填写登录表单...
+2026-02-28 07:23:43,693 - INFO - 用户名填写完成
+2026-02-28 07:23:43,750 - INFO - 密码填写完成
+2026-02-28 07:23:43,751 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:43,751 - INFO - 验证码识别尝试 25/30
+2026-02-28 07:23:43,751 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:43,836 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:43,993 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:44,075 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:44,158 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:44,217 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:44,297 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:44,403 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:44,492 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:44,536 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:44,618 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:44,681 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:44,765 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:44,851 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:44,930 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:44,930 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:44,930 - INFO - 查找验证码输入框...
+2026-02-28 07:23:44,936 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:44,936 - WARNING - 验证码填写失败
+2026-02-28 07:23:44,936 - INFO - 开始填写登录表单...
+2026-02-28 07:23:44,993 - INFO - 用户名填写完成
+2026-02-28 07:23:45,049 - INFO - 密码填写完成
+2026-02-28 07:23:45,050 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:45,050 - INFO - 验证码识别尝试 26/30
+2026-02-28 07:23:45,050 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:45,145 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:45,227 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:45,287 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:45,371 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:45,430 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:45,508 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:45,615 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:45,715 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:45,768 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:45,847 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:45,914 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:45,997 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:46,091 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:46,172 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:46,172 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:46,172 - INFO - 查找验证码输入框...
+2026-02-28 07:23:46,178 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:46,178 - WARNING - 验证码填写失败
+2026-02-28 07:23:46,178 - INFO - 开始填写登录表单...
+2026-02-28 07:23:46,236 - INFO - 用户名填写完成
+2026-02-28 07:23:46,296 - INFO - 密码填写完成
+2026-02-28 07:23:46,296 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:46,296 - INFO - 验证码识别尝试 27/30
+2026-02-28 07:23:46,296 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:46,398 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:46,475 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:46,534 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:46,618 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:46,677 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:46,756 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:46,861 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:46,949 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:46,991 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:47,071 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:47,131 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:47,215 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:47,299 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:47,378 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:47,379 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:47,379 - INFO - 查找验证码输入框...
+2026-02-28 07:23:47,385 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:47,385 - WARNING - 验证码填写失败
+2026-02-28 07:23:47,385 - INFO - 开始填写登录表单...
+2026-02-28 07:23:47,443 - INFO - 用户名填写完成
+2026-02-28 07:23:47,504 - INFO - 密码填写完成
+2026-02-28 07:23:47,505 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:47,505 - INFO - 验证码识别尝试 28/30
+2026-02-28 07:23:47,505 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:47,588 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:47,666 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:47,728 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:47,810 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:47,869 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:47,948 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:48,053 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:48,144 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:48,187 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:48,267 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:48,327 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:48,410 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:48,494 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:48,577 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:48,578 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:48,578 - INFO - 查找验证码输入框...
+2026-02-28 07:23:48,584 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:48,584 - WARNING - 验证码填写失败
+2026-02-28 07:23:48,584 - INFO - 开始填写登录表单...
+2026-02-28 07:23:48,641 - INFO - 用户名填写完成
+2026-02-28 07:23:48,697 - INFO - 密码填写完成
+2026-02-28 07:23:48,698 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:48,698 - INFO - 验证码识别尝试 29/30
+2026-02-28 07:23:48,698 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:48,789 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:48,868 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:48,928 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:49,012 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:49,073 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:49,153 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:49,259 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:49,351 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:49,394 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:49,473 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:49,548 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:49,631 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:49,717 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:49,800 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:49,800 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:49,800 - INFO - 查找验证码输入框...
+2026-02-28 07:23:49,807 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:49,807 - WARNING - 验证码填写失败
+2026-02-28 07:23:49,807 - INFO - 开始填写登录表单...
+2026-02-28 07:23:49,863 - INFO - 用户名填写完成
+2026-02-28 07:23:49,921 - INFO - 密码填写完成
+2026-02-28 07:23:49,921 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-02-28 07:23:49,921 - INFO - 验证码识别尝试 30/30
+2026-02-28 07:23:49,921 - INFO - 开始识别验证码...（easyocr + pytesseract）
+2026-02-28 07:23:50,011 - INFO - easyocr 结果: ['F9(0.07)']
+2026-02-28 07:23:50,091 - INFO - tesseract 结果: FBiq
+2026-02-28 07:23:50,152 - INFO - easyocr alt1 结果: ['F(0.02)']
+2026-02-28 07:23:50,238 - INFO - tesseract alt1 结果: FBiq
+2026-02-28 07:23:50,298 - INFO - easyocr alt2 结果: ['F(0.00)']
+2026-02-28 07:23:50,380 - INFO - tesseract alt2 结果: FB
+2026-02-28 07:23:50,497 - INFO - easyocr alt3 结果: ['FJkq(0.13)']
+2026-02-28 07:23:50,584 - INFO - tesseract alt3 结果: FByq
+2026-02-28 07:23:50,642 - INFO - easyocr alt4 结果: ['FBKq(0.23)']
+2026-02-28 07:23:50,720 - INFO - tesseract alt4 结果: FBiq
+2026-02-28 07:23:50,779 - INFO - easyocr alt5 结果: ['F(0.00)']
+2026-02-28 07:23:50,862 - INFO - tesseract alt5 结果: FB
+2026-02-28 07:23:50,949 - INFO - easyocr alt6 结果: ['F9(0.07)']
+2026-02-28 07:23:51,029 - INFO - tesseract alt6 结果: FBiq
+2026-02-28 07:23:51,029 - INFO - 最终验证码识别结果: FBiq (engine=tesseract, prob=0.5)
+2026-02-28 07:23:51,029 - INFO - 查找验证码输入框...
+2026-02-28 07:23:51,036 - ERROR - 未找到验证码输入框
+2026-02-28 07:23:51,036 - WARNING - 验证码填写失败
+2026-02-28 07:23:51,036 - WARNING - 自动验证码识别失败，请手动输入
+2026-02-28 07:23:51,036 - ERROR - 处理验证码时出错: EOF when reading a line
+2026-02-28 07:23:51,036 - WARNING - 验证码处理失败，但继续尝试登录
+2026-02-28 07:23:51,036 - INFO - 查找并点击登录按钮...
+2026-02-28 07:23:51,044 - ERROR - 未找到登录按钮
+2026-02-28 07:23:51,045 - ERROR - 点击登录按钮失败
+2026-02-28 07:23:51,045 - INFO - 等待登录成功...
+2026-02-28 07:23:56,049 - INFO - 登录可能成功，继续下一步...
+2026-02-28 07:23:56,049 - INFO - 查找'去充值'按钮...
+2026-02-28 07:23:56,057 - ERROR - 未找到'去充值'按钮
+2026-02-28 07:23:56,057 - WARNING - 点击充值按钮失败，尝试直接提取数据
+2026-02-28 07:23:56,057 - INFO - 开始提取剩余电量信息...
+2026-02-28 07:23:56,064 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
+2026-02-28 07:23:56,073 - WARNING - 未找到电量信息元素，尝试其他方法...
+2026-02-28 07:23:56,081 - WARNING - 未找到i标签中的电量信息，尝试其他方法...
+2026-02-28 07:23:56,087 - INFO - 在页面源码中查找电量信息...
+2026-02-28 07:23:56,098 - WARNING - 未能提取到剩余电量信息
+2026-02-28 07:23:56,098 - WARNING - 没有电量数据可保存
+2026-02-28 07:23:56,098 - INFO - 监控流程完成
