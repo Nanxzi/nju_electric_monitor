@@ -36,7 +36,7 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 import logging
 from PIL import Image
 import io
-import easyocr
+import ddddocr
 import getpass
 
 import pandas as pd
@@ -200,22 +200,13 @@ class NJUElectricMonitor:
             raise
         
     def setup_ocr(self):
-        """设置OCR识别器"""
+        """设置OCR识别器（使用 ddddocr，免模型文件管理）"""
         try:
-            model_dir = os.path.join(os.path.dirname(__file__), '..', 'models', 'ocr_models')
-            self.ocr_reader = easyocr.Reader(
-                ['ch_sim', 'en'],
-                gpu=False,
-                model_storage_directory=model_dir,
-                download_enabled=True
-            )
-            self.logger.info("OCR识别器初始化成功（允许自动下载最新模型）")
+            # 使用验证码专用的 ddddocr 引擎，无需单独下载/管理模型文件
+            self.ocr_reader = ddddocr.DdddOcr(show_ad=False)
+            self.logger.info("ddddocr 识别器初始化成功")
         except Exception as e:
-            self.logger.error(f"OCR识别器初始化失败: {e}")
-            if "ANTIALIAS" in str(e):
-                self.logger.error("PIL兼容性问题，请确保Pillow版本兼容")
-            elif "CUDA" in str(e):
-                self.logger.error("GPU相关问题，尝试使用CPU模式")
+            self.logger.error(f"ddddocr 识别器初始化失败: {e}")
             raise
     
     def setup_fonts(self):
@@ -350,105 +341,58 @@ class NJUElectricMonitor:
                 return None, None
         except Exception as e:
             self.logger.error(f"捕获验证码图片时出错: {e}")
-            return None
-    
+            return None, None
+
     def recognize_captcha(self, captcha_img):
-        """识别验证码（使用 easyocr）"""
+        """识别验证码（使用 ddddocr，简化为直接整图分类）。"""
         try:
             if not captcha_img:
                 return None
 
-            self.logger.info("开始识别验证码...（easyocr）")
-            import numpy as np
-            processed_img = self.preprocess_captcha_image(captcha_img)
-            img_array = np.array(processed_img)
-
-            # 记录所有候选结果
-            candidates = []
-
-            # 方法1：easyocr 识别
-            try:
-                results = self.ocr_reader.readtext(img_array)
-                main_results = []
-                for (bbox, text, prob) in results:
-                    text_clean = re.sub(r'[^a-zA-Z0-9]', '', text.strip())
-                    if text_clean:  # 只记录非空
-                        candidates.append({
-                            'engine': 'easyocr',
-                            'text': text_clean,
-                            'prob': prob,
-                            'raw': text,
-                            'len': len(text_clean)
-                        })
-                        main_results.append(f"{text_clean}({len(text_clean)}字,{prob:.3f})")
-                self.logger.info(f"easyocr 主图识别: {main_results if main_results else '无识别结果'}")
-            except Exception as e:
-                self.logger.warning(f"easyocr 识别主图失败: {e}")
-
-            # (已移除 pytesseract 识别部分，保留 easyocr 作为主要 OCR 引擎)
-
-            # 方法2：所有备选图像分别识别
-            alternative_images = self.generate_alternative_images(captcha_img)
-            for i, alt_img in enumerate(alternative_images):
-                try:
-                    alt_img_array = np.array(alt_img)
-                    # easyocr
-                    try:
-                        results = self.ocr_reader.readtext(alt_img_array)
-                        alt_results = []
-                        for (bbox, text, prob) in results:
-                            text_clean = re.sub(r'[^a-zA-Z0-9]', '', text.strip())
-                            if text_clean:
-                                candidates.append({
-                                    'engine': f'easyocr_alt{i+1}',
-                                    'text': text_clean,
-                                    'prob': prob,
-                                    'raw': text,
-                                    'len': len(text_clean)
-                                })
-                                alt_results.append(f"{text_clean}({len(text_clean)}字,{prob:.3f})")
-                        if alt_results:
-                            self.logger.info(f"easyocr alt{i+1} 识别: {alt_results}")
-                    except Exception as e:
-                        self.logger.warning(f"easyocr 识别 alt{i+1} 失败: {e}")
-                except Exception as e:
-                    self.logger.warning(f"备选图像 alt{i+1} 识别流程失败: {e}")
-
-            # 统计和选取最优结果
-            candidates = [c for c in candidates if c.get('text')]
-            
-            # 诊断日志：打印所有候选
-            len_dist = {}
-            for c in candidates:
-                l = c.get('len', 0)
-                len_dist[l] = len_dist.get(l, 0) + 1
-            self.logger.info(f"识别候选统计：总数={len(candidates)}, 长度分布={dict(sorted(len_dist.items()))}")
-            
-            best = None
-            if candidates:
-                # 优先选取长度恰为4的候选，按置信度排序
-                len4 = [c for c in candidates if c.get('len') == 4]
-                if len4:
-                    best = max(len4, key=lambda x: x.get('prob', 0.0))
-                    self.logger.info(f"找到 {len(len4)} 个4字候选，选择置信度最高的")
-                else:
-                    # 长度为4的候选不足，尝试投票合成
-                    self.logger.info(f"无4字候选，尝试字符级投票合成 (候选数={len(candidates)})")
-                    voted = self.char_level_vote(candidates, target_len=4)
-                    if voted and len(voted) == 4:
-                        best = {'engine': 'voted', 'text': voted, 'prob': max([c.get('prob', 0.0) for c in candidates])}
-                        self.logger.info(f"投票合成成功: {voted}")
-                    else:
-                        # 投票失败，退回到最高置信度候选
-                        best = max(candidates, key=lambda x: x.get('prob', 0.0))
-                        self.logger.warning(f"投票合成失败/结果长度不符，使用最高置信度候选: {best['text']}(长度={best.get('len')})")
-            
-            if best and best['text']:
-                self.logger.info(f"最终验证码识别结果: {best['text']} (长度={best.get('len')}, engine={best['engine']}, prob={best['prob']:.3f})")
-                return best['text']
-            else:
-                self.logger.warning("所有识别方法都失败了")
+            if not self.ocr_reader:
+                self.logger.error("ddddocr 未初始化")
                 return None
+
+            self.logger.info("开始使用 ddddocr 识别验证码...")
+
+            # 将 PIL 图像编码为 PNG 字节流供 ddddocr 识别
+            buf = io.BytesIO()
+            try:
+                img_rgb = captcha_img.convert('RGB')
+            except Exception:
+                img_rgb = captcha_img
+            img_rgb.save(buf, format="PNG")
+            img_bytes = buf.getvalue()
+
+            try:
+                raw_text = self.ocr_reader.classification(img_bytes)
+            except Exception as e:
+                self.logger.error(f"ddddocr 识别出错: {e}")
+                return None
+
+            if not raw_text:
+                self.logger.warning("ddddocr 未返回任何结果")
+                return None
+
+            # 清洗并规范化结果：仅保留字母数字，统一为大写
+            text_clean = re.sub(r"[^A-Za-z0-9]", "", str(raw_text).strip())
+            text_clean = text_clean.upper()
+
+            if not text_clean:
+                self.logger.warning(f"ddddocr 结果无有效字符: raw={raw_text!r}")
+                return None
+
+            if len(text_clean) != 4:
+                self.logger.info(f"ddddocr 返回长度为 {len(text_clean)} 的结果: {text_clean!r}，尝试截取前4位")
+                if len(text_clean) >= 4:
+                    text_clean = text_clean[:4]
+                else:
+                    # 长度不足4，交由外层重试逻辑
+                    return None
+
+            self.logger.info(f"ddddocr 最终验证码识别结果: {text_clean}")
+            return text_clean
+
         except Exception as e:
             self.logger.error(f"识别验证码时出错: {e}")
             return None
@@ -621,17 +565,44 @@ class NJUElectricMonitor:
                 return False
             
             self.logger.info("查找验证码输入框...")
-            
-            # 使用精确的ID选择器
+            captcha_input = None
+
+            # 1) 首选旧版精确 ID（向后兼容）
             try:
                 captcha_input = self.driver.find_element(By.ID, "captchaResponse")
-                captcha_input.clear()
-                captcha_input.send_keys(captcha_text)
-                self.logger.info("验证码填写完成")
-                return True
             except NoSuchElementException:
-                self.logger.error("未找到验证码输入框")
+                captcha_input = None
+
+            # 2) 若找不到，使用更宽松的 XPath 规则：id/name/placeholder 中包含 "captcha" 或 "验证码"
+            if captcha_input is None:
+                try:
+                    xpath = "//input[" \
+                            "contains(translate(@id,'CAPTCHA','captcha'),'captcha') or " \
+                            "contains(translate(@name,'CAPTCHA','captcha'),'captcha') or " \
+                            "contains(@placeholder,'验证码')" \
+                            "]"
+                    candidates = self.driver.find_elements(By.XPATH, xpath)
+                    visible = [el for el in candidates if el.is_displayed() and el.is_enabled()]
+                    if visible:
+                        captcha_input = visible[0]
+                        self.logger.info(f"通过 XPath 找到 {len(visible)} 个验证码候选输入框，使用第一个。")
+                    else:
+                        if candidates:
+                            self.logger.warning(f"找到 {len(candidates)} 个疑似验证码输入框，但均不可见或不可用。")
+                except Exception as e:
+                    self.logger.warning(f"通过 XPath 查找验证码输入框时出错: {e}")
+
+            if captcha_input is None:
+                self.logger.error("未找到验证码输入框（ID 和 XPath 都未命中）")
                 return False
+
+            try:
+                captcha_input.clear()
+            except Exception:
+                pass
+            captcha_input.send_keys(captcha_text)
+            self.logger.info("验证码填写完成")
+            return True
                 
         except Exception as e:
             self.logger.error(f"填写验证码时出错: {e}")
@@ -730,20 +701,50 @@ class NJUElectricMonitor:
         """点击登录按钮"""
         try:
             self.logger.info("查找并点击登录按钮...")
-            
-            # 使用精确的CSS选择器
+            login_button = None
+
+            # 1) 优先按 id 查找（兼容 <a id="login_submit">）
             try:
-                login_button = self.driver.find_element(By.CSS_SELECTOR, "button.auth_login_btn.primary.full_width")
-                if login_button.is_displayed() and login_button.is_enabled():
-                    login_button.click()
-                    self.logger.info("已点击登录按钮")
-                    time.sleep(5)  # 等待登录处理
-                    return True
-                else:
-                    self.logger.warning("登录按钮不可见或不可点击")
-                    return False
+                btn = self.driver.find_element(By.ID, "login_submit")
+                if btn.is_displayed() and btn.is_enabled():
+                    login_button = btn
+                    self.logger.info("通过 ID=login_submit 找到登录按钮")
             except NoSuchElementException:
-                self.logger.error("未找到登录按钮")
+                pass
+
+            # 2) 若未找到，再按你提供的 XPath 规则查找第一个匹配的 <a>
+            if login_button is None:
+                try:
+                    btns = self.driver.find_elements(By.XPATH, "(//a[@id='login_submit'])[1]")
+                    if btns:
+                        btn = btns[0]
+                        if btn.is_displayed() and btn.is_enabled():
+                            login_button = btn
+                            self.logger.info("通过 XPath (//a[@id='login_submit'])[1] 找到登录按钮")
+                except Exception as e:
+                    self.logger.warning(f"通过 XPath 查找登录按钮出错: {e}")
+
+            # 3) 仍未找到则回退到旧的 CSS 选择器
+            if login_button is None:
+                try:
+                    btn = self.driver.find_element(By.CSS_SELECTOR, "button.auth_login_btn.primary.full_width")
+                    if btn.is_displayed() and btn.is_enabled():
+                        login_button = btn
+                        self.logger.info("通过旧 CSS 选择器找到登录按钮")
+                except NoSuchElementException:
+                    pass
+
+            if login_button is None:
+                self.logger.error("未找到登录按钮（ID/XPath/CSS 均未命中）")
+                return False
+
+            try:
+                login_button.click()
+                self.logger.info("已点击登录按钮")
+                time.sleep(5)  # 等待登录处理
+                return True
+            except Exception as e:
+                self.logger.error(f"点击登录按钮时发生异常: {e}")
                 return False
             
         except Exception as e:

@@ -1,428 +1,185 @@
-<html class="root-main"><head><script src="https://authserver.nju.edu.cn/authserver/njuTheme/static/common/ua-parser.min.js"></script><script src="https://authserver.nju.edu.cn/authserver/njuTheme/static/common/md5.min.js"></script></head><body>﻿
-<!-- 移动端 --><!-- PC端 --><!--校外用户登录--><!-- 二维码扫码登录 --><!-- 兼容性登录 --><!--校外用户登录--><!-- 帐号登录或动态码登录 -->
-    <meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><title>统一身份认证平台</title>
-    <script>
-        var inputUserNameTip = "\u8BF7\u8F93\u5165\u7528\u6237\u540D";
-        var inputPasswordTip = "\u8BF7\u8F93\u5165\u5BC6\u7801";
-        var inputCodeTip = "\u8BF7\u8F93\u5165\u9A8C\u8BC1\u7801";
-        var qrLoginTip = "\u626B\u7801\u767B\u5F55";
-        var qrInvalidTip = "\u4E8C\u7EF4\u7801\u5DF2\u5931\u6548\uFF0C\u70B9\u51FB\u5237\u65B0";
-
-        var inputMobileTip = "\u8BF7\u8F93\u5165\u624B\u673A\u53F7\u6216\u5B66\u53F7";
-        var inputDynamicTip = "\u8BF7\u8F93\u5165\u9A8C\u8BC1\u7801";
-        var getDynamicCodeTip = "\u83B7\u53D6\u9A8C\u8BC1\u7801";
-        var inputDynamicGetCode = "\u83B7\u53D6\u9A8C\u8BC1\u7801";
-        var excludeRegular = "\u7528\u6237\u540D\u5305\u542B\u7279\u6B8A\u5B57\u7B26";
-        //不转码，防止参数丢失
-        var service = ["https:\/\/epay.nju.edu.cn:443\/epay\/h5\/nju\/electric\/index"];
-        var type = null;
-        var jsonObject = {"pcLogoPath":null,"pcThemeColor":null,"officialUrl":null,"defaultWxQrCode":0,"wxQrCode":null,"defaultImage":0,"imageType":1,"shufflingTime":5,"shufflingStyle":2,"imageNames":["default_login.jpg"],"mobileLogoPath":null,"mobileThemeColor":null,"mobileModel":0,"mobileImages":["default_mobile_login.png"],"otherModel":0,"otherImages":["default_auth_serv_bg.png"]};
-        var reg = "[$:{}]";
-        var qrCodeLoginType = "1";
-    </script>
-    <script type="text/javascript">
-        if (service == '' || !service) {
-            service = '';//saml后缀
-        }
-        var isQrLogin = "false";
-        var isQrLoginEnabled = "true"
-        var captchaSwitch = "1";
-        var needCaptcha = "";
-        var _fidoEnabled = "false";
-        var is_dynamicLogin = "false";
-        var is_userNameLogin = "true";
-        var contextPath = "/authserver";
-        var cllt = "";
-        var _badCredentialsCount = "0";
-        var rememberMeTip = '开启后7天内无需再次登录，主动退出登录或使用浏览器无痕模式访问后，此功能失效'
-    </script>
-    <style>
-        .change-color {
-            color: #90138b !important;
+<html class="pixel-ratio-1" style="font-size: 456px;"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="_csrf" content="f8a675ed-ae01-402e-86ce-725366976e84">
+    <meta name="_csrf_header" content="X-CSRF-TOKEN">
+    <link type="image/png" href="/epay/images/nju/icon.png" rel="shortcut icon">
+    <link type="text/css" rel="stylesheet" href="/epay/css/wxpage/weui.min.css">
+    
+    <link type="text/css" rel="stylesheet" href="/epay/css/wxpage/wxpage.css">
+    <link type="text/css" rel="stylesheet" href="/epay/css/nju/reset.css">
+    <link type="text/css" rel="stylesheet" href="/epay/css/nju/charge.css">
+    <link type="text/css" rel="stylesheet" href="/epay/css/nju/magic-check.min.css">
+    <link type="text/css" rel="stylesheet" href="/epay/css/nju/modal.css">
+    
+    <script type="text/javascript" src="/epay/js/wxpage/jquery-2.1.4.js "></script>
+    <script type="text/javascript" src="/epay/js/wxpage/fastclick.js "></script>
+    <script type="text/javascript" src="/epay/js/wxpage/jquery-weui.min.js "></script>
+    <script type="text/javascript" src="/epay/js/nju/vue.min.js "></script>
+    <script type="text/javascript" src="/epay/js/nju/select2.min1.js "></script>
+    <title>电费充值</title>
+<script type="text/javascript">
+    (function (win, doc) {
+        function changeSize() {
+            doc.documentElement.style.fontSize = 100 * doc.documentElement.clientWidth / 375 + 'px';
         }
 
-        .change-bg-color {
-            background-color: #90138b !important;
-        }
+        changeSize();
+        win.addEventListener('resize', changeSize, false);
+    })(window, document);
+</script></head>
 
-        .change-bd-color {
-            border-color: #90138b !important;
-        }
-    </style>
-    <link rel="stylesheet" type="text/css" href="/authserver/njuTheme/static/css/toastr.min.css?v=20260128.142526"><link rel="stylesheet" type="text/css" href="/authserver/njuTheme/static/web/css/login.css?v=20260128.142526"><link rel="stylesheet" type="text/css" href="/authserver/njuTheme/static/web/iconfont/iconfont.css?v=20260128.142526"><link rel="stylesheet" type="text/css" href="/authserver/njuTheme/static/web/css/fido.css?v=20260128.142526"><link rel="stylesheet" type="text/css" href="/authserver/njuTheme/static/common/css/swiper.min.css?v=20260128.142526"><link rel="stylesheet" type="text/css" href="/authserver/njuTheme/customStatic/web/css/gorgeous.css?v=20260128.142526"><script type="text/javascript" src="/authserver/njuTheme/static/common/swiper.min.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/common/jquery-latest.min.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/js/plugin/toastr.min.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/common/utils.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/common/common-header.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/common/encrypt.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/web/js/fido.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/web/js/schoolCombinedLogin.js?v=20260128.142526"></script>
-    <script type="text/javascript" src="/authserver/njuTheme/static/web/js/login.js?v=20260128.142526"></script>
 
-    <style>
-        #rememberMeTipDiv:hover .bubbleTip {
-            display: block;
-        }
-
-        #myRememberMe {
-            overflow: visible !important;
-        }
-
-        .bubbleTip {
-            background-color: black;
-            color: white;
-            display: none;
-            padding: 8px 12px 8px 12px;
-            line-height: 18px;
-            text-align: left;
-            position: absolute;
-            top: -10px;
-            left: -5px;
-            font-size: 12px;
-            z-index: 100;
-            width: 300px;
-            white-space: break-spaces;
-            top: 50%;
-            transform: translate(30px, -50%);
-        }
-
-        .bubbleTip::before {
-            position: absolute;
-            content: '';
-            height: 0;
-            width: 0;
-            border-width: 1em;
-            border-style: solid;
-            border-color: transparent black transparent transparent;
-            left: -1.5em;
-            top: 0px;
-            bottom: 0px;
-            margin: auto;
-        }
-    </style>
-    <script type="text/javascript">
-        $(function () {
-            $("#myRememberMe").attr("title", "")
-        });
-    </script>
+<body>
+<div id="app"><div class="centent"><div class="top"><div class="clearfix"><span class="fl">持卡人姓名：<i>吴相民</i></span></div> <div class="clearfix"><span class="fl">校园卡余额：<i class="green">112.62元</i></span></div></div> <div class="line"></div> <div class="cont"><div class="clearfix"><span class="fl">缴费地址：<i>仙林校区 18幢 18栋第17层1702</i></span></div> <div class="clearfix"><span class="fl">剩余电量：<i>40.04度</i><em></em></span></div> <!----> <!----></div> <div class="num clearfix"><div style="display: flex; flex-wrap: wrap;"><span class="active">10元</span><span class="">20元</span><span class="">50元</span><span class="">100元</span><span class="">200元</span><span class="">自定义</span></div></div> <div class="inputbox" style="display: none;"><input type="text" placeholder="请输入充值金额" pattern="[0-9]*" maxlength="4" id="amount"></div> <div class="footer">充值</div> <div class="desc">充值时间：每天00:05-23:55</div> <div class="wapat"><div class="wapat-inner"><div class="wapat-title">错误！</div> <div class="wapat-btn-box"><div class="wapat-btn wapat-btn-ok">确定</div></div></div></div></div></div>
 
 
 
-    <div class="container-ge">
-        <div class="auth_page_wrappers">
-            <!-- 轮播图 --><div class="swiper-container swiper-main swiper-container-horizontal">
-                <div class="swiper-wrapper" style="transform: translate3d(-1898px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="2" style="width: 1898px;">
-                        <img src="/authserver/njuTheme/customStatic/web/images/back3.jpg" loading="lazy" fetchpriority="low" style="width: 100%;height: 100%"></div>
-                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 1898px;">
-                        <img src="/authserver/njuTheme/customStatic/web/images/back1.jpg" loading="lazy" fetchpriority="low" style="width: 100%;height: 100%"></div>
-                    <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 1898px;">
-                        <img src="/authserver/njuTheme/customStatic/web/images/back2.jpg" loading="lazy" fetchpriority="low" style="width: 100%;height: 100%"></div>
-                    <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 1898px;">
-                        <img src="/authserver/njuTheme/customStatic/web/images/back3.jpg" loading="lazy" fetchpriority="low" style="width: 100%;height: 100%"></div>
-                <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 1898px;">
-                        <img src="/authserver/njuTheme/customStatic/web/images/back1.jpg" loading="lazy" fetchpriority="low" style="width: 100%;height: 100%"></div></div>
-            </div>
-
-            <!-- 切换多语言 --><div class="cus_language_switch">
-                <div class="en_language cus_language_item">Eng</div>
-                <div class="ch_language cus_language_item selected_language">中文</div>
-            </div>
-            <!-- 登录框 --><div class="auth_page_body">
-                <div class="c_wrap_box">
-                    <div class="c_wrap" style="opacity: 1;">
-                        <div class="wrap-ge">
-                            <!-- <a id="qrCodeA" class="qrcodeA" style="display: none;"></a>
-                    <a id="qrCodeB" class="qrcodeB" style="display: none;"></a> --><section class="main">
-                                <div class="auth_logo">
-                                    <img src="/authserver/njuTheme/customStatic/web/images/login-logo.png" alt=""><p>统一身份认证</p>
-                                </div>
-                                <div class="tabHead">
-                                    <span id="pwdLoginSpan" title="账号登录" style="width: 304px;" class="selected_underline">
-                                        <a id="userNameLogin_a" href="javascript:void(0)" onclick="showTabHeadAndDiv('userNameLogin',1)" class="loginFont_a text_ellipsis">账号登录</a>
-                                        <!-- <div class='tabHead-underline change-bg-color'>&nbsp;</div> --></span>
-                                    
-                                    
-                                    
-                                </div>
-                                <div class="login-main login-slider">
-                                    <!--登录FORM--><div id="loginViewDiv">
-        <div>
-		<form class="loginFromClass" method="post" id="pwdFromId" action="https://authserver.nju.edu.cn/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex">
-			<div class="form">
-				<!-- 用户名密码登录 --><div class="m-account">
-					<div class="username item">
-						<span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/yonhuming.png" alt=""></span>
-						<!-- <p class="account-title pc-name lang_text_ellipsis" th:text="#{ids.loginView.username}">用户名</p> --><input id="username" name="username" type="text" class="change-input-color" onfocusout="checkUserCaptcha()" placeholder="请输入学号/工号" title="请输入学号/工号" value=""><div id="nameErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div class="password item">
-						<span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/mima.png" alt=""></span>
-						<!-- <p class="account-title pc-pass lang_text_ellipsis" th:text="#{ids.loginView.password}">密码</p> --><input id="password" name="passwordText" type="password" class="change-input-color no-auto-input" placeholder="请输入密码" title="请输入密码" maxlength="32" autocomplete="off"><input id="saltPassword" name="password" type="hidden"><a class="ge-input-eye eye-hide"></a>
-						<div id="pwdErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div class="captcha item hide" id="captchaDiv" style="display: block;">
-						<span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/yanzm.png" alt=""></span>
-						<!-- <p id="captchaTitle" class="account-title pc-captcha lang_text_ellipsis hide"
-							th:text="#{ids.mobile.password.code}">验证码</p> --><input type="text" id="captcha" name="captcha" autocomplete="off" class="change-input-color" placeholder="请输入验证码" title="请输入验证码" maxlength="10"><span class="captcha-img">
-							<img id="captchaImg" alt="验证码错误" height="30px" src="/authserver/getCaptcha.htl?1772255523966"><a class="mask-inner captcha-refresh" onclick="reloadCaptcha(true)" href="javascript:void(0);">刷新</a>
-						</span>
-						<div id="captchaErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div style="clear: both"></div>
-				</div>
-				<div class="ge-btn" style="margin-top: 2px;">
-					<div id="formErrorTip" class="form-errorTip lang_text_ellipsis" title="
-						
-						
-					" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">
-						<span id="showErrorTip" class="form-error"></span>
-						<span id="showWarnTip" class="form-warn"></span>
-					</div>
-					<div class="btn">
-						<a id="login_submit" href="javascript:void(0);" class="login-btn change-bg-color" onclick="startLogin(this)">登录</a>
-					</div>
-				</div>
-			</div>
-			<input type="hidden" id="_eventId" name="_eventId" value="submit"><input type="hidden" id="cllt" name="cllt" value="userNameLogin"><input type="hidden" id="dllt" name="dllt" value="generalLogin"><input type="hidden" id="lt" name="lt" value=""><input type="hidden" id="pwdEncryptSalt" value="X3xRuAgRu1I25hFz"><input type="hidden" id="execution" name="execution" value="27d53c85-331f-4853-a9a8-f825a99ab55f_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuS3Y5TFpNS2JjRk9RNjBXaVFIRU93dHBNOCtZa3MyR1FGR1ZxaFZ6b0ZvbEZsSlZwUzVFbm91UXhxcXgzMHlPcEFPaHIydW51Q01qcE9HZkd5VFNZcGx3U2lZMWw4Njl0ZmRLeG1SMUFSeDF5Zko2YWxyOVpYbGg0WHpxL0JFbGZ5OE5MMVhoUTllc1lSTFF3VW14bWMzR0NOeDMxUG44WGpkYWRJczBCbWdIaUtnU1dCZW9NbjA4U1ZibXZadUxlSWtwZDVCNG5CeU4rRDUxaE9MV1RRTlkwbTFWYkJGNzcrNk40QjU1bGFyNU5IY2QxRzdMRDREL1RsKy82UkJwbGVTWnhiam5aTjBhQjY0MG9vUXZUZWRoKzM5bkdpVVhlMnI3TVU0d1V4UmNqNS90RGJscmVlNENycGVlbnU2d3QrMmZSOUMvY1BvZFpCbGVXYlR5VXNpekZDaDBNUENNY2xJbE56UmNZKy81eUhEMWNpSmJzK2s0M2hxVUxYSllib2xqdXRCNjBOSEdvUkhxQU1OeWsvSVVMeFZBeWRyald3cjhId3ZvamtjaFlkNlRhSGxmTGlsQW1XckZFMW5jRmVLeHFHVU4yOENPT0N3N3RFVVhyV0lObjc3Qk9BZHdRL0lYdkcxZmNoR2FIaGNnWVBIUmRnbXRIUVd5LzE3RFhucWhQZ2d0Y1A3dVdjcEpUY1lhR2RyTDZobGhZNDBRd3QvYjNRQzNHT1hEVlZzN2ZJUnhpejgvWXB5c0NPWWxXWmdRQ2paekNQcWtUTWZpanRJNk9sVmhPSE03N1c2U2I4a0I4dWRvVGwxcEF1OVBFWm16VlRFVDhGUzBnWFpGc1dPN0V0VlNvSE9iL1UvWTVkMlVJbU1tZUhzY0RDTEJiUHpwR2o3SGRRTStuU2FHNXNGbEs5TGY3NUhPWnYrZE9LUlZTb1d4UFJsV0dDRUFBUmhaSmxUajlGUDZkakFCaGZTT2oyL25qYWZaeExTekNxTk9hZjhEUjBjZ2FjTzlEMGRQR0ZpM1pNbFQ5UVZIODBWdm5kVU5XbW82ZkRNbndQZlJCZlhrMWhoeDNxcHlaRXpqeGIvL0Zza2pibVhCbnlEZ3FRQnkwMXkxV1FzcW4wS0F3L1l1aW9adHVvdTB0K1NZUkt0eERzUkNaVUZPa054cVo2YldzeG0xenByVTkyYjdRMkdxaFVxWmluWUlnYjk1aWlHbWEvVGNFKy9hQmVZSmpzZ0NudVFzbGh3aDNVUFZ6Nlk3TWhhVE0zT1A4a2tZU2xrSlNOc05DT1ovVExxdjhBRk1xdHVkVmpaQ2RVTTBoMzN2UnBUclhseHB2ekZ4cFdwL0ZqSk14OU5BeElBclY3ZjNBSFBjdDJUK2dpamd4ei9QY0hFa2ZSKzlQTXNBRUVrWEx5UVI2T1NsNnVqS0lzQVZlZHRMc2dGR0kwLzk3Z1hzY2VsWHVWWHRVQXlGeWRTajdXbmUzSlRzSENjT0dQSktFNGZqaHFramtjVkwyWGpncy9aamxjOUhDd1htMnJKUzAvZGNLamdwdzI4RWxtMkNUbFhIWHdzcUs5ZFNZMVFHYkhNVU9menQ3NGhqdWQyZjE2bnhKajZROTBaalI5SExsRTlxcVJYSWJGUHYwY2NBWm9wZXFUejNocE5jL2pIQjIzWnpuK2FmeE1VcHdsTi9JQVluR3hMbUhSOEtaV1dNMEpQeFZ2MzBieCtoSnF1a0lVL1lLQ1l1bU1QQlZJWU9laWR4UHdLNTlxK003YUpUTUNpdkZMMHF5b2d2M3VaZkhDZFJYY09pOW81cXZjKy9SbkM1aHVpQ2xyOTRMc1BBcVZCa2VWSjcyb1p6ZTFtMFpNK1FaU3U2Y2RkRERVTDNscTJ0SjBSWWVjUkpvMERYcVQ3NXdnOTR1aGdUZXF4Ymh2OU1sU1M5MzRzZ25tbXMvVHowT3FIc01HWkhGNDBzOGwwa0Vqb2UzdldJWVJIQ3MxK284cnY0OVhneDBuekFMNGJqVWM3ZGZZNHJyeFdHckdOKy9MdGVSZU9GRHhYd1prR3p6aUVuNVg2VHNhakxHVEZMRkpPNXdpWW9vR2UvVjJIbVJkeVNTeUxZMzBBNjlDbjJrSzZYRHh0K3lIdldSU3ZjR0RUVXV5T1lhM0R0M3l1emcwN0w3SlIxczBpZ3NDRDIyL2ZvbUUySVdtYVlFSmViV05TT2VFcVQyZHhRSGlqeXhWSVdiaWRXN3FPQno1aDBwYUxuYk1FQUhsckNkVUdRZDBZSXhIN2JvSlVNVWltYTlCRFFKYWI1Q1c4Y1lrWVl1S3NEei9xdnVPbUl0NENyQml5T2pWSDByZGZpVG45TUdkMSs4UTM2dURSdi84MEVFTUtOTkx3V0RFN0l2TmJ3OEFFb3hsTU9nK1EyUU5GaG5UVkhPQWppUGRRbW5scTZLbVF6Ry93QlQ3K2RIYjRObUdFT3h5YXRoa0lvenZBL0xhenRkWUZkaUN4R01vQ3BxZE5RSTVTS2p6SE1hb1FBS0NZVGpPQzMxYkJURXFNOXNSUjJhbGNNa3FWalNvK213MU5WNW5iQ2tJeU45U1hvS3U4YzQxeENqMTVFaTdZTTdUM3YxVWpjZzBpNFNnbkhpYWNWdmxmbHRLTnFoU1B2LzhvNDJpUnp0cjlMa3ZYSHE5UGFqbW4zeUVCczFHcWZGYkRTRE1GbGh6cDV1a2I2SUhJZXppWHgrczhzT0F2SENHV3YvN1EzVkVQU2VSZzM4c1pxZHlrRVM4c05NMlpyNmFFUDI1MGVRUzJVaTRUdDBiV21ieGlvQnhEZDBSOVVWd2kvSWlHQ1grclZXcFF4WURCNVN3MWVvblZ2cXhVOXNNVGl3TWVTUUNsMHlCdE94SlNQeUhtc3VYQnEzUlFNTnozWEN6WDR1QzNjVkVSc2tmb1lNWldXZTROQ2hCUWRpODhqNExGOXBKRThsb1Uwc2VudjBWZEhNTEdMZDN1dG5TR1Ira3FDTnB5djJCdnprQ2JBNFVScU9MNEtIK0Q5SklpK0dYNHFyaDlFam9HK0d6VkVwYVQrcFNZdTZaTCszSkJycWlQQitIZ1JObWtYSXV5ektCc0RMSHFYZnZ5NklKOHhtQjBRbC9SYlVFNnZZVFpQUW1YbGhpcGNNczF4T2xET3RGYTdPTzFSeENHYS96dVgvRWxsN0xnZnJnYTN0c1hoTmFrOCtJSDUrWFRQMGxXenI5cElEYStXZXJkcGxBdy9CbVBYZ1ZVWFB4Q1pacldxa29TNlZjdE8vZFphcjg1K1lLcDl3Qm9Od3ZEcC91bUJaQlYyWDc2QUIrU084NlBGOEFFVFM0aHozZWxkYWRhUWF6eUVHeFNaRlBBaU1LdmZVc2dWWWpqdGEyaE1hYUF4dkdrK1p4QWJOdGk0U3ZPVU9hVitJVWRxcjdrSi9STDl6SEZDQmppU2psRTIvMFlpV0xuM3hldllZRXoyT0ZqVU16S3o5ZWwwdFdnUXUrYXRIS2M4bnpDczY2VGlndy9vbmRDU0IyTWZYVENkR1ZqMk1tdE4wcVkwdStQZEZNZnhEQjlNaUJPUDYwNUFDeGowTHBqMDBaYWFicy9uNlN0ZVRhVGlDdlRoS2Z4d25HYmRDYTFQOHRnVGpaUHc0cVViK1FzU0dzRFFnOE9senNvNVRPalpZK3BtbGs0MXlsSGlIV1ZmZXJYa1U1RVRVWDd4RWZrZWlvQVBiY0UzL0dTZjFaYzEzOVpHdzBDc3JNTDJTZUIxbUNyUEtZY0N0ZTgrc25qYzBvQnhOMzV1UHA1MnVSQ29TVVVMWXJYckc5ekVIaWdMaXdFK29YalEwalNLQlZTdE1WZWJ1d0N4V0FCRDUrY0RYVEVCdzA1Tld2SnhRT21McW4veElvblZ0bDFzb3BzRHJFbUUzSWdiNTRieENtQ2s4cCtaaEQxMDlicWVYVlllN29idGVCU2hYMlRqT2Zqb0VkTlZNdm9qQ2YySmo0OGUvbEdIOFRTWVJWTzNuSDQrU2Vmd2FvZDVZQmtoZG5uVlpUV2hNZFYraDFXQkpKcC80UkRPdldtMHcybnYvZ1VTdFdYNUFLdjFCV3RFRlRQenRrZWRtblNSNERSK0puaEFJNXZ5c3BaMmw3TUtJeVBPVm1GV3R5cm1oZE1VSkxxQmpKeDgzcWJ4TUQrTkVpUVgzR1kzVThqSXJ1by9Wam1tenc0dTgzenVVbHMzbFdielY1ZzFnVmh6R3ZRWUp0ejBmZnkxZndWZU9QMUQxTitlOGZVeFFJOVRNNFdLUFRNT0o0YVpsODM0OHl1SzZNQzZDYWpLZFd0WXprWnliZ0pUbDRDZi9QZGV3ZWpsRmZqSEJtSFJNUWIxbktQZUQyNHZiLzMyMlhDbzJ3YzFudGRtZnhiSVVSR1lEL2dGa3VSblVkeHdQN2ZZQjZxdXdjZjRmbHlXUUtTa1VVcmZKbU4zZmlpd3ZtZmowMU1CSWlaSFdxY3NkTmFCUXhSRUlBKzdFbnMyOXVET1ZPUExXU0cyN0JJdFhFVlR0eWNhYk8yZlNUbXNyQWtFZDRLSk9WcHVpVlQ0RS9tNk45eG1PQ3B2R1dmTndYREprU1FjOFpGc0k1N3hhZjUwRktTSW5BU0Mva0wya2Z3NDhzY0l3bDVwdTZ6b2o3aXB4WE9VT3Z2aUtVSTFIcDRsbEl0QWl3b3ZpV1VFTCtjUndYZlJraTF2dkREaVhhYk04MVFxai9ZNExRNEtpWFdBQlFjeEQrZ29wUnl5Z1RBYmxTTXNDeDhzUUNyYmlhaDU2eGtxaU9DbGF3UW9UWitZU056eWhtc0dhUVF3TEFxemRmbjkwbWNGUkh5SGkxTmtidU8wNytEOERWZXI5MWVXYUxTUG5lWjBqS2xadFdXZXgxMkR2VVQzWHhUUitqWHEyYmhSb01DS0tCN0pLQVZ0Rzk5SEdHdXhNb3dWcXE3eUxvaGJUV1JUQlV5M1kzTmdjb3VITkx2WjBQRjErbGNJTm9MandBekM0eXZ4QnFvSm92TitpaERWU2dveCtod0tpWUFyOWJjVUxHaEZ2NnhHZ2Y3N3FFVFJNRGQwVEV0TzJubUtnaXMrRklZaUptU0pEaHRGNVVNT1Z3VVlJQVJoamRGUEJvLzMzcHpjWC9XVmlxczljeFdmeGU4VlE1NEZBSlhjVE9SOFA0cnZlczRmaDMxb3RxSUFmbFo0OGlFR2ZrMUdFZnE5Y3MwVkp5VFFUUW1EUVVzMDErd0NaUXpkZzhJYSszZTIvdEVBVm5FRUlwSS9zbGEwMW9hQmN0blpzZUZCdFhOR1RoSFJnWGxxUGRkdy9GN21FU2M2UmN6cll5V3lFVXBuS1FaeXlxc2dodDM1T1crd0dpbmwyMStDQURHWHJCYVUyMVQ4bEJic1kxREhocTRZTk43S1RrRHBWeWtRb1NvQlBySTJTUnM2dGM1VnhaZzRmUUk0Qyt3QUhMdnZLVysyTmdmZ2xVTmpMMHNqdWtEa3dURnJ1MlNIM1NxZTlCck81MUdGVlRXSnIwOWVHdmlOVDhKWWxTTEp5QmpYWE8vbmM3dzl2dmx1MVpleEllSzhRZmxGRGo0MjZPZ1ZjbkczSjJlVXFlUlFEUksvQjJGWW8yUT09Lk5mZUNZTjgxYkdoQWZzQ2xWaTZHamt0TEQ3SVladnFLVXJFVlFJWi0tMUR4SDZkcDM3RTVVSDd6andrMVRMVGlyZWFmV1laZ0x3YkNYSzBVOFNfNEJR"></form>
-	</div>
-    </div>
-                                    <!-- <div class="help-inline">
-                                    <div class="help-inline-tip"></div>
-                                </div> --><div class="help" style="">
-                                        <a href="https://itsc.nju.edu.cn/tysfrz_21651/list.htm" target="_blank" class="fetch-online lang_text_ellipsis" title="在线帮助" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">在线帮助</a>
-
-                                        <!-- 帐号激活 --><a id="activationAccountId" href="https://authserver.nju.edu.cn/retrieve-password/accountActivation/index.html?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" class="activation-account lang_text_ellipsis" title="账号激活" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">账号激活</a>
-                                            <!-- <span class="split-lines"></span> --><!-- 忘记密码 --><a id="retrievePassId" href="https://authserver.nju.edu.cn/retrieve-password/retrievePassword/index.html?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" class="fo-password lang_text_ellipsis" title="忘记密码" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">忘记密码</a>
-                                        <!-- 账号解禁  --><!--                                        <th:block th:if="${_showAccountUnlockLink}">--><!--                                            <span class="split-lines"></span>--><!--                                            <a id="unlockAccountId" th:href="@{../retrieve-password/accountUnban/index.html}"--><!--                                               class="unlock-account lang_text_ellipsis" th:text="#{login.page.account.unlock.btn}"></a>--><!--                                        </th:block>--><!-- 在线帮助文档  --><!-- <th:block th:if="${_isOnlineGuideExist}">
-                                        <span class="split-lines"></span>
-                                        <a id="fetchOnlineGuider" th:href="@{/fetchOnlineGuider}" target="_blank"
-                                            class="fetch-online lang_text_ellipsis"
-                                            th:text="#{login.page.onlineGuider}"></a>
-                                    </th:block> --><!-- 自助服务中心  --><!-- <span class="split-lines"></span> --><a id="selfServiceCenter" href="https://authserver.nju.edu.cn/authserver/selfServiceCenter?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" target="_blank" class="self-service-center lang_text_ellipsis" title="自助服务中心" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">自助服务中心</a>
-                                        </div>
-                                </div>
-                            </section>
-
-                            <!-- 嵌入二维码登录 --><section class="auth-qroce" style="display: none;">
-                                <span class="qrcode_title lang_text_ellipsis" title="扫码登录" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: none;">扫码登录</span>
-                                <!-- <div class="qrcode-middle">
-                                <div th:replace="${@systemConfigUtils.getConfigTheme()+'/qrLoginPage'} :: qrLoginPage">
-                                </div>
-                            </div> --><div class="qrcode_img_tip">
-                                    <p class="qrcode_tip num-text-ellipsis-2" title="扫码登录" style="text-overflow: ellipsis; overflow: hidden; white-space: inherit; overflow-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box;">扫码登录</p>
-                                </div>
-
-                                <div class="help-inline" style="display: none;">
-                                    <div class="help-inline-tip"></div>
-                                </div>
-                            </section>
-
-                            </div>
-
-                        <div class="wrap_qr">
-                            <div class="qr_middle">
-                                <div>
-    <script type="text/javascript" src="/authserver/njuTheme/static/custom/js/qrcode.js?v=20260128.142526"></script>
-    <!--认证融合码--><div>
-        <div class="qr_scan_box">
-            <form method="post" id="qrLoginForm" action="/authserver/login?display=qrLogin&amp;service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex?display=qrLogin&amp;service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex" role="form">
-                <div id="qr_code">
-                    <div class="qr_scan_code"><img id="qr_img" src="/authserver/qrCode/getCode?uuid=QR-xrOkxBvhDGgfh2dg2pb"></div>
-                    <span class="title lang_text_ellipsis" title="手机扫码  安全登录" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: none;">手机扫码  安全登录</span>
-                </div>
-                <div id="qr_success" class="qr_success" style="display: none">
-                    <div class="qr_scan_success">
-                        <img src="/authserver/njuTheme/static/custom/images/success_qr.png"><div class="qr_success_tips_div">
-                            <span class="qr_success_tips">扫描成功</span>
-                            <span class="sub_title lang_text_ellipsis qr_success_sub_title" title="请在手机上「确认登录」" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">请在手机上「确认登录」</span>
-                        </div>
-                    </div>
-                    <div class="scan_footer lang_text_ellipsis qr_success_back" title="返回二维码" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"><a class="scan_a" href="javascript:refresh();">返回二维码</a></div>
-                </div>
-                <div id="qr_invalid" style="display: none">
-                    <div class="qr_scan_code">
-                        <img id="invalid_img" src="/authserver/qrCode/getCode?uuid=QR-xrOkxBvhDGgfh2dg2pb"><div class="qr_scan_Invalid">
-                            <img id="qr_refresh" src="/authserver/njuTheme/static/custom/images/refresh.png" onclick="refresh()"></div>
-                    </div>
-                    <span class="title lang_text_ellipsis" title="手机扫码  安全登录" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: none;">手机扫码  安全登录</span>
-                </div>
-                <input type="hidden" name="lt" id="lt" value=""><input type="hidden" name="uuid" id="uuid" value="QR-xrOkxBvhDGgfh2dg2pb"><input type="hidden" name="cllt" value="qrLogin"><input type="hidden" id="dllt" name="dllt" value="generalLogin"><input type="hidden" name="execution" value="27d53c85-331f-4853-a9a8-f825a99ab55f_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuS3Y5TFpNS2JjRk9RNjBXaVFIRU93dHBNOCtZa3MyR1FGR1ZxaFZ6b0ZvbEZsSlZwUzVFbm91UXhxcXgzMHlPcEFPaHIydW51Q01qcE9HZkd5VFNZcGx3U2lZMWw4Njl0ZmRLeG1SMUFSeDF5Zko2YWxyOVpYbGg0WHpxL0JFbGZ5OE5MMVhoUTllc1lSTFF3VW14bWMzR0NOeDMxUG44WGpkYWRJczBCbWdIaUtnU1dCZW9NbjA4U1ZibXZadUxlSWtwZDVCNG5CeU4rRDUxaE9MV1RRTlkwbTFWYkJGNzcrNk40QjU1bGFyNU5IY2QxRzdMRDREL1RsKy82UkJwbGVTWnhiam5aTjBhQjY0MG9vUXZUZWRoKzM5bkdpVVhlMnI3TVU0d1V4UmNqNS90RGJscmVlNENycGVlbnU2d3QrMmZSOUMvY1BvZFpCbGVXYlR5VXNpekZDaDBNUENNY2xJbE56UmNZKy81eUhEMWNpSmJzK2s0M2hxVUxYSllib2xqdXRCNjBOSEdvUkhxQU1OeWsvSVVMeFZBeWRyald3cjhId3ZvamtjaFlkNlRhSGxmTGlsQW1XckZFMW5jRmVLeHFHVU4yOENPT0N3N3RFVVhyV0lObjc3Qk9BZHdRL0lYdkcxZmNoR2FIaGNnWVBIUmRnbXRIUVd5LzE3RFhucWhQZ2d0Y1A3dVdjcEpUY1lhR2RyTDZobGhZNDBRd3QvYjNRQzNHT1hEVlZzN2ZJUnhpejgvWXB5c0NPWWxXWmdRQ2paekNQcWtUTWZpanRJNk9sVmhPSE03N1c2U2I4a0I4dWRvVGwxcEF1OVBFWm16VlRFVDhGUzBnWFpGc1dPN0V0VlNvSE9iL1UvWTVkMlVJbU1tZUhzY0RDTEJiUHpwR2o3SGRRTStuU2FHNXNGbEs5TGY3NUhPWnYrZE9LUlZTb1d4UFJsV0dDRUFBUmhaSmxUajlGUDZkakFCaGZTT2oyL25qYWZaeExTekNxTk9hZjhEUjBjZ2FjTzlEMGRQR0ZpM1pNbFQ5UVZIODBWdm5kVU5XbW82ZkRNbndQZlJCZlhrMWhoeDNxcHlaRXpqeGIvL0Zza2pibVhCbnlEZ3FRQnkwMXkxV1FzcW4wS0F3L1l1aW9adHVvdTB0K1NZUkt0eERzUkNaVUZPa054cVo2YldzeG0xenByVTkyYjdRMkdxaFVxWmluWUlnYjk1aWlHbWEvVGNFKy9hQmVZSmpzZ0NudVFzbGh3aDNVUFZ6Nlk3TWhhVE0zT1A4a2tZU2xrSlNOc05DT1ovVExxdjhBRk1xdHVkVmpaQ2RVTTBoMzN2UnBUclhseHB2ekZ4cFdwL0ZqSk14OU5BeElBclY3ZjNBSFBjdDJUK2dpamd4ei9QY0hFa2ZSKzlQTXNBRUVrWEx5UVI2T1NsNnVqS0lzQVZlZHRMc2dGR0kwLzk3Z1hzY2VsWHVWWHRVQXlGeWRTajdXbmUzSlRzSENjT0dQSktFNGZqaHFramtjVkwyWGpncy9aamxjOUhDd1htMnJKUzAvZGNLamdwdzI4RWxtMkNUbFhIWHdzcUs5ZFNZMVFHYkhNVU9menQ3NGhqdWQyZjE2bnhKajZROTBaalI5SExsRTlxcVJYSWJGUHYwY2NBWm9wZXFUejNocE5jL2pIQjIzWnpuK2FmeE1VcHdsTi9JQVluR3hMbUhSOEtaV1dNMEpQeFZ2MzBieCtoSnF1a0lVL1lLQ1l1bU1QQlZJWU9laWR4UHdLNTlxK003YUpUTUNpdkZMMHF5b2d2M3VaZkhDZFJYY09pOW81cXZjKy9SbkM1aHVpQ2xyOTRMc1BBcVZCa2VWSjcyb1p6ZTFtMFpNK1FaU3U2Y2RkRERVTDNscTJ0SjBSWWVjUkpvMERYcVQ3NXdnOTR1aGdUZXF4Ymh2OU1sU1M5MzRzZ25tbXMvVHowT3FIc01HWkhGNDBzOGwwa0Vqb2UzdldJWVJIQ3MxK284cnY0OVhneDBuekFMNGJqVWM3ZGZZNHJyeFdHckdOKy9MdGVSZU9GRHhYd1prR3p6aUVuNVg2VHNhakxHVEZMRkpPNXdpWW9vR2UvVjJIbVJkeVNTeUxZMzBBNjlDbjJrSzZYRHh0K3lIdldSU3ZjR0RUVXV5T1lhM0R0M3l1emcwN0w3SlIxczBpZ3NDRDIyL2ZvbUUySVdtYVlFSmViV05TT2VFcVQyZHhRSGlqeXhWSVdiaWRXN3FPQno1aDBwYUxuYk1FQUhsckNkVUdRZDBZSXhIN2JvSlVNVWltYTlCRFFKYWI1Q1c4Y1lrWVl1S3NEei9xdnVPbUl0NENyQml5T2pWSDByZGZpVG45TUdkMSs4UTM2dURSdi84MEVFTUtOTkx3V0RFN0l2TmJ3OEFFb3hsTU9nK1EyUU5GaG5UVkhPQWppUGRRbW5scTZLbVF6Ry93QlQ3K2RIYjRObUdFT3h5YXRoa0lvenZBL0xhenRkWUZkaUN4R01vQ3BxZE5RSTVTS2p6SE1hb1FBS0NZVGpPQzMxYkJURXFNOXNSUjJhbGNNa3FWalNvK213MU5WNW5iQ2tJeU45U1hvS3U4YzQxeENqMTVFaTdZTTdUM3YxVWpjZzBpNFNnbkhpYWNWdmxmbHRLTnFoU1B2LzhvNDJpUnp0cjlMa3ZYSHE5UGFqbW4zeUVCczFHcWZGYkRTRE1GbGh6cDV1a2I2SUhJZXppWHgrczhzT0F2SENHV3YvN1EzVkVQU2VSZzM4c1pxZHlrRVM4c05NMlpyNmFFUDI1MGVRUzJVaTRUdDBiV21ieGlvQnhEZDBSOVVWd2kvSWlHQ1grclZXcFF4WURCNVN3MWVvblZ2cXhVOXNNVGl3TWVTUUNsMHlCdE94SlNQeUhtc3VYQnEzUlFNTnozWEN6WDR1QzNjVkVSc2tmb1lNWldXZTROQ2hCUWRpODhqNExGOXBKRThsb1Uwc2VudjBWZEhNTEdMZDN1dG5TR1Ira3FDTnB5djJCdnprQ2JBNFVScU9MNEtIK0Q5SklpK0dYNHFyaDlFam9HK0d6VkVwYVQrcFNZdTZaTCszSkJycWlQQitIZ1JObWtYSXV5ektCc0RMSHFYZnZ5NklKOHhtQjBRbC9SYlVFNnZZVFpQUW1YbGhpcGNNczF4T2xET3RGYTdPTzFSeENHYS96dVgvRWxsN0xnZnJnYTN0c1hoTmFrOCtJSDUrWFRQMGxXenI5cElEYStXZXJkcGxBdy9CbVBYZ1ZVWFB4Q1pacldxa29TNlZjdE8vZFphcjg1K1lLcDl3Qm9Od3ZEcC91bUJaQlYyWDc2QUIrU084NlBGOEFFVFM0aHozZWxkYWRhUWF6eUVHeFNaRlBBaU1LdmZVc2dWWWpqdGEyaE1hYUF4dkdrK1p4QWJOdGk0U3ZPVU9hVitJVWRxcjdrSi9STDl6SEZDQmppU2psRTIvMFlpV0xuM3hldllZRXoyT0ZqVU16S3o5ZWwwdFdnUXUrYXRIS2M4bnpDczY2VGlndy9vbmRDU0IyTWZYVENkR1ZqMk1tdE4wcVkwdStQZEZNZnhEQjlNaUJPUDYwNUFDeGowTHBqMDBaYWFicy9uNlN0ZVRhVGlDdlRoS2Z4d25HYmRDYTFQOHRnVGpaUHc0cVViK1FzU0dzRFFnOE9senNvNVRPalpZK3BtbGs0MXlsSGlIV1ZmZXJYa1U1RVRVWDd4RWZrZWlvQVBiY0UzL0dTZjFaYzEzOVpHdzBDc3JNTDJTZUIxbUNyUEtZY0N0ZTgrc25qYzBvQnhOMzV1UHA1MnVSQ29TVVVMWXJYckc5ekVIaWdMaXdFK29YalEwalNLQlZTdE1WZWJ1d0N4V0FCRDUrY0RYVEVCdzA1Tld2SnhRT21McW4veElvblZ0bDFzb3BzRHJFbUUzSWdiNTRieENtQ2s4cCtaaEQxMDlicWVYVlllN29idGVCU2hYMlRqT2Zqb0VkTlZNdm9qQ2YySmo0OGUvbEdIOFRTWVJWTzNuSDQrU2Vmd2FvZDVZQmtoZG5uVlpUV2hNZFYraDFXQkpKcC80UkRPdldtMHcybnYvZ1VTdFdYNUFLdjFCV3RFRlRQenRrZWRtblNSNERSK0puaEFJNXZ5c3BaMmw3TUtJeVBPVm1GV3R5cm1oZE1VSkxxQmpKeDgzcWJ4TUQrTkVpUVgzR1kzVThqSXJ1by9Wam1tenc0dTgzenVVbHMzbFdielY1ZzFnVmh6R3ZRWUp0ejBmZnkxZndWZU9QMUQxTitlOGZVeFFJOVRNNFdLUFRNT0o0YVpsODM0OHl1SzZNQzZDYWpLZFd0WXprWnliZ0pUbDRDZi9QZGV3ZWpsRmZqSEJtSFJNUWIxbktQZUQyNHZiLzMyMlhDbzJ3YzFudGRtZnhiSVVSR1lEL2dGa3VSblVkeHdQN2ZZQjZxdXdjZjRmbHlXUUtTa1VVcmZKbU4zZmlpd3ZtZmowMU1CSWlaSFdxY3NkTmFCUXhSRUlBKzdFbnMyOXVET1ZPUExXU0cyN0JJdFhFVlR0eWNhYk8yZlNUbXNyQWtFZDRLSk9WcHVpVlQ0RS9tNk45eG1PQ3B2R1dmTndYREprU1FjOFpGc0k1N3hhZjUwRktTSW5BU0Mva0wya2Z3NDhzY0l3bDVwdTZ6b2o3aXB4WE9VT3Z2aUtVSTFIcDRsbEl0QWl3b3ZpV1VFTCtjUndYZlJraTF2dkREaVhhYk04MVFxai9ZNExRNEtpWFdBQlFjeEQrZ29wUnl5Z1RBYmxTTXNDeDhzUUNyYmlhaDU2eGtxaU9DbGF3UW9UWitZU056eWhtc0dhUVF3TEFxemRmbjkwbWNGUkh5SGkxTmtidU8wNytEOERWZXI5MWVXYUxTUG5lWjBqS2xadFdXZXgxMkR2VVQzWHhUUitqWHEyYmhSb01DS0tCN0pLQVZ0Rzk5SEdHdXhNb3dWcXE3eUxvaGJUV1JUQlV5M1kzTmdjb3VITkx2WjBQRjErbGNJTm9MandBekM0eXZ4QnFvSm92TitpaERWU2dveCtod0tpWUFyOWJjVUxHaEZ2NnhHZ2Y3N3FFVFJNRGQwVEV0TzJubUtnaXMrRklZaUptU0pEaHRGNVVNT1Z3VVlJQVJoamRGUEJvLzMzcHpjWC9XVmlxczljeFdmeGU4VlE1NEZBSlhjVE9SOFA0cnZlczRmaDMxb3RxSUFmbFo0OGlFR2ZrMUdFZnE5Y3MwVkp5VFFUUW1EUVVzMDErd0NaUXpkZzhJYSszZTIvdEVBVm5FRUlwSS9zbGEwMW9hQmN0blpzZUZCdFhOR1RoSFJnWGxxUGRkdy9GN21FU2M2UmN6cll5V3lFVXBuS1FaeXlxc2dodDM1T1crd0dpbmwyMStDQURHWHJCYVUyMVQ4bEJic1kxREhocTRZTk43S1RrRHBWeWtRb1NvQlBySTJTUnM2dGM1VnhaZzRmUUk0Qyt3QUhMdnZLVysyTmdmZ2xVTmpMMHNqdWtEa3dURnJ1MlNIM1NxZTlCck81MUdGVlRXSnIwOWVHdmlOVDhKWWxTTEp5QmpYWE8vbmM3dzl2dmx1MVpleEllSzhRZmxGRGo0MjZPZ1ZjbkczSjJlVXFlUlFEUksvQjJGWW8yUT09Lk5mZUNZTjgxYkdoQWZzQ2xWaTZHamt0TEQ3SVladnFLVXJFVlFJWi0tMUR4SDZkcDM3RTVVSDd6andrMVRMVGlyZWFmV1laZ0x3YkNYSzBVOFNfNEJR"><input type="hidden" name="_eventId" value="submit"><input type="hidden" name="rmShown" value="1"></form>
-        </div>
-    </div>
-    <!--企业微信码--></div>
-                            </div>
-                            <p class="qr_middle_tip">微信或南京大学APP扫码登录</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 底部 --><div class="copy-bottom">Copyright @2026 Nanjing University All Rights Reserved       南京大学</div>
-        </div>
-    </div>
-    <!-- 滑块验证码 --><div id="sliderCaptchaDiv"></div>
-    <!-- fido登录 --><div id="fidoLoginDiv" style="display: none">
-        <div style="height: 260px;margin-top: 60px">
-		<a href="javascript:void(0);" onclick="startAssertion('#loginFromId');" class="loginFont_a">
-			<div class="fidoLogo">
-				<img class="fidoLogoImage" src="/authserver/njuTheme/static/web/images/fido.jpg" alt=""><div id="ukey_info" class="text change-color num-text-ellipsis-2" style="width: 100%; text-overflow: ellipsis; overflow: hidden; white-space: inherit; overflow-wrap: break-word; -webkit-line-clamp: 2; -webkit-box-orient: vertical; display: -webkit-box;" title="点击开启识别登录">点击开启识别登录</div>
-			</div>
-		</a>
-		<form class="loginFromClass" method="post" id="loginFromId" action="https://authserver.nju.edu.cn/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex">
-			<div class="lang_text_ellipsis" style="width: 100%; color: red; margin-top: 10px; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;" title="
-				
-			">
-				<span id="showErrorTip"></span>
-			</div>
-			<input type="hidden" id="_eventId" name="_eventId" value="submit"><input type="hidden" id="username-fido" name="username" value=""><input type="hidden" id="responseJson-fido" name="responseJson" value=""><input type="hidden" id="cllt" name="cllt" value="fidoLogin"><input type="hidden" id="dllt" name="dllt" value="generalLogin"><input type="hidden" name="lt" id="lt" value=""><input type="hidden" id="execution" name="execution" value="27d53c85-331f-4853-a9a8-f825a99ab55f_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuS3Y5TFpNS2JjRk9RNjBXaVFIRU93dHBNOCtZa3MyR1FGR1ZxaFZ6b0ZvbEZsSlZwUzVFbm91UXhxcXgzMHlPcEFPaHIydW51Q01qcE9HZkd5VFNZcGx3U2lZMWw4Njl0ZmRLeG1SMUFSeDF5Zko2YWxyOVpYbGg0WHpxL0JFbGZ5OE5MMVhoUTllc1lSTFF3VW14bWMzR0NOeDMxUG44WGpkYWRJczBCbWdIaUtnU1dCZW9NbjA4U1ZibXZadUxlSWtwZDVCNG5CeU4rRDUxaE9MV1RRTlkwbTFWYkJGNzcrNk40QjU1bGFyNU5IY2QxRzdMRDREL1RsKy82UkJwbGVTWnhiam5aTjBhQjY0MG9vUXZUZWRoKzM5bkdpVVhlMnI3TVU0d1V4UmNqNS90RGJscmVlNENycGVlbnU2d3QrMmZSOUMvY1BvZFpCbGVXYlR5VXNpekZDaDBNUENNY2xJbE56UmNZKy81eUhEMWNpSmJzK2s0M2hxVUxYSllib2xqdXRCNjBOSEdvUkhxQU1OeWsvSVVMeFZBeWRyald3cjhId3ZvamtjaFlkNlRhSGxmTGlsQW1XckZFMW5jRmVLeHFHVU4yOENPT0N3N3RFVVhyV0lObjc3Qk9BZHdRL0lYdkcxZmNoR2FIaGNnWVBIUmRnbXRIUVd5LzE3RFhucWhQZ2d0Y1A3dVdjcEpUY1lhR2RyTDZobGhZNDBRd3QvYjNRQzNHT1hEVlZzN2ZJUnhpejgvWXB5c0NPWWxXWmdRQ2paekNQcWtUTWZpanRJNk9sVmhPSE03N1c2U2I4a0I4dWRvVGwxcEF1OVBFWm16VlRFVDhGUzBnWFpGc1dPN0V0VlNvSE9iL1UvWTVkMlVJbU1tZUhzY0RDTEJiUHpwR2o3SGRRTStuU2FHNXNGbEs5TGY3NUhPWnYrZE9LUlZTb1d4UFJsV0dDRUFBUmhaSmxUajlGUDZkakFCaGZTT2oyL25qYWZaeExTekNxTk9hZjhEUjBjZ2FjTzlEMGRQR0ZpM1pNbFQ5UVZIODBWdm5kVU5XbW82ZkRNbndQZlJCZlhrMWhoeDNxcHlaRXpqeGIvL0Zza2pibVhCbnlEZ3FRQnkwMXkxV1FzcW4wS0F3L1l1aW9adHVvdTB0K1NZUkt0eERzUkNaVUZPa054cVo2YldzeG0xenByVTkyYjdRMkdxaFVxWmluWUlnYjk1aWlHbWEvVGNFKy9hQmVZSmpzZ0NudVFzbGh3aDNVUFZ6Nlk3TWhhVE0zT1A4a2tZU2xrSlNOc05DT1ovVExxdjhBRk1xdHVkVmpaQ2RVTTBoMzN2UnBUclhseHB2ekZ4cFdwL0ZqSk14OU5BeElBclY3ZjNBSFBjdDJUK2dpamd4ei9QY0hFa2ZSKzlQTXNBRUVrWEx5UVI2T1NsNnVqS0lzQVZlZHRMc2dGR0kwLzk3Z1hzY2VsWHVWWHRVQXlGeWRTajdXbmUzSlRzSENjT0dQSktFNGZqaHFramtjVkwyWGpncy9aamxjOUhDd1htMnJKUzAvZGNLamdwdzI4RWxtMkNUbFhIWHdzcUs5ZFNZMVFHYkhNVU9menQ3NGhqdWQyZjE2bnhKajZROTBaalI5SExsRTlxcVJYSWJGUHYwY2NBWm9wZXFUejNocE5jL2pIQjIzWnpuK2FmeE1VcHdsTi9JQVluR3hMbUhSOEtaV1dNMEpQeFZ2MzBieCtoSnF1a0lVL1lLQ1l1bU1QQlZJWU9laWR4UHdLNTlxK003YUpUTUNpdkZMMHF5b2d2M3VaZkhDZFJYY09pOW81cXZjKy9SbkM1aHVpQ2xyOTRMc1BBcVZCa2VWSjcyb1p6ZTFtMFpNK1FaU3U2Y2RkRERVTDNscTJ0SjBSWWVjUkpvMERYcVQ3NXdnOTR1aGdUZXF4Ymh2OU1sU1M5MzRzZ25tbXMvVHowT3FIc01HWkhGNDBzOGwwa0Vqb2UzdldJWVJIQ3MxK284cnY0OVhneDBuekFMNGJqVWM3ZGZZNHJyeFdHckdOKy9MdGVSZU9GRHhYd1prR3p6aUVuNVg2VHNhakxHVEZMRkpPNXdpWW9vR2UvVjJIbVJkeVNTeUxZMzBBNjlDbjJrSzZYRHh0K3lIdldSU3ZjR0RUVXV5T1lhM0R0M3l1emcwN0w3SlIxczBpZ3NDRDIyL2ZvbUUySVdtYVlFSmViV05TT2VFcVQyZHhRSGlqeXhWSVdiaWRXN3FPQno1aDBwYUxuYk1FQUhsckNkVUdRZDBZSXhIN2JvSlVNVWltYTlCRFFKYWI1Q1c4Y1lrWVl1S3NEei9xdnVPbUl0NENyQml5T2pWSDByZGZpVG45TUdkMSs4UTM2dURSdi84MEVFTUtOTkx3V0RFN0l2TmJ3OEFFb3hsTU9nK1EyUU5GaG5UVkhPQWppUGRRbW5scTZLbVF6Ry93QlQ3K2RIYjRObUdFT3h5YXRoa0lvenZBL0xhenRkWUZkaUN4R01vQ3BxZE5RSTVTS2p6SE1hb1FBS0NZVGpPQzMxYkJURXFNOXNSUjJhbGNNa3FWalNvK213MU5WNW5iQ2tJeU45U1hvS3U4YzQxeENqMTVFaTdZTTdUM3YxVWpjZzBpNFNnbkhpYWNWdmxmbHRLTnFoU1B2LzhvNDJpUnp0cjlMa3ZYSHE5UGFqbW4zeUVCczFHcWZGYkRTRE1GbGh6cDV1a2I2SUhJZXppWHgrczhzT0F2SENHV3YvN1EzVkVQU2VSZzM4c1pxZHlrRVM4c05NMlpyNmFFUDI1MGVRUzJVaTRUdDBiV21ieGlvQnhEZDBSOVVWd2kvSWlHQ1grclZXcFF4WURCNVN3MWVvblZ2cXhVOXNNVGl3TWVTUUNsMHlCdE94SlNQeUhtc3VYQnEzUlFNTnozWEN6WDR1QzNjVkVSc2tmb1lNWldXZTROQ2hCUWRpODhqNExGOXBKRThsb1Uwc2VudjBWZEhNTEdMZDN1dG5TR1Ira3FDTnB5djJCdnprQ2JBNFVScU9MNEtIK0Q5SklpK0dYNHFyaDlFam9HK0d6VkVwYVQrcFNZdTZaTCszSkJycWlQQitIZ1JObWtYSXV5ektCc0RMSHFYZnZ5NklKOHhtQjBRbC9SYlVFNnZZVFpQUW1YbGhpcGNNczF4T2xET3RGYTdPTzFSeENHYS96dVgvRWxsN0xnZnJnYTN0c1hoTmFrOCtJSDUrWFRQMGxXenI5cElEYStXZXJkcGxBdy9CbVBYZ1ZVWFB4Q1pacldxa29TNlZjdE8vZFphcjg1K1lLcDl3Qm9Od3ZEcC91bUJaQlYyWDc2QUIrU084NlBGOEFFVFM0aHozZWxkYWRhUWF6eUVHeFNaRlBBaU1LdmZVc2dWWWpqdGEyaE1hYUF4dkdrK1p4QWJOdGk0U3ZPVU9hVitJVWRxcjdrSi9STDl6SEZDQmppU2psRTIvMFlpV0xuM3hldllZRXoyT0ZqVU16S3o5ZWwwdFdnUXUrYXRIS2M4bnpDczY2VGlndy9vbmRDU0IyTWZYVENkR1ZqMk1tdE4wcVkwdStQZEZNZnhEQjlNaUJPUDYwNUFDeGowTHBqMDBaYWFicy9uNlN0ZVRhVGlDdlRoS2Z4d25HYmRDYTFQOHRnVGpaUHc0cVViK1FzU0dzRFFnOE9senNvNVRPalpZK3BtbGs0MXlsSGlIV1ZmZXJYa1U1RVRVWDd4RWZrZWlvQVBiY0UzL0dTZjFaYzEzOVpHdzBDc3JNTDJTZUIxbUNyUEtZY0N0ZTgrc25qYzBvQnhOMzV1UHA1MnVSQ29TVVVMWXJYckc5ekVIaWdMaXdFK29YalEwalNLQlZTdE1WZWJ1d0N4V0FCRDUrY0RYVEVCdzA1Tld2SnhRT21McW4veElvblZ0bDFzb3BzRHJFbUUzSWdiNTRieENtQ2s4cCtaaEQxMDlicWVYVlllN29idGVCU2hYMlRqT2Zqb0VkTlZNdm9qQ2YySmo0OGUvbEdIOFRTWVJWTzNuSDQrU2Vmd2FvZDVZQmtoZG5uVlpUV2hNZFYraDFXQkpKcC80UkRPdldtMHcybnYvZ1VTdFdYNUFLdjFCV3RFRlRQenRrZWRtblNSNERSK0puaEFJNXZ5c3BaMmw3TUtJeVBPVm1GV3R5cm1oZE1VSkxxQmpKeDgzcWJ4TUQrTkVpUVgzR1kzVThqSXJ1by9Wam1tenc0dTgzenVVbHMzbFdielY1ZzFnVmh6R3ZRWUp0ejBmZnkxZndWZU9QMUQxTitlOGZVeFFJOVRNNFdLUFRNT0o0YVpsODM0OHl1SzZNQzZDYWpLZFd0WXprWnliZ0pUbDRDZi9QZGV3ZWpsRmZqSEJtSFJNUWIxbktQZUQyNHZiLzMyMlhDbzJ3YzFudGRtZnhiSVVSR1lEL2dGa3VSblVkeHdQN2ZZQjZxdXdjZjRmbHlXUUtTa1VVcmZKbU4zZmlpd3ZtZmowMU1CSWlaSFdxY3NkTmFCUXhSRUlBKzdFbnMyOXVET1ZPUExXU0cyN0JJdFhFVlR0eWNhYk8yZlNUbXNyQWtFZDRLSk9WcHVpVlQ0RS9tNk45eG1PQ3B2R1dmTndYREprU1FjOFpGc0k1N3hhZjUwRktTSW5BU0Mva0wya2Z3NDhzY0l3bDVwdTZ6b2o3aXB4WE9VT3Z2aUtVSTFIcDRsbEl0QWl3b3ZpV1VFTCtjUndYZlJraTF2dkREaVhhYk04MVFxai9ZNExRNEtpWFdBQlFjeEQrZ29wUnl5Z1RBYmxTTXNDeDhzUUNyYmlhaDU2eGtxaU9DbGF3UW9UWitZU056eWhtc0dhUVF3TEFxemRmbjkwbWNGUkh5SGkxTmtidU8wNytEOERWZXI5MWVXYUxTUG5lWjBqS2xadFdXZXgxMkR2VVQzWHhUUitqWHEyYmhSb01DS0tCN0pLQVZ0Rzk5SEdHdXhNb3dWcXE3eUxvaGJUV1JUQlV5M1kzTmdjb3VITkx2WjBQRjErbGNJTm9MandBekM0eXZ4QnFvSm92TitpaERWU2dveCtod0tpWUFyOWJjVUxHaEZ2NnhHZ2Y3N3FFVFJNRGQwVEV0TzJubUtnaXMrRklZaUptU0pEaHRGNVVNT1Z3VVlJQVJoamRGUEJvLzMzcHpjWC9XVmlxczljeFdmeGU4VlE1NEZBSlhjVE9SOFA0cnZlczRmaDMxb3RxSUFmbFo0OGlFR2ZrMUdFZnE5Y3MwVkp5VFFUUW1EUVVzMDErd0NaUXpkZzhJYSszZTIvdEVBVm5FRUlwSS9zbGEwMW9hQmN0blpzZUZCdFhOR1RoSFJnWGxxUGRkdy9GN21FU2M2UmN6cll5V3lFVXBuS1FaeXlxc2dodDM1T1crd0dpbmwyMStDQURHWHJCYVUyMVQ4bEJic1kxREhocTRZTk43S1RrRHBWeWtRb1NvQlBySTJTUnM2dGM1VnhaZzRmUUk0Qyt3QUhMdnZLVysyTmdmZ2xVTmpMMHNqdWtEa3dURnJ1MlNIM1NxZTlCck81MUdGVlRXSnIwOWVHdmlOVDhKWWxTTEp5QmpYWE8vbmM3dzl2dmx1MVpleEllSzhRZmxGRGo0MjZPZ1ZjbkczSjJlVXFlUlFEUksvQjJGWW8yUT09Lk5mZUNZTjgxYkdoQWZzQ2xWaTZHamt0TEQ3SVladnFLVXJFVlFJWi0tMUR4SDZkcDM3RTVVSDd6andrMVRMVGlyZWFmV1laZ0x3YkNYSzBVOFNfNEJR"></form>
-		<div class="lang_text_ellipsis" style="width: 100%; color: red; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: none;" id="showFidoErrorTip" title="
-			
-		">
-			<span id="showFidoErrorTipSpan" style="font-size: 14px;"></span>
-		</div>
-	</div>
-    </div>
-    <!-- 手机动态码登录 --><div id="phoneLoginDiv" style="display: none">
-        <div>
-		<form class="loginFromClass" method="post" id="phoneFromId" action="https://authserver.nju.edu.cn/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex">
-			<div class="form">
-				<!-- 动态码登录 --><div class="m-phone">
-					<div class="username item" style="overflow: visible;">
-						<!-- <p class="account-title pc-mobile">
-							<span class="lang_text_ellipsis" th:text="#{ids.mobile.getPwd.mobile}">手机号</span>
-							<span class="item" style="position: absolute;">
-								<img class="mobile-tip" th:src="@{${#themes.code('custom.static.path')}+'/web/images/question.png'}" height="16px">
-								<span class="mobile-tip-prompt mobile-item-show" th:text="#{login.page.mobile.tip}"></span>
-							</span>
-						</p> --><span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/yonhuming.png" alt=""></span>
-						<input type="text" id="username" name="username" class="change-input-color" placeholder="请输入手机号/学号" title="请输入手机号/学号" value=""><div id="nameErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div class="captcha item" id="captchaDiv">
-						<span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/yanzm.png" alt=""></span>
-						<!-- <p id="captchaTitle" class="account-title pc-captcha lang_text_ellipsis" th:text="#{ids.loginView.graph.code}">验证码</p> --><input type="text" id="captcha" name="captcha" autocomplete="off" class="change-input-color" placeholder="请输入验证码" title="请输入验证码" maxlength="10"><span class="captcha-img">
-							<img id="captchaImg" alt="验证码错误" height="30px"><a class="mask-inner captcha-refresh" onclick="reloadCaptcha(true)" href="javascript:void(0);">刷新</a>
-						</span>
-						<div id="captchaErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div class="code item">
-						<!-- <p class="account-title pc-code lang_text_ellipsis" th:text="#{ids.loginView.DynamicCode}">动态码</p>
-						<i class="auth_icon auth_icon_bar"></i> --><span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/mima.png" alt=""></span>
-						<input type="text" id="dynamicCode" name="dynamicCode" autocomplete="off" class="change-input-color" placeholder="请输入短信验证码" title="请输入短信验证码" maxlength="10"><a class="get-code text_ellipsis" href="javascript:void(0)" onclick="startDynamicCode()" title="获取验证码">
-							<span class="change-color">获取验证码</span>
-						</a>
-						<a class="get-code-tip get-code text_ellipsis" style="display: none;" href="javascript:void(0)" title="后重发">
-							<span class="getCodeText change-color">120</span>
-							<span style="color: #86909C;">后重发</span>
-						</a>
-						<div id="dynamicErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-				</div>
-			</div>
-			<div class="ge-btn">
-				<div id="formErrorTip" class="form-errorTip lang_text_ellipsis" title="
-					
-					&nbsp;
-				" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">
-					<span id="showErrorTip" class="form-error"></span>
-					<span id="showWarnTip" class="form-warn"></span>&nbsp;
-				</div>
-				<div class="btn">
-					<a id="login_submit" href="javascript:void(0);" class="login-btn change-bg-color" onclick="startLogin(this)">登录</a>
-				</div>
-			</div>
-			<input type="hidden" id="_eventId" name="_eventId" value="submit"><input type="hidden" id="cllt" name="cllt" value="dynamicLogin"><input type="hidden" id="dllt" name="dllt" value="generalLogin"><input type="hidden" id="lt" name="lt" value=""><input type="hidden" id="pwdEncryptSalt" value="X3xRuAgRu1I25hFz"><input type="hidden" id="execution" name="execution" value="27d53c85-331f-4853-a9a8-f825a99ab55f_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuS3Y5TFpNS2JjRk9RNjBXaVFIRU93dHBNOCtZa3MyR1FGR1ZxaFZ6b0ZvbEZsSlZwUzVFbm91UXhxcXgzMHlPcEFPaHIydW51Q01qcE9HZkd5VFNZcGx3U2lZMWw4Njl0ZmRLeG1SMUFSeDF5Zko2YWxyOVpYbGg0WHpxL0JFbGZ5OE5MMVhoUTllc1lSTFF3VW14bWMzR0NOeDMxUG44WGpkYWRJczBCbWdIaUtnU1dCZW9NbjA4U1ZibXZadUxlSWtwZDVCNG5CeU4rRDUxaE9MV1RRTlkwbTFWYkJGNzcrNk40QjU1bGFyNU5IY2QxRzdMRDREL1RsKy82UkJwbGVTWnhiam5aTjBhQjY0MG9vUXZUZWRoKzM5bkdpVVhlMnI3TVU0d1V4UmNqNS90RGJscmVlNENycGVlbnU2d3QrMmZSOUMvY1BvZFpCbGVXYlR5VXNpekZDaDBNUENNY2xJbE56UmNZKy81eUhEMWNpSmJzK2s0M2hxVUxYSllib2xqdXRCNjBOSEdvUkhxQU1OeWsvSVVMeFZBeWRyald3cjhId3ZvamtjaFlkNlRhSGxmTGlsQW1XckZFMW5jRmVLeHFHVU4yOENPT0N3N3RFVVhyV0lObjc3Qk9BZHdRL0lYdkcxZmNoR2FIaGNnWVBIUmRnbXRIUVd5LzE3RFhucWhQZ2d0Y1A3dVdjcEpUY1lhR2RyTDZobGhZNDBRd3QvYjNRQzNHT1hEVlZzN2ZJUnhpejgvWXB5c0NPWWxXWmdRQ2paekNQcWtUTWZpanRJNk9sVmhPSE03N1c2U2I4a0I4dWRvVGwxcEF1OVBFWm16VlRFVDhGUzBnWFpGc1dPN0V0VlNvSE9iL1UvWTVkMlVJbU1tZUhzY0RDTEJiUHpwR2o3SGRRTStuU2FHNXNGbEs5TGY3NUhPWnYrZE9LUlZTb1d4UFJsV0dDRUFBUmhaSmxUajlGUDZkakFCaGZTT2oyL25qYWZaeExTekNxTk9hZjhEUjBjZ2FjTzlEMGRQR0ZpM1pNbFQ5UVZIODBWdm5kVU5XbW82ZkRNbndQZlJCZlhrMWhoeDNxcHlaRXpqeGIvL0Zza2pibVhCbnlEZ3FRQnkwMXkxV1FzcW4wS0F3L1l1aW9adHVvdTB0K1NZUkt0eERzUkNaVUZPa054cVo2YldzeG0xenByVTkyYjdRMkdxaFVxWmluWUlnYjk1aWlHbWEvVGNFKy9hQmVZSmpzZ0NudVFzbGh3aDNVUFZ6Nlk3TWhhVE0zT1A4a2tZU2xrSlNOc05DT1ovVExxdjhBRk1xdHVkVmpaQ2RVTTBoMzN2UnBUclhseHB2ekZ4cFdwL0ZqSk14OU5BeElBclY3ZjNBSFBjdDJUK2dpamd4ei9QY0hFa2ZSKzlQTXNBRUVrWEx5UVI2T1NsNnVqS0lzQVZlZHRMc2dGR0kwLzk3Z1hzY2VsWHVWWHRVQXlGeWRTajdXbmUzSlRzSENjT0dQSktFNGZqaHFramtjVkwyWGpncy9aamxjOUhDd1htMnJKUzAvZGNLamdwdzI4RWxtMkNUbFhIWHdzcUs5ZFNZMVFHYkhNVU9menQ3NGhqdWQyZjE2bnhKajZROTBaalI5SExsRTlxcVJYSWJGUHYwY2NBWm9wZXFUejNocE5jL2pIQjIzWnpuK2FmeE1VcHdsTi9JQVluR3hMbUhSOEtaV1dNMEpQeFZ2MzBieCtoSnF1a0lVL1lLQ1l1bU1QQlZJWU9laWR4UHdLNTlxK003YUpUTUNpdkZMMHF5b2d2M3VaZkhDZFJYY09pOW81cXZjKy9SbkM1aHVpQ2xyOTRMc1BBcVZCa2VWSjcyb1p6ZTFtMFpNK1FaU3U2Y2RkRERVTDNscTJ0SjBSWWVjUkpvMERYcVQ3NXdnOTR1aGdUZXF4Ymh2OU1sU1M5MzRzZ25tbXMvVHowT3FIc01HWkhGNDBzOGwwa0Vqb2UzdldJWVJIQ3MxK284cnY0OVhneDBuekFMNGJqVWM3ZGZZNHJyeFdHckdOKy9MdGVSZU9GRHhYd1prR3p6aUVuNVg2VHNhakxHVEZMRkpPNXdpWW9vR2UvVjJIbVJkeVNTeUxZMzBBNjlDbjJrSzZYRHh0K3lIdldSU3ZjR0RUVXV5T1lhM0R0M3l1emcwN0w3SlIxczBpZ3NDRDIyL2ZvbUUySVdtYVlFSmViV05TT2VFcVQyZHhRSGlqeXhWSVdiaWRXN3FPQno1aDBwYUxuYk1FQUhsckNkVUdRZDBZSXhIN2JvSlVNVWltYTlCRFFKYWI1Q1c4Y1lrWVl1S3NEei9xdnVPbUl0NENyQml5T2pWSDByZGZpVG45TUdkMSs4UTM2dURSdi84MEVFTUtOTkx3V0RFN0l2TmJ3OEFFb3hsTU9nK1EyUU5GaG5UVkhPQWppUGRRbW5scTZLbVF6Ry93QlQ3K2RIYjRObUdFT3h5YXRoa0lvenZBL0xhenRkWUZkaUN4R01vQ3BxZE5RSTVTS2p6SE1hb1FBS0NZVGpPQzMxYkJURXFNOXNSUjJhbGNNa3FWalNvK213MU5WNW5iQ2tJeU45U1hvS3U4YzQxeENqMTVFaTdZTTdUM3YxVWpjZzBpNFNnbkhpYWNWdmxmbHRLTnFoU1B2LzhvNDJpUnp0cjlMa3ZYSHE5UGFqbW4zeUVCczFHcWZGYkRTRE1GbGh6cDV1a2I2SUhJZXppWHgrczhzT0F2SENHV3YvN1EzVkVQU2VSZzM4c1pxZHlrRVM4c05NMlpyNmFFUDI1MGVRUzJVaTRUdDBiV21ieGlvQnhEZDBSOVVWd2kvSWlHQ1grclZXcFF4WURCNVN3MWVvblZ2cXhVOXNNVGl3TWVTUUNsMHlCdE94SlNQeUhtc3VYQnEzUlFNTnozWEN6WDR1QzNjVkVSc2tmb1lNWldXZTROQ2hCUWRpODhqNExGOXBKRThsb1Uwc2VudjBWZEhNTEdMZDN1dG5TR1Ira3FDTnB5djJCdnprQ2JBNFVScU9MNEtIK0Q5SklpK0dYNHFyaDlFam9HK0d6VkVwYVQrcFNZdTZaTCszSkJycWlQQitIZ1JObWtYSXV5ektCc0RMSHFYZnZ5NklKOHhtQjBRbC9SYlVFNnZZVFpQUW1YbGhpcGNNczF4T2xET3RGYTdPTzFSeENHYS96dVgvRWxsN0xnZnJnYTN0c1hoTmFrOCtJSDUrWFRQMGxXenI5cElEYStXZXJkcGxBdy9CbVBYZ1ZVWFB4Q1pacldxa29TNlZjdE8vZFphcjg1K1lLcDl3Qm9Od3ZEcC91bUJaQlYyWDc2QUIrU084NlBGOEFFVFM0aHozZWxkYWRhUWF6eUVHeFNaRlBBaU1LdmZVc2dWWWpqdGEyaE1hYUF4dkdrK1p4QWJOdGk0U3ZPVU9hVitJVWRxcjdrSi9STDl6SEZDQmppU2psRTIvMFlpV0xuM3hldllZRXoyT0ZqVU16S3o5ZWwwdFdnUXUrYXRIS2M4bnpDczY2VGlndy9vbmRDU0IyTWZYVENkR1ZqMk1tdE4wcVkwdStQZEZNZnhEQjlNaUJPUDYwNUFDeGowTHBqMDBaYWFicy9uNlN0ZVRhVGlDdlRoS2Z4d25HYmRDYTFQOHRnVGpaUHc0cVViK1FzU0dzRFFnOE9senNvNVRPalpZK3BtbGs0MXlsSGlIV1ZmZXJYa1U1RVRVWDd4RWZrZWlvQVBiY0UzL0dTZjFaYzEzOVpHdzBDc3JNTDJTZUIxbUNyUEtZY0N0ZTgrc25qYzBvQnhOMzV1UHA1MnVSQ29TVVVMWXJYckc5ekVIaWdMaXdFK29YalEwalNLQlZTdE1WZWJ1d0N4V0FCRDUrY0RYVEVCdzA1Tld2SnhRT21McW4veElvblZ0bDFzb3BzRHJFbUUzSWdiNTRieENtQ2s4cCtaaEQxMDlicWVYVlllN29idGVCU2hYMlRqT2Zqb0VkTlZNdm9qQ2YySmo0OGUvbEdIOFRTWVJWTzNuSDQrU2Vmd2FvZDVZQmtoZG5uVlpUV2hNZFYraDFXQkpKcC80UkRPdldtMHcybnYvZ1VTdFdYNUFLdjFCV3RFRlRQenRrZWRtblNSNERSK0puaEFJNXZ5c3BaMmw3TUtJeVBPVm1GV3R5cm1oZE1VSkxxQmpKeDgzcWJ4TUQrTkVpUVgzR1kzVThqSXJ1by9Wam1tenc0dTgzenVVbHMzbFdielY1ZzFnVmh6R3ZRWUp0ejBmZnkxZndWZU9QMUQxTitlOGZVeFFJOVRNNFdLUFRNT0o0YVpsODM0OHl1SzZNQzZDYWpLZFd0WXprWnliZ0pUbDRDZi9QZGV3ZWpsRmZqSEJtSFJNUWIxbktQZUQyNHZiLzMyMlhDbzJ3YzFudGRtZnhiSVVSR1lEL2dGa3VSblVkeHdQN2ZZQjZxdXdjZjRmbHlXUUtTa1VVcmZKbU4zZmlpd3ZtZmowMU1CSWlaSFdxY3NkTmFCUXhSRUlBKzdFbnMyOXVET1ZPUExXU0cyN0JJdFhFVlR0eWNhYk8yZlNUbXNyQWtFZDRLSk9WcHVpVlQ0RS9tNk45eG1PQ3B2R1dmTndYREprU1FjOFpGc0k1N3hhZjUwRktTSW5BU0Mva0wya2Z3NDhzY0l3bDVwdTZ6b2o3aXB4WE9VT3Z2aUtVSTFIcDRsbEl0QWl3b3ZpV1VFTCtjUndYZlJraTF2dkREaVhhYk04MVFxai9ZNExRNEtpWFdBQlFjeEQrZ29wUnl5Z1RBYmxTTXNDeDhzUUNyYmlhaDU2eGtxaU9DbGF3UW9UWitZU056eWhtc0dhUVF3TEFxemRmbjkwbWNGUkh5SGkxTmtidU8wNytEOERWZXI5MWVXYUxTUG5lWjBqS2xadFdXZXgxMkR2VVQzWHhUUitqWHEyYmhSb01DS0tCN0pLQVZ0Rzk5SEdHdXhNb3dWcXE3eUxvaGJUV1JUQlV5M1kzTmdjb3VITkx2WjBQRjErbGNJTm9MandBekM0eXZ4QnFvSm92TitpaERWU2dveCtod0tpWUFyOWJjVUxHaEZ2NnhHZ2Y3N3FFVFJNRGQwVEV0TzJubUtnaXMrRklZaUptU0pEaHRGNVVNT1Z3VVlJQVJoamRGUEJvLzMzcHpjWC9XVmlxczljeFdmeGU4VlE1NEZBSlhjVE9SOFA0cnZlczRmaDMxb3RxSUFmbFo0OGlFR2ZrMUdFZnE5Y3MwVkp5VFFUUW1EUVVzMDErd0NaUXpkZzhJYSszZTIvdEVBVm5FRUlwSS9zbGEwMW9hQmN0blpzZUZCdFhOR1RoSFJnWGxxUGRkdy9GN21FU2M2UmN6cll5V3lFVXBuS1FaeXlxc2dodDM1T1crd0dpbmwyMStDQURHWHJCYVUyMVQ4bEJic1kxREhocTRZTk43S1RrRHBWeWtRb1NvQlBySTJTUnM2dGM1VnhaZzRmUUk0Qyt3QUhMdnZLVysyTmdmZ2xVTmpMMHNqdWtEa3dURnJ1MlNIM1NxZTlCck81MUdGVlRXSnIwOWVHdmlOVDhKWWxTTEp5QmpYWE8vbmM3dzl2dmx1MVpleEllSzhRZmxGRGo0MjZPZ1ZjbkczSjJlVXFlUlFEUksvQjJGWW8yUT09Lk5mZUNZTjgxYkdoQWZzQ2xWaTZHamt0TEQ3SVladnFLVXJFVlFJWi0tMUR4SDZkcDM3RTVVSDd6andrMVRMVGlyZWFmV1laZ0x3YkNYSzBVOFNfNEJR"></form>
-	</div>
-    </div>
-    <!-- 用户名密码登录 --><div id="pwdLoginDiv" style="display: none">
-        <div>
-		<form class="loginFromClass" method="post" id="pwdFromId" action="https://authserver.nju.edu.cn/authserver/login?service=https%3A%2F%2Fepay.nju.edu.cn%3A443%2Fepay%2Fh5%2Fnju%2Felectric%2Findex">
-			<div class="form">
-				<!-- 用户名密码登录 --><div class="m-account">
-					<div class="username item">
-						<span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/yonhuming.png" alt=""></span>
-						<!-- <p class="account-title pc-name lang_text_ellipsis" th:text="#{ids.loginView.username}">用户名</p> --><input id="username" name="username" type="text" class="change-input-color" onfocusout="checkUserCaptcha()" placeholder="请输入学号/工号" title="请输入学号/工号" value=""><div id="nameErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div class="password item">
-						<span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/mima.png" alt=""></span>
-						<!-- <p class="account-title pc-pass lang_text_ellipsis" th:text="#{ids.loginView.password}">密码</p> --><input id="password" name="passwordText" type="password" class="change-input-color no-auto-input" placeholder="请输入密码" title="请输入密码" maxlength="32" autocomplete="off"><input id="saltPassword" name="password" type="hidden"><a class="ge-input-eye eye-hide"></a>
-						<div id="pwdErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div class="captcha item hide" id="captchaDiv">
-						<span class="prex-icon">
-							<img src="/authserver/njuTheme/customStatic/web/images/yanzm.png" alt=""></span>
-						<!-- <p id="captchaTitle" class="account-title pc-captcha lang_text_ellipsis hide"
-							th:text="#{ids.mobile.password.code}">验证码</p> --><input type="text" id="captcha" name="captcha" autocomplete="off" class="change-input-color" placeholder="请输入验证码" title="请输入验证码" maxlength="10"><span class="captcha-img">
-							<img id="captchaImg" alt="验证码错误" height="30px"><a class="mask-inner captcha-refresh" onclick="reloadCaptcha(true)" href="javascript:void(0);">刷新</a>
-						</span>
-						<div id="captchaErrorTip" class="item-error-tip lang_text_ellipsis" title="" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"></div>
-					</div>
-					<div style="clear: both"></div>
-				</div>
-				<div class="ge-btn">
-					<div id="formErrorTip" class="form-errorTip lang_text_ellipsis" title="
-						
-						
-					" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">
-						<span id="showErrorTip" class="form-error"></span>
-						<span id="showWarnTip" class="form-warn"></span>
-					</div>
-					<div class="btn">
-						<a id="login_submit" href="javascript:void(0);" class="login-btn change-bg-color" onclick="startLogin(this)">登录</a>
-					</div>
-				</div>
-			</div>
-			<input type="hidden" id="_eventId" name="_eventId" value="submit"><input type="hidden" id="cllt" name="cllt" value="userNameLogin"><input type="hidden" id="dllt" name="dllt" value="generalLogin"><input type="hidden" id="lt" name="lt" value=""><input type="hidden" id="pwdEncryptSalt" value="X3xRuAgRu1I25hFz"><input type="hidden" id="execution" name="execution" value="27d53c85-331f-4853-a9a8-f825a99ab55f_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuS3Y5TFpNS2JjRk9RNjBXaVFIRU93dHBNOCtZa3MyR1FGR1ZxaFZ6b0ZvbEZsSlZwUzVFbm91UXhxcXgzMHlPcEFPaHIydW51Q01qcE9HZkd5VFNZcGx3U2lZMWw4Njl0ZmRLeG1SMUFSeDF5Zko2YWxyOVpYbGg0WHpxL0JFbGZ5OE5MMVhoUTllc1lSTFF3VW14bWMzR0NOeDMxUG44WGpkYWRJczBCbWdIaUtnU1dCZW9NbjA4U1ZibXZadUxlSWtwZDVCNG5CeU4rRDUxaE9MV1RRTlkwbTFWYkJGNzcrNk40QjU1bGFyNU5IY2QxRzdMRDREL1RsKy82UkJwbGVTWnhiam5aTjBhQjY0MG9vUXZUZWRoKzM5bkdpVVhlMnI3TVU0d1V4UmNqNS90RGJscmVlNENycGVlbnU2d3QrMmZSOUMvY1BvZFpCbGVXYlR5VXNpekZDaDBNUENNY2xJbE56UmNZKy81eUhEMWNpSmJzK2s0M2hxVUxYSllib2xqdXRCNjBOSEdvUkhxQU1OeWsvSVVMeFZBeWRyald3cjhId3ZvamtjaFlkNlRhSGxmTGlsQW1XckZFMW5jRmVLeHFHVU4yOENPT0N3N3RFVVhyV0lObjc3Qk9BZHdRL0lYdkcxZmNoR2FIaGNnWVBIUmRnbXRIUVd5LzE3RFhucWhQZ2d0Y1A3dVdjcEpUY1lhR2RyTDZobGhZNDBRd3QvYjNRQzNHT1hEVlZzN2ZJUnhpejgvWXB5c0NPWWxXWmdRQ2paekNQcWtUTWZpanRJNk9sVmhPSE03N1c2U2I4a0I4dWRvVGwxcEF1OVBFWm16VlRFVDhGUzBnWFpGc1dPN0V0VlNvSE9iL1UvWTVkMlVJbU1tZUhzY0RDTEJiUHpwR2o3SGRRTStuU2FHNXNGbEs5TGY3NUhPWnYrZE9LUlZTb1d4UFJsV0dDRUFBUmhaSmxUajlGUDZkakFCaGZTT2oyL25qYWZaeExTekNxTk9hZjhEUjBjZ2FjTzlEMGRQR0ZpM1pNbFQ5UVZIODBWdm5kVU5XbW82ZkRNbndQZlJCZlhrMWhoeDNxcHlaRXpqeGIvL0Zza2pibVhCbnlEZ3FRQnkwMXkxV1FzcW4wS0F3L1l1aW9adHVvdTB0K1NZUkt0eERzUkNaVUZPa054cVo2YldzeG0xenByVTkyYjdRMkdxaFVxWmluWUlnYjk1aWlHbWEvVGNFKy9hQmVZSmpzZ0NudVFzbGh3aDNVUFZ6Nlk3TWhhVE0zT1A4a2tZU2xrSlNOc05DT1ovVExxdjhBRk1xdHVkVmpaQ2RVTTBoMzN2UnBUclhseHB2ekZ4cFdwL0ZqSk14OU5BeElBclY3ZjNBSFBjdDJUK2dpamd4ei9QY0hFa2ZSKzlQTXNBRUVrWEx5UVI2T1NsNnVqS0lzQVZlZHRMc2dGR0kwLzk3Z1hzY2VsWHVWWHRVQXlGeWRTajdXbmUzSlRzSENjT0dQSktFNGZqaHFramtjVkwyWGpncy9aamxjOUhDd1htMnJKUzAvZGNLamdwdzI4RWxtMkNUbFhIWHdzcUs5ZFNZMVFHYkhNVU9menQ3NGhqdWQyZjE2bnhKajZROTBaalI5SExsRTlxcVJYSWJGUHYwY2NBWm9wZXFUejNocE5jL2pIQjIzWnpuK2FmeE1VcHdsTi9JQVluR3hMbUhSOEtaV1dNMEpQeFZ2MzBieCtoSnF1a0lVL1lLQ1l1bU1QQlZJWU9laWR4UHdLNTlxK003YUpUTUNpdkZMMHF5b2d2M3VaZkhDZFJYY09pOW81cXZjKy9SbkM1aHVpQ2xyOTRMc1BBcVZCa2VWSjcyb1p6ZTFtMFpNK1FaU3U2Y2RkRERVTDNscTJ0SjBSWWVjUkpvMERYcVQ3NXdnOTR1aGdUZXF4Ymh2OU1sU1M5MzRzZ25tbXMvVHowT3FIc01HWkhGNDBzOGwwa0Vqb2UzdldJWVJIQ3MxK284cnY0OVhneDBuekFMNGJqVWM3ZGZZNHJyeFdHckdOKy9MdGVSZU9GRHhYd1prR3p6aUVuNVg2VHNhakxHVEZMRkpPNXdpWW9vR2UvVjJIbVJkeVNTeUxZMzBBNjlDbjJrSzZYRHh0K3lIdldSU3ZjR0RUVXV5T1lhM0R0M3l1emcwN0w3SlIxczBpZ3NDRDIyL2ZvbUUySVdtYVlFSmViV05TT2VFcVQyZHhRSGlqeXhWSVdiaWRXN3FPQno1aDBwYUxuYk1FQUhsckNkVUdRZDBZSXhIN2JvSlVNVWltYTlCRFFKYWI1Q1c4Y1lrWVl1S3NEei9xdnVPbUl0NENyQml5T2pWSDByZGZpVG45TUdkMSs4UTM2dURSdi84MEVFTUtOTkx3V0RFN0l2TmJ3OEFFb3hsTU9nK1EyUU5GaG5UVkhPQWppUGRRbW5scTZLbVF6Ry93QlQ3K2RIYjRObUdFT3h5YXRoa0lvenZBL0xhenRkWUZkaUN4R01vQ3BxZE5RSTVTS2p6SE1hb1FBS0NZVGpPQzMxYkJURXFNOXNSUjJhbGNNa3FWalNvK213MU5WNW5iQ2tJeU45U1hvS3U4YzQxeENqMTVFaTdZTTdUM3YxVWpjZzBpNFNnbkhpYWNWdmxmbHRLTnFoU1B2LzhvNDJpUnp0cjlMa3ZYSHE5UGFqbW4zeUVCczFHcWZGYkRTRE1GbGh6cDV1a2I2SUhJZXppWHgrczhzT0F2SENHV3YvN1EzVkVQU2VSZzM4c1pxZHlrRVM4c05NMlpyNmFFUDI1MGVRUzJVaTRUdDBiV21ieGlvQnhEZDBSOVVWd2kvSWlHQ1grclZXcFF4WURCNVN3MWVvblZ2cXhVOXNNVGl3TWVTUUNsMHlCdE94SlNQeUhtc3VYQnEzUlFNTnozWEN6WDR1QzNjVkVSc2tmb1lNWldXZTROQ2hCUWRpODhqNExGOXBKRThsb1Uwc2VudjBWZEhNTEdMZDN1dG5TR1Ira3FDTnB5djJCdnprQ2JBNFVScU9MNEtIK0Q5SklpK0dYNHFyaDlFam9HK0d6VkVwYVQrcFNZdTZaTCszSkJycWlQQitIZ1JObWtYSXV5ektCc0RMSHFYZnZ5NklKOHhtQjBRbC9SYlVFNnZZVFpQUW1YbGhpcGNNczF4T2xET3RGYTdPTzFSeENHYS96dVgvRWxsN0xnZnJnYTN0c1hoTmFrOCtJSDUrWFRQMGxXenI5cElEYStXZXJkcGxBdy9CbVBYZ1ZVWFB4Q1pacldxa29TNlZjdE8vZFphcjg1K1lLcDl3Qm9Od3ZEcC91bUJaQlYyWDc2QUIrU084NlBGOEFFVFM0aHozZWxkYWRhUWF6eUVHeFNaRlBBaU1LdmZVc2dWWWpqdGEyaE1hYUF4dkdrK1p4QWJOdGk0U3ZPVU9hVitJVWRxcjdrSi9STDl6SEZDQmppU2psRTIvMFlpV0xuM3hldllZRXoyT0ZqVU16S3o5ZWwwdFdnUXUrYXRIS2M4bnpDczY2VGlndy9vbmRDU0IyTWZYVENkR1ZqMk1tdE4wcVkwdStQZEZNZnhEQjlNaUJPUDYwNUFDeGowTHBqMDBaYWFicy9uNlN0ZVRhVGlDdlRoS2Z4d25HYmRDYTFQOHRnVGpaUHc0cVViK1FzU0dzRFFnOE9senNvNVRPalpZK3BtbGs0MXlsSGlIV1ZmZXJYa1U1RVRVWDd4RWZrZWlvQVBiY0UzL0dTZjFaYzEzOVpHdzBDc3JNTDJTZUIxbUNyUEtZY0N0ZTgrc25qYzBvQnhOMzV1UHA1MnVSQ29TVVVMWXJYckc5ekVIaWdMaXdFK29YalEwalNLQlZTdE1WZWJ1d0N4V0FCRDUrY0RYVEVCdzA1Tld2SnhRT21McW4veElvblZ0bDFzb3BzRHJFbUUzSWdiNTRieENtQ2s4cCtaaEQxMDlicWVYVlllN29idGVCU2hYMlRqT2Zqb0VkTlZNdm9qQ2YySmo0OGUvbEdIOFRTWVJWTzNuSDQrU2Vmd2FvZDVZQmtoZG5uVlpUV2hNZFYraDFXQkpKcC80UkRPdldtMHcybnYvZ1VTdFdYNUFLdjFCV3RFRlRQenRrZWRtblNSNERSK0puaEFJNXZ5c3BaMmw3TUtJeVBPVm1GV3R5cm1oZE1VSkxxQmpKeDgzcWJ4TUQrTkVpUVgzR1kzVThqSXJ1by9Wam1tenc0dTgzenVVbHMzbFdielY1ZzFnVmh6R3ZRWUp0ejBmZnkxZndWZU9QMUQxTitlOGZVeFFJOVRNNFdLUFRNT0o0YVpsODM0OHl1SzZNQzZDYWpLZFd0WXprWnliZ0pUbDRDZi9QZGV3ZWpsRmZqSEJtSFJNUWIxbktQZUQyNHZiLzMyMlhDbzJ3YzFudGRtZnhiSVVSR1lEL2dGa3VSblVkeHdQN2ZZQjZxdXdjZjRmbHlXUUtTa1VVcmZKbU4zZmlpd3ZtZmowMU1CSWlaSFdxY3NkTmFCUXhSRUlBKzdFbnMyOXVET1ZPUExXU0cyN0JJdFhFVlR0eWNhYk8yZlNUbXNyQWtFZDRLSk9WcHVpVlQ0RS9tNk45eG1PQ3B2R1dmTndYREprU1FjOFpGc0k1N3hhZjUwRktTSW5BU0Mva0wya2Z3NDhzY0l3bDVwdTZ6b2o3aXB4WE9VT3Z2aUtVSTFIcDRsbEl0QWl3b3ZpV1VFTCtjUndYZlJraTF2dkREaVhhYk04MVFxai9ZNExRNEtpWFdBQlFjeEQrZ29wUnl5Z1RBYmxTTXNDeDhzUUNyYmlhaDU2eGtxaU9DbGF3UW9UWitZU056eWhtc0dhUVF3TEFxemRmbjkwbWNGUkh5SGkxTmtidU8wNytEOERWZXI5MWVXYUxTUG5lWjBqS2xadFdXZXgxMkR2VVQzWHhUUitqWHEyYmhSb01DS0tCN0pLQVZ0Rzk5SEdHdXhNb3dWcXE3eUxvaGJUV1JUQlV5M1kzTmdjb3VITkx2WjBQRjErbGNJTm9MandBekM0eXZ4QnFvSm92TitpaERWU2dveCtod0tpWUFyOWJjVUxHaEZ2NnhHZ2Y3N3FFVFJNRGQwVEV0TzJubUtnaXMrRklZaUptU0pEaHRGNVVNT1Z3VVlJQVJoamRGUEJvLzMzcHpjWC9XVmlxczljeFdmeGU4VlE1NEZBSlhjVE9SOFA0cnZlczRmaDMxb3RxSUFmbFo0OGlFR2ZrMUdFZnE5Y3MwVkp5VFFUUW1EUVVzMDErd0NaUXpkZzhJYSszZTIvdEVBVm5FRUlwSS9zbGEwMW9hQmN0blpzZUZCdFhOR1RoSFJnWGxxUGRkdy9GN21FU2M2UmN6cll5V3lFVXBuS1FaeXlxc2dodDM1T1crd0dpbmwyMStDQURHWHJCYVUyMVQ4bEJic1kxREhocTRZTk43S1RrRHBWeWtRb1NvQlBySTJTUnM2dGM1VnhaZzRmUUk0Qyt3QUhMdnZLVysyTmdmZ2xVTmpMMHNqdWtEa3dURnJ1MlNIM1NxZTlCck81MUdGVlRXSnIwOWVHdmlOVDhKWWxTTEp5QmpYWE8vbmM3dzl2dmx1MVpleEllSzhRZmxGRGo0MjZPZ1ZjbkczSjJlVXFlUlFEUksvQjJGWW8yUT09Lk5mZUNZTjgxYkdoQWZzQ2xWaTZHamt0TEQ3SVladnFLVXJFVlFJWi0tMUR4SDZkcDM3RTVVSDd6andrMVRMVGlyZWFmV1laZ0x3YkNYSzBVOFNfNEJR"></form>
-	</div>
-    </div>
-    <!-- 嵌入二维码登录 --><div id="qrLoginDiv" style="display: none">
-        <div>
-    <script type="text/javascript" src="/authserver/njuTheme/static/custom/js/qrcode.js?v=20260128.142526"></script>
-    <!--认证融合码--><div>
-        <div class="qr_scan_box">
-            <form method="post" id="qrLoginForm" action="/authserver/login" role="form">
-                <div id="qr_code">
-                    <div class="qr_scan_code"><img id="qr_img" src=""></div>
-                    <span class="title lang_text_ellipsis" title="手机扫码  安全登录" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: none;">手机扫码  安全登录</span>
-                </div>
-                <div id="qr_success" class="qr_success" style="display: none">
-                    <div class="qr_scan_success">
-                        <img src="/authserver/njuTheme/static/custom/images/success_qr.png"><div class="qr_success_tips_div">
-                            <span class="qr_success_tips">扫描成功</span>
-                            <span class="sub_title lang_text_ellipsis qr_success_sub_title" title="请在手机上「确认登录」" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;">请在手机上「确认登录」</span>
-                        </div>
-                    </div>
-                    <div class="scan_footer lang_text_ellipsis qr_success_back" title="返回二维码" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: inline-block;"><a class="scan_a" href="javascript:refresh();">返回二维码</a></div>
-                </div>
-                <div id="qr_invalid" style="display: none">
-                    <div class="qr_scan_code">
-                        <img id="invalid_img" src=""><div class="qr_scan_Invalid">
-                            <img id="qr_refresh" src="/authserver/njuTheme/static/custom/images/refresh.png" onclick="refresh()"></div>
-                    </div>
-                    <span class="title lang_text_ellipsis" title="手机扫码  安全登录" style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap; overflow-wrap: break-word; display: none;">手机扫码  安全登录</span>
-                </div>
-                <input type="hidden" name="lt" id="lt" value=""><input type="hidden" name="uuid" id="uuid" value=""><input type="hidden" name="cllt" value="qrLogin"><input type="hidden" id="dllt" name="dllt" value="generalLogin"><input type="hidden" name="execution" value="27d53c85-331f-4853-a9a8-f825a99ab55f_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuS3Y5TFpNS2JjRk9RNjBXaVFIRU93dHBNOCtZa3MyR1FGR1ZxaFZ6b0ZvbEZsSlZwUzVFbm91UXhxcXgzMHlPcEFPaHIydW51Q01qcE9HZkd5VFNZcGx3U2lZMWw4Njl0ZmRLeG1SMUFSeDF5Zko2YWxyOVpYbGg0WHpxL0JFbGZ5OE5MMVhoUTllc1lSTFF3VW14bWMzR0NOeDMxUG44WGpkYWRJczBCbWdIaUtnU1dCZW9NbjA4U1ZibXZadUxlSWtwZDVCNG5CeU4rRDUxaE9MV1RRTlkwbTFWYkJGNzcrNk40QjU1bGFyNU5IY2QxRzdMRDREL1RsKy82UkJwbGVTWnhiam5aTjBhQjY0MG9vUXZUZWRoKzM5bkdpVVhlMnI3TVU0d1V4UmNqNS90RGJscmVlNENycGVlbnU2d3QrMmZSOUMvY1BvZFpCbGVXYlR5VXNpekZDaDBNUENNY2xJbE56UmNZKy81eUhEMWNpSmJzK2s0M2hxVUxYSllib2xqdXRCNjBOSEdvUkhxQU1OeWsvSVVMeFZBeWRyald3cjhId3ZvamtjaFlkNlRhSGxmTGlsQW1XckZFMW5jRmVLeHFHVU4yOENPT0N3N3RFVVhyV0lObjc3Qk9BZHdRL0lYdkcxZmNoR2FIaGNnWVBIUmRnbXRIUVd5LzE3RFhucWhQZ2d0Y1A3dVdjcEpUY1lhR2RyTDZobGhZNDBRd3QvYjNRQzNHT1hEVlZzN2ZJUnhpejgvWXB5c0NPWWxXWmdRQ2paekNQcWtUTWZpanRJNk9sVmhPSE03N1c2U2I4a0I4dWRvVGwxcEF1OVBFWm16VlRFVDhGUzBnWFpGc1dPN0V0VlNvSE9iL1UvWTVkMlVJbU1tZUhzY0RDTEJiUHpwR2o3SGRRTStuU2FHNXNGbEs5TGY3NUhPWnYrZE9LUlZTb1d4UFJsV0dDRUFBUmhaSmxUajlGUDZkakFCaGZTT2oyL25qYWZaeExTekNxTk9hZjhEUjBjZ2FjTzlEMGRQR0ZpM1pNbFQ5UVZIODBWdm5kVU5XbW82ZkRNbndQZlJCZlhrMWhoeDNxcHlaRXpqeGIvL0Zza2pibVhCbnlEZ3FRQnkwMXkxV1FzcW4wS0F3L1l1aW9adHVvdTB0K1NZUkt0eERzUkNaVUZPa054cVo2YldzeG0xenByVTkyYjdRMkdxaFVxWmluWUlnYjk1aWlHbWEvVGNFKy9hQmVZSmpzZ0NudVFzbGh3aDNVUFZ6Nlk3TWhhVE0zT1A4a2tZU2xrSlNOc05DT1ovVExxdjhBRk1xdHVkVmpaQ2RVTTBoMzN2UnBUclhseHB2ekZ4cFdwL0ZqSk14OU5BeElBclY3ZjNBSFBjdDJUK2dpamd4ei9QY0hFa2ZSKzlQTXNBRUVrWEx5UVI2T1NsNnVqS0lzQVZlZHRMc2dGR0kwLzk3Z1hzY2VsWHVWWHRVQXlGeWRTajdXbmUzSlRzSENjT0dQSktFNGZqaHFramtjVkwyWGpncy9aamxjOUhDd1htMnJKUzAvZGNLamdwdzI4RWxtMkNUbFhIWHdzcUs5ZFNZMVFHYkhNVU9menQ3NGhqdWQyZjE2bnhKajZROTBaalI5SExsRTlxcVJYSWJGUHYwY2NBWm9wZXFUejNocE5jL2pIQjIzWnpuK2FmeE1VcHdsTi9JQVluR3hMbUhSOEtaV1dNMEpQeFZ2MzBieCtoSnF1a0lVL1lLQ1l1bU1QQlZJWU9laWR4UHdLNTlxK003YUpUTUNpdkZMMHF5b2d2M3VaZkhDZFJYY09pOW81cXZjKy9SbkM1aHVpQ2xyOTRMc1BBcVZCa2VWSjcyb1p6ZTFtMFpNK1FaU3U2Y2RkRERVTDNscTJ0SjBSWWVjUkpvMERYcVQ3NXdnOTR1aGdUZXF4Ymh2OU1sU1M5MzRzZ25tbXMvVHowT3FIc01HWkhGNDBzOGwwa0Vqb2UzdldJWVJIQ3MxK284cnY0OVhneDBuekFMNGJqVWM3ZGZZNHJyeFdHckdOKy9MdGVSZU9GRHhYd1prR3p6aUVuNVg2VHNhakxHVEZMRkpPNXdpWW9vR2UvVjJIbVJkeVNTeUxZMzBBNjlDbjJrSzZYRHh0K3lIdldSU3ZjR0RUVXV5T1lhM0R0M3l1emcwN0w3SlIxczBpZ3NDRDIyL2ZvbUUySVdtYVlFSmViV05TT2VFcVQyZHhRSGlqeXhWSVdiaWRXN3FPQno1aDBwYUxuYk1FQUhsckNkVUdRZDBZSXhIN2JvSlVNVWltYTlCRFFKYWI1Q1c4Y1lrWVl1S3NEei9xdnVPbUl0NENyQml5T2pWSDByZGZpVG45TUdkMSs4UTM2dURSdi84MEVFTUtOTkx3V0RFN0l2TmJ3OEFFb3hsTU9nK1EyUU5GaG5UVkhPQWppUGRRbW5scTZLbVF6Ry93QlQ3K2RIYjRObUdFT3h5YXRoa0lvenZBL0xhenRkWUZkaUN4R01vQ3BxZE5RSTVTS2p6SE1hb1FBS0NZVGpPQzMxYkJURXFNOXNSUjJhbGNNa3FWalNvK213MU5WNW5iQ2tJeU45U1hvS3U4YzQxeENqMTVFaTdZTTdUM3YxVWpjZzBpNFNnbkhpYWNWdmxmbHRLTnFoU1B2LzhvNDJpUnp0cjlMa3ZYSHE5UGFqbW4zeUVCczFHcWZGYkRTRE1GbGh6cDV1a2I2SUhJZXppWHgrczhzT0F2SENHV3YvN1EzVkVQU2VSZzM4c1pxZHlrRVM4c05NMlpyNmFFUDI1MGVRUzJVaTRUdDBiV21ieGlvQnhEZDBSOVVWd2kvSWlHQ1grclZXcFF4WURCNVN3MWVvblZ2cXhVOXNNVGl3TWVTUUNsMHlCdE94SlNQeUhtc3VYQnEzUlFNTnozWEN6WDR1QzNjVkVSc2tmb1lNWldXZTROQ2hCUWRpODhqNExGOXBKRThsb1Uwc2VudjBWZEhNTEdMZDN1dG5TR1Ira3FDTnB5djJCdnprQ2JBNFVScU9MNEtIK0Q5SklpK0dYNHFyaDlFam9HK0d6VkVwYVQrcFNZdTZaTCszSkJycWlQQitIZ1JObWtYSXV5ektCc0RMSHFYZnZ5NklKOHhtQjBRbC9SYlVFNnZZVFpQUW1YbGhpcGNNczF4T2xET3RGYTdPTzFSeENHYS96dVgvRWxsN0xnZnJnYTN0c1hoTmFrOCtJSDUrWFRQMGxXenI5cElEYStXZXJkcGxBdy9CbVBYZ1ZVWFB4Q1pacldxa29TNlZjdE8vZFphcjg1K1lLcDl3Qm9Od3ZEcC91bUJaQlYyWDc2QUIrU084NlBGOEFFVFM0aHozZWxkYWRhUWF6eUVHeFNaRlBBaU1LdmZVc2dWWWpqdGEyaE1hYUF4dkdrK1p4QWJOdGk0U3ZPVU9hVitJVWRxcjdrSi9STDl6SEZDQmppU2psRTIvMFlpV0xuM3hldllZRXoyT0ZqVU16S3o5ZWwwdFdnUXUrYXRIS2M4bnpDczY2VGlndy9vbmRDU0IyTWZYVENkR1ZqMk1tdE4wcVkwdStQZEZNZnhEQjlNaUJPUDYwNUFDeGowTHBqMDBaYWFicy9uNlN0ZVRhVGlDdlRoS2Z4d25HYmRDYTFQOHRnVGpaUHc0cVViK1FzU0dzRFFnOE9senNvNVRPalpZK3BtbGs0MXlsSGlIV1ZmZXJYa1U1RVRVWDd4RWZrZWlvQVBiY0UzL0dTZjFaYzEzOVpHdzBDc3JNTDJTZUIxbUNyUEtZY0N0ZTgrc25qYzBvQnhOMzV1UHA1MnVSQ29TVVVMWXJYckc5ekVIaWdMaXdFK29YalEwalNLQlZTdE1WZWJ1d0N4V0FCRDUrY0RYVEVCdzA1Tld2SnhRT21McW4veElvblZ0bDFzb3BzRHJFbUUzSWdiNTRieENtQ2s4cCtaaEQxMDlicWVYVlllN29idGVCU2hYMlRqT2Zqb0VkTlZNdm9qQ2YySmo0OGUvbEdIOFRTWVJWTzNuSDQrU2Vmd2FvZDVZQmtoZG5uVlpUV2hNZFYraDFXQkpKcC80UkRPdldtMHcybnYvZ1VTdFdYNUFLdjFCV3RFRlRQenRrZWRtblNSNERSK0puaEFJNXZ5c3BaMmw3TUtJeVBPVm1GV3R5cm1oZE1VSkxxQmpKeDgzcWJ4TUQrTkVpUVgzR1kzVThqSXJ1by9Wam1tenc0dTgzenVVbHMzbFdielY1ZzFnVmh6R3ZRWUp0ejBmZnkxZndWZU9QMUQxTitlOGZVeFFJOVRNNFdLUFRNT0o0YVpsODM0OHl1SzZNQzZDYWpLZFd0WXprWnliZ0pUbDRDZi9QZGV3ZWpsRmZqSEJtSFJNUWIxbktQZUQyNHZiLzMyMlhDbzJ3YzFudGRtZnhiSVVSR1lEL2dGa3VSblVkeHdQN2ZZQjZxdXdjZjRmbHlXUUtTa1VVcmZKbU4zZmlpd3ZtZmowMU1CSWlaSFdxY3NkTmFCUXhSRUlBKzdFbnMyOXVET1ZPUExXU0cyN0JJdFhFVlR0eWNhYk8yZlNUbXNyQWtFZDRLSk9WcHVpVlQ0RS9tNk45eG1PQ3B2R1dmTndYREprU1FjOFpGc0k1N3hhZjUwRktTSW5BU0Mva0wya2Z3NDhzY0l3bDVwdTZ6b2o3aXB4WE9VT3Z2aUtVSTFIcDRsbEl0QWl3b3ZpV1VFTCtjUndYZlJraTF2dkREaVhhYk04MVFxai9ZNExRNEtpWFdBQlFjeEQrZ29wUnl5Z1RBYmxTTXNDeDhzUUNyYmlhaDU2eGtxaU9DbGF3UW9UWitZU056eWhtc0dhUVF3TEFxemRmbjkwbWNGUkh5SGkxTmtidU8wNytEOERWZXI5MWVXYUxTUG5lWjBqS2xadFdXZXgxMkR2VVQzWHhUUitqWHEyYmhSb01DS0tCN0pLQVZ0Rzk5SEdHdXhNb3dWcXE3eUxvaGJUV1JUQlV5M1kzTmdjb3VITkx2WjBQRjErbGNJTm9MandBekM0eXZ4QnFvSm92TitpaERWU2dveCtod0tpWUFyOWJjVUxHaEZ2NnhHZ2Y3N3FFVFJNRGQwVEV0TzJubUtnaXMrRklZaUptU0pEaHRGNVVNT1Z3VVlJQVJoamRGUEJvLzMzcHpjWC9XVmlxczljeFdmeGU4VlE1NEZBSlhjVE9SOFA0cnZlczRmaDMxb3RxSUFmbFo0OGlFR2ZrMUdFZnE5Y3MwVkp5VFFUUW1EUVVzMDErd0NaUXpkZzhJYSszZTIvdEVBVm5FRUlwSS9zbGEwMW9hQmN0blpzZUZCdFhOR1RoSFJnWGxxUGRkdy9GN21FU2M2UmN6cll5V3lFVXBuS1FaeXlxc2dodDM1T1crd0dpbmwyMStDQURHWHJCYVUyMVQ4bEJic1kxREhocTRZTk43S1RrRHBWeWtRb1NvQlBySTJTUnM2dGM1VnhaZzRmUUk0Qyt3QUhMdnZLVysyTmdmZ2xVTmpMMHNqdWtEa3dURnJ1MlNIM1NxZTlCck81MUdGVlRXSnIwOWVHdmlOVDhKWWxTTEp5QmpYWE8vbmM3dzl2dmx1MVpleEllSzhRZmxGRGo0MjZPZ1ZjbkczSjJlVXFlUlFEUksvQjJGWW8yUT09Lk5mZUNZTjgxYkdoQWZzQ2xWaTZHamt0TEQ3SVladnFLVXJFVlFJWi0tMUR4SDZkcDM3RTVVSDd6andrMVRMVGlyZWFmV1laZ0x3YkNYSzBVOFNfNEJR"><input type="hidden" name="_eventId" value="submit"><input type="hidden" name="rmShown" value="1"></form>
-        </div>
-    </div>
-    <!--企业微信码--></div>
-    </div>
-
-<script src="/authserver/njuTheme/static/custom/js/login-language.js?v=20260128.142526" type="text/javascript"></script>
 
 <script>
-    // 实现多图轮播
-    var swiper = new Swiper('.swiper-container', {
-        autoplay: 1800000,
-        autoplayDisableOnInteraction: false,
-        speed: 5,
-        loop: true,
-        pagination: '.swiper-pagination',
-        paginationClickable: true
+</script>
+<script>
+    var beforeSendAjax = function (xhr) {
+        var header = $('meta[name=_csrf_header]').attr('content');
+        var token = $('meta[name=_csrf]').attr('content');
+        if (header != '' && token != '') {
+            xhr.setRequestHeader(header, token);
+        }
+    }
+    var vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                money: [{text: '10元', checked: true, value: 10},
+                    {text: '20元', checked: false, value: 20},
+                    {text: '50元', checked: false, value: 50},
+                    {text: '100元', checked: false, value: 100},
+                    {text: '200元', checked: false, value: 200},
+                    {text: '自定义', checked: false, value: 0}],
+                errmsg: "错误！",
+                index: 0,
+                amount:"",
+                check:{},
+                isSuZhouArea:false
+            }
+        },
+        watch:{
+            amount(val){
+                this.money[5].value = +val
+            }
+        },
+        created() {
+            this.check = {"areaId":"0","areaName":"0","buildId":"xl18","buildName":"18幢","createtime":"20250822230957","districtId":"","districtName":"","id":80481,"roomId":"1702","roomName":"18栋第17层1702","stuempno":"602025250064","sysId":"3","sysName":"仙林校区","type":"elec"}
+            this.isSuZhouArea = this.check.sysName.indexOf("苏州")>=0
+
+        },
+        methods: {
+            change(i) {
+                let list = this.money
+                list.forEach(v => {
+                    v.checked = false
+                })
+                list[i].checked = true
+                this.index = i
+            },
+            charge(){
+                $.showLoading("正在加载");
+                let amount = this.money[this.index].value
+                let check = this.check
+                let params = {
+                    "sysid":check.sysId,
+                    "areaid":check.areaId,
+                    "buildid":check.buildId,
+                    "roomid":check.roomId,
+                    "amount":amount
+                }
+                $.ajax("/epay/h5/elecPayInit.json", {
+                    data: params,
+                    type: "POST",
+                    dataType: "json",
+                    beforeSend: function (xhr){
+                        return beforeSendAjax(xhr)
+                    },
+                    success: (ret) =>{
+                        $.hideLoading();
+                        if (ret.retcode == '0') {
+                            let url = encodeURIComponent(window.location.origin + "/epay/h5/nju/electric/index")
+                            window.location.href='/epay/mgate/cert/unifiedorder?merchaccno=' + ret.shopid + '&timestamp='
+                                + ret.timestamp + '&out_trade_no=' + ret.refno + '&out_trade_name='+encodeURIComponent('电费充值')+'&total_amount=' + ret.amt * 100
+                                + '&remark=' + encodeURIComponent(check.sysName + '/' + check.buildName + '/' + check.roomName)
+                                + '&return_url=' + url;
+                        } else {
+                            this.errmsg =  ret.retmsg || '初始化失败！'
+                            $('.wapat').show()
+
+                        }
+                    },
+                    error: (e) => {
+                        $.hideLoading();
+                        this.errmsg = e.errmsg || '请求出现异常'
+                        $('.wapat').show()
+
+                    }
+                })
+            },
+            charge_v2(){
+                $.showLoading("正在加载");
+                let amount = this.money[this.index].value
+                let check = this.check
+                let params = {
+                    "sysid":check.sysId,
+                    "areaid":check.areaId,
+                    "buildid":check.buildId,
+                    "roomid":check.roomId,
+                    "amount":amount
+                }
+                $.ajax("/epay/h5/elecPayInit.json", {
+                    data: params,
+                    type: "POST",
+                    dataType: "json",
+                    beforeSend: function (xhr){
+                        return beforeSendAjax(xhr)
+                    },
+                    success: (ret) =>{
+                        $.hideLoading();
+                        if (ret.retcode == '0') {
+                            let url = encodeURIComponent(window.location.origin + "/epay/h5/nju/electric/index")
+                            window.location.href='/epay/h5/unifiedorder?merchaccno=' + ret.shopid + '&timestamp='
+                                + ret.timestamp + '&out_trade_no=' + ret.refno + '&out_trade_name='+encodeURIComponent('电费充值')+'&total_amount=' + ret.amt * 100
+                                + '&remark=' + encodeURIComponent(check.sysName + '/' + check.buildName + '/' + check.roomName)
+                                + '&return_url=' + url;
+                        } else {
+                            this.errmsg =  ret.retmsg || '初始化失败！'
+                            $('.wapat').show()
+
+                        }
+                    },
+                    error: (e) => {
+                        $.hideLoading();
+                        this.errmsg = e.errmsg || '请求出现异常'
+                        $('.wapat').show()
+
+                    }
+                })
+            },
+            confirm(){
+                $('.wapat').hide()
+            }
+        }
+    })
+    Vue.nextTick(function() {
+        $("#amount").keyup(function () {
+            $(this).val($(this).val().replace(/[^0-9]/g, ''));
+            if ($(this).val().length > 4) {
+                $(this).val($(this).val().substring(0, 4));
+            }
+        }).bind("paste", function () {
+            $(this).val($(this).val().replace(/[^0-9]/g, ''));
+            if ($(this).val().length > 4) {
+                $(this).val($(this).val().substring(0, 4));
+            }
+        });
     })
 </script>
 

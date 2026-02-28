@@ -3,7 +3,8 @@ import sys
 import re
 from pathlib import Path
 
-REQUIREMENTS_FILE = Path(__file__).parent.parent / "requirements.txt"
+# 项目根目录
+ROOT_DIR = Path(__file__).resolve().parents[1]
 
 # 检查 packaging 是否安装，否则提示用户
 try:
@@ -70,7 +71,29 @@ def check_version(pkg, op, required_version, display_name):
         return False
 
 def main():
-    pkgs = parse_requirements(REQUIREMENTS_FILE)
+    # 允许通过命令行参数指定 requirements 文件；否则：
+    # 若存在 requirements_workflow.txt，则优先检查 workflow 依赖；
+    # 否则退回到默认的 requirements.txt。
+    if len(sys.argv) > 1:
+        req_arg = Path(sys.argv[1])
+        if not req_arg.is_absolute():
+            req_path = ROOT_DIR / req_arg
+        else:
+            req_path = req_arg
+    else:
+        workflow_req = ROOT_DIR / "requirements_workflow.txt"
+        default_req = ROOT_DIR / "requirements.txt"
+        if workflow_req.exists():
+            req_path = workflow_req
+        else:
+            req_path = default_req
+
+    if not req_path.exists():
+        print(f"[错误] 找不到依赖文件: {req_path}")
+        sys.exit(1)
+
+    print(f"使用依赖文件: {req_path}")
+    pkgs = parse_requirements(req_path)
     all_ok = True
     for pkg, op, ver, display_name in pkgs:
         if not check_version(pkg, op, ver, display_name):

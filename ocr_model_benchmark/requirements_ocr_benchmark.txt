@@ -5,3 +5,4 @@ easyocr==1.7.0
 opencv-python-headless>=4.5.0
 # 可选：PaddleOCR 作为备选引擎（体积大，按需安装）
 paddleocr>=2.7.0
+ddddocr==1.4.11

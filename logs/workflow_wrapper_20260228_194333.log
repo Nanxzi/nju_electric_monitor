@@ -1,0 +1,157 @@
+Wrapper start: 2026-02-28T19:43:33.214413+08:00
+
+=== ENVIRONMENT SUMMARY ===
+Environment variable keys (count=98):
+- ACE_STUDIO_PATH
+- AGSDESKTOPJAVA
+- ALLUSERSPROFILE
+- APPDATA
+- BUNDLED_DEBUGPY_PATH
+- CHOCOLATEYINSTALL
+- CHROME_CRASHPAD_PIPE_NAME
+- CLASSPATH
+- COLORTERM
+- COMMONPROGRAMFILES
+NJU_USERNAME set: no
+NJU_PASSWORD set: no
+
+=== DISK USAGE (df -h) ===
+df -h failed: [WinError 2] 系统找不到指定的文件。
+
+=== KEY DIR SIZES ===
+du -sh D:\Documents\Github\nju_electric_monitor\src\..\logs failed: [WinError 2] 系统找不到指定的文件。
+du -sh D:\Documents\Github\nju_electric_monitor\src\..\data failed: [WinError 2] 系统找不到指定的文件。
+du -sh D:\Documents\Github\nju_electric_monitor\src\..\models failed: [WinError 2] 系统找不到指定的文件。
+
+=== CONFIG_WORKFLOW SUMMARY ===
+{
+  "username": "",
+  "password": "",
+  "auto_login": true,
+  "headless_mode": true,
+  "captcha_retry_count": 30,
+  "captcha_confidence_threshold": 0.3,
+  "save_captcha_images": true,
+  "log_level": "INFO"
+}
+
+=== FONT DIAGNOSTICS ===
+Found system fonts (ttf) count: 308
+- C:\Windows\Fonts\Candarali.ttf
+- C:\Windows\Fonts\FZYTK.TTF
+- C:\Windows\Fonts\esri_500.ttf
+- C:\Windows\Fonts\Deng.ttf
+- C:\Windows\Fonts\constanz.ttf
+- C:\Windows\Fonts\FZSTK.TTF
+- C:\Windows\Fonts\trebucbi.ttf
+- C:\Windows\Fonts\esri_105.ttf
+- C:\Windows\Fonts\esri_151.ttf
+- C:\Windows\Fonts\LEELAWDB.TTF
+- C:\Windows\Fonts\msyhbd.ttc
+- C:\Windows\Fonts\esri_400.ttf
+- C:\Windows\Fonts\esri_20.ttf
+- C:\Windows\Fonts\DUBAI-REGULAR.TTF
+- C:\Windows\Fonts\esri_5.ttf
+- C:\Windows\Fonts\YuGothR.ttc
+- C:\Windows\Fonts\esri_9.ttf
+- C:\Windows\Fonts\arial.ttf
+- C:\Windows\Fonts\LHANDW.TTF
+- C:\Windows\Fonts\gadugi.ttf
+- C:\Windows\Fonts\tahomabd.ttf
+- C:\Windows\Fonts\seguibl.ttf
+- C:\Windows\Fonts\esri_34.ttf
+- C:\Windows\Fonts\Origin.ttf
+- C:\Windows\Fonts\GOTHICBI.TTF
+- C:\Windows\Fonts\Candarab.ttf
+- C:\Windows\Fonts\cambriab.ttf
+- C:\Windows\Fonts\ariblk.ttf
+- C:\Windows\Fonts\esri_130.ttf
+- C:\Windows\Fonts\esri_15.ttf
+- C:\Windows\Fonts\fences.ttf
+- C:\Windows\Fonts\esri_144.ttf
+- C:\Windows\Fonts\euextra.ttf
+- C:\Windows\Fonts\DUBAI-BOLD.TTF
+- C:\Windows\Fonts\STFANGSO.TTF
+- C:\Windows\Fonts\monbaiti.ttf
+- C:\Users\Administrator\AppData\Local\Microsoft\Windows\Fonts\UbuntuMono[wght].ttf
+- C:\Windows\Fonts\MTCORSVA.TTF
+- C:\Windows\Fonts\esri_47.ttf
+- C:\Windows\Fonts\esri_49.ttf
+- C:\Windows\Fonts\cambriaz.ttf
+- C:\Windows\Fonts\ebrima.ttf
+- C:\Windows\Fonts\esri_224.ttf
+- C:\Windows\Fonts\seguili.ttf
+- C:\Windows\Fonts\segoeprb.ttf
+- C:\Windows\Fonts\ebrimabd.ttf
+- C:\Windows\Fonts\Candaraz.ttf
+- C:\Windows\Fonts\Inkfree.ttf
+- C:\Windows\Fonts\esri_216.ttf
+- C:\Windows\Fonts\comic.ttf
+
+FontManager samples (name -> path):
+DejaVu Sans -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Oblique.ttf
+STIXNonUnicode -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXNonUniIta.ttf
+DejaVu Serif -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSerif-Italic.ttf
+STIXSizeOneSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizOneSymBol.ttf
+STIXSizeFourSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizFourSymBol.ttf
+cmmi10 -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\cmmi10.ttf
+DejaVu Sans Mono -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSansMono-BoldOblique.ttf
+cmtt10 -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\cmtt10.ttf
+STIXNonUnicode -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXNonUniBolIta.ttf
+DejaVu Serif -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSerif.ttf
+STIXGeneral -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXGeneralItalic.ttf
+DejaVu Sans -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-Bold.ttf
+DejaVu Sans -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans-BoldOblique.ttf
+STIXGeneral -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXGeneralBol.ttf
+STIXGeneral -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXGeneralBolIta.ttf
+cmb10 -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\cmb10.ttf
+DejaVu Serif -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSerif-BoldItalic.ttf
+DejaVu Serif Display -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSerifDisplay.ttf
+DejaVu Serif -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSerif-Bold.ttf
+cmr10 -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\cmr10.ttf
+DejaVu Sans -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf
+STIXSizeOneSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizOneSymReg.ttf
+STIXSizeTwoSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizTwoSymReg.ttf
+DejaVu Sans Mono -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSansMono.ttf
+STIXSizeThreeSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizThreeSymReg.ttf
+STIXSizeThreeSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizThreeSymBol.ttf
+STIXNonUnicode -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXNonUni.ttf
+STIXSizeFiveSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizFiveSymReg.ttf
+STIXSizeTwoSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizTwoSymBol.ttf
+DejaVu Sans Mono -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSansMono-Bold.ttf
+STIXGeneral -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXGeneral.ttf
+DejaVu Sans Display -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSansDisplay.ttf
+cmsy10 -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\cmsy10.ttf
+STIXNonUnicode -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXNonUniBol.ttf
+STIXSizeFourSym -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\STIXSizFourSymReg.ttf
+cmex10 -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\cmex10.ttf
+cmss10 -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\cmss10.ttf
+DejaVu Sans Mono -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSansMono-Oblique.ttf
+ESRI Cartography -> C:\Windows\Fonts\esri_1.ttf
+Euclid Math Two -> C:\Windows\Fonts\eumat2b.ttf
+Arial -> C:\Windows\Fonts\ARIALNB.TTF
+Mongolian Baiti -> C:\Windows\Fonts\monbaiti.ttf
+Corbel -> C:\Windows\Fonts\corbell.ttf
+Verdana -> C:\Windows\Fonts\verdanai.ttf
+Times New Roman -> C:\Windows\Fonts\timesbd.ttf
+Garamond -> C:\Windows\Fonts\GARABD.TTF
+Tahoma -> C:\Windows\Fonts\tahomabd.ttf
+Euclid Symbol -> C:\Windows\Fonts\eucsymbi.ttf
+Microsoft PhagsPa -> C:\Windows\Fonts\phagspab.ttf
+MT Extra -> C:\Windows\Fonts\mtextra.ttf
+
+Preferred font find results:
+findfont('Microsoft YaHei') -> C:\Windows\Fonts\msyh.ttc
+findfont('Segoe UI') -> C:\Windows\Fonts\segoeui.ttf
+findfont('Arial Unicode MS') failed: Failed to find font Arial Unicode MS:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('Noto Sans CJK SC') failed: Failed to find font Noto Sans CJK SC:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Micro Hei') failed: Failed to find font WenQuanYi Micro Hei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('WenQuanYi Zen Hei') failed: Failed to find font WenQuanYi Zen Hei:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0, and fallback to the default font was disabled
+findfont('DejaVu Sans') -> D:\Documents\Github\nju_electric_monitor\.venv\Lib\site-packages\matplotlib\mpl-data\fonts\ttf\DejaVuSans.ttf
+fc-list failed or not available: [WinError 2] 系统找不到指定的文件。
+2026-02-28 19:43:33,823 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Microsoft YaHei
+2026-02-28 19:43:34,813 - INFO - 使用 ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2026-02-28 19:43:34,869 - INFO - ddddocr 识别器初始化成功
+2026-02-28 19:43:34,871 - INFO - 开始南京大学电费监控流程（自动无头模式）
+请输入用户名: 2026-02-28 19:45:30,277 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)': /session/6d1ebd359fc742052e67cae9d3d3255a
+2026-02-28 19:45:34,358 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C6BAF6F0B0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/6d1ebd359fc742052e67cae9d3d3255a

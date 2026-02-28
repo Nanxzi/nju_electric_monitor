@@ -55,6 +55,63 @@ def gen_variants(img):
         variants['legacy_binary'] = legacy_binarize_local(img)
     except Exception:
         pass
+
+    # captcha-oriented median + strict binary variant (minimal change for testing)
+    try:
+        def captcha_median_strict_local(im):
+            # ensure RGB
+            if im.mode != 'RGB':
+                im = im.convert('RGB')
+            # upscale a bit more aggressively
+            try:
+                im = im.resize((im.width * 3, im.height * 3), Image.Resampling.LANCZOS)
+            except Exception:
+                im = im.resize((im.width * 3, im.height * 3))
+            # increase contrast
+            try:
+                enhancer = ImageEnhance.Contrast(im)
+                im = enhancer.enhance(1.6)
+            except Exception:
+                pass
+            # grayscale + median denoise
+            g = im.convert('L')
+            try:
+                g = g.filter(ImageFilter.MedianFilter(size=3))
+            except Exception:
+                pass
+            # strict global threshold
+            bw = g.point(lambda x: 0 if x < 128 else 255, '1')
+            bw = bw.convert('L')
+            try:
+                bw = bw.filter(ImageFilter.MedianFilter(size=3))
+            except Exception:
+                pass
+            return bw
+
+        variants['captcha_median_strict'] = captcha_median_strict_local(img)
+    except Exception:
+        pass
+
+    # captcha-oriented variant: strict binary + light morphological opening to weaken thin diagonal lines
+    try:
+        def captcha_open_local(im):
+            g = im.convert('L')
+            try:
+                g = g.resize((g.width * 2, g.height * 2), Image.Resampling.LANCZOS)
+            except Exception:
+                g = g.resize((g.width * 2, g.height * 2))
+            bw = g.point(lambda x: 0 if x < 128 else 255, '1')
+            bw = bw.convert('L')
+            try:
+                # use small-radius opening to erode thin strokes (lines) while preserving thicker character strokes
+                opened = morph_open(bw, radius=1)
+            except Exception:
+                opened = bw
+            return opened
+
+        variants['captcha_open'] = captcha_open_local(img)
+    except Exception:
+        pass
     variants['original'] = img
     variants['grayscale'] = img.convert('L')
     # equalized
@@ -411,6 +468,34 @@ def normalize_prediction(txt):
     return out
 
 
+def vote_len4_candidates(candidates):
+    """对长度为4的候选结果按逐字符做加权投票，返回投票后的4位字符串或None"""
+    if not candidates:
+        return None
+    # 每一位一个计数字典
+    pos_votes = [dict() for _ in range(4)]
+    for c in candidates:
+        txt_norm = normalize_prediction(c.get('text', ''))
+        if len(txt_norm) != 4:
+            continue
+        w = float(c.get('prob', 1.0) or 1.0)
+        for i, ch in enumerate(txt_norm):
+            d = pos_votes[i]
+            d[ch] = d.get(ch, 0.0) + w
+
+    # 如果有某一位完全没有票，则放弃投票
+    if any(len(d) == 0 for d in pos_votes):
+        return None
+
+    result_chars = []
+    for i, d in enumerate(pos_votes):
+        ch, score = max(d.items(), key=lambda kv: kv[1])
+        result_chars.append(ch)
+    voted = ''.join(result_chars)
+    logger.info('len-4 voting result: %s', voted)
+    return voted
+
+
 def run_targeted_qr(folder_path, reader=None, out_csv=None):
     p = Path(folder_path)
     if not p.exists() or not p.is_dir():
@@ -498,6 +583,80 @@ def run_targeted_qr(folder_path, reader=None, out_csv=None):
     return results_sorted
 
 
+def run_experiments_captcha(folder_path, reader=None, out_csv=None):
+    """在带标注的 CAPTCHA 数据集上，比较不同前处理变体的整串识别准确率。
+
+    约定：文件名中包含 'CAP_'，其后的4个字符为期望验证码，例如 CAP_Ah87.png。
+    """
+    p = Path(folder_path)
+    if not p.exists() or not p.is_dir():
+        print('CAPTCHA 文件夹不存在：', folder_path)
+        return
+    if reader is None:
+        reader = easyocr.Reader(['en', 'ch_sim'], gpu=False)
+
+    images = []
+    for f in sorted(p.iterdir()):
+        if not f.is_file():
+            continue
+        name = f.name
+        if 'CAP_' not in name:
+            continue
+        stem = f.stem
+        try:
+            idx = stem.index('CAP_')
+            exp = stem[idx + 4:idx + 8]
+        except Exception:
+            exp = ''
+        images.append((str(f), name, exp))
+
+    if not images:
+        print('CAPTCHA 文件夹中没有符合命名规则的图片 (CAP_****)')
+        return
+
+    # 从首张图获取所有可用前处理变体名称
+    sample_img = Image.open(images[0][0])
+    variant_names = list(gen_variants(sample_img).keys())
+
+    allow_alnum = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+    # 固定一组较稳健的识别参数，重点考察前处理差异
+    params = {'text_threshold': 0.6, 'low_text': 0.3, 'link_threshold': 0.3}
+
+    results = []
+    for vname in variant_names:
+        total = 0
+        correct = 0
+        for img_path, fname, exp in images:
+            total += 1
+            img = Image.open(img_path)
+            vars_v = gen_variants(img)
+            src = vars_v.get(vname, img)
+            r = collect_easyocr(reader, src, allowlist=allow_alnum,
+                                 text_threshold=params['text_threshold'],
+                                 low_text=params['low_text'],
+                                 link_threshold=params['link_threshold'])
+            pred = r['text'] if r else ''
+            if pred and exp:
+                if pred.strip().upper() == exp.strip().upper():
+                    correct += 1
+        acc = (correct / total * 100.0) if total else 0.0
+        results.append({'variant': vname, 'total': total, 'correct': correct, 'accuracy': acc})
+
+    out_csv = out_csv or (PROJECT_ROOT / 'ocr_model_benchmark' / 'captcha_experiments.csv')
+    with open(out_csv, 'w', newline='', encoding='utf-8') as fh:
+        writer = csv.DictWriter(fh, fieldnames=['variant', 'total', 'correct', 'accuracy'])
+        writer.writeheader()
+        for r in results:
+            writer.writerow(r)
+
+    results_sorted = sorted(results, key=lambda x: x['accuracy'], reverse=True)
+    print('\nCAPTCHA variants summary (Top 10):')
+    for r in results_sorted[:10]:
+        print(r)
+    print('\nCSV saved to:', out_csv)
+    return results_sorted
+
+
 def run(image_path, expected=None, reader=None):
     img = Image.open(image_path)
     # allow passing a pre-created reader for batch runs
@@ -556,15 +715,24 @@ def run(image_path, expected=None, reader=None):
 
     # 逐字符识别已移除；仅使用整图与等宽分割候选
 
-    # choose best: prefer len==4 then highest prob
+    # choose best: 先对长度为4的候选做加权投票，若失败再退回“长度为4优先，否则最高置信度”
     candidates = [c for c in candidates if c.get('text')]
     logger.info('candidates: %s', candidates)
     if not candidates:
         logger.warning('无候选结果')
         return None
-    len4 = [c for c in candidates if len(c['text'])==4]
-    if len4:
-        best = max(len4, key=lambda x: x['prob'])
+
+    # 对所有候选中，经 normalize_prediction 后长度为4的进行投票
+    len4_cands = [c for c in candidates if len(normalize_prediction(c.get('text', ''))) == 4]
+    voted = vote_len4_candidates(len4_cands) if len4_cands else None
+    if voted and len(voted) == 4:
+        logger.info('使用投票结果作为最终输出: %s', voted)
+        return voted
+
+    # 若投票无结果，退回原来的选择策略
+    len4_raw = [c for c in candidates if len(c['text']) == 4]
+    if len4_raw:
+        best = max(len4_raw, key=lambda x: x['prob'])
     else:
         best = max(candidates, key=lambda x: x['prob'])
     logger.info('选择最终: %s (engine=%s, prob=%.3f)', best['text'], best['engine'], best['prob'])
@@ -629,6 +797,11 @@ if __name__ == '__main__':
         qr_folder = PROJECT_ROOT / 'ocr_model_benchmark' / 'QR'
         reader = easyocr.Reader(['en','ch_sim'], gpu=False)
         run_targeted_qr(qr_folder, reader=reader)
+    elif sys.argv[1].lower() == 'captcha_exp':
+        # 在 ocr_model_benchmark/CAPTCHA 上比较不同前处理变体
+        cap_folder = PROJECT_ROOT / 'ocr_model_benchmark' / 'CAPTCHA'
+        reader = easyocr.Reader(['en', 'ch_sim'], gpu=False)
+        run_experiments_captcha(cap_folder, reader=reader)
     else:
         image_path = sys.argv[1]
         expected = sys.argv[2] if len(sys.argv)>2 else None
