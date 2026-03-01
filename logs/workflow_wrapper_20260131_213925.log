@@ -302,7 +302,7 @@ DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSer
 2026-01-31 13:40:06,658 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
 2026-01-31 13:40:06,677 - INFO - 找到电量信息元素: 持卡人姓名：***
 2026-01-31 13:40:06,677 - WARNING - 未在元素中找到标准格式的电量信息
-2026-01-31 13:40:06,691 - INFO - 找到i标签中的电量信息: 吴相民
+2026-01-31 13:40:06,691 - INFO - 找到i标签中的电量信息: ***
 2026-01-31 13:40:06,691 - WARNING - i标签中未找到标准格式的电量信息
 2026-01-31 13:40:06,691 - WARNING - 未找到i标签中的电量信息
 2026-01-31 13:40:06,694 - INFO - 在页面源码中查找电量信息...
