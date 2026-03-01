@@ -496,7 +496,7 @@ class NJUElectricMonitor:
             return False
     
     def handle_captcha(self):
-        """处理验证码（支持多次尝试无效验证码）"""
+        """处理验证码（两层嵌套重试：页面刷新 + 同图多次 OCR）"""
         try:
             self.logger.info("开始处理验证码（两层嵌套重试）...")
             outer_max = max(1, int(self.captcha_retry_count))
@@ -539,8 +539,13 @@ class NJUElectricMonitor:
                 prev_elem, captcha_img = self.capture_captcha_image()
                 last_captcha_img = captcha_img
                 if not captcha_img:
-                    self.logger.info("未检测到验证码图片，可能无需验证码，视为通过")
-                    return True
+                    self.logger.info("未检测到验证码图片，可能无需验证码，直接尝试点击登录按钮")
+                    if self.click_login_button():
+                        # 后续由 wait_for_login_success 判断是否真正登录成功
+                        return True
+                    else:
+                        self.logger.error("未检测到验证码图片但点击登录按钮失败")
+                        continue
 
                 # 保存验证码图片用于调试（只保存当前外层的一张）
                 if self.save_captcha_images:
@@ -574,18 +579,20 @@ class NJUElectricMonitor:
                         self.logger.warning("点击登录按钮失败，结束当前外层重试，准备重新加载页面")
                         break
 
-                    # 登录按钮已点击，检查是否存在无效验证码提示
+                    # 登录按钮已点击，检查是否存在验证码错误提示
                     time.sleep(2)
                     try:
-                        error_elem = self.driver.find_element(By.ID, "msg1")
-                        if error_elem.is_displayed() and "无效的验证码" in error_elem.text:
-                            self.logger.warning("检测到无效的验证码提示，将重新加载页面获取新验证码")
-                            break  # 结束当前外层，进入下一轮 outer
-                    except NoSuchElementException:
-                        self.logger.info("未检测到无效验证码提示，验证码通过")
-                        return True
+                        # 统一使用 has_captcha_error，兼容中英文提示和旧版 msg1 元素
+                        if self.has_captcha_error():
+                            self.logger.warning("检测到验证码错误提示，将重新加载页面获取新验证码")
+                            # 结束当前外层，进入下一轮 outer（刷新页面由外层完成）
+                            break
+                        else:
+                            self.logger.info("未检测到验证码错误提示，验证码可能通过")
+                            return True
                     except Exception as e:
-                        self.logger.warning(f"检测验证码错误元素时出错: {e}")
+                        self.logger.warning(f"检测验证码错误状态时出错: {e}")
+                        # 保守起见视为验证码已通过，等待后续登录成功判断
                         return True
 
                 # 内层循环结束仍未成功登录，则继续下一轮外层重试（刷新页面并获取新的验证码）
@@ -683,21 +690,103 @@ class NJUElectricMonitor:
         except Exception as e:
             self.logger.error(f"点击登录按钮时出错: {e}")
             return False
+
+    def has_captcha_error(self):
+        """检测当前页面是否存在与验证码相关的错误提示。
+
+        兼容旧版中文提示（“无效的验证码”、“验证码错误”）和新版英文提示
+        （例如 “Verification code error”、“Invalid verification code”）。
+        """
+        try:
+            keywords_cn = ["无效的验证码", "验证码错误"]
+            keywords_en = ["verification code error", "invalid verification code"]
+
+            # 优先检查常见错误提示元素
+            candidate_elements = []
+            # 旧版统一认证错误提示元素（auto 原有逻辑）
+            try:
+                candidate_elements.append(self.driver.find_element(By.ID, "msg1"))
+            except NoSuchElementException:
+                pass
+            # 新版统一认证上的 formError 提示
+            try:
+                candidate_elements.append(self.driver.find_element(By.ID, "captchaErrorTip"))
+            except NoSuchElementException:
+                pass
+            try:
+                candidate_elements.append(self.driver.find_element(By.ID, "formErrorTip"))
+            except NoSuchElementException:
+                pass
+            try:
+                candidate_elements.extend(self.driver.find_elements(By.CLASS_NAME, "form-errorTip"))
+            except Exception:
+                pass
+
+            for elem in candidate_elements:
+                try:
+                    if not elem:
+                        continue
+                    text = (elem.text or "") + " " + (elem.get_attribute("title") or "")
+                    text_stripped = text.strip()
+                    text_lower = text_stripped.lower()
+
+                    if any(kw in text_stripped for kw in keywords_cn):
+                        self.logger.info(f"检测到中文验证码错误提示: {text_stripped!r}")
+                        return True
+                    if any(kw in text_lower for kw in keywords_en):
+                        self.logger.info(f"检测到英文验证码错误提示: {text_stripped!r}")
+                        return True
+                except Exception:
+                    continue
+
+            # 回退：在页面源码中搜索关键字
+            try:
+                source = self.driver.page_source
+                if any(kw in source for kw in keywords_cn):
+                    self.logger.info("在页面源码中检测到中文验证码错误提示")
+                    return True
+                lower_source = source.lower()
+                if any(kw in lower_source for kw in keywords_en):
+                    self.logger.info("在页面源码中检测到英文验证码错误提示")
+                    return True
+            except Exception:
+                pass
+
+            return False
+        except Exception as e:
+            self.logger.warning(f"检测验证码错误提示时出错: {e}")
+            return False
     
     def wait_for_login_success(self):
         """等待登录成功"""
         try:
             self.logger.info("等待登录成功...")
-            time.sleep(5)  # 等待页面跳转
-            
-            # 检查是否还在登录页面
-            current_url = self.driver.current_url
-            if "login" in current_url.lower() or "index" in current_url.lower():
-                self.logger.info("登录可能成功，继续下一步...")
-                return True
-            else:
+            # 最多等待 15 秒，直到跳转到电费页面
+            try:
+                WebDriverWait(self.driver, 15).until(
+                    lambda d: "epay.nju.edu.cn" in d.current_url.lower()
+                    and "electric" in d.current_url.lower()
+                )
+            except Exception:
+                # 未在预期时间内跳转到电费页面，检查当前 URL
+                current_url = self.driver.current_url
+                lower_url = current_url.lower()
+
+                # 仍然停留在统一认证登录页，视为登录失败
+                if "authserver.nju.edu.cn" in lower_url and "login" in lower_url:
+                    self.logger.error(f"仍停留在统一认证登录页，当前 URL: {current_url}")
+                    # 如果有验证码错误提示，也一并记录，方便排查
+                    if self.has_captcha_error():
+                        self.logger.error("登录失败可能由验证码错误导致")
+                    return False
+
+                # 其他情况：可能跳转到了中间页面，记录但仍尝试继续
                 self.logger.info(f"页面已跳转到: {current_url}")
                 return True
+
+            # 成功跳转到电费页面
+            self.logger.info(f"检测到已跳转到电费页面: {self.driver.current_url}")
+            return True
                 
         except Exception as e:
             self.logger.error(f"等待登录成功时出错: {e}")

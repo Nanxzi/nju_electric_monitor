@@ -822,6 +822,11 @@ class NJUElectricMonitor:
 
             # 优先检查常见错误提示元素
             candidate_elements = []
+            # 旧版统一认证错误提示元素（auto 脚本原有逻辑）
+            try:
+                candidate_elements.append(self.driver.find_element(By.ID, "msg1"))
+            except NoSuchElementException:
+                pass
             try:
                 candidate_elements.append(self.driver.find_element(By.ID, "captchaErrorTip"))
             except NoSuchElementException:
