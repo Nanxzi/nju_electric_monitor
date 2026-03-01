@@ -73,6 +73,8 @@ class NJUElectricMonitor:
         self.driver = None
         self.wait = None
         self.ocr_reader = None
+        # workflow 专用验证码图片目录（在 run() 中初始化与清空）
+        self.qr_pics_dir = None
         
         # 设置日志级别
         log_level = getattr(logging, self.config.get("log_level", "INFO"))
@@ -80,6 +82,30 @@ class NJUElectricMonitor:
         
         self.setup_driver()
         self.setup_ocr()
+
+    def init_qr_pics_dir(self):
+        """初始化并清空 workflow 运行使用的验证码图片目录 data/qr_pics_workflow"""
+        try:
+            base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+            qr_dir = os.path.join(base_dir, "qr_pics_workflow")
+            os.makedirs(qr_dir, exist_ok=True)
+
+            # 清空目录下旧图片
+            for name in os.listdir(qr_dir):
+                path = os.path.join(qr_dir, name)
+                try:
+                    if os.path.isfile(path):
+                        os.remove(path)
+                except Exception:
+                    # 清理失败不影响主流程
+                    continue
+
+            self.qr_pics_dir = qr_dir
+            self.logger.info(f"已初始化并清空验证码图片目录: {qr_dir}")
+        except Exception as e:
+            # 目录初始化失败不应阻塞主流程，仅记录告警
+            if hasattr(self, "logger"):
+                self.logger.warning(f"初始化验证码图片目录失败: {e}")
         
     def setup_logging(self, log_level):
         """设置日志（按 年-月-日-时 生成文件名）"""
@@ -662,11 +688,24 @@ class NJUElectricMonitor:
                         continue
 
                 # 保存验证码图片用于调试（只保存当前外层的一张）
+                captcha_path_for_outer = None
                 if self.save_captcha_images:
                     try:
-                        captcha_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'captcha_debug.png')
-                        captcha_img.save(captcha_path)
-                        self.logger.info(f"验证码图片已保存到 {captcha_path}")
+                        # 1) 仍然保存一份统一的调试文件
+                        debug_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'captcha_debug.png')
+                        captcha_img.save(debug_path)
+                        self.logger.info(f"验证码图片已保存到 {debug_path}")
+
+                        # 2) 额外保存到 workflow 专用目录，并在识别成功后按验证码结果重命名
+                        if not self.qr_pics_dir:
+                            base_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
+                            self.qr_pics_dir = os.path.join(base_dir, 'qr_pics_workflow')
+                            os.makedirs(self.qr_pics_dir, exist_ok=True)
+
+                        filename = f"captcha_outer{outer + 1}.png"
+                        captcha_path_for_outer = os.path.join(self.qr_pics_dir, filename)
+                        captcha_img.save(captcha_path_for_outer)
+                        self.logger.info(f"验证码图片已保存到 {captcha_path_for_outer}")
                     except Exception as e:
                         self.logger.warning(f"保存验证码图片失败: {e}")
 
@@ -682,6 +721,25 @@ class NJUElectricMonitor:
                     if len(captcha_text) != 4:
                         self.logger.info(f"识别结果长度不是4: {captcha_text!r}, len={len(captcha_text)}")
                         continue
+
+                    # 在识别出有效的 4 位验证码后，将本轮外层截图重命名为“验证码结果.png”
+                    if captcha_path_for_outer and os.path.exists(captcha_path_for_outer):
+                        try:
+                            safe_text = re.sub(r"[^A-Za-z0-9]", "", str(captcha_text).strip()).upper() or "UNKNOWN"
+                            base_name = f"{safe_text}.png"
+                            target_path = os.path.join(self.qr_pics_dir, base_name)
+                            # 若已存在同名文件，则添加序号避免覆盖
+                            if os.path.exists(target_path):
+                                idx = 2
+                                while os.path.exists(os.path.join(self.qr_pics_dir, f"{safe_text}_{idx}.png")):
+                                    idx += 1
+                                target_path = os.path.join(self.qr_pics_dir, f"{safe_text}_{idx}.png")
+                            os.replace(captcha_path_for_outer, target_path)
+                            self.logger.info(f"已将验证码图片重命名为: {target_path}")
+                            # 更新路径，避免后续误用旧路径
+                            captcha_path_for_outer = target_path
+                        except Exception as e:
+                            self.logger.warning(f"重命名验证码图片为识别结果时出错: {e}")
 
                     # 仅当结果为4个字符时，才填写并尝试登录
                     if not self.fill_captcha(captcha_text):
@@ -1322,6 +1380,9 @@ class NJUElectricMonitor:
         """运行监控流程"""
         try:
             self.logger.info("开始南京大学电费监控流程（自动无头模式）")
+
+            # 初始化并清空本次 workflow 运行的验证码图片目录
+            self.init_qr_pics_dir()
             
             # 1. 获取登录凭据
             self.get_user_credentials()
