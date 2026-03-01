@@ -69,11 +69,16 @@ class NJUElectricMonitor:
         # 默认验证码重试次数从 5 次降为 3 次，可在配置文件中通过 captcha_retry_count 覆盖
         self.captcha_retry_count = self.config.get("captcha_retry_count", 3)
         self.save_captcha_images = self.config.get("save_captcha_images", True)
+        # 测试模式：在关键步骤保存页面快照到 data/test_snapshots_workflow
+        self.test_mode = bool(self.config.get("test_mode", False))
         self.driver = None
         self.wait = None
         self.ocr_reader = None
         # workflow 专用验证码图片目录（在 run() 中初始化与清空）
         self.qr_pics_dir = None
+        # 测试模式下的快照目录与计数器
+        self.test_snapshot_dir = None
+        self.snapshot_index = 0
         
         # 设置日志级别
         log_level = getattr(logging, self.config.get("log_level", "INFO"))
@@ -81,6 +86,52 @@ class NJUElectricMonitor:
         
         self.setup_driver()
         self.setup_ocr()
+
+    def init_test_snapshot_dir(self):
+        """在测试模式下初始化本次运行的页面快照目录 data/test_snapshots_workflow/YYYYmmdd_HHMMSS"""
+        if not self.test_mode:
+            return
+        try:
+            base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+            root_dir = os.path.join(base_dir, "test_snapshots_workflow")
+            os.makedirs(root_dir, exist_ok=True)
+
+            now = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
+            run_dir = os.path.join(root_dir, now.strftime("%Y%m%d_%H%M%S"))
+            os.makedirs(run_dir, exist_ok=True)
+
+            self.test_snapshot_dir = run_dir
+            self.logger.info(f"测试模式已开启，本次页面快照目录: {run_dir}")
+        except Exception as e:
+            # 快照目录初始化失败不应阻塞主流程
+            try:
+                self.logger.warning(f"初始化测试快照目录失败: {e}")
+            except Exception:
+                pass
+
+    def save_page_snapshot(self, label: str):
+        """在测试模式下保存当前页面截图到快照目录，文件名带步骤标签。"""
+        if not self.test_mode:
+            return
+        if not self.driver:
+            return
+        try:
+            if not self.test_snapshot_dir:
+                self.init_test_snapshot_dir()
+                if not self.test_snapshot_dir:
+                    return
+
+            safe_label = re.sub(r"[^0-9A-Za-z_-]", "_", str(label))[:50]
+            self.snapshot_index += 1
+            filename = f"{self.snapshot_index:02d}_{safe_label}.png"
+            path = os.path.join(self.test_snapshot_dir, filename)
+            self.driver.save_screenshot(path)
+            self.logger.info(f"[测试模式] 已保存页面快照: {path}")
+        except Exception as e:
+            try:
+                self.logger.warning(f"保存页面快照失败: {e}")
+            except Exception:
+                pass
 
     def init_qr_pics_dir(self):
         """初始化并清空 workflow 运行使用的验证码图片目录 data/captcha_workflow"""
@@ -670,6 +721,8 @@ class NJUElectricMonitor:
                     if not self.fill_login_form():
                         self.logger.warning("填写登录表单失败，跳过本轮外层重试")
                         continue
+                    # 测试模式：每轮外层重试后，保存当前登录表单页快照
+                    self.save_page_snapshot(f"10_outer{outer + 1}_form_filled")
                 except Exception as e:
                     self.logger.warning(f"准备登录表单时出错: {e}")
                     continue
@@ -705,6 +758,8 @@ class NJUElectricMonitor:
                         captcha_path_for_outer = os.path.join(self.qr_pics_dir, filename)
                         captcha_img.save(captcha_path_for_outer)
                         self.logger.info(f"验证码图片已保存到 {captcha_path_for_outer}")
+                        # 测试模式：保存当前页面快照，包含验证码和错误提示区域
+                        self.save_page_snapshot(f"11_outer{outer + 1}_captcha_page")
                     except Exception as e:
                         self.logger.warning(f"保存验证码图片失败: {e}")
 
@@ -751,8 +806,10 @@ class NJUElectricMonitor:
                         break
 
                     # 登录按钮已点击，检查是否存在无效验证码提示
-                    time.sleep(2)
+                    time.sleep(3)
                     try:
+                        # 测试模式：点击登录后保存页面快照，便于对比错误提示
+                        self.save_page_snapshot(f"12_outer{outer + 1}_inner{inner + 1}_after_login_click")
                         # 统一使用 has_captcha_error，兼容中英文提示
                         if self.has_captcha_error():
                             self.logger.warning("检测到验证码错误提示，将重新加载页面获取新验证码")
@@ -767,6 +824,11 @@ class NJUElectricMonitor:
                         return True
 
                 # 内层循环结束仍未成功登录，则继续下一轮外层重试（刷新页面并获取新的验证码）
+
+                # 在外层重试之间增加等待时间，避免频繁请求触发风控
+                if outer < outer_max - 1:
+                    self.logger.info("本轮登录未成功，等待 5 秒后进行下一轮验证码重试...")
+                    time.sleep(5)
 
             # 自动识别失败，优先判断当前环境是否允许手动输入
             import sys
@@ -1371,16 +1433,22 @@ class NJUElectricMonitor:
             self.logger.info(f"正在打开页面: {self.url}")
             self.driver.get(self.url)
             time.sleep(3)
+            # 测试模式：保存初始登录页快照
+            self.save_page_snapshot("01_login_page_loaded")
             
             # 3. 等待登录表单加载
             if not self.wait_for_login_form():
                 self.logger.error("登录表单加载失败")
                 return False
+            # 测试模式：登录表单加载完成
+            self.save_page_snapshot("02_login_form_ready")
             
             # 4. 填写登录表单
             if not self.fill_login_form():
                 self.logger.error("填写登录表单失败")
                 return False
+            # 测试模式：表单已填写
+            self.save_page_snapshot("03_form_filled_initial")
             
             # 5. 处理验证码（内部负责在有/无验证码场景下点击登录按钮）
             if not self.handle_captcha():
@@ -1391,6 +1459,8 @@ class NJUElectricMonitor:
             if not self.wait_for_login_success():
                 self.logger.error("登录失败")
                 return False
+            # 测试模式：已通过统一认证并进入电费页面
+            self.save_page_snapshot("06_login_success_electric_page")
             
             # 8. 点击充值按钮
             if not self.click_recharge_button():
@@ -1429,11 +1499,16 @@ def main():
     
     monitor = NJUElectricMonitor(config_file)
     try:
-        monitor.run()
+        success = monitor.run()
+        if not success:
+            print("监控流程失败，未能成功获取电量数据")
+            sys.exit(1)
     except KeyboardInterrupt:
         print("\n用户中断程序")
+        sys.exit(1)
     except Exception as e:
         print(f"程序运行出错: {e}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
