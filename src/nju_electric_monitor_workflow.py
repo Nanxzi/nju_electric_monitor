@@ -66,7 +66,8 @@ class NJUElectricMonitor:
         self.password = os.environ.get('NJU_PASSWORD', self.config.get("password", ""))
         self.auto_login = self.config.get("auto_login", True)
         self.headless_mode = self.config.get("headless_mode", True)
-        self.captcha_retry_count = self.config.get("captcha_retry_count", 5)
+        # 默认验证码重试次数从 5 次降为 3 次，可在配置文件中通过 captcha_retry_count 覆盖
+        self.captcha_retry_count = self.config.get("captcha_retry_count", 3)
         self.captcha_confidence_threshold = self.config.get("captcha_confidence_threshold", 0.3)
         self.save_captcha_images = self.config.get("save_captcha_images", True)
         self.driver = None
@@ -609,77 +610,117 @@ class NJUElectricMonitor:
             return False
     
     def handle_captcha(self):
-        """处理验证码（支持多次尝试无效验证码）"""
+        """处理验证码（两层嵌套重试：页面刷新 + 同图多次 OCR）"""
         try:
-            self.logger.info("检查是否有验证码...")
-            prev_elem, captcha_img = self.capture_captcha_image()
-            max_attempts = self.captcha_retry_count
-            for attempt in range(max_attempts):
-                self.fill_login_form()
-                if captcha_img:
-                    # 保存验证码图片用于调试
-                    if self.save_captcha_images:
-                        try:
-                            captcha_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'captcha_debug.png')
-                            captcha_img.save(captcha_path)
-                            self.logger.info(f"验证码图片已保存到 {captcha_path}")
-                        except Exception as e:
-                            self.logger.warning(f"保存验证码图片失败: {e}")
-                    self.logger.info(f"验证码识别尝试 {attempt + 1}/{max_attempts}")
-                    captcha_text = self.recognize_captcha(captcha_img)
-                    if captcha_text:
-                        if self.fill_captcha(captcha_text):
-                            self.logger.info(f"验证码填写完成，点击登录按钮...")
-                            if self.click_login_button():
-                                # 检查是否出现无效验证码提示
-                                time.sleep(2)
-                                try:
-                                    # 兼容新版统一认证页面的英文错误提示（"Verification code error"）
-                                    if self.has_captcha_error():
-                                        self.logger.warning("检测到验证码错误提示，准备重试...")
-                                        # 等待验证码刷新后重新获取图片
-                                        try:
-                                            new_elem = self.wait_for_captcha_refresh(prev_elem)
-                                            prev_elem, captcha_img = self.capture_captcha_image()
-                                        except Exception as e:
-                                            self.logger.warning(f"等待验证码刷新或重新获取失败: {e}")
-                                        continue
-                                    else:
-                                        self.logger.info("未检测到验证码错误提示，验证码可能通过")
-                                        return True
-                                except Exception as e:
-                                    self.logger.warning(f"检测验证码错误状态时出错: {e}")
-                                    return True
-                            else:
-                                self.logger.warning("点击登录按钮失败")
-                        else:
-                            self.logger.warning("验证码填写失败")
+            self.logger.info("开始处理验证码（两层嵌套重试）...")
+            outer_max = max(1, int(self.captcha_retry_count))
+            inner_max = 3  # 同一验证码图片下的 OCR 尝试次数
+            last_captcha_img = None
+
+            for outer in range(outer_max):
+                self.logger.info(f"外层页面重试 {outer + 1}/{outer_max}")
+
+                # 外层：重新加载或刷新页面，并填写用户名密码
+                try:
+                    if outer == 0:
+                        # 假设 run() 已经打开了页面，但仍确保表单加载完毕
+                        if not self.wait_for_login_form():
+                            self.logger.warning("登录表单未就绪，尝试刷新页面")
+                            self.driver.refresh()
+                            time.sleep(2)
+                            if not self.wait_for_login_form():
+                                self.logger.warning("刷新后登录表单仍未加载，跳过本轮外层重试")
+                                continue
                     else:
-                        self.logger.warning(f"验证码识别失败，尝试 {attempt + 1}")
-                        # 为了避免多次对同一张验证码图片重复识别，这里尝试刷新验证码图片
+                        # 后续外层尝试直接刷新页面
                         try:
-                            elem = self.get_captcha_element()
-                            if elem is not None:
-                                self.logger.info("点击验证码图片以刷新验证码...")
-                                try:
-                                    elem.click()
-                                    time.sleep(1)
-                                except Exception as e:
-                                    self.logger.warning(f"点击验证码图片刷新失败: {e}")
-                            # 无论点击是否成功，都重新捕获一次验证码图片供下一轮使用
-                            prev_elem, captcha_img = self.capture_captcha_image()
+                            self.driver.refresh()
                         except Exception as e:
-                            self.logger.warning(f"验证码识别失败后刷新验证码图片时出错: {e}")
-                else:
-                    # 页面上未检测到验证码图片，可能当前不需要验证码，直接尝试点击登录按钮
-                    self.logger.info("未检测到验证码图片，直接尝试点击登录按钮")
+                            self.logger.warning(f"刷新页面失败: {e}")
+                        time.sleep(2)
+                        if not self.wait_for_login_form():
+                            self.logger.warning("刷新后登录表单加载失败，跳过本轮外层重试")
+                            continue
+
+                    if not self.fill_login_form():
+                        self.logger.warning("填写登录表单失败，跳过本轮外层重试")
+                        continue
+                except Exception as e:
+                    self.logger.warning(f"准备登录表单时出错: {e}")
+                    continue
+
+                # 获取当前页面上的验证码图片
+                prev_elem, captcha_img = self.capture_captcha_image()
+                last_captcha_img = captcha_img
+                if not captcha_img:
+                    self.logger.info("未检测到验证码图片，可能无需验证码，直接尝试点击登录按钮")
                     if self.click_login_button():
+                        # 后续由 wait_for_login_success 判断是否真正登录成功
                         return True
                     else:
                         self.logger.error("未检测到验证码图片但点击登录按钮失败")
-                        return False
-            # 自动识别失败，提供手动输入选项
+                        continue
+
+                # 保存验证码图片用于调试（只保存当前外层的一张）
+                if self.save_captcha_images:
+                    try:
+                        captcha_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'captcha_debug.png')
+                        captcha_img.save(captcha_path)
+                        self.logger.info(f"验证码图片已保存到 {captcha_path}")
+                    except Exception as e:
+                        self.logger.warning(f"保存验证码图片失败: {e}")
+
+                # 内层：对同一张验证码图片进行多次 OCR 识别
+                for inner in range(inner_max):
+                    self.logger.info(f"验证码识别（同一图片）尝试 {inner + 1}/{inner_max}，外层 {outer + 1}/{outer_max}")
+                    captcha_text = self.recognize_captcha(captcha_img)
+
+                    if not captcha_text:
+                        self.logger.info("本次识别无有效结果，继续内层尝试")
+                        continue
+
+                    if len(captcha_text) != 4:
+                        self.logger.info(f"识别结果长度不是4: {captcha_text!r}, len={len(captcha_text)}")
+                        continue
+
+                    # 仅当结果为4个字符时，才填写并尝试登录
+                    if not self.fill_captcha(captcha_text):
+                        self.logger.warning("验证码填写失败，结束当前外层重试，准备重新加载页面")
+                        break
+
+                    self.logger.info("验证码填写完成，点击登录按钮...")
+                    if not self.click_login_button():
+                        self.logger.warning("点击登录按钮失败，结束当前外层重试，准备重新加载页面")
+                        break
+
+                    # 登录按钮已点击，检查是否存在无效验证码提示
+                    time.sleep(2)
+                    try:
+                        # 统一使用 has_captcha_error，兼容中英文提示
+                        if self.has_captcha_error():
+                            self.logger.warning("检测到验证码错误提示，将重新加载页面获取新验证码")
+                            # 结束当前外层，进入下一轮 outer（刷新页面由外层完成）
+                            break
+                        else:
+                            self.logger.info("未检测到验证码错误提示，验证码可能通过")
+                            return True
+                    except Exception as e:
+                        self.logger.warning(f"检测验证码错误状态时出错: {e}")
+                        # 保守起见视为验证码已通过，等待后续登录成功判断
+                        return True
+
+                # 内层循环结束仍未成功登录，则继续下一轮外层重试（刷新页面并获取新的验证码）
+
+            # 自动识别失败，优先判断当前环境是否允许手动输入
+            import sys
+            if not sys.stdin.isatty():
+                # GitHub Actions 等非交互环境下，无法手动输入验证码，直接结束本次尝试
+                self.logger.error("自动验证码识别失败，且当前为非交互环境，无法手动输入验证码，本次监控流程失败")
+                return False
+
+            # 仅在本地交互环境中提供手动输入选项
             self.logger.warning("自动验证码识别失败，请手动输入")
+            captcha_img = last_captcha_img
             try:
                 if not self.headless_mode and captcha_img:
                     captcha_img.show()
