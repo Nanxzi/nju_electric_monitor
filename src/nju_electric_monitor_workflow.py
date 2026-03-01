@@ -914,20 +914,39 @@ class NJUElectricMonitor:
         """点击'去充值'按钮"""
         try:
             self.logger.info("查找'去充值'按钮...")
-            
-            # 使用精确的CSS选择器
+            recharge_button = None
+
+            # 1) 优先按文本内容查找包含“去充值”的可点击元素
             try:
-                recharge_button = self.driver.find_element(By.CSS_SELECTOR, "div.footer")
-                if recharge_button.is_displayed() and recharge_button.is_enabled():
-                    recharge_button.click()
-                    self.logger.info("已点击充值按钮")
-                    time.sleep(3)
-                    return True
-                else:
-                    self.logger.warning("充值按钮不可见或不可点击")
-                    return False
-            except NoSuchElementException:
-                self.logger.error("未找到'去充值'按钮")
+                candidates = self.driver.find_elements(By.XPATH, "//*[contains(text(),'去充值')]")
+                visible = [el for el in candidates if el.is_displayed() and el.is_enabled()]
+                if visible:
+                    recharge_button = visible[0]
+                    self.logger.info("通过文本包含 '去充值' 找到充值按钮")
+            except Exception as e:
+                self.logger.warning(f"通过文本查找'去充值'按钮出错: {e}")
+
+            # 2) 若未找到，则回退到原先的 CSS 选择器 div.footer
+            if recharge_button is None:
+                try:
+                    btn = self.driver.find_element(By.CSS_SELECTOR, "div.footer")
+                    if btn.is_displayed() and btn.is_enabled():
+                        recharge_button = btn
+                        self.logger.info("通过 CSS 选择器 div.footer 找到充值按钮")
+                except NoSuchElementException:
+                    self.logger.warning("通过 CSS 选择器未找到'去充值'按钮 div.footer")
+
+            if recharge_button is None:
+                self.logger.error("未找到可点击的'去充值'按钮")
+                return False
+
+            try:
+                recharge_button.click()
+                self.logger.info("已点击充值按钮")
+                time.sleep(3)
+                return True
+            except Exception as e:
+                self.logger.error(f"点击充值按钮时发生异常: {e}")
                 return False
             
         except Exception as e:
