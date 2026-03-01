@@ -6,5 +6,5 @@
     "captcha_retry_count": 5,
     "save_captcha_images": true,
     "log_level": "INFO",
-    "test_mode": true
+    "test_mode": false
 } 
