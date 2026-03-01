@@ -15,3 +15,6 @@ __pycache__/
 .vscode/
 *.swp
 .DS_Store
+
+# 测试数据
+data\test_snapshots_auto\*

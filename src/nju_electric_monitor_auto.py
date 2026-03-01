@@ -677,9 +677,15 @@ class NJUElectricMonitor:
                             self.logger.warning(f"重命名验证码图片为识别结果时出错: {e}")
 
                     # 仅当结果为4个字符时，才填写并尝试登录
+                    # 测试模式：填写验证码前保存一张快照
+                    self.save_page_snapshot(f"12_outer{outer + 1}_inner{inner + 1}_before_fill_captcha")
+
                     if not self.fill_captcha(captcha_text):
                         self.logger.warning("验证码填写失败，结束当前外层重试，准备重新加载页面")
                         break
+
+                    # 测试模式：填写验证码后（尚未点击登录）再保存一张快照
+                    self.save_page_snapshot(f"13_outer{outer + 1}_inner{inner + 1}_after_fill_captcha")
 
                     self.logger.info("验证码填写完成，点击登录按钮...")
                     if not self.click_login_button():
@@ -690,7 +696,7 @@ class NJUElectricMonitor:
                     time.sleep(2)
                     try:
                         # 测试模式：点击登录后保存页面快照，便于对比错误提示
-                        self.save_page_snapshot(f"12_outer{outer + 1}_inner{inner + 1}_after_login_click")
+                        self.save_page_snapshot(f"14_outer{outer + 1}_inner{inner + 1}_after_login_click")
                         # 统一使用 has_captcha_error，兼容中英文提示和旧版 msg1 元素
                         if self.has_captcha_error():
                             self.logger.warning("检测到验证码错误提示，将重新加载页面获取新验证码")
