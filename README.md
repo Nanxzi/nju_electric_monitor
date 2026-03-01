@@ -150,10 +150,9 @@ python src/web_panel.py
 - `data/electricity_data.csv`：电量数据（CSV 格式，列为 time/num/unit）
 - `data/electricity_trend.png`：完整历史电量变化曲线图
 - `data/recent_20_changes.png`：最近 20 次电量变化曲线图（workflow/auto 版本）
-- `data/debug_page_source.html`：页面源码（已对“持卡人姓名”等敏感信息做脱敏，仅用于调试）
 - `data/captcha_debug.png`：最近一次验证码截图（用于快速查看验证码样式）
-- `data/qr_pics_auto/*.png`：本地 auto 版本每轮重试保存的验证码图片，识别成功后会按识别结果重命名为 `PCET.png` 等
-- `data/qr_pics_workflow/*.png`：GitHub Actions workflow 运行时每轮重试保存的验证码图片，识别成功后同样按识别结果重命名
+- `data/captcha_auto/*.png`：本地 auto 版本每轮重试保存的验证码图片，识别成功后会按识别结果重命名为 `PCET.png` 等
+- `data/captcha_workflow/*.png`：GitHub Actions workflow 运行时每轮重试保存的验证码图片，识别成功后同样按识别结果重命名
 - `logs/nju_electric_monitor-YYYY-MM-DD-HH.log`：主脚本按小时滚动生成的运行日志
 - `logs/workflow_wrapper_*.log`：CI 包装脚本输出的完整运行日志（包含环境信息、字体诊断等）
 
@@ -220,15 +219,14 @@ python src/web_panel.py
 2. 确保 ddddocr 安装成功（`pip install -r requirements.txt` 会自动安装）
 3. 尝试手动输入验证码
 4. 运行 `python tests/test_captcha_recognition.py` 测试识别效果
-5. 适当调大 `captcha_retry_count` 或查看 `data/qr_pics_auto` / `data/qr_pics_workflow` 中的验证码截图，人工比对识别结果
+5. 适当调大 `captcha_retry_count` 或查看 `data/captcha_auto` / `data/captcha_workflow` 中的验证码截图，人工比对识别结果
 
 ### 电量信息提取问题
 
 如果无法提取电量信息：
 
 1. 运行 `python tests/debug_page_structure.py` 分析页面结构
-2. 查看生成的 `data/debug_page_source.html` 文件
-3. 根据分析结果调整脚本中的选择器
+2. 根据分析结果调整脚本中的选择器
 
 ### 验证码识别问题
 

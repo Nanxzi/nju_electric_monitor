@@ -83,10 +83,10 @@ class NJUElectricMonitor:
         self.setup_ocr()
 
     def init_qr_pics_dir(self):
-        """初始化并清空 workflow 运行使用的验证码图片目录 data/qr_pics_workflow"""
+        """初始化并清空 workflow 运行使用的验证码图片目录 data/captcha_workflow"""
         try:
             base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
-            qr_dir = os.path.join(base_dir, "qr_pics_workflow")
+            qr_dir = os.path.join(base_dir, "captcha_workflow")
             os.makedirs(qr_dir, exist_ok=True)
 
             # 清空目录下旧图片
@@ -698,7 +698,7 @@ class NJUElectricMonitor:
                         # 2) 额外保存到 workflow 专用目录，并在识别成功后按验证码结果重命名
                         if not self.qr_pics_dir:
                             base_dir = os.path.join(os.path.dirname(__file__), '..', 'data')
-                            self.qr_pics_dir = os.path.join(base_dir, 'qr_pics_workflow')
+                            self.qr_pics_dir = os.path.join(base_dir, 'captcha_workflow')
                             os.makedirs(self.qr_pics_dir, exist_ok=True)
 
                         filename = f"captcha_outer{outer + 1}.png"
@@ -1014,25 +1014,6 @@ class NJUElectricMonitor:
         """提取剩余电量信息"""
         try:
             self.logger.info("开始提取剩余电量信息...")
-            try:
-                page_source = self.driver.page_source
-                # 在写入调试 HTML 前，简单脱敏持卡人姓名
-                try:
-                    page_source_sanitized = re.sub(
-                        r"(持卡人姓名[：:].*?<i>)(.*?)(</i>)",
-                        r"\1***\3",
-                        page_source,
-                        flags=re.S,
-                    )
-                except Exception:
-                    page_source_sanitized = page_source
-
-                debug_html_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'debug_page_source.html')
-                with open(debug_html_path, "w", encoding="utf-8") as f:
-                    f.write(page_source_sanitized)
-                self.logger.info(f"页面源码已保存到 {debug_html_path}")
-            except Exception as e:
-                self.logger.warning(f"保存页面源码失败: {e}")
             
             # 方法1：使用精确的CSS选择器查找电量信息
             try:
