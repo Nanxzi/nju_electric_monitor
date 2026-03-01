@@ -300,7 +300,7 @@ DejaVu Serif,DejaVu Serif Condensed - /usr/share/fonts/truetype/dejavu/DejaVuSer
 2025-12-05 02:47:17,638 - INFO - 已点击充值按钮
 2025-12-05 02:47:20,639 - INFO - 开始提取剩余电量信息...
 2025-12-05 02:47:20,643 - INFO - 页面源码已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/debug_page_source.html
-2025-12-05 02:47:20,662 - INFO - 找到电量信息元素: 持卡人姓名：吴相民
+2025-12-05 02:47:20,662 - INFO - 找到电量信息元素: 持卡人姓名：***
 2025-12-05 02:47:20,662 - WARNING - 未在元素中找到标准格式的电量信息
 2025-12-05 02:47:20,676 - INFO - 找到i标签中的电量信息: 吴相民
 2025-12-05 02:47:20,676 - WARNING - i标签中未找到标准格式的电量信息

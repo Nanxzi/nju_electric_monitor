@@ -841,9 +841,20 @@ class NJUElectricMonitor:
             self.logger.info("开始提取剩余电量信息...")
             try:
                 page_source = self.driver.page_source
+                # 在写入调试 HTML 前，简单脱敏持卡人姓名
+                try:
+                    page_source_sanitized = re.sub(
+                        r"(持卡人姓名[：:].*?<i>)(.*?)(</i>)",
+                        r"\1***\3",
+                        page_source,
+                        flags=re.S,
+                    )
+                except Exception:
+                    page_source_sanitized = page_source
+
                 debug_html_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'debug_page_source.html')
                 with open(debug_html_path, "w", encoding="utf-8") as f:
-                    f.write(page_source)
+                    f.write(page_source_sanitized)
                 self.logger.info(f"页面源码已保存到 {debug_html_path}")
             except Exception as e:
                 self.logger.warning(f"保存页面源码失败: {e}")
@@ -853,7 +864,7 @@ class NJUElectricMonitor:
                 electricity_element = self.driver.find_element(By.CSS_SELECTOR, "span.fl")
                 if (electricity_element):
                     text = electricity_element.text
-                    self.logger.info(f"找到电量信息元素: {text}")
+                    self.logger.info("找到电量信息元素（已省略具体文本以保护隐私）")
                     
                     # 使用正则表达式提取数字
                     pattern = r'剩余电量[：:]\s*(\d+(?:\.\d+)?)\s*度'
@@ -875,7 +886,7 @@ class NJUElectricMonitor:
                 electricity_i = self.driver.find_element(By.CSS_SELECTOR, "span.fl i")
                 if electricity_i:
                     text = electricity_i.text
-                    self.logger.info(f"找到i标签中的电量信息: {text}")
+                    self.logger.info("找到 i 标签中的电量信息（已省略具体文本）")
                     
                     # 提取数字
                     pattern = r'(\d+(?:\.\d+)?)\s*度'
@@ -916,7 +927,7 @@ class NJUElectricMonitor:
                 elements_with_degree = self.driver.find_elements(By.XPATH, "//*[contains(text(), '度')]")
                 for element in elements_with_degree:
                     text = element.text
-                    self.logger.info(f"找到包含'度'的元素: {text}")
+                    self.logger.info("找到包含 '度' 的元素（已省略具体文本）")
                     
                     # 尝试提取数字
                     pattern = r'(\d+(?:\.\d+)?)\s*度'

@@ -1,0 +1,60 @@
+2026-03-01 16:36:30,445 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Microsoft YaHei
+2026-03-01 16:36:31,484 - INFO - 使用本地 ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2026-03-01 16:36:31,539 - INFO - ddddocr 识别器初始化成功
+2026-03-01 16:36:31,539 - INFO - 开始南京大学电费监控流程（本地 Windows 版）
+2026-03-01 16:36:46,493 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)': /session/392a4a91819c23ad8a4e694ae7359425
+2026-03-01 16:36:50,574 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026FF0B21040>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/392a4a91819c23ad8a4e694ae7359425
+2026-03-01 16:36:54,675 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000026FF0B214F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/392a4a91819c23ad8a4e694ae7359425
+2026-03-01 16:37:27,820 - INFO - 使用本地ChromeDriver: D:\Documents\Github\nju_electric_monitor\src\..\chromedriver-win64\chromedriver.exe
+2026-03-01 16:37:27,875 - INFO - ddddocr 识别器初始化成功
+2026-03-01 16:37:27,875 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-03-01 16:37:27,875 - INFO - 已获取登录凭据
+2026-03-01 16:37:27,875 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-03-01 16:37:31,372 - INFO - 等待登录表单加载...
+2026-03-01 16:37:31,378 - INFO - 登录表单已加载
+2026-03-01 16:37:31,378 - INFO - 开始填写登录表单...
+2026-03-01 16:37:31,427 - INFO - 用户名填写完成
+2026-03-01 16:37:31,485 - INFO - 密码填写完成
+2026-03-01 16:37:31,487 - INFO - 开始处理验证码（两层嵌套重试）...
+2026-03-01 16:37:31,487 - INFO - 外层页面重试 1/4
+2026-03-01 16:37:31,487 - INFO - 等待登录表单加载...
+2026-03-01 16:37:31,490 - INFO - 登录表单已加载
+2026-03-01 16:37:31,490 - INFO - 开始填写登录表单...
+2026-03-01 16:37:31,524 - INFO - 用户名填写完成
+2026-03-01 16:37:31,571 - INFO - 密码填写完成
+2026-03-01 16:37:31,571 - INFO - 查找验证码图片...
+2026-03-01 16:37:31,596 - INFO - 找到验证码图片，开始截图...
+2026-03-01 16:37:31,648 - INFO - 验证码图片截取成功
+2026-03-01 16:37:31,649 - INFO - 验证码图片已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\captcha_debug.png
+2026-03-01 16:37:31,649 - INFO - 验证码识别（同一图片）尝试 1/3，外层 1/4
+2026-03-01 16:37:31,649 - INFO - 开始使用 ddddocr 识别验证码...
+2026-03-01 16:37:31,661 - INFO - ddddocr 最终验证码识别结果: GIV8
+2026-03-01 16:37:31,664 - INFO - 查找验证码输入框...
+2026-03-01 16:37:32,059 - INFO - 通过 XPath 找到 1 个验证码候选输入框，使用第一个。
+2026-03-01 16:37:32,319 - INFO - 验证码填写完成
+2026-03-01 16:37:32,319 - INFO - 验证码填写完成，点击登录按钮...
+2026-03-01 16:37:32,319 - INFO - 查找并点击登录按钮...
+2026-03-01 16:37:32,333 - INFO - 通过 ID=login_submit 找到登录按钮
+2026-03-01 16:37:32,373 - INFO - 已点击登录按钮
+2026-03-01 16:37:39,396 - INFO - 未检测到验证码错误提示，验证码可能通过
+2026-03-01 16:37:39,396 - INFO - 查找并点击登录按钮...
+2026-03-01 16:37:39,412 - ERROR - 未找到登录按钮（ID/XPath/CSS 均未命中）
+2026-03-01 16:37:39,412 - ERROR - 点击登录按钮失败
+2026-03-01 16:37:39,412 - INFO - 等待登录成功...
+2026-03-01 16:37:39,418 - INFO - 检测到已跳转到电费页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-03-01 16:37:39,418 - INFO - 查找'去充值'按钮...
+2026-03-01 16:37:39,431 - INFO - 通过文本包含 '去充值' 找到充值按钮
+2026-03-01 16:37:39,897 - INFO - 已点击充值按钮
+2026-03-01 16:37:42,898 - INFO - 开始提取剩余电量信息...
+2026-03-01 16:37:42,900 - INFO - 页面源码已保存到 D:\Documents\Github\nju_electric_monitor\src\..\data\debug_page_source.html
+2026-03-01 16:37:42,911 - INFO - 找到电量信息元素: 持卡人姓名：***
+2026-03-01 16:37:42,912 - WARNING - 未在元素中找到标准格式的电量信息
+2026-03-01 16:37:42,919 - INFO - 找到i标签中的电量信息: 吴相民
+2026-03-01 16:37:42,921 - WARNING - i标签中未找到标准格式的电量信息
+2026-03-01 16:37:42,921 - WARNING - 未找到i标签中的电量信息
+2026-03-01 16:37:42,922 - INFO - 在页面源码中查找电量信息...
+2026-03-01 16:37:42,922 - INFO - 从页面源码中提取到剩余电量: 30.66 度
+2026-03-01 16:37:42,924 - INFO - 数据已保存: 30.66 度
+2026-03-01 16:37:43,206 - INFO - 电量变化曲线图已保存到: D:\Documents\Github\nju_electric_monitor\src\..\data\electricity_trend.png
+2026-03-01 16:37:43,494 - INFO - 最近20次电量变化曲线图已保存到: D:\Documents\Github\nju_electric_monitor\src\..\data\recent_20_changes.png
+2026-03-01 16:37:43,495 - INFO - 监控流程完成
