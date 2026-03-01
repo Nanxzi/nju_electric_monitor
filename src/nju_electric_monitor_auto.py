@@ -59,7 +59,6 @@ class NJUElectricMonitor:
         self.auto_login = self.config.get("auto_login", True)
         self.headless_mode = self.config.get("headless_mode", True)
         self.captcha_retry_count = self.config.get("captcha_retry_count", 5)
-        self.captcha_confidence_threshold = self.config.get("captcha_confidence_threshold", 0.3)
         self.save_captcha_images = self.config.get("save_captcha_images", True)
         # legacy binarize mode (prefer strict thresholding pipeline)
         self.legacy_binarize = self.config.get("legacy_binarize", True)

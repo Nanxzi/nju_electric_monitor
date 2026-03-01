@@ -38,7 +38,6 @@
 config_workflow.json部分参数：
 
 - `captcha_retry_count`: 验证码识别重试次数（默认5次）
-- `captcha_confidence_threshold`: 验证码识别置信度阈值（默认0.3）
 - `save_captcha_images`: 是否保存验证码图片用于调试（默认true）
 
 ## 🖥️本地运行方法
@@ -80,7 +79,6 @@ python src/fix_pil_compatibility.py
 首次运行时会自动创建 `config.json` 配置文件，或者手动创建：
 
 - `captcha_retry_count`: 验证码识别重试次数（默认5次）
-- `captcha_confidence_threshold`: 验证码识别置信度阈值（默认0.3）
 - `save_captcha_images`: 是否保存验证码图片用于调试（默认true）
 
 ```json
@@ -89,9 +87,8 @@ python src/fix_pil_compatibility.py
     "password": "你的密码",
     "auto_login": true,
     "headless_mode": true,
-    "captcha_retry_count": 5,
-    "captcha_confidence_threshold": 0.3,
-    "save_captcha_images": true,
+   "captcha_retry_count": 5,
+   "save_captcha_images": true,
     "log_level": "INFO"
 }
 ```
@@ -149,11 +146,16 @@ python src/web_panel.py
 
 ## 📄输出文件
 
-- `data/electricity_data.json`: 电量数据（JSON格式）
-- `data/electricity_data.csv`: 电量数据（CSV格式）
-- `nju_electric_monitor.log`: 运行日志
-- `data/debug_page_source.html`: 页面源码（用于调试）
-- `data/captcha_debug.png`: 验证码图片（用于调试）
+- `data/electricity_data.json`：电量数据（JSON 行格式）
+- `data/electricity_data.csv`：电量数据（CSV 格式，列为 time/num/unit）
+- `data/electricity_trend.png`：完整历史电量变化曲线图
+- `data/recent_20_changes.png`：最近 20 次电量变化曲线图（workflow/auto 版本）
+- `data/debug_page_source.html`：页面源码（已对“持卡人姓名”等敏感信息做脱敏，仅用于调试）
+- `data/captcha_debug.png`：最近一次验证码截图（用于快速查看验证码样式）
+- `data/qr_pics_auto/*.png`：本地 auto 版本每轮重试保存的验证码图片，识别成功后会按识别结果重命名为 `PCET.png` 等
+- `data/qr_pics_workflow/*.png`：GitHub Actions workflow 运行时每轮重试保存的验证码图片，识别成功后同样按识别结果重命名
+- `logs/nju_electric_monitor-YYYY-MM-DD-HH.log`：主脚本按小时滚动生成的运行日志
+- `logs/workflow_wrapper_*.log`：CI 包装脚本输出的完整运行日志（包含环境信息、字体诊断等）
 
 ## 🏁网页面板功能
 
@@ -218,7 +220,7 @@ python src/web_panel.py
 2. 确保 ddddocr 安装成功（`pip install -r requirements.txt` 会自动安装）
 3. 尝试手动输入验证码
 4. 运行 `python tests/test_captcha_recognition.py` 测试识别效果
-5. 调整配置文件中的 `captcha_confidence_threshold` 参数
+5. 适当调大 `captcha_retry_count` 或查看 `data/qr_pics_auto` / `data/qr_pics_workflow` 中的验证码截图，人工比对识别结果
 
 ### 电量信息提取问题
 
@@ -234,8 +236,7 @@ python src/web_panel.py
 
 1. 运行 `python tests/test_captcha_recognition.py` 测试不同的图像处理方法
 2. 查看生成的调试图片，选择最清晰的处理方法
-3. 调整配置文件中的 `captcha_confidence_threshold` 参数
-4. 如果自动识别效果不好，可以手动输入验证码
+3. 适当调大 `captcha_retry_count`，或直接在本地通过手动输入验证码兜底
 
 ## 许可证
 

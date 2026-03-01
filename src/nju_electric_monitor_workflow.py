@@ -68,7 +68,6 @@ class NJUElectricMonitor:
         self.headless_mode = self.config.get("headless_mode", True)
         # 默认验证码重试次数从 5 次降为 3 次，可在配置文件中通过 captcha_retry_count 覆盖
         self.captcha_retry_count = self.config.get("captcha_retry_count", 3)
-        self.captcha_confidence_threshold = self.config.get("captcha_confidence_threshold", 0.3)
         self.save_captcha_images = self.config.get("save_captcha_images", True)
         self.driver = None
         self.wait = None
