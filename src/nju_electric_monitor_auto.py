@@ -67,6 +67,10 @@ class NJUElectricMonitor:
         self.ocr_reader = None
         # 本地 auto 版专用验证码图片目录（在 run() 中初始化与清空）
         self.qr_pics_dir = None
+        # 测试模式：仅在需要深入排查时开启，用于保存页面快照
+        self.test_mode = bool(self.config.get("test_mode", False))
+        self.test_snapshot_dir = None
+        self.snapshot_index = 0
         
         # 设置日志级别
         log_level = getattr(logging, self.config.get("log_level", "INFO"))
@@ -98,6 +102,48 @@ class NJUElectricMonitor:
             # 目录初始化失败不应阻塞主流程，仅记录告警
             if hasattr(self, "logger"):
                 self.logger.warning(f"初始化本地验证码图片目录失败: {e}")
+
+    def init_test_snapshot_dir(self):
+        """初始化测试模式下的页面快照目录 data/test_snapshots_auto/<时间戳>"""
+        if not self.test_mode:
+            return
+        try:
+            base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+            root_dir = os.path.join(base_dir, "test_snapshots_auto")
+            os.makedirs(root_dir, exist_ok=True)
+
+            ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+            snapshot_dir = os.path.join(root_dir, ts)
+            os.makedirs(snapshot_dir, exist_ok=True)
+
+            self.test_snapshot_dir = snapshot_dir
+            self.snapshot_index = 0
+            if hasattr(self, "logger"):
+                self.logger.info(f"测试模式已开启，本次页面快照目录: {snapshot_dir}")
+        except Exception as e:
+            if hasattr(self, "logger"):
+                self.logger.warning(f"初始化测试模式页面快照目录失败: {e}")
+
+    def save_page_snapshot(self, label: str):
+        """在测试模式下保存当前页面截图，文件名形如 01_label.png"""
+        if not self.test_mode or not self.driver:
+            return
+        try:
+            if not self.test_snapshot_dir:
+                self.init_test_snapshot_dir()
+            if not self.test_snapshot_dir:
+                return
+
+            self.snapshot_index += 1
+            safe_label = re.sub(r"[^A-Za-z0-9_\-]+", "_", str(label).strip() or "snapshot")
+            filename = f"{self.snapshot_index:02d}_{safe_label}.png"
+            path = os.path.join(self.test_snapshot_dir, filename)
+            self.driver.save_screenshot(path)
+            if hasattr(self, "logger"):
+                self.logger.info(f"[测试模式] 已保存页面快照: {path}")
+        except Exception as e:
+            if hasattr(self, "logger"):
+                self.logger.warning(f"保存页面快照失败: {e}")
         
     def setup_logging(self, log_level):
         """设置日志（按 年-月-日-时 生成文件名）"""
@@ -131,7 +177,8 @@ class NJUElectricMonitor:
                     "auto_login": True,
                     "headless_mode": True,
                     "captcha_retry_count": 3,
-                    "log_level": "INFO"
+                    "log_level": "INFO",
+                    "test_mode": False
                 }
                 with open(config_path, 'w', encoding='utf-8') as f:
                     json.dump(default_config, f, indent=4, ensure_ascii=False)
@@ -556,6 +603,8 @@ class NJUElectricMonitor:
                     if not self.fill_login_form():
                         self.logger.warning("填写登录表单失败，跳过本轮外层重试")
                         continue
+                    # 测试模式：每轮外层重试后，保存当前登录表单页快照
+                    self.save_page_snapshot(f"10_outer{outer + 1}_form_filled")
                 except Exception as e:
                     self.logger.warning(f"准备登录表单时出错: {e}")
                     continue
@@ -591,6 +640,8 @@ class NJUElectricMonitor:
                         captcha_path_for_outer = os.path.join(self.qr_pics_dir, filename)
                         captcha_img.save(captcha_path_for_outer)
                         self.logger.info(f"验证码图片已保存到 {captcha_path_for_outer}")
+                        # 测试模式：保存当前页面快照，包含验证码和错误提示区域
+                        self.save_page_snapshot(f"11_outer{outer + 1}_captcha_page")
                     except Exception as e:
                         self.logger.warning(f"保存验证码图片失败: {e}")
 
@@ -638,6 +689,8 @@ class NJUElectricMonitor:
                     # 登录按钮已点击，检查是否存在验证码错误提示
                     time.sleep(2)
                     try:
+                        # 测试模式：点击登录后保存页面快照，便于对比错误提示
+                        self.save_page_snapshot(f"12_outer{outer + 1}_inner{inner + 1}_after_login_click")
                         # 统一使用 has_captcha_error，兼容中英文提示和旧版 msg1 元素
                         if self.has_captcha_error():
                             self.logger.warning("检测到验证码错误提示，将重新加载页面获取新验证码")
@@ -1173,16 +1226,22 @@ class NJUElectricMonitor:
             self.logger.info(f"正在打开页面: {self.url}")
             self.driver.get(self.url)
             time.sleep(3)
+            # 测试模式：登录页加载完成后保存快照
+            self.save_page_snapshot("01_login_page_loaded")
             
             # 3. 等待登录表单加载
             if not self.wait_for_login_form():
                 self.logger.error("登录表单加载失败")
                 return False
+            # 测试模式：登录表单就绪后保存快照
+            self.save_page_snapshot("02_login_form_ready")
             
             # 4. 填写登录表单
             if not self.fill_login_form():
                 self.logger.error("填写登录表单失败")
                 return False
+            # 测试模式：首次填写完用户名和密码后的表单状态
+            self.save_page_snapshot("03_form_filled_initial")
             
             # 5. 处理验证码
             if not self.handle_captcha():
@@ -1197,6 +1256,8 @@ class NJUElectricMonitor:
             if not self.wait_for_login_success():
                 self.logger.error("登录失败")
                 return False
+            # 测试模式：成功进入电费页面后的快照
+            self.save_page_snapshot("06_login_success_electric_page")
             
             # 8. 点击充值按钮
             if not self.click_recharge_button():
