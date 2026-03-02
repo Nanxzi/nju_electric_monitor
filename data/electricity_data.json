@@ -441,3 +441,5 @@
 {"timestamp": "2026-03-01T18:59:36.295523", "remaining_electricity": 30.66, "unit": "度"}
 {"timestamp": "2026-03-01T19:06:40.713202", "remaining_electricity": 30.66, "unit": "度"}
 {"timestamp": "2026-03-01T21:34:44.904813", "remaining_electricity": 30.66, "unit": "度"}
+{"timestamp": "2026-03-02T09:57:02.764175", "remaining_electricity": 25.05, "unit": "度"}
+{"timestamp": "2026-03-02T21:56:47.097691", "remaining_electricity": 23.52, "unit": "度"}
