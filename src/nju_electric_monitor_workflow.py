@@ -257,19 +257,26 @@ class NJUElectricMonitor:
                         driver_path = repo_driver
 
             if driver_path:
-                # 在非 Windows 平台上确保可执行权限
                 try:
+                    # 在非 Windows 平台上确保可执行权限
                     if not system.startswith('win'):
-                        os.chmod(driver_path, 0o755)
-                except Exception:
-                    pass
-                service = Service(driver_path)
-                self.driver = webdriver.Chrome(service=service, options=chrome_options)
-                self.logger.info(f"使用 ChromeDriver: {driver_path}")
+                        try:
+                            os.chmod(driver_path, 0o755)
+                        except Exception:
+                            pass
+                    service = Service(driver_path)
+                    self.driver = webdriver.Chrome(service=service, options=chrome_options)
+                    self.logger.info(f"使用指定 ChromeDriver: {driver_path}")
+                except Exception as e:
+                    # 如果指定路径的 chromedriver 无法启动（例如 GitHub Actions 上的 /usr/bin/chromedriver
+                    # 与浏览器版本不匹配），回退到 Selenium Manager 自动管理的驱动
+                    self.logger.warning(f"使用指定 ChromeDriver 失败 ({driver_path}): {e}，尝试使用 Selenium Manager 自动管理驱动")
+                    self.driver = webdriver.Chrome(options=chrome_options)
+                    self.logger.info("已切换为 Selenium Manager 自动管理的 ChromeDriver")
             else:
-                # 依赖 PATH 中的 chromedriver 或使用 webdriver-manager 等方式
+                # 未发现可用的本地 chromedriver，直接交给 Selenium Manager 自动下载/管理
                 self.driver = webdriver.Chrome(options=chrome_options)
-                self.logger.info("使用系统 PATH 中的 ChromeDriver 或内置驱动")
+                self.logger.info("未找到本地 ChromeDriver，使用 Selenium Manager 自动管理驱动")
 
             self.wait = WebDriverWait(self.driver, 20)
         except Exception as e:
