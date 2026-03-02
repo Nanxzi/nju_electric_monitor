@@ -1,0 +1,3 @@
+2026-03-02 07:43:13,957 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: DejaVu Sans
+2026-03-02 07:43:43,987 - ERROR - 浏览器驱动初始化失败: Message: Can not connect to the Service /usr/bin/chromedriver
+
