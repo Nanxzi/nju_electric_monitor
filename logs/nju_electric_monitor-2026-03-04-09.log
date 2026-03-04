@@ -161,3 +161,65 @@
 2026-03-04 01:24:08,612 - WARNING - 检测到验证码错误提示，将重新加载页面获取新验证码
 2026-03-04 01:24:08,613 - ERROR - 自动验证码识别失败，且当前为非交互环境，无法手动输入验证码，本次监控流程失败
 2026-03-04 01:24:08,613 - ERROR - 验证码处理或登录过程失败
+2026-03-04 01:53:51,251 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-03-04 01:53:52,513 - INFO - 使用指定 ChromeDriver: /usr/bin/chromedriver
+2026-03-04 01:53:52,579 - INFO - ddddocr 识别器初始化成功
+2026-03-04 01:53:52,579 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-03-04 01:53:52,580 - INFO - 已初始化并清空验证码图片目录: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_workflow
+2026-03-04 01:53:52,580 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-03-04 01:54:00,135 - INFO - 测试模式已开启，本次页面快照目录: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400
+2026-03-04 01:54:00,749 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/01_01_login_page_loaded.png
+2026-03-04 01:54:00,749 - INFO - 等待登录表单加载...
+2026-03-04 01:54:00,759 - INFO - 登录表单已加载
+2026-03-04 01:54:01,326 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/02_02_login_form_ready.png
+2026-03-04 01:54:01,326 - INFO - 开始填写登录表单...
+2026-03-04 01:54:01,414 - INFO - 用户名填写完成
+2026-03-04 01:54:01,483 - INFO - 密码填写完成
+2026-03-04 01:54:02,062 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/03_03_form_filled_initial.png
+2026-03-04 01:54:02,062 - INFO - 开始处理验证码（两层嵌套重试）...
+2026-03-04 01:54:02,062 - INFO - 外层页面重试 1/4
+2026-03-04 01:54:02,062 - INFO - 等待登录表单加载...
+2026-03-04 01:54:02,069 - INFO - 登录表单已加载
+2026-03-04 01:54:02,069 - INFO - 开始填写登录表单...
+2026-03-04 01:54:02,135 - INFO - 用户名填写完成
+2026-03-04 01:54:02,205 - INFO - 密码填写完成
+2026-03-04 01:54:02,796 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/04_10_outer1_form_filled.png
+2026-03-04 01:54:02,796 - INFO - 查找验证码图片...
+2026-03-04 01:54:02,816 - INFO - 找到验证码图片，开始截图...
+2026-03-04 01:54:02,859 - INFO - 验证码图片截取成功
+2026-03-04 01:54:02,860 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_debug.png
+2026-03-04 01:54:02,861 - INFO - 验证码图片已保存到 /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_workflow/captcha_outer1.png
+2026-03-04 01:54:03,441 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/05_11_outer1_captcha_page.png
+2026-03-04 01:54:03,441 - INFO - 验证码识别（同一图片）尝试 1/3，外层 1/4
+2026-03-04 01:54:03,441 - INFO - 开始使用 ddddocr 识别验证码...
+2026-03-04 01:54:03,455 - INFO - ddddocr 最终验证码识别结果: RNCX
+2026-03-04 01:54:03,455 - INFO - 已将验证码图片重命名为: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_workflow/RNCX.png
+2026-03-04 01:54:04,029 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/06_12_outer1_inner1_before_fill_captcha.png
+2026-03-04 01:54:04,030 - INFO - 查找验证码输入框...
+2026-03-04 01:54:04,078 - INFO - 通过 XPath 找到 1 个验证码候选输入框，使用第一个。
+2026-03-04 01:54:04,133 - INFO - 验证码填写完成
+2026-03-04 01:54:04,703 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/07_13_outer1_inner1_after_fill_captcha.png
+2026-03-04 01:54:04,703 - INFO - 验证码填写完成，点击登录按钮...
+2026-03-04 01:54:04,704 - INFO - 查找并点击登录按钮...
+2026-03-04 01:54:04,726 - INFO - 通过 ID=login_submit 找到登录按钮
+2026-03-04 01:54:08,491 - INFO - 已点击登录按钮
+2026-03-04 01:54:16,564 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/08_14_outer1_inner1_after_login_click.png
+2026-03-04 01:54:16,602 - INFO - 未检测到验证码错误提示，验证码可能通过
+2026-03-04 01:54:16,602 - INFO - 等待登录成功...
+2026-03-04 01:54:16,611 - INFO - 检测到已跳转到电费页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-03-04 01:54:16,681 - INFO - [测试模式] 已保存页面快照: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/test_snapshots_workflow/20260304_095400/09_06_login_success_electric_page.png
+2026-03-04 01:54:16,681 - INFO - 查找'去充值'按钮...
+2026-03-04 01:54:16,706 - INFO - 通过文本包含 '去充值' 找到充值按钮
+2026-03-04 01:54:18,323 - INFO - 已点击充值按钮
+2026-03-04 01:54:21,323 - INFO - 开始提取剩余电量信息...
+2026-03-04 01:54:21,343 - INFO - 找到电量信息元素（已省略具体文本以保护隐私）
+2026-03-04 01:54:21,344 - WARNING - 未在元素中找到标准格式的电量信息
+2026-03-04 01:54:21,358 - INFO - 找到 i 标签中的电量信息（已省略具体文本）
+2026-03-04 01:54:21,358 - WARNING - i标签中未找到标准格式的电量信息
+2026-03-04 01:54:21,358 - WARNING - 未找到i标签中的电量信息
+2026-03-04 01:54:21,361 - INFO - 在页面源码中查找电量信息...
+2026-03-04 01:54:21,361 - INFO - 从页面源码中提取到剩余电量: 16.5 度
+2026-03-04 01:54:21,374 - INFO - 数据已保存: 16.5 度
+2026-03-04 01:54:21,625 - INFO - 电量变化曲线图已保存到: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/electricity_trend.png
+2026-03-04 01:54:21,857 - INFO - 最近20次电量变化曲线图已保存到: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/recent_20_changes.png
+2026-03-04 01:54:21,858 - INFO - 监控流程完成
