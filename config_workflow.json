@@ -3,8 +3,8 @@
     "password": "",
     "auto_login": true,
     "headless_mode": true,
-    "captcha_retry_count": 6,
+    "captcha_retry_count": 4,
     "save_captcha_images": true,
     "log_level": "INFO",
-    "test_mode": false
+    "test_mode": true
 } 
