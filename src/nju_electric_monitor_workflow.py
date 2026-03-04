@@ -728,6 +728,8 @@ class NJUElectricMonitor:
                     if not self.fill_login_form():
                         self.logger.warning("填写登录表单失败，跳过本轮外层重试")
                         continue
+                    # 适当等待，避免在刷新页面后立刻高频请求验证码
+                    time.sleep(1)
                     # 测试模式：每轮外层重试后，保存当前登录表单页快照
                     self.save_page_snapshot(f"10_outer{outer + 1}_form_filled")
                 except Exception as e:
@@ -813,13 +815,16 @@ class NJUElectricMonitor:
                     # 测试模式：填写验证码后（尚未点击登录）再保存一张快照
                     self.save_page_snapshot(f"13_outer{outer + 1}_inner{inner + 1}_after_fill_captcha")
 
+                    # 填写完验证码后稍作停顿，再点击登录，减缓请求节奏
+                    time.sleep(1)
+
                     self.logger.info("验证码填写完成，点击登录按钮...")
                     if not self.click_login_button():
                         self.logger.warning("点击登录按钮失败，结束当前外层重试，准备重新加载页面")
                         break
 
                     # 登录按钮已点击，检查是否存在无效验证码提示
-                    time.sleep(3)
+                    time.sleep(4)
                     try:
                         # 测试模式：点击登录后保存页面快照，便于对比错误提示
                         self.save_page_snapshot(f"14_outer{outer + 1}_inner{inner + 1}_after_login_click")
