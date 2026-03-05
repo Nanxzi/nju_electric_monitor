@@ -40,7 +40,10 @@ import ddddocr
 import getpass
 import smtplib
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.base import MIMEBase
 from email.header import Header
+from email import encoders
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -1454,10 +1457,36 @@ class NJUElectricMonitor:
 
             body = "\n".join(body_lines)
 
-            msg = MIMEText(body, "plain", "utf-8")
+            # 构造带附件的邮件（文本 + 最近20次电费曲线图）
+            msg = MIMEMultipart()
             msg["Subject"] = Header(subject, "utf-8")
             msg["From"] = email_from
             msg["To"] = email_to
+
+            # 文本部分
+            text_part = MIMEText(body, "plain", "utf-8")
+            msg.attach(text_part)
+
+            # 图片附件：data/recent_20_changes.png（如果存在则附加，否则忽略）
+            try:
+                base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
+                img_path = os.path.join(base_dir, "recent_20_changes.png")
+                if os.path.exists(img_path):
+                    with open(img_path, "rb") as f:
+                        img_data = f.read()
+                    part = MIMEBase("application", "octet-stream")
+                    part.set_payload(img_data)
+                    encoders.encode_base64(part)
+                    part.add_header(
+                        "Content-Disposition",
+                        f"attachment; filename=recent_20_changes.png",
+                    )
+                    msg.attach(part)
+                    self.logger.info(f"已将最近20次电费曲线图作为附件添加到邮件: {img_path}")
+                else:
+                    self.logger.warning("未找到 recent_20_changes.png，邮件将仅发送文本内容")
+            except Exception as e:
+                self.logger.warning(f"附加 recent_20_changes.png 时出错，将仅发送文本邮件: {e}")
 
             # 支持 465（SSL）和其他端口（STARTTLS）
             if port_int == 465:
