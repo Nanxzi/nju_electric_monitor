@@ -16,6 +16,12 @@ jobs:
       NJU_PASSWORD: ${{ secrets.NJU_PASSWORD }}
       PYTHONUTF8: '1'
       PYTHONIOENCODING: 'utf-8'
+      EMAIL_SMTP_HOST: ${{ secrets.EMAIL_SMTP_HOST }}
+      EMAIL_SMTP_PORT: ${{ secrets.EMAIL_SMTP_PORT }}
+      EMAIL_SMTP_USER: ${{ secrets.EMAIL_SMTP_USER }}
+      EMAIL_SMTP_PASSWORD: ${{ secrets.EMAIL_SMTP_PASSWORD }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      EMAIL_TO: ${{ secrets.EMAIL_TO }}
 
     steps:
     - name: Check out repository

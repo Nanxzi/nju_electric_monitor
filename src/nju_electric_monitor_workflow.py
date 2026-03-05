@@ -38,6 +38,9 @@ from PIL import Image
 import io
 import ddddocr
 import getpass
+import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -1345,6 +1348,124 @@ class NJUElectricMonitor:
         except Exception as e:
             self.logger.error(f"保存数据时出错: {e}")
 
+    def send_email_alert_if_needed(self, remaining_electricity):
+        """当剩余电量低于阈值时发送邮件提醒。
+
+        阈值固定为 20 / 10 / 5 度：
+        - < 5 度：紧急提醒
+        - < 10 度：重要提醒
+        - < 20 度：一般提醒
+
+        邮件相关配置通过环境变量提供（建议在 GitHub Secrets 中设置）：
+        - EMAIL_SMTP_HOST
+        - EMAIL_SMTP_PORT
+        - EMAIL_SMTP_USER
+        - EMAIL_SMTP_PASSWORD
+        - EMAIL_FROM
+        - EMAIL_TO  （多个收件人使用英文逗号分隔）
+        """
+        try:
+            if remaining_electricity is None:
+                self.logger.info("当前无剩余电量数据，不发送邮件")
+                return
+
+            level = None
+            subject_prefix = ""
+            if remaining_electricity < 5:
+                level = "critical"
+                subject_prefix = "[紧急] 电费电量低于 5 度"
+            elif remaining_electricity < 10:
+                level = "high"
+                subject_prefix = "[重要] 电费电量低于 10 度"
+            elif remaining_electricity < 20:
+                level = "warn"
+                subject_prefix = "[提醒] 电费电量低于 20 度"
+
+            if not level:
+                self.logger.info(f"当前剩余电量 {remaining_electricity} 度，高于 20 度，不发送邮件")
+                return
+
+            smtp_host = os.environ.get("EMAIL_SMTP_HOST")
+            smtp_port = os.environ.get("EMAIL_SMTP_PORT")
+            smtp_user = os.environ.get("EMAIL_SMTP_USER")
+            smtp_password = os.environ.get("EMAIL_SMTP_PASSWORD")
+            email_from = os.environ.get("EMAIL_FROM")
+            email_to = os.environ.get("EMAIL_TO")
+
+            if not (smtp_host and smtp_port and smtp_user and smtp_password and email_from and email_to):
+                self.logger.warning("邮件提醒未配置完整的 SMTP 环境变量，跳过发送邮件")
+                return
+
+            try:
+                port_int = int(smtp_port)
+            except Exception:
+                self.logger.warning(f"EMAIL_SMTP_PORT 无法解析为整数: {smtp_port}")
+                return
+
+            # 构造邮件内容
+            now = datetime.now(BEIJING_TZ) if BEIJING_TZ else datetime.now()
+            now_str = now.strftime("%Y-%m-%d %H:%M:%S")
+            subject = f"{subject_prefix} - 当前 {remaining_electricity:.2f} 度"
+            body_lines = [
+                f"南京大学电费监控提醒：",
+                "",
+                f"当前测得剩余电量：{remaining_electricity:.2f} 度",
+                "",
+                "提醒阈值：",
+                "  - 一般提醒：低于 20 度",
+                "  - 重要提醒：低于 10 度",
+                "  - 紧急提醒：低于 5 度",
+                "",
+                f"触发等级：{level}",
+                f"监控时间：{now_str}",
+            ]
+
+            # 如果在 GitHub Actions 环境中，附加运行信息
+            try:
+                github_run_id = os.environ.get("GITHUB_RUN_ID")
+                github_repo = os.environ.get("GITHUB_REPOSITORY")
+                github_server_url = os.environ.get("GITHUB_SERVER_URL", "https://github.com")
+                if github_run_id and github_repo:
+                    run_url = f"{github_server_url}/{github_repo}/actions/runs/{github_run_id}"
+                    body_lines.append("")
+                    body_lines.append(f"本次 GitHub Actions 运行详情：{run_url}")
+            except Exception:
+                pass
+
+            body = "\n".join(body_lines)
+
+            msg = MIMEText(body, "plain", "utf-8")
+            msg["Subject"] = Header(subject, "utf-8")
+            msg["From"] = email_from
+            msg["To"] = email_to
+
+            # 支持 465（SSL）和其他端口（STARTTLS）
+            if port_int == 465:
+                server = smtplib.SMTP_SSL(smtp_host, port_int, timeout=20)
+            else:
+                server = smtplib.SMTP(smtp_host, port_int, timeout=20)
+            try:
+                if port_int != 465:
+                    server.starttls()
+                server.login(smtp_user, smtp_password)
+                to_list = [addr.strip() for addr in email_to.split(";") if addr.strip()]
+                if not to_list:
+                    to_list = [addr.strip() for addr in email_to.split(",") if addr.strip()]
+                if not to_list:
+                    self.logger.warning("EMAIL_TO 解析后为空，无法发送邮件")
+                    return
+                server.sendmail(email_from, to_list, msg.as_string())
+                self.logger.info(f"电量低于阈值（{remaining_electricity:.2f} 度），已发送邮件提醒到: {to_list}")
+            finally:
+                try:
+                    server.quit()
+                except Exception:
+                    pass
+
+        except Exception as e:
+            # 邮件发送失败不应影响主流程，只记录错误
+            self.logger.error(f"发送电量提醒邮件时出错: {e}")
+
     def generate_recent_20_changes_plot(self, df_sorted):
         """Generate and save the recent 20 changes plot as a PNG image."""
         try:
@@ -1494,6 +1615,9 @@ class NJUElectricMonitor:
 
             # 10. 保存数据
             self.save_data(remaining_electricity)
+
+            # 11. 根据电量阈值发送邮件提醒（如已配置）
+            self.send_email_alert_if_needed(remaining_electricity)
             
             self.logger.info("监控流程完成")
             return True
