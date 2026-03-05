@@ -72,6 +72,12 @@ class NJUElectricMonitor:
         # 默认验证码重试次数从 5 次降为 3 次，可在配置文件中通过 captcha_retry_count 覆盖
         self.captcha_retry_count = self.config.get("captcha_retry_count", 3)
         self.save_captcha_images = self.config.get("save_captcha_images", True)
+        # 是否启用电量邮件告警
+        self.enable_email_alert = bool(self.config.get("enable_email_alert", True))
+        # 电量告警三档阈值，可在配置中覆盖（单位：度）
+        self.alert_threshold_warn = float(self.config.get("alert_threshold_warn", 200))
+        self.alert_threshold_high = float(self.config.get("alert_threshold_high", 10))
+        self.alert_threshold_critical = float(self.config.get("alert_threshold_critical", 5))
         # 测试模式：在关键步骤保存页面快照到 data/test_snapshots_workflow
         self.test_mode = bool(self.config.get("test_mode", False))
         self.driver = None
@@ -202,7 +208,13 @@ class NJUElectricMonitor:
                     "auto_login": True,
                     "headless_mode": True,
                     "captcha_retry_count": 10,
-                    "log_level": "INFO"
+                    "save_captcha_images": True,
+                    "log_level": "INFO",
+                    "test_mode": False,
+                    "enable_email_alert": True,
+                    "alert_threshold_warn": 200,
+                    "alert_threshold_high": 10,
+                    "alert_threshold_critical": 5
                 }
                 with open(config_path, 'w', encoding='utf-8') as f:
                     json.dump(default_config, f, indent=4, ensure_ascii=False)
@@ -1351,10 +1363,10 @@ class NJUElectricMonitor:
     def send_email_alert_if_needed(self, remaining_electricity):
         """当剩余电量低于阈值时发送邮件提醒。
 
-        阈值固定为 20 / 10 / 5 度：
-        - < 5 度：紧急提醒
-        - < 10 度：重要提醒
-        - < 20 度：一般提醒
+        阈值从配置文件中读取（单位：度），默认值为：
+        - alert_threshold_warn: 200
+        - alert_threshold_high: 10
+        - alert_threshold_critical: 5
 
         邮件相关配置通过环境变量提供（建议在 GitHub Secrets 中设置）：
         - EMAIL_SMTP_HOST
@@ -1369,20 +1381,28 @@ class NJUElectricMonitor:
                 self.logger.info("当前无剩余电量数据，不发送邮件")
                 return
 
+            if not getattr(self, "enable_email_alert", True):
+                self.logger.info("配置中已关闭邮件告警（enable_email_alert = false），不发送邮件")
+                return
+
             level = None
             subject_prefix = ""
-            if remaining_electricity < 5:
+            warn_th = self.alert_threshold_warn
+            high_th = self.alert_threshold_high
+            critical_th = self.alert_threshold_critical
+
+            if remaining_electricity < critical_th:
                 level = "critical"
-                subject_prefix = "[紧急] 电费电量低于 5 度"
-            elif remaining_electricity < 10:
+                subject_prefix = f"[紧急] 电费电量低于 {critical_th} 度"
+            elif remaining_electricity < high_th:
                 level = "high"
-                subject_prefix = "[重要] 电费电量低于 10 度"
-            elif remaining_electricity < 20:
+                subject_prefix = f"[重要] 电费电量低于 {high_th} 度"
+            elif remaining_electricity < warn_th:
                 level = "warn"
-                subject_prefix = "[提醒] 电费电量低于 20 度"
+                subject_prefix = f"[提醒] 电费电量低于 {warn_th} 度"
 
             if not level:
-                self.logger.info(f"当前剩余电量 {remaining_electricity} 度，高于 20 度，不发送邮件")
+                self.logger.info(f"当前剩余电量 {remaining_electricity} 度，高于告警阈值 {warn_th} 度，不发送邮件")
                 return
 
             smtp_host = os.environ.get("EMAIL_SMTP_HOST")
@@ -1412,9 +1432,9 @@ class NJUElectricMonitor:
                 f"当前测得剩余电量：{remaining_electricity:.2f} 度",
                 "",
                 "提醒阈值：",
-                "  - 一般提醒：低于 20 度",
-                "  - 重要提醒：低于 10 度",
-                "  - 紧急提醒：低于 5 度",
+                f"  - 一般提醒：低于 {warn_th} 度",
+                f"  - 重要提醒：低于 {high_th} 度",
+                f"  - 紧急提醒：低于 {critical_th} 度",
                 "",
                 f"触发等级：{level}",
                 f"监控时间：{now_str}",
