@@ -42,6 +42,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from email.mime.base import MIMEBase
+from email.mime.image import MIMEImage
 from email.header import Header
 from email import encoders
 
@@ -1457,36 +1458,51 @@ class NJUElectricMonitor:
 
             body = "\n".join(body_lines)
 
-            # 构造带附件的邮件（文本 + 最近20次电费曲线图）
-            msg = MIMEMultipart()
-            msg["Subject"] = Header(subject, "utf-8")
-            msg["From"] = email_from
-            msg["To"] = email_to
+            # 先准备 HTML 正文和可选的内嵌图片，再统一构造 MIME 结构，避免访问私有属性
+            html_body = body.replace("\n", "<br>")
+            html_body_final = html_body
+            inline_image_part = None
 
-            # 文本部分
-            text_part = MIMEText(body, "plain", "utf-8")
-            msg.attach(text_part)
-
-            # 图片附件：data/recent_20_changes.png（如果存在则附加，否则忽略）
+            # 尝试将最近20次电费曲线图以内嵌方式加入 HTML
             try:
                 base_dir = os.path.join(os.path.dirname(__file__), "..", "data")
                 img_path = os.path.join(base_dir, "recent_20_changes.png")
                 if os.path.exists(img_path):
                     with open(img_path, "rb") as f:
                         img_data = f.read()
-                    part = MIMEBase("application", "octet-stream")
-                    part.set_payload(img_data)
-                    encoders.encode_base64(part)
-                    part.add_header(
-                        "Content-Disposition",
-                        f"attachment; filename=recent_20_changes.png",
-                    )
-                    msg.attach(part)
-                    self.logger.info(f"已将最近20次电费曲线图作为附件添加到邮件: {img_path}")
+
+                    html_body_final = html_body + "<br><br><img src=\"cid:recent20\" alt=\"最近20次电费变化曲线\">"
+
+                    img = MIMEImage(img_data, _subtype="png")
+                    img.add_header("Content-ID", "<recent20>")
+                    img.add_header("Content-Disposition", "inline; filename=recent_20_changes.png")
+                    inline_image_part = img
+                    self.logger.info(f"已将最近20次电费曲线图以内嵌方式添加到邮件: {img_path}")
                 else:
                     self.logger.warning("未找到 recent_20_changes.png，邮件将仅发送文本内容")
             except Exception as e:
-                self.logger.warning(f"附加 recent_20_changes.png 时出错，将仅发送文本邮件: {e}")
+                self.logger.warning(f"内嵌 recent_20_changes.png 时出错，将仅发送文本/HTML 邮件: {e}")
+
+            # 构造支持内嵌图片的邮件：multipart/related + alternative（纯文本 + HTML）
+            msg = MIMEMultipart("related")
+            msg["Subject"] = subject
+            msg["From"] = email_from
+            msg["To"] = email_to
+
+            alt = MIMEMultipart("alternative")
+            msg.attach(alt)
+
+            # 纯文本版本
+            text_part = MIMEText(body, "plain", "utf-8")
+            alt.attach(text_part)
+
+            # HTML 版本（根据是否成功加载图片选择 html_body 或 html_body_final）
+            html_part = MIMEText(html_body_final, "html", "utf-8")
+            alt.attach(html_part)
+
+            # 如果准备好了内嵌图片，则附加到最外层 related
+            if inline_image_part is not None:
+                msg.attach(inline_image_part)
 
             # 支持 465（SSL）和其他端口（STARTTLS）
             if port_int == 465:

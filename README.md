@@ -41,13 +41,13 @@ config_workflow.json 部分参数：
 - `save_captcha_images`: 是否保存验证码图片用于调试（默认 true）
 - `test_mode`: 是否在关键步骤保存页面快照到 `data/test_snapshots_workflow`（默认 false，仅调试时建议开启）
 - `enable_email_alert`: 是否启用电量低于阈值时的邮件通知（默认 true）
-- `alert_threshold_warn`: 一般提醒阈值（单位：度，默认 20）
+- `alert_threshold_warn`: 一般提醒阈值（单位：度，默认 200）
 - `alert_threshold_high`: 重要提醒阈值（单位：度，默认 10）
 - `alert_threshold_critical`: 紧急提醒阈值（单位：度，默认 5）
 
 ## 🖥️本地运行方法
 
-目前未增加 Github Action 中邮件发送电量预警的功能
+Github Actions 中已支持电量预警邮件：当剩余电量低于配置的阈值时，会自动发送带有近期电费曲线图的提醒邮件。
 
 ### 环境要求（本地运行）
 
