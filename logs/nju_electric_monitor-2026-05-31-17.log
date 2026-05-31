@@ -1,0 +1,9 @@
+2026-05-31 09:42:09,549 - INFO - Matplotlib 字体设置：使用回退字体列表，首选可用字体: Noto Sans CJK JP
+2026-05-31 09:42:10,945 - INFO - 使用指定 ChromeDriver: /usr/bin/chromedriver
+2026-05-31 09:42:11,025 - INFO - ddddocr 识别器初始化成功
+2026-05-31 09:42:11,025 - INFO - 开始南京大学电费监控流程（自动无头模式）
+2026-05-31 09:42:11,025 - INFO - 已初始化并清空验证码图片目录: /home/runner/work/nju_electric_monitor/nju_electric_monitor/src/../data/captcha_workflow
+2026-05-31 09:42:11,025 - INFO - 正在打开页面: https://epay.nju.edu.cn/epay/h5/nju/electric/index
+2026-05-31 09:42:49,787 - INFO - 等待登录表单加载...
+2026-05-31 09:43:10,061 - WARNING - 登录表单加载超时
+2026-05-31 09:43:10,061 - ERROR - 登录表单加载失败
