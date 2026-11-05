@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8f7">
+  <meta name="description" content="查看南大宿舍剩余电量、用电趋势、建议充值金额与预估使用天数。">
+  <title>南大电量 · 用电一目了然</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%231b6047'/%3E%3Cpath d='m18 6-9 12h7l-2 8 9-13h-7z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./static/dashboard.css">
+  <script src="./static/dashboard.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到主要内容</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="./" aria-label="南大电量首页">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m13.5 2-9 12h7l-1 8 9-13h-7l1-7Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+        <span>南大电量<span class="brand-caption">NJU POWER</span></span>
+      </a>
+      <nav aria-label="主要导航"><a href="#trend" class="nav-link">用电趋势</a><a href="#daily-usage" class="nav-link">每日用电量</a><a href="#recharge" class="nav-link">充值建议</a></nav>
+      <span class="header-tag" title="北京时间"><span class="status-dot"></span>数据最后更新：<time id="header-updated-at" datetime="{{ dashboard.latest_iso or '' }}">{{ dashboard.last_updated or '暂无数据' }}</time></span>
+    </div>
+  </header>
+
+  <main class="shell" id="main">
+    <section class="intro" aria-labelledby="page-title">
+      <div><p class="eyebrow">南京大学 · 宿舍用电</p><h1 id="page-title">宿舍电费监控</h1><p class="intro-copy">从现在的余量，到日常的变化。你的用电，一目了然。</p></div>
+    </section>
+
+    <section class="metrics" aria-label="电量概览">
+      <article class="metric-card balance-card">
+        <div class="metric-heading"><span class="metric-label">剩余电量</span><span class="metric-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m13.5 2-9 12h7l-1 8 9-13h-7l1-7Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg></span></div>
+        <div class="metric-value" id="balance-value">{{ '%.2f'|format(dashboard.balance) if dashboard.balance is not none else '—' }}<span class="metric-unit">kWh</span></div>
+        <div class="metric-bottom"><span class="balance-change">{% if dashboard.latest_change is not none %}较上次 {{ '%+.2f'|format(dashboard.latest_change) }} kWh{% else %}等待更多记录{% endif %}</span></div>
+      </article>
+      <article class="metric-card">
+        <div class="metric-heading"><span class="metric-label">近 7 天日均用电</span><span class="metric-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 18V6m0 12h16M8 14l4-5 4 3 4-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+        <div class="metric-value secondary-value">{{ '%.2f'|format(dashboard.average) if dashboard.average is not none else '—' }}<span class="metric-unit">kWh<span class="unit-day"> / 天</span></span></div>
+        <p class="metric-description">{% if dashboard.average is not none %}电量增加不计入用电量{% else %}需要至少一天的有效记录{% endif %}</p>
+      </article>
+      <article class="metric-card">
+        <div class="metric-heading"><span class="metric-label">预计还可使用</span><span class="metric-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3" stroke="currentColor" stroke-width="1.6"/><path d="M8 3v4m8-4v4M4 10h16m-12 4h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span></div>
+        <div class="metric-value secondary-value">{{ '%.1f'|format(dashboard.estimated_days) if dashboard.estimated_days is not none else '—' }}<span class="metric-unit">天<span class="estimate-label">估算</span></span></div>
+        <p class="metric-description">按近 7 天的平均用量估算</p>
+      </article>
+    </section>
+
+    <section class="panel trend-panel" id="trend" aria-labelledby="trend-title">
+      <div class="panel-heading">
+        <div><h2 id="trend-title">电量趋势</h2><p class="panel-description">时间在走，变化看得见。</p></div>
+        <div class="range-selector" id="range-selector">
+          <div class="range-control" role="group" aria-label="图表时间范围"><button type="button" data-days="7" aria-pressed="false">7 天</button><button type="button" data-days="30" aria-pressed="true">30 天</button><button type="button" data-days="90" aria-pressed="false">90 天</button><button type="button" data-days="all" aria-pressed="false">全部</button><button type="button" id="custom-range" aria-pressed="false" aria-expanded="false" aria-haspopup="dialog" aria-controls="date-range-popover">自定义</button></div>
+          <div class="date-range-popover" id="date-range-popover" role="dialog" aria-labelledby="date-range-title" hidden>
+            <form id="date-range-form" novalidate>
+              <div class="date-range-heading"><h3 id="date-range-title">选择时间区间</h3><button class="range-close" type="button" data-close-range aria-label="关闭时间选择"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button></div>
+              <div class="date-range-fields">
+                <div><label for="range-start">开始日期</label><input type="date" id="range-start" name="start" min="0001-01-01" max="9999-12-31" required aria-describedby="range-error"></div>
+                <div><label for="range-end">结束日期</label><input type="date" id="range-end" name="end" min="0001-01-01" max="9999-12-31" required aria-describedby="range-error"></div>
+              </div>
+              <p class="range-error" id="range-error" role="alert" hidden></p>
+              <div class="date-range-actions"><span>北京时间 · 含起止当天</span><button class="range-apply" type="submit">应用区间</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="chart-meta"><span><span class="legend-dot"></span>剩余电量 <span class="subtle">/ kWh</span></span><span id="chart-period" class="subtle"></span></div>
+      <div class="chart-container" id="chart-container"><svg id="trend-chart" role="img" aria-label="剩余电量变化曲线，可用左右方向键查看各次读数" tabindex="0"></svg><div id="chart-tooltip" class="chart-tooltip" hidden></div><p id="chart-empty" class="chart-empty" {% if dashboard.count %}hidden{% endif %}>还没有电量记录，下一次采集后会显示在这里。</p></div>
+      <div class="chart-footer"><span><span class="status-dot" id="freshness-dot"></span><span id="freshness-text">{% if dashboard.last_updated %}数据已记录{% else %}等待首次采集{% endif %}</span></span><span>最后采集：<time id="updated-at" datetime="{{ dashboard.latest_iso or '' }}">{{ dashboard.last_updated or '暂无' }}</time><span class="timezone">北京时间</span></span></div>
+      <noscript><p class="no-script">开启 JavaScript 后可查看趋势图、切换时间范围和计算充值建议。</p></noscript>
+    </section>
+
+    <section class="panel trend-panel" id="daily-usage" aria-labelledby="usage-title">
+      <div class="panel-heading"><div><h2 id="usage-title">每日用电量</h2><p class="panel-description">每天用了多少，一眼看清。</p></div><span class="estimate-badge">跟随上方时间区间</span></div>
+      <div class="chart-meta"><span><span class="legend-dot"></span>每日耗电 <span class="subtle">/ kWh</span></span><span id="usage-period" class="subtle"></span></div>
+      <div class="chart-container" id="usage-container"><svg id="usage-chart" role="img" aria-label="每日用电量估算曲线，可用左右方向键查看读数" tabindex="0"></svg><div id="usage-tooltip" class="chart-tooltip" hidden></div><p id="usage-empty" class="chart-empty">还没有可用的用电记录。</p></div>
+      <p class="estimate-note">按北京时间汇总相邻读数的耗电，跨日按时长分摊。充值区间及超过两天的采集空档不估算；未覆盖全天的日期会在读数中标注。</p>
+    </section>
+
+    <section class="panel recharge-panel" id="recharge" aria-labelledby="recharge-title">
+      <div class="panel-heading"><div><h2 id="recharge-title">充值建议</h2><p class="panel-description">提前补足，让接下来的日子更从容。</p></div><span class="estimate-badge">按近 7 天用量估算</span></div>
+      <div class="recharge-body">
+        <div class="recharge-settings">
+          <div class="recharge-fields">
+            <div><label for="target-days">希望覆盖</label><div class="input-wrap"><input id="target-days" type="number" min="1" max="365" step="1" value="30" inputmode="numeric" aria-describedby="recharge-status"><span>天</span></div></div>
+            <div><label for="electricity-price">电价</label><div class="input-wrap"><input id="electricity-price" type="number" min="0.01" max="100" step="any" value="0.5" inputmode="decimal" aria-describedby="price-note recharge-status"><span>元 / 度</span></div></div>
+          </div>
+          <p class="price-note" id="price-note">暂按 0.50 元/度，可按实际电价修改。</p>
+        </div>
+        <div class="recharge-results" aria-live="polite" aria-atomic="true">
+          <div class="recharge-result amount-result"><span class="result-label">建议充值金额</span><div class="result-value"><span class="currency" id="recharge-currency">¥</span><span id="recharge-amount">—</span></div><span class="result-caption" id="recharge-caption">按目标天数计算，金额精确到分</span></div>
+          <div class="recharge-result"><span class="result-label" id="recharge-days-label">充值后总计可用</span><div class="result-value"><span id="recharge-days">—</span><span class="result-unit">天</span></div><span class="result-caption">包含当前余量与本次充值电量</span></div>
+        </div>
+      </div>
+      <p class="recharge-status" id="recharge-status" role="status">填写目标天数和电价后，会自动计算充值建议。</p>
+    </section>
+
+    <p class="estimate-note"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 11v5m0-9v.1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>用电估算依据最近 7 天内的有效记录，电量增加不计入。刷新页面会读取已发布的数据。</p>
+  </main>
+  <footer class="site-footer shell"><span>南大电量<span class="footer-divider">/</span>把日常，照顾好。</span><span>自动记录 · 简单生活</span></footer>
+  <script type="application/json" id="dashboard-data">{{ dashboard|tojson }}</script>
+</body>
+</html>
