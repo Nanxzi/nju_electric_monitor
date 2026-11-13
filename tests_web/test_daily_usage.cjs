@@ -1,11 +1,20 @@
 const {test}=require('node:test');
 const assert=require('node:assert/strict');
-const {dailyConsumption}=require('../src/static/dashboard.js');
+const {dailyConsumption, splitDailySegments}=require('../src/static/dashboard.js');
 const rows=(...items)=>items.map(([time,balance])=>({timestamp:Date.parse(time+'+08:00'),balance}));
-test('Beijing midnight splits consumption proportionally and conserves total',()=>{
- const r=dailyConsumption(rows(['2026-10-01T12:00:00',100],['2026-10-02T12:00:00',88]));
- assert.deepEqual(r.map(x=>x.balance),[6,6]);
- assert.match(r[0].display_time,/2026-10-01.*未覆盖全天/);
+test('partial first and last days are excluded, full interior days remain',()=>{
+ assert.deepEqual(dailyConsumption(rows(['2026-10-01T12:00:00',100],['2026-10-02T12:00:00',88])),[]);
+ const r=dailyConsumption(rows(['2026-10-01T12:00:00',100],['2026-10-02T12:00:00',88],['2026-10-03T12:00:00',76]));
+ assert.deepEqual(r.map(x=>[x.display_time,x.balance]),[['2026-10-02',12]]);
+});
+test('a recharge invalidates that day even with other valid readings',()=>{
+ const r=dailyConsumption(rows(['2026-10-01T00:00:00',100],['2026-10-01T08:00:00',96],['2026-10-01T12:00:00',200],['2026-10-02T00:00:00',190]));
+ assert.deepEqual(r,[]);
+});
+test('missing dates break the curve instead of connecting across gaps',()=>{
+ const points=[0,1,3,5,6].map(d=>({timestamp:d*86400000}));
+ assert.deepEqual(splitDailySegments(points),[points.slice(0,2),points.slice(2,3),points.slice(3)]);
+ assert.deepEqual(splitDailySegments([]),[]);
 });
 test('daily points aggregate intervals, full days and zero consumption',()=>{
  const r=dailyConsumption(rows(['2026-10-01T00:00:00',100],['2026-10-01T12:00:00',95],['2026-10-02T00:00:00',90],['2026-10-03T00:00:00',90]));

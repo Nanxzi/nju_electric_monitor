@@ -76,12 +76,25 @@ function dailyConsumption(readings) {
       cursor = end;
     }
   }
-  return [...buckets].sort((a, b) => a[0] - b[0]).map(([timestamp, bucket]) => ({
+  return [...buckets].filter(([, bucket]) => bucket.covered === day)
+    .sort((a, b) => a[0] - b[0]).map(([timestamp, bucket]) => ({
     timestamp,
     balance: bucket.used,
-    display_time: new Date(timestamp + offset).toISOString().slice(0, 10) +
-      (bucket.covered < day ? " · 未覆盖全天" : ""),
+    display_time: new Date(timestamp + offset).toISOString().slice(0, 10),
   }));
+}
+
+function splitDailySegments(points) {
+  const segments = [];
+  for (const point of points) {
+    const segment = segments[segments.length - 1];
+    if (!segment || point.timestamp - segment[segment.length - 1].timestamp !== 86400000) {
+      segments.push([point]);
+    } else {
+      segment.push(point);
+    }
+  }
+  return segments;
 }
 
 function bindChartPointerInteractions(chart, showAtPointer, hideTooltip) {
@@ -112,7 +125,7 @@ function bindChartPointerInteractions(chart, showAtPointer, hideTooltip) {
   });
 }
 
-if (typeof module !== "undefined" && module.exports) module.exports = {calculateRecharge, selectDateRange, bindChartPointerInteractions, dailyConsumption, smoothLinePath};
+if (typeof module !== "undefined" && module.exports) module.exports = {calculateRecharge, selectDateRange, bindChartPointerInteractions, dailyConsumption, smoothLinePath, splitDailySegments};
 
 (() => {
   if (typeof document === "undefined") return;
@@ -190,7 +203,7 @@ if (typeof module !== "undefined" && module.exports) module.exports = {calculate
       period.textContent = activeRange === "custom" ? customLabel : "等待首次采集";
       if (!source.length) {
         empty.hidden = false;
-        empty.textContent = "还没有可用记录，下一次采集后会显示在这里。";
+        empty.textContent = prefix === "usage" ? "暂无覆盖全天的用电数据。" : "还没有可用记录，下一次采集后会显示在这里。";
         chart.setAttribute("aria-label", "暂无电量记录");
         return;
       }
@@ -199,7 +212,7 @@ if (typeof module !== "undefined" && module.exports) module.exports = {calculate
         activeRange === "all" ? source : source.filter((row) => row.timestamp >= latest - Number(activeRange) * day);
       if (!points.length) {
         empty.hidden = false;
-        empty.textContent = "这个时间区间没有电量记录，试试其他日期。";
+        empty.textContent = prefix === "usage" ? "所选区间暂无覆盖全天的用电数据。" : "这个时间区间没有电量记录，试试其他日期。";
         chart.setAttribute("aria-label", customLabel + "，没有电量记录");
         return;
       }
@@ -239,14 +252,19 @@ if (typeof module !== "undefined" && module.exports) module.exports = {calculate
           class: "chart-axis",
         }, dateFormatter.format(new Date(timestamp)).replace("/", ".")));
       }
-      const path = smoothLinePath(points.map((point) => ({x: x(point), y: y(point.balance)})));
       const bottom = height - plot.bottom;
       const series = svgElement("g", {class: "chart-series", "aria-hidden": "true"});
-      series.append(
-        svgElement("path", {d: path + " L" + x(points[points.length - 1]).toFixed(2) + " " + bottom + " L" + x(points[0]).toFixed(2) + " " + bottom + " Z", class: "chart-area"}),
-        svgElement("path", {d: path, class: "chart-line"}),
-        svgElement("circle", {cx: x(points[points.length - 1]), cy: y(points[points.length - 1].balance), r: 3.5, class: "chart-point"}),
-      );
+      const segments = prefix === "usage" ? splitDailySegments(points) : [points];
+      for (const segment of segments) {
+        const path = smoothLinePath(segment.map((point) => ({x: x(point), y: y(point.balance)})));
+        const first = segment[0];
+        const last = segment[segment.length - 1];
+        series.append(
+          svgElement("path", {d: path + " L" + x(last).toFixed(2) + " " + bottom + " L" + x(first).toFixed(2) + " " + bottom + " Z", class: "chart-area"}),
+          svgElement("path", {d: path, class: "chart-line"}),
+          svgElement("circle", {cx: x(last), cy: y(last.balance), r: 3.5, class: "chart-point"}),
+        );
+      }
       chart.append(series);
       if (animate && !reducedMotion.matches && typeof series.animate === "function") {
         series.style.transformOrigin = "0 " + bottom + "px";
