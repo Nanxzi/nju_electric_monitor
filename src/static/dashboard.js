@@ -234,6 +234,17 @@ if (typeof module !== "undefined" && module.exports) module.exports = {calculate
       const y = (value) => plot.top + (maxY - value) / (maxY - minY) * plotHeight;
       chart.setAttribute("viewBox", "0 0 " + width + " " + height);
       chart.setAttribute("aria-label", title + "，" + points.length + " 条记录；最新 " + points[points.length - 1].balance.toFixed(2) + " 千瓦时。用左右方向键查看读数。");
+      const segments = prefix === "usage" ? splitDailySegments(points) : [points];
+      const gaps = segments.slice(1).map((segment, index) => ({
+        left: x({timestamp: segments[index][segments[index].length - 1].timestamp + day / 2}),
+        right: x({timestamp: segment[0].timestamp - day / 2}),
+      }));
+      for (const gap of gaps) {
+        chart.append(svgElement("rect", {
+          x: gap.left, y: plot.top, width: gap.right - gap.left, height: plotHeight,
+          class: "chart-missing-region", "aria-hidden": "true",
+        }));
+      }
       for (let tick = 0; tick <= 4; tick += 1) {
         const value = minY + (maxY - minY) * tick / 4;
         const position = y(value);
@@ -254,7 +265,6 @@ if (typeof module !== "undefined" && module.exports) module.exports = {calculate
       }
       const bottom = height - plot.bottom;
       const series = svgElement("g", {class: "chart-series", "aria-hidden": "true"});
-      const segments = prefix === "usage" ? splitDailySegments(points) : [points];
       for (const segment of segments) {
         const path = smoothLinePath(segment.map((point) => ({x: x(point), y: y(point.balance)})));
         const first = segment[0];
@@ -274,7 +284,7 @@ if (typeof module !== "undefined" && module.exports) module.exports = {calculate
         );
       }
       period.textContent = activeRange === "custom" ? customLabel : dateFormatter.format(new Date(start)).replace("/", ".") + " — " + dateFormatter.format(new Date(end)).replace("/", ".");
-      chartState = {points, width, height, plot, x, y, selected: points.length - 1};
+      chartState = {points, gaps, width, height, plot, x, y, selected: points.length - 1};
     }
 
     bindChartPointerInteractions(chart, (event) => {
@@ -283,6 +293,10 @@ if (typeof module !== "undefined" && module.exports) module.exports = {calculate
       const bounds = chart.getBoundingClientRect();
       if (!bounds.width) return;
       const position = (event.clientX - bounds.left) * chartState.width / bounds.width;
+      if (chartState.gaps.some((gap) => position >= gap.left && position <= gap.right)) {
+        hideTooltip();
+        return;
+      }
       let closest = 0;
       for (let index = 1; index < chartState.points.length; index += 1) {
         if (Math.abs(chartState.x(chartState.points[index]) - position) < Math.abs(chartState.x(chartState.points[closest]) - position)) closest = index;

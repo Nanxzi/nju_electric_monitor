@@ -600,6 +600,21 @@ h2 {
   stroke-linejoin: round
 }
 
+.chart-missing-region {
+  fill: #e9eceb;
+  pointer-events: none
+}
+
+.missing-data-key {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 6px;
+  border-radius: 2px;
+  background: #e9eceb;
+  vertical-align: -1px
+}
+
 .chart-area {
   fill: #f0f6f2
 }
