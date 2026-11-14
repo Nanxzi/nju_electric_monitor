@@ -1,0 +1,87 @@
+name: Deploy electricity dashboard
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - 'src/web_panel.py'
+      - 'src/templates/**'
+      - 'src/static/**'
+      - 'tests_web/**'
+      - 'src/build_site.py'
+      - 'requirements-web.txt'
+      - 'data/electricity_data.csv'
+      - '.github/workflows/deploy-pages.yml'
+  workflow_run:
+    workflows: ["Auto Monitor Schedule"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: electricity-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    if: >-
+      vars.ENABLE_PAGES == 'true' &&
+      ((github.event_name != 'workflow_run' &&
+        github.ref_name == github.event.repository.default_branch) ||
+       (github.event_name == 'workflow_run' &&
+        github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_branch == github.event.repository.default_branch))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the latest data on the default branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: requirements-web.txt
+
+      - name: Install dashboard dependencies
+        run: python -m pip install -r requirements-web.txt
+
+      - name: Check dashboard data handling
+        run: python -m unittest discover -s tests_web
+
+      - name: Set up Node for dashboard checks
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Check recharge estimates and date ranges
+        run: node --test tests_web/*.cjs
+
+      - name: Generate the website
+        run: python src/build_site.py
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload the website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
